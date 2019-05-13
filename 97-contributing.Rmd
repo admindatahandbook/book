@@ -2,6 +2,8 @@
 We would appreciate it if any improvements, corrections, and other contributions were sent back to us, for instance via the "[Issues]" feature on 
 Github`r if (knitr::is_html_output()) ', or by clicking on the edit button in the toolbar above'`. 
 
+Case studies can be added by creating an appropriately numbered section under a specific chapter, and sending us the file (via a "Pull request", or some other way).
+
 ## Support  {-}
 The development of this course was funded by a grant from the [Alfred P. Sloan Foundation](https://sloan.org). 
 

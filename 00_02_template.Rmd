@@ -1,0 +1,24 @@
+## Template
+
+> Use this template to structure your contribution. Delete this line when you are done. 
+
+### Legal context 
+
+(privacy, mandate, ability to contract, DUA)
+
+### Five Safes framework
+
+- Safe projects - evaluating applications for appropriateness
+- Safe people     - establishing trust in researchers
+- Safe settings - how can the data be accessed?
+- Safe data - how sensitive is the data/ can the data be made
+- Safe outputs - how sensitive are the results/tabulations/etc. 
+
+For each dimension, measure
+
+- Criteria
+- Implementation
+- Cost component - not necessarily in $ - time, person-hours
+- Discussion of revenue
+  - User fees
+  - Data provider fees 

@@ -1,0 +1,8 @@
+# Structure of this Handbook
+
+The handbook presents a number of  case studies, judiciously chosen to cover a broad spectrum of possible solutions. 
+Case studies are chosen from known access mechanisms around the world, with a focus on providing lessons applicable to the North American context.
+
+The summary section provides a broad synthesis of the case studies, using the same structure (outlined below), and 
+condenses the case studies into recommendations, best practices, and explicit guidance. 
+Each thematic section is introduced, the specific challenges unique to the section sketched out, and the choice of case studies explained.

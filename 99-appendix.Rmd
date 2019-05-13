@@ -1,7 +1,7 @@
 # (APPENDIX) Appendix {-} 
 
-## Licenses {-}
-### Fontawesome {-}
+# Licenses {-}
+## Fontawesome {-}
 
 The web version uses Font Awesome Free icons in some places. 
 The SIL OFL 1.1 License (https://scripts.sil.org/OFL) applies to all icons

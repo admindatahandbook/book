@@ -1,0 +1,5 @@
+# Accessing municipal level data
+Introduction 
+
+Possible case studies on: New York City health data, Los Angeles, Capetown electricity, Rio de Janeiro crime, 
+

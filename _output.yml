@@ -2,7 +2,7 @@ citation_package: natbib
 biblio-style: "authoryear"
 bookdown::gitbook:
   css: [assets/css/style.css, assets/css/toc.css, assets/css/font-awesome.min.css]
-  split_by: chapter
+  split_by: section
   split_bib: TRUE
   toc_depth: 2
   highlight: tango
