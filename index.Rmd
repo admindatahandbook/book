@@ -1,0 +1,21 @@
+---
+title: "Handbook"
+author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [Sloan-JPAL.bib,packages.bib]
+link-citations: yes
+github-repo: labordynamicsinstitute/idea-handbook
+description: This is the handbook
+---
+
+
+# Overview {-}
+In order to provide guidance to current and future researchers, data providers, and administrators wishing to make data more broadly available, we have undertaken to collect a broad and diverse collection of experiences from those who have undertaken such endeavors in the past. There are excellent starting points on many topics: the various challenges of making data available securely (see f.i. Reuter and Museux 2010; Harron et al. 2017; ADRF Network 2018; Future of Privacy Forum 2017); resources on data held by national statistical offices (NSO) and the initial creation of integrated data systems, including (in the U.S.) work by Actionable Intelligence for Social Policy (AISP); the general "Five Safes" framework (Desai, Ritchie, and Welpton 2016); and guides for the European context, which include case studies (OECD 2014; Bujnowska 2019). 
+However, in our many conversations with researchers and sub-national (potential) data providers, we have found a desire to not just see a distillation of best practices, or the experiences of national statistical agencies, but to also see “the raw data” - the myriad of decisions for and against certain choices to be made, the context of when certain practices have been found to be useful, and where other choices might, in retrospect, be made differently.
+We thus solicited a large number of case studies from various implementers of data access policies in the broadest sense. Many, of course, are successful implementations - failed ones are harder to find. However, even successful implementations must evolve over time, or may find that the decisions made in the past can be improved upon based on more recent experience. 
+We provided our contributors with a template, which can be considered like a self-guided interview, asking them to respond to a variety of topics. Not all topics were relevant, important, or even considered by each contributor, and readers will see this reflected in each of the contributions. We aimed to find out foundational considerations - why even think about making the data available - to the most mundane but ultimately pressing needs - who will pay for it? How much does that computer infrastructure cost? Intrigued readers will find the template in the appendix, and can self-evaluate, or use it as a planning tool for their own implementation. 
+
+
