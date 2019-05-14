@@ -2,11 +2,16 @@
 
 > Use this template to structure your contribution. Delete this line when you are done. 
 
+### Motivation
+> Describe WHY you are making data available. Whereas the next section will discuss your legal ability to provide access to the data, this section is meant to allow you to describe the motivation of your entity (business, company, government) to provide access to data that otherwise would not be available. What are the outcomes that benefit you, or the performance metrics that matter to you?
+
 ### Legal context 
 
-(privacy, mandate, ability to contract, DUA)
+> (privacy, mandate, ability to contract, Data use agreements). Describe in what context you are allowed to, able to, mandated to provide access to the data. Are you, as the data custodian, also the unit able to define the data use agreements, or are you an intermediary, providing access to data as authorized by other entities?
 
 ### Five Safes framework
+
+The "Five Safes framework" [@DesaiFiveSafesdesigning2016] provides structure to many aspects of providing secure access to data:
 
 - Safe projects - evaluating applications for appropriateness
 - Safe people     - establishing trust in researchers
@@ -14,11 +19,27 @@
 - Safe data - how sensitive is the data/ can the data be made
 - Safe outputs - how sensitive are the results/tabulations/etc. 
 
-For each dimension, measure
+> For each dimension, describe how important each element was in the final implementation, and how expensive it was in the overall scheme to implement. Cost can be measured in monetary units or in time-units (person-months), as necessary. Please provide  a numerical criterion (from 1 - least important to 5 - most important) for both importance and cost. Also provide a verbose description on how you went about implementing it - what you tools or systems you chose for the implementation.
 
-- Criteria
-- Implementation
-- Cost component - not necessarily in $ - time, person-hours
-- Discussion of revenue
-  - User fees
-  - Data provider fees 
+#### Safe projects 
+
+> evaluating applications for appropriateness
+#### Safe people
+
+>  establishing trust in researchers
+
+####  Safe settings 
+
+> how can the data be accessed?
+
+#### Safe data 
+
+> how sensitive is the data/ can the data be made
+
+#### Safe outputs 
+
+> how sensitive are the results/tabulations/etc. 
+
+### Revenue
+
+> Please discuss revenue sources to fund the data access project. Do you charge user fees, or fees to data providers? Do you receive operating funds for the data access project from other sources? How are fees charged or itemized - per project, per user, per location, per time unit, per data unit, etc.?
