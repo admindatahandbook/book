@@ -1,6 +1,5 @@
 
 
-# Warning {-}
 
 ```{block, type='rmdwarning'}
 This document is under development!

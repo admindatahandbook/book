@@ -1,6 +1,6 @@
 # (APPENDIX) Appendix {-} 
 
-# Licenses {-}
+# Third-party Licenses {-}
 ## Fontawesome {-}
 
 The web version uses Font Awesome Free icons in some places. 
