@@ -1,13 +1,13 @@
 ## Template
 
-> Use this template to structure your contribution. Delete this line when you are done. 
+> *Instructions:* Use this template to structure your contribution. Delete this line when you are done. 
 
 ### Motivation
-> Describe WHY you are making data available. Whereas the next section will discuss your legal ability to provide access to the data, this section is meant to allow you to describe the motivation of your entity (business, company, government) to provide access to data that otherwise would not be available. What are the outcomes that benefit you, or the performance metrics that matter to you?
+> *Instructions:* Describe WHY you are making data available. Whereas the next section will discuss your legal ability to provide access to the data, this section is meant to allow you to describe the motivation of your entity (business, company, government) to provide access to data that otherwise would not be available. What are the outcomes that benefit you, or the performance metrics that matter to you?
 
 ### Legal context 
 
-> (privacy, mandate, ability to contract, Data use agreements). Describe in what context you are allowed to, able to, mandated to provide access to the data. Are you, as the data custodian, also the unit able to define the data use agreements, or are you an intermediary, providing access to data as authorized by other entities?
+> *Instructions:* (privacy, mandate, ability to contract, Data use agreements). Describe in what context you are allowed to, able to, mandated to provide access to the data. Are you, as the data custodian, also the unit able to define the data use agreements, or are you an intermediary, providing access to data as authorized by other entities?
 
 ### Five Safes framework
 
@@ -19,27 +19,33 @@ The "Five Safes framework" [@DesaiFiveSafesdesigning2016] provides structure to 
 - Safe data - how sensitive is the data/ can the data be made
 - Safe outputs - how sensitive are the results/tabulations/etc. 
 
-> For each dimension, describe how important each element was in the final implementation, and how expensive it was in the overall scheme to implement. Cost can be measured in monetary units or in time-units (person-months), as necessary. Please provide  a numerical criterion (from 1 - least important to 5 - most important) for both importance and cost. Also provide a verbose description on how you went about implementing it - what you tools or systems you chose for the implementation.
+> *Instructions:* For each dimension, describe how important each element was in the final implementation, and how expensive it was in the overall scheme to implement. Cost can be measured in monetary units or in time-units (person-months), as necessary. Please provide  a numerical criterion (from 1 - least important to 5 - most important) for both importance and cost. Also provide a verbose description on how you went about implementing it - what you tools or systems you chose for the implementation.
 
 #### Safe projects 
 
-> evaluating applications for appropriateness
+> *Instructions:* evaluating applications for appropriateness
+
 #### Safe people
 
->  establishing trust in researchers
+> *Instructions:* How do you go about establishing trust in researchers?  Do you use a "circle of trust model"? If yes, describe it. Do you have special requirements - training, citizenship, professional standing, background security checks by police or specialized services? Do you accept credentials from other institutions? How often do you verify such criteria? Do you trust researchers for access procedures, for disclosure avoidance procedures, for data handling? Do you inspect every such access, disclosure, data handling procedure, or only some? 
 
 ####  Safe settings 
 
-> how can the data be accessed?
+> *Instructions:* how can the data be accessed? Do users download the data to an arbitrary computer, to a secure computer? Are users provided with a secure computer (laptop or other remote access devices)? Do users remotely access the data via remote submission, or via secure remote interactive access (sometimes called a virtual data enclave)? Do you have off-site access points (in satelite offices, or in collaborating institutions)? Do you require users to travel to physical locations?
 
 #### Safe data 
 
-> how sensitive is the data/ can the data be made
+> *Instructions:* how sensitive is the data/ can the data be made
 
 #### Safe outputs 
 
-> how sensitive are the results/tabulations/etc. 
+> *Instructions:* how sensitive are the results/tabulations/etc. 
 
 ### Revenue
 
-> Please discuss revenue sources to fund the data access project. Do you charge user fees, or fees to data providers? Do you receive operating funds for the data access project from other sources? How are fees charged or itemized - per project, per user, per location, per time unit, per data unit, etc.?
+> *Instructions:* Please discuss revenue sources to fund the data access project. Do you charge user fees, or fees to data providers? How are fees charged or itemized - per project, per user, per location, per access, per time unit, per data unit, etc.? Do fees cover your costs? Do you receive operating funds for the data access project from other sources? 
+
+### Metadata
+
+> *Instructions:* Best practices [@OECDEXPERTGROUPINTERNATIONAL2014] suggest to publish statistical and functional metadata on the data resources in an open way. Describe what metadata you have published, how you generated the metadata, who is involved in the creation and maintenance of metadata. Was generating such metadata integrated into your normal business processes, or was it added on as a result of the data access project? Is it integrated now? What standards do you use (JSON, XML, DDI, SDMX, etc.)? Are they machine-readable and (where applicable) translated into English? 
+
