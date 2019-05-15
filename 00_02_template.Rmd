@@ -11,7 +11,7 @@
 
 ### Legal context: Intellectual property
 
-> *Instructions:* Do you assert Intellectual Property (IP) on the original data? On any derivative data created by researchers with access to the data? On any derivative product (research papers, tables) created by academic researchers? On source code/programs created by researchers (typically when processing data within your IT boundaries)? How do you enforce IP? Is there a review process (also see "Safe Outputs")
+> *Instructions:* Do you assert Intellectual Property (IP) on the original data? On any derivative data created by researchers with access to the data? On any derivative product (research papers, tables) created by academic researchers? On source code/programs created by researchers (typically when processing data within your IT boundaries)? How do you enforce IP? Is there a review process (also see "[Safe Outputs]")? Do you consider the results of the statistical analysis to be "open data" by default, or subject to copyright? Do you require that researchers seek your approval before publication - for reasons other than statistical disclosure avoidance - for instance, to verify how content or statements interact with corporate or government policy?
 
 ### Five Safes framework
 
@@ -43,7 +43,7 @@ The "Five Safes framework" [@DesaiFiveSafesdesigning2016] provides structure to 
 
 #### Safe outputs 
 
-> *Instructions:* how sensitive are the results/tabulations/etc. 
+> *Instructions:* how sensitive are the results/tabulations/etc. Do you verify the results yourselves?  Do you verify all outputs, or sample? Do you incorporate safe-output rules into your user agreements? Who is involved with verification of safe outputs - lawyers, statisticians, data scientists, domain experts? Do you provide users with tools to check that their outputs meet your rules? How costly is the enforcement?
 
 ### Revenue
 
