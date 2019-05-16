@@ -1,7 +1,5 @@
---
-title: "Model DUAs"
-author: "Amy O'Hara"
-date: "`r format(Sys.time(), '%Y-%m-%d')`"
----
+## Model Data Use Agreements - A Practical Guide
+
+> Author: Amy O'Hara
 
 Information about DUAs
