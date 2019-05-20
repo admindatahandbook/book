@@ -1,4 +1,4 @@
-# Accessing stata and province level data
+# Accessing state and province level data
 Introduction 
 
 Possible case studies: Texas, Ohio, Washington, Oregon, South Carolina, India: Tamil Nadu, Canada: Québec, Ontario
