@@ -1,8 +1,10 @@
 # Structure of this Handbook
 
-The handbook presents a number of  case studies, judiciously chosen to cover a broad spectrum of possible solutions. 
-Case studies are chosen from known access mechanisms around the world, with a focus on providing lessons applicable to the North American context.
 
-The summary section provides a broad synthesis of the case studies, using the same structure (outlined below), and 
-condenses the case studies into recommendations, best practices, and explicit guidance. 
-Each thematic section is introduced, the specific challenges unique to the section sketched out, and the choice of case studies explained.
+Case studies are judiciously chosen to cover a broad spectrum of possible scenarios, problems, and solutions, and are chosen from  data access mechanisms around the world, with a focus on providing lessons applicable to the North American context. In particular, we provide examples from national, sub-national, local, and private-sector instances of data provision.
+
+The case studies are summarized both at the geographical scale level (national, sub-national, etc.) as well as by broad topics. The summary sections provide a broad synthesis of the case studies, using the same structure (outlined below), and 
+condense the case studies into recommendations, best practices, and explicit guidance. 
+The summary chapters represent the views of the editors of this handbook, and do not necessarily constitute a consensus view by the contributors. 
+
+In addition to the case studies, additional thematic chapters focus on particular issues, such as ethics, privacy, or xxx. These thematic chapters augment the range of topics touched upon in the case studies, and provide normative answers to future questions not raised by the historical case studies. 
