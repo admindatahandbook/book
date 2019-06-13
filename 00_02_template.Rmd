@@ -1,66 +1,69 @@
 ## Template
 
-> *Instructions:* Use this template to structure your contribution. Delete this line when you are done. We have drawn in part of generic guidelines provided by @OECDEXPERTGROUPINTERNATIONAL2014 and @DesaiFiveSafesdesigning2016 . All questions or guidance is optional, in the sense that you may not have a long answer, or no answer at all, or it may not be relevant for your scenario. However, if that is the case, we are interested in why it was not relevant, as that may itself be valuable information for others.
+> *Instructions:* This template aims to structure case study contributions to the handbook of administrative data ccess. 
+Case studies should describe the process of deciding about and ultimately providing researcher access to administrative data. This can include a description of options considered but not ultimately implemented. For solutions that were implemented, the authors should explain why this solution was best for the context at hand and what considerations informed the final decision. The case study author should also indicate in which areas they think they innovated or have particularly deep knowledge to share. Case study submissions can include tools/materials where appropriate.
 
-### Self-description
-> *Instruction:* Describe the scenario that is covered by this case study. Who are you, and who is the data provider, who are the data users. 
+In creating this template, we have drawn in part of generic guidelines provided by @OECDEXPERTGROUPINTERNATIONAL2014 and @DesaiFiveSafesdesigning2016 . All sections in this template are optional, in the sense that there may not be a lot of content, or no content at all, when the topic is not relevant for a given scenario. However, if that is the case, we are interested in why the topic was not relevant, as that may itself be valuable information for others.
+
+### Summary
+> *Instructions:* Describe the scenario that is covered by this case study. Introduce the authors, the data provider, and interesting uses of the data. 
 
 ### Motivation
-> *Instructions:* Describe WHY you are making data available. Whereas the next section will discuss your legal ability to provide access to the data, this section is meant to allow you to describe the motivation of your entity (business, company, government) to provide access to data that otherwise would not be available. What are the outcomes that benefit you, or the performance metrics that matter to you? Do you need to capture or document a benefit to permit data access? 
+> *Instructions:* What ultimately drove the decision to make this data available? What was the motivation of the data provider (business, non-profit, government) to provide access to data for research that otherwise would not be available? What are the outcomes that benefit the data provider? Do you need to capture or document a benefit to permit data access? What are the benefits to the broader public or the research community at large?
 
 ### Legal context
 
 #### Access
 
-> *Instructions:* (privacy, mandate, ability to contract, Data use agreements, License). Describe in what context you are allowed to, able to, mandated to provide access to the data. Are you, as the data custodian, also the unit able to define the data use agreements, or are you an intermediary, providing access to data as authorized by other entities? What kind of sanctions can you impose (financial, reputational, penal)? Have you ever imposed them? 
+> *Instructions:* (privacy, mandate, ability to contract, Data use agreements, License). Describe in what context the data provider is allowed to, able to, or mandated to provide access to the data. Describe the legal framework for access. Is the data custodian also able to define the data use agreements, or is it an intermediary, providing access to data as authorized by other entities? What kind of sanctions can the data provider impose (financial, reputational, penal) for unauthorized uses of the data? Have they ever been imposed? 
 
 #### Intellectual property
 
-> *Instructions:* Do you assert Intellectual Property (IP) on the original data? On any derivative data created by researchers with access to the data? On any derivative product (research papers, tables) created by academic researchers? On source code/programs created by researchers (typically when processing data within your IT boundaries)? Do you require co-authorship on researcher output? How do you enforce IP? Is there a review process (also see "[Safe Outputs]")? Do you consider the results of the statistical analysis to be "open data" by default, or subject to copyright? What license are researchers granted on the results they generate? Do you require that researchers seek your approval before publication - for reasons other than statistical disclosure avoidance - for instance, to verify how content or statements interact with corporate or government policy? If you do data cleaning or linkage for a third party, who has custody vs ownership of the resulting data? 
+> *Instructions:* Does the data provider assert Intellectual Property (IP) on the original data, or on any derivative data or products created by researchers with access to the data, such as tables, research papers,  source code, etc.? How is IP enforced? Does the data provider require co-authorship on researcher output? Is there a review process (also see "[Safe Outputs]")? Are the results of the statistical analysis considerd to be "open data" by default, or subject to copyright? What license are researchers granted on the results they generate? Does the data provider require that researchers seek  approval before publication - for reasons other than statistical disclosure avoidance - for instance, to verify how content or statements interact with corporate or government policy? If the data provider carries out data cleaning or linkage for a third party, who has custody vs. ownership of the resulting data? 
 
 ### Five Safes framework
 
 The "Five Safes framework" [@DesaiFiveSafesdesigning2016] provides structure to many aspects of providing secure access to data:
 
-- Safe projects - evaluating applications for appropriateness
-- Safe people     - establishing trust in researchers
+- Safe projects - evaluating data analysis projects for appropriateness
+- Safe people   - evaluating the credentials of researchers who seek data access 
 - Safe settings - how can the data be accessed?
-- Safe data - how sensitive is the data/ can the data be made
-- Safe outputs - how sensitive are the results/tabulations/etc. 
+- Safe data - how sensitive is the data/ can the data be made?
+- Safe outputs - how sensitive are analysis results such as tabulations etc. 
 
-> *Instructions:* For each dimension, describe how important each element was in the final implementation, and how expensive it was in the overall scheme to implement. Cost can be measured in monetary units or in time-units (person-months), as necessary. Please provide  a numerical criterion (from 1 - least important to 5 - most important) for both importance and cost. Also provide a verbose description on how you went about implementing it - what you tools or systems you chose for the implementation.
+> *Instructions:* Describe how important each element was in the final implementation, and how costly it was in the overall scheme to implement. Cost can include money, but also time (e.g. person-months), as necessary. Please provide  a numerical ranking (from 1 - least important to 5 - most important) for both importance and cost. Describe in detail how the data provider went about implemention and what tools or systems were chosen.
 
-Need a template or scale for cost!
+[Need a template or scale for cost!]
 
 #### Safe projects 
 
-> *Instructions:* evaluating applications for appropriateness. Do you have a formal application process, or an ad-hoc/informal application process? Do you have publicly posted rules, or do you consider applications on a case-by-case basis? Do you use IT systems to manage the flow of applications, or an informal workflow? Who is involved with assessing each project's merits - lawyers, statisticians, data scientists, domain experts? How long does the typical approval process take (min/avg/median/max)? Is that information publicly posted? How costly (time/money) is the approval process? Do you require IRB approval by the researcher institution, by your own institution, do you have an IRB?
+> *Instructions:* evaluating applications for appropriateness. Is there a formal application process, or an ad-hoc/informal application process? Are there publicly posted rules, or are applications considered on a case-by-case basis? Is an IT system used to manage the flow of applications, or an informal workflow? Who is involved with assessing each project's merits - lawyers, statisticians, data scientists, domain experts? How long does the typical approval process take (min/avg/median/max)? Is that information publicly posted? How costly (time/money) is the approval process? Does the data provider require IRB approval by the researcher institution, or by its own IRB?
 
 
 
 #### Safe people
 
-> *Instructions:* How do you go about establishing trust in researchers?  Do you use a "circle of trust model" [@OECDEXPERTGROUPINTERNATIONAL2014]? If yes, describe it. Do you have special requirements - training, citizenship, professional standing, background security checks by police or specialized services? Do you accept credentials from other institutions? How often do you verify such criteria? Do you trust researchers for access procedures, for disclosure avoidance procedures, for data handling? Do you inspect every such access, disclosure, data handling procedure, or only some? If you require training, who conducts the training, and how often? How much do these procedures cost (time, money)? do repeat customers get fast tracked? Overall, how many users can you currently handle? How many do you plan to handle?
+> *Instructions:* How does the data provider establish which researchers to trust when giving access to the data?  Do they use a "circle of trust model" [@OECDEXPERTGROUPINTERNATIONAL2014]? If yes, describe it. Are there special requirements - training, citizenship, professional standing, background security checks? Do they accept credentials from other institutions? How often do tehy verify such criteria? Do they trust researchers for access procedures, for disclosure avoidance procedures, for data handling? Do they inspect every such access, disclosure, data handling procedure, or only some? If they require training, who conducts the training, and how often? How much do these procedures cost (time, money)? Do repeat customers get fast tracked? Overall, how many users can the data provider currently handle? How many do they plan to handle?
 
 ####  Safe settings 
 
-> *Instructions:* how can the data be accessed? Do users download the data to an arbitrary computer, to a secure computer? Are users provided with a secure computer (laptop or other remote access devices)? Do users remotely access the data via remote submission, or via secure remote interactive access (sometimes called a virtual data enclave)? Do you have off-site access points (in satelite offices, or in collaborating institutions)? Do you require users to travel to physical locations? Do you use multiple access settings? Are the various safe settings only used for researchers, or are they also used internally? How much do the various settings cost you? Provide specifics (software, hardware) of how you instantiate these settings. If providing IT resources to researchers, what statistical software (SAS, Stata, Python, R, Spark, etc.) do you provide researchers? How do you handle researcher-provided software/licenses or code? Why did you choose specific implementations? Security: What are considered to be breaches of the safe settings? How do you handle them, who is notified about suspected or actual breaches? What are the penalties?
+> *Instructions:* how can the data be accessed? Do users download the data to an arbitrary computer, to a secure computer? Are users provided with a secure computer (laptop or other remote access devices)? Do users remotely access the data via remote submission, or via secure remote interactive access (sometimes called a virtual data enclave)? Are there off-site access points (in satelite offices, or in collaborating institutions)? Does access require users to travel to physical locations? Are there multiple access settings? Are the various safe settings only used for researchers, or are they also used internally? How much do the various settings cost? Provide specifics (software, hardware) of how the data provider instantiates these settings. If providing IT resources to researchers, what statistical software (SAS, Stata, Python, R, Spark, etc.) is provided to researchers? How does the provider handle researcher-provided software/licenses or code? Why did you choose specific implementations? Security: What are considered to be breaches of the safe settings? How do you handle them, who is notified about suspected or actual breaches? What are the penalties?
 
 #### Safe data 
 
-> *Instructions:* how sensitive is the data/ can the data be made? Do you differentiate various risk levels for datasets (low/medium/high-risk)? How do you map these various levels to the "circle of trust"? To various safe settings? How much maintenance does it require to create researcher-accessible datasets? Are they a normal part of your data processing pipeline, or are they created explicitly for researchers? On-demand, or on a schedule? Who does the transformation, if any? How much does this part cost? Do you use synthetic or fake data as part of the access mechanism, combined with remote processing or validation?   
+> *Instructions:* how sensitive is the data/ can the data be made? Do you differentiate risk levels for different datasets? How do these various levels map to the "circle of trust" or different safe settings? How much maintenance does it require to create researcher-accessible datasets? Are they a normal part of your data processing pipeline, or are they created explicitly for researchers? On-demand, or on a schedule? Who does the transformation, if any? How much does this part cost? Is synthetic or fake data used as part of the access mechanism, combined with remote processing or validation?   
 
 #### Safe outputs 
 
-> *Instructions:* how sensitive are the results/tabulations/etc. Do you verify the results yourselves?  Do you verify all outputs, or sample? Do you incorporate safe-output rules into your user agreements? Who is involved with verification of safe outputs - lawyers, statisticians, data scientists, domain experts? Do you provide users with tools to check that their outputs meet your rules? How long does the typical approval process take (min/avg/median/max)? How costly is the enforcement? do you keep a set of approved results, do you require researchers to share/notify when work is published (for instance, for metrics)?
+> *Instructions:* how sensitive are the results/tabulations/etc. Does the data provider verify the analyis results?  All outputs, or only a sample? Are safe-output rules incorporated into data user agreements? Who is involved with verification of safe outputs - lawyers, statisticians, data scientists, domain experts? Does the data provider provide users with tools to check that their outputs meet your rules? How long does the typical approval process take (min/avg/median/max)? How costly is the enforcement? Does the data provider keep a set of approved results, does it require researchers to share/notify when work is published (for instance, for metrics)?
 
 ### Revenue
 
-> *Instructions:* Please discuss revenue sources to fund the data access project. Do you charge user fees, or fees to data providers? How are fees charged or itemized - per project, per user, per location, per access, per time unit, per data unit, etc.? Do fees cover your costs? Are fees posted publicly, or are they negotiated on a case-by-case basis? Do you receive operating funds for the data access project from other sources? 
+> *Instructions:* Please discuss revenue sources to fund the data access project. Are there user fees, or fees to data providers? How are fees charged or itemized - per project, per user, per location, per access, per time unit, per data unit, etc.? Do the fees cover costs? Are fees posted publicly, or are they negotiated on a case-by-case basis? Are there operating funds for the data access project from other sources? 
 
 ### Metadata
 
-> *Instructions:* Best practices [@OECDEXPERTGROUPINTERNATIONAL2014] suggest to publish statistical and functional metadata on the data resources in an open way. Describe what metadata you have published, how you generated the metadata, who is involved in the creation and maintenance of metadata. Was generating such metadata integrated into your normal business processes, or was it added on as a result of the data access project? Is it integrated now? What standards do you use (JSON, XML, DDI, SDMX, etc.)? Are they machine-readable and (where applicable) translated into English? 
+> *Instructions:* Best practices [@OECDEXPERTGROUPINTERNATIONAL2014] suggest to publish statistical and functional metadata on the data resources in an open way. Describe the metadata that is published, how it is generated, and who is involved in the creation and maintenance of metadata. Is generating such metadata part of normal business processes, or was it added on as a result of the data access project? Is it integrated now? What standards are used (JSON, XML, DDI, SDMX, etc.)? Are they machine-readable and (where applicable) translated into English? 
 
 ### Outreach
 > *Instructions:* how do [Safe People](researchers) become aware of your access point and data offerings?
@@ -69,7 +72,7 @@ Need a template or scale for cost!
 
 #### Preservation of Researcher-accessible Files
 
-> *Instructions:* Are researcher files preserved? If yes, over what time period (5, 10 years, forever)? Is there active curation, or only preservation of current bitstreams? Do you perform the archival/curation functions yourself, is another entity within your organization responsible for this activity, or is a third-party (national, regional, university archive) responsible for this? Do you generate persistent identifiers for these?
+> *Instructions:* Are researcher files preserved? If yes, over what time period (5, 10 years, forever)? Is there active curation, or only preservation of current bitstreams? Does the data provider perform the archival/curation functions itself, is another entity within the organization responsible for this activity, or is a third-party (national, regional, university archive) responsible for this? Are persistent identifiers generated for these?
 
 #### Reproducibility of Researcher-accessible Files
 
@@ -77,13 +80,23 @@ Need a template or scale for cost!
 
 #### Preservation of Researcher-generated Files
 
-> *Instructions:* Researchers may generate intermediate and final data files and tables. Researchers generate processing code/programs. Are these preserved? If yes, for what time? Can other researchers access these files, with or without the permission of the original researchers (and subject to [Safe projects], [Safe settings], and [Safe people] conditions)?  Do you generate persistent identifiers for any of these?
+> *Instructions:* Researchers may generate intermediate and final data files and tables. Researchers generate processing code/programs. Are these preserved? If yes, for what time? Can other researchers access these files, with or without the permission of the original researchers (and subject to [Safe projects], [Safe settings], and [Safe people] conditions)?  Does the data provider generate persistent identifiers for any of these?
 
 #### Disposal of data
-> *Instructions:* do you delete data files or purge records within the data due to legal requirements or limited resources to maintain? Do  purge records upon request or at certain time intervals (eg juvenile justice, deleted tweets)?How do you handle that?
+> *Instructions:* does the data provider delete data files or purge records within the data due to legal requirements or limited resources to maintain? Are records purged upon request or at certain time intervals (eg juvenile justice, deleted tweets)? 
 
 ### Metrics
 
-> *Instructions:* How do you measure the success of your data access project? Number of people, number of datasets provided, number of papers, number of citations, number of mentions? Provide some sample statistics.
+> *Instructions:* How is  the success of the data access project evaluated? Number of people, number of datasets provided, number of papers, number of citations, number of mentions? Provide some sample statistics.
+
+### Data use examples
+
+#### Non-experimental research using the administrative data
+
+#### Experiments using the data, conducted in collaboration with the data provider or independently
+
+#### Linkages of administrative data with other data sets or survey data
+
+#### Use of the data for policy improvements
 
 
