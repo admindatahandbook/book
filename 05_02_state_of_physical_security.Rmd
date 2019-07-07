@@ -1,0 +1,9 @@
+# Physically Protecting Sensitive Data
+
+We describe the current technology as used by various systems that provide access to sensitive data (creating "Safe Settings"), and avenues for future access. We adress
+
+- Secure laptops
+- Remote access
+- Cloud computing
+- Secure rooms
+- Biometrics

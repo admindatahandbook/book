@@ -1,0 +1,3 @@
+# Protecting Respondents' Privacy
+
+We describe reasons and methods for protecting respondents' privacy, and possible data provider's concerns. This includes how to generate "safe outputs" (disclosure avoidance), using statistical or algorithmic methods. It also discusses the need for IRB/ Ethics committees, and how to set them up or outsource them.
