@@ -1,5 +1,5 @@
 ---
-title: "Handbook"
+title: "Using Administrative Data for Research and Evidence-based Policy - A Handbook"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 site: bookdown::bookdown_site
