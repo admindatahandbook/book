@@ -1,5 +1,5 @@
 # Accessing state and province level data
 Introduction 
 
-Possible case studies: Texas, Ohio, Washington, Oregon, South Carolina, India: Tamil Nadu, Canada: Québec, Ontario
+Possible case studies: state-specific data center, state data delegated to university data intermediary, centralized access to state health data, joint provision of state or provincial data, and federal data.
 

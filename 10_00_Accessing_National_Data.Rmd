@@ -2,5 +2,3 @@
 Introduction 
 
 
-Possible case studies:  US (Census Bureau, IRS, NCHS), Canada (Statistics Canada), Germany (IAB), France (CASD), UK  (past and current efforts), possibly Australia, possibly Brazil, possibly Colombia.
-
