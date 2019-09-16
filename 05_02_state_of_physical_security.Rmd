@@ -1,5 +1,40 @@
 ## Physically Protecting Sensitive Data
 
+History of access mechanisms to admin data
+- US
+- France
+- Germany
+
+Overview of 5 safes framework
+- Focus on safe settings
+
+Physical Access Spectrum
+- Complexity/Cost vs. Security
+
+Types of data access (listing pros and cons of each)
+- Physical access only
+    - Research Data centers (researcher goes to RDC)
+	    - Different types of RDC setups (traditional, "embassy" model, etc)
+		- Cost of RDC
+		- Space and staffing requirements
+		- Pros (most secure form) and cons (most inconvenient for everyone, most expensive)
+		- Examples
+    - Remote execution (researcher submits code to agency)
+	    - same as above
+- Remote access
+    - Thin client (Secondary secure PC giving a view onto secure data environment, with manual DA)
+    - Remote desktop (Software on your own PC giving a view onto secure data environment, with manual DA)
+- Data transfer to researcher
+    - FTP, expiring links, cloud systems
+    - Physical transfer (encrypted USB, CD, etc)
+
+
+
+
+Questions
+What are you referring to with secure laptops, biometrics, cloud computing?
+
+
 The base for the chapter I'm proposing - on the physical 
 elements of a "safe environment" - is in this presentation: 
 https://github.com/larsvilhuber/BigThinkPresentations/tree/master/PhysicalProtections. 
@@ -11,31 +46,11 @@ not the highest level of tech background. Needs some translation into text,
 should be picture heavy. Presentation compiled two years ago, needs to be updated. 
 Other technological setups can be integrated into this. Describe various secure endpoint/server setups.
 
+We describe the current technology as used by various systems that provide access to 
+sensitive data (creating "Safe Settings"), and avenues for future access. We adress
 
-History of access mechanisms to admin data
-- US
-- France
-- Germany
-
-Overview of 5 safes framework
-- Focus on safe settings
-
-Physical Access Spectrum
-- Compelxity/Cost vs. Security
-
-Types for data access
-- Physical access only
+- Secure laptops
 - Remote access
-- Data transfer to researcher
-
-Physical access
-- Research Data centers (researcher goes to RDC)
-- Remote execution (researcher submits code to agency)
-
-Remote access
-- Thin client (Secondary secure PC giving a view onto secure data environment, with manual DA)
-- Remote desktop (Software on your own PC giving a view onto secure data environment, with manual DA)
-
-Data transfer
-- FTP, expiring links, cloud systems
-- Physical transfer (encrypted USB, CD, etc)
+- Cloud computing
+- Secure rooms
+- Biometrics
