@@ -1,8 +1,15 @@
 ## Physically Protecting Sensitive Data
 
-The base for the chapter I'm proposing - on the physical elements of a "safe environment" - is in this presentation: https://github.com/larsvilhuber/BigThinkPresentations/tree/master/PhysicalProtections. We would want to expand it a bit (maybe update it), but essentially a catalog (with maybe a multi-dimensional characteristics vector - complexity - cost - security).
+The base for the chapter I'm proposing - on the physical 
+elements of a "safe environment" - is in this presentation: 
+https://github.com/larsvilhuber/BigThinkPresentations/tree/master/PhysicalProtections. 
+We would want to expand it a bit (maybe update it), but essentially a catalog 
+(with maybe a multi-dimensional characteristics vector - complexity - cost - security).
 
-Presentation - aimed at management level people at statistical agencies, not the highest level of tech background. Needs some translation into text, should be picture heavy. Presentation compiled two years ago, needs to be updated. Other technological setups can be integrated into this. Describe various secure endpoint/server setups.
+Presentation - aimed at management level people at statistical agencies, 
+not the highest level of tech background. Needs some translation into text, 
+should be picture heavy. Presentation compiled two years ago, needs to be updated. 
+Other technological setups can be integrated into this. Describe various secure endpoint/server setups.
 
 
 History of access mechanisms to admin data
