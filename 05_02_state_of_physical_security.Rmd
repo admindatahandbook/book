@@ -13,20 +13,33 @@ Physical Access Spectrum
 
 Types of data access (listing pros and cons of each)
 - Physical access only
-    - Research Data centers (researcher goes to RDC)
+    - Research Data Centers (researcher goes to RDC)
 	    - Different types of RDC setups (traditional, "embassy" model, etc)
 		- Cost of RDC
 		- Space and staffing requirements
 		- Pros (most secure form) and cons (most inconvenient for everyone, most expensive)
 		- Examples
     - Remote execution (researcher submits code to agency)
-	    - same as above
+	    - Differences from RDC model (less space, still need staff and money)
+		- Synthetic data?
+		- Security and logistical issues (have to pass code and output back and forth)
+		- Examples
 - Remote access
     - Thin client (Secondary secure PC giving a view onto secure data environment, with manual DA)
+		- Technical description of thin clients
+		- Cost, staffing, logistics, security considerations
+		- Examples
     - Remote desktop (Software on your own PC giving a view onto secure data environment, with manual DA)
+		- Description of remote desktop
+		- Highlight differences from thin clients (less control by data provider over hardware)
+		- Cost, staffing, logistics, security considerations (e.g. endpoint security)
+		- Examples
 - Data transfer to researcher
-    - FTP, expiring links, cloud systems
-    - Physical transfer (encrypted USB, CD, etc)
+    - FTP, expiring links, cloud systems, physical transfer (encrypted USB, CD, etc)
+		- Data provider loses control over data
+		- Most convenient, least secure
+		- Cost, staffing, logistics, security considerations
+		- Examples (e.g. SFUSD)
 
 
 
