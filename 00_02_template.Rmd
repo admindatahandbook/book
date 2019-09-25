@@ -1,15 +1,29 @@
 ## Template
 
-> *Instructions:* This template aims to structure case study contributions to the handbook of administrative data ccess. 
+> *Instructions:* Case study chapters may be written by academic researchers or experts on the data provider side, or ideally teams of both. We are looking in particular for case studies that showcase one or more of the following:
+- Successful partnerships that are mutually beneficial, i.e. have led to innovative research projects while also answering pressing policy questions or helping the data provider understand their own data better;
+- A process of finding innovative, robust, and scalable solutions to technical, financial, legal, or ethical challenges which have led to sustainable access to administrative data that does not rely on just one research team or the personal championship of one individual in the partner organization;
+- Access to innovative types of administrative data or completely new data sources, including the creation of new datasets, describing the process of making this data useful for both the data provider and the research team (examples might be remote sensing data, linkage of previously disconnected datasets, digitization of historical sources, or the combination and harmonization of many similar datasets with different population coverage);
+- Administrative data used in conducting novel RCTs, standalone or linked with primary data collection.
+
+
+> This template aims to structure case study contributions to the handbook of administrative data access. 
 Case studies should describe the process of deciding about and ultimately providing researcher access to administrative data. This can include a description of options considered but not ultimately implemented. For solutions that were implemented, the authors should explain why this solution was best for the context at hand and what considerations informed the final decision. The case study author should also indicate in which areas they think they innovated or have particularly deep knowledge to share. Case study submissions can include tools/materials where appropriate.
 
-In creating this template, we have drawn in part on generic guidelines provided by @OECDEXPERTGROUPINTERNATIONAL2014 and @DesaiFiveSafesdesigning2016 . All sections in this template are optional, in the sense that there may not be a lot of content, or no content at all, when the topic is not relevant for a given scenario. However, if that is the case, we are interested in why the topic was not relevant, as that may itself be valuable information for others.
+> In creating this template, we have drawn in part on generic guidelines provided by @OECDEXPERTGROUPINTERNATIONAL2014 and @DesaiFiveSafesdesigning2016 . All sections in this template are optional, in the sense that there may not be a lot of content, or no content at all, when the topic is not relevant for a given scenario. However, if that is the case, we are interested in why the topic was not relevant, as that may itself be valuable information for others.
 
 ### Summary
-> *Instructions:* Describe the scenario that is covered by this case study. Introduce the authors, the data provider, data collectors, data curators, and interesting uses of the data. 
+> *Instructions:* Describe the scenario that is covered by this case study. Introduce the authors, the data provider, data content, data collectors, data curators, and interesting uses of the data. 
 
 ### Motivation
 > *Instructions:* What ultimately drove the decision to make this data available? What was the motivation of the data provider (business, non-profit, government) to provide access to data for research that otherwise would not be available? What are the outcomes that benefit the data provider? Do you need to capture or document a benefit to permit data access? What are the benefits to the broader public or the research community at large? Who is the intended audience? (also see [Outreach](outreach))
+
+### Data use examples
+> *Instructions:* Describe how the administrative data was used, for example
+- Experiments using the data, conducted in collaboration with the data provider or independently
+- Non-experimental research using the administrative data
+- Linkages of administrative data with other data sets or survey data
+- Use of the data for policy improvements
 
 
 ### Legal context
@@ -96,14 +110,5 @@ The "Five Safes framework" [@DesaiFiveSafesdesigning2016] provides structure to 
 
 > *Instructions:* How is  the success of the data access project evaluated? Number of people, number of datasets provided, number of papers, number of citations, number of mentions? Who is the audience for metrics - funders, data provider, legislature? Provide some sample statistics.
 
-### Data use examples
-
-#### Non-experimental research using the administrative data
-
-#### Experiments using the data, conducted in collaboration with the data provider or independently
-
-#### Linkages of administrative data with other data sets or survey data
-
-#### Use of the data for policy improvements
 
 
