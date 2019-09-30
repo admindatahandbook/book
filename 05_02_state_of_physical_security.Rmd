@@ -12,6 +12,28 @@ Physical Access Spectrum
 - Complexity/Cost vs. Security
 
 Types of data access (listing pros and cons of each)
+
+|                      | USA | France | Germany | Canada |
+|----------------------|-----|--------|---------|--------|
+| Physical enclave     | Yes | No     | Yes/ No | Yes    |
+| Data in same enclave | No  | --     | No      | Yes    |
+| Custom hardware      | No  | Yes    | No      | No     |
+
+Data Access Types
+| Control of:                 | Data access            | Analysis computers      | Access computers                     | Access rooms                         | Analysis methods                       |
+|-----------------------------|------------------------|-------------------------|--------------------------------------|--------------------------------------|----------------------------------------|
+| FSRDC researcher            | Full                   | Full                    | Full                                 | Full (badge access)                  | Some (choice of software)              |
+| Census employee             | Full                   | Full                    | None (VDI)                           | None (VDI)                           | Some (choice of software)              |
+| IAB: RDC researcher         | Full                   | Full                    | Full                                 | Full (trusted person)                | Some (choice of software)              |
+| IAB: JoSuA researcher       | Full                   | Full                    | None (Web application)               | None (Web application)               | Smaller (software, whitelist commands) |
+| IAB employee                | Full                   | Full                    | Full (IAB laptop)                    | None (VDI)                           | Some (choice of software)              |
+| CASD researcher             | Full                   | Full                    | Extra Full (custom-built hardware)   | Some (university office, EU)         | Some (choice of software)              |
+| Stat.Denmark (typical EU)   | Full                   | Full                    | None (VDI) - Some (host instutition) | None (VDI) - Some (host institution) | Some (choice of software)              |
+| RDC Canada                  | Some (demog. only)     | Some (host institution) | Some (host institution)              | Full (badge access)                  | Some (choice of software)              |
+| Stat.Canada (typical of HQ) | Full ( incl. business) | Full                    | Full                                 | Full                                 | Some (choice of software)              |
+| RDC Canada (thin client)    | planned                | planned                 | planned                              | planned                              | planned                                |
+
+
 - Physical access only
     - Research Data Centers (researcher goes to RDC)
 	    - Different types of RDC setups (traditional, "embassy" model, etc)
