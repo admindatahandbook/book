@@ -1,8 +1,4 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
+
 ## Physically Protecting Sensitive Data
 
 History of access mechanisms to admin data
@@ -23,6 +19,23 @@ Types of data access (listing pros and cons of each)
 | Physical enclave     | Yes | No     | Yes/ No | Yes    |
 | Data in same enclave | No  | --     | No      | Yes    |
 | Custom hardware      | No  | Yes    | No      | No     |
+
+
+|  Sequence   | Result                                                        |
+|-------------|---------------------------------------------------------------|
+| `a?c`       | Matches `abc`, `axc`, and `aac`. Does not match `ac`, `abbc`, | 
+|             | or `a/c`.                                                     |
+|-------------|---------------------------------------------------------------|
+| `a*c`       | Matches "ac", "abc" and "azzzzzzzc". Does not match "a/c".    |
+|-------------|---------------------------------------------------------------|
+| `foo...bar` | Matches "foobar", "fooxbar", and "fooz/blaz/rebar". Does not  |
+|             | match "fo/obar", "fobar" or "food/bark".                      |
+|-------------|---------------------------------------------------------------|
+| `....obj`   | Matches all files anywhere in the current hierarchy that end  |
+|             | in ".obj". Note that the first three periods are interpreted  |
+|             | as "...", and the fourth one is interpreted as a literal "."  |
+|             | character.                                                    |
+|-------------|---------------------------------------------------------------|
 
 Data Access Types
 | Control of: | Data access | Analysis computers | Access computers | Access rooms | Analysis methods |
