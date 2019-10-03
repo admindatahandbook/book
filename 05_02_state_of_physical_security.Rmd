@@ -38,6 +38,7 @@ Types of data access (listing pros and cons of each)
 |-------------|---------------------------------------------------------------|
 
 Data Access Types
+
 | Control of: | Data access | Analysis computers | Access computers | Access rooms | Analysis methods |
 |-----------------------|-------------|--------------------|------------------------------------|------------------------------|----------------------------------------|
 | FSRDC researcher | Full | Full | Full | Full (badge access) | Some (choice of software) |
