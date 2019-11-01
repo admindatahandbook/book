@@ -102,8 +102,6 @@ Physical Access Spectrum
 
 - https://www.census.gov/content/dam/Census/programs-surveys/sipp/methodology/Researcher_Handbook_20091119.pdf
 
-
-
 #### Notes
 
 What are you referring to with secure laptops, biometrics, cloud computing?
