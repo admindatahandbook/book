@@ -12,7 +12,7 @@ Overview of 5 safes framework
 Physical Access Spectrum
 - Complexity/Cost vs. Security
 
-Types of data access (listing pros and cons of each)
+#### Types of data access (listing pros and cons of each)
 
 |                      | USA | France | Germany | Canada |
 |----------------------|-----|--------|---------|--------|
@@ -20,10 +20,10 @@ Types of data access (listing pros and cons of each)
 | Data in same enclave | No  | --     | No      | Yes    |
 | Custom hardware      | No  | Yes    | No      | No     |
 
-Data Access Types
+#### Data Access Types
 
 | Control of: | Data access | Analysis computers | Access computers | Access rooms | Analysis methods |
-|-----------------------|-------------|--------------------|------------------------------------|------------------------------|----------------------------------------|
+|-------------|-------------|--------------------|------------------|--------------|------------------|
 | FSRDC researcher | Full | Full | Full | Full (badge access) | Some (choice of software) |
 | Census employee | Full | Full | None (VDI) | None (VDI) | Some (choice of software) |
 | IAB: RDC researcher | Full | Full | Full | Full (trusted person) | Some (choice of software) |
@@ -31,30 +31,44 @@ Data Access Types
 | IAB employee | Full | Full | Full (IAB laptop) | None (VDI) | Some (choice of software) |
 | CASD researcher | Full | Full | Extra Full (custom-built hardware) | Some (university office, EU) | Some (choice of software) |
 
+#### Remote Execution
+  - Researcher submits code to agency
+	- Research tests code on synthetic data data
+	- Costly for 
+	- Security and logistical issues (have to pass code and output back and forth)
+	- Examples
 
-- Physical access only
-    - Research Data Centers (researcher goes to RDC)
-	    - Different types of RDC setups (traditional, "embassy" model, etc)
-		- Cost of RDC
-		- Space and staffing requirements
-		- Pros (most secure form) and cons (most inconvenient for everyone, most expensive)
-		- Examples
-    - Remote execution (researcher submits code to agency)
-	    - Differences from RDC model (less space, still need staff and money)
-		- Synthetic data?
-		- Security and logistical issues (have to pass code and output back and forth)
-		- Examples
-- Remote access
-    - Thin client (Secondary secure PC giving a view onto secure data environment, with manual DA)
-		- Technical description of thin clients
-		- Cost, staffing, logistics, security considerations
-		- Examples
-    - Remote desktop (Software on your own PC giving a view onto secure data environment, with manual DA)
-		- Description of remote desktop
-		- Highlight differences from thin clients (less control by data provider over hardware)
-		- Cost, staffing, logistics, security considerations (e.g. endpoint security)
-		- Examples
-- Data transfer to researcher
+
+#### Physical Data Enclave
+  - Research Data Centers (researcher goes to RDC)
+    - Researcher travels to RDC or enclave
+    - Data enclave examples
+      - FSRDC at universities
+      - NORC at Chicago
+      - New model - Safepod
+	- Cost of RDC
+	  - NSF grant for \$100,000 to \$300,000 in startup costs (https://www.nsf.gov/pubs/2015/nsf15586/nsf15586.htm)
+	  - NIH estimates "millions" (https://grants.nih.gov/grants/guide/notice-files/NOT-OD-19-085.html)
+	  - FSRDCs are led by a director and have dedicated administrative staff
+	- Safepod
+	  -  £25,000 to build one https://thetab.com/uk/stand/2015/03/31/mysterious-library-safepods-13641
+	- Space and staffing requirements
+	- Pros (most secure form) and cons (most inconvenient for everyone, most expensive)
+
+
+#### Virtual data Enclave
+  - Thin client
+    - Secondary secure PC giving a view onto a secure data environment
+    - Expense of giving hardware to researcher
+    - Easier and more flexible for researcher than physical access, but more security risks
+    - Examples? - SFUSD gave a laptop to Lindsay Fox for a project, College Board does this as well
+	- Remote desktop
+	  - Software downloaded onto researcher PC giving access to secure data environment
+	  - Relies on researcher to have hardware
+	  - More endpoint security considerations
+	  - Examples?
+
+#### Data transfer to researcher
     - FTP, expiring links, cloud systems, physical transfer (encrypted USB, CD, etc)
 		- Data provider loses control over data
 		- Most convenient, least secure
@@ -62,9 +76,36 @@ Data Access Types
 		- Examples (e.g. SFUSD)
 
 
+#### References
+
+- https://www.nsf.gov/pubs/2015/nsf15586/nsf15586.htm
+
+- https://esrc.ukri.org/files/funding/funding-opportunities/safepod-brochure/
+
+- Walter Wilcox (1914) cited in Anderson, Margo J., and Seltzer, William. “Federal Statistical Confidentiality and Business Data: Twentieth Century Challenges and Continuing Issues’.” Journal of Privacy and Confidentiality 1.1 (2009): 7-52, 55-58.
+
+- Kohlmann, Annette (2005): “The Research Data Centre of the Federal Employment Service in the Institute for Employment Research.” In: Schmollers Jahrbuch 125, 437-447
+
+- Allmendinger, Jutta and Kohlmann, Annette (2005) “Datenverfügbarkeit und Datenzugang am Forschungsdatenzentrum der Bundesagentur für Arbeit im Institut für Arbeitsmarkt- und Berufsforschung”. In: Allgemeines Statistisches Archiv 89, S. 159-182
+
+- Heining, Jörg (2010): “The Research Data Centre of the German Federal Employment Agency: data supply and demand between 2004 and 2009.” In: Zeitschrift für ArbeitsmarktForschung, Jg. 42, H. 4, S. 337-350. http://www.iab.de/389/section.aspx/Publikation/k100128n09 
+
+- Kargus, Andrea; Müller, Anne (2014): “Auch in Nürnberg möglich: Von der zweiten Liga in die Champions League - ein Gespräch mit Stefan Bender.” In: IAB-Forum, Nr. 2, S. 38-45. http://www.iab.de/188/section.aspx/Publikation/k141201301 
+
+- Kraus, Rebecca S. (2011): “Statistical Déjà Vu: The National Data Center Proposal of 1965 and Its Descendants.” Presentation at JSM 2011. https://www.census.gov/history/pdf/kraus-natdatacenter.pdf 
+
+- Lane J, Schur C. (2010). [Balancing Access to Health Data and Privacy: A Review of the Issues and Approaches for the Future](https://doi.org/10.1111/j.1475-6773.2010.01141.x). Health Services Research, 45(5 Pt 2), 1456–1467. doi.org/10.1111/j.1475-6773.2010.01141.x
+
+- Lane J, Shipp S. (2007). [Using a Remote Access Data Enclave for Data Dissemination](https://doi.org/10.2218/ijdc.v2i1.20). International Journal of Digital Curation, 2(1), 128–134. doi.org/10.2218/ijdc.v2i1.20
+
+- Mathur A, Bleckman JD, & Lyle J. (2017). [Reuse of Restricted-Use Research Data](http://hdl.handle.net/2027.42/135734). In Lisa Johnston (Ed.), Curating Research Data, Volume Two: A Handbook of Current Practice. (pp. 258–261). Chicago: Association of College and Research Libraries. hdl.handle.net/2027.42/135734
+
+- https://www.census.gov/content/dam/Census/programs-surveys/sipp/methodology/Researcher_Handbook_20091119.pdf
 
 
-Questions
+
+#### Notes
+
 What are you referring to with secure laptops, biometrics, cloud computing?
 
 
