@@ -12,7 +12,7 @@ Overview of 5 safes framework
 Physical Access Spectrum
 - Complexity/Cost vs. Security
 
-#### Types of data access (listing pros and cons of each)
+### Types of data access (listing pros and cons of each)
 
 |                      | USA | France | Germany | Canada |
 |----------------------|-----|--------|---------|--------|
@@ -20,7 +20,7 @@ Physical Access Spectrum
 | Data in same enclave | No  | --     | No      | Yes    |
 | Custom hardware      | No  | Yes    | No      | No     |
 
-#### Data Access Types
+### Data Access Types
 
 | Control of: | Data access | Analysis computers | Access computers | Access rooms | Analysis methods |
 |-------------|-------------|--------------------|------------------|--------------|------------------|
@@ -31,7 +31,7 @@ Physical Access Spectrum
 | IAB employee | Full | Full | Full (IAB laptop) | None (VDI) | Some (choice of software) |
 | CASD researcher | Full | Full | Extra Full (custom-built hardware) | Some (university office, EU) | Some (choice of software) |
 
-#### Remote Execution
+### Remote Execution
   - Researcher submits code to agency
 	- Research tests code on synthetic data data
 	- Costly for 
@@ -39,7 +39,7 @@ Physical Access Spectrum
 	- Examples
 
 
-#### Physical Data Enclave
+### Physical Data Enclave
   - Research Data Centers (researcher goes to RDC)
     - Researcher travels to RDC or enclave
     - Data enclave examples
@@ -56,7 +56,7 @@ Physical Access Spectrum
 	- Pros (most secure form) and cons (most inconvenient for everyone, most expensive)
 
 
-#### Virtual data Enclave
+### Virtual data Enclave
   - Thin client
     - Secondary secure PC giving a view onto a secure data environment
     - Expense of giving hardware to researcher
@@ -68,7 +68,7 @@ Physical Access Spectrum
 	  - More endpoint security considerations
 	  - Examples?
 
-#### Data transfer to researcher
+### Data transfer to researcher
     - FTP, expiring links, cloud systems, physical transfer (encrypted USB, CD, etc)
 		- Data provider loses control over data
 		- Most convenient, least secure
@@ -76,7 +76,7 @@ Physical Access Spectrum
 		- Examples (e.g. SFUSD)
 
 
-#### References
+### References
 
 - https://www.nsf.gov/pubs/2015/nsf15586/nsf15586.htm
 
@@ -102,7 +102,7 @@ Physical Access Spectrum
 
 - https://www.census.gov/content/dam/Census/programs-surveys/sipp/methodology/Researcher_Handbook_20091119.pdf
 
-#### Notes
+### Notes
 
 What are you referring to with secure laptops, biometrics, cloud computing?
 
