@@ -1,4 +1,3 @@
-
 ## Physically Protecting Sensitive Data
 
 Physical Access Spectrum
@@ -22,6 +21,10 @@ Physical Access Spectrum
 | IAB: JoSuA researcher | Full | Full | None (Web application) | None (Web application) | Smaller (software, whitelist commands) |
 | IAB employee | Full | Full | Full (IAB laptop) | None (VDI) | Some (choice of software) |
 | CASD researcher | Full | Full | Extra Full (custom-built hardware) | Some (university office, EU) | Some (choice of software) |
+
+#### Data Access Mechansisms database
+
+https://docs.google.com/spreadsheets/d/1ma-QEnzjr78BJ-7B87Q70ZIWK5mxrBn9H5gR2mh0h_Y/edit?usp=sharing
 
 #### Remote Execution
 - Technical overview
@@ -86,9 +89,9 @@ Physical Access Spectrum
     - thin clients ???
     - Virtual desktops???
 - Examples
-  - College Board?
-  - SFUSD laptop to Lindsay Fox?
-  - ???
+  - College Board - Lily Fesler?
+  - SFUSD laptop - Lindsay Fox?
+  - Statistics Denmark - log into virtual machine to access data on central server
 
 #### Data transfer to researcher
 
@@ -100,7 +103,7 @@ Physical Access Spectrum
   - Pros: highly flexible for researcher, hypothetically minimizes costs for data provider
   - Cons: maximizes liability and risk for both researcher and data provider
 - Requirements
-  - Equipment/Space
+  - Space and Equipment
     - Data transfer mechanism (FTP, cloud system, expiring links, encrypted device)
     - Data storage for researcher (cloud, local server, data room)
   - Staff
@@ -110,7 +113,10 @@ Physical Access Spectrum
     - highly variable depending on the setup
 - Examples
   - SFUSD warehouse
-  - NCES secure data room model
+  - NCES Restricted Use Data License
+  - California Office of Statewide Health Planning & Development (OSHPD)
+  - CARES Data
+  - Charolotte-Mecklenburg Public Schools
 
 
 
