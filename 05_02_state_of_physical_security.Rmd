@@ -43,7 +43,8 @@ https://docs.google.com/spreadsheets/d/1ma-QEnzjr78BJ-7B87Q70ZIWK5mxrBn9H5gR2mh0
   - Cost
     - Staff time = ???
 - Examples
-	  - ???
+	  - CDC RDC (sort of, they create an analysis file for you but execution of analysis is done by researcher at RDC https://www.cdc.gov/rdc/leftbrch/Presubmit.htm)
+	  - Statistics Canada https://data.library.ubc.ca/gen/Synthetic.html
 
 
 #### Physical Data Enclave
@@ -116,9 +117,11 @@ https://docs.google.com/spreadsheets/d/1ma-QEnzjr78BJ-7B87Q70ZIWK5mxrBn9H5gR2mh0
   - NCES Restricted Use Data License
   - California Office of Statewide Health Planning & Development (OSHPD)
   - CARES Data
-  - Charlotte-Mecklenburg Schools
+  - Charlotte-Mecklenburg Public Schools
 
+Tech stuff
 
+Batch submissions
 
 #### Notes
 
@@ -135,6 +138,8 @@ Presentation - aimed at management level people at statistical agencies,
 not the highest level of tech background. Needs some translation into text, 
 should be picture heavy. Presentation compiled two years ago, needs to be updated. 
 Other technological setups can be integrated into this. Describe various secure endpoint/server setups.
+
+We should also consider the network architecture as one component of the technical infrastructure. Can range from sneaker net (sending encrypted CDs), public internet with secure connection (Windows RDP), software-based VPN, hardware-based VPN, dedicated network hardware (routers, etc.), dedicated secure networks (at a local level: this might mean a secure server room and a on-premise secure lab, but might also mean: a nation-wide secure government data network). One example for the latter (national secure data network) is the Canadian CANARIE network.https://www.canarie.ca/network/
 
 We describe the current technology as used by various systems that provide access to 
 sensitive data (creating "Safe Settings"), and avenues for future access. We adress
