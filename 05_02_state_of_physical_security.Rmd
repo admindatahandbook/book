@@ -26,7 +26,7 @@ Physical Access Spectrum
 
 https://docs.google.com/spreadsheets/d/1ma-QEnzjr78BJ-7B87Q70ZIWK5mxrBn9H5gR2mh0h_Y/edit?usp=sharing
 
-### First Draft of Text
+### Overview of Data Access Mechanisms
 
 To facilitate the use of data in the policy lifecycle, governments can partner with researchers to generate key policy findings by conducting randomized evaluations like those highlighted in the previous section. One of the ways to make these evaluations require less time and money is for the government to provide researchers with administrative data, such as tax data or health facilities records, through a data exchange mechanism. Better data enables better research, which in turn generates useful information to inform policy making. However, data providers and researchers need to take additional steps beyond setting up data exchange mechanisms in order to ensure the ethical and effective of administrative data in research to generate insights for specific policy issues and the dissemination of those findings.
 
@@ -198,15 +198,24 @@ Large scale implementations of the data transfer model for sensitive, individual
   - CARES Data
   - Charlotte-Mecklenburg Public Schools
 
-#### Tech stuff
+### Data Classification
+
+In addition to thinking about data classification and sensitivity based on data source, ownership, and use, one framework in common usage particularly among US research institutions (some of the many examples include MIT, Harvard, Stanford, and Brown) is to classify data based on the risks to individuals and institutions in the event of a data breach. A major difference between research institutions and government entities is that government entities typically own their own data, which eliminates an additional element of risk that comes with research institutions holding onto data that does not belong to them. However, other risks to the government, its finances and reputation, and the security of subjects contained within the data and the integrity of data systems all still apply. The use of administrative data for research beyond the original purpose for which it was collected, even if the subjects were informed and consented to this use, represents one notable risk and liability that governments and researchers must account for when thinking about data classification.'
+
+A common theme in these risk classification systems is the distinction between low, moderate, and high-risk data with varying levels of granularity of distinction between categories. Low risk data typically encompasses information intended to be publicly available, is anonymous, and poses no risk to the security of other data systems, finances, etc. Moderate risk data typically comprises data that is meant to remain confidential but otherwise would not pose more than a mild risk to other data security, reputation, finances, or subjects within the data. High risk data encompasses confidential data protected by law or otherwise would cause reputational damage, harm (including life safety) to subjects within the data, compromise other data systems, or other types of material harm.
+
+Properly used, data risk classification systems serve as a framework to risks associated with the storage and exchange of different types of data and how to balance the security requirements to minimize the potential harm of disclosure while still being able to utilize the data in the policy life cycle. Protecting data at the appropriate level can help minimizes costs by not spend extraneous resources on low risk data and increase security by redirecting limited resources to safeguarding higher risk data.
+
+
+### Tech stuff
 
 TBD
 
-#### Batch submissions
+### Batch submissions
 
 TBD
 
-#### Notes
+### Notes
 
 What are you referring to with secure laptops, biometrics, cloud computing?
 
