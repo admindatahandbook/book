@@ -31,3 +31,13 @@ deploy:
     target-branch: gh-pages
     on:
       branch: master
+  - provider: pages
+    local_dir: _book/
+    skip-cleanup: true
+    github-token: $GH_TOKEN_DEV
+    keep-history: true
+    target-branch: gh-pages
+    repo:  labordynamicsinstitute/idea-handbook-7a434a70-04c1-4400-883b-db0e5f1fa653 
+    on:
+      all_branches: true
+      condition: $TRAVIS_BRANCH != master
