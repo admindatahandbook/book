@@ -9,17 +9,34 @@
 
 ### Five Metrics of Physical Security
 #### Data Location
+
+At data provider, at researcher, at third party
+Third-party: At researcher institution (secure data service), At third-party institution 
+
 #### Analysis Computers
+
+at data location, by researcher: Full or partial (partial means a limited set of programming languages or other)
+
 #### Access Computers
+
+At data provider, at researcher, at third party 
+
 #### Access Rooms
+
+Open: no security, access from anywhere
+Low security: defined but otherwise open location (IP control)
+Medium security: controlled access to room (controlled by third party, controlled by data provider)
+High security: strong specification of security (safe walls, video monitoring, limited access)
+
 #### Analysis Methods
+
+Any method (subject to software availability), or limited analysis (tabulation, but limited language set - reduced/whitelisted SAS or Stata)
 
 ### Technical features, infrastructure, implementations
 #### Thin Clients
 #### Biometrics
 #### Secure Rooms
-#### etc?
-
+#### Etc
 
 ### Examples from the handbook along the five metrics
 #### SFUSD-Stanford
