@@ -1,6 +1,273 @@
 ## Physically Protecting Sensitive Data
 
-We describe the current technology as used by various systems that provide access to sensitive data (creating "Safe Settings"), and avenues for future access. We adress
+Physical Access Spectrum
+- Complexity/Cost vs. Security
+
+### Types of data access (listing pros and cons of each)
+
+|                      | USA | France | Germany | Canada |
+|----------------------|-----|--------|---------|--------|
+| Physical enclave     | Yes | No     | Yes/ No | Yes    |
+| Data in same enclave | No  | --     | No      | Yes    |
+| Custom hardware      | No  | Yes    | No      | No     |
+
+### Data Access Types
+
+| Control of: | Data access | Analysis computers | Access computers | Access rooms | Analysis methods |
+|-------------|-------------|--------------------|------------------|--------------|------------------|
+| FSRDC researcher | Full | Full | Full | Full (badge access) | Some (choice of software) |
+| Census employee | Full | Full | None (VDI) | None (VDI) | Some (choice of software) |
+| IAB: RDC researcher | Full | Full | Full | Full (trusted person) | Some (choice of software) |
+| IAB: JoSuA researcher | Full | Full | None (Web application) | None (Web application) | Smaller (software, whitelist commands) |
+| IAB employee | Full | Full | Full (IAB laptop) | None (VDI) | Some (choice of software) |
+| CASD researcher | Full | Full | Extra Full (custom-built hardware) | Some (university office, EU) | Some (choice of software) |
+
+### Data Access Mechansisms database
+
+https://docs.google.com/spreadsheets/d/1ma-QEnzjr78BJ-7B87Q70ZIWK5mxrBn9H5gR2mh0h_Y/edit?usp=sharing
+
+### Overview of Data Access Mechanisms
+
+To facilitate the use of data in the policy lifecycle, governments can partner with researchers to generate key policy findings by conducting randomized evaluations like those highlighted in the previous section. One of the ways to make these evaluations require less time and money is for the government to provide researchers with administrative data, such as tax data or health facilities records, through a data exchange mechanism. Better data enables better research, which in turn generates useful information to inform policy making. However, data providers and researchers need to take additional steps beyond setting up data exchange mechanisms in order to ensure the ethical and effective of administrative data in research to generate insights for specific policy issues and the dissemination of those findings.
+
+> [NOTE] the section above belongs in the intro chapter, not the technical chapter.
+
+On the technical side, one of the main trade-offs involved in selecting data exchange mechanisms is between ease of access and use, versus maintaining control of and protecting citizens’ data. This tradeoff can be roughly categorized into four main access types, with varying levels of cost and complexity associated with each type of access mechanism.
+
+> [NOTE] going through this, we need to distinguish where the researcher sits, and where the data and computation is located. The two interact in various ways. That was one or two of the slides in my presentation. 
+
+#### Remote Execution
+
+Remote execution is the most restrictive access mechanism for data exchange, suitable for the most sensitive types of data, such as personal health data. Data is stored remotely in a location such that a researcher does not have direct access to the data. In this scenario, a researcher needs to submit a request to the data provider to extract the appropriate analysis files, or have the data provider run the analysis on behalf of the researcher and share only the summary output.
+
+> [NOTE] This will need some cleaning up. "Extraction" is actually transfer to the researcher (so it depends on where the processing is). Some providers use remote execution in the form of custom table builders for the *least* sensitive data. On the other hand, some (IAB) use remote execution in combination with an online development environment with less sensitive data to provide access. Every cloud access is remote execution. 
+
+##### Requirements
+
+Remote execution requires that a data provider maintain dedicated staff with the technical expertise to interface with researcher, run the researchers’ code, and check the output for data anonymity before sending it back to the researchers.
+
+> Remote execution does not necessarily involve a person executing the researchers' code. In the IAB system, remote execution is automatic, but release of results is not. Some remote execution environments provide automated disclosure tools.
+
+The data provider also needs to create and maintain the systems to facilitate the transfer of the necessary files (researchers need to receive the synthetic data, submit analysis files, and receive the output) as well as to allow the data provider to run the necessary analysis on behalf of the researcher.
+
+A key requirement for such a system is the provision of accurate codebooks and documentation from data providers to researchers such that they can prepare the appropriate data request and analysis files for the data provider. While important for all data exchanges, this is especially important for remote execution since researchers cannot personally examine the data. One common method is for the data provider to give researchers synthetic data files that have the same variables and table structures as the real data, but have fictitious values for the variables.
+
+##### Benefits and Tradeoffs
+
+By maintaining full control of the data as well as having the opportunity to check the researchers’ request and check the output before handing it back to the researcher, remote execution gives the data provider the highest level of data security. The primary tradeoff is the additional resources required on the part of the data provider to perform these tasks and the additional time it will take for a government to receive relevant results from their research partner.
+
+##### Examples
+
+One example of a national statistical agency that uses remote a remote execution model is Statistics Canada,  which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German Institute for Employment Research has a remote execution portal where researchers can test their code on synthetic data and upload their code for execution, and only access approved results when their job is complete.  
+
+> [NOTE] Actually, the online interface (JoSuA) is on real data.
+
+A variant on the remote execution model is the United States National Center for Health Statistics Research Data Centers,  which requires researchers to first submit their analysis code for manual approval before arriving at the research data center itself to run the analysis.
+
+- Technical overview
+  - Data is stored remotely, researcher never has direct access to data
+  - Researcher gets synthetic data and codebook to write analysis code
+  - Researcher submits analysis code to data provider which vets and runs the code (this may require back and forth)
+  - Data provider sends output back to researcher
+  - Pros: most secure for data, researcher never sees data
+  - Cons: requires dedicated staff to run analysis code, time consuming for researcher, expensive in staff time for agency
+- Requirements
+  - Space and Equipment
+    - Possible that no extra dedicated space and equipment beyond what data provider already has for its own work
+    - Requires some means for transfering synthetic data, analysis code, and outputs
+  - Staff
+    - Requires staff at agency to do the remote execution, needs to have technical expertise to run the code and work with researcher
+  - Cost
+    - Staff time = ???
+- Examples
+	  - CDC RDC (sort of, they create an analysis file for you but execution of analysis is done by researcher at RDC https://www.cdc.gov/rdc/leftbrch/Presubmit.htm)
+	  - Statistics Canada https://data.library.ubc.ca/gen/Synthetic.html
+
+
+#### Physical Data Enclave
+
+The next restrictive level of data access is the maintenance of a physical data enclave which stores the data. Researchers must physically enter the data enclave to access the data and run their analysis code. The data provider can choose to store the data either on site at the data enclave itself, or store the data on a remote server that can only be accessed by specifically configured computers located within the data enclave. In either case researchers only have access to the data in a secure and physically controlled environment.
+
+##### Requirements
+
+To run a physical data enclave, a data provider needs to have an access-controlled space for researchers to work in with the requisite servers, computers, and software packages. The data provider must also have staff or automated systems to ensure that researchers are not running proscribed analyses and checking the outputs before being removed from the physical data enclave.
+
+##### Benefits and Tradeoffs
+
+The data provider gets most of the security benefits of remote execution by maintaining full control over the data in the entire research process. It removes the potential bottleneck and additional expense of requiring dedicated staff on the part of the data provider to actually run the analysis on behalf of the researcher. The ability of researchers to personally examine the data in controlled settings enables them to potentially work with data providers on improving data quality in such a setting.
+
+However, physical data enclaves still impose restrictions on the flexibility of researchers and the speed at which governments can receive research findings; instead of waiting for someone to run the remote execution for them, researchers have to schedule visits to a physical location. It also requires the data provider to provide the physical and technical infrastructure for researchers to conduct their research in a secure location.
+
+##### Examples
+
+Different models of physical data enclaves exist. The traditional model in the United States is the Federal Statistical Research Data Center (FSRDC) network, where federal statistical agencies partner with research institutions to provide secure data access facilities managed by the US Census Bureau. Research institutions maintain the data enclave itself and the client computers within the data enclaves, which are connected to servers maintained by statistical agencies. Researchers must be approved by the Census Bureau and pass background checks before gaining access to the facility and data, and the output is subject to disclosure-avoidance review by FSRDC staff. FSRDC type facilities represent the highest level of security for protecting sensitive data, but are also more expensive than other methods which rely more on trust and less on physical security. Initial startup costs could reach hundreds of thousands  to millions  of dollars, and ongoing operating costs, while much lower, must cover full time staff and maintenance on the equipment.
+
+An innovation on the physical data enclave is the SafePod network in the United Kingdom, which scales down a full-scale research data center. The SafePod has much lower installation costs than a full data center, around £25,000.  It is a standardized, prefabricated unit that can be placed in any partner institution, and the pod itself serves as the physically controlled space.  Like a FSRDC, a SafePod facilitates researcher access to data stored on statistical agency servers; in this case, with access to the data approved by the actual data providers while the partner institution handles local support and physical access controls. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation in physical data enclaves that makes this highest level of data security less costly.
+
+- Technical Overview
+  - Data can be stored either on site or remotely on a server with access through clients
+  - Researcher travels to physical enclave to have controlled access to data
+  - Researcher can only remove output from physical enclave
+  - Pros: researchers have access to data in controlled environment
+  - Cons: researchers have to travel, high resource requirements
+- Requirements
+  - Space and Equipment
+    - Access controlled room
+    - Client computers and servers
+    - Software
+  - Staff
+    - FSRDCs are led by a director and have several dedicated administrative staff
+    - Safepod model would need remote technical support
+  - Cost
+    - NSF grant for \$100,000 to \$300,000 in startup costs (https://www.nsf.gov/pubs/2015/nsf15586/nsf15586.htm), three grants all awarded \$300,000
+    - NIH estimates "millions" (https://grants.nih.gov/grants/guide/notice-files/NOT-OD-19-085.html)
+    - £25,000 to build a safepod https://thetab.com/uk/stand/2015/03/31/mysterious-library-safepods-13641
+- Data enclave examples
+  - FSRDC at universities
+  - NORC at Chicago
+  - Safepod (new model)
+
+
+#### Virtual Data Enclave
+
+A virtual data enclave is conceptually similar to physical data enclaves, except there is no physically controlled space that the researcher must visit in order to access the data. Rather, researchers utilize different technical means to remotely access servers that store data and perform their analysis do the analysis on the remote server. Software access controls perform automated scans of the output and prevent the researcher from removing data from the remote server.
+
+##### Requirements
+
+Data providers using a virtual data enclave model maintain the servers that house the data and enable researchers to run their analysis, the connections with the thin clients and the remote desktops used to connect with the server. A virtual data enclave includes trained staff, who help process data and assist researchers. There are two basic approaches to the remote access mechanism: either using remote desktop software that the researcher can install on their own computer, or a dedicated computer (referred to as thin clients) that the data provider loans the researcher to connect to the server. To address physical security concerns, data providers can impose storage and safety requirements on researchers as part of the agreement that allows them access to the virtual data enclave or have dedicated staff conduct periodic audits.
+
+##### Benefits and Tradeoffs
+
+The virtual data enclave model has a major advantage for researchers in that they no longer have to travel to specific facilities to perform their research. Furthermore, instead of the cost of maintaining an entire physical data enclave and the associated staff at each enclave, the data provider only needs to provide researchers with the necessary thin clients or remote desktop systems and can centralize their data staff.
+
+The primary tradeoff is the slightly lower level of data security when the researcher accesses the data, as the data provider relies on only software level controls without the ability to physically check the researcher and their output as in a physical data enclave. However, with the proper implementation this level of security is still quite robust and less costly.
+
+##### Examples
+
+Statistics Denmark is one major statistical agency that uses a virtual data enclave model for access to their data.  Researchers approved by Statistics Denmark can utilize specific client software for remote access to servers that house research data and perform their analysis through the client software. Researchers must sign agreements with Statistics Denmark with specific requirements to protect the physical security of the terminal that they use to access the server, consent to having their transactions on the server logged to prevent unauthorized copying of data, and ensure that they do not identify individual persons or enterprises in their output.
+
+- Technical Overview
+  - Data is stored on a server with remote access available to researchers.
+  - Remote access can be through either a physical thin client or through a remote desktop
+  - Thin client or virtual desktop configured to only allow researcher to remove output from remote server
+  - Pros: researcher does not need to travel to physical data enclave, enabling faster research
+  - Cons: cost of providing thin client, endpoint securit requirements with remote desktop, physical security of researcher location
+- Requirements
+  - Space and Equipment
+    - Central server to house data
+    - Thin client or virtual desktop software cost
+  - Staff
+    - Need staff to audit the researcher to ensure they are complying with requirements when working remotely
+  - Cost
+    - staff time???
+    - thin clients ???
+    - Virtual desktops???
+- Examples
+  - College Board - Lily Fesler?
+  - SFUSD laptop - Lindsay Fox?
+  - Statistics Denmark - log into virtual machine to access data on central server
+
+#### Data Transfer to Researcher
+
+> This section should be framed as "researcher-provided compute infrastructure". The presence of such infrastructure is what allows the transfer to take place. The emphasis needs to be on the technical side of this issue. Note that there are various ways data can be housed by the researcher - the enclave computer, the safe computer, the arbitrary computer. 
+
+Transferring data directly to researchers represents a fundamentally different strategy than the other data access methods. Rather than handle the data directly themselves, the data provider establishes a trusted relationship with the researcher, often over the course of a long-term partnership that may include many collaborations. This allows the data provider to feel secure in transferring data to the researcher. In contrast to physical or virtual data enclaves, in the data transfer model the researchers take on the responsibility for storing, and possibly for cleaning and processing, the data before analysis can take place.
+
+##### Requirements
+
+There are technical and non-technical requirements for this type of data access. On the technical side, data providers must ensure that they properly remove variables containing personally identifying information from data that they transfer to researchers in order to protect the privacy of study participants. In the instance that researchers have access to potentially identifiable data, the data provider must take care to ensure that the results produced for publication do not contain personally identifiable information. The data provider and researcher must have the technical means to securely transfer the data. Many such tools exist, including commercial enterprise level cloud services such as Google Drive, Box, and Dropbox that can be configured for secure data storage and transfer.
+
+> The trust part is important, but needs to refer to other chapters. It is true for *all* access modes. 
+
+The non-technical requirement is equally important because this type of collaboration is based on a high level of trust, mutual understanding, and alignment of goals between the data provider and the researcher. A strong working relationship between data provider and researcher is key, especially when the data and outputs are fully in the hands of the researchers and not the data providers. The use of contracts and data use agreements between data providers and researchers that formalizes the relationship and sets the specific requirements and expectations of the researchers’ handling of the data and outputs is a key mechanism for data providers to ensure the safety of the data (see Chapter by Amy O'Hara).
+
+##### Benefits and Tradeoffs
+
+When sufficient trust exists for transferring data to researchers, this process allows researchers significantly more flexibility and rapid turnarounds on research findings of importance to their government partners. Allowing researchers to store the data on their own devices also reduces the burden on data providers, who only have to provide the data itself and the staff necessary to transfer it to the researchers. In instances where researchers can work very closely with the data providers’ technical staff with direct access to their data, they can also help the government learn more about their data and improve processes and systems at the government.
+
+> Note on the above: it is not *necessarily* less work, since some providers (e.g. NCES) conduct random site inspections, which also carry a cost. In some cases, the agreement specifies that output checking be conducted by the data provider, despite the researcher having full physical access to the data.
+
+The tradeoff is the potential loss of security for the data provider. 
+
+> This is true for the entire chapter.
+
+This is best judged on a case by case basis depending on the sensitivity of the data in question, the level of trust between the researcher and government, and the presence of legal or regulatory requirements on how to handle the data. While there are many examples of successful partnerships where researchers receive sensitive data (up to and including individually identified data) from government partners, in some cases the data provider might determine that the data is sufficiently sensitive to avoid using this model.
+
+##### Examples
+
+Many research projects and data providers utilize data transfers to researchers, particularly among smaller scale data providers for whom a more expensive data enclave model is less feasible. For example, San Francisco Unified School District has a long-standing partnership with Stanford University, where a research center at Stanford acts as a data warehouse for individual-level administrative data on behalf of the district.  The district approves researchers and projects to have access to the data, while the warehouse performs data cleaning, anonymization, and transfers to the researcher. This example shows how this process is based on the success of key 
+
+> I would not classify this as a researcher-provided infrastructure. Rather, this implies a trusted intermediary (a term used in the literature) to provide access to the data, rather than providing it directly to the researcher. This seems more related to the virtual enclave (Cornell CRADC, NORC, ICPSR), except potentially with physical presence.
+
+Large scale implementations of the data transfer model for sensitive, individual-level data also exist. The U.S. National Center for Education Statistics maintains a restricted-use data license model that requires researchers to set up their own version of a physical enclave, at their home location, as a requirement for becoming a license holder.  The researcher must maintain an access-controlled secure data room with specific physical and electronic protection requirements and must undergo random NCES audits to ensure compliance with these procedures. The data is transferred to the researcher via encrypted disks with the passwords sent separately, such that the data is protected in transit and only the researcher with both the data disk and password can access the data. Combining the efficiency of data transfer with the increase security of physical and electronic protection shows how data access can be tailored for individual circumstances based on sensitivity and cost needs.
+
+- Technical Overview
+  - Some mechanism of transferring the data to researcher for storage
+  - Range of requirements from asking researcher to set up own secure data room e.g. mini-RDC to letting researchers store it locally on their own work computers
+  - Requires high amount of trust between researcher and data provider
+  - Possibly send data to third party for remote cleaning/matching
+  - Pros: highly flexible for researcher, hypothetically minimizes costs for data provider
+  - Cons: maximizes liability and risk for both researcher and data provider
+- Requirements
+  - Space and Equipment
+    - Data transfer mechanism (FTP, cloud system, expiring links, encrypted device)
+    - Data storage for researcher (cloud, local server, data room)
+  - Staff
+    - Staff at data provider need to extract data and provide to researcher
+    - Someone needs to do data cleaning and matching, either at researcher, data provider, or third party
+  - Cost
+    - highly variable depending on the setup
+- Examples
+  - SFUSD warehouse
+  - NCES Restricted Use Data License
+  - California Office of Statewide Health Planning & Development (OSHPD)
+  - CARES Data
+  - Charlotte-Mecklenburg Public Schools
+
+### Data Classification
+
+> This section is good, but does not belong here. Should probably be moved to the Intro. It affects every aspect, not just the physical infrastructure. 
+
+In addition to thinking about data classification and sensitivity based on data source, ownership, and use, one framework in common usage particularly among US research institutions (some of the many examples include MIT, Harvard, Stanford, and Brown) is to classify data based on the risks to individuals and institutions in the event of a data breach. A major difference between research institutions and government entities is that government entities typically own their own data, which eliminates an additional element of risk that comes with research institutions holding onto data that does not belong to them. However, other risks to the government, its finances and reputation, and the security of subjects contained within the data and the integrity of data systems all still apply. The use of administrative data for research beyond the original purpose for which it was collected, even if the subjects were informed and consented to this use, represents one notable risk and liability that governments and researchers must account for when thinking about data classification.'
+
+A common theme in these risk classification systems is the distinction between low, moderate, and high-risk data with varying levels of granularity of distinction between categories. Low risk data typically encompasses information intended to be publicly available, is anonymous, and poses no risk to the security of other data systems, finances, etc. Moderate risk data typically comprises data that is meant to remain confidential but otherwise would not pose more than a mild risk to other data security, reputation, finances, or subjects within the data. High risk data encompasses confidential data protected by law or otherwise would cause reputational damage, harm (including life safety) to subjects within the data, compromise other data systems, or other types of material harm.
+
+Properly used, data risk classification systems serve as a framework to risks associated with the storage and exchange of different types of data and how to balance the security requirements to minimize the potential harm of disclosure while still being able to utilize the data in the policy life cycle. Protecting data at the appropriate level can help minimizes costs by not spend extraneous resources on low risk data and increase security by redirecting limited resources to safeguarding higher risk data.
+
+
+### Tech stuff
+
+TBD
+
+### Batch submissions
+
+TBD
+
+### Notes
+
+What are you referring to with secure laptops, biometrics, cloud computing?
+
+> Secure laptops: often used by private sector data providers (ADP) but also emerging among federal  (IRS, Census Bureau for staff) and international (IAB staff) data providers. The entire laptop is encrypted (physical hardware encryption or full disk software encryption). The laptop is configured to only allow for VPN connection to a single dedicated connection point. Data may reside partially on the laptop, partially on the IT infrastructure at the provider. May be attractive to data providers, because it may correspond to IT infrastructure already in place.
+
+> Biometrics: The French thin client uses fingerprint authentification, in addition to smart card and password. This may also be configured on secure laptops (I don't have an example). 
+
+> Cloud computing: Increasingly, virtual enclaves are constructed in the cloud. This may be a desktop-like experience, or it may be based on more modern tools, with encrypted, token-based access to cloud-stored confidential data. Used in the biomedical community, but also the Stanford repository (??). The former is widespread - ICPSR/ ISR moved their physical enclave mechanism to a cloud-based virtual desktop, and the Census Bureau and Statistics Canada are both moving towards a cloud-based desktop experience.
+
+The base for the chapter I'm proposing - on the physical 
+elements of a "safe environment" - is in this presentation: 
+https://github.com/larsvilhuber/BigThinkPresentations/tree/master/PhysicalProtections. 
+We would want to expand it a bit (maybe update it), but essentially a catalog 
+(with maybe a multi-dimensional characteristics vector - complexity - cost - security).
+
+Presentation - aimed at management level people at statistical agencies, 
+not the highest level of tech background. Needs some translation into text, 
+should be picture heavy. Presentation compiled two years ago, needs to be updated. 
+Other technological setups can be integrated into this. Describe various secure endpoint/server setups.
+
+We should also consider the network architecture as one component of the technical infrastructure. Can range from sneaker net (sending encrypted CDs), public internet with secure connection (Windows RDP), software-based VPN, hardware-based VPN, dedicated network hardware (routers, etc.), dedicated secure networks (at a local level: this might mean a secure server room and a on-premise secure lab, but might also mean: a nation-wide secure government data network). One example for the latter (national secure data network) is the Canadian CANARIE network.https://www.canarie.ca/network/
+
+We describe the current technology as used by various systems that provide access to 
+sensitive data (creating "Safe Settings"), and avenues for future access. We adress
 
 - Secure laptops
 - Remote access
