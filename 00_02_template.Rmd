@@ -1,9 +1,13 @@
 ## Template
 
 > *Instructions:* Case study chapters may be written by academic researchers or experts on the data provider side, or ideally teams of both. We are looking in particular for case studies that showcase one or more of the following:
+
 - Successful partnerships that are mutually beneficial, i.e. have led to innovative research projects while also answering pressing policy questions or helping the data provider understand their own data better;
+
 - A process of finding innovative, robust, and scalable solutions to technical, financial, legal, or ethical challenges which have led to sustainable access to administrative data that does not rely on just one research team or the personal championship of one individual in the partner organization;
+
 - Access to innovative types of administrative data or completely new data sources, including the creation of new datasets, describing the process of making this data useful for both the data provider and the research team (examples might be remote sensing data, linkage of previously disconnected datasets, digitization of historical sources, or the combination and harmonization of many similar datasets with different population coverage);
+
 - Administrative data used in conducting novel RCTs, standalone or linked with primary data collection.
 
 
@@ -22,9 +26,13 @@ Case studies should describe the process of deciding about and ultimately provid
 
 ### Data use examples
 > *Instructions:* Describe how the administrative data was used, for example
+
 - Experiments using the data, conducted in collaboration with the data provider or independently
+
 - Non-experimental research using the administrative data
+
 - Linkages of administrative data with other data sets or survey data
+
 - Use of the data for policy improvements
 
 
@@ -33,6 +41,8 @@ Case studies should describe the process of deciding about and ultimately provid
 #### Access
 
 > *Instructions:* (privacy, mandate, ability to contract, Data use agreements, License). Describe in what context the data provider is allowed to, able to, or mandated to provide access to the data. Describe the legal framework for access. Is the data custodian also able to define the data use agreements, or is it an intermediary, providing access to data as authorized by other entities? What kind of sanctions can the data provider impose (financial, reputational, penal) for unauthorized uses of the data? Have they ever been imposed? Did the data collector have explicit, or implicit, consent to share the data with researchers (medical data, social media data). What restrictions are there on who accesses the data? e.g., must be accompanied by an analyst; no commercial entitites; etc. When can the provider revoke data (for cause, without cause, etc.). Are you (or must you) capture a benefit to permit data access? 
+
+> AS: in the chapters I read, there was some unclarity about where and how to discuss DUAs. Would it make a
 
 
 #### Intellectual property
@@ -47,10 +57,14 @@ Case studies should describe the process of deciding about and ultimately provid
 
 The "Five Safes framework" [@DesaiFiveSafesdesigning2016] provides structure to many aspects of providing secure access to data:
 
-- Safe projects - evaluating data analysis projects for appropriateness
-- Safe people   - evaluating the credentials of researchers who seek data access 
+- Safe projects - evaluating data analysis projects for appropriateness 
+
+- Safe people   - evaluating the credentials of researchers who seek data access  
+
 - Safe settings - how can the data be accessed?
+
 - Safe data - how sensitive is the data/ can the data be made?
+
 - Safe outputs - how sensitive are analysis results such as tabulations etc. 
 
 > *Instructions:* Describe how important each element was in the final implementation, and how costly it was in the overall scheme to implement. Cost can include money, but also time (e.g. person-months), as necessary. Please provide  a numerical ranking (from 1 - least important to 5 - most important) for both importance and cost. Describe in detail how the data provider went about implemention and what tools or systems were chosen.
@@ -59,7 +73,15 @@ The "Five Safes framework" [@DesaiFiveSafesdesigning2016] provides structure to 
 
 #### Safe projects 
 
-> *Instructions:* evaluating applications for appropriateness. Is there a formal application process, or an ad-hoc/informal application process? Are there publicly posted rules, or are applications considered on a case-by-case basis? Is an IT system used to manage the flow of applications, or an informal workflow? Who is involved with assessing each project's merits - lawyers, statisticians, data scientists, domain experts? How long does the typical approval process take (min/avg/median/max)? Is that information publicly posted? How costly (time/money) is the approval process? Does the data provider require IRB approval by the researcher institution, or by its own IRB?
+> *Instructions:* evaluating research projects and data access requests for appropriateness. 
+
+> Is there a formal application process, or an ad-hoc/informal application process? Are there publicly posted rules, or are applications considered on a case-by-case basis? Is an IT system used to manage the flow of applications, or an informal workflow? 
+
+> Who is involved with assessing each project's merits - lawyers, statisticians, data scientists, domain experts? 
+
+>How long does the typical approval process take (min/avg/median/max)? Is that information publicly posted? How costly (time/money) is the approval process? 
+
+> Does the data provider require IRB approval by the researcher institution, or by its own IRB?
 
 
 
