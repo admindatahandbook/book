@@ -1,9 +1,10 @@
 # Introduction
 
+
 > In order to provide guidance to current and future researchers, data providers, and administrators, we plan to curate and edit a Handbook on making administrative data more broadly available for research and evidence-based policy.
 
 This handbook focuses broadly speaking on scenarios where confidential or proprietary data were made accessible to a broad group of researchers, be it by private, non-profit, or government organizations. This should include access by academic researchers who are not primarily associated with the institution that is creating, collecting, or making accessible the data in question. In most scenarios, there continue to be some access restrictions, i.e. the handbook does not primarily focus on situations where data have been successfully anonymized and posted for anybody to use, although some scenarios may have an "open data"  component. The handbook includes both scenarios where the data provider charges for access, whether for profit or for cost recovery, and where access is free. 
-Our goa is to give an outlook on the possibilities for research and experiments using  data that is non-trivial to access, and the many opportunities for improving policy once data are made accessible.
+Our goal is to give an outlook on the possibilities for research and experiments using  data that is non-trivial to access, and the many opportunities for improving policy once data are made accessible.
 
 ## Structure
 
@@ -23,7 +24,7 @@ Addressing the balance between those two conflicting goals has been an active re
 
 In the [chapter on privacy and ethics](#privacy-ethics), Salil Vadhan and co-authors detail the most recent advances in statistical and computational techniques, in particular a technique called "differential privacy" (DP) first proposed by @DworkEtAl2006 . 
 
-At the time this chapter was first written (`r first_publish_date`), a lively debate surrounding the largest implementation of DP was going on (see sidebar). Concerns are expressed that  DP would prevent informative analysis when using public-use data released under DP. There are several conditions for that argument to be made, though, and critically, most of those conditions do not apply to the particular audience for our handbook.
+At the time this chapter was first written (`r config$first_publish_date`), a lively debate surrounding the largest implementation of DP was going on (see sidebar). Concerns are expressed that  DP would prevent informative analysis when using public-use data released under DP. There are several conditions for that argument to be made, though, and critically, most of those conditions do not apply to the particular audience for our handbook.
 
 First, in the US-centric debate, *new* public-use data using DP  replaces *existing* public-use data (going forward) that did *not* use DP, and the resulting *new* public-use data is now (potentially) of lower utility when using the same techniques and use cases as before.  Second, much of the debate is about population-level datasets, not samples or extracts.
 
@@ -40,4 +41,5 @@ Finally, this is all about creating public use data - including dashboards and t
 There are already many excellent resources on administrative data access: the various challenges of making data available securely  (see e.g. @Reuter2010-xr, @Harron2017-qp,  @ADRF_Network2018-wl,  @Future_of_Privacy_Forum2017-kj ); resources on data held by national statistical offices (NSO) and the initial creation of integrated data systems, including (in the U.S.) work by [Actionable Intelligence for Social Policy (AISP)](https://www.aisp.upenn.edu/); the general "Five Safes" framework [@DesaiFiveSafesdesigning2016]; and guides for the European context, which include case studies ( @OECDEXPERTGROUPINTERNATIONAL2014 , @Bujnowska2019-eq). 
 In this handbook, we hope to provide an accessible overview and concrete examples of applications of the different available solutions in real-world contexts, embedded in successful cooperations of researchers and data providers which pushed the research frontier and contributed to innovative, evidence-based policy solutions.
 
-The handbook is also meant to be a dynamic resource. In whatever medium you are reading this, the last update to this particular version was made on `r last_update`. If you are reading a printed copy, then a more up-to-date version may exist at [`r base_url`](`r base_url`). We describe how to contribute in a [later section](#Contributing).
+The handbook is also meant to be a dynamic resource. In whatever medium you are reading this, the last update to this particular version was made on `r  config$last_update`. If you are reading a printed copy, then a more up-to-date version may exist at [`r config$base_url`](`r config$base_url`). We describe how to contribute in a [later section](#Contributing).
+

@@ -24,9 +24,8 @@ programdir <- file.path(basedir,"programs")
 source(file.path(programdir,"libraries.R"))
 
 #
-# Define some parameters. Later, they might be pulled in from a database
+# Read config
 #
 
-baseurl <- "https://labordynamicsinstitute.github.io/idea-handbook/"
-last_update <- Sys.date()
-first_publish_date <- "April 2020"
+config <- config::get()
+

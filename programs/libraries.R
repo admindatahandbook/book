@@ -10,12 +10,13 @@ pkgTest <- function(x)
 {
 	if (!require(x,character.only = TRUE))
 	{
-		install.packages(x,dep=TRUE)
+		print(paste0("Package ",x," not found - installing"))
+		install.packages(x,repos = 'https://cloud.r-project.org/')
 		if(!require(x,character.only = TRUE)) stop("Package not found")
 	}
 	return("OK")
 }
 
-global.libraries <- c("tufte")
+global.libraries <- c("tufte","config")
 
 results <- sapply(as.list(global.libraries), pkgTest)
