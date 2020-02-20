@@ -1,4 +1,6 @@
-
+```{r setup,echo=FALSE}
+source("_setup.R",echo=FALSE)
+```
 
 
 ```{block, type='rmdwarning'}

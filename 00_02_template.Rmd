@@ -12,6 +12,8 @@ Case studies should describe the process of deciding about and ultimately provid
 
 > In creating this template, we have drawn in part on generic guidelines provided by @OECDEXPERTGROUPINTERNATIONAL2014 and @DesaiFiveSafesdesigning2016 . All sections in this template are optional, in the sense that there may not be a lot of content, or no content at all, when the topic is not relevant for a given scenario. However, if that is the case, we are interested in why the topic was not relevant, as that may itself be valuable information for others.
 
+> Interested readers can use the template to self-evaluate, or use it as a planning tool for their own data access implementation. 
+
 ### Summary
 > *Instructions:* Describe the scenario that is covered by this case study. Introduce the authors, the data provider, data content, data collectors, data curators, and interesting uses of the data. 
 
