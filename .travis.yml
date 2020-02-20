@@ -5,6 +5,7 @@ services:
 branches:
   only:
   - published_version
+  - master
 
 before_install:            
   - docker pull conoria/alpine-r-bookdown
