@@ -42,8 +42,6 @@ Case studies should describe the process of deciding about and ultimately provid
 
 > *Instructions:* (privacy, mandate, ability to contract, Data use agreements, License). Describe in what context the data provider is allowed to, able to, or mandated to provide access to the data. Describe the legal framework for access. Is the data custodian also able to define the data use agreements, or is it an intermediary, providing access to data as authorized by other entities? What kind of sanctions can the data provider impose (financial, reputational, penal) for unauthorized uses of the data? Have they ever been imposed? Did the data collector have explicit, or implicit, consent to share the data with researchers (medical data, social media data). What restrictions are there on who accesses the data? e.g., must be accompanied by an analyst; no commercial entitites; etc. When can the provider revoke data (for cause, without cause, etc.). Are you (or must you) capture a benefit to permit data access? 
 
-> AS: in the chapters I read, there was some unclarity about where and how to discuss DUAs. Would it make a
-
 
 #### Intellectual property
 
