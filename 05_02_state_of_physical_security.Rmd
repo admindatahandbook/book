@@ -46,38 +46,37 @@ Statistics Denmark is one major statistical agency that uses a virtual data encl
 
 #### Researcher-Provided Infrastructure
 
-Transferring data directly to researchers represents a fundamentally different strategy than the other data access methods. Rather than handle the data directly themselves, the data provider establishes a trusted relationship with the researcher, often over the course of a long-term partnership that may include many collaborations. This allows the data provider to feel secure in transferring data to the researcher. In contrast to physical or virtual data enclaves, in the data transfer model the researchers take on the responsibility for storing, and possibly for cleaning and processing, the data before analysis can take place.
+In some data sharing arrangements, the data provider has the researcher provide the data storage, access, and analysis infrastructure. The data provider will provide the data to the researcher, who has custodianship over the data.
 
 Data providers must ensure that they properly remove variables containing personally identifying information from data that they transfer to researchers in order to protect the privacy of study participants. In the instance that researchers have access to potentially identifiable data, the data provider must take care to ensure that the results produced for publication do not contain personally identifiable information. The data provider and researcher must have the technical means to securely transfer the data. Many such tools exist, including commercial enterprise level cloud services such as Google Drive, Box, and Dropbox that can be configured for secure data storage and transfer.
 
-When sufficient trust exists for transferring data to researchers, this process allows researchers significantly more flexibility and rapid turnarounds on research findings of importance to their government partners. Allowing researchers to store the data on their own devices may reduce the burden on data providers, who only have to provide the data itself and the staff necessary to transfer it to the researchers. On the other hand, data providers can also choose to conduct random on site inspections or have researchers submit their output for approval, which also requires staff time. In instances where researchers can work very closely with the data providers’ technical staff with direct access to their data, they can also help the government learn more about their data and improve processes and systems at the government.
+This process allows researchers significantly more flexibility and rapid turnarounds on research findings of importance to their government partners. Allowing researchers to store the data on their own devices may reduce the burden on data providers, who only have to provide the data itself and the staff necessary to transfer it to the researchers. On the other hand, data providers may also choose to conduct random on site inspections or have researchers submit their output for approval, which requires staff time. In instances where researchers can work very closely with the data providers’ technical staff with direct access to their data, they can also help the government learn more about their data and improve processes and systems at the government.
 
 Many research projects and data providers utilize data transfers to researchers, particularly among smaller scale data providers for whom a more expensive data enclave model is less feasible. For example, San Francisco Unified School District has a long-standing partnership with Stanford University, where the Center for Education Policy Analysis (CEPA) at Stanford acts as a data warehouse for individual-level administrative data on behalf of the district. While many of the researchers who use the data are affiliated with CEPA, the CEPA has dedicated staff with no ties to specific research projects to manage the warehouse. The district approves researchers and projects to have access to the data, while the warehouse performs data cleaning, anonymization, and ultimately provides data files to the researcher.
 
 Large scale implementations of the data transfer model for sensitive, individual-level data also exist. The U.S. National Center for Education Statistics maintains a restricted-use data license model that requires researchers to set up their own version of a physical enclave, at their home location, as a requirement for becoming a license holder. The researcher must maintain an access-controlled secure data room with specific physical and electronic protection requirements and must undergo random NCES audits to ensure compliance with these procedures. The data is transferred to the researcher via encrypted disks with the passwords sent separately, such that the data is protected in transit and only the researcher with both the data disk and password can access the data. Combining the efficiency of data transfer with the increased security of physical and electronic protection shows how data access can be tailored for individual circumstances based on sensitivity and cost needs.
 
+### Five Dimensions of Physical Security
 
-### Five Metrics of Physical Security
-
-The five metrics of physical data security serve as a framework to evaluate the different defining features of various data access mechanisms. 
+We propose using five dimensions of physical data security serve as a framework to evaluate the different defining features of various data access mechanisms. The five dimensions include the location of the data, the access that researchers have to the analysis computers, the location of the access computers, the level of security of the access room, and the range of analysis methods available to researchers. When proposing and negotiating a potential use sharing agreement, evaluating the physical security arrangements along these five dimensions can help researchers and their data providers craft robust mechanisms to protect data when transferring and using data for research.
 
 #### Data Location
 
-What is the location of the data that the researcher is using?
+The researcher-accessible administrative data can be stored at one of three types of locations. The data can exist at the data provider, the data provider can transfer the data directly to the researcher, or the data provider can transfer the data to a trusted third party. Each possible data location comes with its own requirements, advantages, disadvantages, and special considerations for the researcher and data provider.
 
-At data provider: the data exists at the data provider
+When the researcher-accessible administrative data remains under the custody of the data provider, the primary advantage is that the data provider has direct physical control over the access it provides to the data. With properly configured software and hardware access mechanisms, only approved devices belonging to safe people will be able to connect to the data. Access mechanisms in this scenario are limited to having the researcher travel directly to the data provider, or providing a remote access system for the researcher to connect to the data provider’s data system. Both the New Brunswick Institute for Research, Data and Training (NB-IRDT) and the German Institute of Employment Research (IAB) maintain direct control over their data, with researchers having to travel to the NB-IRDT to access the data in a secure setting, while the IAB allows researchers to remotely access the data.
 
-At researcher: the data is transferred to the researcher (redacted, or not…)
+If the data provider transfers the data to the researcher, the researcher has physical control over the data. This can be a cost-saving measure for the data provider, as it no longer has to maintain the infrastructure to support data storage and analysis. However, the data provider is mostly dependent on legal agreements, audits, and other second-hand mechanisms to maintain de jure control over what the researcher can and cannot do with the data. The data provider can mandate the usage of monitoring software, specific storage setups, access requirements, and other technical methods of assuring that the researcher only uses the data for approved purposes and shares with approved people. The Ohio Longitudinal data Archive (OLDA) is an example of transferring the data to researchers, where researchers are responsible for providing secure desktop to store OLDA data. 
 
-At third party: Data exists with a trusted third party. Can be at the researchers’ institution (secure data service) or at a third-party institution 
+The third alternative is for the data provider to entrust a third party to hold the data on its behalf. The third party can either be a secure data service researcher’s institution or a neutral third party. The third party has its own agreement with the data provider to maintain and transfer the data as requested, separate from the agreements that govern the researchers’ usage of the data. The advantages of this arrangement include having an organization that is more familiar with and responsive the needs of the researchers handling the data as well as reducing the burden on staff and resources at the data provider. The San Francisco Unified School District (SFUSD) Stanford Partnership is an example where the data provider entrusts the data to a third party at Stanford University, which ultimately makes it available to approved researchers.
 
 #### Analysis Computers
 
-How much access do researchers have to the analysis computers? Analysis computers exist at the data location. 
+The level of access that researchers have to the analysis computers is another dimension on which data providers and researchers setting up data sharing systems must consider. Analysis computers are the computers on which researchers perform their analysis on and are by definition at in the same location as the data, and are potentially distinct from the computers which researchers use to access the data. The level of access that researchers have refers to the restrictions, or lack thereof, on what researchers can do on the computer; the most relevant aspect of this tends to be what software that researchers can utilize.
 
-Full access: researchers can do whatever they want with the analysis computers, whether because they own them or it is permitted by the agreement.
+Researchers can have full access to the analysis computers, meaning that there is no restriction on the types of software that researchers can use to perform their analysis. This can be through the researcher having ownership over the analysis computer, such as in the instance when the data is transferred to the researcher, or when the researcher has agreements with the data provider allowing them to utilize their choice of software on the analysis computers. This allows researchers to perform more types of analysis than they might otherwise be able to. One example of this is the way that NCES restricted-use data licenses operate. The researcher must set up a secure data room in accordance with NCES requirements, but is otherwise free to utilize whatever software they want to analyze the data.
 
-Partial access: Limited set of programming languages or other restrictions what the researchers can do with the computer
+In other instances, researchers only have partial access to the analysis computers. This usually occurs in cases where researchers only have remote access to the data and analysis computers. Partial access can take a variety of forms, from requiring the data provider to approve of software packages but otherwise having relatively open access to having specifically restricted sets of software options. For example, the Federal Statistical Research Data Center network has a specific set of software that they make available to researchers, who must use one of the programs that the FSRDC has on their secure computing network. 
 
 #### Access Computers
 
@@ -109,7 +108,6 @@ Any method: the researchers can use any methods, subject to software availabilit
 
 Limited analysis: researchers may only have a limited set of methods available. (tabulation, but limited language set - reduced/whitelisted SAS or Stata)
 
-
 ### Technical features, infrastructure, implementations
 #### Thin Clients
 #### Biometrics
@@ -120,3 +118,4 @@ Limited analysis: researchers may only have a limited set of methods available. 
 #### SFUSD-Stanford
 #### New Brunswick
 #### Etc
+
