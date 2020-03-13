@@ -12,7 +12,7 @@ When the researcher-accessible administrative data remains under the custody of 
 
 If the data provider transfers the data to the researcher, the researcher has physical control over the data. This can be a cost-saving measure for the data provider, as it no longer has to maintain the infrastructure to support data storage and analysis. However, the data provider is mostly dependent on legal agreements, audits, and other second-hand mechanisms to maintain de jure control over what the researcher can and cannot do with the data. The data provider can mandate the usage of monitoring software, specific storage setups, access requirements, and other technical methods of assuring that the researcher only uses the data for approved purposes and shares with approved people. The Ohio Longitudinal data Archive (OLDA) is an example of transferring the data to researchers, where researchers are responsible for providing secure desktop to store OLDA data. 
 
-The third alternative is for the data provider to entrust a third party to hold the data on its behalf. The third party can either be a secure data service researcher’s institution or a neutral third party. The third party has its own agreement with the data provider to maintain and transfer the data as requested, separate from the agreements that govern the researchers’ usage of the data. The advantages of this arrangement include having an organization that is more familiar with and responsive the needs of the researchers handling the data as well as reducing the burden on staff and resources at the data provider. The San Francisco Unified School District (SFUSD) Stanford Partnership is an example where the data provider entrusts the data to a third party at Stanford University, which ultimately makes it available to approved researchers.
+The third alternative is for the data provider to entrust a third party to hold the data on its behalf. The third party can either be a secure data service researcher’s institution or a neutral third party. The third party has its own agreement with the data provider to maintain and transfer the data as requested, separate from the agreements that govern the researchers’ usage of the data. The advantages of this arrangement include having an organization that is more familiar with and responsive to the needs of the researchers handling the data as well as reducing the burden on staff and resources at the data provider. The San Francisco Unified School District (SFUSD) Stanford Partnership is an example where the data provider entrusts the data to a third party at Stanford University, which ultimately makes it available to approved researchers.
 
 #### Analysis Computers
 
@@ -22,7 +22,7 @@ In the least restrictive arrangement, researchers can have full administrative a
 
 In other instances, researchers only have partial access to the analysis computers. This usually occurs in cases where researchers only have remote access to the data and analysis computers. There is a large spectrum of the limits that partial access can place on researchers. On one end of the spectrum, partial access can be relatively open, with researchers being allowed to utilize most if not all commonly available software packages without having administrative access to the computers. Researchers may have a mechanism to request new software or packages for the analysis computers that requires the computer owner to implement. Functionally, this allows researchers nearly the same level of flexibility as having full access, without allowing researchers to have administrative privileges to the computers.
 
-On the other end of the spectrum, researchers may be restricted to very specific sets of software that are pre-approved by the analysis computer owner. This may be due to technical requirements related to computer and network security, as a mechanism for disclosure control, or the expense of acquiring or maintaining multiple sets of software. For example, the Federal Statistical Research Data Center network has a specific set of software that they make available to researchers, who must use one of the programs that the FSRDC has on their secure computing network. 
+On the other end of the spectrum, researchers may be restricted to very specific sets of software that are pre-approved by the analysis computer owner. This may be due to technical requirements related to computer and network security, as a mechanism for disclosure control, or the expense of acquiring or maintaining multiple sets of software. These restrictions affect not only the base software itself, such Stata or R, but also third party packages for those software; while the base software itself may be unrestricted, additional packages not signed by the original developer may not be allowed. For example, the Federal Statistical Research Data Center network has a specific set of software that they make available to researchers, who must use one of the programs that the FSRDC has on their secure computing network. 
 
 #### Access Computers
 
@@ -42,39 +42,32 @@ An open access arrangement is one where there are no mandated controls on the ph
 
 A low security arrangement has a mandated location for the access room or other basic security precautions, but otherwise has no access controls outside of the control of the researcher. Frequently this takes the form of provisions in the data use agreement between the data provider and researcher mandating certain steps such as storing the data in a locked room, but the security arrangements are maintained by the researcher. For instance, the SFUSD-Stanford data use agreement template mandates that Stanford researchers take “reasonable and appropriate efforts” to keep the data “in a space otherwise physically and electronically secure from unauthorized access”. However, the district does not exercise physical control over the researchers’ access room security.
 
-An access room with a medium security setup has mandated security features. Access is restricted to approved researchers, with a minimum of a physically secured facility such as a locked room where only approved researchers have key or keycard access.  Frequently, medium security room setups will be under the control of a third party or the data provider itself. This enables the room administrator to directly monitor who has access to the room and the physical security of the access computers within the room. The
+An access room with a medium security setup has mandated security features. Access is restricted to approved researchers, with a minimum of a physically secured facility such as a locked room where only approved researchers have key or keycard access.  Frequently, medium security room setups will be under the control of a third party or the data provider itself. This enables the room administrator to directly monitor who has access to the room and the physical security of the access computers within the room.
 
 In some circumstances, access rooms can still remain under the control of the researcher; however the data provider would need to approve the security arrangements, conduct audits, or otherwise directly verify that the researcher is in compliance with the security requirements or the access room. The requirements for the data location outlined in the NCES restricted-use data license is an example of a medium security arrangement under the control of the researcher. The data must be kept in a locked room with access restricted only to licensed researchers, with the security arrangements subject to random audits by NCES.
 
-A high security access room builds on the medium security room, but has strong specifications for physical security. This can include mandating that the room have secured walls that fully extend from the floor to ceiling with no gaps, electronic shielding for the room, video monitoring of the room, identity or biometric verification for people entering the room, and other security arrangements that extend beyond simple access controls for people entering the room.
-
-
-
-Different security levels of access rooms.
-
-Open: no security, access from anywhere
-
-Low security: defined but otherwise open location (IP control)
-
-Medium security: controlled access to room (controlled by third party, controlled by data provider)
-
-High security: strong specification of security (safe walls, video monitoring, limited access)
+A high security access room builds on the medium security room, but has strong specifications for physical security. This can include mandating that the room have secured walls that fully extend from the floor to ceiling with no gaps, electronic shielding for the room, video monitoring of the room, identity or biometric verification for people entering the room, and other security arrangements that extend beyond simple access controls for people entering the room. The NB-IRDT data centers, with their stringent access controls and additional physical safeguards such as bolting the server to the floor in a separate locked cage, falls into the high security category.
 
 #### Analysis Methods
 
-The range of analysis methods available to the researchers:
+The final dimension of physical security is the range of analysis methods available to the researchers. There are either unrestricted analysis methods, subject to software availability, or a limited range of methods that limits the sorts of analysis and tabulations that researchers can perform.
 
-Any method: the researchers can use any methods, subject to software availability (see: access to analysis computers).
+Environments with unrestricted analysis methods allow researchers to utilize the full range of methods available in the set of software that is available on the analysis computer, subject to other restrictions on the analysis computer as discussed in the previous section. Limited analysis methods place restrictions on what researchers can do, such as limiting the language set available to researchers to a whitelisted set of commands.
 
-Limited analysis: researchers may only have a limited set of methods available. (tabulation, but limited language set - reduced/whitelisted SAS or Stata)
+[lars - can you fill this section out more? This sort of restriction isn’t mentioned in any of our case studies, and publicly available information seems really thin as well]
 
 ### Technical features, infrastructure, implementations
+
 #### Thin Clients
+One of the common implementations of access computers, whether with the researcher or at data centers, is the usage of thin clients. Thin clients are computers that have been optimized for connecting with remote servers that store the data and do the actual analysis. Thin clients can either be provided directly to researchers or be housed within a research data center. [incomplete]
+
 #### Biometrics
+
 #### Secure Rooms
+
 #### Etc
 
-### Intro of typical access mechanisms
+### Typical access mechanisms
 
 #### Remote Execution
 
@@ -88,7 +81,7 @@ A key requirement for such a system is the provision of accurate codebooks and d
 
 By maintaining full control of the data as well as having the opportunity to check the researchers’ request and check the output before handing it back to the researcher, remote execution gives the data provider the highest level of data security. The primary tradeoff is the additional resources required on the part of the data provider to perform these tasks and the additional time it will take for a government to receive relevant results from their research partner.
 
-One example of a national statistical agency that uses remote a remote execution model is Statistics Canada, which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German Institute for Employment Research has a remote execution portal where researchers can test their code on test data data and upload their code for execution, and only access approved results when their job is complete.
+One example of a national statistical agency that uses remote a remote execution model is Statistics Canada, which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German IAB has a remote execution portal where researchers can test their code on test data data and upload their code for execution, and only access approved results when their job is complete.
 
 A variant on the remote execution model is the United States National Center for Health Statistics Research Data Centers, which requires researchers to first submit their analysis code for manual approval before arriving at the research data center itself to run the analysis.
 
@@ -133,6 +126,18 @@ Large scale implementations of the data transfer model for sensitive, individual
 
 ### Examples from the handbook along the five metrics
 #### SFUSD-Stanford
-#### New Brunswick
-#### Etc
+Data location: initially transferred to third party, limited set transferred to researcher
+Analysis Computer: owned by researcher
+Access Computer: owned by researcher
+Acces Room: low security
+Analysis method: unrestricted
 
+#### New Brunswick
+
+#### IAB
+
+#### OLDA
+
+#### Aurora
+
+#### Cape Town
