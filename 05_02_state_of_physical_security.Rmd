@@ -74,11 +74,9 @@ Think of analysis methods as the software you can install. May have complete acc
 ### Technical features, infrastructure, implementations
 
 #### Thin Clients
-One of the common implementations of access computers, whether with the researcher or at data centers, is the usage of thin clients. Thin clients are computers that have been optimized for connecting with remote servers that store the data and do the actual analysis. The advantage of thin clients is that they are cheapers
+One of the common implementations of access computers, whether with the researcher or at data centers, is the usage of thin clients. Thin clients are computers that have been optimized for connecting with remote servers that store the data and do the actual analysis. One of the main advantages of dedicated hardware thin clients is that they are cheaper and simpler than regular computers. As of the time of writing, thin clients can cost as little as $100 for the hardware itself, in contrast with the cheapest entry level computers which are several hundred dollars. Furthermore, thin clients can operate without local storage to prevent users from saving data to the client.
 
-Thin clients can either be provided directly to researchers or be housed within a research data center.
-
-Common 
+For data providers and researchers setting up remote access to analysis computers via thin clients, the clients themselves do not need to be capable of running statistical software or intensive analysis; the analysis will occur on the server that hosts the data and software packages. Thin clients can either be provided directly to researchers or be housed within a research data center. thin clients can be sourced from many manufacturers of enterprise hardware, both as standalone devices for the user to configure as well as full fledged hardware and software package solutions configured by the vendor.
 
 #### Biometric authentication (fingerprint, etc)
 
@@ -113,7 +111,7 @@ A key requirement for such a system is the provision of accurate codebooks and d
 
 By maintaining full control of the data as well as having the opportunity to check the researchers’ request and check the output before handing it back to the researcher, remote execution gives the data provider the highest level of data security. The primary tradeoff is the additional resources required on the part of the data provider to perform these tasks and the additional time it will take for a government to receive relevant results from their research partner.
 
-One example of a national statistical agency that uses remote a remote execution model is Statistics Canada, which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German IAB has a remote execution portal where researchers can test their code on test data data and upload their code for execution, and only access approved results when their job is complete.
+One example of a national statistical agency that uses a remote execution model is Statistics Canada, which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German IAB has a remote execution portal where researchers can test their code on test data data and upload their code for execution, and only access approved results when their job is complete.
 
 A variant on the remote execution model is the United States National Center for Health Statistics Research Data Centers, which requires researchers to first submit their analysis code for manual approval before arriving at the research data center itself to run the analysis.
 
@@ -156,12 +154,11 @@ Many research projects and data providers utilize data transfers to researchers,
 Large scale implementations of the data transfer model for sensitive, individual-level data also exist. The U.S. National Center for Education Statistics maintains a restricted-use data license model that requires researchers to set up their own version of a physical enclave, at their home location, as a requirement for becoming a license holder. The researcher must maintain an access-controlled secure data room with specific physical and electronic protection requirements and must undergo random NCES audits to ensure compliance with these procedures. The data is transferred to the researcher via encrypted disks with the passwords sent separately, such that the data is protected in transit and only the researcher with both the data disk and password can access the data. Combining the efficiency of data transfer with the increased security of physical and electronic protection shows how data access can be tailored for individual circumstances based on sensitivity and cost needs.
 
 ### Examples from the handbook along the five metrics
+
+In this section, we explore how the five dimensions map onto the case study chapters in the handbook. Each set of data providers and researchers utilizes a unique combination of the five metrics for their data sharing framework.
+
 #### SFUSD-Stanford
-Data location: initially transferred to third party, limited set transferred to researcher
-Analysis Computer: owned by researcher
-Access Computer: owned by researcher
-Acces Room: low security
-Analysis method: unrestricted
+In the SFUSD-Stanford Partnership, the data location of the full set of data that is available for research usage is the CEPA Data Warehouse, a third party organization. The warehouse serves as a trusted data service that ultimately transfers a restricted set of data to the researcher. The analysis and access computers are both under the administrative control of the researcher, with the data and analysis software on the same device. These devices are subject to Stanford and SFUSD requirements for data security, including enterprise operating system management and whole disk encryption for any device that holds the data. The access rooms are low security; researchers must take reasonable measures to physically protect the data but there are no specific requirements for checks on the location of the data itself. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
 
 #### New Brunswick
 
