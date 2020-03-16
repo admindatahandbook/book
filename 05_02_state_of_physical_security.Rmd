@@ -56,16 +56,48 @@ Environments with unrestricted analysis methods allow researchers to utilize the
 
 [lars - can you fill this section out more? This sort of restriction isn’t mentioned in any of our case studies, and publicly available information seems really thin as well]
 
+[Norwegian system, for instance, is running python in the background. Only allow a subset of pandas package
+
+Various remote submission systems that limit what you can do. Look at canadian remote submission system that is essentially a tabulator (variables you can access, SAS code, limited to SAS code, whitelist of admitted commands)
+
+NCHS, similar for their remote submission system
+
+Online tabulators. Can express many things as conditional tables, working through that interface you are limited to tables.
+
+Limited access to different set of data/commands, can access from anywhere, can only do certain things with it
+
+Economists don’t care so much about things like NCES public use data, but citizen access is valuable for tables and summary stats
+
+Think of analysis methods as the software you can install. May have complete access to analysis computers, but software and packages might restrict what you can do. Whitelist again of things you can access.]
+
+
 ### Technical features, infrastructure, implementations
 
 #### Thin Clients
-One of the common implementations of access computers, whether with the researcher or at data centers, is the usage of thin clients. Thin clients are computers that have been optimized for connecting with remote servers that store the data and do the actual analysis. Thin clients can either be provided directly to researchers or be housed within a research data center. [incomplete]
+One of the common implementations of access computers, whether with the researcher or at data centers, is the usage of thin clients. Thin clients are computers that have been optimized for connecting with remote servers that store the data and do the actual analysis. The advantage of thin clients is that they are cheapers
 
-#### Biometrics
+Thin clients can either be provided directly to researchers or be housed within a research data center.
+
+Common 
+
+#### Biometric authentication (fingerprint, etc)
+
+#### Physical access cards
 
 #### Secure Rooms
 
-#### Etc
+FSRDC, Safepod, justice department dataset where you had to walk into a secure electronically shielded room, rooms at agencies, 
+
+#### IP address restrictions
+
+#### VPN
+
+#### Remote desktop
+
+#### Physical storage
+
+#### Cloud storage
+
 
 ### Typical access mechanisms
 
@@ -122,7 +154,6 @@ This process allows researchers significantly more flexibility and rapid turnaro
 Many research projects and data providers utilize data transfers to researchers, particularly among smaller scale data providers for whom a more expensive data enclave model is less feasible. For example, San Francisco Unified School District has a long-standing partnership with Stanford University, where the Center for Education Policy Analysis (CEPA) at Stanford acts as a data warehouse for individual-level administrative data on behalf of the district. While many of the researchers who use the data are affiliated with CEPA, the CEPA has dedicated staff with no ties to specific research projects to manage the warehouse. The district approves researchers and projects to have access to the data, while the warehouse performs data cleaning, anonymization, and ultimately provides data files to the researcher.
 
 Large scale implementations of the data transfer model for sensitive, individual-level data also exist. The U.S. National Center for Education Statistics maintains a restricted-use data license model that requires researchers to set up their own version of a physical enclave, at their home location, as a requirement for becoming a license holder. The researcher must maintain an access-controlled secure data room with specific physical and electronic protection requirements and must undergo random NCES audits to ensure compliance with these procedures. The data is transferred to the researcher via encrypted disks with the passwords sent separately, such that the data is protected in transit and only the researcher with both the data disk and password can access the data. Combining the efficiency of data transfer with the increased security of physical and electronic protection shows how data access can be tailored for individual circumstances based on sensitivity and cost needs.
-
 
 ### Examples from the handbook along the five metrics
 #### SFUSD-Stanford
