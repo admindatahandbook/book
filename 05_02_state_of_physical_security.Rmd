@@ -172,18 +172,14 @@ For IAB remote execution, the data location and analysis computers are both stil
 
 The IAB also makes anonymized data products available for direct download by researchers. In this instance, the data location, acces, and analysis computers are at the researcher’s institution, with researchers having full administrative control over the computer systems. As a result of that, they have the full range of analysis methods available as well. The IAB data use agreement for downloading the scientific use files specifics medium security requirements, with the building and room required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission simple key locks. There are additional requirements for electronic security such as encrypting the computers and servers with access to the data.
 
-
 #### OLDA
 
-Data location: third party (OLDA), researcher
-Access Computers: Researcher or OLDA
-Analysis Computers: Researcher or OLDA
-Analysis Methods: Any, or OLDA
-Access Rooms: low security, not enough info
+The Ohio Longitudinal Data Archive is a third party organization that provides data to researchers on behalf of the government. The data is initially located at the third party institution before ultimately being transferred to researchers via a secure FTP server. The researchers have full control over the analysis and access computer, which is required to be a desktop computer located in the researcher’s office space. This is a low specification of access room security, placing no additional requirements beyond utilizing a specific space. Researchers have full analysis methods available for them. Data can be provided in a variety of formats, including CSV files that enable the researcher to use any analysis software or method of their choosing.
 
 #### Aurora Healthcare
 
 The researchers for this project received data from the data provider via a secure file transfer protocol. The data location, acces computer, and analysis computers were all located at the researcher’s home institution. [need more info from Amy and Laura]
 
-
 #### Cape Town
+
+In the Cape Town partnership, the data was transferred from the data provider to the researcher. As such, the data location, access, and analysis computers are all with the researcher, with the researcher having a full range of analysis methods available. [need more information about access rooms, some more detail about how they did the transfer and storage etc]
