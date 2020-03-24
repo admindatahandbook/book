@@ -70,29 +70,42 @@ Economists don’t care so much about things like NCES public use data, but citi
 
 Think of analysis methods as the software you can install. May have complete access to analysis computers, but software and packages might restrict what you can do. Whitelist again of things you can access.]
 
-
 ### Technical features, infrastructure, implementations
 
 #### Thin Clients
-One of the common implementations of access computers, whether with the researcher or at data centers, is the usage of thin clients. Thin clients are computers that have been optimized for connecting with remote servers that store the data and do the actual analysis. One of the main advantages of dedicated hardware thin clients is that they are cheaper and simpler than regular computers. As of the time of writing, thin clients can cost as little as $100 for the hardware itself, in contrast with the cheapest entry level computers which are several hundred dollars. Furthermore, thin clients can operate without local storage to prevent users from saving data to the client.
+
+One of the common implementations of access computers, whether with the researcher or at data centers, is the usage of thin clients. Thin clients are computers that have been optimized for connecting with remote servers that store the data and do the actual analysis. Very restrictive implementations of thin clients can prohibit any usage beyond displaying information from the server and accepting mouse and keyboard input from the user. One of the main advantages of dedicated hardware thin clients is that they are cheaper and simpler than regular computers. As of the time of writing, thin clients can cost as little as $100 for the hardware itself, in contrast with the cheapest entry level computers which are several hundred dollars. Furthermore, thin clients can operate without local storage to prevent users from saving data to the client.
 
 For data providers and researchers setting up remote access to analysis computers via thin clients, the clients themselves do not need to be capable of running statistical software or intensive analysis; the analysis will occur on the server that hosts the data and software packages. Thin clients can either be provided directly to researchers or be housed within a research data center. thin clients can be sourced from many manufacturers of enterprise hardware, both as standalone devices for the user to configure as well as full fledged hardware and software package solutions configured by the vendor.
 
 #### Biometric authentication (fingerprint, etc)
 
+Biometrics are physical and biological features unique to individuals. Biometric authentication is the use of biometric features to verify the identity of individual users. By verifying the user’s identity based on stored information about authorized users, biometrics can be used to authenticate authorized access to access computers, analysis computers, and access rooms. The main components of such an access system includes the biometric sensor itself, which is connected to a database that contains the set of validated users, and controls either the physical or electronic lockouts for a given system (e.g. entering a room or logging into a computer).
+
+Most biometric authentication techniques rely on the physical characteristics of individuals. One of the most common biometric technologies in current use is fingerprint scanners for consumer electronics such as laptops and smartphones. Other commonly used technologies include facial recognition, retinal or iris recognition, and voice identification. Biometric authentication techniques can serve both as a primary form of identification as well as being layered in two or multiple factor authentication techniques, such as in conjunction with passwords or other devices. When applied to physical data security, biometrics authentication can be required  by data providers as part of an access agreement, collected from authorized users, and implemented by any of the parties with administrative control over access rooms, access computers, and analysis computers as required.
+
 #### Physical access cards
+
+Physical access cards are electronic cards that identify the card bearer for a physical access control system. Access to devices or rooms are secured by a card reader validates the user’s card with a central database that has a set of valid cards and subsequently disables the locks on the system or room that it is protecting. The cards themselves can use magnetic stripes, barcodes, electronic fields, or other systems for interfacing with the card reader. Physical access cards are commonly used in universities and have the advantage of likely having existing infrastructure to support the creation of secure access rooms for researchers receiving administrative data.
 
 #### Secure Rooms
 
-FSRDC, Safepod, justice department dataset where you had to walk into a secure electronically shielded room, rooms at agencies, 
+Beyond access control, rooms can have various specifications for securing it against unauthorized access. For most implementations of secure rooms that house administrative data for research purposes, one requirement is having the room fully enclosed by walls that extend from floor to floor with a minimum number of possible entryways to minimize the possibility of unauthorized access. Any doors, windows, air vents, and other possible entryways would be secured by bars, mesh, or other methods to deter access. The doors and walls can have minimum specifications of construction materials, techniques, and thickness to increase protection against physical attacks; reinforced doors and walls offer increased protection compared to regular home and office construction materials. Door hinges, access panels, partitions, windows, and other possible ways of entering the room would be installed from the inside of the secure room to prevent their removal from the outside.  In instances where the room stores data itself, the devices within the room can be mandated to have no outside network connections (an air-gapped network), or no network connection at all
 
 #### IP address restrictions
 
+For remote access mechanisms, one way to ensure that only an authorized user has access to the remote system is to restrict the IP address of the devices that are allowed to connect to the server. There are two types of restrictions, blacklisting and whitelisting. Blacklisting specific addresses is used to block known or potential bad actors but otherwise does not restrict connections to the server; whitelisting only authorized users is the primary use of IP restrictions in an access control mechanism. This is frequently an option built into the software for managing the server. For example, software used for managing secure file transfer protocols can restrict the IP addresses that it will accept connections from. For data providers and researchers, this can be restricted to specific devices that the researcher registers with the data provider as the access computer.
+
 #### VPN
+
+Virtual private networks (VPN’s) are used to allow users to exchange data over public networks as if they were directly connected on a private network. VPNs utilize an encrypted channel established between the remote computer and the network to securely transfer data and gain access to resources on the network. Users must authenticate themselves, such as with usernames and passwords, to access the VPN. VPN’s has applications for transferring data to researchers as well as remotely accessing data by either the researcher themselves or from a remote data center. For open access settings VPNs can be particularly useful, as they allow the encryption (and therefore security) of any data that the researcher can access from a public network.
 
 #### Remote desktop
 
+
+
 #### Physical storage
+
 
 #### Cloud storage
 
