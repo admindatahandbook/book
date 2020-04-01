@@ -1,3 +1,5 @@
+cran: http://cran.rstudio.com
+
 services:
   - docker                  
 
@@ -8,7 +10,7 @@ branches:
 
 before_install:            
   - docker pull conoria/alpine-r-bookdown
-
+  
 before_script:
   - chmod +x ./_build.sh
 
