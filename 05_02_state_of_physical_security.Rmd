@@ -1,7 +1,6 @@
 ```{r, echo=FALSE}
 library(ggplot2)
 
-
 pal <- c(
   "Data Provider" = "red",
   "Third-Party" = "yellow",
