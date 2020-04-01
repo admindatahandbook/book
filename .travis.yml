@@ -9,10 +9,6 @@ branches:
 before_install:            
   - docker pull conoria/alpine-r-bookdown
 
-install:
-
-  - ./travis-tool.sh install_r ggplot2
-
 before_script:
   - chmod +x ./_build.sh
 
