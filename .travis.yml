@@ -14,7 +14,7 @@ before_script:
 
 script:
   - docker run  --rm -v $(pwd):/documents --name bookdown conoria/alpine-r-bookdown  /documents/_build.sh
-  - docker run R -e "install.packages('ggplot2',dependencies=TRUE, repos='http://cran.rstudio.com/')"
+  - docker run r -e "install.packages('ggplot2',dependencies=true, repos='http://cran.rstudio.com/')"
 
 after_error: 
   - docker logs bookdown
