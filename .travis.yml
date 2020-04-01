@@ -1,5 +1,3 @@
-cran: http://cran.rstudio.com
-
 services:
   - docker                  
 
@@ -10,7 +8,7 @@ branches:
 
 before_install:            
   - docker pull conoria/alpine-r-bookdown
-  
+  Rscript -e 'install.packages("ggplot2", repo="http://cran.rstudio.com")'
 before_script:
   - chmod +x ./_build.sh
 
