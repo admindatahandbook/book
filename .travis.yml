@@ -8,7 +8,7 @@ branches:
 
 before_install:            
   - docker pull conoria/alpine-r-bookdown
-  Rscript -e 'install.packages("ggplot2", repo="http://cran.rstudio.com")'
+
 before_script:
   - chmod +x ./_build.sh
 
@@ -20,7 +20,6 @@ after_error:
 
 after_failure:
   - docker logs bookdown
-
 
 deploy:
   - provider: pages
