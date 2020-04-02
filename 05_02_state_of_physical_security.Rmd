@@ -182,7 +182,7 @@ In this section, we explore how the five dimensions map onto the case study chap
 
 In the SFUSD-Stanford Partnership, the data location of the full set of data that is available for research usage is the CEPA Data Warehouse, a third party organization. The warehouse serves as a trusted data service that ultimately transfers a restricted set of data to the researcher. The analysis and access computers are both under the administrative control of the researcher, with the data and analysis software on the same device. These devices are subject to Stanford and SFUSD requirements for data security, including enterprise operating system management and whole disk encryption for any device that holds the data. The access rooms are low security; researchers must take reasonable measures to physically protect the data but there are no specific requirements or checks on the location of the data itself. Typically this takes the form of storing the researcher’s computer in a locked office, although in the case of graduate student researchers the offices may be shared. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
 
-#### New Brunswick
+#### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
 The NB-IRDT serves as a third-party data center for the various data providers that supply it with data to make available to researchers. The data location, access computers, and analysis computers are all located on site at NB-IRDT facilities. Researchers use workstations to remotely access data from a central server, and store their data on a local server at the specific facility that the researcher is at. Researchers have partial access to analysis computers, without the ability to  Researchers have limited access to the access computer, with stringent security requirements placed upon their usage of the research workstation. The access room is under high security, with strong specifications of security such as restricting mobile devices and outside materials, physical controls on the servers and workstations, and having dedicated fiber optics cables to handle data connections between the central and satellite locations. [Missing information about access computer software and analysis methods from chapter]
 
@@ -214,14 +214,14 @@ In the Cape Town partnership, the data was transferred from the data provider to
 
 #### French
 
+#### National Center for Education Statistics (NCES) Restricted Use Data License
+
+The NCES, a part of the United States Department of Education, allows researchers to apply for a restricted use data license to store data on site at the researcher. The data location, access computer, and analysis computers are all under the control of the researcher, with specific security requirements for the computers, the storage mediums that researchers receive the data on, and any physical documentation. With full administrative control of the analysis computers, researchers also have no restrictions on the analysis methods that they are allowed to use. NCES mandates a medium level of security for the access room, specifying that it must be a locked room with access restricted to authorized users. The security arrangements must be approved by NCES prior to the receipt of restricted use data and are subject to unannounced inspections. 
+
+#### Bureau of Labor Statistics (BLS) Onsite Access
+
+The BLS has two research data centers in its national office at Washington D.C. for access to particularly sensitive research files and surveys that are not available offsite or through the FSRDC network. The data location, access computers, and analysis computers are all located and controlled by BLS. As with other research data centers, there is a high specification of security for the access room, with access limited to approved researchers and all materials subject to search when entering or exiting the facility. Analysis methods are restricted to pre-installed versions of SAS, Stata, and SPSS, with limited use of approved statistical software and data files that can be installed by the BLS staff.
+
 #### NCHS
 
-https://www.cdc.gov/rdc/b2accessmod/ACs200.htm - remote access no longer available, otherwise available at FSRDCs
-
-#### NLSY - 79 and 97
-
-Data location: On Site at BLS (data provider)
-Analysis Computer: Data provider owns, BLS server
-Access Computer: data provider owns, ports disabled
-Access Room: unknown, presumably high (all materials can be searched)
-Analysis Methods: Some restrictions (permission required, but the BLS project coordinator can load software and files onto the account)
+[https://www.cdc.gov/rdc/b2accessmod/ACs200.htm - remote access no longer available, otherwise available at NCHS RDC or FSRDCs, not sure about the utility of "yet another RDC" example]
