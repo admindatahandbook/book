@@ -1,278 +1,300 @@
+```{r, echo=FALSE}
+ library(ggplot2)
+
+ pal <- c(
+   "Data Provider" = "red",
+   "Third-Party" = "yellow",
+   "Researcher" = "green",
+   "Unrestricted" = "green",
+   "Restricted" = "red",
+   "Open" = "blue",
+   "Low Security" = "green",
+   "Medium Security" = "yellow",
+   "High Security" = "red"
+ )
+ 
+plot <- function(data) {
+   ggplot(data, aes(x=metrics,y=1)) +
+   geom_bar(stat="identity", aes(fill=rank)) +
+   theme(axis.title.x=element_blank(),
+         axis.text.x=element_blank(),
+         axis.ticks.x=element_blank(),
+         axis.title.y=element_blank(),
+         axis.text.y=element_blank(),
+         axis.ticks.y=element_blank(),
+         legend.position = "none") +
+   scale_fill_manual(values = pal) +
+   geom_text(aes(label=paste(metrics,": ",rank)),
+             color="black",
+             position = position_stack(vjust=0.5)) +
+   coord_flip()
+ }
+
+
+```
+
 ## Physically Protecting Sensitive Data
 
-Physical Access Spectrum
-- Complexity/Cost vs. Security
+### Five Dimensions of Physical Security
 
-### Types of data access (listing pros and cons of each)
+We propose using five dimensions of physical data security to serve as a framework to evaluate the different defining features of various data access mechanisms. The five dimensions include the location of the data, the access that researchers have to the analysis computers, the location of the access computers, the level of security of the access room, and the range of analysis methods available to researchers. When proposing and negotiating a potential use sharing agreement, evaluating the physical security arrangements along these five dimensions can help researchers and their data providers craft robust mechanisms to protect data when transferring and using data for research.
 
-|                      | USA | France | Germany | Canada |
-|----------------------|-----|--------|---------|--------|
-| Physical enclave     | Yes | No     | Yes/ No | Yes    |
-| Data in same enclave | No  | --     | No      | Yes    |
-| Custom hardware      | No  | Yes    | No      | No     |
+#### Data Location
 
-### Data Access Types
+The researcher-accessible administrative data can be stored at one of three types of locations. The data can exist at the data provider, the data provider can transfer the data directly to the researcher, or the data provider can transfer the data to a trusted third party. Each possible data location comes with its own requirements, advantages, disadvantages, and special considerations for the researcher and data provider.
 
-| Control of: | Data access | Analysis computers | Access computers | Access rooms | Analysis methods |
-|-------------|-------------|--------------------|------------------|--------------|------------------|
-| FSRDC researcher | Full | Full | Full | Full (badge access) | Some (choice of software) |
-| Census employee | Full | Full | None (VDI) | None (VDI) | Some (choice of software) |
-| IAB: RDC researcher | Full | Full | Full | Full (trusted person) | Some (choice of software) |
-| IAB: JoSuA researcher | Full | Full | None (Web application) | None (Web application) | Smaller (software, whitelist commands) |
-| IAB employee | Full | Full | Full (IAB laptop) | None (VDI) | Some (choice of software) |
-| CASD researcher | Full | Full | Extra Full (custom-built hardware) | Some (university office, EU) | Some (choice of software) |
+When the researcher-accessible administrative data remains under the custody of the data provider, the primary advantage is that the data provider has direct physical control over the access it provides to the data. With properly configured software and hardware access mechanisms, only approved devices belonging to safe people will be able to connect to the data. Access mechanisms in this scenario are limited to having the researcher travel directly to the data provider, or providing a remote access system for the researcher to connect to the data provider’s data system. Both the New Brunswick Institute for Research, Data and Training (NB-IRDT) and the German Institute of Employment Research (IAB) maintain direct control over their data, with researchers having to travel to the NB-IRDT to access the data in a secure setting, while the IAB allows researchers to remotely access the data.
 
-### Data Access Mechansisms database
+If the data provider transfers the data to the researcher, the researcher has physical control over the data. This can be a cost-saving measure for the data provider, as it no longer has to maintain the infrastructure to support data storage and analysis. However, the data provider is mostly dependent on legal agreements, audits, and other second-hand mechanisms to maintain de jure control over what the researcher can and cannot do with the data. The data provider can mandate the usage of monitoring software, specific storage setups, access requirements, and other technical methods of assuring that the researcher only uses the data for approved purposes and shares with approved people. The Ohio Longitudinal data Archive (OLDA) is an example of transferring the data to researchers, where researchers are responsible for providing secure desktop to store OLDA data. 
 
-https://docs.google.com/spreadsheets/d/1ma-QEnzjr78BJ-7B87Q70ZIWK5mxrBn9H5gR2mh0h_Y/edit?usp=sharing
+The third alternative is for the data provider to entrust a third party to hold the data on its behalf. The third party can either be a secure data service researcher’s institution or a neutral third party. The third party has its own agreement with the data provider to maintain and transfer the data as requested, separate from the agreements that govern the researchers’ usage of the data. The advantages of this arrangement include having an organization that is more familiar with and responsive to the needs of the researchers handling the data as well as reducing the burden on staff and resources at the data provider. The San Francisco Unified School District (SFUSD) Stanford Partnership is an example where the data provider entrusts the data to a third party at Stanford University, which ultimately makes it available to approved researchers.
 
-### Overview of Data Access Mechanisms
+#### Analysis Computers
 
-To facilitate the use of data in the policy lifecycle, governments can partner with researchers to generate key policy findings by conducting randomized evaluations like those highlighted in the previous section. One of the ways to make these evaluations require less time and money is for the government to provide researchers with administrative data, such as tax data or health facilities records, through a data exchange mechanism. Better data enables better research, which in turn generates useful information to inform policy making. However, data providers and researchers need to take additional steps beyond setting up data exchange mechanisms in order to ensure the ethical and effective of administrative data in research to generate insights for specific policy issues and the dissemination of those findings.
+The level of access that researchers have to the analysis computers is another dimension on which data providers and researchers setting up data sharing systems must consider. Analysis computers are the computers on which researchers perform their analysis on and are by definition at in the same location as the data, and are potentially distinct from the computers which researchers use to access the data. The level of access that researchers have refers to the restrictions, or lack thereof, on what researchers can do on the computer; the most relevant aspect of this tends to be what software that researchers can utilize.
 
-> [NOTE] the section above belongs in the intro chapter, not the technical chapter.
+In the least restrictive arrangement, researchers can have full administrative access to the analysis computers, meaning that there is no restriction on the types of software that researchers can use to perform their analysis. This can be through the researcher having ownership over the analysis computer, such as in the instance when the data is transferred to the researcher, or when the researcher has agreements with the data provider allowing them to utilize their choice of software on the analysis computers. This allows researchers to perform more types of analysis than they might otherwise be able to. One example of this is the way that NCES restricted-use data licenses operate. The researcher must set up a secure data room in accordance with NCES requirements, but is otherwise free to utilize whatever software they want to analyze the data.
 
-On the technical side, one of the main trade-offs involved in selecting data exchange mechanisms is between ease of access and use, versus maintaining control of and protecting citizens’ data. This tradeoff can be roughly categorized into four main access types, with varying levels of cost and complexity associated with each type of access mechanism.
+In other instances, researchers only have partial access to the analysis computers. This usually occurs in cases where researchers only have remote access to the data and analysis computers. There is a large spectrum of the limits that partial access can place on researchers. On one end of the spectrum, partial access can be relatively open, with researchers being allowed to utilize most if not all commonly available software packages without having administrative access to the computers. Researchers may have a mechanism to request new software or packages for the analysis computers that requires the computer owner to implement. Functionally, this allows researchers nearly the same level of flexibility as having full access, without allowing researchers to have administrative privileges to the computers.
 
-> [NOTE] going through this, we need to distinguish where the researcher sits, and where the data and computation is located. The two interact in various ways. That was one or two of the slides in my presentation. 
+On the other end of the spectrum, researchers may be restricted to very specific sets of software that are pre-approved by the analysis computer owner. This may be due to technical requirements related to computer and network security, as a mechanism for disclosure control, or the expense of acquiring or maintaining multiple sets of software. These restrictions affect not only the base software itself, such Stata or R, but also third party packages for those software; while the base software itself may be unrestricted, additional packages not signed by the original developer may not be allowed. For example, the Federal Statistical Research Data Center network has a specific set of software that they make available to researchers, who must use one of the programs that the FSRDC has on their secure computing network. 
+
+#### Access Computers
+
+The location of the access computers is another dimension of physical security. Access computers are the computers researchers utilize to access the analysis computers. The access computers can be the same as the analysis computers, in instances that the analysis computer is also the access computer. Access computers can also be distinct from analysis computers, such as in remote login or remote execution setups. Access computers can be located at the data provider, at the researcher, or at a third party institution.
+
+If the access computer is located at the data provider, the researcher must travel to the data provider. This does not necessarily mean that the access computer is the same computer as the analysis computer, merely that the access computer is under the physical control of the data provider. This allows the data provider maximum control over the access computer and its security arrangements, including physical monitoring, removing USB access ports, controlling user access to specific files and folders, and other measures. One example of this setup is the NB-IRDT, which only maintains access computers at sites that it controls.
+
+Access computers located at the researcher can take a variety of forms. This can involve direct data transfers to the researcher, where the access and analysis computer both belong to the researcher. This requires the researchers to properly configure and secure the access computer under their control, which the data provider can exercise some control over with the usage of monitoring software. The other option is for a remote access system, whether it is software installed on a computer owned by the researcher, such as remote desktop or remote submission systems, or the data provider issuing the researcher a thin client, a specialized computer that has specific hardware and software configurations. The SFUSD-Stanford partnership allows researchers to utilize their own computers, subject to security requirements, as the access computer. The IAB remote execution access route has researchers using a software remote submission system to access the data.
+
+The final option is for the access computer to be located at a third party. This usually takes the form of research data centers that have agreements to host access computers in a secure environment on behalf of the data provider. This allows more flexible access options for researchers, who can avoid having to travel to the data provider itself. It also saves the data provider itself from having to maintain the entirety of the access infrastructure by itself. In the example of the US Census Bureau FSRDC, there are many research universities and other host institutions that house access computers in secure settings to enable easier access for researchers located around the country. A lower cost, smaller scale implementation of this system is the Safepod network in the United Kingdom, which functions similarly to an RDC but in a much smaller, prefabricated space.
+
+#### Access Rooms
+
+The location of the access computer, the access rooms, can have varying levels of security. We classify the levels of security into four levels, ranging from open access (no security) to low, medium, and high security arrangements. Unlike the other dimensions outlined above, these are not concrete distinctions between different mechanisms but rather broad classifications of the overall rigor of physical security regimes.
+
+An open access arrangement is one where there are no mandated controls on the physical location of the access computer. The access computer is protected only by hardware and software configuration of the device itself. This is usually only seen in remote access or submission systems, such as the IAB JoSuA interface where there are no explicit restrictions on where the researcher can use the interface [do you know if this is true, Lars? I can’t find anything on IAB website saying that there is a restriction].
+
+A low security arrangement has a mandated location for the access room or other basic security precautions, but otherwise has no access controls outside of the control of the researcher. Frequently this takes the form of provisions in the data use agreement between the data provider and researcher mandating certain steps such as storing the data in a locked room, but the security arrangements are maintained by the researcher. For instance, the SFUSD-Stanford data use agreement template mandates that Stanford researchers take “reasonable and appropriate efforts” to keep the data “in a space otherwise physically and electronically secure from unauthorized access”. However, the district does not exercise physical control over the researchers’ access room security.
+
+An access room with a medium security setup has mandated security features. Access is restricted to approved researchers, with a minimum of a physically secured facility such as a locked room where only approved researchers have key or keycard access.  Frequently, medium security room setups will be under the control of a third party or the data provider itself. This enables the room administrator to directly monitor who has access to the room and the physical security of the access computers within the room.
+
+In some circumstances, access rooms can still remain under the control of the researcher; however the data provider would need to approve the security arrangements, conduct audits, or otherwise directly verify that the researcher is in compliance with the security requirements or the access room. The requirements for the data location outlined in the NCES restricted-use data license is an example of a medium security arrangement under the control of the researcher. The data must be kept in a locked room with access restricted only to licensed researchers, with the security arrangements subject to random audits by NCES.
+
+A high security access room builds on the medium security room, but has strong specifications for physical security. This can include mandating that the room have secured walls that fully extend from the floor to ceiling with no gaps, electronic shielding for the room, video monitoring of the room, identity or biometric verification for people entering the room, and other security arrangements that extend beyond simple access controls for people entering the room. The NB-IRDT data centers, with their stringent access controls and additional physical safeguards such as bolting the server to the floor in a separate locked cage, falls into the high security category.
+
+#### Analysis Methods
+
+The final dimension of physical security is the range of analysis methods available to the researchers. There are either unrestricted analysis methods, subject to software availability, or a limited range of methods that limits the sorts of analysis and tabulations that researchers can perform.
+
+Environments with unrestricted analysis methods allow researchers to utilize the full range of methods available in the set of software that is available on the analysis computer, subject to other restrictions on the analysis computer as discussed in the previous section. Limited analysis methods place restrictions on what researchers can do, such as limiting the language set available to researchers to a whitelisted set of commands.
+
+[lars - can you fill this section out more? This sort of restriction isn’t mentioned in any of our case studies, and publicly available information seems really thin as well]
+
+[Norwegian system, for instance, is running python in the background. Only allow a subset of pandas package
+
+Various remote submission systems that limit what you can do. Look at canadian remote submission system that is essentially a tabulator (variables you can access, SAS code, limited to SAS code, whitelist of admitted commands)
+
+NCHS, similar for their remote submission system [https://www.cdc.gov/rdc/b2accessmod/ACs200.htm - remote access no longer available]
+
+Online tabulators. Can express many things as conditional tables, working through that interface you are limited to tables.
+
+Limited access to different set of data/commands, can access from anywhere, can only do certain things with it
+
+Economists don’t care so much about things like NCES public use data, but citizen access is valuable for tables and summary stats
+
+Think of analysis methods as the software you can install. May have complete access to analysis computers, but software and packages might restrict what you can do. Whitelist again of things you can access.]
+
+### Technical features, infrastructure, implementations
+
+#### Thin Clients
+
+One of the common implementations of access computers, whether with the researcher or at data centers, is the usage of thin clients. Thin clients are computers that have been optimized for connecting with remote servers that store the data and do the actual analysis. Very restrictive implementations of thin clients can prohibit any usage beyond displaying information from the server and accepting mouse and keyboard input from the user. One of the main advantages of dedicated hardware thin clients is that they are cheaper and simpler than regular computers. As of the time of writing, thin clients can cost as little as $100 for the hardware itself, in contrast with the cheapest entry level computers which are several hundred dollars. Furthermore, thin clients can operate without local storage to prevent users from saving data to the client.
+
+For data providers and researchers setting up remote access to analysis computers via thin clients, the clients themselves do not need to be capable of running statistical software or intensive analysis; the analysis will occur on the server that hosts the data and software packages. Thin clients can either be provided directly to researchers or be housed within a research data center. thin clients can be sourced from many manufacturers of enterprise hardware, both as standalone devices for the user to configure as well as full fledged hardware and software package solutions configured by the vendor.
+
+#### Biometric authentication (fingerprint, etc)
+
+Biometrics are physical and biological features unique to individuals. Biometric authentication is the use of biometric features to verify the identity of individual users. By verifying the user’s identity based on stored information about authorized users, biometrics can be used to authenticate authorized access to access computers, analysis computers, and access rooms. The main components of such an access system includes the biometric sensor itself, which is connected to a database that contains the set of validated users, and controls either the physical or electronic lockouts for a given system (e.g. entering a room or logging into a computer).
+
+Most biometric authentication techniques rely on the physical characteristics of individuals. One of the most common biometric technologies in current use is fingerprint scanners for consumer electronics such as laptops and smartphones. Other commonly used technologies include facial recognition, retinal or iris recognition, and voice identification. Biometric authentication techniques can serve both as a primary form of identification as well as being layered in two or multiple factor authentication techniques, such as in conjunction with passwords or other devices. When applied to physical data security, biometrics authentication can be required  by data providers as part of an access agreement, collected from authorized users, and implemented by any of the parties with administrative control over access rooms, access computers, and analysis computers as required.
+
+#### Physical access cards
+
+Physical access cards are electronic cards that identify the card bearer for a physical access control system. Access to devices or rooms are secured by a card reader validates the user’s card with a central database that has a set of valid cards and subsequently disables the locks on the system or room that it is protecting. The cards themselves can use magnetic stripes, barcodes, electronic fields, or other systems for interfacing with the card reader. Physical access cards are commonly used in universities and have the advantage of likely having existing infrastructure to support the creation of secure access rooms for researchers receiving administrative data.
+
+#### Secure Rooms
+
+Beyond access control, rooms can have various specifications for securing it against unauthorized access. For most implementations of secure rooms that house administrative data for research purposes, one requirement is having the room fully enclosed by walls that extend from floor to floor with a minimum number of possible entryways to minimize the possibility of unauthorized access. Any doors, windows, air vents, and other possible entryways would be secured by bars, mesh, or other methods to deter access. The doors and walls can have minimum specifications of construction materials, techniques, and thickness to increase protection against physical attacks; reinforced doors and walls offer increased protection compared to regular home and office construction materials. Door hinges, access panels, partitions, windows, and other possible ways of entering the room would be installed from the inside of the secure room to prevent their removal from the outside.  In instances where the room stores data itself, the devices within the room can be mandated to have no outside network connections (an air-gapped network), or no network connection at all
+
+#### IP address restrictions
+
+For remote access mechanisms, one way to ensure that only an authorized user has access to the remote system is to restrict the IP address of the devices that are allowed to connect to the server. There are two types of restrictions, blacklisting and whitelisting. Blacklisting specific addresses is used to block known or potential bad actors but otherwise does not restrict connections to the server; whitelisting only authorized users is the primary use of IP restrictions in an access control mechanism. This is frequently an option built into the software for managing the server. For example, software used for managing secure file transfer protocols can restrict the IP addresses that it will accept connections from. For data providers and researchers, this can be restricted to specific devices that the researcher registers with the data provider as the access computer.
+
+#### VPN
+
+Virtual private networks (VPN’s) are used to allow users to exchange data over public networks as if they were directly connected on a private network. VPNs utilize an encrypted channel established between the remote computer and the network to securely transfer data and gain access to resources on the network. Users must authenticate themselves, such as with usernames and passwords, to access the VPN. VPN’s has applications for transferring data to researchers as well as remotely accessing data by either the researcher themselves or from a remote data center. For open access settings VPNs can be particularly useful, as they allow the encryption (and therefore security) of any data that the researcher can access from a public network.
+
+#### Remote desktop
+
+Remote desktop systems are software packages that enable users on one computer to connect to another computer over a network. These are conceptually the same as the software component of thin clients but can be installed on any computer; all modern Microsoft operating systems have had native remote desktop clients, and there are many implementations for other operating systems as well. Remote desktop software can be used to allow researchers to access an analysis computer or server under the control of the data holder, without needing to provide the researcher with a physical thin client. On the data provider side, the remote desktop service can be configured to prevent file transfers and copying data to the researcher’s computer.
+
+#### On-site storage
+
+There are many options for storing data on site for data providers and researchers. For researchers and data providers with robust IT infrastructure (e.g. Research 1 universities, national statistical agencies) there are generally internal guidelines and policies for data storage that render this a solved problem. For researchers and data providers without existing data storage policies and needing to set up their own storage systems as part of a data sharing agreement, the primary technical considerations are data loss prevention, storage device uptime, and security.
+
+The annualized failure rate (the probability that a device will fail during a full year of use) of modern consumer-grade hard disks is typically below five percent, but generally does not get much below one percent. Depending on the risk tolerance of any particular researcher or data provider this single disk failure can be unacceptably high; technical solutions include using enterprise-grade disks with lower failure rates, using multiple disks in a mirrored array that guards against single or multiple disk failure, and implementing multiple backup copies of the data that can be quickly restored. A common strategy for backups is to have three copies of the data, with two backup copies stored on different devices, and with at least one copy stored off site. Backup strategies will need to be tailored to fit specific scenarios; for instance, off-site storage may be prohibited under data sharing agreements.
+
+Maximizing system uptime for the data storage device is important for allowing the uninterrupted use of the research data. In the simplest implementation of storing data on individual computers with directly attached storage, any issue with the system will result in the interruption of data transfer or research activities. Specially built storage servers allow for maintenance, including hot-swapping storage drives, while the server remains running. Prospective data centers can also set up multiple storage servers to run in parallel with the data mirrored between them, using one or the other as necessary to balance usage and take servers offline for maintenance as needed.
+
+Security in the context of setting up data storage is the prevention of unauthorized access to the data. No solution is ever without risk, although risk can be reduced with the proper safeguards. The proper configuration and maintenance of the storage device is key in preventing unauthorized access to the data. For instance, the Equifax data breach in 2017 was a result of Equifax failing to apply a security patch for a known vulnerability of the software that Equifax utilized for its website; the software vendor had already released a patch when the breach occurred yet Equifax had neglected to deploy the update. In addition to properly applying security updates and configuring access, the encryption of the data on the server can provide the final line of defense in the event that an adversary does get access to the server. This can protect against both unauthorized remote access via software vulnerabilities or physical access where the storage device itself is compromised.
+
+#### Cloud storage
+
+In lieu of maintaining storage systems on site, utilizing a cloud storage service is an alternative for data providers and researchers looking to store large amounts of data. Cloud storage providers, such as through Google Drive, Dropbox, Box, Microsoft OneDrive, and other vendors, manage the physical infrastructure and allocate storage space to the user on an as needed (and contracted) basis. This saves the user the capital costs and technical expertise required to set up their own on-site storage, but comes with the tradeoff of placing the data under the control of a third party. Cloud services by definition require and enable remote access to data, which may prohibit the use of cloud storage under some data sharing agreements. However, many research universities have agreements with cloud service providers in the acknowledgement that the scalability of the storage solution and the resources for security that major cloud services providers can provide outweigh the benefits of maintaining their own storage on site.
+
+### Typical access mechanisms
 
 #### Remote Execution
 
-Remote execution is the most restrictive access mechanism for data exchange, suitable for the most sensitive types of data, such as personal health data. Data is stored remotely in a location such that a researcher does not have direct access to the data. In this scenario, a researcher needs to submit a request to the data provider to extract the appropriate analysis files, or have the data provider run the analysis on behalf of the researcher and share only the summary output.
+Under a remote execution model, data is stored remotely in a location such that a researcher does not have direct access to the data. In this scenario, a researcher needs to submit a request to have the data provider run the analysis on behalf of the researcher and share only the summary output, with the researcher never having access to the actual data.
 
-> [NOTE] This will need some cleaning up. "Extraction" is actually transfer to the researcher (so it depends on where the processing is). Some providers use remote execution in the form of custom table builders for the *least* sensitive data. On the other hand, some (IAB) use remote execution in combination with an online development environment with less sensitive data to provide access. Every cloud access is remote execution. 
-
-##### Requirements
-
-Remote execution requires that a data provider maintain dedicated staff with the technical expertise to interface with researcher, run the researchers’ code, and check the output for data anonymity before sending it back to the researchers.
-
-> Remote execution does not necessarily involve a person executing the researchers' code. In the IAB system, remote execution is automatic, but release of results is not. Some remote execution environments provide automated disclosure tools.
+Remote execution requires that a data provider maintain dedicated staff with the technical expertise to interface with researchers, run the researchers’ analysis, and check the output for data anonymity before sending it back to the researchers. The systems to perform the analysis and disclosure checks can be manual or automatic, which both require technical experts to maintain.
 
 The data provider also needs to create and maintain the systems to facilitate the transfer of the necessary files (researchers need to receive the synthetic data, submit analysis files, and receive the output) as well as to allow the data provider to run the necessary analysis on behalf of the researcher.
 
 A key requirement for such a system is the provision of accurate codebooks and documentation from data providers to researchers such that they can prepare the appropriate data request and analysis files for the data provider. While important for all data exchanges, this is especially important for remote execution since researchers cannot personally examine the data. One common method is for the data provider to give researchers synthetic data files that have the same variables and table structures as the real data, but have fictitious values for the variables.
 
-##### Benefits and Tradeoffs
-
 By maintaining full control of the data as well as having the opportunity to check the researchers’ request and check the output before handing it back to the researcher, remote execution gives the data provider the highest level of data security. The primary tradeoff is the additional resources required on the part of the data provider to perform these tasks and the additional time it will take for a government to receive relevant results from their research partner.
 
-##### Examples
+One example of a national statistical agency that uses a remote execution model is Statistics Canada, which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German IAB has a remote execution portal where researchers can test their code on test data data and upload their code for execution, and only access approved results when their job is complete.
 
-One example of a national statistical agency that uses remote a remote execution model is Statistics Canada,  which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German Institute for Employment Research has a remote execution portal where researchers can test their code on synthetic data and upload their code for execution, and only access approved results when their job is complete.  
-
-> [NOTE] Actually, the online interface (JoSuA) is on real data.
-
-A variant on the remote execution model is the United States National Center for Health Statistics Research Data Centers,  which requires researchers to first submit their analysis code for manual approval before arriving at the research data center itself to run the analysis.
-
-- Technical overview
-  - Data is stored remotely, researcher never has direct access to data
-  - Researcher gets synthetic data and codebook to write analysis code
-  - Researcher submits analysis code to data provider which vets and runs the code (this may require back and forth)
-  - Data provider sends output back to researcher
-  - Pros: most secure for data, researcher never sees data
-  - Cons: requires dedicated staff to run analysis code, time consuming for researcher, expensive in staff time for agency
-- Requirements
-  - Space and Equipment
-    - Possible that no extra dedicated space and equipment beyond what data provider already has for its own work
-    - Requires some means for transfering synthetic data, analysis code, and outputs
-  - Staff
-    - Requires staff at agency to do the remote execution, needs to have technical expertise to run the code and work with researcher
-  - Cost
-    - Staff time = ???
-- Examples
-	  - CDC RDC (sort of, they create an analysis file for you but execution of analysis is done by researcher at RDC https://www.cdc.gov/rdc/leftbrch/Presubmit.htm)
-	  - Statistics Canada https://data.library.ubc.ca/gen/Synthetic.html
-
+A variant on the remote execution model is the United States National Center for Health Statistics Research Data Centers, which requires researchers to first submit their analysis code for manual approval before arriving at the research data center itself to run the analysis.
 
 #### Physical Data Enclave
 
-The next restrictive level of data access is the maintenance of a physical data enclave which stores the data. Researchers must physically enter the data enclave to access the data and run their analysis code. The data provider can choose to store the data either on site at the data enclave itself, or store the data on a remote server that can only be accessed by specifically configured computers located within the data enclave. In either case researchers only have access to the data in a secure and physically controlled environment.
-
-##### Requirements
+In a physical data enclave, researchers must physically enter the data enclave to access the data and run their analysis code. The data provider can choose to store the data either on site at the data enclave itself, or store the data on a remote server that can only be accessed by specifically configured computers located within the data enclave. In either case researchers only have access to the data in a secure and physically controlled environment.
 
 To run a physical data enclave, a data provider needs to have an access-controlled space for researchers to work in with the requisite servers, computers, and software packages. The data provider must also have staff or automated systems to ensure that researchers are not running proscribed analyses and checking the outputs before being removed from the physical data enclave.
-
-##### Benefits and Tradeoffs
 
 The data provider gets most of the security benefits of remote execution by maintaining full control over the data in the entire research process. It removes the potential bottleneck and additional expense of requiring dedicated staff on the part of the data provider to actually run the analysis on behalf of the researcher. The ability of researchers to personally examine the data in controlled settings enables them to potentially work with data providers on improving data quality in such a setting.
 
 However, physical data enclaves still impose restrictions on the flexibility of researchers and the speed at which governments can receive research findings; instead of waiting for someone to run the remote execution for them, researchers have to schedule visits to a physical location. It also requires the data provider to provide the physical and technical infrastructure for researchers to conduct their research in a secure location.
 
-##### Examples
+Different models of physical data enclaves exist. The traditional model in the United States is the Federal Statistical Research Data Center (FSRDC) network, where federal statistical agencies partner with research institutions to provide secure data access facilities managed by the US Census Bureau. Research institutions maintain the data enclave itself and the client computers within the data enclaves, which are connected to servers maintained by statistical agencies. Researchers must be approved by the Census Bureau and pass background checks before gaining access to the facility and data, and the output is subject to disclosure-avoidance review by FSRDC staff. FSRDC type facilities represent the highest level of security for protecting sensitive data, but are also more expensive than other methods which rely more on trust and less on physical security. Initial startup costs could reach hundreds of thousands to millions of dollars, and ongoing operating costs, while much lower, must cover full time staff and maintenance on the equipment.
 
-Different models of physical data enclaves exist. The traditional model in the United States is the Federal Statistical Research Data Center (FSRDC) network, where federal statistical agencies partner with research institutions to provide secure data access facilities managed by the US Census Bureau. Research institutions maintain the data enclave itself and the client computers within the data enclaves, which are connected to servers maintained by statistical agencies. Researchers must be approved by the Census Bureau and pass background checks before gaining access to the facility and data, and the output is subject to disclosure-avoidance review by FSRDC staff. FSRDC type facilities represent the highest level of security for protecting sensitive data, but are also more expensive than other methods which rely more on trust and less on physical security. Initial startup costs could reach hundreds of thousands  to millions  of dollars, and ongoing operating costs, while much lower, must cover full time staff and maintenance on the equipment.
-
-An innovation on the physical data enclave is the SafePod network in the United Kingdom, which scales down a full-scale research data center. The SafePod has much lower installation costs than a full data center, around £25,000.  It is a standardized, prefabricated unit that can be placed in any partner institution, and the pod itself serves as the physically controlled space.  Like a FSRDC, a SafePod facilitates researcher access to data stored on statistical agency servers; in this case, with access to the data approved by the actual data providers while the partner institution handles local support and physical access controls. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation in physical data enclaves that makes this highest level of data security less costly.
-
-- Technical Overview
-  - Data can be stored either on site or remotely on a server with access through clients
-  - Researcher travels to physical enclave to have controlled access to data
-  - Researcher can only remove output from physical enclave
-  - Pros: researchers have access to data in controlled environment
-  - Cons: researchers have to travel, high resource requirements
-- Requirements
-  - Space and Equipment
-    - Access controlled room
-    - Client computers and servers
-    - Software
-  - Staff
-    - FSRDCs are led by a director and have several dedicated administrative staff
-    - Safepod model would need remote technical support
-  - Cost
-    - NSF grant for \$100,000 to \$300,000 in startup costs (https://www.nsf.gov/pubs/2015/nsf15586/nsf15586.htm), three grants all awarded \$300,000
-    - NIH estimates "millions" (https://grants.nih.gov/grants/guide/notice-files/NOT-OD-19-085.html)
-    - £25,000 to build a safepod https://thetab.com/uk/stand/2015/03/31/mysterious-library-safepods-13641
-- Data enclave examples
-  - FSRDC at universities
-  - NORC at Chicago
-  - Safepod (new model)
-
+An innovation on the physical data enclave is the SafePod network in the United Kingdom, which scales down a full-scale research data center. The SafePod has much lower installation costs than a full data center, around £25,000. It is a standardized, prefabricated unit that can be placed in any partner institution, and the pod itself serves as the physically controlled space. Like a FSRDC, a SafePod facilitates researcher access to data stored on statistical agency servers; in this case, with access to the data approved by the actual data providers while the partner institution handles local support and physical access controls. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation in physical data enclaves that makes this highest level of data security less costly.
 
 #### Virtual Data Enclave
 
-A virtual data enclave is conceptually similar to physical data enclaves, except there is no physically controlled space that the researcher must visit in order to access the data. Rather, researchers utilize different technical means to remotely access servers that store data and perform their analysis do the analysis on the remote server. Software access controls perform automated scans of the output and prevent the researcher from removing data from the remote server.
-
-##### Requirements
+A virtual data enclave is conceptually similar to physical data enclaves, except there is no physically controlled space that the researcher must visit in order to access the data. Rather, researchers utilize different technical means to remotely access servers that store data and perform their analysis on the remote server. Software access controls perform automated scans of the output and prevent the researcher from removing data from the remote server.
 
 Data providers using a virtual data enclave model maintain the servers that house the data and enable researchers to run their analysis, the connections with the thin clients and the remote desktops used to connect with the server. A virtual data enclave includes trained staff, who help process data and assist researchers. There are two basic approaches to the remote access mechanism: either using remote desktop software that the researcher can install on their own computer, or a dedicated computer (referred to as thin clients) that the data provider loans the researcher to connect to the server. To address physical security concerns, data providers can impose storage and safety requirements on researchers as part of the agreement that allows them access to the virtual data enclave or have dedicated staff conduct periodic audits.
-
-##### Benefits and Tradeoffs
 
 The virtual data enclave model has a major advantage for researchers in that they no longer have to travel to specific facilities to perform their research. Furthermore, instead of the cost of maintaining an entire physical data enclave and the associated staff at each enclave, the data provider only needs to provide researchers with the necessary thin clients or remote desktop systems and can centralize their data staff.
 
 The primary tradeoff is the slightly lower level of data security when the researcher accesses the data, as the data provider relies on only software level controls without the ability to physically check the researcher and their output as in a physical data enclave. However, with the proper implementation this level of security is still quite robust and less costly.
 
-##### Examples
+Statistics Denmark is one major statistical agency that uses a virtual data enclave model for access to their data. Researchers approved by Statistics Denmark can utilize specific client software for remote access to servers that house research data and perform their analysis through the client software. Researchers must sign agreements with Statistics Denmark with specific requirements to protect the physical security of the terminal that they use to access the server, consent to having their transactions on the server logged to prevent unauthorized copying of data, and ensure that they do not identify individual persons or enterprises in their output.
 
-Statistics Denmark is one major statistical agency that uses a virtual data enclave model for access to their data.  Researchers approved by Statistics Denmark can utilize specific client software for remote access to servers that house research data and perform their analysis through the client software. Researchers must sign agreements with Statistics Denmark with specific requirements to protect the physical security of the terminal that they use to access the server, consent to having their transactions on the server logged to prevent unauthorized copying of data, and ensure that they do not identify individual persons or enterprises in their output.
+#### Researcher-Provided Infrastructure
 
-- Technical Overview
-  - Data is stored on a server with remote access available to researchers.
-  - Remote access can be through either a physical thin client or through a remote desktop
-  - Thin client or virtual desktop configured to only allow researcher to remove output from remote server
-  - Pros: researcher does not need to travel to physical data enclave, enabling faster research
-  - Cons: cost of providing thin client, endpoint securit requirements with remote desktop, physical security of researcher location
-- Requirements
-  - Space and Equipment
-    - Central server to house data
-    - Thin client or virtual desktop software cost
-  - Staff
-    - Need staff to audit the researcher to ensure they are complying with requirements when working remotely
-  - Cost
-    - staff time???
-    - thin clients ???
-    - Virtual desktops???
-- Examples
-  - College Board - Lily Fesler?
-  - SFUSD laptop - Lindsay Fox?
-  - Statistics Denmark - log into virtual machine to access data on central server
+In some data sharing arrangements, the data provider has the researcher provide the data storage, access, and analysis infrastructure. The data provider will provide the data to the researcher, who has custodianship over the data.
 
-#### Data Transfer to Researcher
+Data providers must ensure that they properly remove variables containing personally identifying information from data that they transfer to researchers in order to protect the privacy of study participants. In the instance that researchers have access to potentially identifiable data, the data provider must take care to ensure that the results produced for publication do not contain personally identifiable information. The data provider and researcher must have the technical means to securely transfer the data. Many such tools exist, including commercial enterprise level cloud services such as Google Drive, Box, and Dropbox that can be configured for secure data storage and transfer.
 
-> This section should be framed as "researcher-provided compute infrastructure". The presence of such infrastructure is what allows the transfer to take place. The emphasis needs to be on the technical side of this issue. Note that there are various ways data can be housed by the researcher - the enclave computer, the safe computer, the arbitrary computer. 
+This process allows researchers significantly more flexibility and rapid turnarounds on research findings of importance to their government partners. Allowing researchers to store the data on their own devices may reduce the burden on data providers, who only have to provide the data itself and the staff necessary to transfer it to the researchers. On the other hand, data providers may also choose to conduct random on site inspections or have researchers submit their output for approval, which requires staff time. In instances where researchers can work very closely with the data providers’ technical staff with direct access to their data, they can also help the government learn more about their data and improve processes and systems at the government.
 
-Transferring data directly to researchers represents a fundamentally different strategy than the other data access methods. Rather than handle the data directly themselves, the data provider establishes a trusted relationship with the researcher, often over the course of a long-term partnership that may include many collaborations. This allows the data provider to feel secure in transferring data to the researcher. In contrast to physical or virtual data enclaves, in the data transfer model the researchers take on the responsibility for storing, and possibly for cleaning and processing, the data before analysis can take place.
+Many research projects and data providers utilize data transfers to researchers, particularly among smaller scale data providers for whom a more expensive data enclave model is less feasible. For example, San Francisco Unified School District has a long-standing partnership with Stanford University, where the Center for Education Policy Analysis (CEPA) at Stanford acts as a data warehouse for individual-level administrative data on behalf of the district. While many of the researchers who use the data are affiliated with CEPA, the CEPA has dedicated staff with no ties to specific research projects to manage the warehouse. The district approves researchers and projects to have access to the data, while the warehouse performs data cleaning, anonymization, and ultimately provides data files to the researcher.
 
-##### Requirements
+Large scale implementations of the data transfer model for sensitive, individual-level data also exist. The U.S. National Center for Education Statistics maintains a restricted-use data license model that requires researchers to set up their own version of a physical enclave, at their home location, as a requirement for becoming a license holder. The researcher must maintain an access-controlled secure data room with specific physical and electronic protection requirements and must undergo random NCES audits to ensure compliance with these procedures. The data is transferred to the researcher via encrypted disks with the passwords sent separately, such that the data is protected in transit and only the researcher with both the data disk and password can access the data. Combining the efficiency of data transfer with the increased security of physical and electronic protection shows how data access can be tailored for individual circumstances based on sensitivity and cost needs.
 
-There are technical and non-technical requirements for this type of data access. On the technical side, data providers must ensure that they properly remove variables containing personally identifying information from data that they transfer to researchers in order to protect the privacy of study participants. In the instance that researchers have access to potentially identifiable data, the data provider must take care to ensure that the results produced for publication do not contain personally identifiable information. The data provider and researcher must have the technical means to securely transfer the data. Many such tools exist, including commercial enterprise level cloud services such as Google Drive, Box, and Dropbox that can be configured for secure data storage and transfer.
+### Examples from the handbook along the five metrics
 
-> The trust part is important, but needs to refer to other chapters. It is true for *all* access modes. 
+In this section, we explore how the five dimensions map onto the case study chapters in the handbook. Each set of data providers and researchers utilizes a unique combination of the five metrics for their data sharing framework.
 
-The non-technical requirement is equally important because this type of collaboration is based on a high level of trust, mutual understanding, and alignment of goals between the data provider and the researcher. A strong working relationship between data provider and researcher is key, especially when the data and outputs are fully in the hands of the researchers and not the data providers. The use of contracts and data use agreements between data providers and researchers that formalizes the relationship and sets the specific requirements and expectations of the researchers’ handling of the data and outputs is a key mechanism for data providers to ensure the safety of the data (see Chapter by Amy O'Hara).
+#### SFUSD-Stanford
 
-##### Benefits and Tradeoffs
+```{r, echo=FALSE}
+sfusd = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Researcher","Researcher","Researcher","Low Security","Unrestricted"))
 
-When sufficient trust exists for transferring data to researchers, this process allows researchers significantly more flexibility and rapid turnarounds on research findings of importance to their government partners. Allowing researchers to store the data on their own devices also reduces the burden on data providers, who only have to provide the data itself and the staff necessary to transfer it to the researchers. In instances where researchers can work very closely with the data providers’ technical staff with direct access to their data, they can also help the government learn more about their data and improve processes and systems at the government.
+plot(data=sfusd)
 
-> Note on the above: it is not *necessarily* less work, since some providers (e.g. NCES) conduct random site inspections, which also carry a cost. In some cases, the agreement specifies that output checking be conducted by the data provider, despite the researcher having full physical access to the data.
+```
 
-The tradeoff is the potential loss of security for the data provider. 
+In the SFUSD-Stanford Partnership, the data location of the full set of data that is available for research usage is the CEPA Data Warehouse, a third party organization. The warehouse serves as a trusted data service that ultimately transfers a restricted set of data to the researcher. The analysis and access computers are both under the administrative control of the researcher, with the data and analysis software on the same device. These devices are subject to Stanford and SFUSD requirements for data security, including enterprise operating system management and whole disk encryption for any device that holds the data. The access rooms are low security; researchers must take reasonable measures to physically protect the data but there are no specific requirements or checks on the location of the data itself. Typically this takes the form of storing the researcher’s computer in a locked office, although in the case of graduate student researchers the offices may be shared. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
 
-> This is true for the entire chapter.
+#### New Brunswick
 
-This is best judged on a case by case basis depending on the sensitivity of the data in question, the level of trust between the researcher and government, and the presence of legal or regulatory requirements on how to handle the data. While there are many examples of successful partnerships where researchers receive sensitive data (up to and including individually identified data) from government partners, in some cases the data provider might determine that the data is sufficiently sensitive to avoid using this model.
+```{r, echo=FALSE}
+nbirdt = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Third-Party","Third-Party","Third-Party","High Security","Restricted"))
+plot(data=nbirdt)
+```
 
-##### Examples
+The NB-IRDT serves as a third-party data center for the various data providers that supply it with data to make available to researchers. The data location, access computers, and analysis computers are all located on site at NB-IRDT facilities. Researchers use workstations to remotely access data from a central server, and store their data on a local server at the specific facility that the researcher is at. Researchers have partial access to analysis computers, without the ability to  Researchers have limited access to the access computer, with stringent security requirements placed upon their usage of the research workstation. The access room is under high security, with strong specifications of security such as restricting mobile devices and outside materials, physical controls on the servers and workstations, and having dedicated fiber optics cables to handle data connections between the central and satellite locations. [Missing information about access computer software and analysis methods from chapter]
 
-Many research projects and data providers utilize data transfers to researchers, particularly among smaller scale data providers for whom a more expensive data enclave model is less feasible. For example, San Francisco Unified School District has a long-standing partnership with Stanford University, where a research center at Stanford acts as a data warehouse for individual-level administrative data on behalf of the district.  The district approves researchers and projects to have access to the data, while the warehouse performs data cleaning, anonymization, and transfers to the researcher. This example shows how this process is based on the success of key 
+#### IAB
 
-> I would not classify this as a researcher-provided infrastructure. Rather, this implies a trusted intermediary (a term used in the literature) to provide access to the data, rather than providing it directly to the researcher. This seems more related to the virtual enclave (Cornell CRADC, NORC, ICPSR), except potentially with physical presence.
+```{r, echo=FALSE}
+iab1 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Data Provider","Third-Party","Data Provider","High Security","Restricted"))
+plot(data=iab1)
+```
 
-Large scale implementations of the data transfer model for sensitive, individual-level data also exist. The U.S. National Center for Education Statistics maintains a restricted-use data license model that requires researchers to set up their own version of a physical enclave, at their home location, as a requirement for becoming a license holder.  The researcher must maintain an access-controlled secure data room with specific physical and electronic protection requirements and must undergo random NCES audits to ensure compliance with these procedures. The data is transferred to the researcher via encrypted disks with the passwords sent separately, such that the data is protected in transit and only the researcher with both the data disk and password can access the data. Combining the efficiency of data transfer with the increase security of physical and electronic protection shows how data access can be tailored for individual circumstances based on sensitivity and cost needs.
+The IAB uses three different access models, each with its unique implementation of the five metrics of data security. The most restrictive access method is the IAB on-site access method, where researchers must go to an affiliated research data center. In this model, the data location and analysis computers are both located at the IAB. Researchers have restricted access to the analysis computers, including not being allowed to install their own software. The access computers are located at RDC’s under the control of the IAB itself or third-party partner institutions, consisting of secured workstations at RDC-IAB and thin clients at its partner institutions. The analysis methods are limited to the statistical software packages available at the specific RDC. The room security depends on the specific RDC, although all RDC’s generally have strong physical specifications for security with additional restrictions beyond just access controls managed by the RDC administrator.
 
-- Technical Overview
-  - Some mechanism of transferring the data to researcher for storage
-  - Range of requirements from asking researcher to set up own secure data room e.g. mini-RDC to letting researchers store it locally on their own work computers
-  - Requires high amount of trust between researcher and data provider
-  - Possibly send data to third party for remote cleaning/matching
-  - Pros: highly flexible for researcher, hypothetically minimizes costs for data provider
-  - Cons: maximizes liability and risk for both researcher and data provider
-- Requirements
-  - Space and Equipment
-    - Data transfer mechanism (FTP, cloud system, expiring links, encrypted device)
-    - Data storage for researcher (cloud, local server, data room)
-  - Staff
-    - Staff at data provider need to extract data and provide to researcher
-    - Someone needs to do data cleaning and matching, either at researcher, data provider, or third party
-  - Cost
-    - highly variable depending on the setup
-- Examples
-  - SFUSD warehouse
-  - NCES Restricted Use Data License
-  - California Office of Statewide Health Planning & Development (OSHPD)
-  - CARES Data
-  - Charlotte-Mecklenburg Public Schools
+```{r, echo=FALSE}
+iab2 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Data Provider","Researcher","Data Provider","Open","Restricted"))
+plot(data=iab2)
+```
 
-### Data Classification
+For IAB remote execution, the data location and analysis computers are both still under the control of the IAB. Analysis methods are limited to preparing program code on test data to run on the analysis computers at the IAB. However, the access computer is the researcher’s own device utilizing the JoSuA portal to submit requests to the IAB. The access room is open with no security requirements, as the researchers are limited to the deidentified output from the JoSuA system. 
 
-> This section is good, but does not belong here. Should probably be moved to the Intro. It affects every aspect, not just the physical infrastructure. 
+```{r, echo=FALSE}
+iab3 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Researcher","Researcher","Researcher","Medium Security","Unrestricted"))
+plot(data=iab3)
+```
 
-In addition to thinking about data classification and sensitivity based on data source, ownership, and use, one framework in common usage particularly among US research institutions (some of the many examples include MIT, Harvard, Stanford, and Brown) is to classify data based on the risks to individuals and institutions in the event of a data breach. A major difference between research institutions and government entities is that government entities typically own their own data, which eliminates an additional element of risk that comes with research institutions holding onto data that does not belong to them. However, other risks to the government, its finances and reputation, and the security of subjects contained within the data and the integrity of data systems all still apply. The use of administrative data for research beyond the original purpose for which it was collected, even if the subjects were informed and consented to this use, represents one notable risk and liability that governments and researchers must account for when thinking about data classification.'
+The IAB also makes anonymized data products available for direct download by researchers. In this instance, the data location, acces, and analysis computers are at the researcher’s institution, with researchers having full administrative control over the computer systems. As a result of that, they have the full range of analysis methods available as well. The IAB data use agreement for downloading the scientific use files specifics medium security requirements, with the building and room required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission simple key locks. There are additional requirements for electronic security such as encrypting the computers and servers with access to the data.
 
-A common theme in these risk classification systems is the distinction between low, moderate, and high-risk data with varying levels of granularity of distinction between categories. Low risk data typically encompasses information intended to be publicly available, is anonymous, and poses no risk to the security of other data systems, finances, etc. Moderate risk data typically comprises data that is meant to remain confidential but otherwise would not pose more than a mild risk to other data security, reputation, finances, or subjects within the data. High risk data encompasses confidential data protected by law or otherwise would cause reputational damage, harm (including life safety) to subjects within the data, compromise other data systems, or other types of material harm.
+#### OLDA
 
-Properly used, data risk classification systems serve as a framework to risks associated with the storage and exchange of different types of data and how to balance the security requirements to minimize the potential harm of disclosure while still being able to utilize the data in the policy life cycle. Protecting data at the appropriate level can help minimizes costs by not spend extraneous resources on low risk data and increase security by redirecting limited resources to safeguarding higher risk data.
+```{r, echo=FALSE}
+olda = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Researcher","Researcher","Researcher","Low Security","Unrestricted"))
+plot(data=olda)
+```
 
+The Ohio Longitudinal Data Archive is a third party organization that provides data to researchers on behalf of the government. The data is initially located at the third party institution before ultimately being transferred to researchers via a secure FTP server. The researchers have full control over the analysis and access computer, which is required to be a desktop computer located in the researcher’s office space. This is a low specification of access room security, placing no additional requirements beyond utilizing a specific space. Researchers have full analysis methods available for them. Data can be provided in a variety of formats, including CSV files that enable the researcher to use any analysis software or method of their choosing.
 
-### Tech stuff
+#### Aurora Healthcare
 
-TBD
+The researchers for this project received data from the data provider via a secure file transfer protocol. The data location, acces computer, and analysis computers were all located at the researcher’s home institution. [need more info from Amy and Laura]
 
-### Batch submissions
+#### Cape Town
 
-TBD
+In the Cape Town partnership, the data was transferred from the data provider to the researcher. As such, the data location, access, and analysis computers are all with the researcher, with the researcher having a full range of analysis methods available. [need more information about access rooms, some more detail about how they did the transfer and storage etc]
 
-### Notes
+### Other examples along the five metrics
 
-What are you referring to with secure laptops, biometrics, cloud computing?
+#### FSRDC
 
-> Secure laptops: often used by private sector data providers (ADP) but also emerging among federal  (IRS, Census Bureau for staff) and international (IAB staff) data providers. The entire laptop is encrypted (physical hardware encryption or full disk software encryption). The laptop is configured to only allow for VPN connection to a single dedicated connection point. Data may reside partially on the laptop, partially on the IT infrastructure at the provider. May be attractive to data providers, because it may correspond to IT infrastructure already in place.
+#### Safepod
 
-> Biometrics: The French thin client uses fingerprint authentification, in addition to smart card and password. This may also be configured on secure laptops (I don't have an example). 
+#### French
 
-> Cloud computing: Increasingly, virtual enclaves are constructed in the cloud. This may be a desktop-like experience, or it may be based on more modern tools, with encrypted, token-based access to cloud-stored confidential data. Used in the biomedical community, but also the Stanford repository (??). The former is widespread - ICPSR/ ISR moved their physical enclave mechanism to a cloud-based virtual desktop, and the Census Bureau and Statistics Canada are both moving towards a cloud-based desktop experience.
+#### National Center for Education Statistics Restricted Use Data License
 
-The base for the chapter I'm proposing - on the physical 
-elements of a "safe environment" - is in this presentation: 
-https://github.com/larsvilhuber/BigThinkPresentations/tree/master/PhysicalProtections. 
-We would want to expand it a bit (maybe update it), but essentially a catalog 
-(with maybe a multi-dimensional characteristics vector - complexity - cost - security).
+The National Center for Education Statistics (NCES), a part of the United States Department of Education, allows researchers to apply for a restricted use data license to store data on site at the researcher. The data location, access computer, and analysis computers are all under the control of the researcher, with specific security requirements for the computers, the storage mediums that researchers receive the data on, and any physical documentation. With full administrative control of the analysis computers, researchers also have no restrictions on the analysis methods that they are allowed to use. NCES mandates a medium level of security for the access room, specifying that it must be a locked room with access restricted to authorized users. The security arrangements must be approved by NCES prior to the receipt of restricted use data and are subject to unannounced inspections. 
 
-Presentation - aimed at management level people at statistical agencies, 
-not the highest level of tech background. Needs some translation into text, 
-should be picture heavy. Presentation compiled two years ago, needs to be updated. 
-Other technological setups can be integrated into this. Describe various secure endpoint/server setups.
+#### Bureau of Labor Statistics Onsite Access
 
-We should also consider the network architecture as one component of the technical infrastructure. Can range from sneaker net (sending encrypted CDs), public internet with secure connection (Windows RDP), software-based VPN, hardware-based VPN, dedicated network hardware (routers, etc.), dedicated secure networks (at a local level: this might mean a secure server room and a on-premise secure lab, but might also mean: a nation-wide secure government data network). One example for the latter (national secure data network) is the Canadian CANARIE network.https://www.canarie.ca/network/
+The Bureau of Labor Statistics (BLS) has two research data centers in its national office at Washington D.C. for access to particularly sensitive research files and surveys that are not available offsite or through the FSRDC network. The data location, access computers, and analysis computers are all located and controlled by BLS. As with other research data centers, there is a high specification of security for the access room, with access limited to approved researchers and all materials subject to search when entering or exiting the facility. Analysis methods are restricted to pre-installed versions of SAS, Stata, and SPSS, with limited use of approved statistical software and data files that can be installed by the BLS staff.
 
-We describe the current technology as used by various systems that provide access to 
-sensitive data (creating "Safe Settings"), and avenues for future access. We adress
+#### NCHS
 
-- Secure laptops
-- Remote access
-- Cloud computing
-- Secure rooms
-- Biometrics
-
-- edit test jim
+[https://www.cdc.gov/rdc/b2accessmod/ACs200.htm - remote access no longer available, otherwise available at NCHS RDC or FSRDCs, not sure about the utility of "yet another RDC" example]
