@@ -4,7 +4,6 @@ services:
 # safelist
 branches:
   only:
-  - published_version
   - master
 
 before_install:            
@@ -22,7 +21,6 @@ after_error:
 after_failure:
   - docker logs bookdown
 
-
 deploy:
   - provider: pages
     local_dir: _book/
@@ -31,14 +29,4 @@ deploy:
     keep-history: true
     target-branch: gh-pages
     on:
-      branch: published_version
-  - provider: pages
-    local_dir: _book/
-    skip-cleanup: true
-    github-token: $GH_TOKEN_DEV
-    keep-history: true
-    target-branch: gh-pages
-    repo:  labordynamicsinstitute/idea-handbook-7a434a70-04c1-4400-883b-db0e5f1fa653 
-    on:
-      all_branches: true
-      condition: $TRAVIS_BRANCH != published_version
+      branch: master
