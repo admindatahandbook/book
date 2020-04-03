@@ -9,6 +9,10 @@
 install.packages("here",repos="https://cloud.r-project.org")
 library(here)
 
+install.packages("ggplot2",repos="https://cloud.r-project.org")
+library(ggplot2)
+
+
 #
 # Define paths here for later
 #
