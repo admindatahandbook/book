@@ -6,8 +6,8 @@
 # Requires: library here, the rest is installed as needed
 #
 
-install.packages("ggplot2",repos="https://cloud.r-project.org")
-library(ggplot2)
+install.packages("here",repos="https://cloud.r-project.org")
+library(here)
 
 #
 # Define paths here for later
