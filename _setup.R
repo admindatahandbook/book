@@ -6,14 +6,9 @@
 # Requires: library here, the rest is installed as needed
 #
 
-install.packages("here",repos="https://cloud.r-project.org")
-library(here)
 
 install.packages("ggplot2",repos="https://cloud.r-project.org", dependencies = TRUE)
 library(ggplot2)
-
-install.packages("bookdown",repos="https://cloud.r-project.org", dependencies = TRUE)
-library(bookdown)
 
 #
 # Define paths here for later
