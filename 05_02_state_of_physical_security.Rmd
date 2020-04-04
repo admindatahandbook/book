@@ -1,3 +1,41 @@
+```{r, echo=FALSE}
+ library(ggplot2)
+
+ pal <- c(
+   "Data Provider" = "#33a02c",
+   "Third-Party" = "#a6cee3",
+   "Researcher" = "#1f78b4",
+   "Unrestricted" = "#a6cee3",
+   "Restricted" = "#1f78b4",
+   "Open" = "#1f78b4",
+   "Low Security" = "#a6cee3",
+   "Medium Security" = "#33a02c",
+   "High Security" = "#b2df8a"
+ )
+
+plot <- function(data) {
+   ggplot(data, aes(x=metrics,y=1)) +
+   geom_bar(stat="identity", aes(fill=rank), width=1) +
+   theme(axis.title.x=element_blank(),
+         axis.text.x=element_blank(),
+         axis.ticks.x=element_blank(),
+         axis.title.y=element_blank(),
+         axis.text.y=element_blank(),
+         axis.ticks.y=element_blank(),
+         legend.position = "none") +
+   scale_fill_manual(values = pal) +
+   geom_text(aes(label=paste(metrics,": ",rank)),
+             color="black",
+             position = position_stack(vjust=0.5)) +
+   coord_flip() +
+   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+         panel.background = element_blank())
+}
+
+knitr::opts_chunk$set(fig.width=4, fig.height=2) 
+
+```
+
 ## Physically Protecting Sensitive Data
 
 ### Five Dimensions of Physical Security
@@ -180,21 +218,59 @@ In this section, we explore how the five dimensions map onto the case study chap
 
 #### SFUSD-Stanford
 
+```{r, echo=FALSE}
+sfusd = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Researcher","Researcher","Researcher","Low Security","Unrestricted"))
+
+plot(data=sfusd)
+
+```
+
 In the SFUSD-Stanford Partnership, the data location of the full set of data that is available for research usage is the CEPA Data Warehouse, a third party organization. The warehouse serves as a trusted data service that ultimately transfers a restricted set of data to the researcher. The analysis and access computers are both under the administrative control of the researcher, with the data and analysis software on the same device. These devices are subject to Stanford and SFUSD requirements for data security, including enterprise operating system management and whole disk encryption for any device that holds the data. The access rooms are low security; researchers must take reasonable measures to physically protect the data but there are no specific requirements or checks on the location of the data itself. Typically this takes the form of storing the researcher’s computer in a locked office, although in the case of graduate student researchers the offices may be shared. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
 
 #### New Brunswick
+
+```{r, echo=FALSE}
+nbirdt = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Third-Party","Third-Party","Third-Party","High Security","Restricted"))
+plot(data=nbirdt)
+```
 
 The NB-IRDT serves as a third-party data center for the various data providers that supply it with data to make available to researchers. The data location, access computers, and analysis computers are all located on site at NB-IRDT facilities. Researchers use workstations to remotely access data from a central server, and store their data on a local server at the specific facility that the researcher is at. Researchers have partial access to analysis computers, without the ability to  Researchers have limited access to the access computer, with stringent security requirements placed upon their usage of the research workstation. The access room is under high security, with strong specifications of security such as restricting mobile devices and outside materials, physical controls on the servers and workstations, and having dedicated fiber optics cables to handle data connections between the central and satellite locations. [Missing information about access computer software and analysis methods from chapter]
 
 #### IAB
 
+```{r, echo=FALSE}
+iab1 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Data Provider","Third-Party","Data Provider","High Security","Restricted"))
+plot(data=iab1)
+```
+
 The IAB uses three different access models, each with its unique implementation of the five metrics of data security. The most restrictive access method is the IAB on-site access method, where researchers must go to an affiliated research data center. In this model, the data location and analysis computers are both located at the IAB. Researchers have restricted access to the analysis computers, including not being allowed to install their own software. The access computers are located at RDC’s under the control of the IAB itself or third-party partner institutions, consisting of secured workstations at RDC-IAB and thin clients at its partner institutions. The analysis methods are limited to the statistical software packages available at the specific RDC. The room security depends on the specific RDC, although all RDC’s generally have strong physical specifications for security with additional restrictions beyond just access controls managed by the RDC administrator.
 
+```{r, echo=FALSE}
+iab2 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Data Provider","Researcher","Data Provider","Open","Restricted"))
+plot(data=iab2)
+```
+
 For IAB remote execution, the data location and analysis computers are both still under the control of the IAB. Analysis methods are limited to preparing program code on test data to run on the analysis computers at the IAB. However, the access computer is the researcher’s own device utilizing the JoSuA portal to submit requests to the IAB. The access room is open with no security requirements, as the researchers are limited to the deidentified output from the JoSuA system. 
+
+```{r, echo=FALSE}
+iab3 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Researcher","Researcher","Researcher","Medium Security","Unrestricted"))
+plot(data=iab3)
+```
 
 The IAB also makes anonymized data products available for direct download by researchers. In this instance, the data location, acces, and analysis computers are at the researcher’s institution, with researchers having full administrative control over the computer systems. As a result of that, they have the full range of analysis methods available as well. The IAB data use agreement for downloading the scientific use files specifics medium security requirements, with the building and room required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission simple key locks. There are additional requirements for electronic security such as encrypting the computers and servers with access to the data.
 
 #### OLDA
+
+```{r, echo=FALSE}
+olda = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Researcher","Researcher","Researcher","Low Security","Unrestricted"))
+plot(data=olda)
+```
 
 The Ohio Longitudinal Data Archive is a third party organization that provides data to researchers on behalf of the government. The data is initially located at the third party institution before ultimately being transferred to researchers via a secure FTP server. The researchers have full control over the analysis and access computer, which is required to be a desktop computer located in the researcher’s office space. This is a low specification of access room security, placing no additional requirements beyond utilizing a specific space. Researchers have full analysis methods available for them. Data can be provided in a variety of formats, including CSV files that enable the researcher to use any analysis software or method of their choosing.
 
