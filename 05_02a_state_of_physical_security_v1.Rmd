@@ -1,4 +1,4 @@
-## OLD DRAFT 1 - Physically Protecting Sensitive Data
+## OLD - Physically Protecting Sensitive Data
 
 Physical Access Spectrum
 - Complexity/Cost vs. Security
@@ -30,15 +30,25 @@ https://docs.google.com/spreadsheets/d/1ma-QEnzjr78BJ-7B87Q70ZIWK5mxrBn9H5gR2mh0
 
 To facilitate the use of data in the policy lifecycle, governments can partner with researchers to generate key policy findings by conducting randomized evaluations like those highlighted in the previous section. One of the ways to make these evaluations require less time and money is for the government to provide researchers with administrative data, such as tax data or health facilities records, through a data exchange mechanism. Better data enables better research, which in turn generates useful information to inform policy making. However, data providers and researchers need to take additional steps beyond setting up data exchange mechanisms in order to ensure the ethical and effective of administrative data in research to generate insights for specific policy issues and the dissemination of those findings.
 
+> [NOTE] the section above belongs in the intro chapter, not the technical chapter.
+
 On the technical side, one of the main trade-offs involved in selecting data exchange mechanisms is between ease of access and use, versus maintaining control of and protecting citizens’ data. This tradeoff can be roughly categorized into four main access types, with varying levels of cost and complexity associated with each type of access mechanism.
+
+> [NOTE] going through this, we need to distinguish where the researcher sits, and where the data and computation is located. The two interact in various ways. That was one or two of the slides in my presentation. 
 
 #### Remote Execution
 
 Remote execution is the most restrictive access mechanism for data exchange, suitable for the most sensitive types of data, such as personal health data. Data is stored remotely in a location such that a researcher does not have direct access to the data. In this scenario, a researcher needs to submit a request to the data provider to extract the appropriate analysis files, or have the data provider run the analysis on behalf of the researcher and share only the summary output.
 
+> [NOTE] This will need some cleaning up. "Extraction" is actually transfer to the researcher (so it depends on where the processing is). Some providers use remote execution in the form of custom table builders for the *least* sensitive data. On the other hand, some (IAB) use remote execution in combination with an online development environment with less sensitive data to provide access. Every cloud access is remote execution. 
+
 ##### Requirements
 
-Remote execution requires that a data provider maintain dedicated staff with the technical expertise to interface with researcher, run the researchers’ code, and check the output for data anonymity before sending it back to the researchers. The data provider also needs to create and maintain the systems to facilitate the transfer of the necessary files (researchers need to receive the synthetic data, submit analysis files, and receive the output) as well as to allow the data provider to run the necessary analysis on behalf of the researcher.
+Remote execution requires that a data provider maintain dedicated staff with the technical expertise to interface with researcher, run the researchers’ code, and check the output for data anonymity before sending it back to the researchers.
+
+> Remote execution does not necessarily involve a person executing the researchers' code. In the IAB system, remote execution is automatic, but release of results is not. Some remote execution environments provide automated disclosure tools.
+
+The data provider also needs to create and maintain the systems to facilitate the transfer of the necessary files (researchers need to receive the synthetic data, submit analysis files, and receive the output) as well as to allow the data provider to run the necessary analysis on behalf of the researcher.
 
 A key requirement for such a system is the provision of accurate codebooks and documentation from data providers to researchers such that they can prepare the appropriate data request and analysis files for the data provider. While important for all data exchanges, this is especially important for remote execution since researchers cannot personally examine the data. One common method is for the data provider to give researchers synthetic data files that have the same variables and table structures as the real data, but have fictitious values for the variables.
 
@@ -48,7 +58,11 @@ By maintaining full control of the data as well as having the opportunity to che
 
 ##### Examples
 
-One example of a national statistical agency that uses remote a remote execution model is Statistics Canada,  which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German Institute for Employment Research has a remote execution portal where researchers can test their code on synthetic data and upload their code for execution, and only access approved results when their job is complete.  A variant on the remote execution model is the United States National Center for Health Statistics Research Data Centers,  which requires researchers to first submit their analysis code for manual approval before arriving at the research data center itself to run the analysis.
+One example of a national statistical agency that uses remote a remote execution model is Statistics Canada,  which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German Institute for Employment Research has a remote execution portal where researchers can test their code on synthetic data and upload their code for execution, and only access approved results when their job is complete.  
+
+> [NOTE] Actually, the online interface (JoSuA) is on real data.
+
+A variant on the remote execution model is the United States National Center for Health Statistics Research Data Centers,  which requires researchers to first submit their analysis code for manual approval before arriving at the research data center itself to run the analysis.
 
 - Technical overview
   - Data is stored remotely, researcher never has direct access to data
@@ -155,23 +169,35 @@ Statistics Denmark is one major statistical agency that uses a virtual data encl
 
 #### Data Transfer to Researcher
 
+> This section should be framed as "researcher-provided compute infrastructure". The presence of such infrastructure is what allows the transfer to take place. The emphasis needs to be on the technical side of this issue. Note that there are various ways data can be housed by the researcher - the enclave computer, the safe computer, the arbitrary computer. 
+
 Transferring data directly to researchers represents a fundamentally different strategy than the other data access methods. Rather than handle the data directly themselves, the data provider establishes a trusted relationship with the researcher, often over the course of a long-term partnership that may include many collaborations. This allows the data provider to feel secure in transferring data to the researcher. In contrast to physical or virtual data enclaves, in the data transfer model the researchers take on the responsibility for storing, and possibly for cleaning and processing, the data before analysis can take place.
 
 ##### Requirements
 
 There are technical and non-technical requirements for this type of data access. On the technical side, data providers must ensure that they properly remove variables containing personally identifying information from data that they transfer to researchers in order to protect the privacy of study participants. In the instance that researchers have access to potentially identifiable data, the data provider must take care to ensure that the results produced for publication do not contain personally identifiable information. The data provider and researcher must have the technical means to securely transfer the data. Many such tools exist, including commercial enterprise level cloud services such as Google Drive, Box, and Dropbox that can be configured for secure data storage and transfer.
 
-The non-technical requirement is equally important because this type of collaboration is based on a high level of trust, mutual understanding, and alignment of goals between the data provider and the researcher. A strong working relationship between data provider and researcher is key, especially when the data and outputs are fully in the hands of the researchers and not the data providers. The use of contracts and data use agreements between data providers and researchers that formalizes the relationship and sets the specific requirements and expectations of the researchers’ handling of the data and outputs is a key mechanism for data providers to ensure the safety of the data.
+> The trust part is important, but needs to refer to other chapters. It is true for *all* access modes. 
+
+The non-technical requirement is equally important because this type of collaboration is based on a high level of trust, mutual understanding, and alignment of goals between the data provider and the researcher. A strong working relationship between data provider and researcher is key, especially when the data and outputs are fully in the hands of the researchers and not the data providers. The use of contracts and data use agreements between data providers and researchers that formalizes the relationship and sets the specific requirements and expectations of the researchers’ handling of the data and outputs is a key mechanism for data providers to ensure the safety of the data (see Chapter by Amy O'Hara).
 
 ##### Benefits and Tradeoffs
 
 When sufficient trust exists for transferring data to researchers, this process allows researchers significantly more flexibility and rapid turnarounds on research findings of importance to their government partners. Allowing researchers to store the data on their own devices also reduces the burden on data providers, who only have to provide the data itself and the staff necessary to transfer it to the researchers. In instances where researchers can work very closely with the data providers’ technical staff with direct access to their data, they can also help the government learn more about their data and improve processes and systems at the government.
 
-The tradeoff is the potential loss of security for the data provider. This is best judged on a case by case basis depending on the sensitivity of the data in question, the level of trust between the researcher and government, and the presence of legal or regulatory requirements on how to handle the data. While there are many examples of successful partnerships where researchers receive sensitive data (up to and including individually identified data) from government partners, in some cases the data provider might determine that the data is sufficiently sensitive to avoid using this model.
+> Note on the above: it is not *necessarily* less work, since some providers (e.g. NCES) conduct random site inspections, which also carry a cost. In some cases, the agreement specifies that output checking be conducted by the data provider, despite the researcher having full physical access to the data.
+
+The tradeoff is the potential loss of security for the data provider. 
+
+> This is true for the entire chapter.
+
+This is best judged on a case by case basis depending on the sensitivity of the data in question, the level of trust between the researcher and government, and the presence of legal or regulatory requirements on how to handle the data. While there are many examples of successful partnerships where researchers receive sensitive data (up to and including individually identified data) from government partners, in some cases the data provider might determine that the data is sufficiently sensitive to avoid using this model.
 
 ##### Examples
 
 Many research projects and data providers utilize data transfers to researchers, particularly among smaller scale data providers for whom a more expensive data enclave model is less feasible. For example, San Francisco Unified School District has a long-standing partnership with Stanford University, where a research center at Stanford acts as a data warehouse for individual-level administrative data on behalf of the district.  The district approves researchers and projects to have access to the data, while the warehouse performs data cleaning, anonymization, and transfers to the researcher. This example shows how this process is based on the success of key 
+
+> I would not classify this as a researcher-provided infrastructure. Rather, this implies a trusted intermediary (a term used in the literature) to provide access to the data, rather than providing it directly to the researcher. This seems more related to the virtual enclave (Cornell CRADC, NORC, ICPSR), except potentially with physical presence.
 
 Large scale implementations of the data transfer model for sensitive, individual-level data also exist. The U.S. National Center for Education Statistics maintains a restricted-use data license model that requires researchers to set up their own version of a physical enclave, at their home location, as a requirement for becoming a license holder.  The researcher must maintain an access-controlled secure data room with specific physical and electronic protection requirements and must undergo random NCES audits to ensure compliance with these procedures. The data is transferred to the researcher via encrypted disks with the passwords sent separately, such that the data is protected in transit and only the researcher with both the data disk and password can access the data. Combining the efficiency of data transfer with the increase security of physical and electronic protection shows how data access can be tailored for individual circumstances based on sensitivity and cost needs.
 
@@ -200,6 +226,8 @@ Large scale implementations of the data transfer model for sensitive, individual
 
 ### Data Classification
 
+> This section is good, but does not belong here. Should probably be moved to the Intro. It affects every aspect, not just the physical infrastructure. 
+
 In addition to thinking about data classification and sensitivity based on data source, ownership, and use, one framework in common usage particularly among US research institutions (some of the many examples include MIT, Harvard, Stanford, and Brown) is to classify data based on the risks to individuals and institutions in the event of a data breach. A major difference between research institutions and government entities is that government entities typically own their own data, which eliminates an additional element of risk that comes with research institutions holding onto data that does not belong to them. However, other risks to the government, its finances and reputation, and the security of subjects contained within the data and the integrity of data systems all still apply. The use of administrative data for research beyond the original purpose for which it was collected, even if the subjects were informed and consented to this use, represents one notable risk and liability that governments and researchers must account for when thinking about data classification.'
 
 A common theme in these risk classification systems is the distinction between low, moderate, and high-risk data with varying levels of granularity of distinction between categories. Low risk data typically encompasses information intended to be publicly available, is anonymous, and poses no risk to the security of other data systems, finances, etc. Moderate risk data typically comprises data that is meant to remain confidential but otherwise would not pose more than a mild risk to other data security, reputation, finances, or subjects within the data. High risk data encompasses confidential data protected by law or otherwise would cause reputational damage, harm (including life safety) to subjects within the data, compromise other data systems, or other types of material harm.
@@ -219,6 +247,11 @@ TBD
 
 What are you referring to with secure laptops, biometrics, cloud computing?
 
+> Secure laptops: often used by private sector data providers (ADP) but also emerging among federal  (IRS, Census Bureau for staff) and international (IAB staff) data providers. The entire laptop is encrypted (physical hardware encryption or full disk software encryption). The laptop is configured to only allow for VPN connection to a single dedicated connection point. Data may reside partially on the laptop, partially on the IT infrastructure at the provider. May be attractive to data providers, because it may correspond to IT infrastructure already in place.
+
+> Biometrics: The French thin client uses fingerprint authentification, in addition to smart card and password. This may also be configured on secure laptops (I don't have an example). 
+
+> Cloud computing: Increasingly, virtual enclaves are constructed in the cloud. This may be a desktop-like experience, or it may be based on more modern tools, with encrypted, token-based access to cloud-stored confidential data. Used in the biomedical community, but also the Stanford repository (??). The former is widespread - ICPSR/ ISR moved their physical enclave mechanism to a cloud-based virtual desktop, and the Census Bureau and Statistics Canada are both moving towards a cloud-based desktop experience.
 
 The base for the chapter I'm proposing - on the physical 
 elements of a "safe environment" - is in this presentation: 
@@ -241,3 +274,5 @@ sensitive data (creating "Safe Settings"), and avenues for future access. We adr
 - Cloud computing
 - Secure rooms
 - Biometrics
+
+- edit test jim
