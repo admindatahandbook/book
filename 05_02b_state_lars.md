@@ -203,6 +203,8 @@ Remote desktop systems (also sometimes called Virtual Desktop Infrastructure, VD
 
 #### On-site storage
 
+> (JIM) reduce scope
+
 There are many options for storing data on site for data providers and researchers. For researchers and data providers with robust IT infrastructure (e.g. Research 1 universities, national statistical agencies) there are generally internal guidelines and policies for data storage that render this a solved problem. For researchers and data providers without existing data storage policies and needing to set up their own storage systems as part of a data sharing agreement, the primary technical considerations are data loss prevention, storage device uptime, and security.
 
 The annualized failure rate (the probability that a device will fail during a full year of use) of modern consumer-grade hard disks is typically below five percent, but generally does not get much below one percent. Depending on the risk tolerance of any particular researcher or data provider this single disk failure can be unacceptably high; technical solutions include using enterprise-grade disks with lower failure rates, using multiple disks in a mirrored array that guards against single or multiple disk failure, and implementing multiple backup copies of the data that can be quickly restored. A common strategy for backups is to have three copies of the data, with two backup copies stored on different devices, and with at least one copy stored off site. Backup strategies will need to be tailored to fit specific scenarios; for instance, off-site storage may be prohibited under data sharing agreements.
@@ -211,9 +213,22 @@ Maximizing system uptime for the data storage device is important for allowing t
 
 Security in the context of setting up data storage is the prevention of unauthorized access to the data. No solution is ever without risk, although risk can be reduced with the proper safeguards. The proper configuration and maintenance of the storage device is key in preventing unauthorized access to the data. For instance, the Equifax data breach in 2017 was a result of Equifax failing to apply a security patch for a known vulnerability of the software that Equifax utilized for its website; the software vendor had already released a patch when the breach occurred yet Equifax had neglected to deploy the update. In addition to properly applying security updates and configuring access, the encryption of the data on the server can provide the final line of defense in the event that an adversary does get access to the server. This can protect against both unauthorized remote access via software vulnerabilities or physical access where the storage device itself is compromised.
 
-#### Cloud storage
+> Full disk encryption
 
-In lieu of maintaining storage systems on site, utilizing a cloud storage service is an alternative for data providers and researchers looking to store large amounts of data. Cloud storage providers, such as through Google Drive, Dropbox, Box, Microsoft OneDrive, and other vendors, manage the physical infrastructure and allocate storage space to the user on an as needed (and contracted) basis. This saves the user the capital costs and technical expertise required to set up their own on-site storage, but comes with the tradeoff of placing the data under the control of a third party. Cloud services by definition require and enable remote access to data, which may prohibit the use of cloud storage under some data sharing agreements. However, many research universities have agreements with cloud service providers in the acknowledgement that the scalability of the storage solution and the resources for security that major cloud services providers can provide outweigh the benefits of maintaining their own storage on site.
+(JIM)
+
+#### Data access controls
+
+(JIM)
+
+#### Transfer mechanisms
+
+> Rewrite as transfer mechanisms (not storage)
+
+In lieu of maintaining storage systems on site, utilizing a **cloud storage** service is an alternative for data providers and researchers looking to store large amounts of data. Cloud storage providers, such as through Google Drive, Dropbox, Box, Microsoft OneDrive, and other vendors, manage the physical infrastructure and allocate storage space to the user on an as needed (and contracted) basis. This saves the user the capital costs and technical expertise required to set up their own on-site storage, but comes with the tradeoff of placing the data under the control of a third party. Cloud services by definition require and enable remote access to data, which may prohibit the use of cloud storage under some data sharing agreements. However, many research universities have agreements with cloud service providers in the acknowledgement that the scalability of the storage solution and the resources for security that major cloud services providers can provide outweigh the benefits of maintaining their own storage on site.
+
+- secure FTP (various variants)
+- encrypted CDROM or hard drive + courrier
 
 ---
 
