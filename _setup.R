@@ -4,11 +4,12 @@
 # First version: 2020-02-18
 #
 # Requires: library here, the rest is installed as needed
+#  DO NOT LIST ANY LIBRARIES HERE - SEE LIBRARIES.R
 #
 
 
-install.packages("ggplot2",repos="https://cloud.r-project.org", dependencies = TRUE)
-library(ggplot2)
+install.packages("here",repos="https://cloud.r-project.org", dependencies = TRUE)
+
 
 #
 # Define paths here for later
