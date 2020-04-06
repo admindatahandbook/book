@@ -1,4 +1,0 @@
-default:
-  base_url: "https://labordynamicsinstitute.github.io/idea-handbook/"
-  last_update: !expr Sys.Date()
-  first_publish_date: "April 2020"
