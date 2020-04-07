@@ -21,6 +21,5 @@ This document is under development!
 ```
 
 ```{r setup,include=FALSE}
-knitr::opts_chunk$set(fig.path = 'figures/')
 source("_setup.R",echo=FALSE)
 ```

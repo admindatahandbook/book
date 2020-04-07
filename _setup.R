@@ -10,6 +10,11 @@
 
 install.packages("here",repos="https://cloud.r-project.org", dependencies = TRUE)
 
+#
+#Knitr plot output folder to not break github.io
+#
+knitr::opts_chunk$set(fig.path = 'figures/')
+
 
 #
 # Define paths here for later
