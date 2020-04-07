@@ -5,15 +5,16 @@
    "Data Provider" = "#33a02c",
    "Third-Party" = "#a6cee3",
    "Researcher" = "#1f78b4",
-   "Unrestricted" = "#a6cee3",
-   "Restricted" = "#1f78b4",
    "Open" = "#1f78b4",
    "Low Security" = "#a6cee3",
    "Medium Security" = "#33a02c",
    "High Security" = "#b2df8a",
    "Low" = "#33a02c",
    "Medium" = "#a6cee3",
-   "High" = "#1f78b4"
+   "High" = "#1f78b4",
+   "Restrictive" = "#33a02c",
+   "Medium" = "#a6cee3",
+   "Flexible" = "#1f78b4"
  )
 
 plot <- function(data) {
@@ -274,7 +275,7 @@ In this section, we explore how the five dimensions map onto the case study chap
 
 ```{r, echo=FALSE}
 sfusd = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Researcher","Researcher","High","Low Security","Unrestricted"))
+                  rank=c("Researcher","Researcher","High","Low Security","Flexible"))
 
 plot(data=sfusd)
 
@@ -286,7 +287,7 @@ In the SFUSD-Stanford Partnership, SFUSD uses the CEPA Data Warehouse as a trust
 
 ```{r, echo=FALSE}
 nbirdt = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Third-Party","Third-Party","Low","High Security","Restricted"))
+                  rank=c("Third-Party","Third-Party","Low","High Security","Medium"))
 plot(data=nbirdt)
 ```
 
@@ -296,7 +297,7 @@ The NB-IRDT serves as a third-party data center for the various data providers t
 
 ```{r, echo=FALSE}
 iab1 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Data Provider","Third-Party","Low","High Security","Restricted"))
+                  rank=c("Data Provider","Third-Party","Low","High Security","Medium"))
 plot(data=iab1)
 ```
 
@@ -304,7 +305,7 @@ The IAB uses three different access models, each with its unique implementation 
 
 ```{r, echo=FALSE}
 iab2 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Data Provider","Researcher","Low","Open","Restricted"))
+                  rank=c("Data Provider","Researcher","Low","Open","Medium"))
 plot(data=iab2)
 ```
 
@@ -312,7 +313,7 @@ For IAB remote execution, the data location and analysis computers are both stil
 
 ```{r, echo=FALSE}
 iab3 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Researcher","Researcher","High","Medium Security","Unrestricted"))
+                  rank=c("Researcher","Researcher","High","Medium Security","Flexible"))
 plot(data=iab3)
 ```
 
@@ -322,7 +323,7 @@ The IAB also makes anonymized data products available for direct download by res
 
 ```{r, echo=FALSE}
 olda = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Researcher","Researcher","High","Low Security","Unrestricted"))
+                  rank=c("Researcher","Researcher","High","Low Security","Flexible"))
 plot(data=olda)
 ```
 
@@ -346,9 +347,21 @@ In the Cape Town partnership, the data was transferred from the data provider to
 
 #### National Center for Education Statistics Restricted Use Data License
 
-The National Center for Education Statistics (NCES), a part of the United States Department of Education, allows researchers to apply for a restricted use data license to store data on site at the researcher. The data location, access computer, and analysis computers are all under the control of the researcher, with specific security requirements for the computers, the storage mediums that researchers receive the data on, and any physical documentation. With full administrative control of the analysis computers, researchers also have no restrictions on the analysis methods that they are allowed to use. NCES mandates a medium level of security for the access room, specifying that it must be a locked room with access restricted to authorized users. The security arrangements must be approved by NCES prior to the receipt of restricted use data and are subject to unannounced inspections.
+```{r, echo=FALSE}
+nces = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Researcher","Researcher","High","Medium Security","Flexible"))
+nces(data=nces)
+```
+
+The National Center for Education Statistics (NCES), a part of the United States Department of Education, allows researchers to apply for a restricted use data license to store data on site at the researcher. The data location, access computer, and analysis computers are all under the control of the researcher, with specific security requirements for the computers, the storage mediums that researchers receive the data on, and any physical documentation. With full administrative control of the analysis computers, researchers also have no restrictions on the analysis methods that they are allowed to use. NCES mandates a medium level of security for the access room, requiring that it must be a locked room with access restricted to authorized users but without additional specifications for security. The security arrangements must be approved by NCES prior to the receipt of restricted use data and are subject to unannounced inspections.
 
 #### Bureau of Labor Statistics Onsite Access
+
+```{r, echo=FALSE}
+bls = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
+                  rank=c("Data Provider","Data Provider","Low","High Security","Medium"))
+bls(data=nces)
+```
 
 The Bureau of Labor Statistics (BLS) has two research data centers in its national office at Washington D.C. for access to particularly sensitive research files and surveys that are not available offsite or through the FSRDC network. The data location, access computers, and analysis computers are all located and controlled by BLS. As with other research data centers, there is a high specification of security for the access room, with access limited to approved researchers and all materials subject to search when entering or exiting the facility. Analysis methods are restricted to pre-installed versions of SAS, Stata, and SPSS, with limited use of approved statistical software and data files that can be installed by the BLS staff.
 
