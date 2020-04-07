@@ -10,7 +10,10 @@
    "Open" = "#1f78b4",
    "Low Security" = "#a6cee3",
    "Medium Security" = "#33a02c",
-   "High Security" = "#b2df8a"
+   "High Security" = "#b2df8a",
+   "Low" = "#33a02c",
+   "Medium" = "#a6cee3",
+   "High" = "#1f78b4"
  )
 
 plot <- function(data) {
@@ -72,7 +75,7 @@ In certain cases, the transfer to a third party or the researcher unlocks the po
 
 Note that the location of the data on its own in no way defines how researchers access the data, or the type of analysis a researcher can conduct.
 
-#### Control over Analysis Computers
+#### Researcher Control over Analysis Computers
 
 Analysis computers are the computers on which researchers perform their analysis on and are by definition at in the same location as the data. They need not coincide with the  computers which researchers use to access the data. The level of control that researchers are allowed over these computers may differ widely. In some cases, the researcher may have physical control over the analysis computer, in others, even software control is minimal. Of key interest to many researchers is the  software that researchers can utilize.
 
@@ -271,19 +274,19 @@ In this section, we explore how the five dimensions map onto the case study chap
 
 ```{r, echo=FALSE}
 sfusd = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Researcher","Researcher","Researcher","Low Security","Unrestricted"))
+                  rank=c("Researcher","Researcher","High","Low Security","Unrestricted"))
 
 plot(data=sfusd)
 
 ```
 
-In the SFUSD-Stanford Partnership, the data location of the full set of data that is available for research usage is the CEPA Data Warehouse, a third party organization. The warehouse serves as a trusted data service that ultimately transfers a restricted set of data to the researcher. The analysis and access computers are both under the administrative control of the researcher, with the data and analysis software on the same device. These devices are subject to Stanford and SFUSD requirements for data security, including enterprise operating system management and whole disk encryption for any device that holds the data. The access rooms are low security; researchers must take reasonable measures to physically protect the data but there are no specific requirements or checks on the location of the data itself. Typically this takes the form of storing the researcher’s computer in a locked office, although in the case of graduate student researchers the offices may be shared. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
+In the SFUSD-Stanford Partnership, SFUSD uses the CEPA Data Warehouse as a trusted data service that ultimately transfers a restricted set of data to the researcher. The location of the analysis computers and the data are therefore at the researcher, and the access computer is the same as the analysis computer. Computers used to hold and analyze SFUSD data are subject to Stanford and SFUSD requirements for data security, including enterprise operating system management and whole disk encryption for any device that holds the data. The researchers otherwise have a high degree of control over the analysis computer. The access rooms are low security; researchers must take reasonable measures to physically protect the data but there are no specific requirements or checks on the location of the data itself. Typically this takes the form of storing the researcher’s computer in a locked office, although in the case of graduate student researchers the offices may be shared. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
 
 #### New Brunswick
 
 ```{r, echo=FALSE}
 nbirdt = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Third-Party","Third-Party","Third-Party","High Security","Restricted"))
+                  rank=c("Third-Party","Third-Party","Low","High Security","Restricted"))
 plot(data=nbirdt)
 ```
 
@@ -293,7 +296,7 @@ The NB-IRDT serves as a third-party data center for the various data providers t
 
 ```{r, echo=FALSE}
 iab1 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Data Provider","Third-Party","Data Provider","High Security","Restricted"))
+                  rank=c("Data Provider","Third-Party","Low","High Security","Restricted"))
 plot(data=iab1)
 ```
 
@@ -301,7 +304,7 @@ The IAB uses three different access models, each with its unique implementation 
 
 ```{r, echo=FALSE}
 iab2 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Data Provider","Researcher","Data Provider","Open","Restricted"))
+                  rank=c("Data Provider","Researcher","Low","Open","Restricted"))
 plot(data=iab2)
 ```
 
@@ -309,7 +312,7 @@ For IAB remote execution, the data location and analysis computers are both stil
 
 ```{r, echo=FALSE}
 iab3 = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Researcher","Researcher","Researcher","Medium Security","Unrestricted"))
+                  rank=c("Researcher","Researcher","High","Medium Security","Unrestricted"))
 plot(data=iab3)
 ```
 
@@ -319,7 +322,7 @@ The IAB also makes anonymized data products available for direct download by res
 
 ```{r, echo=FALSE}
 olda = data.frame(metrics=c("Data Location","Access Computer","Analysis Computer","Access Room","Analysis Method"),
-                  rank=c("Researcher","Researcher","Researcher","Low Security","Unrestricted"))
+                  rank=c("Researcher","Researcher","High","Low Security","Unrestricted"))
 plot(data=olda)
 ```
 
