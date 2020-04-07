@@ -1,3 +1,41 @@
+```{r, echo=FALSE}
+ library(ggplot2)
+
+ pal <- c(
+   "Data Provider" = "#33a02c",
+   "Third-Party" = "#a6cee3",
+   "Researcher" = "#1f78b4",
+   "Unrestricted" = "#a6cee3",
+   "Restricted" = "#1f78b4",
+   "Open" = "#1f78b4",
+   "Low Security" = "#a6cee3",
+   "Medium Security" = "#33a02c",
+   "High Security" = "#b2df8a"
+ )
+
+plot <- function(data) {
+   ggplot(data, aes(x=metrics,y=1)) +
+   geom_bar(stat="identity", aes(fill=rank), width=1) +
+   theme(axis.title.x=element_blank(),
+         axis.text.x=element_blank(),
+         axis.ticks.x=element_blank(),
+         axis.title.y=element_blank(),
+         axis.text.y=element_blank(),
+         axis.ticks.y=element_blank(),
+         legend.position = "none") +
+   scale_fill_manual(values = pal) +
+   geom_text(aes(label=paste(metrics,": ",rank)),
+             color="black",
+             position = position_stack(vjust=0.5)) +
+   coord_flip() +
+   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+         panel.background = element_blank())
+}
+
+knitr::opts_chunk$set(fig.width=4, fig.height=2) 
+
+```
+
 ## Physically Protecting Sensitive Data
 
 The physical protection of sensitive data is one of the key parameters that data custodians can and do influence. Within the Five Safes Framework, "safe settings" are heavily influenced by how data are physically protected. However, it is also the parameter that is most dependent on current technology. While sending around floppy disks to researchers who inserted them into desktop computers in a locked room, isolated from computer networks, was common in the 1980s, it has been superseded by technologies that provide similar or stronger security, combined with greater ease of access.
