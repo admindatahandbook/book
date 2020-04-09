@@ -176,6 +176,7 @@ Environments with unrestricted analysis methods allow researchers to utilize the
 > Norwegian system is limited both to Python, and within Python, to a limited set of analysis methods, a strict subset of the Pandas package.  
 
 > IAB system only allows for Stata in Josua, but within Stata, few restrictions are imposed.
+
 ### Technical features, infrastructure, implementations
 
 #### Remote desktop
