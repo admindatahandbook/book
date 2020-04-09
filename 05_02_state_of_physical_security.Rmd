@@ -19,7 +19,7 @@ library(ggplot2)
 
 
 plot <- function(data) {
-  
+ 
    databar = data.frame(metrics=data$metrics,rank=as.factor(data$rank))
    databar$rank <- as.character(databar$rank)
    for (i in c(1,3)) {
@@ -56,7 +56,7 @@ plot <- function(data) {
       coord_flip() +
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
             panel.background = element_blank())
-  
+ 
 }
 
 ```
@@ -93,13 +93,13 @@ The researcher-accessible administrative data can be stored at one of three type
 
 Key consideration for the choice of location is the level of trust that the data provider has in the entity controlling the new location. The enforcement of DUA or MOU is key. Transferring control to another entity might be desirable when support for many researchers is a burden for the regular business of the data provider. For instance, by transferring the data to the researcher, a data provider may no longer be responsible for the cost of providing computational infrastructure for data storage and analysis. On the other hand, costs of enforcing access restrictions, such as site visits, may be higher once physical custody of the data has been transferred.
 
-In certain cases, the transfer to a third party or the researcher unlocks the possibility of combining data from multiple data providers. For instance, government departments responsible for immigration and taxes may not be legally allowed to share data, but they may each be able to transfer the data to a national statistical office. Similarly, multiple companies may not be willing (or legally allowed) to share data with one another, but may be able to transfer the data to trusted third party. In other situations, one branch within a government department, responsible for enforcement, may transfer the data to another branch, whose business it becomes to make the data accessible. The advantages of this arrangement include having an organization that is more familiar with and responsive to the needs of the researchers handling the data as well as reducing the burden on staff and resources at the data provider.
+In certain cases, the transfer to a third party or the researcher unlocks the possibility of combining data from multiple data providers. For instance, government departments responsible for immigration and taxes may not be legally allowed to share data, but they may each be able to transfer the data to a national statistical office. Similarly, multiple companies may not be willing (or legally allowed) to share data with one another, but may be able to transfer the data to trusted third parties. In other situations, one branch within a government department, responsible for enforcement, may transfer the data to another branch, whose business it becomes to make the data accessible. The advantages of this arrangement include having an organization that is more familiar with and responsive to the needs of the researchers handling the data as well as reducing the burden on staff and resources at the data provider.
 
 Note that the location of the data on its own in no way defines how researchers access the data, or the type of analysis a researcher can conduct.
 
 #### Researcher Control over Analysis Computers
 
-Analysis computers are the computers on which researchers perform their analysis on and are by definition at in the same location as the data. They need not coincide with the  computers which researchers use to access the data. The level of control that researchers are allowed over these computers may differ widely. In some cases, the researcher may have physical control over the analysis computer, in others, even software control is minimal. Of key interest to many researchers is the  software that researchers can utilize.
+Analysis computers are the computers on which researchers perform their analysis on and are by definition in the same location as the data. They need not coincide with the  computers which researchers use to access the data. The level of control that researchers are allowed over these computers may differ widely. In some cases, the researcher may have physical control over the analysis computer, in others, even software control is minimal. Of key interest to many researchers is the  software that researchers can utilize.
 
 | 1 | 2 | 3 |
 |---|---|---|
@@ -120,7 +120,7 @@ In other instances, researchers only have limited control over the analysis comp
 
 #### Location and Type of Access Computers
 
-Access computers (end points) are the computers researchers utilize to access the data. In some cases, access computers are co-incidental with analysis computers. However, when data are not in the same location, access computers are distinct from analysis computers. Access computers can be located at and be owned by the data provider,  the researcher, or a third party institution. However, ownership is not necessarily aligned with location. For instance, a researcher may be assigned a computer that serves both as access and analysis computer, but which is owned by the data provider.
+Access computers (end points) are the computers researchers utilize to access the data. In some cases, access computers are co-incidental with analysis computers. However, when data is not in the same location, access computers are distinct from analysis computers. Access computers can be located at and be owned by the data provider,  the researcher, or a third party institution. However, ownership is not necessarily aligned with location. For instance, a researcher may be assigned a computer that serves both as an access and analysis computer, but which is owned by the data provider.
 
 | 1 | 2 | 3 |
 |---|---|---|
@@ -144,7 +144,7 @@ The location of  access can have varying levels of security. We classify the lev
 |---|---|---|---|
 | High| Medium | Low | Open |
 
-An **open access** arrangement is one where there are no mandated controls on the physical location of the access computer. The access computer is protected only by hardware and software configuration of the device itself. This is typically seen in remote submission systems, such as the IAB JoSuA interface where there are no explicit restrictions on where the researcher can use the interface. Trivially, this may be true when access and analysis compture are coincident with the researcher's laptop.
+An **open access** arrangement is one where there are no mandated controls on the physical location of the access computer. The access computer is protected only by hardware and software configuration of the device itself. This is typically seen in remote submission systems, such as the IAB JoSuA interface where there are no explicit restrictions on where the researcher can use the interface. Trivially, this may be true when access and analysis computer are coincident with the researcher's laptop.
 
 > Example: Access to IAB's Joshua can be from any internet connected computer, regardless of location.
 
@@ -175,7 +175,7 @@ Environments with unrestricted analysis methods allow researchers to utilize the
 
 > Norwegian system is limited both to Python, and within Python, to a limited set of analysis methods, a strict subset of the Pandas package.  
 
-> IAB system only allows for Stata in Josua, but within Stata, few restrictions are imposed.
+> The IAB system only allows for Stata in Josua, but within Stata, few restrictions are imposed.
 
 ### Technical features, infrastructure, implementations
 
@@ -215,7 +215,7 @@ For remote access mechanisms, one way to ensure that only an authorized user has
 
 Virtual private networks (VPN’s) are used to allow users to exchange data over public networks as if they were directly connected on a private network. VPNs utilize an encrypted channel established between the remote computer and the network to securely transfer data and gain access to resources on the network. Users must authenticate themselves, such as with usernames and passwords, to access the VPN. VPN’s has applications for transferring data to researchers as well as remotely accessing data by either the researcher themselves or from a remote data center. For open access settings VPNs can be particularly useful, as they allow the encryption (and therefore security) of any data that the researcher can access from a public network.
 
-#### On-site storage 
+#### On-site storage
 
 The proper storage of research data is an important issue for data holders to consider. Reliability and security are the two main considerations for on-site storage of data. The reliability of the storage refers both to preventing data loss as well as system uptime. Data loss can be mitigated by using multiple disks in a mirrored array such that the failure of any one (or multiple) disks does not result in the loss of data as well as utilizing robust backup strategies tailored to the risk tolerance as well as any legal or data use agreement requirements. Maximizing system uptime is important to allow for the uninterrupted use of data for research. Specialized storage servers allow for maintenance, including hot-swapping storage drives, while the server remains available for use.
 
@@ -223,7 +223,7 @@ Security in the context of setting up data storage is the prevention of unauthor
 
 #### Data access controls
 
-Access control regulates what users can view or use in a computing environment. This is of particular relevance for systems where multiple researchers utilize the same computing resources for access or analysis to data. Setting user permissions on directories at the operating system level on the analysis computer is one method of implementing access controls by preventing researcher accounts from accessing data that they are not authorized to. Another method is to use a virtual machine that is a completely isolated computing environment running on a host computer; a host computer can run multiple virtual machines, with each researcher or research project having a specific virtual machine to preven the sharing of data between projects. 
+Access control regulates what users can view or use in a computing environment. This is of particular relevance for systems where multiple researchers utilize the same computing resources for access or analysis to data. Setting user permissions on directories at the operating system level on the analysis computer is one method of implementing access controls by preventing researcher accounts from accessing data that they are not authorized to. Another method is to use a virtual machine that is a completely isolated computing environment running on a host computer; a host computer can run multiple virtual machines, with each researcher or research project having a specific virtual machine to prevent the sharing of data between projects.
 
 >[Lars to add other techniques]
 
@@ -247,9 +247,7 @@ A key requirement for such a system is the provision of accurate codebooks and d
 
 By maintaining full control of the data as well as having the opportunity to check the researchers’ request and check the output before handing it back to the researcher, remote execution gives the data provider the highest level of data security. The primary tradeoff is the additional resources required on the part of the data provider to perform these tasks and the additional time it will take for a government to receive relevant results from their research partner.
 
-One example of a national statistical agency that uses a remote execution model is Statistics Canada, which allows researchers to submit analysis code after testing it on synthetic data for a select number of their databases. The Statistics Canada implementation follows the standard remote execution model. Similarly, the German IAB has a remote execution portal where researchers can test their code on test data data and upload their code for execution, and only access approved results when their job is complete.
-
-A variant on the remote execution model is the United States National Center for Health Statistics Research Data Centers, which requires researchers to first submit their analysis code for manual approval before arriving at the research data center itself to run the analysis.
+Along the five metrics, remote execution setups will locate the analysis computers and data at the data provider or third party. Researchers will have have low control over the analysis computers, as they never interact directly with the analysis computers. Access computers can be at any location, although most remote execution models involve researchers submitting their analysis files from a location distinct from the location of the analysis computer. The security of the access location can also vary widely, as remote execution jobs can be submitted from a variety of locations. Analysis methods are typically restrictive in remote execution setups, as the researcher can only use methods approved by the data provider or third party that executes the job submission.
 
 #### Physical Data Enclave
 
@@ -261,9 +259,8 @@ The data provider gets most of the security benefits of remote execution by main
 
 However, physical data enclaves still impose restrictions on the flexibility of researchers and the speed at which governments can receive research findings; instead of waiting for someone to run the remote execution for them, researchers have to schedule visits to a physical location. It also requires the data provider to provide the physical and technical infrastructure for researchers to conduct their research in a secure location.
 
-Different models of physical data enclaves exist. The traditional model in the United States is the Federal Statistical Research Data Center (FSRDC) network, where federal statistical agencies partner with research institutions to provide secure data access facilities managed by the US Census Bureau. Research institutions maintain the data enclave itself and the client computers within the data enclaves, which are connected to servers maintained by statistical agencies. Researchers must be approved by the Census Bureau and pass background checks before gaining access to the facility and data, and the output is subject to disclosure-avoidance review by FSRDC staff. FSRDC type facilities represent the highest level of security for protecting sensitive data, but are also more expensive than other methods which rely more on trust and less on physical security. Initial startup costs could reach hundreds of thousands to millions of dollars, and ongoing operating costs, while much lower, must cover full time staff and maintenance on the equipment.
+Along the five metrics, physical data enclaves will locate the data and analysis computers at the data provider or a third party, either on site at the data enclave or elsewhere. Researchers will generally have low or medium control over analysis computers, as those are in the custody of the data custodian. The data enclave itself houses the access computers, which can be the same as the analysis computer or a separate device that has a remote connection to the analysis computer. The security of the access location is typically medium or high security, as that is the defining feature of the physical data enclave. Physical data enclaves can allow for any level of flexibility of analysis methods.
 
-An innovation on the physical data enclave is the SafePod network in the United Kingdom, which scales down a full-scale research data center. The SafePod has much lower installation costs than a full data center, around £25,000. It is a standardized, prefabricated unit that can be placed in any partner institution, and the pod itself serves as the physically controlled space. Like a FSRDC, a SafePod facilitates researcher access to data stored on statistical agency servers; in this case, with access to the data approved by the actual data providers while the partner institution handles local support and physical access controls. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation in physical data enclaves that makes this highest level of data security less costly.
 
 #### Virtual Data Enclave
 
@@ -275,7 +272,7 @@ The virtual data enclave model has a major advantage for researchers in that the
 
 The primary tradeoff is the slightly lower level of data security when the researcher accesses the data, as the data provider relies on only software level controls without the ability to physically check the researcher and their output as in a physical data enclave. However, with the proper implementation this level of security is still quite robust and less costly.
 
-Statistics Denmark is one major statistical agency that uses a virtual data enclave model for access to their data. Researchers approved by Statistics Denmark can utilize specific client software for remote access to servers that house research data and perform their analysis through the client software. Researchers must sign agreements with Statistics Denmark with specific requirements to protect the physical security of the terminal that they use to access the server, consent to having their transactions on the server logged to prevent unauthorized copying of data, and ensure that they do not identify individual persons or enterprises in their output.
+Along the five metrics, virtual data enclaves are similar to remote execution setups. The location of the data and analysis computers is always at the data provider or a third party that acts as the data custodian. Researchers will generally have low or medium control over analysis computers; they will be able to access them remotely, subject to whatever restrictions the data custodian implements. The access computers can be located anywhere, with any level of security over the access locations. Virtual data enclaves do not mandate specific levels of flexibility for analysis methods.
 
 #### Researcher-Provided Infrastructure
 
@@ -285,9 +282,7 @@ Data providers must ensure that they properly remove variables containing person
 
 This process allows researchers significantly more flexibility and rapid turnarounds on research findings of importance to their government partners. Allowing researchers to store the data on their own devices may reduce the burden on data providers, who only have to provide the data itself and the staff necessary to transfer it to the researchers. On the other hand, data providers may also choose to conduct random on site inspections or have researchers submit their output for approval, which requires staff time. In instances where researchers can work very closely with the data providers’ technical staff with direct access to their data, they can also help the government learn more about their data and improve processes and systems at the government.
 
-Many research projects and data providers utilize data transfers to researchers, particularly among smaller scale data providers for whom a more expensive data enclave model is less feasible. For example, San Francisco Unified School District has a long-standing partnership with Stanford University, where the Center for Education Policy Analysis (CEPA) at Stanford acts as a data warehouse for individual-level administrative data on behalf of the district. While many of the researchers who use the data are affiliated with CEPA, the CEPA has dedicated staff with no ties to specific research projects to manage the warehouse. The district approves researchers and projects to have access to the data, while the warehouse performs data cleaning, anonymization, and ultimately provides data files to the researcher.
-
-Large scale implementations of the data transfer model for sensitive, individual-level data also exist. The U.S. National Center for Education Statistics maintains a restricted-use data license model that requires researchers to set up their own version of a physical enclave, at their home location, as a requirement for becoming a license holder. The researcher must maintain an access-controlled secure data room with specific physical and electronic protection requirements and must undergo random NCES audits to ensure compliance with these procedures. The data is transferred to the researcher via encrypted disks with the passwords sent separately, such that the data is protected in transit and only the researcher with both the data disk and password can access the data. Combining the efficiency of data transfer with the increased security of physical and electronic protection shows how data access can be tailored for individual circumstances based on sensitivity and cost needs.
+In this arrangement, the location of the data, analysis computers, and access computers are at the researcher. They will have full control over the analysis computers and analysis methods. The security of the access location can also vary widely, but is dependent on the specific requirements that the data provider sets on the researcher.
 
 ### Examples from the handbook along the five metrics
 
@@ -301,6 +296,7 @@ sfusd = data.frame(metrics=c("Data Location","Analysis Computer","Access Compute
 plot(data=sfusd)
 
 ```
+
 In the SFUSD-Stanford Partnership, SFUSD uses the CEPA Data Warehouse as a trusted data service that ultimately transfers a restricted set of data to the researcher. The location of the analysis computers and the data are therefore at the researcher, and the access computer is the same as the analysis computer. Computers used to hold and analyze SFUSD data are subject to Stanford and SFUSD requirements for data security, including enterprise operating system management and whole disk encryption for any device that holds the data. The researchers otherwise have a high degree of control over the analysis computer. The access rooms are low security; researchers must take reasonable measures to physically protect the data but there are no specific requirements or checks on the location of the data itself. Typically this takes the form of storing the researcher’s computer in a locked office, although in the case of graduate student researchers the offices may be shared. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
 
 #### NB Institute for Research, Data and Training (NB-IRDT)
@@ -361,7 +357,14 @@ In the Cape Town partnership, the data was transferred from the data provider to
 
 #### FSRDC
 
+[update this]
+Different models of physical data enclaves exist. The traditional model in the United States is the Federal Statistical Research Data Center (FSRDC) network, where federal statistical agencies partner with research institutions to provide secure data access facilities managed by the US Census Bureau. Research institutions maintain the data enclave itself and the client computers within the data enclaves, which are connected to servers maintained by statistical agencies. Researchers must be approved by the Census Bureau and pass background checks before gaining access to the facility and data, and the output is subject to disclosure-avoidance review by FSRDC staff. FSRDC type facilities represent the highest level of security for protecting sensitive data, but are also more expensive than other methods which rely more on trust and less on physical security. Initial startup costs could reach hundreds of thousands to millions of dollars, and ongoing operating costs, while much lower, must cover full time staff and maintenance on the equipment.
+
+
 #### Safepod
+
+[update this]
+An innovation on the physical data enclave is the SafePod network in the United Kingdom, which scales down a full-scale research data center. The SafePod has much lower installation costs than a full data center, around £25,000. It is a standardized, prefabricated unit that can be placed in any partner institution, and the pod itself serves as the physically controlled space. Like a FSRDC, a SafePod facilitates researcher access to data stored on statistical agency servers; in this case, with access to the data approved by the actual data providers while the partner institution handles local support and physical access controls. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation in physical data enclaves that makes this highest level of data security less costly.
 
 #### French
 
@@ -388,3 +391,5 @@ The BLS has two research data centers in its national office at Washington D.C. 
 #### NCHS
 
 [https://www.cdc.gov/rdc/b2accessmod/ACs200.htm - remote access no longer available, otherwise available at NCHS RDC or FSRDCs, not sure about the utility of "yet another RDC" example]
+
+
