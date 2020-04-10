@@ -313,7 +313,7 @@ The NB-IRDT serves as a third-party data center for the various data providers t
 
 ```{r, echo=FALSE, fig.width=4, fig.height=2}
 iab1 = data.frame(metrics=c("Data Location","Analysis Computer","Access Computer","Access Room","Analysis Method"),
-                  rank=c(2,2,1,1,2))
+                  rank=c(2,2,2,1,2))
 plot(data=iab1)
 ```
 
@@ -321,7 +321,7 @@ The IAB uses three different access models, each with its unique implementation 
 
 ```{r, echo=FALSE, fig.width=4, fig.height=2}
 iab2 = data.frame(metrics=c("Data Location","Analysis Computer","Access Computer","Access Room","Analysis Method"),
-                  rank=c(2,3,1,4,2))
+                  rank=c(2,2,3,4,2))
 plot(data=iab2)
 ```
 
