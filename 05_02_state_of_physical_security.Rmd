@@ -1,4 +1,5 @@
 ```{r, echo=FALSE}
+library(memisc)
 include("~programs/_plot_physical.R")
 ```
 

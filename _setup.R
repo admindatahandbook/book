@@ -9,6 +9,8 @@
 
 
 install.packages("here",repos="https://cloud.r-project.org", dependencies = TRUE)
+install.packages("memisc",repos="https://cloud.r-project.org", dependencies = TRUE)
+
 
 #
 #Knitr plot output folder to not break github.io
