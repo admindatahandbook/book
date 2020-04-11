@@ -1,64 +1,5 @@
 ```{r, echo=FALSE}
-library(ggplot2)
-
- pal <- c(
-   "Data Provider" = "#33a02c",
-   "Third Party" = "#a6cee3",
-   "Researcher" = "#1f78b4",
-   "Open" = "#1f78b4",
-   "Low Security" = "#a6cee3",
-   "Medium Security" = "#33a02c",
-   "High Security" = "#b2df8a",
-   "Low" = "#33a02c",
-   "Medium" = "#a6cee3",
-   "High" = "#1f78b4",
-   "Restrictive" = "#33a02c",
-   "Medium" = "#a6cee3",
-   "Flexible" = "#1f78b4"
- )
-
-
-plot <- function(data) {
- 
-   databar = data.frame(metrics=data$metrics,rank=as.factor(data$rank))
-   databar$rank <- as.character(databar$rank)
-   for (i in c(1,3)) {
-   databar$rank[i][databar$rank[i] == "1"] <- "Data Provider"
-   databar$rank[i][databar$rank[i] == "2"] <- "Third Party"
-   databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
-   }
-   for (i in c(2,5)) {
-     databar$rank[i][databar$rank[i] == "2"] <- "Medium"
-   }
-   databar$rank[2][databar$rank[2] == "1"] <- "Low"
-   databar$rank[2][databar$rank[2] == "3"] <- "High"
-   databar$rank[4][databar$rank[4] == "1"] <- "High Security"
-   databar$rank[4][databar$rank[4] == "2"] <- "Medium Security"
-   databar$rank[4][databar$rank[4] == "3"] <- "Low Security"
-   databar$rank[4][databar$rank[4] == "4"] <- "Open"
-   databar$rank[5][databar$rank[5] == "1"] <- "Restrictive"
-   databar$rank[5][databar$rank[5] == "3"] <- "Flexible"
-   databar$rank <- as.factor(databar$rank)
-
-   ggplot(databar, aes(x=metrics,y=1)) +
-      geom_bar(stat="identity", aes(fill=rank), width=1) +
-      theme(axis.title.x=element_blank(),
-            axis.text.x=element_blank(),
-            axis.ticks.x=element_blank(),
-            axis.title.y=element_blank(),
-            axis.text.y=element_blank(),
-            axis.ticks.y=element_blank(),
-            legend.position = "none") +
-      scale_fill_manual(values = pal) +
-      geom_text(aes(label=paste(metrics,": ",rank)),
-                color="black",
-                position = position_stack(vjust=0.5)) +
-      coord_flip() +
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-            panel.background = element_blank())
- 
-}
-
+include(programs/_plot_physical.R)
 ```
 
 ## Physically Protecting Sensitive Data
@@ -193,9 +134,9 @@ For data providers and researchers setting up remote access to analysis computer
 
 ![IMAGE of a commercial zero-footprint thin client Wyse Zero Clients for VMware 5020-P25](assets/images/Dell-Wyse-LargePNG.png)
 
-#### Biometric authentication (fingerprint, etc)
+#### Biometric authentication
 
-Biometrics are physical and biological features unique to individuals. Biometric authentication is the use of biometric features to verify the identity of individual users. By verifying the user’s identity based on stored information about authorized users, biometrics can be used to authenticate authorized access to access computers, analysis computers, and access rooms. The main components of such an access system includes the biometric sensor itself, which is connected to a database that contains the set of validated users, and controls either the physical or electronic lockouts for a given system (e.g. entering a room or logging into a computer).
+Biometrics are physical and biological features unique to individuals. Biometric authentication is the use of biometric features to verify the identity of individual users, such as fingerprints or iris scans. By verifying the user’s identity based on stored information about authorized users, biometrics can be used to authenticate authorized access to access computers, analysis computers, and access rooms. The main components of such an access system includes the biometric sensor itself, which is connected to a database that contains the set of validated users, and controls either the physical or electronic lockouts for a given system (e.g. entering a room or logging into a computer).
 
 > The aforementioned CASD SD-Box has an integrated biometric fingerprint sensor.
 
@@ -221,27 +162,49 @@ Other, more sophisticated network access controls may also be implemented, as di
 
 #### VPN
 
-Virtual private networks (VPN’s) are used to allow users to exchange data over public networks as if they were directly connected on a private network. VPNs utilize an encrypted channel established between the remote computer and the network to securely transfer data and gain access to resources on the network. Users must authenticate themselves, such as with usernames and passwords, to access the VPN. VPNs can be used both for data transfer and for securing remote desktop access.  For open access settings VPNs can be particularly useful, as they allow the encryption (and therefore security) of any data that the researcher can access from a public network.
+Virtual private networks (VPN’s) are used to allow two computers to connect over public networks as if they were directly connected on a private network. VPNs utilize an encrypted channel established between the remote computer and the network to securely transfer data and gain access to resources on the network. As typically implemented, users must authenticate themselves, such as with usernames and passwords, to access the VPN. VPNs can be used both for data transfer and for securing remote desktop access.  For open access settings VPNs can be particularly useful, as they allow the encryption (and therefore security) of any data that the researcher can access from a public network.
 
 > LV: I'm not sure I understand the last sentence.
 
 #### On-site storage
 
-The proper secure data storage s important for all parties physically in custody of the data, whether that is the . Reliability and security are the two main considerations for on-site storage of data. The reliability of the storage refers both to preventing data loss as well as system uptime. Data loss can be mitigated by using multiple disks in a mirrored array such that the failure of any one (or multiple) disks does not result in the loss of data as well as utilizing robust backup strategies tailored to the risk tolerance as well as any legal or data use agreement requirements. Maximizing system uptime is important to allow for the uninterrupted use of data for research. Specialized storage servers allow for maintenance, including hot-swapping storage drives, while the server remains available for use.
+The proper secure data storage is important for all parties physically in custody of the data, whether that is the data provider or the researcher. Reliability and security are two main considerations for on-site storage of data. 
 
-Security in the context of setting up data storage is the prevention of unauthorized access to the data. On top of access controls for users, the storage device itself needs to be properly configured and kept up to date with security patches. Full disk encryption for the storage device, where the entire hard drive is encrypted and needs to be unlocked before using it, helps secure the device in the event an adversary attempts to gain access to the device. The encryption of the data itself can provide the final line of defense in the event that an adversary does get access to the storage device.
+Reliability of storage refers both to preventing data loss as well as system uptime. The risk of data loss can be mitigated by using one or more of the following techniques. Multiple disks can be organized in a redundant array (RAID) such that the failure of any one (or sometimes multiple) disks does not result in the loss of data. Robust automated backup strategies tailored to the risk tolerance as well as any legal or data use agreement requirements can be used. Backup strategies involving manual action -- plugging in a USB drive in combination with scheduled backup software -- are fallible, but may be considered as a last resort.
+
+When using servers to store data, maximizing system uptime is important to allow for the uninterrupted use of data for research. Specialized storage servers allow for maintenance, including hot-swapping storage drives, while the server remains available for use. Similarly, having a  USB drive with a current backup available mitigates the downtime should data be lost.
+
+Online storage services implement these techniques as a normal part of their business, and may be one way researchers may leverage such techniques, if compliant with data use agreements.
+
+Security in the context of setting up data storage is the prevention of unauthorized access to the data. On top of [Data access controls] for users, the storage device itself needs to be properly configured. When using storage servers, operating systems need to be kept up to date with security patches. [Encryption at rest](https://en.wikipedia.org/wiki/Data_at_rest#Encryption), i.e., the data is fully encrypted when not in use, provides protection in the event that an adversary  gets access to the storage device. Full disk encryption (FDE) of the storage device is when the entire hard drive is encrypted and needs to be unlocked before being used, and can be implemented in hardware or software. The data files themselves can also be encrypted (file-level encryption), and only decrypted when used. 
+
+Encryption may decrease convenience (a password or a hardware key need to be used each time decryption occurs). Full disk encryption occurs once when systems (servers, laptops) are booted up, and can be combined with [biometric authentication]. Data encryption may require that a hardware token be present any time data is processed, but such a hardware token may be embedded in the computer, or attached as a USB device. File-level encryption can also be used when using online storage systems. 
+
+> Hardware-based FDE is offered by most storage drive vendors as an option.
+
+> Operating system-level FDE is built into all major operating systems: [FileVault](https://it.cornell.edu/filevault) on MacOS, [Bitlocker](https://it.cornell.edu/bitlocker) on modern Microsoft Windows operating systems, and various systems on Linux OS.^[https://help.ubuntu.com/community/Full_Disk_Encryption_Howto_2019] 
+
+IT staff, where available, will be well versed in these techniques. Individual researchers, if receiving data, may want to consult with IT staff on how to implement an appropriate strategy. All of these elements will carry some cost, and should be factored into the project budget.
 
 #### Data access controls
 
-Access control regulates what users can view or use in a computing environment. This is of particular relevance for systems where multiple researchers utilize the same computing resources for access or analysis to data. Setting user permissions on directories at the operating system level on the analysis computer is one method of implementing access controls by preventing researcher accounts from accessing data that they are not authorized to. Another method is to use a virtual machine that is a completely isolated computing environment running on a host computer; a host computer can run multiple virtual machines, with each researcher or research project having a specific virtual machine to prevent the sharing of data between projects.
+Access control regulates what users can view or use in a computing environment, preventing unauthorized users from accessing confidential data. This is of particular relevance for systems where multiple researchers utilize the same computing resources for access or analysis to data, whether with a compute server or a laptop. Access controls can be implemented by setting user permissions on directories at the operating system level on the analysis computer. Another method is to use a virtual machine, i.e. a completely isolated computing environment running on a host computer. A host computer can run multiple virtual machines, with each researcher or research project having a specific virtual machine. Each virtual machine is configured to provide access only to a specific (limited) set of data files, as defined by the access permissions of the research team. In addition, software availability or network access can be customized on a per-project basis. Containers, popularly known under as `Docker`, or Linux techniques such as `chroot`, achieve similar goals, with varying degrees of isolation and performance penalties.
 
->[Lars to add other techniques]
+> CASD uses a small set of standardized virtual machines running Microsoft Windows for research projects.
+
+> The FSRDC uses a variant of the `chroot` setup on Linux servers.
 
 #### Transfer mechanisms
 
-The transfer of data between data providers, third parties, and researchers occurs in many data sharing partnerships. Data can be transferred through various network protocols, cloud services, or a physical medium that is exchanged between the various parties. There are many network protocols used for transferring data, of which many transfer data without encryption and are therefore vulnerable to being read in transfer. One out of the box solution for secure file transfers is the SSH File Transfer Protocol (SFTP), which encrypts the data sent between the client and server. Cloud storage services such as Google Drive, Dropbox, Box, Microsoft OneDrive, and others, also support the encrypted transfer and storage of data.  However, utilizing cloud storage services requires placing the data under the control of a third party, which may be prohibited depending on the data sharing agreement. In circumstances where network or cloud services cannot be used, the transfer of fully encrypted physical mediums such as CD-ROMs or hard drives through couriers is another transfer mechanism that can be utilized. The password must never be sent with the medium itself.
+The transfer of data between data providers, third parties, and researchers occurs in many data sharing partnerships. Data can be transferred through various network protocols, cloud services, or a physical medium that is exchanged between the various parties. 
 
----
+Often used for small-scale transfers, physically media (USB sticks, CDROMs, hard-drives) should be encrypted at rest. Similar to [on-site storage], encryption can be hardware-based or through software. Popular software such as [GnuPG](https://gnupg.org/index.html) are free and easy to use, and available for all major operating systems. Decryption keys (passwords) should always be separately transmitted.
+
+There are many network protocols used for transferring data. Data may be transferred peer-to-peer, or may require the use of an intermediate party that typically is not signatory to the data use agreement. Some obsolete but commonly used transfer protocols do not use encryption, are therefore vulnerable to data being read in transfer, and should not be used. Any transfer protocols should use be encrypted in transit, while endpoints should have encrypted [on-site storage]. Secure peer-to-peer transfer can use the SSH File Transfer Protocol (SFTP), or authenticated transfer via HTTPS, the same protocol used by banks and most other modern websites. which encrypts the data sent between the client and server. Transfer over a [VPN] is also encrypted, regardless of transfer protocols, including for shared directory mounts (Windows shares, NFS).
+
+The use of cloud storage services^[As of 2020, 
+the following are vendors of cloud storage services: Google Drive, Dropbox, Box, Microsoft OneDrive. Cloud storage-like mechanisms can also be implemented by data providers or intermediaries, by using open source software such as [Nextcloud](https://en.wikipedia.org/wiki/Nextcloud).]  
+also support the encrypted transfer of data. Encryption of data when stored at the vendor's servers may vary, and encryption of data at the endpoints (data provider, researcher) is determined by the setting for [on-site storage]. It should be noted that while data may be encrypted, the cloud storage service may be able (or even legally obligated) to be able to decrypt the data. Thus, utilizing cloud storage services requires placing the data under the control of a third party, which may be prohibited depending on the data sharing agreement. 
 
 ### Typical access mechanisms
 
