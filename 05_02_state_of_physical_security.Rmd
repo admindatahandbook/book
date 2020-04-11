@@ -1,5 +1,5 @@
 ```{r, echo=FALSE}
-include(programs/_plot_physical.R)
+include("~programs/_plot_physical.R")
 ```
 
 ## Physically Protecting Sensitive Data
