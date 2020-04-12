@@ -1,6 +1,5 @@
 ```{r, echo=FALSE}
-source("programs/_plot_physical.R") 
-
+source("programs/_plot_physical.R")
 ```
 
 ## Physically Protecting Sensitive Data
@@ -209,13 +208,13 @@ In this section, we illustrate a few typical access mechanisms. The case studies
 
 #### Remote Execution
 
-Under a remote execution model, the researcher has no direct access to the analysis computer or the confidential data. In order to conduct an analysis, a researcher needs to submit a request to have the data provider run the analysis on behalf of the researcher and share only the summary output, with the researcher never having access to the actual data.
+Under a remote execution model, the researcher has no direct access to the analysis computer or the confidential data. In order to conduct an analysis, a researcher needs to submit a request to have the data custodian, whether the original data provider or a third party data service, run the analysis on behalf of the researcher and share only the summary output, with the researcher never having access to the actual data.
 
-Remote execution requires that the data provider maintain a mechanism for executing researchers' code, rather than  researcher doing that themselves. Such a mechanism may be an automated service, or staff time. In the latter case, staff are required to have   the technical expertise to interface with researchers, run the researchers’ analysis. Staff or systems will also conduct disclosure avoidance checks on  the output before sending it back to the researchers. 
+Remote execution requires that the data custodian maintain a mechanism for executing researchers' code, rather than  researcher doing that themselves. Such a mechanism may be an automated service, or staff time. In the latter case, staff are required to have   the technical expertise to interface with researchers, run the researchers’ analysis. Staff or systems will also conduct disclosure avoidance checks on  the output before sending it back to the researchers. 
 
-The data provider also needs to create and maintain the systems to facilitate the transfer of the necessary files. This may involve providing test files to researchers, receiving and tracking analysis files, and transmitting the output. The availability of accurate codebooks and data documentation greatly improves the process. Test files are data files that have the same variables and table structures as the real data, but have fictitious values for the variables.
+The data custodian also needs to create and maintain the systems to facilitate the transfer of the necessary files. This may involve providing test files to researchers, receiving and tracking analysis files, and transmitting the output. The availability of accurate codebooks and data documentation greatly improves the process. Test files are data files that have the same variables and table structures as the real data, but have fictitious values for the variables.
 
-Thus, data providers maintain full control over the data, and have the unique opportunity to check the researchers’ code prior to execution. Because researchers need to specify the analysis carefully, iterative or exploratory analysis may be inhibited or reduced. For some researchers, this may be perceived as an impediment; however, for researchers working under a pre-registration paradigm, the same restriction may be perceived as an advantage.
+Thus, data custodians maintain full control over the data, and have the unique opportunity to check the researchers’ code prior to execution. Because researchers need to specify the analysis carefully, iterative or exploratory analysis may be inhibited or reduced. For some researchers, this may be perceived as an impediment; however, for researchers working under a pre-registration paradigm, the same restriction may be perceived as an advantage.
 
 A downside for the data provider is the cost of providing the necessary resources (systems and staff time) to conduct the analysis. In some instances, cost is recovered by charging researchers. 
 
@@ -224,13 +223,13 @@ Metrics: remote execution setups will locate the analysis computers and data at 
 
 #### Physical Data Enclave
 
-In a physical data enclave model, researchers must enter a secure room (the "data enclave") to access the data and run their analysis code. The data provider can choose to store the data either on site at the data enclave itself, or store the data on a remote server that can only be accessed by specifically configured computers located within the data enclave. 
+In a physical data enclave model, researchers must enter a secure room (the "data enclave") to access the data and run their analysis code. The data provider can act as its own data custodian or appoint a trusted third party to run the enclave on its behalf. The data custodian can choose to store the data either on site at the data enclave itself, or store the data on a remote server that can only be accessed by specifically configured computers located within the data enclave. 
 
-To run a physical data enclave, a data provider needs to have an access-controlled space for researchers to work in. The secure room is provisioned with the requisite analysis computers (possibly servers), access computers, and software packages. The data provider typically has staff or automated systems to ensure that only authorized researchers enter the secure room. Systems or people, not necessarily the same, may also be responsible for ensuring that only "safe outputs" are removed from enclave.
+To run a physical data enclave, a data custodian needs to have an access-controlled space for researchers to work in. The secure room is provisioned with the requisite analysis computers (possibly servers), access computers, and software packages. The data provider typically has staff or automated systems to ensure that only authorized researchers enter the secure room. Systems or people, not necessarily the same, may also be responsible for ensuring that only "safe outputs" are removed from enclave.
 
-The data provider gets most of the security benefits of remote execution by maintaining full control over the data in the entire research process. It removes the potential bottleneck and additional expense of requiring dedicated staff on the part of the data provider to actually run the analysis on behalf of the researcher. 
+The data custodian gets most of the security benefits of remote execution by maintaining full control over the data in the entire research process. It removes the potential bottleneck and additional expense of requiring dedicated staff on the part of the data provider to actually run the analysis on behalf of the researcher. 
 
-However, physical data enclaves still impose restrictions on the flexibility of researchers. Instead of waiting for someone to run the remote execution for them, researchers have to schedule visits to a physical location. Travel, with associated costs, is often required. It also requires the data provider to provide the physical and technical infrastructure for researchers to conduct their research in a secure location. Meeting safety requirements can impose a substantial initial start-up cost on new sites.
+However, physical data enclaves still impose restrictions on the flexibility of researchers. Instead of waiting for someone to run the remote execution for them, researchers have to schedule visits to a physical location. Travel, with associated costs, is often required. It also requires the data custodian to provide the physical and technical infrastructure for researchers to conduct their research in a secure location. Meeting safety requirements can impose a substantial initial start-up cost on new sites.
 
 Along the five metrics, physical data enclaves will locate the data and analysis computers at the data provider or a third party, either on site at the data enclave or elsewhere. Researchers will generally have low or medium control over analysis computers, as those are in the custody of the data custodian. The data enclave itself houses the access computers, which can be the same as the analysis computer or a separate device that has a remote connection to the analysis computer. The security of the access location is typically medium or high security, as that is the defining feature of the physical data enclave. Physical data enclaves can allow for any level of flexibility of analysis methods.
 
@@ -241,11 +240,11 @@ We note that a variant of this model, typically not referred to as "enclave," is
 
 A virtual data enclave is conceptually similar to physical data enclaves, except there is no physically controlled space that the researcher must visit in order to access the data. Rather, researchers utilize different technical means to remotely access servers that store data and perform their analysis on the remote server. Typically, researchers using virtual data enclaves use remote desktop software to connect. In most cases, the researcher is prevented from removing data from the remote server.
 
-Data providers using a virtual data enclave model maintain the servers that house the data and enable researchers to run their analysis, and the computer connections allowing researchers to connect with the server. Alternatively, this may be outsourced to a cloud provider or specialized services. There are two basic approaches to the remote access mechanism: either using [remote desktop] software that the researcher can install on their own computer, or a dedicated computer (referred to as thin clients) that the data provider loans the researcher to connect to the server. 
+Data custodias using a virtual data enclave model maintain the servers that house the data and enable researchers to run their analysis, and the computer connections allowing researchers to connect with the server. Alternatively, this may be outsourced to a cloud provider or specialized services. There are two basic approaches to the remote access mechanism: either using [remote desktop] software that the researcher can install on their own computer, or a dedicated computer (referred to as thin clients) that the data custodian loans the researcher to connect to the server. 
 
-The virtual data enclave model has a major advantage for researchers in that they no longer have to travel to specific facilities to perform their research, though some restrictions may still apply. Furthermore, instead of the cost of maintaining an entire physical data enclave and the associated staff at each enclave, the data provider only needs to provide researchers with the necessary thin clients or remote desktop systems and can centralize their data staff.
+The virtual data enclave model has a major advantage for researchers in that they no longer have to travel to specific facilities to perform their research, though some restrictions may still apply. Furthermore, instead of the cost of maintaining an entire physical data enclave and the associated staff at each enclave, the data custodian only needs to provide researchers with the necessary thin clients or remote desktop systems and can centralize their data staff.
 
-The primary tradeoff is the slightly lower level of data security because the data provider no longer controls the physical environment from which the researcher accesses the data.
+The primary tradeoff is the slightly lower level of data security because the data custodian no longer controls the physical environment from which the researcher accesses the data.
 
 Along the five metrics, virtual data enclaves are similar to remote execution setups. The location of the data and analysis computers is always at the data provider or a third party that acts as the data custodian. Researchers will generally have low or medium control over analysis computers; they will be able to access them remotely, subject to whatever restrictions the data custodian implements. Any level of security for access computers or analysis methods can be implemented with virtual data enclaves.
 
@@ -348,7 +347,7 @@ data = data.frame(metrics=c("Data Location","Analysis Computer","Access Computer
 plot(data)
 ```
 
-The **[Real Time Remote Access](https://www.statcan.gc.ca/eng/rtra/)** system provides access to a large number of surveys. Users can univariate statistics (histograms, quantiles, means) as well as ratios. SAS is the only allowed software, and a maximum number of procedure calls are allowed per day. Output is protected via controlled rounding, and can be downloaded by users after successful execution. No manual processing happens at any stage. A registration and contract are required for access, and researchers must be affiliated with a government department, non-profit organization, or an academic institution.
+The **[Real Time Remote Access](https://www.statcan.gc.ca/eng/rtra/rtra)** system provides access to a large number of surveys. Users can univariate statistics (histograms, quantiles, means) as well as ratios. SAS is the only allowed software, and a maximum number of procedure calls are allowed per day. Output is protected via controlled rounding, and can be downloaded by users after successful execution. No manual processing happens at any stage. A registration and contract are required for access, and researchers must be affiliated with a government department, non-profit organization, or an academic institution.
 
 #### Statistics Norway's Remote Access System
 
