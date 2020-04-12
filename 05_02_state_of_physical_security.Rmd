@@ -1,64 +1,5 @@
 ```{r, echo=FALSE}
-#library(memisc)
-#include("~programs/_plot_physical.R")
-library(ggplot2)
-
- pal <- c(
-   "Data Provider" = "#33a02c",
-   "Third Party" = "#a6cee3",
-   "Researcher" = "#1f78b4",
-   "Open" = "#1f78b4",
-   "Low Security" = "#a6cee3",
-   "Medium Security" = "#33a02c",
-   "High Security" = "#b2df8a",
-   "Low" = "#33a02c",
-   "Medium" = "#a6cee3",
-   "High" = "#1f78b4",
-   "Restrictive" = "#33a02c",
-   "Medium" = "#a6cee3",
-   "Flexible" = "#1f78b4"
- )
-
-
-plot <- function(data) {
- 
-   databar = data.frame(metrics=data$metrics,rank=as.factor(data$rank))
-   databar$rank <- as.character(databar$rank)
-   for (i in c(1,3)) {
-   databar$rank[i][databar$rank[i] == "1"] <- "Data Provider"
-   databar$rank[i][databar$rank[i] == "2"] <- "Third Party"
-   databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
-   }
-   for (i in c(2,5)) {
-     databar$rank[i][databar$rank[i] == "2"] <- "Medium"
-   }
-   databar$rank[2][databar$rank[2] == "1"] <- "Low"
-   databar$rank[2][databar$rank[2] == "3"] <- "High"
-   databar$rank[4][databar$rank[4] == "1"] <- "High Security"
-   databar$rank[4][databar$rank[4] == "2"] <- "Medium Security"
-   databar$rank[4][databar$rank[4] == "3"] <- "Low Security"
-   databar$rank[4][databar$rank[4] == "4"] <- "Open"
-   databar$rank[5][databar$rank[5] == "1"] <- "Restrictive"
-   databar$rank[5][databar$rank[5] == "3"] <- "Flexible"
-   databar$rank <- as.factor(databar$rank)
-
-   ggplot(databar, aes(x=metrics,y=1)) +
-      geom_bar(stat="identity", aes(fill=rank), width=1) +
-      theme(axis.title.x=element_blank(),
-            axis.text.x=element_blank(),
-            axis.ticks.x=element_blank(),
-            axis.title.y=element_blank(),
-            axis.text.y=element_blank(),
-            axis.ticks.y=element_blank(),
-            legend.position = "none") +
-      scale_fill_manual(values = pal) +
-      geom_text(aes(label=paste(metrics,": ",rank)),
-                color="black",
-                position = position_stack(vjust=0.5)) +
-      coord_flip() +
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-            panel.background = element_blank())
- 
+source("programs/_plot_physical.R") 
 }
 
 ```
@@ -223,9 +164,7 @@ Other, more sophisticated network access controls may also be implemented, as di
 
 #### VPN
 
-Virtual private networks (VPN’s) are used to allow two computers to connect over public networks as if they were directly connected on a private network. VPNs utilize an encrypted channel established between the remote computer and the network to securely transfer data and gain access to resources on the network. As typically implemented, users must authenticate themselves, such as with usernames and passwords, to access the VPN. VPNs can be used both for data transfer and for securing remote desktop access.  For open access settings VPNs can be particularly useful, as they allow the encryption (and therefore security) of any data that the researcher can access from a public network.
-
-> LV: I'm not sure I understand the last sentence.
+Virtual private networks (VPN’s) are used to allow two computers to connect over public networks as if they were directly connected on a private network. VPNs utilize an encrypted channel established between the remote computer and the network to securely transfer data and gain access to resources on the network. As typically implemented, users must authenticate themselves, such as with usernames and passwords, to access the VPN. VPNs can be used both for data transfer and for securing remote desktop access. For data sharing arrangements that allow for open access locations, VPNs can be particularly useful, as they allow the encryption (and therefore security) of any data that the researcher can access from a public network. Many universities have VPN services that allow researchers to access university networks from a remote location. In instances where a data sharing parntership has to implement a VPN from scratch, such as setting up a VPN service at a data provider sharing data for the first time, there are VPN configuration settings built into the Windows Server operating system; open source options are also available.
 
 #### On-site storage
 
@@ -237,7 +176,7 @@ When using servers to store data, maximizing system uptime is important to allow
 
 Online storage services implement these techniques as a normal part of their business, and may be one way researchers may leverage such techniques, if compliant with data use agreements.
 
-Security in the context of setting up data storage is the prevention of unauthorized access to the data. On top of [Data access controls] for users, the storage device itself needs to be properly configured. When using storage servers, operating systems need to be kept up to date with security patches. [Encryption at rest](https://en.wikipedia.org/wiki/Data_at_rest#Encryption), i.e., the data is fully encrypted when not in use, provides protection in the event that an adversary  gets access to the storage device. Full disk encryption (FDE) of the storage device is when the entire hard drive is encrypted and needs to be unlocked before being used, and can be implemented in hardware or software. The data files themselves can also be encrypted (file-level encryption), and only decrypted when used. 
+Security in the context of setting up data storage is the prevention of unauthorized access to the data. On top of [Data access controls] for users, the storage device itself needs to be properly configured. When using storage servers, operating systems need to be kept up to date with security patches. [Encryption at rest](https://en.wikipedia.org/wiki/Data_at_rest#Encryption), i.e., the data is fully encrypted when not in use, provides protection in the event that an adversary  gets access to the storage device. Full disk encryption (FDE) of the storage device is when the entire hard drive is encrypted and needs to be unlocked before being used, and can be implemented in hardware or software. The data files themselves can also be encrypted (file-level encryption), and only decrypted when used .adver
 
 Encryption may decrease convenience (a password or a hardware key need to be used each time decryption occurs). Full disk encryption occurs once when systems (servers, laptops) are booted up, and can be combined with [biometric authentication]. Data encryption may require that a hardware token be present any time data is processed, but such a hardware token may be embedded in the computer, or attached as a USB device. File-level encryption can also be used when using online storage systems. 
 
@@ -263,8 +202,7 @@ Often used for small-scale transfers, physically media (USB sticks, CDROMs, hard
 
 There are many network protocols used for transferring data. Data may be transferred peer-to-peer, or may require the use of an intermediate party that typically is not signatory to the data use agreement. Some obsolete but commonly used transfer protocols do not use encryption, are therefore vulnerable to data being read in transfer, and should not be used. Any transfer protocols should use be encrypted in transit, while endpoints should have encrypted [on-site storage]. Secure peer-to-peer transfer can use the SSH File Transfer Protocol (SFTP), or authenticated transfer via HTTPS, the same protocol used by banks and most other modern websites. which encrypts the data sent between the client and server. Transfer over a [VPN] is also encrypted, regardless of transfer protocols, including for shared directory mounts (Windows shares, NFS).
 
-The use of cloud storage services^[As of 2020, 
-the following are vendors of cloud storage services: Google Drive, Dropbox, Box, Microsoft OneDrive. Cloud storage-like mechanisms can also be implemented by data providers or intermediaries, by using open source software such as [Nextcloud](https://en.wikipedia.org/wiki/Nextcloud).]  
+The use of cloud storage services^[As of 2020, the following are vendors of cloud storage services: Google Drive, Dropbox, Box, Microsoft OneDrive. Cloud storage-like mechanisms can also be implemented by data providers or intermediaries, by using open source software such as [Nextcloud](https://en.wikipedia.org/wiki/Nextcloud).]  
 also support the encrypted transfer of data. Encryption of data when stored at the vendor's servers may vary, and encryption of data at the endpoints (data provider, researcher) is determined by the setting for [on-site storage]. It should be noted that while data may be encrypted, the cloud storage service may be able (or even legally obligated) to be able to decrypt the data. Thus, utilizing cloud storage services requires placing the data under the control of a third party, which may be prohibited depending on the data sharing agreement. 
 
 ### Typical access mechanisms
