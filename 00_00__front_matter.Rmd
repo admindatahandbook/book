@@ -6,7 +6,7 @@
 
 (blurb about [LDI](https://www.ilr.cornell.edu/ldi))
 
-## About the Curators
+## About the Editors
 
 ### Shawn Cole
 
