@@ -1,0 +1,52 @@
+## Format and Style Guidelines
+
+### Style Guidelines
+
+Handbook chapters should adhere to an academic writing style for a well-informed, but not expert audience. Readers may not necessarily be familiar with the authors’ academic discipline. This means the writing should be clear, precise, concise, and well organized, but avoid jargon.
+
+- Please support assertions with sources and references wherever possible. For example, if a case study mentions a policy decision that was influenced by the research, a newspaper report, legal decision, or public announcement should be cited.
+- Authors should properly expand all acronyms upon first use and keep an international audience in mind, as well as readers from a different discipline and career background (e.g. readers may be civil servants, research economists, technical consultants, public health specialists, etc.). Jargon or country-specific organizations, customs, legal frameworks, and institutions need to be sufficiently explained (e.g. the specifics of the education system or legal code).
+- All case studies should follow the same template (see below) to make the contents quickly and easily accessible.
+
+### Formatting Guidelines
+
+- Submit final drafts as either a Microsoft Word doc or a Markdown or RMarkdown file. Resources: basics of Markdown (Online Cheatsheet, Printable Cheatsheet).
+- Section and subsection headings should use the MS Word “Heading 2” and “Heading 3” formatting styles. For submissions in Markdown, use Markdown level 2 and 3 heading syntax (## and ###). Do not include numbering in section headers (e.g., not “2.1.3 Data Use Examples”). Section numbers will be automatically generated later and are likely to change.  
+- The title of each case study chapter should reference the admin data provider and the data hosting organization (if different). As an example, authors could use a title naming the data provider, plus an informative subtitle, such as, [title] “City of Cape Town, South Africa” [subtitle] “Aligning internal data capabilities with external research partnerships.” 
+- For all authors, please list their current primary affiliation. Sample: “Shawn Cole, John G. McLean Professor of Business Administration, Harvard Business School.” A new optional section has been added to the chapter template ("About the authors") allowing authors to provide additional information there. Please also add a short paragraph to the summary of the case study (see below) that describes each author’s role in the project and dates of involvement (if not affiliated anymore).
+
+### Index
+A list of index terms must be submitted as a list, ideally in a separate file. List the primary word or phrase, plus alternatives, separated by a comma. Use a new line for each new index word/phrase. In addition, please go through your chapter and tag each index word by bolding it and enclosing it in  “||…||”. When we implement the index, our publishing platform will automatically tag each occurrence of these words.
+
+- Sample index list:
+    *Family Education Rights and Privacy Act, FERPA*
+    *Data Use Agreement, Data Use License, DUA*
+- Sample occurrence in text: “The template ||DUA|| explicitly references the ||Family Education Rights and Privacy Act||.”
+
+What are good index words or phrases? Index words or phrases should be key terms from the case study that a reader may be searching for across cases studies and that would otherwise hard to find. The article should not just mention the word in passing, but should provide substantive content related to the indexed term. Terms chosen for the index should not be extremely frequent or general terms, such as “administrative data”. They should also not be used to reference passages that can easily be found using the table of contents and section headers.
+
+- Index terms might be important technical words and phrases, for example:
+
+Umbrella DUA, institutional DUA
+Consent, informed consent
+Personally identifiable information, personal data, PII
+Data enclave
+- They could reference specific laws relevant to administrative data sharing:
+Family Education Rights and Privacy Act (FERPA) 
+Code of Federal Regulations 20 (Section 603)
+HIPAA
+Workforce Innovation and Opportunities Act (WIOA)
+Supplementary Nutrition Assistance Program (SNAP)
+Temporary Assistance to Needy Families (TANF)
+Ohio Revised Code
+Title 13, United States Code
+Other options might be important institutions (U.S. Census, state government, NIH, etc.), technical roles (data manager, data officer) etc., or acronyms (assuming they were abbreviated for frequent use) as long as the chapter provides useful information about these terms related to administrative data access.
+BIBLIOGRAPHY
+- The bibliography must be submitted as a separate file compatible with reference management tools. Acceptable formats are bibtex, RIS, EndNote, XML. For details, see here.
+- References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, [see @ColeDhalSautVilh2020] might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
+- The content of bibliography entries should follow the Chicago Manual of Style. 
+- URLs pointing to online documents should cite the document with all the usual information (author, publication date, etc.).
+- Legal code: expand on acronyms and ideally point to online repositories, so interested parties can easily find the text of the legal code. Example: 
+5 United States Code (U.S.C.) § 552b. Accessed at
+https://www.law.cornell.edu/uscode/text/5/552b on 02-28-2020.
+- Only when citing a generic webpage, use a footnote citation; where appropriate, indicate the date when last consulted. (e.g. “Available at www.google.com.” or “See J-PAL’s policies for RCT registration, accessed at www.povertyactionlab.org/page/information-affiliates on 03-21-2020.”)
