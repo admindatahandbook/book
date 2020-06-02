@@ -215,4 +215,4 @@ What metrics for success are used, and who is the audience for metrics - funders
 
 ### About the Authors
 
-8Note: new section. Authors may expand here on who they are, providing a short bio, and including additional affiliations, support, and relevant related activities.*
+*Note: new section. Authors may expand here on who they are, providing a short bio, and including additional affiliations, support, and relevant related activities.*
