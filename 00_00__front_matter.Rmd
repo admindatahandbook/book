@@ -1,0 +1,25 @@
+## About J-PAL
+
+(blurb about [J-PAL](https://www.povertyactionlab.org/))
+
+## About the Labor Dynamics Institute
+
+(blurb about [LDI](https://www.ilr.cornell.edu/ldi))
+
+## About the Editors
+
+### Shawn Cole
+
+(short bio here)
+
+### Iqbal Dhaliwal
+
+(short bio here)
+
+### Anja Sautmann
+
+(short bio here)
+
+### Lars Vilhuber
+
+(short bio here)
