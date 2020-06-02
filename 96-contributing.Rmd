@@ -1,0 +1,37 @@
+# Evolution of the Handbook and Contributing {-}
+
+The Handbook is intended to dynamically evolve over time. Releases are called "versions", starting with `V1`. Because many of the aspects that influence data sharing evolve over time, and because the initial set of case studies cannot cover the full breadth of administrative data sharing, future contributions and updates are envisioned. 
+
+## Versioning {-}
+As an online-first publication, we adopt the following versioning policy:
+
+- The Handbook follows a variant of [Semantic Versioning](https://semver.org/) rules. A version is identified by a numeric version number in the format "`vX.Y.Z`" (Major.Minor.Patch).
+- As new chapters are added or existing chapters modified or removed, new versions of the Handbook are released. 
+  - Minor edits and corrections are identified internally with a `patch` number (e.g., `v1.0.1`) but not identified in the publicly available version. 
+  - Additions of case studies and chapters necessarily lead to an increment in the `minor` number (e.g., `v1.1`). However, such additions can be added in batches. 
+  - Whenever a chapter is removed, a new `major` version is released (e.g., `v2.0.0`).
+  - When the curators estimate that a sufficiently large number of additions warrant highlighting through a new `major` number, such a `major` version may also be released.
+- Much of the development of the Handbook occurs openly. To make clear that a particular online version of the Handbook is not officially published, development versions have a `-dev`  sufffix, e.g., `v1.2.0-dev` if leading up to a proposed `v1.2.0` release. 
+  - Nearly completed versions that are being reviewed will have a `-rc[n]` suffix (e.g., `v1.2.0-rc1`), where `rc` stands for "release candidate."
+
+Only major versions are printed. Minor versions are made available in ebook formats. Patch versions may be made available in ebook formats.
+
+## How to contribute {-}
+
+We would appreciate it if any improvements, corrections, and other contributions were sent back to us, for instance via the "[Issues]" feature on 
+Github`r if (knitr::is_html_output()) ', or by clicking on the edit button in the toolbar above'`. 
+
+Case studies can be added by creating an appropriately numbered section under a specific chapter, and sending us the file (via a "Pull request", or some other way).
+
+## Contribution Attribution {-}
+
+Contributing authors retain the copyright to their publication. Contributions are licensed under a [Creative Commons - Attribution Non-commercial](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license. 
+
+Once accepted, a contribution will appear in at least one major version of the Handbook. Curators retain the right to remove contributions in later versions of the Handbook, and do not need to notify authors of such decisions.
+
+## Support  {-}
+The development of this handbook was funded by a grant from the [Alfred P. Sloan Foundation](https://sloan.org). 
+
+## Disclaimer {-}
+The views expressed in this paper are those of the authors and not those of any sponsors.
+
