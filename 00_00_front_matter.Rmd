@@ -1,5 +1,3 @@
-# Front End
-
 ## About J-PAL
 
 (blurb about [J-PAL](https://www.povertyactionlab.org/))
