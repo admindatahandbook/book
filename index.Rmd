@@ -15,29 +15,29 @@ description: This is the handbook
 
 This Handbook intends to inform Data Providers and researchers on how to provide privacy-protected access to, handle, and analyze administrative data, and to link them with existing resources, such as a database of data use agreements (DUA) and templates. Available publicly, the Handbook will provide guidance on data access requirements and procedures, data privacy, data security, property rights, regulations for public data use, data architecture, data use and storage, cost structure and recovery, ethics and privacy-protection, making data accessible for research, and dissemination for restricted access use.  The knowledge base will serve as a resource for all researchers looking to work with administrative data and for Data Providers looking to make such data available. 
 
-## About J-PAL
+## About J-PAL {-}
 
 (blurb about [J-PAL](https://www.povertyactionlab.org/))
 
-## About the Labor Dynamics Institute
+## About the Labor Dynamics Institute {-}
 
 (blurb about [LDI](https://www.ilr.cornell.edu/ldi))
 
-## About the Editors
+## About the Editors {-}
 
-### Shawn Cole
-
-(short bio here)
-
-### Iqbal Dhaliwal
+### Shawn Cole {-}
 
 (short bio here)
 
-### Anja Sautmann
+### Iqbal Dhaliwal {-}
 
 (short bio here)
 
-### Lars Vilhuber
+### Anja Sautmann {-}
+
+(short bio here)
+
+### Lars Vilhuber {-}
 
 (short bio here)
 
