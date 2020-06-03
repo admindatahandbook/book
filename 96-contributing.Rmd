@@ -8,7 +8,7 @@ The Handbook's primary location is on the web (URL TBD). However, it is also a b
 
 ## Contributions {-}
 
-Invited or contributed additions will be incorporated into the Handbook by a J-PAL-based editorial team. Not all contributions can be accepted. Each contribution will be subject to editorial review, and may be sent out to referees. Contributions will be asked to follow the [Content, Format, and Style Guidelines] and the [Case Study template]  The entire process is mediated by a [Github workflow](https://guides.github.com/introduction/flow/), and while referee reports and editorial deliberations may not be public, the contents of the decision letter will be part of the public Github workflow.[^note1]. Contributions need to be licensed liberally, at least under [Creative Commons Attribution-NonCommercial (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/), and copyright will be retained by the contributing authors.
+Invited or contributed additions will be incorporated into the Handbook by a J-PAL-based editorial team. Not all contributions can be accepted. Each contribution will be subject to editorial review, and may be sent out to referees. Contributions will be asked to follow the [Content, Format, and Style Guidelines] and the [Case Study Template]. The entire process is mediated by a [Github workflow](https://guides.github.com/introduction/flow/), and while referee reports and editorial deliberations may not be public, the contents of the decision letter will be part of the public Github workflow.[^note1] Contributions need to be licensed liberally, at least under [Creative Commons Attribution-NonCommercial (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/), and copyright will be retained by the contributing authors.
 
 Updates will be accepted on a flow basis, and updates published on a flow basis as well (see [Versioning]). If there have been any updates, then a new version of the print copy will be issued once a year.
 
@@ -18,3 +18,5 @@ Github`r if (knitr::is_html_output()) ', or by clicking on the edit button in th
 Contributing authors retain the copyright to their publication. Contributions are licensed under a [Creative Commons - Attribution Non-commercial](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license.
 
 Once accepted, a contribution will appear in at least one major version of the Handbook. Curators retain the right to remove contributions in later versions of the Handbook, and do not need to notify authors of such decisions.
+
+[^note1]: For the technically inclined: it will be  the commit message of the pull request, or the rejection of such pull request.

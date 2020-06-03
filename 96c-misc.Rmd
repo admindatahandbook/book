@@ -1,5 +1,3 @@
-
-
 ## Versioning {-}
 
 As an online-first publication, we adopt the following versioning policy:
