@@ -1,5 +1,0 @@
-# Structure of this Handbook
-
-The selected case study contributions in this handbook cover a broad spectrum of possible scenarios, problems, and solutions, and data access mechanisms around the world, with a focus on providing lessons applicable to the US context. We provide examples from national, sub-national, local, and private-sector instances of data provision. Examples focus on, but are not limited to, data providers who work with researchers conducting randomized experiments with the data provided. 
-
-The case studies are organized by geographical scale (international, national, sub-national, etc.) as well as by topic. The summary sections in part I condense the case studies into recommendations, best practices, and explicit guidance by the editors of this handbook. Additional thematic chapters focus on particular issues, such as ethics, privacy, or legal framework. These chapters augment the range of topics touched upon in the case studies, and provide normative answers to future questions not raised by the historical case studies. 
