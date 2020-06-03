@@ -1,4 +1,4 @@
-## Case Study Template  {-}
+## Case Study Template {-}
 
 Case studies should follow the case study template. Below is an updated checklist and guidance for authors and reviewers. In a Word document, please use heading formatting (heading 2 and heading 3) for each section header. Do not number your sections. 
 
