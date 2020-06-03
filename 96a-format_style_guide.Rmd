@@ -1,4 +1,4 @@
-## Content, Format, and Style Guidelines
+## Content, Format, and Style Guidelines {-}
 
 This handbook is intended as a reference for both researchers (users of administrative data) and data providers (holders of administrative data), as well as organizations that would like to facilitate administrative data collaborations, such as universities. The technical chapters are intended to support these different audiences in learning about options, making decisions based on their individual circumstances, and finding additional resources. The case studies in this handbook should focus on showcasing:
 
@@ -7,7 +7,7 @@ This handbook is intended as a reference for both researchers (users of administ
 - Access to *innovative types of administrative data or completely new data sources*, including the creation of new datasets, describing the process of making this data useful for both the data provider and the research team;
 - Administrative data used in conducting *novel RCTs*, standalone or linked with primary data collection.
 
-### Content Guidelines
+### Content Guidelines {-}
 
 The Handbook aims to provide practical, actionable guidance to researchers, administrators, policy makers, and other practitioners faced with the issue of implementing a new data access mechanism, or improving an existing mechanism.
 
@@ -30,7 +30,7 @@ All case studies should contain a **description of the different data sets** bei
 	- the sensitivity of the data and if PII or location information is included in researcher access; 
 	- whether there are inclusion rules, updates over time, exclusions, deletions, or data purges that have a significant influence on sample selection or data availability and reliability.
 
-### Style Guidelines
+### Style Guidelines {-}
 
 Handbook chapters should adhere to an academic writing style for a well-informed, but not expert audience. Readers may not necessarily be familiar with the authors’ academic discipline. This means the writing should be clear, precise, concise, and well organized, but avoid jargon.
 
@@ -40,7 +40,7 @@ Authors should properly *expand all acronyms* upon first use and keep an interna
 
 All case studies should *follow the same template* to make the contents quickly and easily accessible.
 
-### Formatting Guidelines
+### Formatting Guidelines {-}
 
 Submit final drafts as either a **Microsoft Word doc** or a **Markdown or RMarkdown file**. Resources: [basics of markdown]( https://github.com/labordynamicsinstitute/replicability-training/blob/master/TrainingCurriculum/Basics_of_Markdown.md) ([Online Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html), [Printable Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)).
 
@@ -50,7 +50,7 @@ The **title of each case study chapter** should reference the admin data provide
 
 **For all authors, please list their current primary affiliation**. Sample: “Shawn Cole, John G. McLean Professor of Business Administration, Harvard Business School.” A new optional section has been added to the chapter template ("About the authors") allowing authors to provide additional information there. Please also add a short paragraph to the summary of the case study (see below) that describes each author’s role in the project and dates of involvement (if not affiliated anymore).
 
-### Index
+### Index {-}
 
 A list of **index terms** must be submitted as a list, ideally in a separate file. List the primary word or phrase, plus alternatives, separated by a comma. Use a new line for each new index word/phrase. In addition, please go through your chapter and tag each index word by bolding it and enclosing it in  “||…||”. When we implement the index, our publishing platform will automatically tag each occurrence of these words.
 
@@ -83,7 +83,7 @@ They could reference specific laws relevant to administrative data sharing:
 
 Other options might be important institutions (U.S. Census, state government, NIH, etc.), technical roles (data manager, data officer) etc., or acronyms (assuming they were abbreviated for frequent use) as long as **the chapter provides useful information about these terms** related to administrative data access.
 
-### Bibliography
+### Bibliography {-}
 
 The bibliography must be submitted as a separate file compatible with reference management tools. Acceptable formats are bibtex, RIS, EndNote, XML. For details, see here.
 

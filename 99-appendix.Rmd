@@ -8,7 +8,7 @@ The SIL OFL 1.1 License (https://scripts.sil.org/OFL) applies to all icons
  packaged as web and desktop font files. The MIT License (https://opensource.org/licenses/MIT) applies to all non-font and
 non-icon files (e.g. CSS).
 
-## Trademarks
+## Trademarks {-}
 
 Words mentioned in this book that are known to be trademarks, whether
 registered or unregistered, have been capitalised or use initial

@@ -1,0 +1,3 @@
+# Acknowledgements {-}
+
+The editors of the handbook would like to thank the [Alfred P. Sloan Foundation](https://sloan.org) for providing  financial support that made this work possible. We would also like to express our  thanks to all the authors who have contributed to this report, and to the reviewers of the various chapters who helped to improve all contributions. Additional thanks go to the many J-PAL staff members who provided additional feedback on the various components of this handbook.

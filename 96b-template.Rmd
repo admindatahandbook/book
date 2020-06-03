@@ -1,8 +1,8 @@
-## Case Study Template
+## Case Study Template {-}
 
 Case studies should follow the case study template. Below is an updated checklist and guidance for authors and reviewers. In a Word document, please use heading formatting (heading 2 and heading 3) for each section header. Do not number your sections. 
 
-### Summary (approximately one single-spaced page)
+### Summary (approximately one single-spaced page) {-}
 
 **Provide an overview of the key elements of the case study.**
 
@@ -27,9 +27,9 @@ The goal is to give potential readers a quick idea if the case study describes a
     - Role of the authors in the process above	
     - An existing publication about the case study or a website with information about data access
 
-### Introduction
+### Introduction {-}
 
-#### Motivation and Introduction
+#### Motivation and Introduction {-}
 
 **Explain what drove the original project to make the data available.**
 
@@ -37,7 +37,7 @@ Reasons could include a legal mandate, a promising research project, or a pivot 
 
 *This section may name a legal mandate to make data accessible, but the details (how access is organized and who has access) should be discussed in the next section “Legal Context”.*
 
-#### Data Use Examples
+#### Data Use Examples {-}
 
 **If available, provide examples of particularly interesting, innovative, or policy-relevant uses of the data.**
 
@@ -49,7 +49,7 @@ Connect these examples with a description of the available data (see section “
 
 Figures or tables can be used to support the data use examples. Do not describe prospective or speculative uses. Cite published papers as well as any policy decisions that were made based on analysis of the data.
 
-#### Making Data Usable for Research
+#### Making Data Usable for Research {-}
 
 *Note: this section now includes “metadata” (previously a separate section) and was moved from its previous position below “legal context” to above (the section renamed to “legal and institutional framework”).*
 
@@ -68,9 +68,9 @@ Describe the resources and time needed to carry out these steps, from staffing t
 
 Modifications that are needed to protect the data before researchers can access them (e.g. de-identification) or before research findings and outputs can be published should be described below under “Safe Data” and “Safe Outputs.
 
-### Legal and Institutional Framework
+### Legal and Institutional Framework {-}
 
-#### Institutional Setup
+#### Institutional Setup {-}
 
 *Note: this is a newly added subsection.*
 
@@ -80,7 +80,7 @@ Who are the parties to the data access mechanism in this case study? Is the data
 
 As an example, in some cases the data provider (say, a private firm) conducts all preparation of the data for research in house, and contracts directly with researchers (“two-party model”). In other cases, the data provider or data providers (say, different ministries in a national government) contract a data custodian (data intermediary) who aggregates and prepares data and negotiates data access with researchers, representing the data provider(s).
  
-#### Legal Context For Data Use
+#### Legal Context For Data Use {-}
 
 **Describe the legal context that permits (or mandates) if and how the data provider gives others access to the data.**
 
@@ -94,7 +94,7 @@ This section should focus on the legal obligations of the data provider towards 
 
 *Note: the agreement between the data provider and the users of the data (e.g. researchers) should be described below and in the “five safes” section (with reference to data sensitivity and confidentiality). The legal framework for access should be described in a way that is intelligible to lay persons and an international readership.*
 
-#### Legal Framework for Granting Data Access
+#### Legal Framework for Granting Data Access {-}
 
 *Note: this part was slightly rearranged to reduce overlap with the “five safes” section. The sections “access” and “IP” were omitted/their contents recombined in favor of “legal context” and “legal framework”. *
 
@@ -112,11 +112,11 @@ This section should focus on the legal relationship between the data provider an
 
 *Authors may perceive some overlap between this section and the “Five safes” section. This and the previous subsection should focus on the broad legal justification and framework for granting research access. For instance, if the criteria described in detail in the Five Safes section are prescribed by a law, then describe the law here, and the details of the access under the Five Safes. Describe here if the formal agreement is called and formulated as a license, a contract, a data use agreement. This section should also describe any protections for the data provider – for instance, liability limitation if a breach occurs by a researcher, intellectual property rights, non-competition clauses.*
 
-### Protection of Sensitive and Personal Data: The "Five Safes" Framework
+### Protection of Sensitive and Personal Data: The "Five Safes" Framework {-}
 
 *This section should focus on aspects of the data access process that relate to ethics, data security, privacy, and protection of confidentiality. It is organized using the “Five Safes” framework. Please assess the cost and importance of each of the five aspects of data security below in terms of importance and cost on a scale from 1 (lowest) to 5 (highest).*
 
-#### Safe Projects - Evaluating data analysis projects for appropriateness
+#### Safe Projects - Evaluating data analysis projects for appropriateness {-}
 
 **Describe the application and review process and approval criteria for data access requests.**
 
@@ -124,7 +124,7 @@ If available, include information on application management systems, any IRB or 
 
 *If there is an online portal or application process information is publicly posted, please provide a reference/citation. Note that this section should focus on protections for those in the data, e.g. is the data use appropriate, are sensitive data protected in the project, and do the benefits of using the data outweigh the risks. For other aspects of project review – in particular intellectual property rights or strategic business interests – please use the “legal framework” section above.*
 
-#### Safe People - Evaluating researchers who seek data access
+#### Safe People - Evaluating researchers who seek data access {-}
 
 **Describe what conditions and credentials are required to be granted data access.**
 
@@ -135,7 +135,7 @@ If available, include information on application management systems, any IRB or 
 
 *If the data provider uses a “circle of trust” model, please describe it.*
 
-#### Safe Settings - How can the data be accesssed?
+#### Safe Settings - How can the data be accesssed? {-}
 
 **Describe the technical and physical infrastructure for data access and the handling of security breaches.**
 
@@ -147,7 +147,7 @@ If available, include information on application management systems, any IRB or 
 
 *Refer to the handbook chapter on “Physical security” if necessary. Be concrete and provide references if possible to help others who want to implement the same solutions.*
 
-#### Safe Data - How is disclosure risk the data verified and mitigated?
+#### Safe Data - How is disclosure risk the data verified and mitigated? {-}
 
 **Provide concrete information on the data processing steps involved in modifying the analysis data files for different levels of (researcher) access.**
 
@@ -158,7 +158,7 @@ If available, include information on application management systems, any IRB or 
 
 *Note: these are processing steps carried out after the data was made usable for research in order to remove PII and/or obscure indirect identifiers. Discuss other data processing for analysis in the “making data usable” section.*
 
-#### Safe Outputs- How is disclosure risk in statistical analysis results and tabulations verified and mitigated?
+#### Safe Outputs- How is disclosure risk in statistical analysis results and tabulations verified and mitigated? {-}
 
 **Describe processes, requirements, and tools used to verify the disclosure risk from published analysis results.**
 
@@ -167,9 +167,9 @@ If available, include information on application management systems, any IRB or 
 
 Discuss the practical implementation, including e.g. how long the review takes and who conducts it. *Note: refer back to the legal section above regarding output review as needed. The present section should focus on how review for data protection is implemented.*
 
-### Data Life-Cycle and Replicability
+### Data Life-Cycle and Replicability {-}
 
-#### Preservation and Repoducibility of Researcher-Accessible Files
+#### Preservation and Repoducibility of Researcher-Accessible Files {-}
 
 *Note: preservation and reproducibility were previously two sections.*
 
@@ -180,24 +180,24 @@ Discuss the practical implementation, including e.g. how long the review takes a
 - Are persistent identifiers generated for these files? 
 - Can researcher-accessible files be consistently regenerated, or are they snapshots of a dynamic database or data pipeline? Is the query mechanism reproducible (can similar files be recreated, can older files be retrieved), or manual (with risk of inconsistency, variation across personnel)?
 
-#### Preservation and Reproducibility of Researcher-Generated Files
+#### Preservation and Reproducibility of Researcher-Generated Files {-}
 
 **Are researcher-generated intermediate and final data files and tables, and processing code and programs preserved?**
 
 - Can other researchers access these files, with or without the permission of the original researchers?
 - Does the data provider generate persistent identifiers for any of these?
 
-### Sustainability and Continued Success
+### Sustainability and Continued Success {-}
 
 *Note: “revenue” was moved here, and combined with “outreach” and success metrics into one section.*
 
-#### Outreach
+#### Outreach {-}
 
 **Provide examples of successful outreach activities that have made “safe people” aware of the access point and data offerings.**
 
 Discuss outreach by data intermediaries/researchers to data providers as part of “Metrics of Success”.
 
-#### Revenue
+#### Revenue {-}
 
 **Discuss what makes the data access mechanism financially sustainable.**
 
@@ -205,7 +205,7 @@ How are incremental costs covered, is there full cost recovery? What is the pric
 
 *Where possible, precise numbers should be used.*
 
-#### Metrics of Success
+#### Metrics of Success {-}
 
 **Describe how the success of the data access project is evaluated.**
 
@@ -213,6 +213,6 @@ What metrics for success are used, and who is the audience for metrics - funders
 
 *Provide sample statistics where possible. Note: section was renamed.*
 
-### About the Authors
+### About the Authors {-}
 
-8Note: new section. Authors may expand here on who they are, providing a short bio, and including additional affiliations, support, and relevant related activities.*
+*Note: new section. Authors may expand here on who they are, providing a short bio, and including additional affiliations, support, and relevant related activities.*
