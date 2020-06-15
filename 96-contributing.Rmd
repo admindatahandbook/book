@@ -2,36 +2,21 @@
 
 The Handbook is intended to dynamically evolve over time. Releases are called "versions", starting with `V1`. Because many of the aspects that influence data sharing evolve over time, and because the initial set of case studies cannot cover the full breadth of administrative data sharing, future contributions and updates are envisioned. 
 
-## Versioning {-}
-As an online-first publication, we adopt the following versioning policy:
+## Availability {-}
 
-- The Handbook follows a variant of [Semantic Versioning](https://semver.org/) rules. A version is identified by a numeric version number in the format "`vX.Y.Z`" (Major.Minor.Patch).
-- As new chapters are added or existing chapters modified or removed, new versions of the Handbook are released. 
-  - Minor edits and corrections are identified internally with a `patch` number (e.g., `v1.0.1`) but not identified in the publicly available version. 
-  - Additions of case studies and chapters necessarily lead to an increment in the `minor` number (e.g., `v1.1`). However, such additions can be added in batches. 
-  - Whenever a chapter is removed, a new `major` version is released (e.g., `v2.0.0`).
-  - When the curators estimate that a sufficiently large number of additions warrant highlighting through a new `major` number, such a `major` version may also be released.
-- Much of the development of the Handbook occurs openly. To make clear that a particular online version of the Handbook is not officially published, development versions have a `-dev`  sufffix, e.g., `v1.2.0-dev` if leading up to a proposed `v1.2.0` release. 
-  - Nearly completed versions that are being reviewed will have a `-rc[n]` suffix (e.g., `v1.2.0-rc1`), where `rc` stands for "release candidate."
+The Handbook's primary location is on the web (URL TBD). However, it is also a book, and we will, at regular intervals, make available printed copies and ebook versions. The online version and the ebook will be assigned Digital Object Identifiers (DOI). Online chapters will receive their own DOI for ease of citability. Both the ebook and the hard copy will be assigned ISBN numbers. The hard copy will be available for purchase through a number of outlets. The ebook will be available for download from the Handbook's primary location for free.
 
-Only major versions are printed. Minor versions are made available in ebook formats. Patch versions may be made available in ebook formats.
+## Contributions {-}
 
-## How to contribute {-}
+Invited or contributed additions will be incorporated into the Handbook by a J-PAL-based editorial team. Not all contributions can be accepted. Each contribution will be subject to editorial review, and may be sent out to referees. Contributions will be asked to follow the [Content, Format, and Style Guidelines] and the [Case Study Template]. The entire process is mediated by a [Github workflow](https://guides.github.com/introduction/flow/), and while referee reports and editorial deliberations may not be public, the contents of the decision letter will be part of the public Github workflow.[^note1] Contributions need to be licensed liberally, at least under [Creative Commons Attribution-NonCommercial (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/), and copyright will be retained by the contributing authors.
+
+Updates will be accepted on a flow basis, and updates published on a flow basis as well (see [Versioning]). If there have been any updates, then a new version of the print copy will be issued once a year.
 
 We would appreciate it if any improvements, corrections, and other contributions were sent back to us, for instance via the "[Issues]" feature on 
-Github`r if (knitr::is_html_output()) ', or by clicking on the edit button in the toolbar above'`. 
+Github`r if (knitr::is_html_output()) ', or by clicking on the edit button in the toolbar above'`.
 
-Case studies can be added by creating an appropriately numbered section under a specific chapter, and sending us the file (via a "Pull request", or some other way).
-
-## Contribution Attribution {-}
-
-Contributing authors retain the copyright to their publication. Contributions are licensed under a [Creative Commons - Attribution Non-commercial](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license. 
+Contributing authors retain the copyright to their publication. Contributions are licensed under a [Creative Commons - Attribution Non-commercial](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license.
 
 Once accepted, a contribution will appear in at least one major version of the Handbook. Curators retain the right to remove contributions in later versions of the Handbook, and do not need to notify authors of such decisions.
 
-## Support  {-}
-The development of this handbook was funded by a grant from the [Alfred P. Sloan Foundation](https://sloan.org). 
-
-## Disclaimer {-}
-The views expressed in this paper are those of the authors and not those of any sponsors.
-
+[^note1]: For the technically inclined: it will be  the commit message of the pull request, or the rejection of such pull request.
