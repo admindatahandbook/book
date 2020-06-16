@@ -15,7 +15,7 @@ jobs:
       - name: Run docker for R 
         uses: docker://rocker/r-rmd
         with:
-          args: "_build.sh"
+          args: "/github/workspace/_build.sh"
           
       # send it to gh-pages
       - name: Deploy
