@@ -457,16 +457,4 @@ bls = data.frame(metrics=c("Data Location","Analysis Computer","Access Computer"
 plot(bls)
 ```
 
-<<<<<<< HEAD
-- Secure laptops
-- Remote access
-- Cloud computing
-- Secure rooms
-- Biometrics
-
-
-- edit test jim
-- edit test evan
-=======
 The BLS has two research data centers in its national office at Washington D.C. for access to particularly sensitive research files and surveys that are not available offsite or through the FSRDC network. The data location, access computers, and analysis computers are all located and controlled by BLS. As with other research data centers, there is a high specification of security for the access room, with access limited to approved researchers and all materials subject to search when entering or exiting the facility. Analysis methods are restricted to pre-installed versions of SAS, Stata, and SPSS, with limited use of approved statistical software and data files that can be installed by the BLS staff.
->>>>>>> master
