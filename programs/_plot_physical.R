@@ -5,45 +5,55 @@
 library(ggplot2)
 
 # Colors
- pal <- c(
+pal <- c(
    "Data Provider" = "#33a02c",
-   "Third Party" = "#a6cee3",
+   "Third-Party" = "#a6cee3",
    "Researcher" = "#1f78b4",
-   "Open" = "#1f78b4",
-   "Low Security" = "#a6cee3",
-   "Medium Security" = "#33a02c",
-   "High Security" = "#b2df8a",
    "Low" = "#33a02c",
    "Medium" = "#a6cee3",
    "High" = "#1f78b4",
-   "Restrictive" = "#33a02c",
-   "Medium" = "#a6cee3",
-   "Flexible" = "#1f78b4"
- )
+   "Data Custodian" = "#33a02c", 
+   "High Security" = "#33a02c",
+   "Medium Security" = "#a6cee3",
+   "Low Security" = "#1f78b4",
+   "Highly Restricted" = "#33a02c",
+   "Limited Restrictions" = "#a6cee3",
+   "Unrestricted" = "#1f78b4"
+)
 
 
 plot <- function(data) {
- 
+   
    databar = data.frame(metrics=data$metrics,rank=as.factor(data$rank))
    databar$rank <- as.character(databar$rank)
-   for (i in c(1,3)) {
-   databar$rank[i][databar$rank[i] == "1"] <- "Data Provider"
-   databar$rank[i][databar$rank[i] == "2"] <- "Third Party"
-   databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
+   for (i in c(1)) {
+      databar$rank[i][databar$rank[i] == "1"] <- "Data Provider"
+      databar$rank[i][databar$rank[i] == "2"] <- "Third-Party"
+      databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
    }
-   for (i in c(2,5)) {
-     databar$rank[i][databar$rank[i] == "2"] <- "Medium"
+   for (i in c(2)) {
+      databar$rank[i][databar$rank[i] == "1"] <- "Low"
+      databar$rank[i][databar$rank[i] == "2"] <- "Medium"
+      databar$rank[i][databar$rank[i] == "3"] <- "High"
    }
-   databar$rank[2][databar$rank[2] == "1"] <- "Low"
-   databar$rank[2][databar$rank[2] == "3"] <- "High"
-   databar$rank[4][databar$rank[4] == "1"] <- "High Security"
-   databar$rank[4][databar$rank[4] == "2"] <- "Medium Security"
-   databar$rank[4][databar$rank[4] == "3"] <- "Low Security"
-   databar$rank[4][databar$rank[4] == "4"] <- "Open"
-   databar$rank[5][databar$rank[5] == "1"] <- "Restrictive"
-   databar$rank[5][databar$rank[5] == "3"] <- "Flexible"
+   for (i in c(3)) {
+      databar$rank[i][databar$rank[i] == "1"] <- "Data Custodian"
+      databar$rank[i][databar$rank[i] == "2"] <- "Third-Party"
+      databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
+   }
+   for (i in c(4)) {
+      databar$rank[i][databar$rank[i] == "1"] <- "High Security"
+      databar$rank[i][databar$rank[i] == "2"] <- "Medium Security"
+      databar$rank[i][databar$rank[i] == "3"] <- "Low Security"
+   }
+   for (i in c(5)) {
+      databar$rank[i][databar$rank[i] == "1"] <- "Highly Restricted"
+      databar$rank[i][databar$rank[i] == "2"] <- "Limited Restrictions"
+      databar$rank[i][databar$rank[i] == "3"] <- "Unrestricted"
+   }
    databar$rank <- as.factor(databar$rank)
-
+   
+   databar$metrics <- factor(databar$metrics,levels = c("Range of Analysis Methods","Security of Access Room","Location and Type of Access Computer","Researcher Agency Over Analysis Computer","Location of Data and Analysis Computer"))
    ggplot(databar, aes(x=metrics,y=1)) +
       geom_bar(stat="identity", aes(fill=rank), width=1) +
       theme(axis.title.x=element_blank(),
@@ -60,5 +70,5 @@ plot <- function(data) {
       coord_flip() +
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
             panel.background = element_blank())
- 
+   
 }

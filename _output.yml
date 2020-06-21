@@ -1,4 +1,5 @@
 citation_package: natbib
+bibliography: ideahandbook.bib
 biblio-style: "authoryear"
 bookdown::gitbook:
   css: [assets/css/style.css, assets/css/toc.css, assets/css/font-awesome.min.css, assets/css/draft.css]
