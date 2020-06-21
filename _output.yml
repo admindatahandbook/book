@@ -1,6 +1,3 @@
-citation_package: natbib
-bibliography: ideahandbook.bib
-biblio-style: "authoryear"
 bookdown::gitbook:
   css: [assets/css/style.css, assets/css/toc.css, assets/css/font-awesome.min.css, assets/css/draft.css]
   split_by: section
@@ -27,4 +24,7 @@ bookdown::pdf_book:
   includes:
       in_header: preamble.tex
   toc_depth: 1
+  citation_package: natbib
+  bibliography: ideahandbook.bib
+  biblio-style: "authoryear"
   
