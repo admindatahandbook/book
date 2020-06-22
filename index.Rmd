@@ -5,7 +5,7 @@ date: "`r format(Sys.time(), '%Y-%m-%d')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [Sloan-JPAL.bib,packages.bib]
+bibliography: [Sloan-JPAL.bib,packages.bib,ideahandbook.bib]
 link-citations: yes
 github-repo: labordynamicsinstitute/idea-handbook
 description: This is the handbook

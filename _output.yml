@@ -25,6 +25,5 @@ bookdown::pdf_book:
       in_header: preamble.tex
   toc_depth: 1
   citation_package: natbib
-  bibliography: ideahandbook.bib
   biblio-style: "authoryear"
   
