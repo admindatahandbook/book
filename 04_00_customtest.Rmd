@@ -24,4 +24,6 @@ dime = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher
 plot(dime)
 ```
 
+does more words help?
+
 ```
