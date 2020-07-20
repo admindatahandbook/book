@@ -171,26 +171,24 @@ This process allows researchers significantly more flexibility and rapid turnaro
 
 ### Five Aspects of Data Access Mechanisms
 
-From the four archetypes of data access mechanisms, some distinguishing features become clear. There must exist a data storage and analysis computer, which is the computer or server (often plural) that performs the statistical analysis. This computer can exist at one of several locations. Researchers must be able to access this computer, either remotely or directly. The location from which researchers can access the data also varies across the four models. Another characteristic that can vary across setups is the level of control that researchers have over the analysis computers and the types of analysis that they are allowed to perform, which can be important contributions to the overall security of a data access mechanism.
+Actual implementations of data access mechanisms have many degrees of freedom in combining the technical components we outlined at the start of this chapter, and which the four typical setups combine in specific ways. Each of the case studies in this handbook is a variation of the basic types. In order to summarize the salient features of data access mechanisms, we categorize each data access mechanisms in five aspects:
 
-Based on our survey of the range of existing data access projects and setups, we propose a graphical framework based on a simple color scale to evaluate any given setup as it pertains to the five-safe category of “safe settings”. We will apply this framework to a few examples below to demonstrate how it can be used to provide a quick overview of the physical security features of different data access mechanisms. We will also add a “safe settings” classification graph in a preamble to each case study in this handbook. The graphical framework we propose classifies each access mechanism along five dimensions that have important consequences for the data provider's control over the data, ease of access for researchers, and the cost and technical capacity required on both sides. These are:
-
-- the physical **location of analysis computers and data**, which refers to the location of researcher-accessible computers used to analyze the data; the analysis computers are by definition at the same location as the data
+- the physical **location of analysis computers and data**, which refers to the location of researcher-accessible computers used to analyze the data; for simplicity, we assume that the analysis computers are at the same location as the data
 - the level of **researcher agency over analysis computers** that they are allowed, referring to any technical restrictions on their usage of the analysis computers
 - the **location and type of access computers**, which are the computers (end points) that researchers use to access the data, which may be the same or separate from the analysis computers.
-- the **level of security of access locations**, referring to the overall rigor of the physical security arrangements for where researchers can access the data from.
+- the **level of security of access locations**, referring to the overall rigor of the physical security arrangements for the environment from which  researchers can access the data.
 - the **range of analysis methods available** to researchers, referring to any restrictions on the types of statistical analysis that researchers can perform on the data.
 
-For each aspect, the classification ranges from maximally restrictive on the researcher while allowing the data custodians to retain the most control over the data and its usage, to minimally restrictive on the researcher with its corresponding tradeoff of the data custodian retaining the least amount of control. For ease of discussion, each classification ranges from **1** to **3**, with 1 corresponding to the most restrictive on the researcher and 3 corresponding to the least restrictive on the researcher.
+For each aspect, we classify a data access mechanism into three bins. These are weakly aligned with how restrictive it may be on the researcher, or conversely, how much control the data provider exerts, from high to low, but the mapping is not always exact. However, in all cases, there are distinct variants, which we will describe in the sections below. For convenience, we also define a simple visualization, mapping to colors, from high to low. (THIS NEEDS THE COLORS), allowing to compare multiple access mechanism visually.
 
-Note we deliberately do not frame “control” as guaranteeing greater security. The level of security of any data access mechanism is dependent on a large number of factors, of which the institutional features are merely a component. Proper implementation and maintenance of the technical infrastructure, compliance with restrictions outlined in the DUA, the training of users and staff, and other factors all contribute to the actual security of a data access mechanism.
-
-Additionally, there are certain features that are not included in the five aspects, as those features are dependent on other aspects and do not vary independently. For instance, transfer mechanisms are a technical feature of certain data access mechanisms and not an aspect that all will have; there are not usually meaningful tradeoffs for the ability of researchers to utilize data or perform their research in the choice of data transfer mechanisms should one be necessary. These features are considerations to make when making choices within each aspect, but are not separate aspects themselves.
+Note we deliberately do not frame "control" as guaranteeing greater security. The level of security of any data access mechanism is dependent on a large number of factors, of which the technological features are merely one component. Proper implementation and maintenance of the technical infrastructure, compliance with restrictions outlined in the DUA, the training of users and staff, and other factors all contribute to the actual security of a data access mechanism.
 
 When proposing and negotiating a potential use sharing agreement, evaluating the physical security arrangements along these five aspects can help researchers and their data providers craft robust mechanisms to protect data when transferring and using data for research.
 
 
 #### Interactions with the Other Five Safes
+
+> I propose to remove this section entirely.
 
 Importantly, data access mechanisms (safe settings) interact with the other four of the five safes. Safe projects, people, data, and outputs will all play a role in determining what physical security features create a safe setting.
 
@@ -204,13 +202,15 @@ Ensuring safe outputs can also affect the physical protections built into the da
 
 Each of the five aspects of data access mechanisms have specific interactions with physical security. We further highlight such interactions in the descriptions of the five aspects and examples provided.
 
+> LARS STOPPED here
+
 #### Location of Analysis Computers and Data
 
-The location of the researcher-accessible data and the analysis computer is the first aspect of data access mechanisms. The party that holds the data acts as the data custodian in a data access mechanism.
+The location of the researcher-accessible data and the analysis computer defines who is considered  the data custodian in a data access mechanism.
 
-| 1 | 2 | 3 |
+|  |  |  |
 |---|---|---|
-| Data provider | third party | Researcher |
+| Data provider | Third party | Researcher |
 
 The first option is for the **data provider** to retain custody of the analysis computer and data, acting as the data custodian. Reasons for the data provider to do so may be If the data provider has lower confidence in external parties and their technical capacity, if the data is highly sensitive, or if there are specific legal or policy requirements for the data's location and security. This gives the data provider maximum control for how for guarding against all types of security threats. The data provider will need to provide the infrastructure and have the requisite technical staff to store the data and to set up the mechanisms for researchers to access the data, whether by having the researchers travel to the data provider or through a remote access or submission system. Data providers that already have existing infrastructure that they can repurpose or already have similar access mechanisms set up as part of their existing work may find this option to be particularly attractive. Furthermore, by acting as its own data custodian, transferring data is not a task that the data provider needs to consider.
 
