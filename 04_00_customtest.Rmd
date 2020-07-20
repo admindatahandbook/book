@@ -1,3 +1,7 @@
+source("programs/_plot_physical.R")
+```
+
+
 ## Custom Testing
 
 This is a test page for custom formatting.
