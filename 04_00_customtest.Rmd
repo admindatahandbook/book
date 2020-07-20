@@ -7,7 +7,16 @@ This is a test page for custom formatting.
 Testing breakout boxes.
 
 ```{block2, type='bbox'}
-(ref:foo)
-Content in a breakout box
+*Bold Text Title*
+
+Content in a breakout box. Words and stuff
+
+can I put a plot here?
+  
+```{r, echo=FALSE, fig.width=5, fig.height=2}
+dime = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
+                  rank=c(3,3,3,3,3))
+plot(dime)
+```
 
 ```
