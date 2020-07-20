@@ -1,0 +1,13 @@
+## Custom Testing
+
+This is a test page for custom formatting.
+
+### Breakout Block Test
+
+Testing breakout boxes.
+
+```{block2, type='bbox'}
+(ref:foo)
+Content in a breakout box
+
+```
