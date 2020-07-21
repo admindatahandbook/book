@@ -51,6 +51,7 @@ pre code {
   padding: 1em;
   background: gray;
   color: black;
-  border: 2px #2D616E;
+  border: 3px;
+  border-color:#2D616E;
   border-radius: 10px;
 }
