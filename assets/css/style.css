@@ -49,9 +49,9 @@ pre code {
 
 .bbox {
   padding: 1em;
-  background: gray;
+  background-color: #DCDCDC;
   color: black;
   border: 3px;
-  border-color:#2D616E;
+  border-color: #2D616E;
   border-radius: 10px;
 }
