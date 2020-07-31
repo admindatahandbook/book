@@ -343,19 +343,6 @@ Analysis methods may be **highly restricted**. Restrictions can include limiting
 
 In this section, we evaluate several  data access mechanisms along the five aspects defined above. We have already alluded to some of these for individual aspects above, but here provide a comprehensive picture of all aspects. Some of these stem from the case studies in this handbook, others are  chapters. They are chosen to provide a spectrum of access mechanisms, focussing on variability in the five aspects, not representativeness. For each example, we provide a "badge" summarizing the five aspects visually. 
 
-#### San Francisco Unified School District (SFUSD)-Stanford Partnership
-
-```{r, echo=FALSE, fig.width=5, fig.height=2}
-plot_summary("SFUSD",sfusd,3,3,3,3,3)
-```
-
-The SFUSD-Stanford Partnership uses the CEPA Data Warehouse as an intermediary third-party data custodian to provide deidentified individual level data on SFUSD students and staff to the researcher via [Google Drive][Cloud Service] and stored on Stanford [servers][on-site storage].
-
-> I don't understand the interaction between Google Drive and Stanford servers
-
-Analysis computers and the data when analyzed are handled by the researcher, subject to security configurations required by the DUA. Researchers must take reasonable measures to physically protect the data when at rest (e.g., in a locked office), but there are no specific requirements or checks on the location of the data itself. Researchers have a high degree of agency over the analysis computer, and have no restrictions as to  access locations. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
-
-The SFUSD-Stanford Partnership has one full time data manager at the third party data custodian to maintain the infrastructure and data transfers, with additional support from a staff member at the data provider and university IT staff. The encrypted storage and computer security measures guard against physical or electronic access by adversarial actors as well as safeguarding the data in the event that a researcher loses their computer. There is no direct monitoring of researchers; the partnership relies on the enforcement of the data use agreements to guard against the misuse of data.
 
 #### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
@@ -455,6 +442,13 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 #### Summary of examples
 
+```{r extras, echo=FALSE}
+plot_summary("OLDA",olda,3,3,3,3,3,display=FALSE)
+plot_summary("Aurora",aurora,3,3,3,3,3,display=FALSE)
+plot_summary("Cape Town",capetown,3,3,3,3,3,display=FALSE)
+plot_summary("DIME",dime,3,3,3,3,3,display=FALSE)
+```
+
 ```{r summary,echo=FALSE}
 ## This needs to be automated to replace the manually constructed figure below
 ## This might be ordered by some aggregate score (sum of the individual components)
@@ -465,6 +459,8 @@ The NCES restricted licenses require minimal resources for the data access mecha
 #      knitr::kable(db)
    }
 ```
+
+> We should create a more compact graph, and add to it the assessment for all the examples in the case studies (some of which were removed above)
 
 <table>
 <thead>

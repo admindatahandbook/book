@@ -30,7 +30,7 @@ pal <- c(
 
 
 # function
-plot_summary <- function(description,name,a,b,c,d,e) {
+plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
    
    databar = data.frame(order=seq(1:5),metrics=aspect.names,rank=as.character(c(a,b,c,d,e)))
    
@@ -92,5 +92,7 @@ plot_summary <- function(description,name,a,b,c,d,e) {
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
             panel.background = element_blank())
    ggsave(file.path(figures,figure.name),g)
-   g
+   if ( display ) {
+      g
+   }
 }
