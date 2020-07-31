@@ -173,20 +173,21 @@ This process allows researchers significantly more flexibility and rapid turnaro
 
 Actual implementations of data access mechanisms have many degrees of freedom in combining the technical components we outlined at the start of this chapter, and which the four typical setups combine in specific ways. Each of the case studies in this handbook is a variation of the basic types. In order to summarize the salient features of data access mechanisms, we categorize each data access mechanisms in five aspects:
 
-- the physical **location of analysis computers and data**, which refers to the location of researcher-accessible computers used to analyze the data; for simplicity, we assume that the analysis computers are at the same location as the data
 - the level of **researcher agency over analysis computers** that they are allowed, referring to any technical restrictions on their usage of the analysis computers
-- the **location and type of access computers**, which are the computers (end points) that researchers use to access the data, which may be the same or separate from the analysis computers.
-- the **level of security of access locations**, referring to the overall rigor of the physical security arrangements for the environment from which  researchers can access the data.
+- the physical **location of analysis computers and data**, which refers to the location of researcher-accessible computers used to analyze the data; for simplicity, we assume that the analysis computers are at the same location as the data
+- the **location of access computers**, which are the computers (end points) that researchers use to access the data, which may be the same or separate from the analysis computers.
+- the level of **access security**, referring to the overall  physical security arrangements for the environment and access computers from which  researchers can access the data.
 - the **range of analysis methods available** to researchers, referring to any restrictions on the types of statistical analysis that researchers can perform on the data.
 
-For each aspect, we classify a data access mechanism into three bins. These are weakly aligned with how restrictive it may be on the researcher, or conversely, how much control the data provider exerts, from high to low, but the mapping is not always exact. However, in all cases, there are distinct variants, which we will describe in the sections below. For convenience, we also define a simple visualization, mapping to colors, from high to low. (THIS NEEDS THE COLORS), allowing to compare multiple access mechanism visually.
+For each aspect, we classify a data access mechanism into three bins. These are weakly aligned with how restrictive it may be on the researcher, or conversely, how much control the data provider exerts, from high to low, but the mapping is not always exact. However, in all cases, there are distinct variants, which we will describe in the sections below. For convenience, we also define a simple visualization, mapping to colors, from high to low. (THIS NEEDS THE COLORS), allowing to compare multiple access mechanism visually.  The more restrictive category of each aspect is colored COLOR1, the least restrictive COLOR2.
+
 
 Note we deliberately do not frame "control" as guaranteeing greater security. The level of security of any data access mechanism is dependent on a large number of factors, of which the technological features are merely one component. Proper implementation and maintenance of the technical infrastructure, compliance with restrictions outlined in the DUA, the training of users and staff, and other factors all contribute to the actual security of a data access mechanism.
 
 When proposing and negotiating a potential use sharing agreement, evaluating the physical security arrangements along these five aspects can help researchers and their data providers craft robust mechanisms to protect data when transferring and using data for research.
 
 
-Each of the five aspects of data access mechanisms have specific interactions with physical security. We further highlight such interactions in the descriptions of the five aspects and examples provided. In all cases, relaxing restrictions increases risk with respect to physical security ("safe environment"), but can be mitigated by measures in the other "safes," allowing data providers to maintain an acceptable risk-cost-usability tradeoff. 
+Each of the five aspects of data access mechanisms have specific interactions with physical security. We further highlight such interactions in the descriptions of the five aspects and examples provided. In all cases, relaxing restrictions increases risk with respect to physical security ("safe environment"), but can be mitigated by measures in the other "safes," allowing data providers to maintain an acceptable risk-cost-usability tradeoff. The five aspects are not themselves fully independent either, but neither are they tightly aligned. Thus, it is possible to combine low restrictions on the location of analysis computers  with any level of agency over their configuration, or have highly restricted access environments combined with a wide range of restrictions on analysis methods.   
 
 #### Researcher Authority over Analysis Computers
 
@@ -197,7 +198,7 @@ Data providers may choose to grant researchers only low or medium agency over an
 In a **low agency setting**, researchers will be limited to the software that the data provider chooses to allow, and will not have administrative privileges over the analysis computer.^[These restrictions can affect not only the base software itself but also third party additions for those software such as third party packages for Stata, Python, and R.]
 
 | Color1 | Color2 | Color3 |
-|---|---|---|
+|:---:|:---:|:---:|
 | Low | Medium | High |
 
 
@@ -222,7 +223,7 @@ The location of the researcher-accessible data and the analysis computer defines
 Whoever houses the analysis computers and data still has maximum physical control and will need to provide the infrastructure and have the requisite technical staff to store the data and to set up the mechanisms for researchers to access the data. 
 
 | Color1 | Color2 | Color3 |
-|---|---|---|
+|:---:|:---:|:---:|
 | Data provider | Third party | Researcher |
 
 The default situation is for the **data provider** to have custody of the analysis computer and data, acting as the data custodian. The data provider may choose to continue as data custodian when making data accessible  if there are specific legal or policy requirements for the data's location and security, and in taking into consideration the technical capabilities and trustworthiness of all parties involved.  Data providers that already have existing infrastructure that they can repurpose or already have  access mechanisms set up as part of their existing work may find this option to be particularly attractive. Furthermore, by acting as its own data custodian, transferring data is not a task that the data provider needs to consider.
@@ -248,21 +249,20 @@ In all cases where the data provider relinquishes the data custodial role,  data
 
 For data providers, transferring control of the data and analysis computers to a third party or directly to researchers might be desirable when support for many researchers is a burden for the regular business of the data provider. By transferring the data to another party, a data provider may no longer be responsible for the cost of providing computational infrastructure for [data storage][on-site storage] and analysis. However, the data provider may see some additional  costs for enforcing access restrictions, such as needing to conduct site visits, once physical custody of the data has been transferred. Data providers will rely on the enforcement of data use agreements when giving others custody of their data.
 
-#### Location and Type of Access Computers
+#### Location of Access Computers
 
-In many cases, the analysis computer may not be physically accessible to the researcher. We therefore distinguish access computers, and restrictions that might be imposed on them as to their location and type. In some cases, the access computer is co-incidental with the analysis computer.  Access computers can be located at the non-researcher data custodian, at a third party access provider, or with the researcher. The location of the access computer is not necessarily aligned with the ownership of the access computer. For instance, a researcher may be assigned a computer that serves as an access computer, but which is owned by the data provider. 
+In many cases, the analysis computer may not be physically accessible to the researcher. We therefore distinguish access computers, and restrictions that might be imposed on them as to their location and type. As a special case, the access computer can be co-incidental with the analysis computer.  Access computers can be located at the non-researcher data custodian, at a third party access provider, or with the researcher. The location of the access computer is not necessarily aligned with the ownership of the access computer. For instance, a researcher may be assigned a computer that serves as an access computer, but which is owned by the data provider. We discuss the security of the access computers in the next aspect, which is distinct from the locational aspect. 
 
 | Color1 | Color2 | Color3 |
-|---|---|---|
+|:---:|:---:|:---:|
 | Non-researcher data custodian | Third Party | Researcher |
 
-If the access computer is located at the **non-researcher data custodian**, which can be the data provider or a third party custodian, the researcher must travel to their location. Data providers wanting maximum protection for the analysis computer or to enable simultaneous usage of the data by multiple researchers may choose to use separate access computers. This allows the access provider maximum control over the access computer and its security arrangements, including physical and electronic monitoring, removing USB access ports, and other measures. Data providers particularly concerned with the sensitivity of the data may consider these restrictions necessary.
+If the access computer is located at the **non-researcher data custodian**, which can be the data provider or a third party custodian, the researcher must travel to their location. 
 
 > The [New Brunswick Institute for Research, Data and Training (NB-IRDT)] is an example of locating access computers at the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers.
 
-> The  [Federal Statistical Research Data Center (FSRDC)][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations[@united_states_census_bureau_federal_nodate]. While these secure rooms are located at partner organizations (universities, research centers, federal reserve banks), the rooms themselves are under the control of the U.S. Census Bureau, and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus, or to a partner organization) to use the thin clients to access analysis computers  located within the secure computing center of the  Census Bureau  [@united_states_census_bureau_federal_nodate].
 
-Data providers can choose a **third party** access provider. Note that the third party access provider need not be a data custodian. Researchers may still have to travel to a separate location. The key role played by third party access providers is control over physical access to the access computers. Third party access providers may need to verify the identity of the person entering secure rooms, comparing it to a list of authorized users, and preventing unauthorized users from viewing confidential material on computer screens. In some cases, third party access providers may also have the technical capability to maintain sophisticated network connections that are beyond the scope of individual researchers, such as [VPN] setups with dedicated encrypted endpoints. In other cases, it may simply be a way for multiple researchers to share the cost of using a mandated technical solution.^[The French CASD charges rent for its thin clients, and researchers sometimes locate such a thin client in a lab for shared access.] 
+Data providers can choose a **third party** access provider. Note that the third party access provider need not be a data custodian. Researchers may still have to travel to a separate location. The key role played by third party access providers is control over physical access to the access computers (see next section). In some cases, third party access providers may also have the technical capability to maintain sophisticated network connections that are beyond the scope of individual researchers, such as [VPN] setups with dedicated encrypted endpoints. In other cases, it may simply be a way for multiple researchers to share the cost of using a mandated technical solution.^[The French CASD charges rent for its thin clients, and researchers sometimes locate such a thin client in a lab for shared access.] 
 
 > The [SafePod Network (SPN)] in the United Kingdom is an example of locating access computers at a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network. [NEED LINK]
 
@@ -270,263 +270,267 @@ Finally, access computers can be located with the **researcher**. Trivially, loc
 
 > An example of this is the [Ohio Longitudinal Data Archive (OLDA)], which requires that researchers use a computer that is registered with OLDA to download the data servers. This computer also serves as the analysis computer.
 
-However, there are numerous cases where the access computer is with the researcher, when the analysis computer is not. Examples include any web-based access,  most [remote submission] systems, and many [remote desktop] systems: Researchers use their own computers to access the portal, while all computation occurs elsewhere. In various cases, researchers may also receive a dedicated access computer - an encrypted laptop or a specific thin client model. In almost all cases, locating access computers with researchers  allows them to work from a location of their choice, though in some cases, this may be restricted to a designated university office. 
+However, there are numerous cases where the access computer is with the researcher, when the analysis computer is not. Examples include any web-based access,  most [remote submission] systems, and many [remote desktop] systems: Researchers use their own computers to access the portal, while all computation occurs elsewhere.  In almost all cases, locating access computers with researchers  allows them to work from a location of their choice, though in some cases, this may be restricted to a designated university office. 
 
-> An example of access computers located with the researcher is the [Institute for Employment Research (RDC-IAB)] Job Submission Application (JoSuA) system. JoSuA is a web interface that researchers can use from their own computers to submit analysis files to the RDC-IAB.
+> An example of access computers located with the researcher is the [Institute for Employment Research (IAB RDC)] Job Submission Application (JoSuA) system. JoSuA is a web interface that researchers can use from their own computers to submit analysis files to the IAB RDC.
 
-The terms of the remote access will be defined in the DUA between the researcher and the data provider. The risks of locating the access computers, but not the analysis computers, away from the data provider are smaller. Because access computers contain no data, even if encrypted, reduces the risk of inadvertent disclosure (for instance, if stolen) somewhat. Remaining risks include "shoulder surfing" - when unauthorized users observe screens with confidential data while an authorized users is logged on. Using third parties to control access mitigates that risk. There is substantial convenience for researchers from having the access computer be closer to their usual place of work, increasing the speed of research. The growth of networks of research data centers, where access is shared amongst many users while data is mostly remote, is testament to the demand among researchers and the acceptability of the risk for many data providers. 
+In general, the closer access computers are located to the data provider, the higher the security arrangements that apply. However, the two aspects are not perfectly correlated. In particular, access computers located with researchers can have very different security arrangements. 
 
-LARS STOPPED HERE
 
-#### Security of Access Locations
+#### Security of Access Computers
 
-In addition to the location and type of access computer, the security of the location where the access computer resides is another aspect of data access mechanisms. Access locations can have three levels of security: high security, medium security, and low security arrangements. In instances where a party other than the data provider maintains the access location, data providers can reserve the right to approve the security arrangements, conduct audits, or otherwise directly verify that the operator is in compliance with the mandated security requirements. Data providers and researchers looking to set up new data access mechanisms should weigh the additional resource costs and barriers to research incurred by increasing access location security with the additional protections that higher security access locations provide.
+In addition to the location of access computers, the security of access to those computers can be vary substantially. This aspect encompasses both the location where the access computer resides, and the type of access computer.  We categorize security of access in three levels: high, medium, and low security. Data providers and researchers looking to set up new data access mechanisms should weigh the additional resource costs and barriers to research incurred by increasing access location security with the additional protections that higher security access locations provide.
 
-Note that designating a particular setting as a medium or low security location does not mean that the location is unsafe. Many government, commercial, and university offices qualify as low security locations that determined attackers could access without much issue, yet much of the generation and usage of their own administrative data takes place in such settings. During the quarantine and social distancing efforts that took place during the 2020 covid-19 pandemic, many people were undoubtedly working with administrative data from their homes.
-
-| 1 | 2 | 3 |
-|---|---|---|
+| Color1 | Color2 | Color3 |
+|:---:|:---:|:---:|
 | High Security | Medium Security | Low Security |
 
-A **high security access location** has strong specifications for physical security, requiring the use of a [secure room][secure rooms]. Access is restricted to approved researchers and staff, with additional hardening of the room beyond just access controls to the access location. Authorized users can be physically monitored in the access location by video or access location staff, in addition to any electronic monitoring on the access computer itself. The additional protections and monitoring guard against unauthorized access as well as the removal of unauthorized outputs from the access location.
 
-The goal of these arrangements is to provide maximum protection from all types of security threats and may be used for the most sensitive data that is made available to researchers such as personal health data, identified census data, and other forms of high risk data. Many of the implementations of high security access rooms are due to legal requirements on the part of the data provider as a condition for access to the data. Given the expense and intent of the restrictions, high security access locations are almost never under the control of individual researchers. If not already existent at the access location, data custodians or access providers will require expertise from IT and security specialists to assist with defining the specifications and implementation of the features of high security access rooms.
+In instances where a party other than the data provider maintains the access location, data providers typically have the right to approve the security arrangements, conduct audits, or otherwise directly verify that the operator is in compliance with the mandated security requirements. 
 
-> The [NB-IRDT][New Brunswick Institute for Research, Data and Training (NB-IRDT)] data centers, with their stringent access controls and additional physical safeguards such as bolting the server to the floor in a separate locked cage, falls into the high security category.
+A **high security access location** has strong specifications for physical security, requiring the use of a [secure room][secure rooms], typically requiring additional hardening of the room beyond just access controls,  physical monitoring by video or access location staff, in addition to any electronic monitoring on the access computer itself. The additional protections and monitoring guard against unauthorized access as well as the removal of unauthorized outputs from the access location.
 
-A **medium security access location** has a defined location with access restricted to approved researchers. These can be rooms secured with [keycards][physical access cards], biometrics[biometric authentication], or a simple lock and key restricted to approved staff. However, it does not have the additional protections associated with high security access locations. Medium security access locations can be operated by any party in a data access mechanism. These are suitable for preventing a limited set of unauthorized access attempts, but likely will not prevent determined adversarial actors from gaining physical access to the access computers; medium security access locations will work in conjunction with other aspects outlined above to prevent adversarial actors from gaining access to the data itself. Because the location is defined and controlled, medium security setups also allow for the physical monitoring of the users and outputs. Medium security access rooms also can incur significant costs for the location administrator, requiring dedicated space and staff to maintain the access location itself.
+> The  [Federal Statistical Research Data Center (FSRDC)][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations[@united_states_census_bureau_federal_nodate]. While these secure rooms are located at partner organizations (universities, research centers, federal reserve banks), the rooms themselves are under the control of the U.S. Census Bureau, and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus, or to a partner organization) to use the thin clients to access analysis computers  located within the secure computing center of the  Census Bureau  [@united_states_census_bureau_federal_nodate].
 
-> The requirements for the data location outlined in the [NCES restricted-use data license ][National Center for Education Statistics (NCES) Restricted Use Data License] is an example of a medium security arrangement under the control of the researcher. The data must be kept in a locked room with access restricted only to licensed researchers, with the security arrangements subject to random audits by NCES.
+If not already existent at the access location, data custodians or access providers will require expertise from IT and security specialists to assist with defining the specifications and implementation of the features of high security access rooms.
 
-A **low security access location** has a mandated location for the access room or other basic security precautions but otherwise has few or no access controls. This can take the form of the data provider mandating certain steps such as storing the access computer in a locked room or other basic precautions, but without a provision that only authorized personnel can enter the location. Data providers can use [IP address restrictions] to ensure that researchers only use an approved device from the agreed upon location. A subset of low security access locations are open access locations where there are no mandated locations or controls and access computers are not treated as any more valuable than any other computer unrelated to the data access mechanism. This is typically seen with public-use data files, remote access or submission systems where a user cannot actually view the data, or when researchers are allowed to store data on their laptops. The risks in these settings can be mitigated through the use of [VPN's][virtual private networks], [remote desktop] software, [secure network protocols], and [encryption] or requiring [biometric authentication] of the access computer. Low security access locations tend to serve more as a psychological reminder and deterrent against unauthorized use, relying primarily upon the protections built into the access computer and rest of the data access mechanism to guard against adversarial actors.
+A **medium security access location** has a defined location with access restricted to approved researchers. These can be rooms secured with [keycards][physical access cards], biometrics[biometric authentication], or a simple lock and key restricted to approved staff.  Such restrictions may be designed to prevent a limited set of unauthorized access attempts, or to inhibit "shoulder surfing" (visual inspection of output by unauthorized users). Medium security access rooms may incur additional costs for the location administrator, requiring dedicated space and staff to maintain the access location itself, but may also be as simple as a designated locked room at a university research institute.
+
+> Data distributed under the [NCES restricted-use data license ][National Center for Education Statistics (NCES) Restricted Use Data License]  must be kept in a locked room with access restricted only to licensed researchers, with the security arrangements subject to random audits by NCES.
+
+A **low security access location**  has few or no access controls. Simple restrictions might be broad geo-restrictions (campus-only) or procedures to follow. Data provider may mandate storing the access computer in a locked room, or can use [IP address restrictions]. When no access restrictions are imposed, researchers are free to use access computers from any location. 
+
+
+In addition to the locational security described above, the **type of access computer** can also range from high security to low security. Highly-secure access computers -- which do not contain data -- may still include fully encrypted operating systems, the use of [VPN's][virtual private networks], [remote desktop] software, [secure network protocols], and [encryption] or requiring [biometric authentication] of the access computer. This can take the form of dedicated thin clients. Low-security access computers are typically allowed for remote submission or web portal-type access, where any computer, in any location, is allowed. 
 
 > The [SFUSD-Stanford Partnership][San Francisco Unified School District (SFUSD)-Stanford Partnership] uses low security access locations. While the data is stored on secured servers at Stanford, researchers can access the data from anywhere as long as they take reasonable and appropriate efforts to keep the data secure from unauthorized access, as specified in their data use agreement.
 
-> An organization that allows for open access locations is the [Development Impact Evaluation (DIME)][Development Impact Evaluation (DIME) at the World Bank] group at the World Bank, whose researchers can remotely access the data from any location.
+
+We combine type of access and location into this aspect, since the ultimate convenience to researchers arises from a combination of the two security measures. For instance, a data provider might provide researchers with a dedicated secure laptop, which can only be used to remotely access the analysis computers - and nothing else. While there may be no location restrictions imposed on the researcher, the researcher is unlikely to carry two laptops around, and we would consider this to be a de-facto **medium** security solution.
+
+The terms of the remote access will be defined in the DUA between the researcher and the data provider. The risks of locating the access computers, but not the analysis computers, away from the data provider are smaller. Because access computers contain no data, even if encrypted, the risk of inadvertent disclosure (for instance, if stolen) is reduced.  Remaining risks include "shoulder surfing" - when unauthorized users observe screens with confidential data while an authorized users is logged on. Using third parties to control access mitigates that risk. There is substantial convenience for researchers from having the access computer be closer to their usual place of work, increasing the speed of research. The growth of networks of research data centers, where access is shared amongst many users while data is mostly remote, is testament to the demand among researchers and the acceptability of the risk for many data providers. 
+
 
 #### Range of Analysis Methods Available
 
-The final aspect of data access mechanisms is the set of analysis methods available to researchers. Analysis methods can be unrestricted, subject to limited restrictions, or be highly restricted. These restrictions can be implemented for technical or security reasons but mainly serve to ensure that researchers cannot misuse the data or generate unsafe output. Note that this aspect of data access mechanisms is distinct from the agency that researchers have the analysis computer. For instance, a data provider may allow for any analysis method, as long as it is implemented in an approved piece of software — a situation where the software choices may be limited (and limiting for researchers), but where the analysis methods within that software are unrestricted. This aspect is also closely related to the statistical protection of the data itself, which pertains more to safe data and safe outputs rather than safe settings.
+The final aspect of data access mechanisms is the set of analysis methods available to researchers. Analysis methods can be unrestricted, subject to limited restrictions, or be subject to various restrictions. Methods  range from simple tabulations to complex machine learning algorithms via standard econometric techniques.
 
-| 1 | 2 | 3 |
-|---|---|---|
+| Color1 | Color2 | Color3 |
+|:---:|:---:|:---:|
 | Highly Restricted | Limited Restrictions | Unrestricted |
 
-In settings with **unrestricted** analysis methods, researchers can use the full set of methods available in the software that is available on the analysis computer, subject to other restrictions on the analysis computer as discussed in the previous section. These methods can range from simple tabulations to complex machine learning algorithms. Many data access systems allow for unrestricted analysis methods by maintaining tight control over other aspects of data access mechanisms and other parts of the Five Safes framework.
+These restrictions can be implemented for technical or security reasons, but mainly serve to ensure that researchers cannot misuse the data or generate unsafe output. Note that this aspect of data access mechanisms is distinct from the agency that researchers have over the analysis computer.  This aspect is closely related to the statistical protection of the data itself, affecting safe data and safe outputs. 
+
+Restricting the analysis methods available to the researcher is primarily intended to protect the outputs of any analysis, preventing reidentification and other misuses of the data. Generally, the goal of restrictions on methods is to relax or automate output checks. Setting up such systems requires a high degree of technical sophistication and resources available to data custodians. Few off-the-shelf implementations of restricting analysis methods available. While this may be intended as a physical restriction on safe projects, researchers and data providers looking to set up new data access mechanisms should be clear on what restrictions may be placed on analysis methods and plan the research project accordingly.
+
+
+When analysis methods are **unrestricted**, researchers can use the full set of methods available in the software that is available on the analysis computer, including any tabulation, or any regression analysis. Note that the ability to report on the results obtained via these methods might still be restricted, depending on what is considered "safe output."  Furthermore, the ability to access any method, for instance through add-on packages (e.g., SSC for Stata, or CRAN for R) may depend on the agency the researcher has over the analysis computer.
 
 > [OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their data use agreement, to ensure safe outputs.
 
-Settings with **limited restrictions** limit the availability of commands within the data access mechanism and impose some limitations on the outputs that researchers can generate. This can include a set of prohibited commands within the analysis software or automated checks for cell sizes in outputs. Limitations on researcher agency over analysis computers can also restrict the methods available to researchers; for example, preventing the installation of external packages in software such as Stata or R will limit researchers' flexibility.
+When **limited restrictions** are imposed, some methods might be prevented, even if the software is available, by censoring elements of those softwares. In particular, the ability to inspect individual records may be limited. 
 
-> An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on site and JoSuA systems, where certain Stata commands are censored by the system and are unavailable to researchers.
+> An example of limited restrictions on analysis methods is the [IAB RDC][Institute for Employment Research (IAB RDC)] on site and JoSuA systems, where certain Stata commands are censored by the system and are unavailable to researchers, but broadly allows for most econometric techniques.
 
-**Highly restricted** analysis methods severely curtail what researchers can do. These typically correspond to only permitting a specific set of approved analysis methods. Such restrictions can include limiting the methods available to researchers to a whitelisted set of commands or, in more extreme examples, limit them to the use of tabulator software that can only provide conditional tables. This will impose strong limitations on the research agendas that can be pursued using the data access mechanism. Highly restricted analysis methods are suitable for data that is being made available to a wide range of users or users who are unlikely to carry out sophisticated analysis methods, with relaxed conditions on the rest of the Five Safes framework.
+Analysis methods may be **highly restricted**. Restrictions can include limiting the methods available to researchers to a whitelisted set of commands or, in more extreme examples, limit them to the use of tabulator software that can only provide conditional tables. Most researcher will perceive this to impose strong limitations on their ability to conduct "research as usual,"  but such methods are sometimes used to reach a wide range of users, with relaxed conditions on the rest of the Five Safes framework.
 
-> The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to use a set of approved SAS commands via their online tool. There are further limits on the number of variables and observations that can be included in analysis.
+> The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to use a set of approved SAS commands. There are further limits on the number of variables and observations that can be included in analysis.
 
 
-Restricting the analysis methods available to the researcher is primarily intended to protect the outputs of any analysis, preventing reidentification of subjects located within the data and other misuses of the data. Properly set up, this can allow for the data custodian to forego certain ex post checks of outputs or monitoring of users. However, setting up such systems requires a high degree of technical sophistication and resources available to data custodians; unlike with many of the other dimensions, there are no off-the-shelf implementations of restricting analysis methods available. While this may be intended as a physical restriction on safe projects, researchers and data providers looking to set up new data access mechanisms should be clear on what restrictions may be placed on analysis methods and plan the research project accordingly.
-
-### Typical access mechanisms along the five aspects
-
-Having defined the five aspects of data access mechanisms, we can reexamine archetypical access mechanisms along the five aspects. Each set of data providers and researchers utilizes a unique combination of the five metrics for their data sharing framework.
-
-#### Remote Execution
-
-Remote execution setups will locate the analysis computers and data at the data provider or third party acting as the data custodian. Researchers will have low or medium agency over the analysis computers as they never interact directly with the analysis computers; more flexible models may allow researchers to request specific software. Analysis methods are typically restrictive in remote execution setups, as the researcher can only use methods approved by the data provider or third party that executes the job submission. Access computers can be of any type deemed appropriate by the data provider and may be located with researchers or a third party access provider. There are no specific requirements on the security of access location.
-
-#### Physical Data Enclave
-
-In physical data enclaves, the location of the analysis computer and the data will remain with the data provider or third party data custodian. There is no inherent restriction on either the agency of researchers over the analysis computers or the analysis methods available to the researchers, although typically these will be restricted to some degree as the analysis computer will remain under the control of the data custodian. The defining feature of a physical data enclave is control over the access computers and location. Access computers will be located with the data custodian or a third party access provider. Physical data enclaves will typically use medium or high security access locations.
-
-#### Virtual Data Enclave
-
-Like with physical enclaves, the data and analysis computers are located at the data custodian in a virtual data enclave. Researchers will have restrictions on their agency over analysis computers, particularly as there is no opportunity for them to have physical access. Analysis methods can be as restrictive or as flexible as required by the data provider. The location and type of the access computers can potentially be of any type in a virtual data enclave. Similarly, there can be any level of access location security, as there are no inherent restrictions required in this model.
-
-#### Researcher-Provided Infrastructure
-
-With researcher provided infrastructure, the analysis computers and data are located with the researcher. There does not need to be a distinct access computer in this arrangement. Because researchers are providing the infrastructure, they will have full agency over the analysis computers and have unrestricted analysis methods available to them. The security of the access location can be of any type, as mandated by the data provider.
+(removed "Revisiting" as redundant)
 
 ### Specific data access mechanisms along the five aspects
 
-We can also evaluate how the five aspects map onto the data access mechanisms featured in the case study chapters. We also provide several examples from outside of our case study chapters. To provide a simple way of comparing the access mechanisms at a glance, we also provide a visual representation of the restrictiveness versus flexibility of each of the five aspects in a color coded chart. The more restrictive aspects are colored green, while more flexible aspects are blue.
+In this section, we evaluate several  data access mechanisms along the five aspects defined above. We have already alluded to some of these for individual aspects above, but here provide a comprehensive picture of all aspects. Some of these stem from the case studies in this handbook, others are  chapters. They are chosen to provide a spectrum of access mechanisms, focussing on variability in the five aspects, not representativeness. For each example, we provide a "badge" summarizing the five aspects visually. 
 
 #### San Francisco Unified School District (SFUSD)-Stanford Partnership
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-sfusd = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(3,3,3,3,3))
-plot(sfusd)
-
+plot_summary("SFUSD",sfusd,3,3,3,3,3)
 ```
 
-In the SFUSD-Stanford Partnership, SFUSD uses the CEPA Data Warehouse as an intermediary third-party data custodian that ultimately transfers a restricted set of data to the researcher via [Google Drive][Cloud Service] and stored on Stanford [servers][on-site storage], which includes deidentified individual level data on SFUSD students and staff. The location of the analysis computers and the data are therefore at the researcher. Computers used to analyze SFUSD data are subject to Stanford and SFUSD requirements for data security, including enterprise operating system management and [whole disk encryption][encryption] for any device that holds the data. Otherwise, the researchers have a high degree of agency over the analysis computer. The access locations are low security; researchers must take reasonable measures to physically protect the data but there are no specific requirements or checks on the location of the data itself. Typically this takes the form of storing the researcher's computer in a locked office, although in the case of graduate student researchers the offices may be shared. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
+The SFUSD-Stanford Partnership uses the CEPA Data Warehouse as an intermediary third-party data custodian to provide deidentified individual level data on SFUSD students and staff to the researcher via [Google Drive][Cloud Service] and stored on Stanford [servers][on-site storage].
 
-The data access mechanism in the SFUSD-Stanford Partnership only requires one full time data manager at the data custodian to maintain the infrastructure and data transfers, with additional support from a staff member at the data provider and university IT staff. The encrypted storage and computer security measures guard against physical or electronic access by adversarial actors as well as safeguarding the data in the event that a researcher loses their computer. There is no direct monitoring of researchers; the partnership relies on the enforcement of the data use agreements to guard against the misuse of data.
+> I don't understand the interaction between Google Drive and Stanford servers
+
+Analysis computers and the data when analyzed are handled by the researcher, subject to security configurations required by the DUA. Researchers must take reasonable measures to physically protect the data when at rest (e.g., in a locked office), but there are no specific requirements or checks on the location of the data itself. Researchers have a high degree of agency over the analysis computer, and have no restrictions as to  access locations. The analysis methods are unrestricted, with researchers being able to use any set of statistical software that they can acquire for analysis.
+
+The SFUSD-Stanford Partnership has one full time data manager at the third party data custodian to maintain the infrastructure and data transfers, with additional support from a staff member at the data provider and university IT staff. The encrypted storage and computer security measures guard against physical or electronic access by adversarial actors as well as safeguarding the data in the event that a researcher loses their computer. There is no direct monitoring of researchers; the partnership relies on the enforcement of the data use agreements to guard against the misuse of data.
 
 #### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-nbirdt = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(2,2,1,1,2))
-plot(nbirdt)
+plot_summary("NBIRDT",nbirdt,2,2,1,1,2)
 ```
 
-The NB-IRDT serves as a third party data custodian for the Province of New Brunswick to make deidentified personal and personal health data available to researchers. The data and analysis computers are located at the central NB-IRDT facility. Researchers must also travel to NB-IRDT data centers to access the data; the access computers are thus located at the non-researcher data custodian. Researchers use [thin clients] to remotely access data from a central server, and store their data on a local server at the specific facility that the researcher is at. Researchers have medium agency over the analysis computers, with access to common statistical programs and can request other software packages. NB-IRDT utilizes high security access locations, with researchers performing their research in [secure rooms]; protections include restricting mobile devices and outside materials, physical controls on the servers and workstations, and having dedicated fiber optics cables to handle data connections between the central and satellite locations. The NB-IRDT allows researchers unrestricted analysis methods, relying on manual disclosure control to ensure safe outputs.
+The NB-IRDT (see [Chapter on NB-IRDT]) serves as a third party data custodian for the Province of New Brunswick to make deidentified personnel and health data available to researchers. The data and analysis computers are located at the central NB-IRDT facility, and researchers may travel there or to satellite NB-IRDT data centers to access the data via [thin clients] from [secure rooms], from which mobile devices and outside materials are banned. Thus, NB-IRDT serves as  non-researcher data custodian as well as a third party access provider to provincial data with high security. Researchers have medium agency over the analysis computers: access to common statistical programs is provided, and researchers can request other software packages.  The NB-IRDT allows researchers unrestricted analysis methods, relying on manual disclosure control to ensure safe outputs.
 
-The NB-IRDT requires over two dozen staff^[https://www.unb.ca/nbirdt/about/team.html] located at the data custodian, including multiple data analysts, system administrators, and other technical staff to set up and maintain the data access mechanism. The high security for the access location and the protections around it's analysis computers prevents adversarial actors from gaining physical or electronic access to the data and also allows for the close monitoring of researchers to prevent the misuse of data.
+The NB-IRDT requires over two dozen staff^[https://www.unb.ca/nbirdt/about/team.html] located at the data custodian, including multiple data analysts, system administrators, and other technical staff to set up and maintain the data access mechanism. 
 
-#### Institute for Employment Research (RDC-IAB)
+#### Institute for Employment Research (IAB RDC)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-iab1 = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(2,1,2,1,2))
-plot(iab1)
+plot_summary("IAB RDC",iab1,1,2,2,1,2)
 ```
 
-The RDC-IAB acts as a third-party data custodian for the German Federal Employment Agency. The RDC-IAB uses three different access models, each with its unique implementation. Notably, the RDC-IAB uses different access models for different sets of data; more sensitive data is subject to greater protections while maintaining usability for researchers.
+The IAB RDC is an entity within the German Federal Employment Agency, separate from the administrative databases. It thus acts as an "internal third party" for the Employment Agency. The IAB RDC uses three different access models, each with its unique implementation. Notably, more sensitive data is subject to greater protections while maintaining usability for researchers.
 
-The most restrictive access method is RDC-IAB on-site access, which makes deidentified individual data available to researchers. In this model, the RDC-IAB (acting as the third-party data custodian) maintains the data and analysis computers. Researchers have low agency over the analysis computers, being restricted to approved statistical software; other user provided software is not allowed, and third-party packages for approved software must be approved and installed by RDC-IAB staff. The access computers are located at the RDC-IAB itself or guest RDCs acting as third-party access providers, consisting of secured workstations at RDC-IAB and [thin clients] at its guest RDCs. The access locations are subject to high security, with physical monitoring of researchers. There are limited restrictions on the analysis methods available within the RDC-IAB access mechanism, with certain Stata commands unavailable to researchers.
+The most restrictive access method is IAB RDC on-site access, which makes deidentified individual data available to researchers. The IAB RDC  maintains the data and analysis computers. Researchers have low agency over the analysis computers, being restricted to approved statistical software; other user provided software is not allowed, and third-party packages for approved software must be approved and installed by IAB RDC staff. Access computers ([thin clients] and secure workstations) can be located at the IAB RDC headquarters or at guest RDCs at various trusted institutions around the world, which then act as third-party access providers. The access locations are subject to high security, with physical monitoring of researchers and room access controls. 
+
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-iab2 = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(2,2,3,3,2))
-plot(iab2)
+plot_summary("IAB JoSuA",iab2,2,2,3,3,2)
 ```
 
-In the RDC-IAB JoSuA remote execution system, researchers can still utilize the same microdata but cannot view the data directly. Researchers are limited to viewing the deidentified output from their analysis. This allows the RDC-IAB to relax the controls around the access computers and locations; researchers can utilize their own computers to use the JoSuA interface, and there are no restrictions on access locations. The data and analysis computer remains located with the RDC-IAB, and researchers are subject to the same limitations on their agency over analysis computers and available analysis methods.
+The JoSuA remote execution system allows researchers to utilize the same microdata, though they cannot view the data directly. Researchers are limited to viewing the deidentified output from their analysis, and there are some restrictions on Stata commands. In return, controls around access computers and locations are relaxed: Researchers utilize their own computers to use the JoSuA interface, and there are no restrictions on access locations. The data and analysis computer remains located with the IAB RDC, and researchers are subject to the same limitations on their agency over analysis computers and available analysis methods.
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-iab3 = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(3,3,3,2,3))
-plot(iab3)
+plot_summary("IAB SUF",iab3,3,3,3,2,3)
 ```
 
-The RDC-IAB also makes data products available for direct download by researchers using a [secure download platform][secure network protocols], which are further anonymized variants of the microdata available in the other two access methods. In this mechanism, the researcher's institution acts as the data custodian by hosting the data and the analysis computer, with the researcher's institution having high agency over the analysis computer. The access computers and access location are also at the researcher's institution. The RDC-IAB data use agreement for downloading the scientific use files requires a medium security access location, with the building and room required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission simple key locks. Note also that scientific use data can only be accessed by European research institutions, though this is a restriction on safe people.
+The IAB RDC also makes data products ("scientific use files") available for direct download by researchers using a [secure download platform][secure network protocols], which are further anonymized variants of the microdata available in the other two access methods.  The researcher's institution acts as the data custodian by hosting the data and the analysis computer, with the researcher's institution having high agency over the analysis computer. The access computers and access location are also at the researcher's institution. The IAB RDC data use agreement for downloading the scientific use files requires a medium security access location, with the building and room required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission simple key locks. Note also that scientific use data can only be accessed by European research institutions.
 
-The RDC-IAB has a staff of over two dozen people^[https://www.iab.de/839/section.aspx/Bereichsnummer/17], not counting staff at guest RDCs. Each data center requires at least one staff member, as well as additional staff to maintain the data products and approve projects. The RDC-IAB protects the data and analysis computers from unauthorized access either by maintaining control itself or by mandating strong security around them when in the custody of researchers. In instances where users can view the data directly, the RDC-IAB also relies on the high security of the access locations to further safeguard the data from unauthorized access or misuse.
+The IAB RDC has a staff of over two dozen people^[https://www.iab.de/839/section.aspx/Bereichsnummer/17], not counting staff at guest RDCs. Each data center requires at least one staff member, as well as additional staff to maintain the data products and approve projects. 
 
 #### Ohio Longitudinal Data Archive (OLDA)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-olda = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(3,3,3,3,3))
-plot(olda)
+plot_summary("OLDA",olda,3,3,3,3,3)
 ```
 
-The Ohio Longitudinal Data Archive is an intermediary third party data custodian that provides deidentified individual data to researchers on behalf of the state of Ohio. The data is initially located at OLDA before ultimately being transferred to researchers via an [SFTP server][secure network protocols], where the data and analysis computers are located. The researchers have full agency over the analysis computer, which is required to be a desktop computer with an [IP address registered][IP address restrictions] with OLDA. This computer also doubles as the access computer, and must be located in the researcher's office. This is a low specification of access location security, placing no additional requirements beyond utilizing a specific space. Researchers have unrestricted analysis methods available for them. Data can be provided in a variety of formats, including CSV files that enable the researcher to use any analysis software or method of their choosing.
+The Ohio Longitudinal Data Archive is a third party data custodian that provides deidentified individual-level data to researchers on behalf of the state of Ohio. The data is initially located at OLDA before ultimately being transferred to researchers' analysis computers via an [SFTP server][secure network protocols]. The researchers have full agency over the analysis computer, which also serves as access computer. The computer must be physically located in the researcher's university office, and its [IP address][IP address restrictions]  registered with OLDA. There are no specific requirements imposed on the researcher's office (low security).  Researchers have unrestricted analysis methods available for them. 
 
-OLDA relies on approximately a dozen full time staff to maintain its data access mechanism. It relies heavily on the protections of the data itself and the security of researchers' institutions to prevent adversarial actors from gaining access or making use of the data it makes available. Similarly, OLDA also relies on the enforcement of its DUA and disclosure review to prevent researchers from misusing the data or generating unauthorized outputs.
+OLDA relies on approximately a dozen full time staff to maintain its data access mechanism. It relies  on the statistical protections of the data ("safe data"),  the security of researchers' institutions, and on disclosure avoidance methods applied to outputs to keep data safe. 
 
-#### Aurora Healthcare and MIT
-
-```{r, echo=FALSE, fig.width=5, fig.height=2}
-aurora = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(3,3,3,3,3))
-plot(aurora)
-```
-
-In the data use agreement between Aurora Healthcare and MIT, Aurora Healthcare agreed to make deidentified personal health data for researchers. The data and analysis computers were located at MIT, with data transferred from Aurora Healthcare to MIT Economics Department [servers][on-site storage] via [SFTP][secure network protocols]. As a result, the researchers had high agency over the analysis computers and unrestricted analysis methods available to them. Researchers could access the data from any computer connected to the MIT network either by being on campus or via a [VPN][virtual private networks], with no restrictions on the access location.
-
-This data provider and researchers took advantage of their existing IT staff and infrastructure to facilitate access to the data. The data provider relies on the physical and network security setups at the researcher's institution to protect the data from adversarial actors. There are no technical controls against the misuse of the data; this highlights the importance of the enforcement of the DUA and the fulfillment of the other Five Safes when crafting data access mechanisms.
 
 #### Private Capital Research Institute (PCRI)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-pcri = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(2,1,3,3,2))
-plot(pcri)
-
+plot_summary("PCRI",pcri,1,2,3,3,2)
 ```
 
-The PCRI data access mechanism shares highly sensitive business information about private capital firms to researchers. In this system, PCRI uses the National Opinion Research Center (NORC) as a third-party location for the data and analysis computers. Researchers have low agency over the analysis computers, being restricted to the Stata. Researchers can only use [thin clients] that are provided to them by NORC. There are no formal restrictions on the location of the access computers, although researchers are required to use their best efforts to prevent unauthorized access. PCRI and NORC implement limited restrictions on the analysis methods available within Stata, prohibiting certain commands and sample sizes.
+The PCRI data access mechanism provides access to highly sensitive business information about private capital firms to researchers. Organizationally, PCRI serves as a third party data custodian, but in turn uses both the National Opinion Research Center (NORC) and in some cases the FSRDC system as a third-party location for the data and analysis computers. Researchers have low agency over the analysis computers, being restricted to the Stata on the NORC servers (see FSRDC for restrictions there). Researchers can only use [thin clients] that are provided to them by NORC. There are no formal restrictions on the location of the access computers, although researchers are required to use their best efforts to prevent unauthorized access. PCRI and NORC implement limited restrictions on the analysis methods available within Stata, prohibiting certain commands and sample sizes.
 
-PCRI itself has three full time and six part-time staff to make the data usable for researchers, but relies on the preexisting resources at NORC for the data access mechanism. The protection against misuse and adversarial actors comes primarily from the storage of the data on secured servers at NORC with its accompanying electronic access controls and monitoring of approved users.
-
-#### City of Cape Town and J-PAL Africa
-
-```{r, echo=FALSE, fig.width=5, fig.height=2}
-capetown = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(3,3,3,3,3))
-plot(capetown)
-```
-
-In the Cape Town partnership, the data was transferred from the data provider to the researcher. As such, the data location, access, and analysis computers are all with the researcher, with the researcher having a full range of analysis methods available. (awaiting updated chapter)
-
-#### Development Impact Evaluation (DIME) at the World Bank
-
-```{r, echo=FALSE, fig.width=5, fig.height=2}
-dime = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(3,3,3,3,3))
-plot(dime)
-```
-
-DIME receives a host of sensitive administrative data, including identified data, from its governmental partners for research use. Governments transfer data directly to DIME via [encrypted protocols][secure network protocols], which acts as the data custodian and stores the data on its own [servers][on-site storage]. DIME researchers can remotely access the data through [VPN's][virtual private networks] using [secured laptops][encryption]. Due to the frequent travel by researchers, there are no restrictions on the access locations for DIME researchers. There are no limitations on the analysis methods available to DIME researchers.
-
-DIME works with administrative data from a variety of data providers, including many from low and middle income countries. In cases where the data provider may not have the resources to make the data available, DIME provides the required resources and infrastructure to access the data necessary for its research. Data providers rely on DIME's security measures, for both its physical IT infrastructure and protocols for its employees, to prevent unauthorized access and the misuse of the data.
-
-#### International Monetary Fund (IMF)
-
-(awaiting updated chapter)
-
-#### Statistics Canada Real Time Remote Access (RTRA)
-
-```{r, echo=FALSE, fig.width=5, fig.height=2}
-data = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(1,1,3,3,1))
-plot(data)
-```
-
-The RTRA system provides access to a Statistics Canada microdata. The data and analysis computers remain with Statistics Canada. Researchers have low agency over the analysis computers, being restricted to only using SAS. The access computers are located with the researcher with open access locations, as they can log into the RTRA via a web interface from any computer. Analysis methods are heavily restricted, with users limited to specific commands within SAS, restricted numbers of procedure calls a day, limits on class variables, and other controls on the SAS environment.[@government_of_canada_system_2011]
-
-The RTRA system is set up by Statistics Canada, which is a major national statistical agency with its associated resources. Researchers only require their own computer to access the data. The data is protected from adversarial actors and misuse by preventing users from viewing the data and automated controlled rounding of the outputs. Additional safeguards primarily concern the evaluation of safe users; a registration and contract are required for access, and researchers must be affiliated with a government department, non-profit organization, or an academic institution.
+PCRI itself has three full time and six part-time staff to make the data usable for researchers, but relies on the preexisting resources at NORC for the data access mechanism. 
 
 #### Federal Statistical Research Data Centers (FSRDC)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-data = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                 rank=c(1,2,2,1,3))
-plot(data)
+plot_summary("FSRDC",fsrdc,2,1,1,1,3)
 ```
 
-In the United States Federal Statistical Research Data Center (FSRDC) network, federal statistical agencies partner with research institutions to provide secure data access to many different federal statistical products. The data and analysis computers remain with the Census Bureau; for data from other statistical agencies, the Census Bureau acts as a third-party data custodian for the original data provider. Researchers have medium agency over these computers; they are restricted to authorized software but have the ability to request approval for additional software. Within the confines of software availability, analysis methods are otherwise unrestricted. Access computers are [thin clients] located at the partner institutions serving as third-party access providers, which maintain high security access locations in accordance with Census Bureau requirements.[@united_states_census_bureau_federal_nodate]
+The United States Federal Statistical Research Data Center (FSRDC) network hosts data from multiple federal statistical agencies partner, serving as third party data curator and access provider. The data and analysis computers are hosted at the Census Bureau's computer center, separate from operational systems. Researchers have medium agency over these computers; they are restricted to authorized software but have the ability to request approval for additional software. Analysis methods are unrestricted. Access computers are [thin clients] located in [secure rooms] built by and located on the campuses of  partner institutions; however, the secure rooms remain under the control of and are considered part of the Census Bureau. Thus, while the system seems to have third party access providers, it is not [@united_states_census_bureau_federal_nodate]. Nevertheless, it serves as an interesting hybrid model.
 
-Each network RDC has several full staff members to maintain the access computers and access location; initial startup costs could reach hundreds of thousands dollars, with ongoing operating costs for staff time.[@united_states_census_bureau_hosting_nodate]The maintenance of the data and analysis computer is a massive undertaking performed by the data provider. The FSRDC network relies on all aspects of data access mechanisms to protect the data that it makes available for researchers. of highest level of security for protecting sensitive data, but are also more expensive than other methods which rely more on trust and less on physical security.
+Each of the currently 29 RDC locations has at least one full staff members, and the entire IT infrastructure is maintained by Census Bureau IT staff. Initial startup costs reach hundreds of thousands dollars. Partner institutions cover part of the cost of maintaining each RDC location [@united_states_census_bureau_hosting_nodate]. 
+
+
+#### Statistics Canada Real Time Remote Access (RTRA)
+
+```{r, echo=FALSE, fig.width=5, fig.height=2}
+plot_summary("RTRA",rtra,1,1,3,3,1)
+```
+
+The RTRA system provides access to several Statistics Canada datasets. The data and analysis computers remain with Statistics Canada. Researchers have low agency over the analysis computers, and are  restricted to  using SAS. Access computers are not restricted - researchers can use any computer to submit jobs. Analysis methods are heavily restricted, with users limited to specific commands within SAS, restricted numbers of procedure calls a day, limits on class variables, and other controls on the SAS environment [@government_of_canada_system_2011]. 
+
+The RTRA system is maintained by Statistics Canada, a major national statistical agency. Additional controls include automated controlled rounding of the outputs (safe outputs). and identification of safe users: registration and a contract are required for access, and researchers must be affiliated with a government department, non-profit organization, or an academic institution. We note that Statistics Canada also partners with the Canadian Research Data Center Network to provide access similar to the FSRDC system, with different data and unrestricted analysis methods.
 
 #### SafePod Network (SPN)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-data = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                 rank=c(1,2,2,2,3))
-plot(data)
+plot_summary("SafePod Network",safepod,2,1,2,2,3)
 ```
 
-The SafePod Network in the United Kingdom makes deidentified administrative data from the Office of National Statistics, UK Data Service, SAIL Databank, and NHS Scotland available for researchers. A SafePod is a prefabricated room with a single [thin client][thin clients] with remote access to analysis computers and data located with the data provider.[@university_of_bristol_safepod_nodate] The agency that researchers have over analysis computers and restrictions on analysis methods remain at the discretion of each data provider; using the Office of National Statistics as an example, researchers have medium agency over the analysis computers and unrestricted, being allowed access to a predefined list of statistical software with no further restrictions beyond software availability.[@office_for_national_statistics_accessing_nodate] The unique aspect of the SafePod is the security of the access locations. SafePods are a minimalistic yet robust implementation of a medium security location (an access controlled space with CCTV monitoring) that can exist within low security environments such as university libraries.
+The SafePod Network in the United Kingdom makes de-identified administrative data from several UK administrative data providers available for researchers. A SafePod is a prefabricated room with a single [thin client][thin clients] with remote access. Analysis computers and data are located with the data provider, accessible through secure VPN connections [@university_of_bristol_safepod_nodate]. Each data provider decides about the agency level that researchers have over analysis computers and restrictions on analysis methods. For instance, at the Office of National Statistics, researchers have medium agency over the analysis computers and no restrictions on analysis methods [@office_for_national_statistics_accessing_nodate]. The unique aspect of the SafePod is the security of the access locations. SafePods are a minimalistic yet robust implementation of a medium security location (an access controlled space with CCTV monitoring) that can exist within low security environments such as university libraries.
 
 SafePods are relatively cheap, requiring only a suitable location to place a prefabricated room and can use existing staff members to manage access to the SafePod. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation in more access locations to provide protection against the various security threats at a lower cost than a traditional full scale research data center.
 
 #### National Center for Education Statistics (NCES) Restricted Use Data License
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
-nces = data.frame(metrics=c("Location of Data and Analysis Computer","Researcher Agency Over Analysis Computer","Location and Type of Access Computer","Security of Access Room","Range of Analysis Methods"),
-                  rank=c(3,3,3,2,3))
-plot(nces)
+plot_summary("NCES",nces,3,3,3,2,3)
+```
+The NCES, a part of the United States Department of Education, allows researchers to apply for a restricted use data license for de-identified individual level data on education. Under the terms of the license, the researchers serve as  data custodians and receive the data on an [encrypted CD][physical media] from NCES. Analysis and access computers are co-incidental, located with the researcher, subject to certain security configuration requirements for computer  and [storage of data][on-site storage]. Researchers have high agency over the analysis computer and are not restricted in the choice of analysis methods. NCES mandates a medium level of security for the access location, requiring that it must be a locked room with access restricted to authorized users but without additional specifications for security. The security arrangements must be approved by NCES prior to the receipt of restricted use data and are subject to unannounced inspections[@national_center_for_education_statistics_restricted-use_nodate].
+
+The NCES restricted licenses require minimal resources for the data access mechanism; using physical media minimizes the technical resources needed to set up and harden a transfer mechanism. Researchers can utilize their existing university resources to set up the access location.  NCES relies on its disclosure review process (safe outputs) to protect against misuse.
+
+#### Summary of examples
+
+```{r summary,echo=FALSE}
+## This needs to be automated to replace the manually constructed figure below
+## This might be ordered by some aggregate score (sum of the individual components)
+
+   db.figures <- file.path(datadir,"figures0502.Rds")
+   if ( file.exists(db.figures)) {
+      db <- readRDS(db.figures)
+#      knitr::kable(db)
+   }
 ```
 
-The NCES, a part of the United States Department of Education, allows researchers to apply for a restricted use data license for deidentified individual level data on education. Under the terms of the license, the researchers serve as the data custodian and receive the data on an [encrypted CD][physical media] from NCES. As such, the data and analysis computers are located with the researcher, and the analysis computer is the access computer. The license has specific requirements for the security of the analysis computers and [storage of data][on-site storage]. Researchers have high authority over the analysis computer and unrestricted analysis methods, being able to use any software or methods available to them. The license mandates a medium level of security for the access location, requiring that it must be a locked room with access restricted to authorized users but without additional specifications for security. The security arrangements must be approved by NCES prior to the receipt of restricted use data and are subject to unannounced inspections.[@national_center_for_education_statistics_restricted-use_nodate]
-
-The NCES restricted licenses require minimal resources for the data access mechanism; using physical media minimizes the technical resources needed to set up and harden a transfer mechanism. Researchers can utilize their existing university resources to set up the access location. The license requires primarily on the security of the access location and specifications for data storage to protect against adversarial actors. NCES relies on its disclosure review process to protect against misuse.
+<table>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">SFUSD</td>
+<td align="left"><img height="100" src="figures/display_sfusd.png"></td>
+</tr>
+<tr class="even">
+<td align="left">NBIRDT</td>
+<td align="left"><img height="100" src="figures/display_nbirdt.png"></td>
+</tr>
+<tr class="odd">
+<td align="left">IAB RDC</td>
+<td align="left"><img height="100" src="figures/display_iab1.png"></td>
+</tr>
+<tr class="even">
+<td align="left">IAB JoSuA</td>
+<td align="left"><img height="100" src="figures/display_iab2.png"></td>
+</tr>
+<tr class="odd">
+<td align="left">IAB PUF</td>
+<td align="left"><img height="100" src="figures/display_iab3.png"></td>
+</tr>
+<tr class="even">
+<td align="left">OLDA</td>
+<td align="left"><img height="100" src="figures/display_olda.png"></td>
+</tr>
+<tr class="odd">
+<td align="left">PCRI</td>
+<td align="left"><img height="100" src="figures/display_pcri.png"></td>
+</tr>
+<tr class="even">
+<td align="left">RTRA</td>
+<td align="left"><img height="100" src="figures/display_rtra.png"></td>
+</tr>
+<tr class="odd">
+<td align="left">FSRDC</td>
+<td align="left"><img height="100" src="figures/display_fsrdc.png"></td>
+</tr>
+<tr class="even">
+<td align="left">SafePod Network</td>
+<td align="left"><img height="100" src="figures/display_safepod.png"></td>
+</tr>
+<tr class="odd">
+<td align="left">NCES</td>
+<td align="left"><img height="100" src="figures/display_nces.png"></td>
+</tr>
+</tbody>
+</table>
 
 ### Guidance for Data Providers and Researchers
 
-Through outlining the five aspects of data access mechanisms and examining how existing data access mechanisms fit into this model, we can draw various conclusions and provide some guidance for data providers and researchers looking to implement new data access mechanisms.
+For data providers with the capacity and resources to implement sophisticated technological solutions, several  acceptable solutions that balance very high security with relatively broad accessibility and convenience exist. The IAB RDC on-site access model with international access, the NB-IRDT as a provincial system, and the national FSRDC network represent traditional, highly secured and  technically sophisticated methods of provisioning access today. The  UK SafePod Network is an attempt to reduce the technological cost of such a system. If some restrictions on analysis methods are acceptable,  the Statistics Canada RTRA and in particular the IAB RDC JoSuA remote access system  can be accessed from a wider range of locations and with fewer resources required.  
 
-For data providers with the capacity and resources to implement technological solutions, there exist several examples of its potential for increased opportunities for wider and more convenient access to data. Access mechanisms such as the RDC-IAB in person access model, NB-IRDT, and the FSRDC network represent traditional, highly secured and highly technically sophisticated methods of provisioning access today. However, the RDC-IAB JoSuA remote access system, the UK SafePod Network, and the Statistics Canada RTRA demonstrate that very similar sets of data can be accessed from a wider range of locations and with fewer resources required through the proper use of innovative technological solutions. These mechanisms all make available data with specific legal requirements around their protection and use to a wide range of researchers. Data providers looking to make their data available should consult with the appropriate legal and information security specialists to determine the relevant legal and regulatory restrictions and how technical solutions can meet these requirements.
+There are, however, also many examples of relatively simple but effective data access mechanisms, with typically lower costs. Mechanisms such as the NCES restricted use data license and OLDA leverage greater scrutiny on non-technological aspects with lower technological requirements, and let the researcher carry much of the burden of maintaining the access infrastructure. Protection of data at rest and in transit with the use of encryption and secure transfer mechanisms are relatively cheap to accomplish; the threat of adversarial actors can be  mitigated with a small investment in the proper physical resources.
 
-On the other hand, setting up data access mechanisms should not be seen as an insurmountable barrier for data providers regardless of the level of existing technical capacity. Not every data sharing partnership requires highly sophisticated mechanisms with large infrastructure investments such as the FSRDC network. There are also many examples of relatively simple data access mechanisms but effective and sufficient for the needs of the data provider and the data sharing partnership. Mechanisms such as the NCES restricted use data license, which in terms of the physical data access mechanism (ignoring the processing of applications and enforcement of the security requirements at the researcher's end) only requires that the data provider have someone to load data onto a CD, encrypt it, and send it out by mail, demonstrates that this can be done even in situations with potentially very limited resources. The protection of data at rest and in transit with the use of encryption and secure transfer mechanisms are relatively cheap to accomplish; the threat of adversarial actors can be greatly mitigated with a minimal investment in the proper physical resources.
+> This next paragraph is not entirely accurate. Needs to be reformulated.
 
-Another observation is that five aspects complement each other and they do not all need to be maintained under the tightest control to create the overall safe setting. While there is the temptation to always maintain the strongest possible protections across all aspects, existing mechanisms show that under the right conditions, a data provider can allow researchers more flexibility in some aspects while maintaining the overall security of the system. Perhaps the most direct example of this is the differences between the RDC-IAB on site access versus remote access models. The same projects, people, and outputs are allowed in both models. Even the same sets of data can be used for analysis, with the only change between the two models being how much of that data is exposed to researchers via the data access mechanism. As a result of this change, the restrictions on access locations in the data access mechanism can be relaxed completely. This has the benefit of allowing much broader access to the data for researchers, with the associated increased utility of the data and additional potential for researchers generating findings relevant for policymakers.
+Another observation is that five aspects complement each other and they do not all need to be maintained under the tightest control to create the overall safe setting. While there is the temptation to always maintain the strongest possible protections across all aspects, existing mechanisms show that under the right conditions, a data provider can allow researchers more flexibility in some aspects while maintaining the overall security of the system. Perhaps the most direct example of this is the differences between the IAB RDC on site access versus remote access models. The same projects, people, and outputs are allowed in both models. Even the same sets of data can be used for analysis (NOT TRUE), with the only change between the two models being how much of that data is exposed to researchers via the data access mechanism. As a result of this change, the restrictions on access locations in the data access mechanism can be relaxed completely. This has the benefit of allowing much broader access to the data for researchers, with the associated increased utility of the data and additional potential for researchers generating findings relevant for policymakers.
 
-However, data access mechanisms do not exist in a vacuum. The necessary aspects of a data access mechanism and the restrictions that are placed on the researchers' access to the data should be considered in the context of the other parts of the five safes framework. The conditions that a data access mechanism must provide to fulfill the requirements for safe settings are dependent on its interactions with the other four safes. DIME at the World Bank, OLDA, the SFUSD-Stanford Partnership, Aurora Healthcare and MIT, and the City of Cape Town and J-PAL partnership are all examples where the data providers from a spectrum of high, medium, and low income countries directly transfers highly sensitive individual level data and confidential government data that have great potential for harm in the event of disclosure. However, the proper protections of the data at the researcher and the fulfillment of the other aspects of the five safes data to the data provider's satisfaction allows the use of data access mechanisms that provide the researchers with a high level of flexibility.
+The necessary aspects of a data access mechanism and the restrictions that are placed on the researchers' access to the data should be considered in the context of the other parts of the five safes framework. The conditions that a data access mechanism must provide to fulfill the requirements for safe settings are dependent on its interactions with the other four safes. DIME at the World Bank, OLDA, the SFUSD-Stanford Partnership, Aurora Healthcare and MIT, and the City of Cape Town and J-PAL partnership are all examples where the data providers from a spectrum of high, medium, and low income countries directly transfers highly sensitive individual level data and confidential government data that have great potential for harm in the event of disclosure. However, the proper protections of the data at the researcher and the fulfillment of the other aspects of the five safes data to the data provider's satisfaction allows the use of data access mechanisms that provide the researchers with a high level of flexibility.
 
 A final related point is that the enforcement of the terms of the ||data use agreement|| is an important factor in determining the level of control that data providers must maintain over the data access system. In situations where the data provider grants greater autonomy to the researcher, the greater the complexity and strength of enforcement of the DUA provisions is required to compensate for that flexibility. This corresponds to a tradeoff between the investment in physical infrastructure and human resources necessary for tight control over a data access mechanism versus the investment in the institutional and legal framework of data access. In the partnerships above, the necessary protections in the data access mechanism are set in large part by the DUA.

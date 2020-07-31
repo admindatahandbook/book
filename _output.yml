@@ -2,7 +2,7 @@ bookdown::gitbook:
   css: [assets/css/style.css, assets/css/toc.css, assets/css/font-awesome.min.css, assets/css/draft.css]
   split_by: section
   split_bib: TRUE
-  toc_depth: 2
+  toc_depth: 3
   highlight: tango
   config:
     sharing:

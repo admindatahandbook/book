@@ -4,6 +4,13 @@
 
 library(ggplot2)
 
+# names
+
+aspect.names <- c(   "Researcher Agency Over Analysis Computer",
+                     "Location of Data and Analysis Computer",
+                     "Location Access Computer",
+                     "Access Security",
+                     "Range of Analysis Methods")
 # Colors
 pal <- c(
    "Data Provider" = "#33a02c",
@@ -22,39 +29,53 @@ pal <- c(
 )
 
 
-plot <- function(data) {
+# function
+plot_summary <- function(description,name,a,b,c,d,e) {
    
-   databar = data.frame(metrics=data$metrics,rank=as.factor(data$rank))
-   databar$rank <- as.character(databar$rank)
-   for (i in c(1)) {
+   databar = data.frame(order=seq(1:5),metrics=aspect.names,rank=as.character(c(a,b,c,d,e)))
+   
+   for (i in c(1)) { # location data
       databar$rank[i][databar$rank[i] == "1"] <- "Data Provider"
       databar$rank[i][databar$rank[i] == "2"] <- "Third-Party"
       databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
    }
-   for (i in c(2)) {
+   for (i in c(2)) { # Agency
       databar$rank[i][databar$rank[i] == "1"] <- "Low"
       databar$rank[i][databar$rank[i] == "2"] <- "Medium"
       databar$rank[i][databar$rank[i] == "3"] <- "High"
    }
-   for (i in c(3)) {
+   for (i in c(3)) { # location access
       databar$rank[i][databar$rank[i] == "1"] <- "Data Custodian"
       databar$rank[i][databar$rank[i] == "2"] <- "Third-Party"
       databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
    }
-   for (i in c(4)) {
+   for (i in c(4)) { # access security
       databar$rank[i][databar$rank[i] == "1"] <- "High Security"
       databar$rank[i][databar$rank[i] == "2"] <- "Medium Security"
       databar$rank[i][databar$rank[i] == "3"] <- "Low Security"
    }
-   for (i in c(5)) {
+   for (i in c(5)) { # Range
       databar$rank[i][databar$rank[i] == "1"] <- "Highly Restricted"
       databar$rank[i][databar$rank[i] == "2"] <- "Limited Restrictions"
       databar$rank[i][databar$rank[i] == "3"] <- "Unrestricted"
    }
    databar$rank <- as.factor(databar$rank)
    
-   databar$metrics <- factor(databar$metrics,levels = c("Range of Analysis Methods","Security of Access Room","Location and Type of Access Computer","Researcher Agency Over Analysis Computer","Location of Data and Analysis Computer"))
-   ggplot(databar, aes(x=metrics,y=1)) +
+   
+   databar$metrics <- factor(databar$metrics,levels = aspect.names)
+   # database entry
+   name.str <- deparse(substitute(name))
+   figure.name = paste0("display_",name.str,".png")
+   db.figures <- file.path(datadir,"figures0502.Rds")
+   new <- data.frame(name.str,description,figure.name)
+   if ( file.exists(db.figures)) {
+      db <- readRDS(db.figures)
+      saveRDS(rbind(db,new),db.figures)
+   } else {
+      saveRDS(new,db.figures)
+   }
+   # plot
+   g <- ggplot(databar, aes(x=fct_reorder(metrics,order,.desc=TRUE),y=1)) +
       geom_bar(stat="identity", aes(fill=rank), width=1) +
       theme(axis.title.x=element_blank(),
             axis.text.x=element_blank(),
@@ -70,5 +91,6 @@ plot <- function(data) {
       coord_flip() +
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
             panel.background = element_blank())
-   
+   ggsave(file.path(figures,figure.name),g)
+   g
 }
