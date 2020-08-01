@@ -13,6 +13,6 @@ pkgTest <- function(x)
 
 ## Add any libraries to this line, and uncomment it.
 
-global.libraries <- c("here","bookdown")
+global.libraries <- c("here","bookdown","kableExtra")
 
 results <- sapply(as.list(global.libraries), pkgTest)
