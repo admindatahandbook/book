@@ -8,9 +8,9 @@ library(ggplot2)
 
 aspect.names <- c(   "Researcher Agency Over Analysis Computer",
                      "Location of Data and Analysis Computer",
-                     "Location Access Computer",
+                     "Location of Access Computer",
                      "Access Security",
-                     "Range of Analysis Methods")
+                     "Range of Analysis Methods Available")
 # Colors
 pal <- c(
    "Data Provider" = "#33a02c",
@@ -34,15 +34,15 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
    
    databar = data.frame(order=seq(1:5),metrics=aspect.names,rank=as.character(c(a,b,c,d,e)))
    
-   for (i in c(1)) { # location data
-      databar$rank[i][databar$rank[i] == "1"] <- "Data Provider"
-      databar$rank[i][databar$rank[i] == "2"] <- "Third-Party"
-      databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
-   }
-   for (i in c(2)) { # Agency
+   for (i in c(1)) { # agency
       databar$rank[i][databar$rank[i] == "1"] <- "Low"
       databar$rank[i][databar$rank[i] == "2"] <- "Medium"
       databar$rank[i][databar$rank[i] == "3"] <- "High"
+   }
+   for (i in c(2)) { # location
+      databar$rank[i][databar$rank[i] == "1"] <- "Data Provider"
+      databar$rank[i][databar$rank[i] == "2"] <- "Third-Party"
+      databar$rank[i][databar$rank[i] == "3"] <- "Researcher"
    }
    for (i in c(3)) { # location access
       databar$rank[i][databar$rank[i] == "1"] <- "Data Custodian"
