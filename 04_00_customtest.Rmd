@@ -1,6 +1,5 @@
 ```{r, echo=FALSE}
 source("programs/_plot_physical.R")
-library(kableExtra)
 ```
 
 
