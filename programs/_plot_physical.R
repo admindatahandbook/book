@@ -13,19 +13,19 @@ aspect.names <- c(   "Researcher Agency Over Analysis Computer",
                      "Range of Analysis Methods Available")
 # Colors
 pal <- c(
-   "Data Provider" = "#33a02c",
-   "Third-Party" = "#a6cee3",
-   "Researcher" = "#1f78b4",
-   "Low" = "#33a02c",
-   "Medium" = "#a6cee3",
-   "High" = "#1f78b4",
-   "Data Custodian" = "#33a02c", 
-   "High Security" = "#33a02c",
-   "Medium Security" = "#a6cee3",
-   "Low Security" = "#1f78b4",
-   "Highly Restricted" = "#33a02c",
-   "Limited Restrictions" = "#a6cee3",
-   "Unrestricted" = "#1f78b4"
+   "Data Provider" = config$color_aspect_low,
+   "Third-Party" = config$color_aspect_med,
+   "Researcher" = config$color_aspect_high,
+   "Low" = config$color_aspect_low,
+   "Medium" = config$color_aspect_med,
+   "High" = config$color_aspect_high,
+   "Data Custodian" = config$color_aspect_low, 
+   "High Security" = config$color_aspect_low,
+   "Medium Security" = config$color_aspect_med,
+   "Low Security" = config$color_aspect_high,
+   "Highly Restricted" = config$color_aspect_low,
+   "Limited Restrictions" = config$color_aspect_med,
+   "Unrestricted" = config$color_aspect_high
 )
 
 
