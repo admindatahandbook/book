@@ -2,7 +2,7 @@ name: Deploy website
 on: 
   push:
     branches: 
-      - master
+      - published_version
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
