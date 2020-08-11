@@ -2,3 +2,6 @@ default:
   base_url: "https://labordynamicsinstitute.github.io/idea-handbook/"
   last_update: !expr Sys.Date()
   first_publish_date: "April 2020"
+  color_aspect_low: "#33a02c" #low flexibility, green
+  color_aspect_med: "#a6cee3" #med flexibility, light blue
+  color_aspect_high: "#1f78b4" #high flexibility, dark blue

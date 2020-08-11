@@ -46,3 +46,12 @@ pre code {
   top:0px;
   font-size: 45px;
 }
+
+.bbox {
+  padding: 1em;
+  background-color: #DCDCDC;
+  color: black;
+  border: 3px solid;
+  border-color: #2D616E;
+  border-radius: 10px;
+}
