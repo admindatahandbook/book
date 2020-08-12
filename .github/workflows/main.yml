@@ -12,11 +12,12 @@ jobs:
       - name: Make executable
         run: "chmod +x ./_build.sh"
       # Runs a set of commands using the runners shell
+      - name: install xml2
+        run: sudo apt-get install libxml2-dev
       - name: Run docker for R 
-        uses: docker://rocker/r-rmd
+        uses: docker://rocker/apt-Docker
         with:
           args: "/github/workspace/_build.sh"
-          
       # send it to gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
