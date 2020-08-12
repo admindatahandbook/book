@@ -13,7 +13,7 @@ jobs:
         run: "chmod +x ./_build.sh"
       # Runs a set of commands using the runners shell
       - name: install xml2
-        run: sudo apt-get install libxml2-dev
+        run: sudo apt-get install libxml2-dev pandoc-citeproc
       - name: Run docker for R 
         uses: docker://rocker/r-apt:disco
         with:
