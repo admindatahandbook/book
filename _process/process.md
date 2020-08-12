@@ -15,15 +15,15 @@ Clean the markdown output to remove escape characters
 Run the following powershell commands (replace filenmae with the actual file):
 
 $original_file = 'file_convert.md'
-$destination_file =  'file_cleaned.md'
+$destination_file =  'file_clean.md'
 (Get-Content $original_file) | Foreach-Object {
     $_ -replace [regex]::Escape("\|"), "|" `
        -replace [regex]::Escape("\["), "[" `
        -replace [regex]::Escape("\]"), "]" `
        -replace [regex]::Escape("\@"), "@" `
        -replace [regex]::Escape("(<"), "(" `
-       -replace [regex]::Escape(">)"), ")"
-       -replace [regex]::Escape("] ("), "[regex]::Escape("](")"
+       -replace [regex]::Escape(">)"), ")" `
+       -replace [regex]::Escape("] ("), "]("
     } | Out-File -encoding ASCII $destination_file
 
 ## Step 4
