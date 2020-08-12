@@ -14,8 +14,8 @@ Clean the markdown output to remove escape characters
 
 Run the following powershell commands (replace filenmae with the actual file):
 
-$original_file = 'filename.md'
-$destination_file =  'filename_convert.md'
+$original_file = 'file_convert.md'
+$destination_file =  'file_cleaned.md'
 (Get-Content $original_file) | Foreach-Object {
     $_ -replace [regex]::Escape("\|"), "|" `
        -replace [regex]::Escape("\["), "[" `
@@ -23,13 +23,14 @@ $destination_file =  'filename_convert.md'
        -replace [regex]::Escape("\@"), "@" `
        -replace [regex]::Escape("(<"), "(" `
        -replace [regex]::Escape(">)"), ")"
+       -replace [regex]::Escape("] ("), "[regex]::Escape("](")"
     } | Out-File -encoding ASCII $destination_file
 
 ## Step 4
-Commit filename_convert.md to main J-PAL repository in branch specific for that chapter (chapter branch)
+Commit file_convert.md and file_clean.md to main J-PAL repository in branch specific for that chapter (chapter branch)
 
 ## Step 5
-Make a copy of filename_convert.md called filename.Rmd, commmit to chapter branch
+Make a copy of file_clean.md called file.Rmd, commmit to chapter branch
 
 ## Step 6
 Perform edits in R (e.g. edit tables, insert figures, etc)
