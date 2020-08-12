@@ -15,7 +15,7 @@ jobs:
       - name: install xml2
         run: sudo apt-get install libxml2-dev
       - name: Run docker for R 
-        uses: docker://rocker/apt-Docker
+        uses: docker://rocker/r-apt
         with:
           args: "/github/workspace/_build.sh"
       # send it to gh-pages
