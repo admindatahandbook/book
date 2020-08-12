@@ -13,9 +13,11 @@ jobs:
         run: "chmod +x ./_build.sh"
       # Runs a set of commands using the runners shell
       - name: install xml2
-        run: sudo apt-get update && install libxml2-dev pandoc
-      - name: install pandoc
-        run: sudo apt-get update && install pandoc
+        run: sudo apt-get update && install libxml2-dev
+      - name: pandoc?
+        uses: docker://pandoc/core:2.9
+        with:
+          args: "--help" # gets appended to pandoc command
       - name: Run docker for R 
         uses: docker://rocker/r-apt:disco
         with:
