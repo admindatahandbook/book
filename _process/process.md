@@ -3,19 +3,20 @@
 ## Step 1
 Set working directory in powershell
 
+cd C:\Users\Jim\Documents\Markdown
 ## Step 2
 Use pandoc to convert docx to md
 
 Run the following pandoc command in powershell (replace $file with actual file:
-pandoc $file.docx -f docx -t markdown -s -o $file_convert.md
+pandoc iab.docx --wrap=none -f docx -t markdown -s -o iab_convert.md
 
 ## Step 3
 Clean the markdown output to remove escape characters
 
 Run the following powershell commands (replace filenmae with the actual file):
 
-$original_file = 'file_convert.md'
-$destination_file =  'file_clean.md'
+$original_file = 'iab_convert.md'
+$destination_file =  'iab_clean.md'
 (Get-Content $original_file) | Foreach-Object {
     $_ -replace [regex]::Escape("\|"), "|" `
        -replace [regex]::Escape("\["), "[" `
@@ -23,8 +24,18 @@ $destination_file =  'file_clean.md'
        -replace [regex]::Escape("\@"), "@" `
        -replace [regex]::Escape("(<"), "(" `
        -replace [regex]::Escape(">)"), ")" `
-       -replace [regex]::Escape("] ("), "]("
+       -replace [regex]::Escape("] ("), "](" `
+       -replace [regex]::Escape(" \_"), "_" `
+       -replace [regex]::Escape("\_ "), "_" `
+       -replace [regex]::Escape("\_"), "_" 
+    } | Out-File $destination_file
+
+$original_file = 'iab_convert.md'
+$destination_file =  'iab_clean.md'
+(Get-Content $original_file) | Foreach-Object {
+    $_ -replace [regex]::Escape("\|"), "|" 
     } | Out-File -encoding ASCII $destination_file
+
 
 ## Step 4
 Commit file_convert.md and file_clean.md to main J-PAL repository in branch specific for that chapter (chapter branch)
