@@ -13,9 +13,15 @@ jobs:
         run: "chmod +x ./_build.sh"
       # Runs a set of commands using the runners shell
       - name: Run docker for R 
-        uses: docker:/atusy/atusydown
+        uses: docker://atusy/atusydown
         with:
           args: "/github/workspace/_build.sh"
+          
+#      # Runs a set of commands using the runners shell
+#      - name: Run docker for R 
+#        uses: docker://rocker/r-apt:disco
+#        with:
+#          args: "Rscript --vanilla programs/libraries.R ubuntu"      
           
       # send it to gh-pages
       - name: Deploy
