@@ -1,0 +1,26 @@
+Administrative Data,,
+Sample of Integrated Labour Market Biographies (||SIAB||),,
+,Population/Sample Size,"2% random sample (more than 1.8 million individuals) of the Integrated Employment Biographies, a database which includes records from"
+,,"- 1975 onwards: employment subject, receipt of benefits in accordance with Social Code Act III "
+,,- 1999 onwards: Marginal part-time employment
+,,- 2007 onwards: Registered jobseeker
+,,- 2000 onwards: participation in an employment or training measure
+,Time Period covered and frequency,"1975 until 2017 for West Germany, 1992 until 2017 for East Germany, updated every 2nd year by RDC-IAB"
+,Additional information,DOI: 10.5164/IAB.SIAB7517.de.en.v1 
+||Establishment History Panel|| (||BHP||),,
+,Population/Sample Size,"Repeated cross sectional data set (640,000–1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999),"
+,,and thereof a 50% random sample 
+,Time Period covered and frequency,"1975 until 2018 for West Germany, 1992 until 2018 for East Germany, annual updated by RDC-IAB"
+,Additional information,DOI: 10.5164/IAB.BHP7518.de.en.v1
+Administrative Data linked with survey data,,
+||Linked Employer-Employee Data|| (||LIAB||),,
+,Population/Sample Size,"Worker information from administrative data are linked to the IAB-Establishment Panel, an annual representative survey since 1993 in West Germany and 1996 in East Germany including approx. 16,000 establishments per year"
+,,"Stratified sample of all establishments with at least one employee liable to social security on June 30 of the year before by establishment size, industry, and federal state"
+,,Two versions of LIAB:
+,,"- LIAB cross-sectional model: all establishment surveys combined with administrative worker data as of June 30 (establishment: 67,407 in total; individuals approx. 12.5 million in total)"
+,,"- LIAB longitudinal model: selection of repeatedly interviewed establishments (2009-2016) combined with longitudinal worker biographies (establishment: 41,777 in total; individuals approx. 1.7 million in total)"
+,Time Period covered and frequency,LIAB Cross-sectional model: 1993–2017
+,,LIAB longitudinal model: 1975–2017
+,Additional information,DOI: 10.5164/IAB.LIABQM29317.de.en.v1
+,,DOI: 10.5164/IAB.LIABLM7517.de.en.v1
+Note: The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [IAB website] (https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).,,

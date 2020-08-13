@@ -2,7 +2,7 @@ name: Deploy website
 on: 
   push:
     branches: 
-      - master
+      - iab
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
