@@ -15,8 +15,8 @@ jobs:
       - name: Run docker for R 
         uses: docker://rocker/r-apt:disco
         with:
-          #args: "/github/workspace/_build.sh"
           args: "Rscript --vanilla programs/libraries.R ubuntu"
+          args: "/github/workspace/_build.sh"
       # send it to gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
