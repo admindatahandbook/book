@@ -3,6 +3,7 @@
 #     for the IAB chapter.
 
 library(ggplot2)
+library(kableExtra)
 
 # Figure 1
 f1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
