@@ -93,7 +93,7 @@ table1data <- data.frame(
   )
 )
 
-table2<-knitr::kable(table1data, escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
+table1<-knitr::kable(table1data, escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
   kable_styling(full_width = F) %>%
   column_spec(1, width="19em") %>%
   column_spec(2,  ) %>%
