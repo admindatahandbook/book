@@ -2,7 +2,7 @@ name: Deploy website
 on: 
   push:
     branches: 
-      - master
+      - published_version
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -13,9 +13,10 @@ jobs:
         run: "chmod +x ./_build.sh"
       # Runs a set of commands using the runners shell
       - name: Run docker for R 
-        uses: docker://rocker/r-apt:disco
+        uses: docker:/atusy/atusydown
         with:
-          args: "Rscript --vanilla programs/libraries.R ubuntu"
+          args: "/github/workspace/_build.sh"
+          
       # send it to gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
