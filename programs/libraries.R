@@ -35,6 +35,7 @@ if (length(args)>0) {
     system("apt-get install -y r-cran-here r-cran-bookdown")
     system("apt-get install -y r-cran-tufte r-cran-config r-cran-memisc")
     system("apt-get install -y r-cran-forcats")
+    system("apt-get install -y r-cran-xml2")
     system("apt-get install -y r-cran-kableExtra ")
   }
 }
