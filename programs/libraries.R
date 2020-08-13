@@ -39,5 +39,3 @@ if (length(args)>0) {
  #   system("apt-get install -y r-cran-kableExtra ")
   }
 }
-
-bookdown::render_book('index.Rmd', 'bookdown::gitbook')
