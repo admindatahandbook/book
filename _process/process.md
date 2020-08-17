@@ -4,38 +4,38 @@
 Set working directory in powershell
 
 ## Step 2
-Use pandoc to convert docx to md
+Run .\cleanscript.ps1 $chaptername
 
-Run the following pandoc command in powershell (replace $file with actual file:
-pandoc $file.docx -f docx -t markdown -s -o $file_convert.md
+For reference, cleanscript.ps1 contains the following:
 
-## Step 3
-Clean the markdown output to remove escape characters
+$file = $args[0]
 
-Run the following powershell commands (replace filenmae with the actual file):
+$docx = ".docx"
+$convertmed = "_convert.md"
+$cleanmd = "_clean.md"
 
-$original_file = 'filename.md'
-$destination_file =  'filename_convert.md'
-(Get-Content $original_file) | Foreach-Object {
+pandoc $file$docx -f docx -t markdown --atx-headers --wrap=none -s -o $file$convertmd
+
+(Get-Content $file$convertmd) | Foreach-Object {
     $_ -replace [regex]::Escape("\|"), "|" `
        -replace [regex]::Escape("\["), "[" `
        -replace [regex]::Escape("\]"), "]" `
        -replace [regex]::Escape("\@"), "@" `
        -replace [regex]::Escape("(<"), "(" `
        -replace [regex]::Escape(">)"), ")"
-    } | Out-File -encoding ASCII $destination_file
+    } | Out-File $file$cleanmd
+
+## Step 3
+Commit file_clean.md to main J-PAL repository in branch specific for that chapter (chapter branch)
 
 ## Step 4
-Commit filename_convert.md to main J-PAL repository in branch specific for that chapter (chapter branch)
+Make a copy of file_clean.md called file.Rmd, commmit to chapter branch
 
 ## Step 5
-Make a copy of filename_convert.md called filename.Rmd, commmit to chapter branch
-
-## Step 6
 Perform edits in R (e.g. edit tables, insert figures, etc)
 
-## Step 7
+## Step 6
 Commit edits to chapter branch
 
-## Step 8
+## Step 7
 Test build off chapter branch (can fork to Jim repository to avoid using main repository github page)

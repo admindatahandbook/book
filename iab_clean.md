@@ -1,7 +1,3 @@
-```{r, echo=FALSE}
-source("programs/_plot_iab.R")
-```
-
 # Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers
 
 ## Summary
@@ -58,9 +54,61 @@ Based on a reform in 2004, which exempted small firms from dismissal protection,
 
 Table 1 provides a selective overview of research data available at ||RDC-IAB|| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in [@muller2019; @muller2020]. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).
 
-```{r, echo=F}
-table1
-```
+Table 1: Selected ||RDC-IAB|| data
+
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Administrative Data                                           |                                   |                                                                                                                                                                                                                               |
++===============================================================+===================================+===============================================================================================================================================================================================================================+
+| Sample of Integrated Labour Market Biographies (||SIAB||) |                                   |                                                                                                                                                                                                                               |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Population/Sample Size            | 2% random sample (more than 1.8 million individuals) of the Integrated Employment Biographies, a database which includes records from                                                                                         |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | \- 1975 onwards: employment subject, receipt of benefits in accordance with Social Code Act III                                                                                                                               |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | \- 1999 onwards: Marginal part-time employment                                                                                                                                                                                |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | \- 2007 onwards: Registered jobseeker                                                                                                                                                                                         |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | \- 2000 onwards: participation in an employment or training measure                                                                                                                                                           |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Time Period covered and frequency | 1975 until 2017 for West Germany, 1992 until 2017 for East Germany, updated every 2^nd^ year by RDC-IAB                                                                                                                       |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Additional information            | DOI: 10.5164/IAB.SIAB7517.de.en.v1                                                                                                                                                                                            |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ||Establishment History Panel|| (||BHP||)             |                                   |                                                                                                                                                                                                                               |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Population/Sample Size            | Repeated cross sectional data set (640,000--1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999), |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | and thereof a 50% random sample                                                                                                                                                                                               |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Time Period covered and frequency | 1975 until 2018 for West Germany, 1992 until 2018 for East Germany, annual updated by RDC-IAB                                                                                                                                 |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Additional information            | DOI: 10.5164/IAB.BHP7518.de.en.v1                                                                                                                                                                                             |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Administrative Data linked with survey data                   |                                   |                                                                                                                                                                                                                               |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ||Linked Employer-Employee Data|| (||LIAB||)          |                                   |                                                                                                                                                                                                                               |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Population/Sample Size            | Worker information from administrative data are linked to the IAB-Establishment Panel, an annual representative survey since 1993 in West Germany and 1996 in East Germany including approx. 16,000 establishments per year   |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | Stratified sample of all establishments with at least one employee liable to social security on June 30 of the year before by establishment size, industry, and federal state                                                 |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | Two versions of LIAB:                                                                                                                                                                                                         |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | \- LIAB cross-sectional model: all establishment surveys combined with administrative worker data as of June 30 (establishment: 67,407 in total; individuals approx. 12.5 million in total)                                   |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | \- LIAB longitudinal model: selection of repeatedly interviewed establishments (2009-2016) combined with longitudinal worker biographies (establishment: 41,777 in total; individuals approx. 1.7 million in total)           |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Time Period covered and frequency | LIAB Cross-sectional model: 1993--2017                                                                                                                                                                                        |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | LIAB longitudinal model: 1975--2017                                                                                                                                                                                           |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                               | Additional information            | DOI: 10.5164/IAB.LIABQM29317.de.en.v1                                                                                                                                                                                         |
+|                                                               |                                   |                                                                                                                                                                                                                               |
+|                                                               |                                   | DOI: 10.5164/IAB.LIABLM7517.de.en.v1                                                                                                                                                                                          |
++---------------------------------------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Note: The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).
 
 ## Making Data Usable for Research
 
@@ -160,9 +208,9 @@ The main innovation behind ||JoSuA|| is that it is no longer necessary to perfor
 
 Although influenced by expansion of ||data access points||, the decision to switch from a model where every job submission was manually reviewed to the ||JoSuA|| model was made separately. The steadily increasing number of projects meant that more time had to be spent on ||SDC||, and much of the workload fell on preliminary output that was not yet meant for publication. The IU-mode of ||JoSuA|| allows for more flexibility and increased speed in project development for users while freeing up resources and maintaining full control over the inputs and exported outputs. Today, about 80 to 90 percent of submissions for ||remote execution|| are in IU-mode (see Figure 1).
 
-```{r, fig.cap='Number of jobs via JoSuA', echo=F}
-figure1
-```
+![](media/image1.png){width="5.013888888888889in" height="3.013888888888889in"}
+
+Figure 1: Number of jobs via ||JoSuA||
 
 Some of the data products offered by the ||RDC-IAB|| can also be downloaded as ||SUF|| and used within the premises of the requesting institution*.* Anonymization for these data must be stronger than in the ||weakly anonymous|| versions. The research data are stored in the ||Stata|| file format and can be downloaded from a secure download platform after signing the ||DUA||. Details about storage and data use are specified in a data security concept that becomes part of the ||DUA||. In this concept, the requesting institution declares that it will ensure suitable technical and organizational measures when dealing with ||de-facto anonymized|| data in compliance with data protection legislation. These measures include not sharing the data, restricting access to authorized personnel, ensuring sufficient security, using secure servers, and protecting hard drives against theft using modern encryption standards and deleting data securely at the end of the project period. Demand for ||SUF|| has been decreasing relative to ||weakly anonymized|| data products in recent years, partly driven by the improvements in access to both ||on-site|| and ||remote execution||. Downloading and storing ||SUF|| outside of Germany is possible as long as the other "safes" are adhered to.
 
@@ -254,29 +302,35 @@ The ||RDC-IAB|| generates statistics to inform the ||IAB||, the ||BA||, the ||GD
 
 As shown in Figure 2, the numbers of users and user projects at the ||RDC-IAB|| continues to increase every year. In 2019, around 1,500 users worked in more than 700 projects.[^27] The average duration of a research project is around three years. Bachelor theses or master theses usually do not take longer than six months.
 
-```{r, fig.width=7, figh.height=5, fig.cap='Development of the number of users and number of projects at the RDC-IAB, 2005–2019', echo=F}
-figure2
-```
+![](media/image2.png){width="5.013888888888889in" height="3.013888888888889in"}
+
+Figure 2: Development of the number of users and number of projects at the ||RDC-IAB||, 2005--2019.
 
 Since the implementation of the additional ||data access points||, the proportion of international users is constantly growing. Figure 3 shows the percentage share of contractual partners from Germany, the US, and other countries. While in 2012, less than 30 percent of all user projects were from a non-German facility, seven years later the value increased to 40 percent.
 
 Additional statistics are also submitted to the annual activity report for all ||RDC||s in Germany published by the ||GDF|| [@ratswdgermandataforum2019]. Table 2 shows all publications with ||RDC-IAB|| data in 2018, including publications from ||IAB|| staff. There were 60 published papers in scientific journals in 2018, 45 of these in peer-reviewed journals. Additionally, 44 papers were published as working papers or reports and ||RDC-IAB|| data were used and cited in 41 books. As mentioned above, these numbers underestimate the true number of relevant publications in 2018.
 
-```{r, echo=FALSE, message=FALSE, warnings=FALSE}
-table2
-```
+  Publications                                                Numbers                        
+  ----------------------------------------------------------- ------------------------------ ----
+  Papers                                                      60                             
+                                                              Thereof peer-reviewed papers   45
+  Books                                                       41                             
+  Papers in anthologies                                       8                              
+  Grey literature (e.g., working papers, technical reports)   44                             
+
+Table 2: Number of publications in 2018, including all publications with ||RDC-IAB|| data (excluding bachelor and master theses)
 
 Apart from these general statistics, ||RDC-IAB|| also gathers user feedback to learn what the users think about service quality, data documentation, data access modes, and additional user needs. At first, this was done using irregular user surveys [@wolter2018], but currently two regular online user surveys are conducted. One survey focuses on service quality during the application phase. This survey is conducted shortly after the signing of the ||DUA|| by the requesting institution. It is addressed to the researchers using the data, since they are usually more deeply involved in the application process than the representative providing the signature. The second survey covers user experiences after completed projects.
 
-```{r, fig.width = 7, fig.height = 5, fig.cap='Contractual partners of the RDC-IAB by country, 2012–2019', echo=F}
-figure3
-```
+![](media/image3.png){width="5.013888888888889in" height="3.013888888888889in"}
+
+Figure 3: Contractual partners of the ||RDC-IAB|| by country, 2012--2019
 
 In general, user ratings are very good. For example, Figure 4 shows the ratings of data documentation and personal data advice. More than 90 percent of the survey respondent are satisfied (very good and good) with the data documentation. While 40 percent of all participants did not use personal data advice, nearly all others are satisfied. User suggestions, ideas, and critiques are essential to improve data access further to the extent possible given available resources.
 
-```{r, fig.width = 7, fig.height = 2.5, fig.cap='User satisfaction with RDC-IAB services (options bad and very bad have not been chosen by respondents)', echo=F}
-figure4
-```
+![](media/image4.png){width="6.300694444444445in" height="2.69375in"}
+
+Figure 4: User satisfaction with ||RDC-IAB|| services (options bad and very bad have not been chosen by respondents)
 
 ## About the Authors
 
