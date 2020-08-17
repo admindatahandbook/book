@@ -2,9 +2,9 @@
 source("programs/_plot_iab.R")
 ```
 
-# Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers
+## Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers
 
-## Summary
+### Summary
 
 This chapter describes the Research-Data-Center in Research-Data-Center (||RDC-in-RDC||) approach, which is a project that implemented decentralized data access to confidential German labor market data provided by the ||Research Data Center at the Institute for Employment Research|| (||RDC-IAB||) in Nuremberg, Germany via ||data access points|| at collaborating ||research data centers||(||RDC||), research institutes, and universities. ||RDC-in-RDC|| improves data access for researchers who want to work with confidential data but are unable to come to Nuremberg to work with the data ||on-site||. The project started in 2010 and was funded by the ||German Federal Ministry of Education and Research|| (||BMBF||). The chapter covers the challenges involved in developing standardized procedures in an international context in order to ensure user-friendly and sustainable data access in compliance with legal requirements.
 
@@ -14,9 +14,9 @@ Improving access to data for the research community is a joint task. On the nati
 
 The authors of this chapter were not directly involved in the initiation of the ||RDC-in-RDC|| project and its early implementation. However, they were responsible for its further expansion and sustainability since 2016. With this case study, the authors encourage institutions with confidential administrative data to find similar ways to broaden access for the international research community. Visit the ||RDC-IAB|| [online](https://fdz.iab.de/en.aspx).
 
-## Introduction
+### Introduction
 
-### Motivation and Background
+#### Motivation and Background
 
 ||RDC-IAB|| is the research data center (||RDC||) of the ||Institute for Employment Research|| (||IAB||) in Nuremberg, Germany. One of its core functions is the provision of access to various surveys and administrative data products for external researchers who want to conduct labor market research. Improving data access through the ||RDC-IAB|| for external researchers (i.e., not employed by the ||IAB||) provides benefits beyond those to the scientific community. A larger, more vibrant research community increases the amount of scientific output, improves the understanding of labor markets, and therefore ultimately benefits the ||BA||and other policymakers.
 
@@ -42,7 +42,7 @@ While it was possible to fund several ||data access points|| during the funding 
 
 The ||RDC-IAB|| is very grateful for all the volunteer support of the participating institutions and ||guest RDC||s helping to improve data access to German labor market data for the scientific community. We make efforts to minimize expenses on-site. A webpage only accessible to ||guest RDC||-staff provides information about users, user guidelines, and organizational matters. Furthermore, an ||on-site|| calendar to facilitate the registration process has been implemented. The ||RDC-in-RDC|| approach is very successful. There are now sixteen ||data access points|| in various ||guest RDC||s in Canada, France, Germany, the United Kingdom, and the United States, and more will follow.
 
-### Data Use Examples
+#### Data Use Examples
 
 The data provided by the ||RDC-IAB|| are used both for labor market research in general as well as for the evaluation of labor market policies to scientifically monitor and review the implementation of labor market reforms. The government\'s interest in evidence-based policy advice is demonstrated by the fact that the results are acknowledged in the reports of the respective ministries. Researchers have used the ||RDC-IAB|| data to examine the effects of the minimum wage introduced in 2015, for instance. The Minimum Wage Commission used these finding for their regular reporting and their decision to adapt the minimum wage [@mindestlohnkommission2016; @mindestlohnkommission2016a]. In addition, the results on the risks of various atypical occupations for career development and income based on ||RDC-IAB|| data were used in *The German Federal Government's 5th Report on Poverty and Wealth* [@bmasbundesministeriumfurarbeitundsoziales2017; @rwirheinisch-westfalischesinstitutfurwirtschaftsforschung2016]. Furthermore, the *Second Gender Equality Report* of the German Government included research findings on gender wage gaps based on the ||RDC-IAB|| data [@bmfsfjbundesministeriumfurfamilieseniorenfrauenundjugend; @boll2015].
 
@@ -62,7 +62,7 @@ Table 1 provides a selective overview of research data available at ||RDC-IAB|| 
 table1
 ```
 
-## Making Data Usable for Research
+### Making Data Usable for Research
 
 Administrative research data offered by ||RDC-IAB|| are based on two main sources. One source is the notification procedure of the German social security system. Every employer has to submit information about employees so that all social insurance agencies are able to fulfill their legal duties, such as calculating claims from contribution payments or official statistics. The second source is individual information on the unemployed, job seekers, and participants in labor market programs collected by all German employment agencies and job centers.
 
@@ -76,9 +76,9 @@ The ||RDC-IAB|| provides detailed metadata for all data products in both German 
 
 Currently, researchers must search for relevant metadata in different PDF-documents. In 2012, the ||RDC-IAB|| established a new system to collect all metadata in one single metadata base. It includes an online information system with a search engine for all data products. The underlying data base relies on SQL with a web application that allows entering the metadata easily. The documentation standard is called ||Data Documentation Initiative|| (||DDI||). Although ||DDI|| was only a standard for survey data at the beginning of the project, it was adopted for documentation of administrative data with the assistance of ||DDI|| experts. It is now possible to import XML-files containing variable names and codebooks that were generated in the data production process. Thus, the metadata base covers all relevant information on the data life cycle, including internal information. The online information system can also be used to create custom data reports including only the information that is relevant for a specific research project. Currently, the data products are gradually being added to the metadata base and the online information system is being tested.
 
-## Legal and Institutional Framework
+### Legal and Institutional Framework
 
-### Institutional Setup
+#### Institutional Setup
 
 The ||IAB|| is the research department of the ||BA||. It has a statutory mandate to conduct scientific labor market and occupational research and advises the ||BA|| and various ministries on issues regarding labor market policy.[^4] The ||IAB|| is also legally required to provide confidential labor market data to the research community. This requirement is broadly outlined in the German Social Code ||SGB||, but the details of a researcher-friendly implementation have been developed by the ||BA|| and the ||IAB|| over time. This includes the founding of the ||RDC-IAB|| and the improvement of access for domestic and international researchers through the ||RDC-in-RDC|| approach.
 
@@ -88,7 +88,7 @@ The ||RDC-IAB|| is a research division with three core functions, namely data pr
 
 The ||RDC-IAB|| also helps the ||BA|| and other stakeholders by facilitating access to the research carried out using ||IAB|| data. For example, all ongoing user projects are listed on the ||RDC-IAB|| webpage. Submitted and published papers using ||IAB|| data are available in a literature database, which is also available online. Furthermore, the ||RDC-IAB|| generates statistics documenting data usage to inform the ||BA||, the ||IAB||, the ||GDF||, and the data users.
 
-### Legal Context for Data Use
+#### Legal Context for Data Use
 
 Research data provided by the ||RDC-IAB|| are based on social data and therefore subject to special data privacy protection. Detailed regulations on the collection and processing of social data are provided by German law.[^5] Article 282, ||SGB||, Book III is especially relevant for the use of research data. It permits the ||IAB|| to use administrative data available at the ||BA|| for research purposes and to conduct surveys (subparagraph 5). It also allows and regulates the long-term storage of research data (subparagraph 6). Finally, it states that anonymized research data can be made available to scientific institutions if required for the purpose of labor market and occupational research (subparagraph 7).[^6] This effectively restricts access to the scientific community within certain research areas without specifying the occupational background of the data user. Data access for commercial entities is strongly restricted and limited to special cases in which the requesting entity can prove a significant background in scientific research and shows clear intention to publish research results in a way that makes it accessible for the scientific community. Data access for freelance researchers is not possible.
 
@@ -98,7 +98,7 @@ Data use is also embedded in the broader regulatory context of the Federal Data 
 
 The ||RDC-IAB|| must carefully balance two constitutional principles when preparing and granting access to research data: academic freedom and the right to informational self-determination. This is especially relevant since the social data at the core of the ||RDC-IAB|| data products are not collected from subjects voluntarily but on a mandatory basis.[^8] In practice, this leads to a conflict of objectives because the goals of maximum analytical potential and maximum data protection have to be weighed against each other. The ||RDC-IAB|| solves this conflict (and addresses additional goals such as simplicity of data use, comprehensibility, reproducibility, and a streamlined data access management system) by offering standardized data products and three different data access modes. Those will be discussed in detail later with the outline of how ||RDC-IAB|| implements the five safes framework.
 
-### Legal Framework for Granting Data Access
+#### Legal Framework for Granting Data Access
 
 Access to ||RDC-IAB|| data is regulated by a ||DUA||. The ||RDC-IAB|| only closes ||DUA||s with scientific institutions not individuals. Individual researchers with data access are listed in the ||DUA|| and pledged to data secrecy by their employer. They also sign a statement that they were made aware of the provisions for data access through the ||RDC-IAB||. ||DUA||s are standardized to ensure equal contractual rights and obligations for all requesting institutions. In the case of a project team consisting of researchers from several institutions, separate **||DUA||**s are necessary.
 
@@ -110,11 +110,11 @@ The decision to expand data access facilities outside Germany led to several cha
 
 One consequence of the standardization of ||DUA||s is that sanctions are equal for both German and non-German institutions. While this should not pose a problem for the more common sanctions like temporary blocking of data access, the enforcement of financial penalties outside German jurisdiction are a different matter. Fortunately, the ||RDC-IAB|| has not yet been confronted with a case of misconduct that would have made such a test necessary.
 
-## Protection of Sensitive and Personal Data: The Five Safes Framework
+### Protection of Sensitive and Personal Data: The Five Safes Framework
 
 The anonymity of individuals and establishments within the ||RDC-IAB|| research data is not guaranteed by a single measure, rather, a portfolio approach is followed [@hochfellner2014]. The portfolio's goal is to ensure that de-anonymization would only be possible with a disproportionate amount of time, expense, and effort. This approach combines measures that are implemented before, during, and after data use. These measures include the examination of access requirements, regulations or technical restrictions on data access and use, ||pseudonymization|| and coarsening of research data, and the monitoring of results. The individual measures in these areas are explained in more detail below. It should be noted that anonymity is created by the interaction of all measures (i.e., they must be viewed and evaluated as a whole).
 
-### Safe Projects
+#### Safe Projects
 
 The ||RDC-IAB|| facilitates access to research data according to the legal mandate imposed on the ||FAE||. The evaluation of applications for appropriateness is therefore regulated by the relevant provisions and includes the following aspects.
 
@@ -138,11 +138,11 @@ The approval process for users from German institutions usually takes between a 
 
 Today, ensuring safe access for projects proposed by international users is similar to the process for German institutions. Application forms and ||DUA||s are harmonized and available both in German and English. Some applications take longer than usual, especially when counterparty legal departments have no prior experience with the process. Apart from these first-time user disadvantages, most international users gain access to the requested data within a month. Deciding whether a requesting institution is indeed a scientific institution is usually not a problem, as the majority of requests come from researchers associated with public or private universities and research institutes with strong credentials. In these cases, the decision process on whether the institution is considered scientific is usually kept relatively informal. It is only in borderline cases that the ||RDC-IAB|| requests further proof, for example, by asking for written statutes of the institution.
 
-### Safe People
+#### Safe People
 
 The ||RDC-IAB|| currently does not use a circle of trust model to establish who can access its research data. Researchers employed at scientific institutions are considered trusted by virtue of their affiliation. Exceptions are made for students who write their theses at universities. In these cases, access is granted as long as their supervisor and institution agree and sign the ||DUA|| on their behalf. No further training is necessary to access the data. Citizenship or professional restrictions do not apply, and background checks are not performed. This is true both for users from Germany and from foreign institutions. Users sign a statement that they were made aware of the provisions for data access, including sanctions, which becomes part of the ||DUA||.[^12]
 
-### Safe Settings
+#### Safe Settings
 
 The ||RDC-IAB|| offers the following main data access modes to its users:
 
@@ -166,7 +166,7 @@ figure1
 
 Some of the data products offered by the ||RDC-IAB|| can also be downloaded as ||SUF|| and used within the premises of the requesting institution*.* Anonymization for these data must be stronger than in the ||weakly anonymous|| versions. The research data are stored in the ||Stata|| file format and can be downloaded from a secure download platform after signing the ||DUA||. Details about storage and data use are specified in a data security concept that becomes part of the ||DUA||. In this concept, the requesting institution declares that it will ensure suitable technical and organizational measures when dealing with ||de-facto anonymized|| data in compliance with data protection legislation. These measures include not sharing the data, restricting access to authorized personnel, ensuring sufficient security, using secure servers, and protecting hard drives against theft using modern encryption standards and deleting data securely at the end of the project period. Demand for ||SUF|| has been decreasing relative to ||weakly anonymized|| data products in recent years, partly driven by the improvements in access to both ||on-site|| and ||remote execution||. Downloading and storing ||SUF|| outside of Germany is possible as long as the other "safes" are adhered to.
 
-### Safe Data
+#### Safe Data
 
 The data products provided by the ||RDC-IAB|| are specifically created for the purpose of allowing external researchers access to the data. Before being customized by the ||RDC-IAB||, these source data already undergo extensive preparation by the ||BA||, the ||IAB||, or the partner institutes.[^15] Still additional steps have to be taken before the data products can be accessed by external researchers. The sensitivity of ||RDC-IAB|| data products depends on the chosen access mode.
 
@@ -202,7 +202,7 @@ Producing safe data for access outside the ||RDC-IAB|| safe room is complicated 
 
 Since the ||RDC-IAB|| only provides standardized data products, it cannot serve more individual project needs like special samples, additional and more detailed variables, or special linkages. While an alternative, fee-based data access mode for social data exists, this mode is not operated by the ||RDC-IAB|| and it is only available for German institutions. For international researchers, cooperation with the ||IAB|| or another German research institution might prove to be the only way to conduct such research projects.
 
-### Safe Outputs
+#### Safe Outputs
 
 The way safe output is ensured at the ||RDC-IAB|| depends on the data access mode for the research project. For ||SUF||, the responsibility to ensure safe output rests entirely with the requesting institution and the data users. The institution is mandated to refrain from any action that might compromise the anonymity of the statistical information contained in the data and is required to instruct data users accordingly. Thus, no statistical output that is not sufficiently anonymized is allowed to be published. The institutions can find assistance on what is meant by secure output in ||BA|| guidelines [@statistikderbundesagenturfurarbeit2018] or ask the ||RDC-IAB|| for assistance.
 
@@ -220,27 +220,27 @@ As a third step, rules for safe output are incorporated into the ||DUA||. The ag
 
 Rules for ||on-site|| data access or ||remote execution|| are equal for all ||on-site|| locations as well as users from within and outside of Germany. Therefore, rules for safe output were not changed as a result of the ||RDC-in-RDC|| project.
 
-## Data Life Cycle and Replicability
+### Data Life Cycle and Replicability
 
-### Preservation and Reproducibility of Researcher-Accessible Files 
+#### Preservation and Reproducibility of Researcher-Accessible Files 
 
 ||RDC-IAB|| versions, curates, and archives all its data products and older data products are currently not deleted. The ||IAB|| department Data and IT Management curates ||IAB|| source data. Preliminary data management and sampling is done at the ||RDC-IAB|| using ||SAS||. Most final data refinement are performed using ||Stata||. ||RDC-IAB|| preserves all master files to enable the traceability and reproducibility of each data product.
 
 ||RDC-IAB|| provides the latest available data version to users. Older, archived versions of data sets are only available for the purpose of replication studies, or in exceptional cases, if the request is duly substantiated. It is also possible to change to the latest updated version during an ongoing research project.
 
-### Preservation and Reproducibility of Researcher-Generated Files
+#### Preservation and Reproducibility of Researcher-Generated Files
 
 All research results generated at the ||RDC-IAB||, both ||on-site|| or via ||remote execution|| can by restored as long as users follow the ||RDC-IAB|| guidelines and program their code accordingly. Not following those guidelines will often lead to code termination so that users have an interest in keeping their code error-free and well-structured. Each ||remote execution|| job in ||JoSuA|| is started from a master file, which opens all underlying analysis code and sub-routines. At the end of each ||on-site|| use, researchers need to follow the same procedure in ||JoSuA|| to obtain code and results. It is not possible to get intermediate code versions or results without using ||JoSuA||. The ||RDC-IAB|| preserves user generated code and original data for ten years. Only the original data have a persistent digital identifier. Users can also export and store their code from ||JoSuA|| after a manual check by ||RDC-IAB|| staff. ||RDC-IAB|| does not store intermediate data generated during a user project but such data should be reproducible using the preserved code. Access to user generated files or output is only possible with the permission of the original researchers and a ||DUA||. In case of misconduct or perceived misconduct, the ||IAB|| follows its [procedure](https://www.iab.de/en/daten/replikationen.aspx) for good scientific practice for data access and code.[^21]
 
-## Sustainability and Continued Success
+### Sustainability and Continued Success
 
-### Outreach
+#### Outreach
 
 The ||RDC-IAB|| uses different channels to inform interested researchers about the data products and data access possibilities. Most importantly, extensive information is available online at the ||RDC-IAB|| [website](https://fdz.iab.de/en.aspx).[^22] Additionally, the ||RDC-IAB|| newsletter keeps data users updated on news, such as new data sets or data updates. A continuous user survey helps to identifying any problems with the flow of information to the data users and adjustments can be made to the website. ||RDC-IAB|| staff presents data and data access options at conferences, workshops, and seminars. Users, ||RDC-IAB|| staff, and ||IAB|| colleagues also present their research at national and international research conferences and publish in journals in various disciplines. These conference engagements often lead to questions or data requests from other researchers. International collaborations with high-ranking scholars boosted the interest in ||RDC-IAB|| data considerably [@card2015; @ schmieder2016]. The extension of data access points in Germany and abroad also exemplified the importance of word of mouth advertising. Quite often, users report their experiences with ||RDC-IAB|| data to their colleagues, leading to small clusters of researchers from the same institution working with the data.
 
 ||RDC-IAB|| is a partner in ||IDAN||. ||IDAN|| is a collaboration between six ||RDC||s from France, Germany, the Netherlands, and the UK with the aim to enable working remotely with data from each partner at all partnering ||data access points||, thus facilitating access and also enabling cross-country comparisons. This allows parallel (but separate) analysis for different countries. Appending data sets from different countries into a common database is legally forbidden and technically prevented. The ||*Centre d'accès sécurisé aux données*|| (||CASD||) in France and the ||RDC-IAB||, for instance, have already prepared documentation to make researchers more aware of the possibilities for cross-country comparisons [@laible2020]. A joint conference in 2019 promoted the exchange between researchers, data providers, and stakeholders from different ministries in both countries and demonstrated the importance of access to administrative data and surveys.[^23]
 
-### Revenue
+#### Revenue
 
 There are no fees for ||RDC-IAB|| data users, neither for data access nor for ||SDC|| of research results. The ||RDC-IAB|| and its services are financed by a ||BA|| budget. This follows the recommendation of the ||GDF||, which is responsible for the accreditation of all German ||RDC||s. Special mention should also be made of the free assistance provided by institutions that have a ||data access point|| to ||RDC-IAB|| data.
 
@@ -248,7 +248,7 @@ The ||RDC-IAB|| tries to finance projects for new data products through the acqu
 
 Additional funding possibilities arise from linking survey data of collaborating institutions with the ||IAB||s administrative data (as long as consent to linkage was provided by the survey respondents). In 2011, the ||RDC-IAB|| established the ||German Record Linkage Center|| (||GRLC||) in cooperation with the University of Duisburg-Essen to conduct research on record linkage and to provide services with record linkage applications [@antoni2019]. The implementation of the ||GRLC|| was funded by the ||German Research Foundation|| (||DFG||) for three years. Today, the ||RDC-IAB|| receives financial support from the collaborating institutes to perform the linkage, prepare and document the final linked data sets, and advise data users. One example of this kind of collaboration is the linked ||National Educational Panel Study|| (||NEPS||) created with the ||Leibniz Institute for Educational Trajectories|| (||LIfBi||).
 
-### Metrics of Success
+#### Metrics of Success
 
 The ||RDC-IAB|| generates statistics to inform the ||IAB||, the ||BA||, the ||GDF||, and researchers about data use at the ||RDC-IAB||. These statistics reflect both the success of the data and the effort involved. The ||RDC-IAB|| provides statistics on active user projects, number of ||remote execution|| jobs, and ||on-site|| uses each month/year online. A literature [database](https://fdz.iab.de/en/FDZ_Publications/FDZ_Literature_Database.aspx) informs about papers based on ||RDC-IAB|| data.[^26] Not all data users, however, submit their papers to the ||RDC-IAB|| after the project ends, and data sets are not always cited correctly. Therefore, the actual number of papers using ||RDC-IAB|| data is underestimated in this database. As a result, ||RDC-IAB|| measures its success by looking at the number of users and user projects rather than number of papers or citations.
 
@@ -278,7 +278,7 @@ In general, user ratings are very good. For example, Figure 4 shows the ratings 
 figure4
 ```
 
-## About the Authors
+### About the Authors
 
 Dana Müller is the Head of the ||Research Data Center|| (||RDC-IAB||) of the ||Federal Employment Agency|| (||BA||) at the ||Institute for Employment Research|| (||IAB||) in Nuremberg, Germany. Previously, she was a researcher at the ||IAB|| and the Chemnitz University of Technology. In these positions, Dana Müller has worked with survey data, administrative data, and big-data; she has developed a deep knowledge and extensive experience in linkages of social security records, administrative information, and survey data. She has led many initiatives, including the project "Quality of work and economic success" and "Biographical data of selected social insurance in Germany." Both projects were linking different administrative and survey data to advance social science research.
 
