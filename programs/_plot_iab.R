@@ -60,7 +60,6 @@ figure4 <- ggplot(f4data, aes(fill=Rating, y=Percentage, x=Type)) +
 
 # Table 1
 
-
 table1data <- data.frame(
   Items = c("Population/Sample Size", 
             "Time Period covered and frequency",
@@ -96,7 +95,6 @@ table1data <- data.frame(
 table1<-knitr::kable(table1data, escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
   kable_styling(full_width = F) %>%
   column_spec(1, width="19em") %>%
-  column_spec(2,  ) %>%
   pack_rows("Sample of Integrated Labour Market Biographies (||SIAB||)",1,3) %>%
   pack_rows("||Establishment History Panel|| (||BHP||)",4,6) %>%
   pack_rows("||Linked Employer-Employee Data|| (||LIAB||)",7,9) %>%
@@ -108,5 +106,5 @@ table2data<-read.csv("./assets/iab/table2.csv")
 
 table2<-knitr::kable(
   table2data, booktabs = TRUE,
-  caption = 'Number of publications in 2018, including all publications with RDC-IAB data (excluding bachelor and master theses)'
-)
+  caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding bachelor and master theses)") %>%
+    kable_styling(full_width = F)
