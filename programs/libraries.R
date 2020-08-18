@@ -17,6 +17,6 @@ pkgTest <- function(x)
 	return("OK")
 }
 
-global.libraries <- c("tufte","config","ggplot2","rprojroot","memisc","forcats","kableExtra")
+global.libraries <- c("tufte","config","ggplot2","rprojroot","memisc","forcats","kableExtra","colorBrewer")
 
 results <- sapply(as.list(global.libraries), pkgTest)
