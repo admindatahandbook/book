@@ -1,5 +1,6 @@
 ```{r, echo=FALSE}
 source("programs/_plot_iab.R")
+library(kableExtra)
 ```
 
 ## Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers
@@ -58,7 +59,7 @@ Based on a reform in 2004, which exempted small firms from dismissal protection,
 
 Table 1 provides a selective overview of research data available at ||RDC-IAB|| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in [@muller2019; @muller2020]. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).
 
-```{r table-single, tidy=FALSE}
+```{r table1, tidy=FALSE}
 knitr::kable(table1data, escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
   kable_styling(full_width = F) %>%
   column_spec(1, width="19em") %>%
@@ -269,7 +270,7 @@ Since the implementation of the additional ||data access points||, the proportio
 
 Additional statistics are also submitted to the annual activity report for all ||RDC||s in Germany published by the ||GDF|| [@ratswdgermandataforum2019]. Table 2 shows all publications with ||RDC-IAB|| data in 2018, including publications from ||IAB|| staff. There were 60 published papers in scientific journals in 2018, 45 of these in peer-reviewed journals. Additionally, 44 papers were published as working papers or reports and ||RDC-IAB|| data were used and cited in 41 books. As mentioned above, these numbers underestimate the true number of relevant publications in 2018.
 
-```{r table-single, tidy=FALSE}
+```{r table2, tidy=FALSE}
 knitr::kable(
   table2data, booktabs = TRUE,
   caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding bachelor and master theses)") %>%
