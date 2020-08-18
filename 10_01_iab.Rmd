@@ -14,7 +14,9 @@ author:
     url: https://www.iab.de/754/section.aspx/Mitarbeiter/72110
     affiliation: Institute for Employment Research
     affiliation_url: https://www.iab.de/en/ueberblick.aspx
-output: distill::distill_article
+output: 
+  bookdown::gitbook:
+    base_format: distill::distill_article
 ---
 
 ## Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers
