@@ -4,6 +4,7 @@
 
 library(ggplot2)
 library(kableExtra)
+library(RColorBrewer)
 
 # Figure 1
 f1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
@@ -13,10 +14,13 @@ f1data$Date <- factor(f1data$Date,levels = c("Aug 19", "Sep 19", "Oct 19", "Nov 
 figure1 <- ggplot(f1data, aes(fill=Mode, y=Count, x=Date)) + 
   geom_bar(position="stack", stat="identity") +
   geom_text(aes(label=Count), position = position_stack(vjust=0.5)) +
+  scale_fill_brewer(palette = "Paired") +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
         legend.position="bottom")
+
+figure1
 
 # Figure 2
 f2data <- read.csv("./assets/iab/figure2.csv")  # read csv file 
@@ -24,11 +28,13 @@ f2data <- read.csv("./assets/iab/figure2.csv")  # read csv file
 figure2 <- ggplot(f2data, aes(fill=Projects, y=Count, x=Year)) + 
   geom_bar(position="dodge", stat="identity") +
   scale_x_continuous(breaks = f2data$Year, labels = as.character(f2data$Year)) +
+  scale_fill_brewer(palette = "Paired") +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
         legend.position="bottom")
 
+figure2
 # Figure 3
 
 f3data <- read.csv("./assets/iab/figure3.csv") 
@@ -37,11 +43,13 @@ f3data$Country <- factor(f3data$Country,levels = c( "U.S.", "Other Countries","G
 
 figure3 <- ggplot(f3data, aes(fill=Country, y=Percentage, x=Year)) + 
   geom_bar(position="stack", stat="identity") +
+  scale_fill_brewer(palette = "Paired") +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
         legend.position="bottom")
 
+figure3
 # Figure 4
 
 f4data <- read.csv("./assets/iab/figure4.csv") 
@@ -52,12 +60,13 @@ f4data$Rating <- factor(f4data$Rating,levels = c("very good","good","neutral","n
 figure4 <- ggplot(f4data, aes(fill=Rating, y=Percentage, x=Type)) + 
   coord_flip() +
   geom_bar(position = position_stack(reverse = TRUE), stat="identity") +
+  scale_fill_brewer(palette = "Blues") +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
         legend.position="bottom")
 
-
+figure4
 # Table 1
 
 table1data <- data.frame(
