@@ -17,6 +17,24 @@ pkgTest <- function(x)
 	return("OK")
 }
 
-global.libraries <- c("tufte","config","ggplot2","rprojroot","memisc","forcats")
+global.libraries <- c("here","bookdown","tufte","config","ggplot2","rprojroot","memisc","forcats","kableExtra","RColorBrewer","distill")
 
 results <- sapply(as.list(global.libraries), pkgTest)
+
+
+
+#args = commandArgs(trailingOnly=TRUE)
+#
+#if (length(args)>0) {
+#  if ( args[1] == "ubuntu" ) {
+#    system("apt-get update")
+#    system("apt-get upgrade")
+#    system("apt-get install -y libxml2-dev")
+#    system("apt-get install -y pandoc-citeproc")
+#    system("apt-get install -y r-cran-rprojroot r-cran-tidyverse")
+#    system("apt-get install -y r-cran-here r-cran-bookdown")
+#    system("apt-get install -y r-cran-tufte r-cran-config r-cran-memisc")
+#    system("apt-get install -y r-cran-forcats")
+#    system("apt-get install -y r-cran-kableExtra ")
+#  }
+#}
