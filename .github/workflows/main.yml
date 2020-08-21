@@ -2,7 +2,8 @@ name: Deploy website
 on: 
   push:
     branches: 
-      - iab
+      - published_version
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
