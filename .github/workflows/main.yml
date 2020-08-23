@@ -2,8 +2,7 @@ name: Deploy website
 on: 
   push:
     branches: 
-      - published_version
-
+      - olda
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
