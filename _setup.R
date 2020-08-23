@@ -39,6 +39,8 @@ for ( dir in list(datadir,programdir,figures)){
 
 source(file.path(programdir,"libraries.R"))
 
+# bookdown options TOC fix
+options(bookdown.render.file_scope = FALSE)
 
 #
 #Knitr plot output folder to not break github.io
