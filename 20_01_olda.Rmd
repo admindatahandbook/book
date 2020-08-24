@@ -2,8 +2,6 @@
 
 Joshua D. Hawley, John Glenn College of Public Affairs and CHRR at the Ohio State University
 
-<Hawley.32@osu.edu> and 614-247-8140
-
 ### Summary
 
 The ||Ohio Longitudinal Data Archive|| (OLDA) is a collaborative arrangement between the State of Ohio and the Ohio State University (OSU). Operated jointly by the John Glenn College of Public Affairs and the Center for Human Resource Research (CHRR), the OLDA stores data from five agencies (Education, Higher Education, Housing, Job and Family Services, and Opportunities for Ohioans with Disabilities) in Ohio. These data are available to government agencies as well as to external researchers. *By providing access to both networks, Ohio creates a community focused on generating evidence-based research that is [used]{.ul} by government for both research and public policy.*
@@ -95,11 +93,11 @@ Within each agency, the data resources include the core agency-specific files fo
 |                                             |                                                                 |                                              |                                               |
 |                                             | 3.  Adult Basic and Literacy Education                          |                                              |                                               |
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Ohio Department of Education                | > Education Management Information System                       | From 2001 to present (depending on table)    | 1.8 million unique students in K12 education  |
+| Ohio Department of Education                | Education Management Information System                         | From 2001 to present (depending on table)    | 1.8 million unique students in K12 education  |
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Ohio Housing Finance Agency                 | > Ohio Housing Tenant Files                                     | From 2014 to present                         | 200,000 unique individuals                    |
+| Ohio Housing Finance Agency                 | Ohio Housing Tenant Files                                       | From 2014 to present                         | 200,000 unique individuals                    |
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Opportunities for Ohioans with Disabilities | > Vocational Rehabilitation                                     | From 2011 to present                         | 100,000 unique individuals                    |
+| Opportunities for Ohioans with Disabilities | Vocational Rehabilitation                                       | From 2011 to present                         | 100,000 unique individuals                    |
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
 Table: (\#tab:olda1) Specific files maintained at the Ohio State University
 
