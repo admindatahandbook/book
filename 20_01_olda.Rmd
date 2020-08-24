@@ -75,23 +75,23 @@ In 2019, the data holdings came from the following state agencies:
 Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in  Table \@ref(tab:olda1).
 
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Agency                                      | Datasets[^6]                                                    | Years Available                              | Approx. # Records                              |
+| Agency                                      | Datasets[^6]                                                    | Years Available                              | Approx. # Records                             |
 +=============================================+=================================================================+==============================================+===============================================+
-| Ohio Department of Job and Family Services  | 1.  Unemployment Insurance Wage Data                            | From 1995 to present (varies based on files) | 130 million wage records                      |
+| Ohio Department of Job and Family Services  | 1. Unemployment Insurance Wage Data                             | From 1995 to present (varies based on files) | 130 million wage records                      |
 |                                             |                                                                 |                                              |                                               |
-|                                             | 2.  Quarterly Census on Wages and Employment                    |                                              | program files                                 |
+|                                             | 2. Quarterly Census on Wages and Employment                     |                                              | program files                                 |
 |                                             |                                                                 |                                              |                                               |
-|                                             | 3.  Job Seeker Information                                      |                                              |                                               |
+|                                             | 3. Job Seeker Information                                       |                                              |                                               |
 |                                             |                                                                 |                                              |                                               |
-|                                             | 4.  Workforce Investment Act Standardized Record Data           |                                              |                                               |
+|                                             | 4. Workforce Investment Act Standardized Record Data            |                                              |                                               |
 |                                             |                                                                 |                                              |                                               |
-|                                             | 5.  Unemployment Insurance Claimant Data                        |                                              |                                               |
+|                                             | 5. Unemployment Insurance Claimant Data                         |                                              |                                               |
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Ohio Department of Higher Education         | 1.  Higher Education Information (Student, Course, and Faculty) | From 1999 to present (varies based on files) | 2 million unique students in higher education |
+| Ohio Department of Higher Education         | 1. Higher Education Information (Student, Course, and Faculty)  | From 1999 to present (varies based on files) | 2 million unique students in higher education |
 |                                             |                                                                 |                                              |                                               |
-|                                             | 2.  Ohio Technical Centers                                      |                                              |                                               |
+|                                             | 2. Ohio Technical Centers                                       |                                              |                                               |
 |                                             |                                                                 |                                              |                                               |
-|                                             | 3.  Adult Basic and Literacy Education                          |                                              |                                               |
+|                                             | 3. Adult Basic and Literacy Education                           |                                              |                                               |
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
 | Ohio Department of Education                | Education Management Information System                         | From 2001 to present (depending on table)    | 1.8 million unique students in K12 education  |
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
@@ -133,15 +133,15 @@ The registered apprenticeship work conducted in collaboration with the State of 
 +--------------------------------------+---------------------------------------------------------------------------------------------+
 | **Type of Study**                    | **Example Project Title**                                                                   |
 +======================================+=============================================================================================+
-| Program evaluations                  | Wage Pathway Evaluation Study [@hawley2019]                                              |
+| Program evaluations                  | Wage Pathway Evaluation Study [@hawley2019]                                                 |
 |                                      |                                                                                             |
-|                                      | Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018] |
+|                                      | Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]    |
 |                                      |                                                                                             |
 |                                      | GEAR UP Evaluation[^8]                                                                      |
 +--------------------------------------+---------------------------------------------------------------------------------------------+
-| Descriptive and multivariate studies | College Credit Plus [@harlow2018]                                                        |
+| Descriptive and multivariate studies | College Credit Plus [@harlow2018]                                                           |
 |                                      |                                                                                             |
-|                                      | Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]                 |
+|                                      | Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]                    |
 +--------------------------------------+---------------------------------------------------------------------------------------------+
 Table: (\#tab:olda2) Example approved studies using the Ohio Longitudinal Data
 
