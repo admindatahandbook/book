@@ -130,7 +130,6 @@ The following case study provides an example of research use under the OLDA. One
 The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the ||Unemployment Insurance Wage Records|| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^7]
 
 
-
 +--------------------------------------+---------------------------------------------------------------------------------------------+
 | **Type of Study**                    | **Example Project Title**                                                                   |
 +======================================+=============================================================================================+
