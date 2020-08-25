@@ -1,13 +1,9 @@
-```{r, echo=FALSE}
-source("programs/_plot_iab.R")
-library(kableExtra)
-library(distill)
-```
-
 ## Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers
 
-Dana Müller, Institute for Employment Research
-Philipp vom Berge, Institute for Employment Research
+```{r, echo=FALSE}
+source("programs/_plot_iab.R")
+printauthor("iab")
+```
 
 ### Summary
 

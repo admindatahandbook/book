@@ -9,6 +9,15 @@ bibliography: [Sloan-JPAL.bib,packages.bib,ideahandbook.bib]
 link-citations: yes
 github-repo: labordynamicsinstitute/idea-handbook
 description: This is the handbook
+chapterauthors:
+  olda:
+    - Joshua D. Hawley
+  iab:
+    - Dana Müller
+    - Philipp vom Berge
+  security:
+    - Jim Shen
+    - Lars Vilhuber
 ---
 
 # Abstract {-}

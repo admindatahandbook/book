@@ -1,6 +1,9 @@
 ## Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community
 
-Joshua D. Hawley, John Glenn College of Public Affairs and CHRR at the Ohio State University
+```{r, echo=FALSE}
+source("programs/_plot_physical.R")
+printauthor("olda")
+```
 
 ### Summary
 
@@ -181,7 +184,7 @@ There are several federal legal frameworks that govern data access, the ||Family
 
 The ||Code of Federal Regulations|| includes Section 603, which governs the use of wage records or unemployment insurance data. Section 603 limits the use of wage record data outside of the Unemployment Insurance Program, but the federal Workforce Innovation and Opportunity Act (WIOA) rules explicitly encourage the use of the wage record data to the extent that is practical. The WIOA rules are focused on increasing the use of wage record data to study specific programs (e.g., Vocational Rehabilitation or Title I).
 
-As states built the technical systems to document state data, the federal government worked to establish a legal framework for accessing administrative records to conduct research. Federal rules such as the Family Educational Rights and Privacy Act (enacted in 1974) were amended over time to allow greater research access. The amendments in 1994 allowed the federal and state government to allow access to student data under some conditions. Later revisions of FERPA allowed use of student records in integrated data systems when specific exceptions are met in use of the data for audit and evaluation and the data system is providing a service or function to school districts. Both the ||Code of Federal Regulations|| 20 (Section 603) and the final regulations of the Workforce Innovation and Opportunity Act (Final Rule) are necessary in legal agreements when wage records and job training data are to be used. WIOA makes it clear that states are required to participate in evaluations to the extent possible. [@federalregister2016].
+As states built the technical systems to document state data, the federal government worked to establish a legal framework for accessing administrative records to conduct research. Federal rules such as the Family Educational Rights and Privacy Act (enacted in 1974) were amended over time to allow greater research access. The amendments in 1994 allowed the federal and state government to allow access to student data under some conditions. Later revisions of FERPA allowed use of student records in integrated data systems when specific exceptions are met in use of the data for audit and evaluation and the data system is providing a service or function to school districts. Both the ||Code of Federal Regulations|| 20 (Section 603) and the final regulations of the Workforce Innovation and Opportunity Act (Final Rule) are necessary in legal agreements when wage records and job training data are to be used. WIOA makes it clear that states are required to participate in evaluations to the extent possible. [@officeofthefederalregisternationalarchivesandrecordsadministration2016].
 
 Through a study of the employment outcomes of individuals enrolled in welfare, researchers have also learned (in recent years) that state rules vary in how they interpret data access to the Supplemental Nutrition Assistance Program (SNAP) and the Temporary Assistance for Needy Families (TANF). In some states, such as Illinois or Texas, these data are shared with researchers, while in Ohio both federal programs' data are largely off-limits to the research community.
 
