@@ -7,11 +7,11 @@ library(kableExtra)
 library(RColorBrewer)
 
 # Figure 1
-f1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
+iabf1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
 
-f1data$Date <- factor(f1data$Date,levels = c("Aug 19", "Sep 19", "Oct 19", "Nov 19", "Dec 19", "Jan 20"))
+iabf1data$Date <- factor(iabf1data$Date,levels = c("Aug 19", "Sep 19", "Oct 19", "Nov 19", "Dec 19", "Jan 20"))
 
-figure1 <- ggplot(f1data, aes(fill=Mode, y=Count, x=Date)) + 
+iabfigure1 <- ggplot(iabf1data, aes(fill=Mode, y=Count, x=Date)) + 
   geom_bar(position="stack", stat="identity") +
   geom_text(aes(label=Count), position = position_stack(vjust=0.5)) +
   scale_fill_brewer(palette = "Paired") +
@@ -20,12 +20,10 @@ figure1 <- ggplot(f1data, aes(fill=Mode, y=Count, x=Date)) +
         legend.title=element_blank(),
         legend.position="bottom")
 
-figure1
-
 # Figure 2
-f2data <- read.csv("./assets/iab/figure2.csv")  # read csv file 
+iabf2data <- read.csv("./assets/iab/figure2.csv")  # read csv file 
 
-figure2 <- ggplot(f2data, aes(fill=Projects, y=Count, x=Year)) + 
+iabfigure2 <- ggplot(iabf2data, aes(fill=Projects, y=Count, x=Year)) + 
   geom_bar(position="dodge", stat="identity") +
   scale_x_continuous(breaks = f2data$Year, labels = as.character(f2data$Year)) +
   scale_fill_brewer(palette = "Paired") +
@@ -34,14 +32,13 @@ figure2 <- ggplot(f2data, aes(fill=Projects, y=Count, x=Year)) +
         legend.title=element_blank(),
         legend.position="bottom")
 
-figure2
 # Figure 3
 
-f3data <- read.csv("./assets/iab/figure3.csv") 
+iabf3data <- read.csv("./assets/iab/figure3.csv") 
 
-f3data$Country <- factor(f3data$Country,levels = c( "U.S.", "Other Countries","Germany"))
+iabf3data$Country <- factor(iabf3data$Country,levels = c( "U.S.", "Other Countries","Germany"))
 
-figure3 <- ggplot(f3data, aes(fill=Country, y=Percentage, x=Year)) + 
+iabfigure3 <- ggplot(iabf3data, aes(fill=Country, y=Percentage, x=Year)) + 
   geom_bar(position="stack", stat="identity") +
   scale_fill_brewer(palette = "Paired") +
   theme(axis.title.x=element_blank(),
@@ -49,15 +46,13 @@ figure3 <- ggplot(f3data, aes(fill=Country, y=Percentage, x=Year)) +
         legend.title=element_blank(),
         legend.position="bottom")
 
-figure3
 # Figure 4
 
-f4data <- read.csv("./assets/iab/figure4.csv") 
+iabf4data <- read.csv("./assets/iab/figure4.csv") 
 
+iabf4data$Rating <- factor(iabf4data$Rating,levels = c("very good","good","neutral","not used"))
 
-f4data$Rating <- factor(f4data$Rating,levels = c("very good","good","neutral","not used"))
-
-figure4 <- ggplot(f4data, aes(fill=Rating, y=Percentage, x=Type)) + 
+iabfigure4 <- ggplot(iabf4data, aes(fill=Rating, y=Percentage, x=Type)) + 
   coord_flip() +
   geom_bar(position = position_stack(reverse = TRUE), stat="identity") +
   scale_fill_brewer(palette = "Blues") +
@@ -66,10 +61,9 @@ figure4 <- ggplot(f4data, aes(fill=Rating, y=Percentage, x=Type)) +
         legend.title=element_blank(),
         legend.position="bottom")
 
-figure4
 # Table 1
 
-table1data <- data.frame(
+iabt1data <- data.frame(
   Items = c("Population/Sample Size", 
             "Time Period covered and frequency",
             "Additional information",
@@ -101,7 +95,7 @@ table1data <- data.frame(
   )
 )
 
-table1<-knitr::kable(table1data, escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
+iabtable1<-knitr::kable(iabt1data, escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
   kable_styling(full_width = F) %>%
   column_spec(1, width="19em") %>%
   pack_rows("Sample of Integrated Labour Market Biographies (||SIAB||)",1,3) %>%
@@ -111,9 +105,8 @@ table1<-knitr::kable(table1data, escape = F, caption="Selected RDC-IAB data", co
 
 # Table 2
 
-table2data<-read.csv("./assets/iab/table2.csv")
+iabt2data<-read.csv("./assets/iab/table2.csv")
 
-table2<-knitr::kable(
-  table2data, booktabs = TRUE,
+iabtable2<-knitr::kable(iabt2data, booktabs = TRUE,
   caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding bachelor and master theses)") %>%
     kable_styling(full_width = F)

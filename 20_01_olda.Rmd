@@ -78,11 +78,11 @@ In 2019, the data holdings came from the following state agencies:
 Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in  Table \@ref(tab:olda1).
 
 +---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Agency                                      | Datasets[^6]                                                    | Years Available                              | Approx. # Records                             |
+| Agency                                      | Datasets[^6]                                                    | Years Available                              | Approx. Number of Records                     |
 +=============================================+=================================================================+==============================================+===============================================+
 | Ohio Department of Job and Family Services  | 1. Unemployment Insurance Wage Data                             | From 1995 to present (varies based on files) | 130 million wage records                      |
 |                                             |                                                                 |                                              |                                               |
-|                                             | 2. Quarterly Census on Wages and Employment                     |                                              | program files                                 |
+|                                             | 2. Quarterly Census on Wages and Employment                     |                                              |                                               |
 |                                             |                                                                 |                                              |                                               |
 |                                             | 3. Job Seeker Information                                       |                                              |                                               |
 |                                             |                                                                 |                                              |                                               |
@@ -113,15 +113,12 @@ The research uses of the OLDA depend on the programs that contribute microdata. 
 The following topics are representative studies.
 
 -   education data
-
     -   student dropout from high school
-
     -   progression of STEM students through high school
 
 -   workforce data
 
     -   impact of long-term unemployment on workforce participation
-
     -   workforce outcomes of higher education programs
 
 Table \@ref(tab:olda2) provides example titles from approved research projects. Researchers obtain the Ohio data by completing a standardized set of documents and obtaining Institutional Review Board (IRB) approval. The paperwork for the researchers requires an outline of the methodological approach and a formal description of the data sets and variables, in addition to a formal IRB review.
@@ -134,7 +131,7 @@ The registered apprenticeship work conducted in collaboration with the State of 
 
 
 +--------------------------------------+---------------------------------------------------------------------------------------------+
-| **Type of Study**                    | **Example Project Title**                                                                   |
+| Type of Study                        | Example Project Title                                                                       |
 +======================================+=============================================================================================+
 | Program evaluations                  | Wage Pathway Evaluation Study [@hawley2019]                                                 |
 |                                      |                                                                                             |
@@ -189,7 +186,7 @@ As states built the technical systems to document state data, the federal govern
 Through a study of the employment outcomes of individuals enrolled in welfare, researchers have also learned (in recent years) that state rules vary in how they interpret data access to the Supplemental Nutrition Assistance Program (SNAP) and the Temporary Assistance for Needy Families (TANF). In some states, such as Illinois or Texas, these data are shared with researchers, while in Ohio both federal programs' data are largely off-limits to the research community.
 
 
-  **Law or Administrative Regulation**                                                      **Document**
+  Law or Administrative Regulation                                                          Document
   ----------------------------------------------------------------------------------------- ----------------------------------------------------------------------------
   Family Educational Rights and Privacy Act                                                 Audit and Evaluation Rules (Privacy Technical Assistance Center, 2017)
   Workforce Innovation and Opportunity Act (Final rule)                                     <https://www.doleta.gov/wioa/about/final-rules/>

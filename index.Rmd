@@ -1,5 +1,5 @@
 ---
-title: "Using Administrative Data for Research and Evidence-based Policy - A Handbook"
+title: "Handbok on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 site: bookdown::bookdown_site
@@ -19,6 +19,24 @@ chapterauthors:
     - Jim Shen
     - Lars Vilhuber
 ---
+
+```{r setup,include=FALSE}
+source("_setup.R",echo=FALSE)
+```
+
+
+#```{r results="asis", echo=FALSE}
+#if (is_html_output()) {
+#  cat("# Welcome to the Handbook on Using Administrative Data for research and Evidence-Based Policy{-}")
+#}
+#```
+
+
+#```{block, include=is_html_output()}
+#This is the website for the Handbook on Using Administrative Data for Research and Evidence Based Policy
+#```
+
+
 
 # Abstract {-}
 
@@ -52,8 +70,4 @@ This Handbook intends to inform Data Providers and researchers on how to provide
 
 ```{block, type='rmdwarning'}
 This document is under development!
-```
-
-```{r setup,include=FALSE}
-source("_setup.R",echo=FALSE)
 ```
