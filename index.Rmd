@@ -25,19 +25,6 @@ source("_setup.R",echo=FALSE)
 ```
 
 
-#```{r results="asis", echo=FALSE}
-#if (is_html_output()) {
-#  cat("# Welcome to the Handbook on Using Administrative Data for research and Evidence-Based Policy{-}")
-#}
-#```
-
-
-#```{block, include=is_html_output()}
-#This is the website for the Handbook on Using Administrative Data for Research and Evidence Based Policy
-#```
-
-
-
 # Abstract {-}
 
 This Handbook intends to inform Data Providers and researchers on how to provide privacy-protected access to, handle, and analyze administrative data, and to link them with existing resources, such as a database of data use agreements (DUA) and templates. Available publicly, the Handbook will provide guidance on data access requirements and procedures, data privacy, data security, property rights, regulations for public data use, data architecture, data use and storage, cost structure and recovery, ethics and privacy-protection, making data accessible for research, and dissemination for restricted access use.  The knowledge base will serve as a resource for all researchers looking to work with administrative data and for Data Providers looking to make such data available. 
