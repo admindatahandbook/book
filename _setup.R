@@ -12,7 +12,7 @@
 # Define paths here for later
 #
 
-basedir <- #here::here()
+basedir <- here::here()
 datadir <- file.path(basedir,"data")
 programdir <- file.path(basedir,"programs")
 figures <- file.path(basedir,"figures")
