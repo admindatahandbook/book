@@ -25,7 +25,7 @@ iabf2data <- read.csv("./assets/iab/figure2.csv")  # read csv file
 
 iabfigure2 <- ggplot(iabf2data, aes(fill=Projects, y=Count, x=Year)) + 
   geom_bar(position="dodge", stat="identity") +
-  scale_x_continuous(breaks = f2data$Year, labels = as.character(f2data$Year)) +
+  scale_x_continuous(breaks = iabf2data$Year, labels = as.character(iabf2data$Year)) +
   scale_fill_brewer(palette = "Paired") +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
