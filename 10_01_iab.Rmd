@@ -266,7 +266,7 @@ Additional statistics are also submitted to the annual activity report for all |
 
 ```{r iabtable2, tidy=FALSE, echo=F}
 knitr::kable(
-  iabt22data, booktabs = TRUE,
+  iabt2data, booktabs = TRUE,
   caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding bachelor and master theses)") %>%
     kable_styling(full_width = F)
 ```
