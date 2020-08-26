@@ -68,13 +68,9 @@ The ||Ohio Longitudinal Data Archive|| is composed of micro-data from a core gro
 In 2019, the data holdings came from the following state agencies:
 
 1.  Ohio Department of Job and Family Services;
-
 2.  Ohio Department of Higher Education;
-
 3.  Ohio Department of Education;
-
 4.  Ohio Housing Finance Agency; and
-
 5.  Opportunities for Ohioans with Disabilities.
 
 Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in Table \@ref(tab:oldatable1).
@@ -126,14 +122,13 @@ The research uses of the OLDA depend on the programs that contribute microdata. 
 
 The following topics are representative studies.
 
--   education data
-    -   student dropout from high school
-    -   progression of STEM students through high school
+- education data
+  - student dropout from high school
+  - progression of STEM students through high school
 
--   workforce data
-
-    -   impact of long-term unemployment on workforce participation
-    -   workforce outcomes of higher education programs
+- workforce data
+  - impact of long-term unemployment on workforce participation
+  - workforce outcomes of higher education programs
 
 Table \@ref(tab:oldatable2) provides example titles from approved research projects. Researchers obtain the Ohio data by completing a standardized set of documents and obtaining Institutional Review Board (IRB) approval. The paperwork for the researchers requires an outline of the methodological approach and a formal description of the data sets and variables, in addition to a formal IRB review.
 
