@@ -5,8 +5,10 @@
 #              section as the argument for the function
 
 printauthor<-function(yamlsection){
-  sectionauthors <- rmarkdown::yaml_front_matter(knitr::current_input())
-  x<- c("sectionauthors$chapterauthors$", yamlsection)
-  printthis<-paste(x, sep=" ", collapse="")
-  print(eval(parse(text=printthis)))
+#  sectionauthors <- rmarkdown::yaml_front_matter(knitr::current_input())
+#  x<- c("sectionauthors$chapterauthors$", yamlsection)
+#  printthis<-paste(x, sep=" ", collapse="")
+#  print(eval(parse(text=printthis)))
+  
+  config::get(yamlsection,file="chapterauthors.yml")   
 }

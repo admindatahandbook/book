@@ -13,7 +13,7 @@ pre code {
   white-space: inherit;
 }
 
-# from https://stackoverflow.com/questions/36293511/creating-custom-blocks-in-rstudios-bookdown
+/* from https://stackoverflow.com/questions/36293511/creating-custom-blocks-in-rstudios-bookdown */
 
 .rmdcomment {
   padding: 1em 1em 1em 4em;
