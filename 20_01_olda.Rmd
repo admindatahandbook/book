@@ -21,6 +21,8 @@ The OLDA was started with federal grants from the US Departments of Labor and Ed
 
 After the core federal funding ended, the OLDA has persisted through a combination of funding from state agencies, federal research contracts, and private foundation grants. The operating budget on an annual basis is between US\$1.5 to 2 million. We have approximately twelve full-time employees currently, including three research scientists, database administrators, and policy or evaluation staff.
 
+
+
 ### Introduction
 
 #### Motivation and Background
@@ -75,34 +77,46 @@ In 2019, the data holdings came from the following state agencies:
 
 5.  Opportunities for Ohioans with Disabilities.
 
-Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in  Table \@ref(tab:olda1).
+Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in Table \@ref(tab:oldatable1).
 
-+---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Agency                                      | Datasets[^6]                                                    | Years Available                              | Approx. Number of Records                     |
-+=============================================+=================================================================+==============================================+===============================================+
-| Ohio Department of Job and Family Services  | 1. Unemployment Insurance Wage Data                             | From 1995 to present (varies based on files) | 130 million wage records                      |
-|                                             |                                                                 |                                              |                                               |
-|                                             | 2. Quarterly Census on Wages and Employment                     |                                              |                                               |
-|                                             |                                                                 |                                              |                                               |
-|                                             | 3. Job Seeker Information                                       |                                              |                                               |
-|                                             |                                                                 |                                              |                                               |
-|                                             | 4. Workforce Investment Act Standardized Record Data            |                                              |                                               |
-|                                             |                                                                 |                                              |                                               |
-|                                             | 5. Unemployment Insurance Claimant Data                         |                                              |                                               |
-+---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Ohio Department of Higher Education         | 1. Higher Education Information (Student, Course, and Faculty)  | From 1999 to present (varies based on files) | 2 million unique students in higher education |
-|                                             |                                                                 |                                              |                                               |
-|                                             | 2. Ohio Technical Centers                                       |                                              |                                               |
-|                                             |                                                                 |                                              |                                               |
-|                                             | 3. Adult Basic and Literacy Education                           |                                              |                                               |
-+---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Ohio Department of Education                | Education Management Information System                         | From 2001 to present (depending on table)    | 1.8 million unique students in K12 education  |
-+---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Ohio Housing Finance Agency                 | Ohio Housing Tenant Files                                       | From 2014 to present                         | 200,000 unique individuals                    |
-+---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-| Opportunities for Ohioans with Disabilities | Vocational Rehabilitation                                       | From 2011 to present                         | 100,000 unique individuals                    |
-+---------------------------------------------+-----------------------------------------------------------------+----------------------------------------------+-----------------------------------------------+
-Table: (\#tab:olda1) Specific files maintained at the Ohio State University
+```{r oldatable1, echo=FALSE}
+oldat1data <- data.frame(
+  agency = c("Ohio Department of Job and Family Services", 
+             "Ohio Department of Higher Education",
+             "Ohio Department of Education",
+             "Ohio Housing Finance Agency", 
+             "Opportunities for Ohioans with Disabilities"),
+  datasets = c(
+    "* Unemployment Insurance Wage Data\ \n
+* Quarterly Census on Wages and Employment\ \n
+* Job Seeker Information\ \n
+* Workforce Investment Act Standardized Record Data\ \n
+* Unemployment Insurance Claimant Data",
+    "* Higher Education Information (Student, Course, and Faculty)\ \n
+* Ohio Technical Centers\ \n
+* Adult Basic and Literacy Education",
+    "Education Management Information System",
+    "Ohio Housing Tenant Files",
+    "Vocational Rehabilitation"),
+  years = c(
+    "From 1995 to present (varies based on files)",
+    "From 1999 to present (varies based on files)",
+    "From 2001 to present (varies based on table)",
+    "From 2014 to present",
+    "From 2011 to present"),
+  records = c(
+    "130 million wage records",
+    "2 million unique students in higher education",
+    "1.8 million unique students in K12 education",
+    "200,000 unique individuals",
+    "100,000 unique individuals"))
+
+pander::pander(oldat1data, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(10,26,12,12), col.names = c("Agency","Datasets^[The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings.]","Years Available","Approx. # Records"),
+               pandoc.footnote.return(""),
+               caption = '(\\#tab:oldatable1) Specific files maintained at the Ohio State University')
+
+
+```
 
 The uses of the data resources can be separated into three distinct areas: research use, government use, and training use. Initially, there are some similarities across the data uses. These three data users all make use of the OLDA for both analytical and evaluative reasons. For example, researchers most often wish to make use of the data for explicit analysis of the outcomes of Ohio programs, such as the impact of higher education on employment.
 
@@ -121,7 +135,7 @@ The following topics are representative studies.
     -   impact of long-term unemployment on workforce participation
     -   workforce outcomes of higher education programs
 
-Table \@ref(tab:olda2) provides example titles from approved research projects. Researchers obtain the Ohio data by completing a standardized set of documents and obtaining Institutional Review Board (IRB) approval. The paperwork for the researchers requires an outline of the methodological approach and a formal description of the data sets and variables, in addition to a formal IRB review.
+Table \@ref(tab:oldatable2) provides example titles from approved research projects. Researchers obtain the Ohio data by completing a standardized set of documents and obtaining Institutional Review Board (IRB) approval. The paperwork for the researchers requires an outline of the methodological approach and a formal description of the data sets and variables, in addition to a formal IRB review.
 
 *Case Study: Registered Apprenticeships*
 
@@ -129,21 +143,21 @@ The following case study provides an example of research use under the OLDA. One
 
 The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the ||Unemployment Insurance Wage Records|| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^7]
 
+Table \@ref(tab:oldatable2)
 
-+--------------------------------------+---------------------------------------------------------------------------------------------+
-| Type of Study                        | Example Project Title                                                                       |
-+======================================+=============================================================================================+
-| Program evaluations                  | Wage Pathway Evaluation Study [@hawley2019]                                                 |
-|                                      |                                                                                             |
-|                                      | Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]    |
-|                                      |                                                                                             |
-|                                      | GEAR UP Evaluation[^8]                                                                      |
-+--------------------------------------+---------------------------------------------------------------------------------------------+
-| Descriptive and multivariate studies | College Credit Plus [@harlow2018]                                                           |
-|                                      |                                                                                             |
-|                                      | Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]                    |
-+--------------------------------------+---------------------------------------------------------------------------------------------+
-Table: (\#tab:olda2) Example approved studies using the Ohio Longitudinal Data
+```{r oldatable2, echo=FALSE}
+oldat2data <- data.frame(
+  study = c("Program evaluations", 
+             "Descriptive and multivariate studies"),
+  title = c("* Wage Pathway Evaluation Study [@hawley2019]\ \n
+* Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]\ \n
+* GEAR UP Evaluation[^8]",
+    "* College Credit Plus [@harlow2018]\ \n
+* Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]"))
+
+pander::pander(oldat2data, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(20,25), col.names = c("Type of Study","Example Project Title"), caption = '(\\#tab:oldatable2) Example approved studies using the Ohio Longitudinal Data')
+```
+
 
 **Government use**
 
@@ -193,7 +207,7 @@ Through a study of the employment outcomes of individuals enrolled in welfare, r
   Joint Guidance on Data Matching to Facilitate WIOA Performance Reporting and Evaluation   <https://www2.ed.gov/policy/gen/guid/fpco/pdf/final-ferpa-tegl-report.pdf>
   Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014           <https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf>
 
-Table: (\#tab:olda3) Important Legal Documents to Review for the Research Community
+Table: (\#tab:oldatable3) Important Legal Documents to Review for the Research Community
 
 **Formal governance process**
 
@@ -326,8 +340,6 @@ knitr::include_graphics('./assets/olda/appendixb.png')
 [^4]: Ohio Department of Job and Family Services (2010). Ohio Workforce Data Quality Initiative Proposal (pp. 1)
 
 [^5]: Ohio State University, Ohio University, University of Cincinnati, Wright State University, and Case Western Reserve University were all partners in the Race to the Top Proposal, as well as a number of nonprofit organizations.
-
-[^6]: The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings.
 
 [^7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
 
