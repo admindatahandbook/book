@@ -200,13 +200,12 @@ As states built the technical systems to document state data, the federal govern
 Through a study of the employment outcomes of individuals enrolled in welfare, researchers have also learned (in recent years) that state rules vary in how they interpret data access to the Supplemental Nutrition Assistance Program (SNAP) and the Temporary Assistance for Needy Families (TANF). In some states, such as Illinois or Texas, these data are shared with researchers, while in Ohio both federal programs' data are largely off-limits to the research community.
 
 
-  Law or Administrative Regulation                                                          Document
-  ----------------------------------------------------------------------------------------- ----------------------------------------------------------------------------
-  Family Educational Rights and Privacy Act                                                 Audit and Evaluation Rules (Privacy Technical Assistance Center, 2017)
-  Workforce Innovation and Opportunity Act (Final rule)                                     <https://www.doleta.gov/wioa/about/final-rules/>
-  Joint Guidance on Data Matching to Facilitate WIOA Performance Reporting and Evaluation   <https://www2.ed.gov/policy/gen/guid/fpco/pdf/final-ferpa-tegl-report.pdf>
-  Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014           <https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf>
-
+|Law or Administrative Regulation|Document|
+|------------------------|------------------------|
+|Family Educational Rights and Privacy Act|Audit and Evaluation Rules [@privacytechnicalassistancecenter2017]|
+|Workforce Innovation and Opportunity Act (Final rule)|<https://www.doleta.gov/wioa/about/final-rules/>|
+|Joint Guidance on Data Matching to Facilitate WIOA Performance Reporting and Evaluation|<https://www2.ed.gov/policy/gen/guid/fpco/pdf/final-ferpa-tegl-report.pdf>|
+|Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014|<https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf>|
 Table: (\#tab:oldatable3) Important Legal Documents to Review for the Research Community
 
 **Formal governance process**
