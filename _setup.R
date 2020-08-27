@@ -39,7 +39,6 @@ for ( dir in list(datadir,programdir,figures)){
 
 source(file.path(programdir,"libraries.R"))
 
-
 #
 #Knitr plot output folder to not break github.io
 #
@@ -53,3 +52,7 @@ knitr::opts_chunk$set(message = FALSE)
 
 config <- config::get()
 
+# Source programs used by all chapters
+
+source(file.path(programdir,"authors.R"))
+source(file.path(programdir,"colorize.R"))

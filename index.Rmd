@@ -1,5 +1,5 @@
 ---
-title: "Using Administrative Data for Research and Evidence-based Policy - A Handbook"
+title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 site: bookdown::bookdown_site
@@ -9,7 +9,12 @@ bibliography: [Sloan-JPAL.bib,packages.bib,ideahandbook.bib]
 link-citations: yes
 github-repo: labordynamicsinstitute/idea-handbook
 description: This is the handbook
+always_allow_html: true
 ---
+
+```{r setup,include=FALSE}
+source("_setup.R",echo=FALSE)
+```
 
 # Abstract {-}
 
@@ -43,8 +48,4 @@ This Handbook intends to inform Data Providers and researchers on how to provide
 
 ```{block, type='rmdwarning'}
 This document is under development!
-```
-
-```{r setup,include=FALSE}
-source("_setup.R",echo=FALSE)
 ```
