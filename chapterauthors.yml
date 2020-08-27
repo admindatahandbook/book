@@ -7,3 +7,10 @@ default:
   security:
     - Jim Shen
     - Lars Vilhuber
+  sfusd:
+    - Moonhawk Kim
+    - Jim Shen
+    - Laura Wentworth
+    - Norma Ming 
+    - Michelle Reininger
+    - Eric Bettinger
