@@ -27,17 +27,3 @@
 ```{r echo=FALSE, out.width='100%'}
 knitr::include_graphics('./assets/olda/appendixb.png')
 ```
-
-[^1]: The original research team that wrote the concept paper to the State of Ohio included Randall Olsen (Professor Emeritus of Economics, OSU) and Kathryn Sullivan (Former Director, Battelle Center for Mathematics and Science Education Policy, John Glenn College of Public Affairs, OSU). Sullivan subsequently went on to lead the National Oceanic and Atmospheric Administration (NOAA) under President Obama, and Olsen ran the National Longitudinal Surveys for the Department of Labor (DOL) for over 25 years. At the State of Ohio, the original partnership included the Ohio Departments of Education, Higher Education, and Job and Family Services.
-
-[^2]: For an example of simulation work using Ohio data, see our project on infant mortality. [@hosseinichimeh2017]
-
-[^3]: The Ohio Revised Code section on the Education Management Information System describes the system and its legal basis (ORC, Chapter 3301-14).
-
-[^4]: Ohio Department of Job and Family Services (2010). Ohio Workforce Data Quality Initiative Proposal (pp. 1)
-
-[^5]: Ohio State University, Ohio University, University of Cincinnati, Wright State University, and Case Western Reserve University were all partners in the Race to the Top Proposal, as well as a number of nonprofit organizations.
-
-[^7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
-
-[^8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)

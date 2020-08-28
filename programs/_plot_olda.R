@@ -44,7 +44,7 @@ oldatable1<-function(){
 oldat2data <- data.frame(
   study = c("Program evaluations",
             "Descriptive and multivariate studies"),
-  title = c("* Wage Pathway Evaluation Study [@hawley2019]\ \n* Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]\ \n* GEAR UP Evaluation[^8]",
+  title = c("* Wage Pathway Evaluation Study [@hawley2019]\ \n* Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]\ \n* GEAR UP Evaluation[^olda8]",
             "* College Credit Plus [@harlow2018]\ \n* Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]"))
 
 oldatable2<-function(){
