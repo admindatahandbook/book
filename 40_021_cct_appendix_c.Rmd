@@ -1,0 +1,68 @@
+### Appendix C: Core metadata elements for municipal datasets (June 2020)
+
+These are the metadata elements that are required by general data users in establishing what data exists, how it can be accessed, and potential uses of the data. These are the minimum requirements for adding a dataset to the municipal data catalog.
+
+```{r, echo=F}
+cctapptabdata<- data.frame(
+  element = c("Unique ID",
+              "Dataset Name",
+              "Dataset Description",
+              "Dataset Quality",
+              "Update Frequency",
+              "Data Access Rights",
+              "Restricted Reason",
+              "Data Format",
+              "Data Steward",
+              "DS/TR Branch",
+              "DS/TR Department",
+              "DS/TR Directorate",
+              "Data Contact",
+              "Data Custodian",
+              "Host System ID",
+              "Spatial Coverage",
+              "Temporal Coverage"),
+  description = c("Unique ID for dataset",
+                  "A name given to the dataset",
+                  "A summary of the dataset, including contents and usage by CCT",
+                  "Subjective assessment of dataset quality",
+                  "Frequency with which the data are updated in the dataset. Helps researcher understand how often the content is likely to be changed and whether it might be dependent upon a regular event, such as an annual budgetary process",
+                  "Classification of the dataset in terms of access",
+                  "To be completed if the dataset is classified as Restricted; Indicates the reason for restricting access",
+                  "Provides an indication of the interoperable structure of the data as reflected by the primary file format in which the system exports data",
+                  "Indicates the individual who assumes business accountability for the dataset in relation to aspects such as access, quality, integrity, and completeness",
+                  "Indicates the organizational unit (branch) of the data steward",
+                  "Indicates the organizational unit (department) of the data steward",
+                  "Indicates the organizational unit (directorate) of the data steward",
+                  "Indicates the official who works most closely with, and can best provide additional information about, the data and metadata",
+                  "Indicates the official who is responsible for the technical management of the data (e.g., the hosting and serving of the data)",
+                  "Unique ID of the application in which the data are stored (primary/source system)",
+                  "Indicates areas for which data are recorded",
+                  "Indicates the range of time for which data are recorded"),
+  notes = c("",
+            "Should be short but adequately reflect to what the content of the dataset relates",
+            "Should include purpose/usage of the dataset and how the data is sourced/acquired",
+            "Should indicate specific gaps or concerns",
+            "Historical (not updated), Event Based",
+            "Open Public, Internal Open, Internal Restricted, Secret",
+            "Personal Information, Security",
+            "Examples include: CSV, Relational DB, Excel, Word, PDF, Text, MP4, MPEG",
+            "Should be a person who has sufficient authority to authorize decisions in relation to the management of, and access to, the dataset; if the dataset is sourced from an external organization, the data steward should be from the department primarily responsible for obtaining the data on behalf of CCT",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Entire city or subareas; Should also indicate the lowest spatial unit at which the data can be presented/analyzed",
+            "Specific dates or intervals when data were recorded; Earliest and latest dates for which data were recorded"))
+  
+  
+  cctappendixtable<-function(){
+  pander::pander(cctapptabdata,
+                 split.cells = c(15,25,25),
+                 justify = 'left',
+                 caption = 'asdfafas')
+  }
+ 
+   cctappendixtable()
+```
