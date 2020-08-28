@@ -61,7 +61,7 @@ cctapptabdata<- data.frame(
   pander::pander(cctapptabdata,
                  split.cells = c(15,25,25),
                  justify = 'left',
-                 caption = 'asdfafas')
+                 col.names=c("Element Name","Description","Notes"))
   }
  
    cctappendixtable()
