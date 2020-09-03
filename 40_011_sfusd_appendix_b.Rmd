@@ -117,6 +117,10 @@ authorization by SFUSD, and Stanford University shall not disclose to Stanford R
 
 **L. PARTY SIGNATURES TO THE AGREEMENT**
 
+  ------------------------------------------- -------------------------
+  For SAN FRANCISCO UNIFIED SCHOOL DISTRICT   For STANFORD UNIVERSITY
+  ------------------------------------------- -------------------------
+
 **ATTACHMENT A: SPECIFIC RECORDS AND DATA ELEMENTS**
 
 *Please specify:*
