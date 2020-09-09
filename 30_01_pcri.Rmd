@@ -132,14 +132,14 @@ As seen in Table \@ref(tab:pcritable2) below, the vast majority (82 percent) of 
 
 |State|Percentage|
 |------------------------|------------------------|
-|Deleware|82.0%|
-|California|00.0%|
-|Georgia|1.0%|
-|Washington|1.0%|
-|Texas|0.7%|
-|Colorado|0.7%|
-|Other States|4.6%|
-Table: (\#tab:pcritable2) Breakdown of state of incorporation of the 622 venture-backed portfolio companies in random sample 1
+| Deleware | 82.0% |
+| California | 10.0% |
+| Georgia | 1.0% |
+| Washington | 1.0%|
+| Texas | 0.7% |
+| Colorado | 0.7% |
+| Other States | 4.6% |
+Table: (\#tab:pcritable2) Breakdown of state of incorporation of the 622 venture-backed portfolio companies
 
 Other states, such as New York, accept orders by mail. In the case of New York, a form must be filled out for each request. The cost is US\$5 for each plain copy of a document. Processing takes ten to twelve business days, not including shipping, and the copies are sent thereafter. For an unusually large order, arrangements can be made in advance, but the work is still performed on a first-come, first-serve basis. For other states, the ||**CoIs**|| are usually available online for no cost. Thus, the PCRI can access the business entity database for those states (e.g., California and Massachusetts) and download copies of the documents.
 
