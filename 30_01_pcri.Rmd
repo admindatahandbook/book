@@ -80,7 +80,7 @@ The commercial sources include the Emerging Markets Private Equity Association (
 
 
 |Vendor|Number of Distinct private Capital Firms|
-|------------------------|------------------------|
+|:------------------------:|:------------------------:|
 |EMPEA|2,964|
 |NYPPEX|6,100|
 |Thomson Reuters|11,491|
@@ -131,7 +131,7 @@ Based on consultation with academics interested in ||**CoIs**|| and colleagues a
 As seen in Table \@ref(tab:pcritable2) below, the vast majority (82 percent) of companies in the database are registered in Delaware, which has been the focus of most of our efforts. To obtain documents for corporations registered in Delaware, order forms must be filled out and submitted online. Delaware charges US\$10 for the first page of a document and US\$2 for each additional page. On average, one document costs around US\$30 dollars, but sometimes a single document could cost up to hundreds of dollars. On average, the total cost to obtain all the documents for one company is approximately US\$125. In the case of Delaware, a hard copy of a ||**CoI**|| arrives within several weeks of submitting a request.
 
 |State|Percentage|
-|------------------------|------------------------|
+|:------------------------:|:------------------------:|
 | Deleware | 82.0% |
 | California | 10.0% |
 | Georgia | 1.0% |
