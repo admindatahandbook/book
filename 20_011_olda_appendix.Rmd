@@ -1,0 +1,29 @@
+### Appendix
+
+#### Resources and Dashboards {-}
+
+**Resources**
+
+[The Ohio Longitudinal Data Archive Project Page](https://chrr.osu.edu/projects/ohio-longitudinal-data-archive)
+
+[Ohio Analytics (State of Ohio Access)](http://www.ohioanalytics.gov/)
+
+[Ohio Education Research Center](https://oerc.osu.edu/)
+
+[Bibliography](https://www.chrr.ohio-state.edu/content/olda_bib/olda_bib.html)
+
+[Metadata Link](https://www.chrr.ohio-state.edu/investigator/pages/search)
+
+**Dashboards**
+
+[Workforce Success Measures](https://workforcesuccess.chrr.ohio-state.edu/)
+
+[Workforce Supply and Demand Projections](https://workforcedatatools.chrr.ohio-state.edu/home)
+
+[Central Ohio Compact Dashboard](https://compact.chrr.ohio-state.edu/)
+
+#### Case Study Images (Workforce Success Measures) {-}
+
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('./assets/olda/appendixb.png')
+```

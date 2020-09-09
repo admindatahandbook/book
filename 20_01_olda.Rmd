@@ -11,7 +11,7 @@ The ||Ohio Longitudinal Data Archive|| (OLDA) is a collaborative arrangement bet
 
 The OLDA is an example of long-term partnerships between state government and research communities. The data system has increased its holdings to include longitudinal micro-data from education, labor, housing, and disability services. Data are made available through a secure platform. The entire system is governed by a memorandum of understanding that is renegotiated every two years.
 
-The initial idea for the data system emerged in 2007 out of a partnership between faculty at the university, which resulted in an MOU giving OSU access to state data.[^1] The OLDA is a linked to a college research center, the [Ohio Education Research Center]([www.oerc.osu.edu](http://www.oerc.osu.edu/)) (OERC). The OERC is a policy research and evaluation unit at the Glenn College and conducts contract research with state and local government. The OLDA and OERC are actively used at Ohio State University in teaching education policy, data sciences, and simulation and modeling.[^2]
+The initial idea for the data system emerged in 2007 out of a partnership between faculty at the university, which resulted in an MOU giving OSU access to state data.[^olda1] The OLDA is a linked to a college research center, the [Ohio Education Research Center]([www.oerc.osu.edu](http://www.oerc.osu.edu/)) (OERC). The OERC is a policy research and evaluation unit at the Glenn College and conducts contract research with state and local government. The OLDA and OERC are actively used at Ohio State University in teaching education policy, data sciences, and simulation and modeling.[^olda2]
 
 The OLDA is broadly used to conduct research into outcomes of education and training, with additional foci on human services, housing, and health care as need arises. The core data holdings from the wage records and all public education and higher education providers enable researchers to answer critical questions such as (1) what are the employment outcomes of higher education, (2) what kinds of industries are growing or shrinking, and (3) how does employment depend on major or credential?
 
@@ -21,21 +21,19 @@ The OLDA was started with federal grants from the US Departments of Labor and Ed
 
 After the core federal funding ended, the OLDA has persisted through a combination of funding from state agencies, federal research contracts, and private foundation grants. The operating budget on an annual basis is between US\$1.5 to 2 million. We have approximately twelve full-time employees currently, including three research scientists, database administrators, and policy or evaluation staff.
 
-
-
 ### Introduction
 
 #### Motivation and Background
 
-**Historical background on use of administrative data in Ohio**
+##### Historical background on use of administrative data in Ohio {-}
 
-State agencies revised the administrative code to develop longitudinal data systems over time. As education organizations (e.g., schools or colleges) in the 1990s moved to using databases to manage regular business---such as registration, course enrollment, or testing---state agencies supervising these schools developed the data systems to help schools and universities carry out the day-to-day work. During these years, the key data systems for education, including the Education Management Information System, the Adult Workforce Education Data System, the Adult Basic Education Data System, and the Higher Education Information System were formally developed to capture data submitted by individual education organizations. These data systems were developed by agencies and often under contract with an external consulting firm. The legal basis for these data systems came from Ohio Revised Code.[^3]
+State agencies revised the administrative code to develop longitudinal data systems over time. As education organizations (e.g., schools or colleges) in the 1990s moved to using databases to manage regular business---such as registration, course enrollment, or testing---state agencies supervising these schools developed the data systems to help schools and universities carry out the day-to-day work. During these years, the key data systems for education, including the Education Management Information System, the Adult Workforce Education Data System, the Adult Basic Education Data System, and the Higher Education Information System were formally developed to capture data submitted by individual education organizations. These data systems were developed by agencies and often under contract with an external consulting firm. The legal basis for these data systems came from Ohio Revised Code.[^olda3]
 
 The ||unemployment insurance wage record|| system controlled by the Ohio Department of Job and Family Services pre-dated the OLDA and reflects earlier federal efforts. The legal foundation of the current wage record system is based in the Federal Unemployment Tax Act of 1937, which set up a federal tax to cover unemployed workers. As part of the tax, states were asked to build (over time) a way of reporting earnings on a quarterly basis. Statute at the federal level currently establishes the framework for employers to report wage records as part of the administration of Unemployment Insurance (Workforce Information Council, 2014).
 
 The motivation for building newer research databases in each of these government agencies varies. In the 1990s, government experienced an expansion of technology. IT systems were being used more broadly as states, such as Florida, built database systems to manage key administrative data (e.g., education data). Many states also created data systems that required local schools or universities to submit administrative data using a planning schedule, thereby building the local capacity for data systems. A second major reason for expanding data systems was an increasing demand from researchers for unit record data. As awareness of administrative data became more widespread in the 1980s and 1990s, faculty and professional researchers increasingly requested confidential micro-data from states [@borus1982; @pfeiffer1998; @stevens1989; @stevens2012].
 
-**University role in building the data system**
+##### University role in building the data system {-}
 
 OSU worked with the Department of Job and Family Services on a periodic basis between 1995 and 2010 to conduct studies using wage records in combination with a wide range of other data files, including those from Aid for Families with Dependent Children and Workforce Investment Act programs [@centerforhumanresourceresearch2001]. The increase in data use for research purposes was directly related to federal policy changes. For example, the US Department of Labor established the Administrative Data Research and Evaluation Project (ADARE) for states to collaborate on research and evaluation projects. The ADARE states, including Ohio, worked together to improve access to labor, training, and education data among the research community [@stevens2012].
 
@@ -45,17 +43,17 @@ Both of these activities, legal and technical, help to sharpen one's understandi
 
 The legislative process, including the biennial operating and capital budgets in Ohio, creates regular demand for research using state data. In addition to regular demand for data on the employment outcomes of education, the legislature and executive branch frequently demand specific reports on a wide range of topics that are mandated by law. There are exceptions, but the majority of time, research projects are requested and delivered in one- or two-year cycles. This time limited nature means that the work that state agencies request from Ohio universities tend to be short-term and related to constantly changing state policy priorities. For example, the state will often request a report on short-term employment outcomes because it can show results before the next budget is written as opposed to initiating a long-term study.
 
-**Role of targeted federal funding in supporting use of administrative data**
+##### Role of targeted federal funding in supporting use of administrative data {-}
 
-OSU worked with the state to build the OLDA to help increase access to administrative data for research purposes. The university conducted research on an ad hoc basis between 1995 and 2010. Several of these projects relied on data from across institutions as well as different state agencies. For example, in 2002 to 2003, the state commissioned a study of the outcomes of adult workforce education [@hawley2003; @hawley2003b; @hawley2005]. In 2007, the state also asked for a study of developmental education [@hawley2013; @hawley2017]. In both cases the university received data on an ad hoc basis, straining both the technical systems to ensure security for private student records and the legal frameworks in Ohio. OSU's legal staff worked directly with the Ohio Attorney General's Office.
+OSU worked with the state to build the OLDA to help increase access to administrative data for research purposes. The university conducted research on an ad hoc basis between 1995 and 2010. Several of these projects relied on data from across institutions as well as different state agencies. For example, in 2002 to 2003, the state commissioned a study of the outcomes of adult workforce education [@hawley2003; @hawley2003a; @hawley2005]. In 2007, the state also asked for a study of developmental education [@hawley2013; @hawley2017]. In both cases the university received data on an ad hoc basis, straining both the technical systems to ensure security for private student records and the legal frameworks in Ohio. OSU's legal staff worked directly with the Ohio Attorney General's Office.
 
 The ad hoc projects built some confidence among the researchers at the university and the state levels. OSU received the extracted data from the agency data systems from two separate longitudinal data systems independently. Subsequently, the agencies provided these data extracts to the research team. At Ohio State, the team created the technical approach to merging state data, doing probabilistic matching, and standardizing data reporting rules. Researchers at other ADARE institutions, including the Upjohn Institute and the University of Missouri, were very important resources for each other [@stevens2012].
 
-The ||Workforce Data Quality Initiative|| (WDQI) provided funding for the establishment of the OLDA longitudinal data system in Ohio. Ohio's application for first round of the WDQI was submitted in August 2010, leading to six years of direct funding from the USDOL for Ohio to build a state longitudinal data system. That original proposal was a collaborative effort between the Ohio Department of Job and Family Services, the Ohio Board of Regents, and OSU. The proposal declared that the team would "...aid the State of Ohio to incorporate workforce information into longitudinal data systems, to help follow individuals through school, into and through their work life."[^4]
+The ||Workforce Data Quality Initiative|| (WDQI) provided funding for the establishment of the OLDA longitudinal data system in Ohio. Ohio's application for first round of the WDQI was submitted in August 2010, leading to six years of direct funding from the USDOL for Ohio to build a state longitudinal data system. That original proposal was a collaborative effort between the Ohio Department of Job and Family Services, the Ohio Board of Regents, and OSU. The proposal declared that the team would "...aid the State of Ohio to incorporate workforce information into longitudinal data systems, to help follow individuals through school, into and through their work life."[^olda4]
 
-This federal funding was dramatically expanded after the State of Ohio hired OSU to build the Ohio Education Research Center as a deliverable for the ||Race to the Top|| Project (RTTT) in 2012. The RTTT proposal was delivered in January 2012 and included a deliverable to expand the ||Ohio Longitudinal Data Archive|| to include K12 education data. There were several features of this proposal that dramatically increased research use of the administrative data in Ohio. First, almost all doctoral granting institutions in the State of Ohio were collaborators in the original proposal.[^5] Second, ||Race to the Top|| required a prodigious number of independent research and evaluation studies that made use of administrative data between 2012 and 2017. The Ohio Education Research Center [website](www.oerc.osu.edu) maintains an archive of research studies conducted under the ||Race to the Top|| project.
+This federal funding was dramatically expanded after the State of Ohio hired OSU to build the Ohio Education Research Center as a deliverable for the ||Race to the Top|| Project (RTTT) in 2012. The RTTT proposal was delivered in January 2012 and included a deliverable to expand the ||Ohio Longitudinal Data Archive|| to include K12 education data. There were several features of this proposal that dramatically increased research use of the administrative data in Ohio. First, almost all doctoral granting institutions in the State of Ohio were collaborators in the original proposal.[^olda5] Second, ||Race to the Top|| required a prodigious number of independent research and evaluation studies that made use of administrative data between 2012 and 2017. The Ohio Education Research Center [website](www.oerc.osu.edu) maintains an archive of research studies conducted under the ||Race to the Top|| project.
 
-**Lessons from the establishment of the OLDA**
+##### Lessons from the establishment of the OLDA {-}
 
 There are some lessons from this story that are relevant to other states attempting to build integrated data systems. Federal money can be transformative, because it provides scarce resources in moments where radical technical and administrative change is scary. It is natural to think federal financial support is mostly used to pay staff and buy technology. However, the funding can also help convince skeptical senior staff in state government. This research has found, at critical junctures in making arguments to link confidential microdata, that states will often follow the lead of federal agencies. One example of this is states such as Ohio explicitly changed state law to enable them to receive funding under ||Race to the Top||. This policy action at the state level was necessary to ensure that school funding was provided under the American Recovery and Reinvestment Act ARRA mechanism.
 
@@ -81,7 +79,7 @@ oldatable1()
 
 The uses of the data resources can be separated into three distinct areas: research use, government use, and training use. Initially, there are some similarities across the data uses. These three data users all make use of the OLDA for both analytical and evaluative reasons. For example, researchers most often wish to make use of the data for explicit analysis of the outcomes of Ohio programs, such as the impact of higher education on employment.
 
-**Research use**
+##### Research use {-}
 
 The research uses of the OLDA depend on the programs that contribute microdata. These data allow researchers to analyze the impacts of state or federal policies on economic or educational outcomes. The specific data a researcher acquires and then uses depends on the analysis and the questions proposed.
 
@@ -101,13 +99,13 @@ Table \@ref(tab:oldatable2) provides example titles from approved research proje
 
 The following case study provides an example of research use under the OLDA. One of the data resources the OLDA maintains is the Registered Apprenticeship Partners Information Data System (RAPIDS) file. This file contains data on all individuals from Ohio who enrolled in registered apprenticeship as covered by the US Department of Labor (DOL). Research teams at OSU have received approval from the State of Ohio to employ RAPIDS data to examine the employment outcomes of apprenticeships. In 2012, the Ohio State University used this data as part of a ten-state study of apprenticeships coordinated by Mathematica [@reed2012]. During this project, a doctoral student also extended this work with the RAPIDS data in Ohio [@hsu2013]. In 2018, a postdoctoral researcher at the Ohio State University received funding from the DOL to conduct work on the employment outcomes of the registered apprenticeship program.
 
-The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the ||Unemployment Insurance Wage Records|| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^7]
+The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the ||Unemployment Insurance Wage Records|| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^olda7]
 
 ```{r oldatable2, echo=FALSE}
 oldatable2()
 ```
 
-**Government use**
+##### Government use {-}
 
 The OLDA makes no distinction between research and government use of data from a data access perspective. Researchers based in government apply to use data through the same procedures as researchers in universities. While there are no formal differences in application, there are some dissimilarities in terms of the kinds of data that government requests and the projects they propose. Government officials tend to propose projects that are strongly related to public policies in state or local government. For example, researchers from Ohio Housing Finance Agency (OHFA) are currently collaborating with researchers at the Ohio State University on an experimental analysis of housing supports on employment. A second example focuses on the workforce data tools dashboard. In collaboration with the Ohio Department of Job and Family Services, researchers have built a dashboard to compare supply and demand on workers in the state.
 
@@ -125,7 +123,7 @@ The investigator is a resource for experienced researchers. With this system res
 
 Data are also made useable because the research team provides guided support for applicants. When an individual proposes a research project or has trouble with data use, individual researchers can contact the staff for support.
 
-**Metadata**
+##### Metadata {-}
 
 The metadata are published in an open application on the center website. Access is through a guest account or a designated user [account](https://www.chrr.ohio-state.edu/investigator/pages/login). The metadata include all files that have been ingested and documented, up to and including wage record files, K12 education data, and higher education enrollments. Technically, the metadata include all variable names, values, and counts or other summary statistics for variables. It is possible to learn, for example, what is the cohort size of each group of high school graduates over time in Ohio. The metadata also include a sophisticated search feature, allowing identification of variables and types of data, including created variables.
 
@@ -155,7 +153,7 @@ Through a study of the employment outcomes of individuals enrolled in welfare, r
 |Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014|<https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf>|
 Table: (\#tab:oldatable3) Important Legal Documents to Review for the Research Community
 
-**Formal governance process**
+##### Formal governance process {-}
 
 The OLDA is governed by a formal memorandum of understanding (MOU) and a data sharing agreement that is completed on an annual or biannual basis. This MOU is initiated by one of the member agencies (Ohio Department of Job and Family Services), signed by all the remaining agencies (Education, Higher Education, Housing Finance, and Opportunities for Ohioans with Disabilities), and thereafter by the Ohio State University. The overarching legal agreement establishes three governance committees that oversee the rules of the MOU. The Policy Council governs larger questions about how the data system can be used and includes representatives from the senior management of all of the executive agencies as well as the governor's office. The data stewards govern specific data systems included in the OLDA and serves as a technical resource for the analysts proposing and completing projects. The Governing Committee is a single point of contact between the center director and the lead agency (ODJFS).
 
@@ -225,7 +223,7 @@ Outreach was also supported by presentations at national meetings, such as the N
 
 #### Metrics of Success
 
-**Overall qualitative outcomes**
+##### Overall qualitative outcomes {-}
 
 There are a relatively small number of research centers with state administrative data in the United States. There are two models of administrative data centers, States such as Kentucky maintain an administrative data center inside state government. In contrast, centers such as the Indiana Business Research Center and OLDA are maintained within colleges or universities. Therefore, grading the progress made is difficult.
 
@@ -235,13 +233,13 @@ A second measure of organizational capacity might be staffing or longevity. In O
 
 Organizational success also requires consistent political support. Ohio has had over ten years of consistent political leadership on data and workforce developing, leading to strong foundations for research work in collaboration with state and local government. What seems important is that government must see data as a resource to improve outcomes as opposed to something to limit access to.
 
-**Metrics**
+##### Metrics {-}
 
 OLDA researchers monitor a number of metrics (somewhat informally), including (1) the number of data sets provided, (2) the number of projects completed, and (3) the number of websites and dashboards. The following are examples of recent accounting on these metrics.
 
-*Datasets***.** The OLDA maintains data from five different state agencies. The newest one was added in 2017 and the oldest one prior to 1999. Within each agency the number of data sets expands each year as the agencies increase holdings. For example, the Ohio education data began in 2001 and now includes data through 2019. It is updated annually. The LMI workforce data are added every quarter and started in 1995 with the unemployment wage record data. The volume of the data sets is significant, more so because some of the files have over 100,000 variables rather than because of the volume of storage OLDA maintains.
+*Datasets*. The OLDA maintains data from five different state agencies. The newest one was added in 2017 and the oldest one prior to 1999. Within each agency the number of data sets expands each year as the agencies increase holdings. For example, the Ohio education data began in 2001 and now includes data through 2019. It is updated annually. The LMI workforce data are added every quarter and started in 1995 with the unemployment wage record data. The volume of the data sets is significant, more so because some of the files have over 100,000 variables rather than because of the volume of storage OLDA maintains.
 
-*Projects completed***.** Research output includes 28 published studies in the last five years. These include academic articles, working papers, and presentations submitted to the research center. The list is maintained in a [bibliography](https://www.chrr.ohio-state.edu/content/olda_bib/olda_bib.html) and is not inclusive of in-progress work or work that has been submitted to the center but not yet reviewed or finalized.
+*Projects completed*. Research output includes 28 published studies in the last five years. These include academic articles, working papers, and presentations submitted to the research center. The list is maintained in a [bibliography](https://www.chrr.ohio-state.edu/content/olda_bib/olda_bib.html) and is not inclusive of in-progress work or work that has been submitted to the center but not yet reviewed or finalized.
 
 *Dashboards*. The OLDA team works extensively on supporting state and local government in Ohio with dashboards and scorecards. The team has built several that are maintained every year for over five years and some that are more recent. OLDA keeps website hit traffic for these dashboards to examine the location and overall use of the dashboards in the state.
 
@@ -249,44 +247,16 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 Joshua Hawley is a professor in the John Glenn College of Public Affairs at the Ohio State University (OSU). He also serves in leadership roles at two research centers of OSU: director of the Ohio Education Research Center at the Glenn College and Associate Director for the Center for Human Resource Research (CHRR). The focus of both centers is state level administrative data. Since approximately 2009 the centers have partnered with the State of Ohio to store Ohio administrative records. The primary project for the Ohio Analytics Partnership is the Ohio Longitudinal Data Archive. Professor Hawley currently serves as the lead faculty for this effort. In addition, he teaches classes in Education and Workforce Development policy and Data Sciences.
 
-### Appendix A: Resources and Dashboards
+[^olda1]: The original research team that wrote the concept paper to the State of Ohio included Randall Olsen (Professor Emeritus of Economics, OSU) and Kathryn Sullivan (Former Director, Battelle Center for Mathematics and Science Education Policy, John Glenn College of Public Affairs, OSU). Sullivan subsequently went on to lead the National Oceanic and Atmospheric Administration (NOAA) under President Obama, and Olsen ran the National Longitudinal Surveys for the Department of Labor (DOL) for over 25 years. At the State of Ohio, the original partnership included the Ohio Departments of Education, Higher Education, and Job and Family Services.
 
-**Resources**
+[^olda2]: For an example of simulation work using Ohio data, see our project on infant mortality. [@hosseinichimeh2017]
 
-[The Ohio Longitudinal Data Archive Project Page](https://chrr.osu.edu/projects/ohio-longitudinal-data-archive)
+[^olda3]: The Ohio Revised Code section on the Education Management Information System describes the system and its legal basis (ORC, Chapter 3301-14).
 
-[Ohio Analytics (State of Ohio Access)](http://www.ohioanalytics.gov/)
+[^olda4]: Ohio Department of Job and Family Services (2010). Ohio Workforce Data Quality Initiative Proposal (pp. 1)
 
-[Ohio Education Research Center](https://oerc.osu.edu/)
+[^olda5]: Ohio State University, Ohio University, University of Cincinnati, Wright State University, and Case Western Reserve University were all partners in the Race to the Top Proposal, as well as a number of nonprofit organizations.
 
-[Bibliography](https://www.chrr.ohio-state.edu/content/olda_bib/olda_bib.html)
+[^olda7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
 
-[Metadata Link](https://www.chrr.ohio-state.edu/investigator/pages/search)
-
-**Dashboards**
-
-[Workforce Success Measures](https://workforcesuccess.chrr.ohio-state.edu/)
-
-[Workforce Supply and Demand Projections](https://workforcedatatools.chrr.ohio-state.edu/home)
-
-[Central Ohio Compact Dashboard](https://compact.chrr.ohio-state.edu/)
-
-### Appendix B: Case Study Images (Workforce Success Measures)
-
-```{r echo=FALSE, out.width='100%'}
-knitr::include_graphics('./assets/olda/appendixb.png')
-```
-
-[^1]: The original research team that wrote the concept paper to the State of Ohio included Randall Olsen (Professor Emeritus of Economics, OSU) and Kathryn Sullivan (Former Director, Battelle Center for Mathematics and Science Education Policy, John Glenn College of Public Affairs, OSU). Sullivan subsequently went on to lead the National Oceanic and Atmospheric Administration (NOAA) under President Obama, and Olsen ran the National Longitudinal Surveys for the Department of Labor (DOL) for over 25 years. At the State of Ohio, the original partnership included the Ohio Departments of Education, Higher Education, and Job and Family Services.
-
-[^2]: For an example of simulation work using Ohio data, see our project on infant mortality. [@hosseinichimeh2017]
-
-[^3]: The Ohio Revised Code section on the Education Management Information System describes the system and its legal basis (ORC, Chapter 3301-14).
-
-[^4]: Ohio Department of Job and Family Services (2010). Ohio Workforce Data Quality Initiative Proposal (pp. 1)
-
-[^5]: Ohio State University, Ohio University, University of Cincinnati, Wright State University, and Case Western Reserve University were all partners in the Race to the Top Proposal, as well as a number of nonprofit organizations.
-
-[^7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
-
-[^8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)
+[^olda8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)
