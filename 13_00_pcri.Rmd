@@ -1,10 +1,10 @@
-## The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry
+# The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry
 
 ```{r, echo=FALSE}
 printauthor("pcri")
 ```
 
-### Summary
+## Summary
 
 The Private Capital Research Institute (PCRI) is a non-profit corporation that seeks to understand the fundamental economics of private capital.[^pcri2] A wide variety of forms of private capital are examined, including angel investors, venture capital and private equity organizations, and public providers of private capital (e.g., sovereign wealth funds).
 
@@ -16,9 +16,9 @@ The PCRI collects data from commercial data vendors as well as the private equit
 
 The PCRI databases are available to all academic researchers with a credible research agenda. Additionally, safeguarding PCRI's independence from outside influence is critically important. Thus, the PCRI only accepts funding from entities or individuals who recognize that the value of the PCRI's research and analysis depends on an analytically rigorous and unbiased process.
 
-### Introduction
+## Introduction
 
-#### Motivation and Background
+### Motivation and Background
 
 The level of interest in alternative investments, and private capital in particular (which encompasses both venture capital (VC) and private equity), has been intense over the past decade. This interest has stemmed from both investors' desires for attractive returns and the policy questions around this rapidly growing asset class.
 
@@ -46,7 +46,7 @@ The PCRI's ||**CoI**|| collection process mitigates these concerns. First, the P
 
 It is virtually impossible to pinpoint the exact size of the private equity industry or to verify the completeness of any dataset. However, the PCRI universe is one of the most comprehensive and complete databases on private capital funds and transactions.[^pcri6] The unique feature of the PCRI database is that it draws from multiple data sources, including the private capital firms themselves, several commercial data vendors, private capital associations, limited partners, and the PCRI's own research.
 
-#### Data Use Examples
+### Data Use Examples
 
 The PCRI databases are available for use by academic researchers for academic research purposes only. As of May 2020, over 25 academic researchers were using PCRI databases.
 
@@ -60,9 +60,9 @@ As mentioned, one of the primary objectives of the PCRI is to promote a better u
 
 - PCRI data was used in 2017 in the latest research on Smart Societies and [the accompanying *Harvard Business Review* article](https://sites.tufts.edu/digitalplanet/hbr-the-smart-society-of-the-future-doesnt-look-like-science-fiction/) of the Digital Planet initiative at the Fletcher School at Tufts University [@chakrovorti2017].[^pcri7] PCRI data helped form part of a benchmark that would assist policymakers to better identify their country's investment environment. The PCRI data are combined with several measures to provide a more complete view of what is actually happening in terms of investments, especially investments in technology.
 
-### Making Data Useable for Research
+## Making Data Useable for Research
 
-#### Collecting Data on the Private Capital Industry
+### Collecting Data on the Private Capital Industry
 
 The PCRI collects information on private capital firms, funds, portfolio companies, transaction data, and investment exits. In particular, the Institute focuses on buyouts, growth equity, and venture capital investing. One of the main strengths of the data collection strategy is that it relies on gathering data from multiple sources to mitigate sample selection biases. In the future, the PCRI would like to include more information on angel investments and sovereign wealth funds.
 
@@ -93,7 +93,7 @@ Table: (\#tab:pcritable1) Number of distinct private capital firms provided by s
 knitr::include_graphics('./assets/pcri/pcrifigure1.png')
 ```
 
-#### Processing of Data Received from Data Vendors or Primary Sources (LPs or GPs)
+### Processing of Data Received from Data Vendors or Primary Sources (LPs or GPs)
 
 The process of combining and cleaning the various data sources is an arduous task. At the PCRI, the research staff consists of one full-time director of research, two full-time research associates, and approximately six part-time undergraduate research assistants. Research associates work to understand, clean, and research the various data sources as well as to make those sources consistent and to develop a file-matching protocol. Part-time undergraduate research assistants help with name matching, researching missing data items, and manually collecting data.
 
@@ -114,7 +114,7 @@ The final consolidation stage is handled using a Python MySQL script. Wherever t
 The Python script then runs a SQL query that builds the Merged Files. The data are anonymized (i.e., names and other identifiers are removed). Lastly, these .csv files are converted to Stata data files in the CSV to DTA do-file and saved to the Uploaded Files folder where they are accessible to researchers.
 
 
-#### Collaboration for CoI Data Acquisition
+### Collaboration for CoI Data Acquisition
 
 In October 2018, we signed a memorandum of understanding with the Stanford Graduate School of Business (GSB) to collaborate with GSB Professor Ilya Strebulaev. The memorandum supports the development of a library of venture capital--backed firms' ||**CoIs**|| and related documents and a database of the information contained within these documents. Additionally, the memorandum encourages the diffusion of the library and database to academic researchers.
 
@@ -122,7 +122,7 @@ Using an agreed-upon methodology, the PCRI and Stanford GSB created an initial r
 
 The PCRI is currently working with the GSB to collect and code ||**CoIs**|| for a second random sample of 250 venture-backed companies. The Institute has created the list of companies for this sample and has received and processed half of the ||**CoIs**||. In addition to these two random samples created in collaboration with the GSB, the PCRI independently has collected ||**CoIs**|| for another 750 companies, including many unicorns. The final sample will contain almost 2,500 companies.
 
-#### Certificate of Incorporation Document Acquisition Process 
+### Certificate of Incorporation Document Acquisition Process 
 
 This section provides the details on the creation of the PCRI ||**Certificates of Incorporation (CoIs**)|| library. A ||**CoI**|| is a public legal document filed with the state in which the company is incorporated. It is essentially a license issued by a state government for a company to form a corporation. In addition, whenever a corporation receives private capital funding, an amended ||**CoI**|| is filed with the state in which it is registered. The availability of ||**CoIs**|| varies by state. Some states make this document available online. Other states require a written request and payment of a fee to obtain a copy [@masters2020].
 
@@ -145,17 +145,17 @@ Other states, such as New York, accept orders by mail. In the case of New York, 
 
 In most states, the Corporations Division of the Secretary of State\'s office handles business incorporations and related filings. In a handful of states, business registrations are handled by a different state agency. The United States Small Business Administration maintains a list of [state business registrars](https://www.sba.gov/business-guide/launch-your-business/register-your-business\#section-header-6) to help find the appropriate state agency. When the PCRI receives a hard copy of a ||**CoI**||, the file is scanned and loaded to be stored electronically. At this time, Delaware and some other states only provide hard copies of documents, making the ||**CoI**|| acquisition process more laborious.
 
-#### Metadata
+### Metadata
 
 Information about metadata is available in a PDF version of the [PCRI Data User Manual](http://privatecapitalresearchinstitute.org/images/news/pcri_manual_2\_4.pdf) on its website for use by its academic researchers. The PCRI has a staff dedicated to maintaining the PCRI databases. The Institute revises the databases annually to account for data updates from the data provider and then places updated researcher-accessible files in a designated folder for users to access. The PCRI data are stored as Stata data files. The manual provides a detailed description of the eight different data tables, specifically company, exit, fund, fund performance, fund quarterly cash flow, GP, investment, and deal tables. This reference also cites the location of the files and the size of each file (i.e., number of rows). Additionally, the manual catalogs the names of the different variables and the definitions contained within each table. Furthermore, the manual indicates whether a data item is a Primary Key or Foreign Key. This distinction provides the link between two tables, facilitating the merging of different data tables. Primary Keys are unique within a table, whereas Foreign Keys are not unique but link to another table. Since the PCRI does not permit users to look at the data, the Institute provides a small, artificial sample of each data table in the manual.
 
-### Legal and Institutional Framework
+## Legal and Institutional Framework
 
-#### Institutional Setup
+### Institutional Setup
 
 The PCRI is an independent non-profit organization, which seeks to provide a greater fact-based understanding of private capital's global impact. The PCRI is governed by a Practitioner Advisory Committee, which is comprised of experts in the private capital industry, and an Academic Advisory Committee, consisting of leading researchers in the field. Representing diverse affiliations, these two committees provide guidance on the data collection process and periodically review and provide advice on the administration, finances, and research program of the PCRI. A subcommittee of the Academic Advisory Committee meets to approve ||**proposals**|| from researchers requesting access to the PCRI databases. Projects are approved as long as they have a credible research agenda, are not for commercial purposes, and do not jeopardize the security of the data. The Practitioner Advisory Committee is not able to veto approved projects. A list of members of the [Practitioner Advisory Committee](http://privatecapitalresearchinstitute.org/advisory-committee.php) and [Academic Advisory Committee](http://www.privatecapitalresearchinstitute.org/academic-advisory-board.php) is available on the PCRI website.
 
-#### Legal Context for Data Use
+### Legal Context for Data Use
 
 One of the biggest challenges faced in the data collection effort was creating a standardized ||**licensing agreement**|| for all data sources, in particular for the private capital firms. By working closely with the PCRI's lawyers at Debevoise & Plimpton and a few prominent private capital firms, a standardized ||**licensing agreement**|| was developed. The agreement not only allowed the PCRI to obtain, use, and administer highly confidential data but also alleviated the major concerns (i.e., confidentiality and data security) of the private capital firms. The authors highlight some of the chief features of the Private Equity Sponsor Data Agreement (see Appendix B for the draft agreement). First, the data ||**licensing agreement**|| grants the PCRI a royalty-free, non-transferable license. Second, the PCRI is permitted to receive, store, reproduce, and combine the data. Third, since the PCRI is a project run by academics and for academics, the PCRI database is to be used exclusively for academic research rather than for any commercial purpose. In accordance with the ||**licensing agreement**||, the PCRI carefully reviews ||**research proposals**|| and monitors output files to ensure that data are being used appropriately. Additionally, as a primary objective of the PCRI is to promote unbiased, academic research, the ||**licensing agreement**|| mandates that the ||**data sponsors**|| would not be able to limit the areas of academic research. However, under the ||**licensing agreement**||, **||data sponsors||** can obtain a preview of working papers and are also given the option to be acknowledged for their contribution to the PCRI research effort. Lastly, the ||**licensing agreement**|| allows either party to terminate the agreement.
 
@@ -163,29 +163,29 @@ In cases where data disclosure harms from data sponsors, liability issues were a
 
 While the PCRI has been successful with private equity groups, venture capital organizations have been much more resistant to sharing information. Thus, with a grant from the Alfred P. Sloan Foundation, the PCRI is taking an alternative approach to obtain information for researchers to understand venture capital activity. As mentioned previously in the "Motivation and Background" section, the Institute has been developing a compilation (and an associated taxonomy) of ||**Certificates of Incorporation**|| over the past two years. Extremely detailed information on venture capital transactions is available in public filings called ||**Certificates of Incorporation ("CoI"s**)||, which are typically compiled by regulators in the state of the firms' incorporation. These corporate filings include important details on deal structure (i.e., the capital structure and key terms) as well as important valuation information. While this information is publicly available, the costs to obtain these documents are prohibitively expensive. For example, in some locations, a request for these documents must be made in person, and US\$1.00 to US\$2.00 is charged per page. As a parallel process, the PCRI is working to create a dataset containing the twenty to thirty (see Appendix C for a sample list of variables) most critical variables contained in these documents.
 
-#### Collaboration with the Census Bureau
+### Collaboration with the Census Bureau
 
 Over the past several years, the PCRI has been working with the ||**Census Bureau**|| team regarding ways in which the PCRI data could be integrated with the Longitudinal Business Database (LBD). In the spring of 2016, the PCRI signed a confidentiality agreement that allowed it to tie certain portfolio-company level data with the LBD in a way that would respect the various confidentiality restrictions on the government and PCRI data but greatly increase the usefulness to researchers. The agreement established between the ||**Census Bureau**|| and the PCRI allows for the sharing of specific PCRI data items, which include portfolio company name, location information, and a PCRI source code (PCRI Data). The purpose was to link the data to the ||**Census Bureau**|| Business Register. As of May 2020, one academic is using the ||**census**||-PCRI linked data to explore the effect of acquisitions of startups on their newly acquired employees.
 
-#### Legal Framework for Granting Data Access
+### Legal Framework for Granting Data Access
 
 Approved data users interested in using either PCRI data or the coded ||**CoI**|| data are required to sign a ||**data use agreement (DUA)**|| between both the PCRI and its data host, the ||**NORC**||. The contract is standard and has been vetted by a few users, but there is some flexibility for negotiation. If changes are made, they are reviewed extensively by the ||**NORC**|| legal staff and the PCRI. However, very few users have requested any changes. Data users are granted access for a term of one year; at the end of the term they are able to request an extension. Access to the data can be revoked if the ||**NORC**|| deems that any aspect of the ||**DUA**|| is violated. The ||**NORC**|| and PCRI reserve the right to ensure that the PCRI data are used in compliance with the agreement. The output is reviewed to ensure that it preserves the anonymity of the individual observations and that the analyses match the original intent of the ||**research proposal**||. Additionally, according to the ||**DUA**||, both the user and the ||**NORC**|| have the right to terminate the ||**DUA**|| without cause at any time. Currently, there is no cost to accessing the PCRI databases, as the fixed fee paid by the PCRI to the ||**NORC**|| accommodates a generous number of users.
 
 The PCRI maintains the ||**intellectual property (IP) rights**|| on the architecture, computing systems, and computing environment of the ||**data enclave**||, including the dataset and all other data, information, documents, programs, trade secrets, and confidential information. However, the PCRI does not assert ||**IP**|| rights on products created by the data user, such as research papers and independent data analyses.
 
-### Protection of Sensitive and Personal: The Five Safes Framework
+## Protection of Sensitive and Personal: The Five Safes Framework
 
-#### Safe Projects 
+### Safe Projects 
 
 Before obtaining access to the data, interested academic researchers are required to submit a two-to-three-page written ||**research proposal**||. This ||**proposal**|| must clearly state the objective of the project, the PCRI data that would be used in the study, and the research methodology. A subcommittee of the PCRI Academic Advisory Committee evaluates ||**research proposals**|| submitted to the PCRI. The subcommittee safeguards the data by ensuring that the ||**proposals**|| use the data for only academic research purposes. Users may not use the PCRI databases for commercial purposes. The review process typically takes less than a week and is free of charge. The PCRI is not required by the ||**DUA**|| to obtain consent from the data providers before approval of a research project.
 
 For researchers interested in gaining access to linked ||**census**||-PCRI data, the same protocol is used---researchers are required to submit a ||**research proposal**|| for approval by a subcommittee of the PCRI Research Advisory Committee. Again, the subcommittee reviews projects to ensure the safety of the data and that the data use is for only academic research purposes. For the combined data stored at the ||**Census**||, approved researchers would also need to follow the access protocol at the ||**Census**||.
 
-#### Safe People 
+### Safe People 
 
 Only approved users are granted access to the PCRI databases. The PCRI primarily accepts ||**research proposals**|| from academic researchers from accredited universities, not-for-profit research organizations, and research groups of government organizations. Academic researchers applying for access do not need to obtain special training to use the data. Additionally, to protect the confidentiality of the data, approved academic researchers must sign a ||**DUA**|| with the PCRI and the ||**NORC**||. Currently, the PCRI does not place a limit on the number of users that we are able to host.
 
-#### Safe Settings
+### Safe Settings
 
 The security of the PCRI data is paramount. The Institute's ability to obtain data from the various data vendors and private equity firms rests primarily on the ability to maintain the security and confidentiality of their data. The PCRI has designed a protocol that simultaneously allows academics to undertake high-quality research while protecting the confidentiality of the data provided by the ||**data sponsors**||. To this end, PCRI's first step was to host the PCRI databases at the ||**NORC**||, which has experience hosting highly sensitive federal (e.g., Medicare) and private sector data (e.g., hedge fund data used by federal investigators as part of the Financial Crisis Inquiry Commission). The PCRI initially explored creating its own platform on its own servers, but it was too costly to construct and maintain. As mentioned in the "Legal Framework for Granting Data Access" section, the PCRI and ||**NORC**||reserve the right to ensure that the PCRI data are used in compliance with the ||**DUA**|| agreement. Thus, privileges to access the data may be revoked if the ||**NORC**||deems that any aspect of the ||**DUA**|| is violated.
 
@@ -195,35 +195,35 @@ The ||**census**|| data typically can only be accessed at Federal Statistical Re
 
 For the ||**CoI**|| library, the PCRI has created a searchable database using SmartRoom, a content management platform, for researchers to view, but not download, the documents. The Institute does not charge for the use of this ||**CoI**|| library or the ultimate coded database that the Stanford GSB is creating. The cost to use the SmartRoom is about US\$10,000 per annum and varies depending on the number of users. The Institute choses to use this platform not only because of its security features but also its user-friendly interface.
 
-#### Safe Data 
+### Safe Data 
 
 To make the data safe, the PCRI databases are anonymized (i.e., data are de-identified), and only PCRI research staff have access to identified data. Furthermore, researchers cannot see the data as they are unable to print, browse, or outsheet the data. Researchers are only able to run queries and view the results of analyses.
 
 External datasets can be linked to the PCRI databases. Datasets can be uploaded to the ||**NORC**||platform, requiring a PCRI staffer to do the matching. Only in exceptional circumstances can data be downloaded from the servers and matched to an external database. For instance, in collaboration with the ||**Census Bureau**||, certain PCRI variables were linked to ||**census**|| data and then stored with the ||**Census Bureau**||. The ||**Census Bureau**|| assumes an obligation to use the PCRI data for only statistical purposes and requires maintaining data confidentiality.
 
-#### Safe Outputs 
+### Safe Outputs 
 
 The PCRI-||NORC||||DUA|| outlines how the PCRI data can be used. Essentially, the researchers can upload queries without "touching" the individual data entries. Even though the data are anonymized, the PCRI further protects the data by prohibiting the viewing of individual observations. The NORC helped us limit STATA so that only summarized outputs can be viewed provided there are at least 100 observations used in each analysis. Outputs can be downloaded off the ||NORC|| platform but must first be approved by a PCRI staff member. Furthermore, software program log files provide a paper trail of activity, which is monitored periodically by ||NORC||staff and PCRI to ensure that the data are being used for research purposes.
 
-### Data Life Cycle and Replicability
+## Data Life Cycle and Replicability
 
-#### Preservation and Reproducibility of Researcher-Accessible Files
+### Preservation and Reproducibility of Researcher-Accessible Files
 
 The PCRI periodically releases new versions of the databases. As of May 2020, the database is on Version 2.5. The versioning is based on content and, if necessary, structure updates. Each version is preserved and archived and can be made available upon request for replication purposes. When a new version is released, it is copied and uploaded to a separate folder for sharing on the ||**NORC**||data platform.
 
 Researcher-accessible files can be regenerated. The data are processed using a series of Python and Stata scripts to unpack raw data files from the various sources and to put them in a useable format. The PCRI receives new data feeds periodically and thus regenerates the data files annually.
 
-#### Preservation and Reproducibility of Researcher-Generated Files
+### Preservation and Reproducibility of Researcher-Generated Files
 
 Researcher-generated files are preserved within each researcher's directory/folder and are backed-up regularly. Files are not shared amongst the researchers unless a researcher gives permission subject to PCRI approval.
 
-#### Disposal of Data
+### Disposal of Data
 
 The PCRI is not required to delete data from data providers. Upon termination of any agreements, the PCRI would be required to purge the sponsor's data from future versions of the databases within a reasonable time frame. However, any previously approved researcher would continue to have access to the previously consolidated databases. Also, the ||**data sponsor**|| agreements could be reassigned to another non-profit such as another academic institution, provided the PCRI gives the ||**data sponsors**|| prior written notice.
 
-### Sustainability and Continued Success
+## Sustainability and Continued Success
 
-#### Outreach
+### Outreach
 
 As mentioned in the "Collecting Data on the Private Capital Industry" section, outreach to private equity sponsors is a slow process because each potential data provider is contacted individually. Moreover, these private equity firms are very wary of sharing data and need to have their legal departments review the data provider agreement, necessitating frequent communication between the parties. One benefit of participation that is highlighted to the **||data sponsors||** is that they would be able to obtain a preview of working papers and would be invited to attend PCRI conferences featuring the Institute's research.
 
@@ -241,23 +241,23 @@ A recap of some of the more recent dissemination activities is highlighted here:
 
 - On June 15, 2018, the PCRI and the Institute for Business Innovation (of the Haas School of Business at the University of California, Berkeley) co-sponsored a roundtable discussion on "New Models of Entrepreneurial Finance." Industry leaders (GPs and LPs) and academics were brought together to discuss new developments in early-stage (e.g., syndicated angel investments) and later-stage (e.g., direct investments by sovereign funds) financing, how venture groups are responding to increased competition, and what the implications are for entrepreneurs and society more generally.
 
-#### Revenue
+### Revenue
 
 The PCRI is a non-profit that relies entirely on grants and strategic partnerships to fund its endeavor. It currently receives funds from the Alfred P. Sloan Foundation and the HBS Private Capital Project.
 
 The PCRI does not charge a fee for the use of its databases as the fixed fee agreement with the ||**NORC**||allows for a certain number of users. If the maximum number of users is exceeded, there would be a charge to cover additional costs.
 
-#### Metrics of Success
+### Metrics of Success
 
 The PCRI gauges success on three fronts: (1) building a comprehensive database of private capital information; (2) sponsoring independent academic research on questions of relevant policy interest; and (3) arranging thought leadership forums that bring together academics, policy makers, regulators, investors, and industry practitioners to examine private capital's role in the economy.
 
 To date, the PCRI database contains global information on approximately 23,000 general partners, 44,000 funds, 141,000 portfolio companies, 432,000 investments, 229,500 private capital deals, and 36,000 private equity exits that are tied to deals. Given the strategy of combining data from multiple sources, this is one of the most comprehensive private capital databases currently available. As of May 2020, the PCRI has more than 25 active academic researchers utilizing the PCRI databases, resulting in several successful research papers submitted to academic journals.
 
-#### Final Thoughts
+### Final Thoughts
 
 An increasing share of economic activity today is taking place in settings that elude traditional federal data collection mechanisms or fail to capture the richest of the activity at work. Against this backdrop, economists are increasingly turning to private data. This chapter underscores the experience of the PCRI, specifically the process of creating a database to facilitate access to private equity information for academics to address the myriad major concerns regarding private data. While this effort is certainly a work in progress, hopefully the experience can guide researchers who want to address similar issues in other fields.
 
-### About the Authors
+## About the Authors
 
 Josh Lerner is the PCRI Director and the Head of the Entrepreneurial Management Unit and the Jacob H. Schiff Professor of Investment Banking at Harvard Business School. He graduated from Yale College with a special divisional major that combined physics with the history of technology. He worked for several years on issues concerning technological innovation and public policy in various settings, including the Brookings Institution, a public-private task force in Chicago, and Capitol Hill. He then earned a PhD from Harvard\'s Economics Department. Much of his research focuses on venture capital and private equity organizations. (This research is collected in three books: *The Venture Capital Cycle*, *The Money of Invention*, and *Boulevard of Broken Dreams.*) He also examines policies on innovation and how they impact firm strategies. (That research is discussed in the books *Innovation and Its Discontents*, *The Comingled Code*, and *The Architecture of Innovation.*) He co-directs the National Bureau of Economic Research's Productivity, Innovation, and Entrepreneurship Program and serves as co-editor of their publication *Innovation Policy and the Economy*.
 
@@ -265,7 +265,7 @@ Leslie Jeng is the PCRI Director of Research and has been with the PCRI since it
 
 Therese Juneau is a Research Assistant at the PCRI. She graduated from the University of Texas at Austin in 2019 with a bachelor of science and arts degree in mathematics.
 
-### Acknowledgements
+## Acknowledgements
 
 We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as well as numerous data sources, for their support of PCRI.
 

@@ -1,4 +1,4 @@
-### Appendix C: Core metadata elements for municipal datasets (June 2020)
+## Appendix C: Core metadata elements for municipal datasets (June 2020)
 
 These are the metadata elements that are required by general data users in establishing what data exists, how it can be accessed, and potential uses of the data. These are the minimum requirements for adding a dataset to the municipal data catalog.
 
