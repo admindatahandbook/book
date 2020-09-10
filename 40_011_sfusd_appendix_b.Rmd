@@ -6,17 +6,17 @@
 
 **DATA USE AGREEMENT BETWEEN SAN FRANCISCO UNIFIED SCHOOL DISTRICT ANDSTANFORD RESEARCH ORGANIZATION**
 
-This Data Use Agreement ("Agreement") is entered into by and between San Francisco Unified School District (hereinafter referred to as "SFUSD" or "District") and The Board of Trustees of the Leland Stanford Junior University ("Stanford University") on behalf of its Principal Investigator, *[[Fill in Researcher name here]]{.ul}*, "Stanford Research Organization/Stanford Researcher," and is dated for convenience *[[date]]{.ul}*.
+This Data Use Agreement ("Agreement") is entered into by and between San Francisco Unified School District (hereinafter referred to as "SFUSD" or "District") and The Board of Trustees of the Leland Stanford Junior University ("Stanford University") on behalf of its Principal Investigator, *[Fill in Researcher name here]*, "Stanford Research Organization/Stanford Researcher," and is dated for convenience *[date]*.
 
 WHEREAS, SFUSD and Stanford University have entered into an agreement whereby SFUSD has transferred data and information to Stanford University's Center for Education Policy Analysis so that Stanford University may store and release SFUSD's data and information for research studies approved by SFUSD ("SFUSD Approved Studies");
 
 WHEREAS, this Agreement sets forth and describes the research project proposed by Stanford Research Organization/Stanford Researcher, and the means to be used by Stanford Research Organization/Stanford Researcher to ensure the confidentiality and security of information and data to be stored, accessed and used by the Stanford Research Organization/Stanford Researcher.
 
-**A. [THE FAMILY EDUCATIONAL RIGHTS AND PRIVACY ACT]{.ul}**
+**A. THE FAMILY EDUCATIONAL RIGHTS AND PRIVACY ACT**
 
 The Family Educational Rights Privacy Act ("FERPA") permits the release of personally identifiable student data without prior written parental consent if the release is to "organizations conducting studies for, or on behalf of, educational agencies or institutions for the purpose of developing, validating, or administering predictive tests, administering student aid programs, and improving instruction, if such studies are conducted in such a manner as will not permit the personal identification of students and their parents by persons other than representatives of such organizations and such information will be destroyed when no longer needed for the purpose for which it is conducted." 20 USC 1232g(b)(1)(F). Each party agrees to comply with FERPA in its performance of this Agreement.
 
-**B. [PURPOSE]{.ul}**
+**B. PURPOSE**
 
 *[Summarize the purpose of the research. The form will expand as you type]*
 
@@ -24,7 +24,7 @@ To accomplish the purpose described above, Stanford Research Organization/Stanfo
 
 *Research Questions*
 
-**C. [SCOPE]{.ul}**
+**C. SCOPE**
 
 *[Describe the scope of the research. Who is being studied, which school(s), grades, what year(s), what topics, what type of access (data or surveys or interviews) etc.]*
 
@@ -32,27 +32,27 @@ To accomplish the purpose described above, Stanford Research Organization/Stanfo
 
 To address these questions, Stanford Research Organization/Stanford Researcher requests the specific SFUSD records or data listed in Attachment A ("Specific Records and Data Elements") which shall be incorporated into this Agreement by reference as though fully set forth herein.
 
-**E. [IRB APPROVAL FROM STANFORD UNIVERSITY]{.ul}**
+**E. IRB APPROVAL FROM STANFORD UNIVERSITY**
 
 As part of the approval process with the District, Stanford Research Organization/Stanford Researcher must also receive approval as necessary from Stanford University Institutional Review Board (IRB).
 
-**F. [TRANSFER OF DATA]{.ul}**
+**F. TRANSFER OF DATA**
 
 Stanford Research Organization/Stanford Researcher shall use a secure, mutually agreed upon means and schedule for protection of the Data from unauthorized access or use. The Parties agree that the data may be electronically transferred via the Stanford-SFUSD Google Suite shared drive accessible to authorized users via secure log-in only.
 
 Stanford Research Organization/Stanford Researcher shall specify in Attachment A the method of secure transmission of the Data and the location/address where the Data is to be transferred.
 
-**G. [PERIOD OF AGREEMENT]{.ul}**
+**G. PERIOD OF AGREEMENT**
 
 This Agreement shall be effective when fully signed by both parties, and will terminate on *Month, Day, Year* unless terminated earlier by either party pursuant to Section J. ("Termination"). Notwithstanding the foregoing, the parties understand that this Agreement falls under a master Data Exchange and Warehousing Agreement ("Warehousing Agreement") between SFUSD and Stanford University, and that if at any time the Warehousing Agreement expires or is terminated, then this Agreement will also expire or be terminated at that time.
 
-**H. [STANFORD RESEARCH ORGANIZATION RESPONSIBILITIES]{.ul}**
+**H. STANFORD RESEARCH ORGANIZATION RESPONSIBILITIES**
 
 Stanford Research Organization/Stanford Researcher agrees to the following confidentiality statements:
 
 1. Stanford Research Organization/Stanford Researcher acknowledges that these data are confidential data and proprietary to SFUSD, and agree to use appropriate and reasonable measures to protect such information from unauthorized disclosures and to comply with all applicable laws and regulations including but not limited to the California Education Code and the Family Education Rights and Privacy Act (FERPA).
 
-2. Stanford Research Organization/Stanford Researcher shall designate *[Name]{.ul}*, *[title]* as the person responsible for the security and confidentiality of the data and will notify SFUSD immediately in writing of any change in designee.
+2. Stanford Research Organization/Stanford Researcher shall designate *[Name]*, *[title]* as the person responsible for the security and confidentiality of the data and will notify SFUSD immediately in writing of any change in designee.
 
 3. Stanford Research Organization/Stanford Researcher will use appropriate safeguards to prevent the use or disclosure of the information other than as provided by this data use Agreement.
 
@@ -79,7 +79,7 @@ authorization by SFUSD, and Stanford University shall not disclose to Stanford R
 
 14. Stanford Research Organization/Stanford Researcher agrees that the confidential data shall be securely destroyed when no longer needed for the purposes for which the study was conducted. The Stanford Research Organization/Stanford Researcher shall notify the SFUSD Research, Planning, and Assessment office in writing that the data have been securely destroyed.
 
-**I. [LIABILITY]{.ul}**
+**I. LIABILITY**
 
 1. Stanford Research Organization/Stanford Researcher agrees to be responsible for, and assumes all liability for, any claims, costs, damages or expenses (including reasonable attorneys' fees) that directly arise from the Stanford Research Organization/Stanford Researcher's sole intentional or negligent release of personally identifiable student, parent or staff data (collectively "Claims"). Stanford Research Organization/Stanford Researcher agrees to hold harmless SFUSD and pay any costs incurred by SFUSD in connection with any such Claim, except to the extent that the liability, claim, costs, damages, or expenses are due to the gross negligence or willful misconduct of SFUSD.
 
@@ -91,7 +91,7 @@ authorization by SFUSD, and Stanford University shall not disclose to Stanford R
 
 5. The provisions of this Section shall survive the termination or expiration of this Agreement.
 
-**J. [TERMINATION]{.ul}**
+**J. TERMINATION**
 
 1. This Agreement may be terminated as follows, after notification via the United States Postal Service (certified mail or registered mail) or recognized overnight delivery service (e.g., UPS, DHL or FedEx):
     a. By either party immediately in the event of a material breach of this Agreement by another party.
@@ -101,7 +101,7 @@ authorization by SFUSD, and Stanford University shall not disclose to Stanford R
 
 3. Destruction of the confidential information shall be accomplished by utilizing an approved method of confidential destruction, including shredding, burning or certified/witnessed destruction for physical materials and verified erasure of magnetic media using approved methods of secure electronic file destruction.
 
-**K. [GENERAL UNDERSTANDING]{.ul}**
+**K. GENERAL UNDERSTANDING**
 
 1. This Agreement contains the entire understanding of the parties and may only be amended in writing signed by the parties.
 
@@ -115,69 +115,21 @@ authorization by SFUSD, and Stanford University shall not disclose to Stanford R
 
 6. Neither Party shall identify the other Party in any products, publicity, promotion, promotional advertising, or other promotional materials to be disseminated to the public, or use any trademark, service mark, trade name, logo, or symbol that is representative of the other Party or its entities, whether registered or not, or use the name, title, likeness, or statement of any faculty member, employee, or student, without the prior written consent of the other Party's authorized official. Any use of a Party's name shall be limited to statements of fact and shall not imply endorsement of the using Party's products or services by the other Party.
 
-**L. [PARTY SIGNATURES TO THE AGREEMENT]{.ul}**
+**L. PARTY SIGNATURES TO THE AGREEMENT**
 
-+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
-| **APPROVED:**                                                                        | **FOR SAN FRANCISCO UNIFIED SCHOOL DISTRICT'S RESEARCH, PLANNING, AND ASSESSMENT DEPARTMENT:** |
-|                                                                                      |                                                                                                |
-| **FOR STANFORD UNIVERSITY:**                                                         |                                                                                                |
-+======================================================================================+================================================================================================+
-| **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_** | **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**             |
-|                                                                                      |                                                                                                |
-| **DATE**                                                                             | **DATE**                                                                                       |
-|                                                                                      |                                                                                                |
-| **     **                                                                            | **     **                                                                                      |
-|                                                                                      |                                                                                                |
-| **Print Name**                                                                       | **Print Name**                                                                                 |
-|                                                                                      |                                                                                                |
-| **     **                                                                            | **     **                                                                                      |
-|                                                                                      |                                                                                                |
-| **Title**                                                                            | **Title**                                                                                      |
-|                                                                                      |                                                                                                |
-| **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_** |                                                                                                |
-|                                                                                      |                                                                                                |
-| **DATE**                                                                             |                                                                                                |
-|                                                                                      |                                                                                                |
-| **Chief Technology Officer and Assistant Dean**                                      |                                                                                                |
-|                                                                                      |                                                                                                |
-| **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_** |                                                                                                |
-|                                                                                      |                                                                                                |
-| **DATE**                                                                             |                                                                                                |
-|                                                                                      |                                                                                                |
-| **     **                                                                            |                                                                                                |
-|                                                                                      |                                                                                                |
-| **Print Name**                                                                       |                                                                                                |
-|                                                                                      |                                                                                                |
-| **     **                                                                            |                                                                                                |
-|                                                                                      |                                                                                                |
-| **Title**                                                                            |                                                                                                |
-|                                                                                      |                                                                                                |
-| **The Board of Trustees for the Leland Stanford Junior University**                  |                                                                                                |
-|                                                                                      |                                                                                                |
-| **STANFORD PRINCIPAL INVESTIGATOR:**                                                 |                                                                                                |
-|                                                                                      |                                                                                                |
-| \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_     |                                                                                                |
-|                                                                                      |                                                                                                |
-| **DATE**                                                                             |                                                                                                |
-|                                                                                      |                                                                                                |
-|                                                                                      |                                                                                                |
-|                                                                                      |                                                                                                |
-| **Print Name**                                                                       |                                                                                                |
-|                                                                                      |                                                                                                |
-|                                                                                      |                                                                                                |
-|                                                                                      |                                                                                                |
-| **Title**                                                                            |                                                                                                |
-+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+  ------------------------------------------- -------------------------
+  For SAN FRANCISCO UNIFIED SCHOOL DISTRICT   For STANFORD UNIVERSITY
+  ------------------------------------------- -------------------------
 
 **ATTACHMENT A: SPECIFIC RECORDS AND DATA ELEMENTS**
 
 *Please specify:*
 
--   *[study sample]{.ul}. Identify which school sites and which groups of students and/or staff (grade levels, program participants, etc.).*
+-   *study sample. Identify which school sites and which groups of students and/or staff (grade levels, program participants, etc.).*
 
--   *[dates of data]{.ul}. Identify the specific time periods on which you need the data.*
+-   *dates of data. Identify the specific time periods on which you need the data.*
 
--   *[specific fields requested]{.ul} (i.e., student name, date of birth, ethnicity, gender, primary language, etc., NOT "demographic data"). Include a rationale explaining its purpose and use.  Please distinguish between variables that are critical to the analyses and variables that could be useful, if available, for adding more nuance to the findings.*
+-   *specific fields requested (i.e., student name, date of birth, ethnicity, gender, primary language, etc., NOT "demographic data"). Include a rationale explaining its purpose and use.  Please distinguish between variables that are critical to the analyses and variables that could be useful, if available, for adding more nuance to the findings.*
 
 -   *The method of secure transmission of the Data and the location/address where the data is to be transferred.*
 
@@ -189,17 +141,5 @@ authorization by SFUSD, and Stanford University shall not disclose to Stanford R
 
 **ATTACHMENT B: LIST OF STAFF WITH ACCESS TO SFUSD DATA**
 
-*Please list the names of [all]{.ul} staff members affiliated with the research project who will have access to the data provided under this Agreement.*
+*Please list the names and roles of all staff members affiliated with the research project who will have access to the data provided under this Agreement.*
 
-  *Name of Staff Member*   *Role*
-  ------------------------ ---------
-  *     *                  *     *
-  *     *                  *     *
-  *     *                  *     *
-  *     *                  *     *
-  *     *                  *     *
-  *     *                  *     *
-  *     *                  *     *
-  *     *                  *     *
-  *     *                  *     *
-  *     *                  *     *
