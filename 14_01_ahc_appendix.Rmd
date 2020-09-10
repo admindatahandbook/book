@@ -1,12 +1,12 @@
-### Appendix: Excerpts from Sub-Award or Non-Disclosure Agreements
+## Appendix: Excerpts from Sub-Award or Non-Disclosure Agreements
 
-#### Public Use Data Set
+### Public Use Data Set
 
 The following clause was included in the sub-award agreement between Aurora Health Care (the Sub-awardee) and MIT permitting the publication of a data set upon completion of the study
 
 "Notwithstanding the foregoing, a subset of the Subawardee Confidential Information will be made public according to the terms set forth in this section ("Public Data Set") and will not be treated as Subawardee Confidential Information once made public. The Public Data Set will not include patient, encounter, and financial level data elements. It will only include provider level data elements and may include aggregate patient and financial information. The exact nature of the Public Data Set will be determined at the end of the Research as it may depend on the findings. The Public Data Set is anticipated to be a provider-level data set with physician characteristics including provider type (MD, DO, NP, PA), specialty, age bins and average patient characteristics, along with outcomes including the number of scans that would trigger the best practice alert (BPA) being evaluated in this Research, the number of high cost scan orders, the number of scan orders with a score of 1-3, the number of scans with a score of 4-6 and the number of low cost scans. The outcomes will be measured over various timeframes such as 0-1 month, 0-3 months, 0-6 months, 0-9 months and 0-12 months. The Public Data Set may be made available on the OSF and DataVerse websites and may be available to the public indefinitely. The exact list of data elements and aggregate data to be made public will be agreed upon by both Parties in year 3 of the Research and prior to the Public Data Set being made public."
 
-#### Publishing
+### Publishing
 
 The following is from the sub-award agreement:
 

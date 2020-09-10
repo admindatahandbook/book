@@ -1,6 +1,5 @@
-# (APPENDIX) Appendix {-} 
-
 # Third-party Licenses {-}
+
 ## Fontawesome {-}
 
 The web version uses Font Awesome Free icons in some places. 
@@ -15,3 +14,4 @@ registered or unregistered, have been capitalised or use initial
 capitals. Terms identified as trademarks include Cisco®, Microsoft®,
 Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
 
+# References {-}

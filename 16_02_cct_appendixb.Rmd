@@ -1,10 +1,10 @@
-### Appendix B: Research Branch project review criteria based on Research Framework prioritization (June 2020)
+## Appendix B: Research Branch project review criteria based on Research Framework prioritization (June 2020)
 
 This outline of CCT's Research Branch project review criteria summarizes the document, which is not publicly available. The outline is a resource for CCT's strategy and priorities driving research to inform policy.
 
 CCT research focus areas and questions will be prioritized according to certain criteria, including the following:
 
-#### Research that is linked to the core functions of CCT's Constitutional Mandate {-}
+### Research that is linked to the core functions of CCT's Constitutional Mandate {-}
 
 - The foundation of the City's research focus is to inform the City's strategy and policy review cycle(s) and sectoral and departmental strategies and plans.
 - Local government has been entrusted with public funds and resources in order to fulfil a specific mandate, as envisioned by South Africa's democratic founders and documented in the Constitution. Research questions within this mandate are prioritized.
@@ -13,11 +13,11 @@ CCT research focus areas and questions will be prioritized according to certain 
 - Research plays an important role in ensuring CCT adapts to new trends and environments by informing future decisions and proposals for action.
 - Research topics likely to be of interest to external researchers will be considered. Preference will be given to high-quality doctoral and postdoctoral research.
 
-#### Research that will be utilized to inform current and future decisions {-}
+### Research that will be utilized to inform current and future decisions {-}
 
 Policy decisions are a function of the decision-making environment and the potential for impact on the wellbeing of Cape Town residents.
 
-##### Decision-making environment {-}
+#### Decision-making environment {-}
 
 - Research that will inform clear options for decision-makers, providing understanding of complex issues and predicting potential impact of policy decisions, will be prioritized.
 - Research will be a decision-making tool when policy options are unclear and both intended and unintended consequences difficult to predict.
@@ -25,7 +25,7 @@ Policy decisions are a function of the decision-making environment and the poten
 - Research on key themes can increase CCT's understanding of underlying dynamics on a local issue.
 - CCT will prioritize cutting-edge research on high-value topics of interest.
 
-##### The potential impact of the decision{-}
+#### The potential impact of the decision{-}
 
 - Research linked to decisions with a greater potential impact will be prioritized.
 - Impact can be understood as a function of the following elements:
@@ -39,13 +39,13 @@ Policy decisions are a function of the decision-making environment and the poten
         - The extent to which a decision can be adjusted over time in accordance with feedback received on its impact.
         - Policies and decisions that require high capital investment can be difficult to adjust or course-correct. In such cases, generating information and informing decisions with evidence is key.
 
-#### Research to evaluate the impact of past decisions {-}
+### Research to evaluate the impact of past decisions {-}
 
 - Research that evaluates the impact of a policy decision over time is prioritized according to the budget and resource implications of a policy as well as its associated risks.
 - Program and project evaluation is often difficult, particularly when trying to ascertain impact as opposed to outcomes or outputs.
 - Funding and resources may be allocated for intensive impact assessments, beyond the scope of the routine Performance Management activities of CCT.
 
-#### Research that supports the City in experimenting with policy or operational responses to complex problems {-}
+### Research that supports the City in experimenting with policy or operational responses to complex problems {-}
 
 - Research enables the City to be agile and innovative in response to increasingly complex problems, and to understand the challenging and rapidly changing context in which the City plans, manages, and operates.
 - The City will approve research that supports new policy or operational alternatives to assist the City in making decisions and informing actions, with the goal of responsive and effective service delivery.

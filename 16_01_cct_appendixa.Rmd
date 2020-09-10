@@ -1,8 +1,8 @@
-### Appendix A: Summary of Data Strategy Implementation (June 2020)
+## Appendix A: Summary of Data Strategy Implementation (June 2020)
 
 Below are the guidelines used to conduct implementation of the Data Strategy, as of June 2020. This summary describes the Data Strategy Implementation document which is not publicly available.
 
-#### Data Governance {-}
+### Data Governance {-}
 
 - Making data searchable and managing data quality improves its usability for evidence-informed decision making.
 - CCT undertook exercises to understand all data sets and metadata held by the City.
@@ -12,12 +12,12 @@ Below are the guidelines used to conduct implementation of the Data Strategy, as
 - CCT also provides standards for data analytics to ensure that the results provided by data analysts can be reproduced and verified.
 - CCT uses open-source software, where possible, to scale analytical efforts in collaboration with service providers and academics, to reduce the time constraints of the procurement process, and to reduce the time from design to institutionalization, implementation, and outcome.
 
-#### Data Culture {-}
+### Data Culture {-}
 
 - CCT's initiatives build institutional knowledge to flexibly manage data and adjust to changes both internally and externally.
 - A change management plan is being rolled out to create awareness of, and desire for, working with data.
 
-#### Data Capabilities {-}
+### Data Capabilities {-}
 
 - CCT invests in human resources to develop and manage open data architectures.
 - Roll-out of training programs will build capacity with data analysts, data scientists, data engineers, data governance experts, data stewards, data custodians, user interface designers, web developers, data collectors, and other staff.
