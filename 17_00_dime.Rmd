@@ -1,5 +1,9 @@
 # Administrative Data in Research at the World Bank: the Case of Development Impact Evaluation (DIME)
 
+```{r, echo=FALSE}
+printauthor("dime")
+```
+
 ## Summary 
 
 ||DIME|| evaluates impact. Evaluating impact is a good organizing principle for constituting high-quality data sets. It helps researchers structure the content and characteristics of data sets to enable policy analysis. This is not the case for administrative data, which are designed to monitor processes. The vector of variables and the selection of observations into administrative data can restrict its use for analysis. Low research capacity in government agencies further limits the use of administrative data even for its intended purpose. This chapter describes how the ||Development Impact Evaluation [DIME]( <https://www.worldbank.org/en/research/dime)|| department of the World Bank combines an evaluative and capacity-building approach to secure access to existing administrative data, then fuses it and integrates it with other existing or newly collected data, to make administrative data analysis-ready and provide added value to country clients.
