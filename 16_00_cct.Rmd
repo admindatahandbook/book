@@ -1,4 +1,4 @@
-# City of Cape Town, South Africa: Aligning internal data capabilities with external research partnerships
+# City of Cape Town, South Africa: Aligning Internal Data Capabilities with External Research Partnerships
 
 ```{r, echo=FALSE}
 printauthor("cct")
