@@ -1,2 +1,2 @@
-new_session: yes
-before_chapter_script: ["_setup.R"]
+new_session: no
+# before_chapter_script: ["_setup.R"]
