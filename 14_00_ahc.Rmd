@@ -1,9 +1,4 @@
----
-nocite: |
-  @hentel2019, @centersformedicaremedicaidservices2018
----
-
-# Aurora Health Care:  Using electronic medical records for a randomized evaluation of clinical decision support
+# Aurora Health Care:  Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support
 
 ```{r, echo=FALSE}
 printauthor("ahc")
