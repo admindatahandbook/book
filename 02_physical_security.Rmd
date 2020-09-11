@@ -1,4 +1,6 @@
-## Physically Protecting Sensitive Data
+# (PART) Special Topics {-} 
+
+# Physically Protecting Sensitive Data
 
 ```{r, echo=FALSE}
 source("programs/_plot_physical.R")
@@ -15,7 +17,7 @@ Readers must note that physical security is only one component of protecting ind
 
 In this chapter, for illustrative purposes, we refer to a simplified structure in which data providers, researchers, and possibly third parties are the parties involved in the process of storing and hosting data and computers. The introductory chapter and the [chapter on DUA] provide a more refined view of the various roles.
 
-### Types of Security Threats
+## Types of Security Threats
 
 There are a variety of security threats, each with different levels of likelihood, severity, and considerations that are unique to the specific context of each data sharing agreement and access mechanism.^[@cichonski2012 provides definitions, which we will adopt here.] Depending on the context, actions taken to address any given threat may be (legally) required regardless of the burden on researchers and the cost of enforcing it. Data providers and researchers looking to set up new data access mechanisms should carefully judge the likely threats, their severity, and what cost-effective ways of addressing them are.
 
@@ -31,27 +33,27 @@ The third main category of security threats is where authorized users become bad
 
 > The Facebook-Cambridge Analytical scandal^[See [@confessore2018] for an overview.] is an example of the misuse of data by otherwise authorized users. While the initial collection and analysis of Facebook user data by developers was within the bounds of Facebook's terms of service, a researcher subsequently provided the data to Cambridge Analytica in violation of those terms. This latter misuse was an unauthorized use by an otherwise authorized user.
 
-### Technical features of data access mechanisms
+## Technical features of data access mechanisms
 
 There are a variety of technical tools that can be used to protect against these security threats and are important for the implementation of secure data access mechanisms. In this section, we provide a non-exhaustive introduction to a list of important tools, systems, and concepts. These tools broadly correspond to protecting three components of data access mechanisms - the transfer and storage of data, the researcher's access to the data, and the secure locations for data access. We then proceed to describe commonly used data access setups, the protections they provide, and their advantages and disadvantages.
 
 
-#### The Basics
+### The Basics
 
 All computer systems should follow the basic computer security mechanisms. While this may be standard practice for any centrally managed computers, at universities, corporations, and government agencies, many researchers may be self-managing their laptops. At a minimum, all computers should use a firewall and antivirus software, have secure passwords, and apply basic computer hygiene, such as not using USB or other devices unless they are owned by the user (see for example guidance by [Microsoft](https://support.microsoft.com/en-us/help/4092060/windows-keep-your-computer-secure-at-home) and [Apple](https://support.apple.com/en-ca/guide/mac-help/flvlt003/mac).) When using storage servers, operating systems need to be kept up to date with security patches. Data providers and researchers looking to implement new or review existing data access mechanisms should consult with their institutions' IT and security staff.
 
 
-### Storage of Data
+## Storage of Data
 
-#### Physical Media
+### Physical Media
 
 Physical media is any device used to store data: hard-drives, solid-state drives, and removable media. Removable media include devices such as USB sticks, DVDs, and external hard-drives. These are typically used in the transfer of data between parties, such as from a data provider to a researcher. They are often disallowed on secure access or compute systems. On-site storage may be in the form of directly attached physical media, or network drives.
 
-#### Cloud Service
+### Cloud Service
 
 The use of cloud storage services^[As of 2020, Amazon Web Services, Google Drive, Dropbox, Box, Microsoft OneDrive are all vendors of cloud storage services]. Cloud storage-like mechanisms can also be implemented by data providers or intermediaries, by using open source software such as [Nextcloud](https://nextcloud.com/).] is becoming more common, in particular in combination with cloud computing (see below). Utilizing cloud storage services may place the data under the control of a third party, which may be prohibited depending on the data sharing agreement or relevant legal constraints. Files may be encrypted on cloud storage services, which will be discussed below.
 
-#### Reliability as a criterion
+### Reliability as a criterion
 
 Reliability of storage refers both to preventing data loss as well as maintaining system uptime. The risk of data loss can be mitigated by using one or more of the following techniques. Multiple disks can be organized in a redundant array (RAID) such that the failure of any one (or sometimes multiple) disks does not result in the loss of data. Robust automated backup strategies tailored to the risk tolerance as well as any legal or data use agreement requirements can be used. Backup strategies involving manual action -- plugging in a USB drive in combination with scheduled backup software -- are fallible, but may be considered as a last resort.
 
@@ -59,7 +61,7 @@ When using servers to store data, maximizing system uptime is important to allow
 
 Online storage services implement these techniques as a normal part of their business, and may be one way researchers may leverage such techniques, if compliant with data use agreements. Furthermore, the ability to retrieve a backup copy or a previously versioned copy need not be implemented at every point. For instance, it may be sufficient for the data provider to implement backups for key data files. In case of data loss, the researcher can simply request a new copy of the file. However, researchers still will need to be able to backup their own code and derivative files.
 
-#### Encryption
+### Encryption
 
 Encryption is a cornerstone of information security. Fundamentally, encryption is a process of encoding information using a process that prevents other parties from reading it without the encryption key. Data can be encrypted at rest - when not being used, stored on hard drives or USB sticks - and in transit - while being transferred over the network or on physical media such as DVD or USB sticks.
 
@@ -71,39 +73,39 @@ Full disk encryption occurs once when systems (servers, laptops) are booted up, 
 
 In settings where cloud services are allowed, it is worthwhile to investigate the encryption practices of the cloud vendor. Many cloud vendors offer enterprise services that can meet higher standards of security suitable for meeting regulatory or legal requirements, or prevent the service provider from decrypting the data. However, while the cloud service may encrypt any data stored on its servers, the cloud storage service may be able (or even legally obligated) to be able to decrypt the data. A workaround is to use additional file-level encryption before making the file available on the cloud service, and this may in fact be mandated by the data sharing agreements.
 
-### Transfer of data
+## Transfer of data
 
 Unless researchers access data at the data providers' computers and premises, data needs to be transferred.
 
-#### Transfer by physical media
+### Transfer by physical media
 
 Physical media intended for data transfers (USB keys, DVDs) should always be encrypted. USB keys can be purchased with hardware-based encryption. When using physical media, the decryption keys (passwords) should always be transmitted separately; this prevents an unauthorized user who manages to obtain either the decryption key or the physical media from accessing the protected data.
 
-#### Secure Network Protocols
+### Secure Network Protocols
 
 For data access mechanisms that rely on electronic transfers between the data custodian and researcher, using an encrypted transfer protocol is a minimum security practice that should be followed at all times. Some obsolete but commonly used transfer protocols do not use encryption, are therefore vulnerable to data being read in transfer, and should not be used. Any transfer protocols should be encrypted in transit. There are many network protocols used for transferring data or establishing secure connections between computers. Data may be transferred peer-to-peer, or may require the use of an intermediate party that sometimes is not signatory to the data use agreement. Secure peer-to-peer transfer can use the SSH File Transfer Protocol (SFTP), or authenticated transfer via HTTPS, the same protocol used by banks and most other modern websites, which encrypts the data sent between the client and server. Transfer over [virtual private networks] is also encrypted, regardless of transfer protocols, including for shared directory mounts (Windows shares, NFS). In settings where cloud services are allowed, data transfer is always encrypted. Encrypted cloud services can fulfill the requirement for a minimally secure electronic transfer protocol.
 
 We note that while the transfer may be encrypted, both intermediate as well as final endpoints should also use encrypted [storage][Storage of Data]. As with cloud services, it may be useful to use file-level encryption to ensure that any intermediate storage locations do not compromise the security of the transfer mechanism.
 
-#### Data Access Controls
+### Data Access Controls
 
 Data access controls are of particular relevance for systems where multiple researchers utilize the same computing resources for access to or analysis of data. Access control regulates what users can view or use in a computing environment, preventing unauthorized users from accessing confidential data. Access controls can be implemented by setting user permissions on directories at the operating system level on a computer. Another method is to use a virtual machine, which is a completely isolated computing environment running on a host computer. A host computer can run multiple virtual machines, with each researcher or research project having a specific virtual machine. Each virtual machine is configured to provide access only to a specific (limited) set of data files, as defined by the access permissions of the research team. In addition, software availability or network access can be customized on a per-project basis. Containers, popularly known as `Docker`, or Linux techniques such as `chroot`, achieve similar goals, with varying degrees of isolation and performance penalties.
 
-#### Virtual Private Networks
+### Virtual Private Networks
 
 When using Virtual private networks (VPN's), an encrypted channel is established between two computers over public networks. Once set up, the connection is as secure as if these computers were connected on the same local, private network. The VPN ensures that a minimum security level is achieved by all other network connections, such as shared network drives or remote desktop access, as these all occur within the same encrypted channel. This is useful for data access mechanisms that allow researchers to access data from a many possible locations as well as for data transfers As typically implemented, users must authenticate themselves with usernames, passwords, and often a secure token (2FA) to access the VPN. Many universities have VPN services that allow researchers to access university networks from a remote location. In instances where a data sharing partnership has to implement a VPN from scratch, such as setting up a VPN service at a data provider sharing data for the first time, there are VPN configuration settings built into the Windows Server operating system; open source options are also available.
 
-#### IP Address Restrictions
+### IP Address Restrictions
 
 When any network is involved, network access controls may be implemented. One way to ensure that only an authorized system has access to a remote system is to restrict the IP address of the devices that are allowed to connect to the server. This can be useful for performing data transfers as well as for remote access to data. There are two types of restrictions, blacklisting and whitelisting. Blacklisting specific addresses is used to block known or potential bad actors but otherwise does not restrict connections to the server; whitelisting only authorized users is the primary use of IP restrictions in an access control mechanism. This is frequently an option built into the software for managing the server. For example, software used for managing ||secure file transfer protocols|| can restrict the IP addresses that it will accept connections from. For data providers and researchers, this can be restricted to specific devices that the researcher registers with the data provider as the access computer. Other, more sophisticated network access controls may also be implemented, as dictated by any one of the involved parties' IT security staff. Restricting the IP address to specific devices can help protect against both unauthorized users, who would need to gain access to an authorized device, as well as allow for the monitoring of the whitelisted devices to guard against misuse of the data.
 
-#### Remote Desktop
+### Remote Desktop
 
 Remote desktop software (also referred to as Virtual Desktop Infrastructure, VDI) enables users to connect to another computer's desktop over a network. This can be used in data access mechanisms when the researcher does not have direct access to the data and performs their analysis remotely on a separate computer. Data custodians must configure the analysis computer to allow for incoming remote desktop connections, and the access provider must provide the appropriate software and network infrastructure to support the remote desktop connections from the access computer. Password and other authentication requirements help protect against access by unauthorized users. Analysis computers (typically servers) configured for remote desktop access typically run Microsoft® or Linux operating systems; clients to access the remote desktop exist on a variety of platforms, including cell phones and Apple computers. Vendors of such systems include [Microsoft®](https://www.microsoft.com/en-us/p/microsoft-remote-desktop/), [Citrix®](https://www.citrix.com/), [VMware®](https://www.vmware.com/), and [NoMachine®](https://www.nomachine.com/). Remote desktop connections are often channeled through a VPN for additional security.
 
 The use of remote desktop software allows a researcher to use an analysis computer remotely, with the desktop environment of the analysis computer displayed on the client device, the access computer. The data custodian retains full physical control over the analysis computer. This can help prevent the misuse of data by authorized users. The use of remote desktop software can be valuable in instances where the data custodian has decided to not allow researchers to hold the data, in research data centers accessing data stored elsewhere, or when an access provider is supporting researchers across a wide geographical area, such as supporting international research on data that cannot leave its home country. The access computers also do not need to be capable of running statistical software or intensive analysis; the analysis will occur on the server that hosts the data and software packages. At the same time, the analysis computer, hosted by the data provider, must be capable of supporting multiple simultaneous researchers running analysis software. Remote desktops are reliant on active internet connections. While they are robust to network disconnects (users can simply reconnect to the running session and continue where they left off), the user experience degrades when network connections are unstable or slow.
 
-#### Thin Clients
+### Thin Clients
 
 Thin clients are a special case of an access computer running remote desktop client software. The primary benefit of thin clients is the extension of hardware control to the researcher's desktop by the data provider. Very secure implementations of thin clients can prohibit any usage beyond displaying information from the server and accepting mouse and keyboard input from the user. Thin clients typically operate without local storage, preventing users from saving data to the client. Thin clients can be secured against unauthorized access with various login and authentication requirements that may be more stringent than the controls on researchers' own systems. Thin clients may be housed within a specific access location, or provided directly to the researcher.
 
@@ -111,25 +113,25 @@ Generally, researchers would not procure their own thin clients, as they have no
 
 One of the main advantages of dedicated hardware thin clients is that they are cheaper and simpler than regular computers. As of the time of writing, thin clients can cost as little as $100 for the hardware itself, in contrast with the cheapest entry level computers which are several hundred dollars. Thin clients can be sourced from many manufacturers of enterprise hardware, both as standalone devices for the user to configure as well as full fledged hardware and software package solutions configured by the vendor (these will obviously cost more than just procuring the hardware). Thin clients can be purchased from most business PC vendors, including [Dell®](https://www.dell.com/en-us/work/shop/wyse-endpoints-and-software/sc/cloud-client/thin-clients), [HP®](https://www8.hp.com/us/en/cloud-computing/thin-clients.html), as well as some custom-produced solutions, such as the "[SD-Box](https://www.casd.eu/en/technologie/sd-box/)" developed by and produced for the Centre d'Accès Sécurisé aux Données (CASD).
 
-#### Biometric Authentication
+### Biometric Authentication
 
 Biometrics are physical, biological, and sometimes behavioral features unique to individuals. Biometric [authentication](https://csrc.nist.gov/glossary/term/biometric) is the use of biometric features to verify the identity of individual users based on stored information about authorized users. One of the most common biometric technologies in current use is fingerprint scanners for consumer electronics such as laptops and smartphones. Other commonly used technologies include facial recognition, retinal or iris recognition, and voice identification. Biometrics can be used to control access to secured locations as well as to secure individual devices, helping to prevent unauthorized access. The main components of such an access system includes the biometric sensor itself, which is connected to a database that contains the set of validated users, and either the physical or electronic lockouts for a given system (e.g. entering a room or logging into a computer) which are controlled by the biometric sensor.
 
 Biometric authentication techniques can serve both as a primary form of identification as well as being layered in two or multiple factor authentication techniques, such as in conjunction with passwords or other devices. While some devices come with built in biometric authentication, such as the aforementioned fingerprint scanners, implementing additional biometric authentication requires significant resources. In particular, the initial enrollment of users' biometrics typically requires the physical presence of the individuals.
  
-#### Physical Access Cards
+### Physical Access Cards
 
 Physical access cards are electronic cards that identify the card bearer for a physical access control system. An access mechanism for devices or rooms secured by a card reader validates the user's card against a database that has a set of valid cards and subsequently opens the locks on the system or room that it is protecting. The cards themselves can use magnetic stripes, barcodes, chips, or other systems for interfacing with the card reader. Physical access cards are commonly used by many organizations, including universities and government agencies, and can have the advantage of using existing infrastructure to support the creation of secure access rooms for researchers receiving administrative data. Unlike with biometric authentication, access cards can be easily lost or given to others, with a greater potential for misuse. Older systems may also be vulnerable to cloning attacks, where the magnetic stripe is copied to an unauthorized card. Protecting the access cards themselves is primarily a policy and training issue.
 
-#### Secure Rooms
+### Secure Rooms
 
 Rooms that house computing systems (both for storage and for access) can be secured against unauthorized access. Rooms can be constructed in ways that prevent unauthorized access, and can be outfitted to monitor usage and users. Secure rooms may be required to be fully enclosed by walls that extend from floor to ceiling, have a small number of possible entryways, have doors, windows, air vents, and other possible entryways secured by bars, mesh, or other methods. Doors and walls may need to satisfy minimum specifications in terms of materials, construction techniques, and thickness to increase protection against physical attacks. For instance, reinforced doors and walls offer increased protection compared to regular home and office construction materials. Door hinges, access panels, partitions, windows, and other possible ways of entering the room may be installed from the inside of the secure room to prevent their removal from the outside. Additional requirements may extend to physically securing devices within the room. Computers may be required to have no outside network connections (a so-called "air-gapped network"), or no network connection at all. These restrictions are typically only utilized when mandated by data providers or required by law for the sharing of data. Building secure rooms is a costly endeavor, as few offices will meet these specifications without additional construction and hardening. Not all university campuses will have secure rooms, and when they do, there will often only be one secure room. Thus, access to secure rooms typically entails both long-distance and local travel, reducing overall accessibility.
 
-### Typical access mechanisms
+## Typical access mechanisms
 
 The above technological methods can be combined in various ways, yielding an "access mechanism." The case studies in this handbook each implement one or more of these access mechanisms. In this section, we provide four archetypal examples of data access mechanisms. These are broad categorizations of how data access mechanisms can be set up, and are not an exhaustive list of possibilities.
 
-#### Remote Execution
+### Remote Execution
 
 Under a ||remote execution|| model, a researcher submits a request to have the analysis executed on the confidential data by the data custodian.^[Remote execution systems are non-interactive - see [Virtual Data Enclave] for remote systems where access is interactive.] The researcher does not directly access the data, and can only view output shared back by the entity executing the analysis code. Data custodians maintain full control over the data, and have the opportunity to check the researchers' code prior to execution, and the output produced by the code prior to sharing back to the researcher.
 
@@ -141,7 +143,7 @@ Remote execution gives the strong protection against adversarial actors via the 
 
 Remote execution systems may have throttles and delays built in, to prevent resource abuse or query attacks. For instance, the number and runtime of analysis jobs for (registered) users may be severely limited, or carry an hourly cost. Researchers need to specify the analysis carefully, and iterative or exploratory analysis may be inhibited or reduced. For some researchers, this may be perceived as an impediment; however, for researchers working under a pre-registration paradigm, the same restriction may be neutral or even perceived as an advantage.
 
-#### Physical Data Enclave
+### Physical Data Enclave
 
 In a ||physical data enclave|| model, researchers must enter an access-controlled location (the "data enclave") to analyze the data. The data provider can act as its own data custodian or appoint a trusted third party to run the enclave on its behalf; enclaves under the control of the researcher are described under researcher provided infrastructure. The data custodian can choose to use [on-site storage] and computing at the data enclave or on a remote server that can only be accessed by [thin clients] located within the data enclave; in this case the connection to the remote server typically uses [secure network protocols], [virtual private networks], or an encrypted direct connection. The data custodian typically has staff or automated systems to ensure that only authorized researchers enter the location, which may be secured with [biometric authentication] or [physical access cards]. Sometimes, the access rooms themselves satisfy specific security requirements ([secure rooms]). Output vetting may ensure that only safe outputs are removed from enclaves.
 
@@ -149,7 +151,7 @@ The data custodian has most of the security benefits of remote execution by main
 
 However, physical data enclaves still impose restrictions on the flexibility of researchers. Instead of waiting for someone to run the remote execution for them, researchers have to schedule visits and travel to a physical location. Capacity limits may restrict the number of users that can access the data at the same time. In more basic implementations, a physical data enclave can be as simple as a locked room that only authorized users can enter. Meeting more stringent security requirements can impose a substantial initial start-up cost on new sites. This cost is often borne by the researchers' institution, and is too large for individual researchers to incur.
 
-#### Virtual Data Enclave
+### Virtual Data Enclave
 
 A ||virtual data enclave|| is conceptually similar to physical data enclaves. Data custodians still maintain servers that house the data. However, the requirement to access the data from a secure room is relaxed. Researchers have either many more choices for access, sometimes unrestricted, at other times being able to utilize their normal office or home to access the data via remote access. There are two basic approaches to the remote access mechanism: either using [remote desktop] software that the researcher can install on their own computer, or dedicated [thin clients] rented from or provided by the data custodian. As with physical enclaves, the data custodian typically also requires the use of [secure network protocols] or [virtual private networks] to access the data.
 
@@ -157,7 +159,7 @@ Virtual data enclaves retain most of the security benefits of physical data encl
 
 The virtual data enclave model does not require researchers to travel to specific facilities to perform their research, though some restrictions may still apply (IP addresses, university offices). While there may still be incentives to share costs for [thin clients], most virtual data enclaves are affordable for individual researchers.
 
-#### Researcher-Provided Infrastructure
+### Researcher-Provided Infrastructure
 
 In some data sharing arrangements, the researcher provides the [on-site storage] and analysis infrastructure. The data provider will transmit the data to the researcher through a secure transfer mechanism ([physical media], over [secure network protocols], or a [cloud service]). Providers typically require that data be encrypted at various stages of processing.
 
@@ -165,7 +167,7 @@ When the analysis environment is under the physical control of the researcher, t
 
 This process allows researchers significantly more flexibility and rapid turnarounds on research findings. The overall cost is typically much lower, as the data provider only has to provide the data and the staff necessary to transfer it to the researchers. No separate staff or systems are needed to control exit or entry of people and monitor analysis outputs, since this is delegated to the researcher. Data providers may choose to conduct on-site inspections to verify adherence to contractual agreements of the ||safe setting||, verify at-rest encryption protocols, or require attestation of post-project destruction of data. Some providers require that researchers submit their output for approval, which requires staff time.
 
-### Five Aspects of Data Access Mechanisms
+## Five Aspects of Data Access Mechanisms
 
 Actual implementations of data access mechanisms have many degrees of freedom in combining the technical components we outlined at the start of this chapter, and which the four typical setups combine in specific ways. Each of the case studies in this handbook is a variation of the basic types. In order to summarize the salient features of data access mechanisms, we categorize each data access mechanisms in five aspects:
 
@@ -183,7 +185,7 @@ When proposing and negotiating a potential use sharing agreement, evaluating the
 
 Each of the five aspects of data access mechanisms have specific interactions with physical security. We further highlight such interactions in the descriptions of the five aspects and examples provided. In all cases, relaxing restrictions increases risk with respect to physical security ("safe environment"), but can be mitigated by measures in the other "safes," allowing data providers to maintain an acceptable risk-cost-usability tradeoff. The five aspects are not themselves fully independent either, but neither are they tightly aligned. Thus, it is possible to combine low restrictions on the location of analysis computers with any level of agency over their configuration, or have highly restricted access environments combined with a wide range of restrictions on analysis methods.
 
-#### Researcher Agency over Analysis Computers
+### Researcher Agency over Analysis Computers
 
 One of the key controls leveraged by data providers is the level of agency that researchers have over the analysis computer. Typically implemented through restrictions on operating system configuration and software installation, the effect on researchers is the potential restrictions on the software that they can utilize.
 
@@ -203,7 +205,7 @@ In the **high researcher agency** settings, researchers have few restrictions on
 
 The advantages of low researcher agency are reduced likelihood of (inadvertent or intentional) unauthorized use of data. The cost of low or medium agency are varied. Restrictions on software may increase training costs for researchers. Restrictions on physical attributes of the analysis computers may increase the cost of providing more storage, or limit computationally-intensive analyses, slowing down research. Low agency shifts most of the burden of maintaining the analysis computer onto the data provider. Thus, the increased security of low agency is gained through slower research and higher costs for the data provider.
 
-#### Location of Analysis Computers and Data
+### Location of Analysis Computers and Data
 
 The location of the researcher-accessible data and the analysis computer defines who is considered the data custodian in a data access mechanism. Note that this is distinct from agency over the analysis computer: the analysis computer may be physically located with researchers, but the researcher may have low agency over that computer (we provide an example later). We also abstract from situations where data storage and computing capabilities are in separate locations, as these situations are rare.^[All computing platforms as of the writing of this article require that data be transferred to the analysis computer's memory, thus necessarily co-locating data and analysis.] Whoever houses the analysis computers and data has physical control and will need to provide the infrastructure and have the requisite technical staff to store the data and to set up the mechanisms for researchers to access the data.
 
@@ -225,7 +227,7 @@ In all cases where the data provider relinquishes the data custodial role, data 
 
 For data providers, transferring control of the data and analysis computers to a third party or directly to researchers might be desirable when support for many researchers is a burden for the regular business of the data provider. By transferring the data to another party, a data provider may no longer be responsible for the cost of providing computational infrastructure for [data storage][on-site storage] and analysis. However, the data provider may see some additional costs for enforcing access restrictions, such as needing to conduct site visits, once physical custody of the data has been transferred. Data providers will rely on the enforcement of data use agreements when giving others custody of their data.
 
-#### Location of Access Computers
+### Location of Access Computers
 
 In many cases, the analysis computer may not be physically accessible to the researcher. We therefore distinguish access computers, and restrictions that might be imposed on them as to their location and type. As a special case, the access computer can be coincidental with the analysis computer. Access computers can be located at the non-researcher data custodian, at a third party access provider, or with the researcher. The location of the access computer is not necessarily aligned with the ownership of the access computer. For instance, a researcher may be assigned a computer that serves as an access computer, but which is owned by the data provider. We discuss the security of the access computers in the next aspect, which is distinct from the locational aspect.
 
@@ -245,7 +247,7 @@ Finally, access computers can be located with the **researcher**. Trivially, loc
 
 > Lars, I’m not sure the above paragraph is very useful - Jim
 
-#### Security of Access Computers
+### Security of Access Computers
 
 In addition to the location of access computers, the security of access to those computers can vary substantially. This aspect encompasses both the location where the access computer resides, and the type of access computer. We categorize security of access in three levels: high, medium, and low security. Data providers and researchers looking to set up new data access mechanisms should weigh the additional resource costs and barriers to research incurred by increasing access location security with the additional protections that higher security access locations provide.
 
@@ -271,7 +273,7 @@ We combine type of access and location into this aspect, since the ultimate conv
 
 The terms of the remote access will be defined in the DUA between the researcher and the data provider. The risks of locating the access computers, but not the analysis computers, away from the data provider are smaller. Because access computers contain no data, even if encrypted, the risk of inadvertent disclosure (for instance, if stolen) is reduced. Remaining risks include "shoulder surfing" - when unauthorized users observe screens with confidential data while an authorized user is logged on. Using third parties to control access mitigates that risk. There is substantial convenience for researchers from having the access computer be closer to their usual place of work, increasing the speed of research. The growth of networks of research data centers, where access is shared amongst many users while data is mostly remote, is testament to the demand among researchers and the acceptability of the risk for many data providers.
 
-#### Range of Analysis Methods Available
+### Range of Analysis Methods Available
 
 The final aspect of data access mechanisms is the set of analysis methods available to researchers. Analysis methods can be unrestricted, subject to limited restrictions, or be subject to extensive restrictions. Methods range from simple tabulations to complex machine learning algorithms via standard econometric techniques.
 
@@ -291,11 +293,11 @@ Analysis methods may be **highly restricted**. Restrictions can include limiting
 |**`r colorize("Medium Security",config$color_aspect_med)`**|An example of limited restrictions on analysis methods is the [IAB RDC][Institute for Employment Research (IAB RDC)] on site and JoSuA systems, where certain Stata commands are censored by the system and are unavailable to researchers, but broadly allows for most econometric techniques.|
 |**`r colorize("Unrestricted",config$color_aspect_high)`**|[OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their data use agreement, to ensure safe outputs.|
 
-### Specific data access mechanisms along the five aspects
+## Specific data access mechanisms along the five aspects
 
 In this section, we evaluate several data access mechanisms along the five aspects defined above. We have already alluded to some of these for individual aspects above, but here provide a comprehensive picture of all aspects. Some of these stem from the case studies in this handbook, others are chapters. They are chosen to provide a spectrum of access mechanisms, focussing on variability in the five aspects, not representativeness. For each example, we provide a "badge" summarizing the five aspects visually.
 
-#### New Brunswick Institute for Research, Data and Training (NB-IRDT)
+### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("NBIRDT",nbirdt,2,2,1,1,2)
@@ -305,7 +307,7 @@ The NB-IRDT (see [Chapter on NB-IRDT]) serves as a third party data custodian fo
 
 The NB-IRDT requires over two dozen staff^[https://www.unb.ca/nbirdt/about/team.html] located at the data custodian, including multiple data analysts, system administrators, and other technical staff to set up and maintain the data access mechanism.
 
-#### Institute for Employment Research (IAB RDC)
+### Institute for Employment Research (IAB RDC)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("IAB RDC",iab1,2,1,2,1,2)
@@ -329,7 +331,7 @@ The IAB RDC also makes data products ("scientific use files") available for dire
 
 The IAB RDC has a staff of over two dozen people^[https://www.iab.de/839/section.aspx/Bereichsnummer/17], not counting staff at guest RDCs. Each data center requires at least one staff member, as well as additional staff to maintain the data products and approve projects.
 
-#### Ohio Longitudinal Data Archive (OLDA)
+### Ohio Longitudinal Data Archive (OLDA)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("OLDA",olda,3,3,3,3,3)
@@ -339,7 +341,7 @@ The Ohio Longitudinal Data Archive is a third party data custodian that provides
 
 OLDA relies on approximately a dozen full time staff to maintain its data access mechanism. It relies on the statistical protections of the data ("safe data"), the security of researchers' institutions, and on disclosure avoidance methods applied to outputs to keep data safe.
 
-#### Private Capital Research Institute (PCRI)
+### Private Capital Research Institute (PCRI)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("PCRI",pcri,2,1,3,3,2)
@@ -349,7 +351,7 @@ The PCRI data access mechanism provides access to highly sensitive business info
 
 PCRI itself has three full time and six part-time staff to make the data usable for researchers, but relies on the preexisting resources at NORC for the data access mechanism.
 
-#### Federal Statistical Research Data Centers (FSRDC)
+### Federal Statistical Research Data Centers (FSRDC)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("FSRDC",fsrdc,2,1,1,1,3)
@@ -359,7 +361,7 @@ The United States Federal Statistical Research Data Center (FSRDC) network hosts
 
 Each of the currently 29 RDC locations has at least one full staff member, and the entire IT infrastructure is maintained by Census Bureau IT staff. Initial startup costs reach hundreds of thousands dollars. Partner institutions cover part of the cost of maintaining each RDC location [@unitedstatescensusbureau].
 
-#### Statistics Canada Real Time Remote Access (RTRA)
+### Statistics Canada Real Time Remote Access (RTRA)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("RTRA",rtra,1,1,3,3,1)
@@ -369,7 +371,7 @@ The RTRA system provides access to several Statistics Canada datasets. The data 
 
 The RTRA system is maintained by Statistics Canada, a major national statistical agency. Additional controls include automated controlled rounding of the outputs (safe outputs). and identification of safe users: registration and a contract are required for access, and researchers must be affiliated with a government department, non-profit organization, or an academic institution. We note that Statistics Canada also partners with the Canadian Research Data Center Network to provide access similar to the FSRDC system, with different data and unrestricted analysis methods.
 
-#### SafePod Network (SPN)
+### SafePod Network (SPN)
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("SafePod Network",safepod,1,2,2,2,3)
@@ -379,7 +381,7 @@ The SafePod Network in the United Kingdom makes de-identified administrative dat
 
 SafePods are relatively cheap, requiring only a suitable location to place a prefabricated room and can use existing staff members to manage access to the SafePod. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation in more access locations to provide protection against the various security threats at a lower cost than a traditional full scale research data center.
 
-#### National Center for Education Statistics (NCES) Restricted Use Data License
+### National Center for Education Statistics (NCES) Restricted Use Data License
 
 ```{r, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("NCES",nces,3,3,3,2,3)
@@ -388,7 +390,7 @@ The NCES, a part of the United States Department of Education, allows researcher
 
 The NCES restricted licenses require minimal resources for the data access mechanism; using physical media minimizes the technical resources needed to set up and harden a transfer mechanism. Researchers can utilize their existing university resources to set up the access location. NCES relies on its disclosure review process (safe outputs) to protect against misuse.
 
-#### Summary of examples
+### Summary of examples
 
 ```{r extras, echo=FALSE, fig.width=5, fig.height=2}
 plot_summary("SFUSD",sfusd,3,3,3,3,3,display=FALSE)
@@ -399,8 +401,8 @@ plot_summary("DIME",dime,3,3,3,3,3,display=FALSE)
 ```
 
 ```{r summary,echo=FALSE}
-## This needs to be automated to replace the manually constructed figure below
-## This might be ordered by some aggregate score (sum of the individual components)
+# This needs to be automated to replace the manually constructed figure below
+# This might be ordered by some aggregate score (sum of the individual components)
 
    db.figures <- file.path(datadir,"figures0502.Rds")
    if ( file.exists(db.figures)) {
@@ -466,7 +468,7 @@ plot_summary("DIME",dime,3,3,3,3,3,display=FALSE)
 </tbody>
 </table>
 
-### Guidance for Data Providers and Researchers
+## Guidance for Data Providers and Researchers
 
 For data providers with the capacity and resources to implement sophisticated technological solutions, several acceptable solutions that balance very high security with relatively broad accessibility and convenience exist. The IAB RDC on-site access model with international access, the NB-IRDT as a provincial system, and the national FSRDC network represent traditional, highly secured and technically sophisticated methods of provisioning access today. The UK SafePod Network is an attempt to reduce the technological cost of such a system. If some restrictions on analysis methods are acceptable, the Statistics Canada RTRA and in particular the IAB RDC JoSuA remote access system can be accessed from a wider range of locations and with fewer resources required. While these mechanisms may be costly, they can also have great benefits as shown in several of the Handbook’s case studies. Similarly, economists have been able to make tremendous progress on very challenging questions by using micro-data in Scandanavian countries, which often includes detailed information on individuals’ educational records, test scores, employment, and assets and liabilities.^[@maret-ouda2017; @cesarini2017]
 

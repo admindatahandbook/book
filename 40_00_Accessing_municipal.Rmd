@@ -1,5 +1,0 @@
-# Accessing municipal level data
-Introduction 
-
-Possible case studies on: municipal health data, municipal traffic, municipal electricity provision and consumption, municipal crime data. 
-

@@ -1,5 +1,0 @@
-# Accessing private sector and NGO data
-Introduction 
-
-Possible case studies for providers of data on: health insurance claims, tax preparation service, bill aggregator, pay records, social media data
-
