@@ -288,3 +288,13 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 [^pcri9]: As of 2015. [@jeng2015]
 
 [^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190. [@jeng2015]
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@privateequitygrowthcapitalcouncil2013
+@jeng2015
+@brown2015
+@maats2011
+@kaplan2017
+@gurung2008
+```
