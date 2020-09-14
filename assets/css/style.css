@@ -27,7 +27,6 @@ pre code {
     font-family: FontAwesome;
     left:10px;
     position:absolute;
-    top:0px;
     font-size: 45px;
  }
 
@@ -43,16 +42,15 @@ pre code {
   font-family: FontAwesome;
   left:10px;
   position:absolute;
-  top:0px;
   font-size: 45px;
 }
 
 .bbox {
   padding: 1em;
-  background-color: #DCDCDC;
+  background-color: #fafafa;
   color: black;
-  border: 3px solid;
-  border-color: #2D616E;
+  border: 2px solid;
+  border-color: #1e2d56;
   border-radius: 10px;
 }
 .invisible {
