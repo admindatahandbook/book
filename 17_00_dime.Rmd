@@ -35,7 +35,7 @@ knitr::include_graphics('./assets/dime/dimefigure1.png')
 The ||impact evaluations|| follow a co-production model in which the research team and the government counterparts work closely together on a shared agenda. The ||DIME|| model seeks to address constraints to data- and evidence-informed policymaking through multiple channels (illustrated in Figure \@ref(fig:dimefigure2)). This includes building skills to create informed consumers, using group dynamics to create cross-country communities of practice, subsidizing research services while counting on governments to finance data to address the public and private good elements of research, and addressing reputational and aspirational considerations by documenting successes and helping countries improve their abilities to save and improve lives.
 
 ```{r dimefigure2, echo=FALSE, out.width='100%', fig.cap='DIME model for adoption of data- and evidence-informed policy'}
-knitr::include_graphics('./assets/dime/dimefigure1.png')
+knitr::include_graphics('./assets/dime/dimefigure2.png')
 ```
 
 ### Data use examples 
