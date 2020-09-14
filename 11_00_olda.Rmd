@@ -260,3 +260,9 @@ Joshua Hawley is a professor in the John Glenn College of Public Affairs at the 
 [^olda7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
 
 [^olda8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@hosseinichimeh2017
+@hawley2017a
+```

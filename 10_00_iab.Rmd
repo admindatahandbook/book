@@ -291,7 +291,7 @@ Philipp\'s main research interest lies at the intersection of labor and regional
 
 [^iab3]: The term establishment (*Betrieb*) is rather peculiar and needs some explanation. It is defined as a regionally and economically delimited unit in which employees work. An establishment may consist of one or more branch offices and several establishments may belong to one company. The authors decided against using *firm*, *company*, or *enterprise* as a translation as these terms usually mean something different.
 
-[^iab4]: The institute is scientifically independent. Freedom of research and publication is guaranteed. More information can be found on the Institute\'s [website](https://www.iab.de/en/iab-aktuell.aspx).
+[^iab4]: The institute is scientifically independent. Freedom of research and publication is guaranteed. More information can be found on the Institute's [website](https://www.iab.de/en/iab-aktuell.aspx).
 
 [^iab5]: These are the ||German Social Code|| (*Sozialgesetzbuch* ||SGB||) books II, III, and IV as well as the German Data and Transmission Act (*Datenerfassungs- und -übermittlungsverordnung - DEÜV*). For example, article 282 is available at <http://www.gesetze-im-internet.de/sgb_3/__282.html> (in German). The authors are not aware of a complete official translation of all relevant sections.
 
@@ -338,3 +338,8 @@ Philipp\'s main research interest lies at the intersection of labor and regional
 [^iab26]: Accessed on 06-15-2020
 
 [^iab27]: In Figure 2, researchers who work in different projects are counted more than once.
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@hochfellner2012
+```

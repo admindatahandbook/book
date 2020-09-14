@@ -1,9 +1,4 @@
----
-nocite: |
-  @hentel2019, @centersformedicaremedicaidservices2018
----
-
-# Aurora Health Care:  Using electronic medical records for a randomized evaluation of clinical decision support
+# Aurora Health Care:  Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support
 
 ```{r, echo=FALSE}
 printauthor("ahc")
@@ -236,3 +231,12 @@ We are grateful to a research grant from the Laura and John Arnold Foundation fo
 [^ahc8]: For example, Aurora's operating income was \$339.1 million in 2017 [see @aurorahealthcareinc.andaffiliates2018].
 
 [^ahc9]: For example, the Aurora team gained a strong understanding of how to use the concept of edit distance (a way of quantifying how dissimilar two strings are to one another by counting the minimum number of operations required to transform one string into the other) to match such records.
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@pennmedicineinformationsystemsdataanalyticscenter
+@hentel2019
+@centersformedicaremedicaidservices2018
+@u.s.departmentofhealthhumanservices2018
+@aurorahealthcareinc.andaffiliates2018
+```

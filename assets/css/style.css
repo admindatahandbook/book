@@ -55,3 +55,6 @@ pre code {
   border-color: #2D616E;
   border-radius: 10px;
 }
+.invisible {
+  display: none;
+}

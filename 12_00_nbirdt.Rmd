@@ -1,4 +1,4 @@
-# New Brunswick Institute for Research, Data and Training, University of New Brunswick: A ten-year partnership between government and academia - the establishment of NB-IRDT
+# New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT
 
 ```{r, echo=FALSE}
 printauthor("nbirdt")
@@ -236,3 +236,8 @@ James Ted McDonald is a professor of economics at the University of New Brunswic
 [^nbirdt19]: Vetting rules are not published but are discussed with the research team at project launch as part of the mandatory information sessions for researchers with newly approved projects.
 
 [^nbirdt20]: See NB-IRDT website at [Research, Publications](https://www.nbirdt.ca/publications) and [News, Events](https://www.nbirdt.ca/nbirdt-events) for links to previous public events.
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@governmentofcanada1985
+```

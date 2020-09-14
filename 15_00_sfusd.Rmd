@@ -300,3 +300,9 @@ Laura Wentworth is the Director of Research Practice Partnerships at California 
 [^sfusd2]: Accountability and improvement work have largely been implemented internally within the district.
 
 [^sfusd3]: See @wentworth2017 for a description of the Partnership's survey development.
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@wentworth2016
+@wentworth2017
+```
