@@ -117,7 +117,7 @@ Other options might be important institutions (U.S. Census, state government, NI
 
 The bibliography must be submitted as a separate file compatible with reference management tools. Acceptable formats are bibtex, RIS, EndNote, XML. For details, see here.
 
-References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, [see @ColeDhalSautVilh2020] might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
+References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, \[see \@ColeDhalSautVilh2020\] might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
 
 The content of bibliography entries should follow the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html).
 

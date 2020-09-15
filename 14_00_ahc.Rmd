@@ -218,7 +218,7 @@ We are grateful to a research grant from the Laura and John Arnold Foundation fo
 
 [^ahc2]: The HIPAA Privacy Rule (45 Code of Federal Regulations (CFR) Part 160 and Subparts A and E of Part 164, accessed at <https://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title45/45cfr160_main_02.tpl> on 06-23-2020.) provides regulation for the use, storage, and sharing of medical records and other ||**protected health information**||. It holds health care providers, health insurance providers, researchers, and others accountable for safeguarding certain types of health information in the United States. Compliance requirements differ based on the party, such as individuals, researchers, or health care providers or insurers; the purpose of the data usage; and on stipulations or structure of data use agreements. The US Department of Health & Human Services provides a detailed [guide] (https://www.hhs.gov/hipaa/for-professionals/special-topics/research/index.html) [see @u.s.departmentofhealthhumanservices2018a] to the requirements associated with research and identifiable health data, how the ||**HIPAA**|| ||**Privacy Rule**|| applies to research, and a [guide] (https://www.hhs.gov/hipaa/index.html) [see @u.s.departmentofhealthhumanservices] to understanding ||**HIPAA**|| for all types of users.
 
-[^ahc3]: The US Federal Policy for the Protection of Human Subjects or the "Common Rule", located in [45 CFR Part 46] (https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/index.html), provides regulatory guidance for research involving human subjects and governs institutional review boards (IRBs), which approve research [@u.s.departmentofhealthhumanservices2018].
+[^ahc3]: The US Federal Policy for the Protection of Human Subjects or the "Common Rule", located in [45 CFR Part 46] (https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/index.html), provides regulatory guidance for research involving human subjects and governs institutional review boards (IRBs), which approve research [@officeforhumanresearchprotections2018a].
 
 [^ahc4]: See the text of these clauses in the Appendix.
 
@@ -237,6 +237,6 @@ This is a workaround for citations in footnotes, please ignore.
 @pennmedicineinformationsystemsdataanalyticscenter
 @hentel2019
 @centersformedicaremedicaidservices2018
-@u.s.departmentofhealthhumanservices2018
+@officeforhumanresearchprotections2018a
 @aurorahealthcareinc.andaffiliates2018
 ```
