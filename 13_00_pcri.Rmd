@@ -253,7 +253,7 @@ The PCRI gauges success on three fronts: (1) building a comprehensive database o
 
 To date, the PCRI database contains global information on approximately 23,000 general partners, 44,000 funds, 141,000 portfolio companies, 432,000 investments, 229,500 private capital deals, and 36,000 private equity exits that are tied to deals. Given the strategy of combining data from multiple sources, this is one of the most comprehensive private capital databases currently available. As of May 2020, the PCRI has more than 25 active academic researchers utilizing the PCRI databases, resulting in several successful research papers submitted to academic journals.
 
-### Final Thoughts
+### Concluding Remarks
 
 An increasing share of economic activity today is taking place in settings that elude traditional federal data collection mechanisms or fail to capture the richest of the activity at work. Against this backdrop, economists are increasingly turning to private data. This chapter underscores the experience of the PCRI, specifically the process of creating a database to facilitate access to private equity information for academics to address the myriad major concerns regarding private data. While this effort is certainly a work in progress, hopefully the experience can guide researchers who want to address similar issues in other fields.
 
@@ -288,3 +288,13 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 [^pcri9]: As of 2015. [@jeng2015]
 
 [^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190. [@jeng2015]
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@privateequitygrowthcapitalcouncil2013
+@jeng2015
+@brown2015
+@maats2011
+@kaplan2017
+@gurung2008
+```
