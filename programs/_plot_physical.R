@@ -31,7 +31,6 @@ pal <- c(
 )
 
 # Individual Table Function
-plotallmechs<-function(){
 plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
    
    databar = data.frame(order=seq(1:5),metrics=aspect.names,rank=as.character(c(a,b,c,d,e)))
@@ -102,6 +101,7 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
 
 
 # # Summary Table Function
+plotallmechs<-function(){
 summarymechs <- read.csv("./assets/security/mechanisms.csv")
 
 # Create a ggtextable
