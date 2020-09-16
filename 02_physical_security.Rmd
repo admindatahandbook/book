@@ -406,3 +406,9 @@ While there is the temptation to always maintain the strongest possible protecti
 The necessary aspects of a data access mechanism and the restrictions that are placed on the researchers' access to the data should be considered in the context of the other parts of the Five Safes framework. The proper protections of the data with the researcher and the fulfillment of the other aspects of the Five Safes framework to the data provider's satisfaction allows the use of data access mechanisms that provide the researchers with a high level of flexibility. DIME at the World Bank , OLDA, the Stanford-SFUSD Partnership, Aurora Health Care and MIT, and the City of Cape Town and J-PAL partnership are all examples where the data providers (across a spectrum of high-, medium-, and low-income countries) directly transfer sensitive, individual-level data and confidential government data to researchers.
 
 A final related point is that the enforcement of the terms of the ||DUA|| is an important factor in determining the flexibility in the data access system. More sophisticated data use agreements and greater strength of enforcement enables increased flexibility in the data access mechanism while maintaining strong protections. This corresponds to a trade-off between the investment in physical infrastructure and human resources necessary for tight control over a data access mechanism versus the investment in the institutional and legal framework of data access. In the partnerships above, the necessary protections in the data access mechanism are established in large part by the DUA.
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@cichonski2012
+@confessore2018
+```

@@ -175,17 +175,17 @@ The data products provided by the ||RDC-IAB|| are specifically created for the p
 
 For ||weakly anonymous|| data, the data processing steps include the following:
 
--   Drawing samples (administrative data, not surveys)
--   ||Pseudonymization||[^iab16]
--   Coarsening of highly sensitive information (e.g., exact date of birth, residential community)
--   Omission of highly sensitive information that cannot be coarsened (e.g., disability status)
--   Providing higher levels of coarsening as a standard and only allowing lower levels in justified cases (e.g., 3-digit industry codes instead of 5-digit, federal state instead of district)
+- Drawing samples (administrative data, not surveys)
+- ||Pseudonymization||[^iab16]
+- Coarsening of highly sensitive information (e.g., exact date of birth, residential community)
+- Omission of highly sensitive information that cannot be coarsened (e.g., disability status)
+- Providing higher levels of coarsening as a standard and only allowing lower levels in justified cases (e.g., 3-digit industry codes instead of 5-digit, federal state instead of district)
 
 For ||*de-facto anonymous*|| *data*, additional data processing steps are as follows:
 
--   Checking whether certain characteristics that might be used for re-identification show rare values
--   Additional coarsening and/or censoring
--   Omission of broader categories of data (e.g., omission of detailed establishment information in individual worker data sets)
+- Checking whether certain characteristics that might be used for re-identification show rare values
+- Additional coarsening and/or censoring
+- Omission of broader categories of data (e.g., omission of detailed establishment information in individual worker data sets)
 
 These additional steps further reduce the disclosure risk for the data product and therefore enable data access via ||SUF||. The increased safety for the research data is traded against weaker requirements for safe settings. As a result, the research data can now be stored outside the ||RDC-IAB|| secure computing environments while the portfolio of data security measures still ensures data protection.
 
@@ -279,7 +279,7 @@ iabfigure4
 
 Dana Müller is the Head of the ||Research Data Center|| (||RDC-IAB||) of the ||Federal Employment Agency|| (||BA||) at the ||Institute for Employment Research|| (||IAB||) in Nuremberg, Germany. Previously, she was a researcher at the ||IAB|| and the Chemnitz University of Technology. In these positions, Dana Müller has worked with survey data, administrative data, and big-data; she has developed a deep knowledge and extensive experience in linkages of social security records, administrative information, and survey data. She has led many initiatives, including the project "Quality of work and economic success" and "Biographical data of selected social insurance in Germany." Both projects were linking different administrative and survey data to advance social science research.
 
-Dana has published several articles in leading social science journals and books. Her main research interests include sociology of the family and gender inequalities on the labor market, as well as linkage and confidentiality of administrative data. Her research on family and gender inequalities addresses repercussions of motherhood on labor market participation and discrimination as well as the influence of family-friendly arrangements in establishments on labor market behavior of mothers and fathers. Her work on research ethics addresses data confidentiality and methods of protecting privacy in the presence of an increasing demand of data in social sciences. She is ||IAB||\'s representative at the *Statistik Netzwerk Bayern* and elected member of the executive board of the ||DDI|| Alliance.
+Dana has published several articles in leading social science journals and books. Her main research interests include sociology of the family and gender inequalities on the labor market, as well as linkage and confidentiality of administrative data. Her research on family and gender inequalities addresses repercussions of motherhood on labor market participation and discrimination as well as the influence of family-friendly arrangements in establishments on labor market behavior of mothers and fathers. Her work on research ethics addresses data confidentiality and methods of protecting privacy in the presence of an increasing demand of data in social sciences. She is ||IAB||'s representative at the *Statistik Netzwerk Bayern* and elected member of the executive board of the ||DDI|| Alliance.
 
 Philipp vom Berge is the Deputy Head of the ||Research Data Center|| (||RDC-IAB||) of the ||Federal Employment Agency|| (||BA||) at the ||Institute for Employment Research|| (||IAB||) in Nuremberg, Germany. He studied economics at the University of Regensburg, where he received his doctorate in 2013. Philipp has contributed to numerous ||IAB|| projects on data quality and data refinement. In recent years, his work on innovative research data focused on improving administrative labor market data and linked survey data to enhance their usability for minimum wage research.
 

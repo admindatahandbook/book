@@ -149,3 +149,9 @@ The intensity and frequency with which administrative data are used at the IMF d
 [^imf7]: In the United States, Section 11 of the Bretton Woods Agreements Act (public Law 171-79th Congress, 59 Statutes at Large, page 512 et seq., approved July 3, 1945, 22 U.S.C. Section 286h), gives full force and effect to the privileges and immunities of the IMF set out in its **||articles of agreement||**.
 
 [^imf8]: There is a key initial and ongoing role here for national statistical agency staff familiar with industry/product coding to ensure that data are accurately classified and routinely reviewed to avoid mismatches and double counting.
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@holtsmark2020
+@hutton2017
+```
