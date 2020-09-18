@@ -2,10 +2,6 @@
 # Description: This will generate various plots
 #     for the Physical Security dimensions.
 
-library(ggplot2)
-library(dplyr)
-library(ggpubr)
-
 # Aspect Names
 aspect.names <- c(   "Researcher Agency Over Analysis Computer",
                      "Location of Data and Analysis Computer",
@@ -15,19 +11,19 @@ aspect.names <- c(   "Researcher Agency Over Analysis Computer",
 
 # Colors
 pal <- c(
-   "Data Provider" = config$color_aspect_low,
-   "Third-Party" = config$color_aspect_med,
-   "Researcher" = config$color_aspect_high,
-   "Low" = config$color_aspect_low,
-   "Medium" = config$color_aspect_med,
-   "High" = config$color_aspect_high,
-   "Data Custodian" = config$color_aspect_low, 
-   "High Security" = config$color_aspect_low,
-   "Medium Security" = config$color_aspect_med,
-   "Low Security" = config$color_aspect_high,
-   "Highly Restricted" = config$color_aspect_low,
-   "Limited Restrictions" = config$color_aspect_med,
-   "Unrestricted" = config$color_aspect_high
+   "Data Provider" = config$colors$aspect_low,
+   "Third-Party" = config$colors$aspect_med,
+   "Researcher" = config$colors$aspect_high,
+   "Low" = config$colors$aspect_low,
+   "Medium" = config$colors$aspect_med,
+   "High" = config$colors$aspect_high,
+   "Data Custodian" = config$colors$aspect_low, 
+   "High Security" = config$colors$aspect_low,
+   "Medium Security" = config$colors$aspect_med,
+   "Low Security" = config$colors$aspect_high,
+   "Highly Restricted" = config$colors$aspect_low,
+   "Limited Restrictions" = config$colors$aspect_med,
+   "Unrestricted" = config$colors$aspect_high
 )
 
 # Individual Table Function
@@ -122,7 +118,7 @@ list = c("agency", "location","access","sec","range")
 for (i in list) {
   summarymechs <- summarymechs %>% 
     mutate(
-      fill = ifelse(summarymechs[, i] == 1, config$color_aspect_low, ifelse(summarymechs[, i] == 2, config$color_aspect_med, config$color_aspect_high)),
+      fill = ifelse(summarymechs[, i] == 1, config$colors$aspect_low, ifelse(summarymechs[, i] == 2, config$colors$aspect_med, config$colors$aspect_high)),
       color="black"
     )
   for(j in 1:nrow(summarymechs)){

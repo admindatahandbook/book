@@ -1,6 +1,6 @@
 # The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results='asis'}
 printauthor("sfusd")
 ```
 
@@ -46,7 +46,7 @@ This third case describes an example of research combining primary survey data a
 
 A robust data infrastructure must be established for research-practice partnerships to reliably produce studies such as those discussed above. Prior to sharing data for research, both SFUSD and Stanford needed to prepare and process the data. This section describes frameworks to guide data management, SFUSD's and Stanford's approaches for processing the administrative data and building a data infrastructure, and finally, the processes for exchanging the data.
 
-### Framework for converting operational data to analytical data for research
+### Framework for Converting Operational Data to Analytical Data for Research
 
 In school districts, as in other large organizations, data serve multiple purposes. While Solberg et al. [-@solberg1997] distinguish between using data for ||**accountability**||, ||**improvement**||, and research, the authors of this chapter add ||**service provision**|| and ||**evaluation**|| as two additional purposes [sanfranciscounifiedschooldistrict2019]. Whereas *research* is expected to be generalizable, ||***evaluation***|| may sometimes be narrowly focused on a local initiative. ||***Improvement***|| may draw from both research and evaluation, but it prioritizes informing the local implementers rather than external audiences. ||***Service provision***|| is inherently local, using data for such activities as enrolling students, transferring credits, or determining program eligibility. ||***Accountability***|| summarizes local data to report to the public, funders, or others in the broader community. These purposes may be mapped on to the distinction between ||**enumerative**|| studies, which describe the current state, and ||**analytical**|| studies, which draw inferences to apply to a future state [@deming1953; @provost2011]. Service provision and accountability rely on enumerative studies about the current state, while research and evaluation constitute analytical studies that may generalize more broadly. Improvement may qualify under either category depending on the distance of transfer.
 
@@ -59,7 +59,7 @@ knitr::include_graphics('./assets/sfusd/sfusdfigure1.png')
 
 Ultimately, the differentiation between ||**operational**|| and ||**analytical data**|| is important for the usability of data, not only in terms of researchers accessing data but also regarding whether the data can be used to generate reliable and meaningful evidence for district decision-making.[^sfusd2] Thus, any data-sharing arrangement must closely manage the process of generating analytical data from operational data to ensure high-quality data throughout.
 
-### Processes for compiling operational data and converting to analytical data
+### Processes for Compiling Operational Data and Converting to Analytical Data
 
 Although SFUSD has been working toward streamlining the data systems and workflows in the district, it does not yet have a tightly integrated and coordinated system for collecting and housing analytical data. In recent years, the district has been consolidating various disparate systems and standardizing practices surrounding data. In addition to technical changes in the software, these efforts have also included refining the social infrastructure, such as establishing clear data governance and crafting shared definitions and approaches for data analysis. Given the diversity of the data systems, the data transfer arrangement from the district to the university has consisted of two tracks: one highly systematized track from the main ||**student information system (SIS)**|| and a second, less regularized track for various data beyond those stored in the SIS, which necessitated the establishment of new routines.
 
@@ -77,7 +77,7 @@ All the data throughout the district that have been obtained and processed into 
 
 One key lesson learned comes from the variation in the Partnership's management of these processes over time. These sometimes followed a predictable schedule for data extractions and sometimes permitted ad hoc extractions for individual projects or newly-integrated data sources. These exceptions have led to complications when reconciling discrepancies in external research and internal accountability reports with partial overlap in their data source, date, or definition. The Partnership strives for greater consistency in routines for conducting, documenting, and compiling extractions from operational data to analytical data and encourage other agencies and partnerships to invest much more heavily in this area. This would ensure accuracy in the findings and promote confidence in the interpretations for action.
 
-### Processes for organizing and storing analytical data
+### Processes for Organizing and Storing Analytical Data
 
 After the operational data have been converted to analytical data, they need to be organized and stored in an accessible manner. The Stanford-SFUSD partnership established a ||**data warehouse**|| at Stanford ||**CEPA**|| to serve this function, although the warehouse could have been set up elsewhere. The warehouse encrypts and stores the data off of servers outside the direct control of the data manager reduces the likelihood that unauthorized users can gain electronic access to the data. While no security arrangement is foolproof, taking steps to safeguard the data is important not only because of the organization's contractual obligation to do so, but also as part of its ethical responsibility to the students and staff of SFUSD as well as to ensure that Stanford is a trustworthy research partner.
 
@@ -93,7 +93,7 @@ As alluded to above, making the school district's administrative data usable for
 
 The Stanford-SFUSD Partnership's infrastructure for sharing data involves the two partnering organizations---the school district and the university---and a facilitating third-party, non-profit organization, California Education Partners ("Ed Partners"). This section begins by describing the agency data infrastructure where the data originate; followed by the ||**data warehouse**|| where the data are stored; and finally, the staffing to support both infrastructures.
 
-#### Agency data infrastructure {-}
+#### Agency Data Infrastructure
 
 As described above, converting operational data into research-ready analytical data requires processing by the agency that produced the data. This motivates the need for a robust data infrastructure within the agency for organizing and maintaining the authoritative versions of the analytical data. Strengthening the upstream processes of data governance and data management within the agency would accrue benefits for all subsequent analyses, regardless of who conducts those analyses. Focusing investments downstream, in the processes of transferring data to the research partner and any corresponding cleanup of the data, would lead to other consequences. Such efforts may overlook and thus inherit the challenges that result from inconsistencies in the agency's data infrastructure. This section discusses some key issues for strengthening the upstream portion of data systems within the agency.
 
@@ -105,7 +105,7 @@ Lastly, there are smaller investments that the agency partner can consider makin
 
 While these are simpler strategies that invest in the agency partner's internal data capacity rather than streamlining decentralization and improving data governance, they still require substantial investment into the hardware and software for archiving data and require appropriate staffing. A staff person would need to (1) collaborate with appropriate departments and teams to coordinate the periodic archiving of snapshot data, (2) compile and organize data on a durable server using software that can accommodate different types of data, and (3) document issues and fixes as well as the typical codebook information. In this respect, agency staffing is a critical investment for prospective partnerships to consider.
 
-#### ||**Data warehouse**|| {-}
+#### Data Warehouse
 
 The initial choices that the Partnership made focused on addressing the demands for data from the district. Rather than investing in the upstream (the district's data infrastructure) the Partnership started by establishing a warehouse of SFUSD data which Stanford faculty could more easily access. The decision to host the warehouse at Stanford rather than at SFUSD was due to a number of factors including active faculty research projects, pre-existing infrastructure at Stanford, and an institutional commitment to creating and sustaining a long-term ||**data warehouse**|| within CEPA. A number of faculty already were doing work with SFUSD and had access to large portions of the SFUSD administrative datasets. Second, CEPA had a number of data managers and analysts on staff who were previously familiar with the SFUSD data. Finally, faculty within CEPA work with several research partners and were committed to building a warehouse that would support research with multiple school districts; they were happy to include the data infrastructure for the Stanford-SFUSD Partnership as well.
 
@@ -127,7 +127,7 @@ More generally, new and prospective partnerships should consider the following q
 
 A small agency that plans to have the bulk of its analysis conducted by a single external partner may find it more efficient to invest in the downstream processes of data transfer and cleanup. In contrast, an agency that anticipates developing long-term partnerships with researchers across multiple agencies or that conducts its own analyses in-house may reap greater benefits from investing in upstream data management and governance within the agency.
 
-#### Staffing {-}
+#### Staffing
 
 Staffing the data-sharing infrastructure appropriately is critical to the fluid functioning of the arrangement, along with having clear processes and workflows. At SFUSD, the ||**supervisor of research and evaluation**|| in RPA manages the overarching process of vetting and approving research projects as well as guiding researchers and practitioners to interpret and act on the findings. Since 2017, the ||**supervisor of analytics**|| in RPA has been the point person for managing and housing SFUSD data for research, devoting about 20 percent of the role's time to data management, including supplying data to Stanford and other research institutions. For Stanford, the ||**data manager**|| at ||**CEPA**|| is the point person for managing and housing SFUSD data within the university, with about 50 percent of their allocated time focused on maintaining the data infrastructure for the Stanford-SFUSD Partnership. For Ed Partners, the director of the Stanford-SFUSD Partnership (||**Partnership director**||) manages day-to-day activities, ensures the agreements and operations are properly functioning to support the data exchange, and supports the supervisor of analytics and the data manager in the data compilation and exchange. The Partnership director devotes about 10 to 20 percent of the role to supporting data infrastructure.
 
@@ -161,7 +161,7 @@ Second, Stanford and SFUSD both have their own review processes for research inv
 
 Third, there is a project-based DUA template with fixed legal language, which is reviewed and approved by the Stanford and SFUSD legal counsel. This template is used to develop project-level agreements for Stanford faculty to access SFUSD data through the SFUSD data warehouse at CEPA. For approved projects that will use administrative data, researchers must also complete a DUA specifying the data elements and years of data they will be permitted to access. The duration of these DUAs varies by project, and researchers can amend or renew those DUAs as needed through another template with pre-approved legal language. There are strict provisions for Stanford to abide by, including SFUSD asking Stanford to destroy the data at the end of a study.
 
-#### Barriers and challenges encountered {-}
+#### Barriers and Challenges Encountered
 
 While the procedures discussed thus far generally work well, one continued challenge involves deviations from the standard process. At times, projects have bypassed or sought to bypass the official data transfer procedures. Various Stanford researchers communicate directly with SFUSD departments to address questions about the data. Prior to establishing the DUAs and strict procedures for data exchange, some departments sent data directly to the researchers at Stanford, not realizing the need to go through the district's research office and the data warehouse at Stanford. When this happened, the data were frequently transferred through unsecured means, such as district staff e-mailing unencrypted/unscrambled data spreadsheets to researchers.
 

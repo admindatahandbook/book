@@ -1,4 +1,4 @@
-## Appendix A: Summary of Data Strategy Implementation (June 2020)
+## Appendix A: Summary of Data Strategy Implementation (June 2020) {-}
 
 Below are the guidelines used to conduct implementation of the Data Strategy, as of June 2020. This summary describes the Data Strategy Implementation document which is not publicly available.
 

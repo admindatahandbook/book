@@ -1,6 +1,6 @@
 # Collaborating with the Institutional Review Board (IRB)
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results='asis'}
 printauthor("irb")
 source("programs/_plot_irb.R")
 ```
@@ -49,7 +49,7 @@ It is in the context of these ethical principles and regulatory requirements tha
 
 In addition, when research is taking place in a country where the regulations are different, researchers in the United States will be held to the standard of what is referred to as ||equivalent protections|| [(45 CFR 46.101(h))](https://www.law.cornell.edu/cfr/text/45/46.101). For guidance, see @officeforhumanresearchprotections2016a. This means the researcher based in the US (who is subject to review by an IRB) and conducting research internationally is responsible for utilizing strategies to mitigate risk and protect participants at the level that would be required if the research was conducted in the United States. One example is the age of majority and consent to participate in research. In most US states the age of majority and consent is 18, while in some countries, such as Germany, Italy, Paraguay, and Ecuador, the age of consent is 14. A US researcher conducting research in Paraguay must use 18 as the age of consent to participate. Another example, the ||Federal Educational Rights and Privacy Act (FERPA)|| is a US law ([20 U.S. Code § 1232g](https://www.law.cornell.edu/uscode/text/20/1232g); [34 CFR part 99](https://www.law.cornell.edu/cfr/text/34/part-99)) and not applicable in other countries; however, if using education data from another country where education data does not have privacy and confidentiality protections, the IRB will expect that the research will apply ||**equivalent** **protections**|| as would exist under FERPA. In this example, data providers, data stewards, and researchers would need to address the use and collection of data in relation to minors when requesting IRB review.
 
-## What an IRB does [not]{.ul} do
+## What an IRB does not do
 
 Just as important as what the IRB does do, is what it does not do. As stated earlier, the mission of an IRB is the protection of participants in research from risks associated with the research. To do this, an IRB must contribute to the development of training, policies, and practices that facilitate this purpose. However, there are a number of related oversight and regulatory activities required for some research activities that are **not** the purview of the IRB, though they contribute to the IRB process.
 

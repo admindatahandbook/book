@@ -1,6 +1,6 @@
 # Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results='asis'}
 source("programs/_plot_olda.R")
 printauthor("olda")
 ```
@@ -123,7 +123,7 @@ The investigator is a resource for experienced researchers. With this system res
 
 Data are also made useable because the research team provides guided support for applicants. When an individual proposes a research project or has trouble with data use, individual researchers can contact the staff for support.
 
-#### Metadata {-}
+### Metadata
 
 The metadata are published in an open application on the center website. Access is through a guest account or a designated user [account](https://www.chrr.ohio-state.edu/investigator/pages/login). The metadata include all files that have been ingested and documented, up to and including wage record files, K12 education data, and higher education enrollments. Technically, the metadata include all variable names, values, and counts or other summary statistics for variables. It is possible to learn, for example, what is the cohort size of each group of high school graduates over time in Ohio. The metadata also include a sophisticated search feature, allowing identification of variables and types of data, including created variables.
 
@@ -219,8 +219,6 @@ Outreach in these early years was quite formal. There was a research advisory co
 
 Outreach was also supported by presentations at national meetings, such as the National Center for Education Statistics (NCES) STATS-DC Data Summit and WDQI convening in Washington, DC. OLDA presented for approximately six years at these meetings to states, serving to get the word out about state level use of research data to improve programs. Additionally, OLDA teams made presentations for the US Department of Labor, the Data Quality Campaign, and the National Skills Coalition.
 
-### Revenue
-
 ### Metrics of Success
 
 #### Overall qualitative outcomes {-}
@@ -243,7 +241,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 *Dashboards*. The OLDA team works extensively on supporting state and local government in Ohio with dashboards and scorecards. The team has built several that are maintained every year for over five years and some that are more recent. OLDA keeps website hit traffic for these dashboards to examine the location and overall use of the dashboards in the state.
 
-## About the Author
+## About the Author {-}
 
 Joshua Hawley is a professor in the John Glenn College of Public Affairs at the Ohio State University (OSU). He also serves in leadership roles at two research centers of OSU: director of the Ohio Education Research Center at the Glenn College and Associate Director for the Center for Human Resource Research (CHRR). The focus of both centers is state level administrative data. Since approximately 2009 the centers have partnered with the State of Ohio to store Ohio administrative records. The primary project for the Ohio Analytics Partnership is the Ohio Longitudinal Data Archive. Professor Hawley currently serves as the lead faculty for this effort. In addition, he teaches classes in Education and Workforce Development policy and Data Sciences.
 

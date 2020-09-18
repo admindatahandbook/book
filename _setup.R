@@ -12,7 +12,7 @@
 # Define paths here for later
 #
 
-basedir <- here::here()
+basedir <- getwd() #here::here()
 datadir <- file.path(basedir,"data")
 programdir <- file.path(basedir,"programs")
 figures <- file.path(basedir,"figures")
@@ -54,5 +54,5 @@ config <- config::get()
 
 # Source programs used by all chapters
 
-source(file.path(programdir,"authors.R"))
-source(file.path(programdir,"colorize.R"))
+source(file.path(programdir,"_print_authors.R"))
+source(file.path(programdir,"_colorize.R"))

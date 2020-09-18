@@ -2,6 +2,218 @@ default:
   base_url: "https://labordynamicsinstitute.github.io/idea-handbook/"
   last_update: !expr Sys.Date()
   first_publish_date: "April 2020"
-  color_aspect_low: "#33a02c" #low flexibility, green
-  color_aspect_med: "#a6cee3" #med flexibility, light blue
-  color_aspect_high: "#1f78b4" #high flexibility, dark blue
+  colors:
+    aspect_low: "#33a02c" #low flexibility, green
+    aspect_med: "#a6cee3" #med flexibility, light blue
+    aspect_high: "#1f78b4" #high flexibility, dark blue
+  intro:
+    authors:
+      - shawncole
+      - iqbaldhaliwal
+      - anjasautmann
+      - larsvilhuber
+  cct:
+    authors:
+      - hughcole
+      - kelseyjack
+      - derekstrong
+      - brendanmaughanbrown
+  aurora:
+    authors:
+      - laurafeeneyfeeney
+      - amyfinkelsteinfinkelstein
+  sfusd:
+    authors:
+      - moonhawkkim
+      - jimshen
+      - laurawentworth
+      - normaming
+      - michellereininger
+      - ericbettinger
+  imf:
+    authors:
+      - eradablanorris
+      - federicojdiez
+      - romainduval
+  iab:
+    authors:
+      - danamuller
+      - philippvomberge
+  dime:
+    authors:
+      - ariannalegovini
+      - mariaruthjones
+  irb:
+    authors:
+      - kathleenmurphy
+  dua:
+    authors:
+      - amyohara
+  nbirdt:
+    authors:
+      - donnacurtismailet
+      - jamestedmcdonald
+  olda:
+    authors:
+      - joshuadhawley
+  pcri:
+    authors:
+      - joshlerner
+      - lesliejeng
+      - theresejuneau
+  security:
+    authors:
+      - jimshen
+      - larsvilhuber
+  statpriv:
+    authors:
+      - ianmschmutte
+      - larsvilhuber
+  diffpriv:
+    authors:
+      - alexandrawood
+      - micahaltman
+      - kobbinissim
+      - salilvadhan
+  indonesia:
+    authors:
+      - vivialatas
+      - farahamalia
+      - abhijitbanerjee
+      - benjaminaolken
+      - remahanna
+      - sudarnosumarto
+      - putupoppywidyasari
+  contributors:
+    larsvilhuber:
+      name: Lars Vilhuber
+      inst: Cornell University
+    shawncole:
+      name: Shawn Cole
+      inst: Harvard Business School
+    anjasautmann:
+      name: Anja Sautmann
+      inst: World Bank
+    iqbaldhaliwal:
+      name: Iqbal Dhaliwal
+      inst: J-PAL
+    jimshen:
+      name: Jim Shen
+      inst: J-PAL
+    laurafeeney:
+      name: Laura Feeney
+      inst: J-PAL North America
+    amyfinkelstein:
+      name: Amy Finkelstein
+      inst: Massachusetts Institute of Technology
+    vivialatas:
+      name: Vivi Alatas
+      inst: Asa Kreativita
+    farahamalia:
+      name: Farah Amalia
+      inst: J-PAL Southeast Asia
+    abhijitbanerjee:
+      name: Abhijit Banerjee
+      inst: Massachusetts Institute of Technology
+    benjaminaolken:
+      name: Benjamin A. Olken
+      inst: Massachusetts Institute of Technology
+    remahanna:
+      name: Rema Hanna
+      inst: Harvard Kennedy School
+    sudarnosumarto:
+      name: Sudarno Sumarto
+      inst: SMERU and TNP2K
+    putupoppywidyasari:
+      name: Putu Poppy Widyasari
+      inst: J-PAL Southeast Asia
+    ariannalegovini:
+      name: Arianna Legovini
+      inst: World Bank
+    mariaruthjones:
+      name: Maria Ruth Jones
+      inst: World Bank
+    hughcole:
+      name: Hugh Cole
+      inst: City of Cape Town
+    kelseyjack:
+      name: Kelsey Jack
+      inst: University of California, Santa Barbara
+    derekstrong:
+      name: Derek Strong
+      inst: University of Southern California
+    brendanmaughanbrown:
+      name: Brendan Maughan-Brown
+      inst: J-PAL Africa
+    moonhawkkim:
+      name: Moonhawk Kim
+      inst: University of California, Berkeley
+    laurawentworth:
+      name: Laura Wentworth
+      inst: California Education Partners
+    normaming:
+      name: Norma Ming
+      inst: San Francisco Unified School District
+    michellereininger:
+      name: Michelle Reininger
+      inst: University of Colorado at Boulder
+    ericbettinger:
+      name: Eric Bettinger
+      inst: Stanford University
+    danamuller:
+      name: Dana Müller
+      inst: Institute for Employment Research
+    philippvomberge:
+      name: Phillip vom Berge
+      inst: Institute for Employment Research
+    eradablanorris:
+      name: Era Dabla-Norris
+      inst: International Monetary Fund
+    federicojdiez:
+      name: Federico J. Díez
+      inst: International Monetary Fund
+    romainduval:
+      name: Romain Duval
+      inst: International Monetary Fund
+    amyohara:
+      name: Amy O'Hara
+      inst: Georgetown University
+    kathleenmurphy:
+      name: Kathleen Murphy
+      inst: Northwestern University (ret.)
+    donnacurtismailet:
+      name: Donna Curtis Maillet
+      inst: University of New Brunswick
+    jamestedmcdonald:
+      name: James Ted McDonald
+      inst: University of New Brunswick
+    joshuadhawley:
+      name: Joshua D. Hawley
+      inst: Ohio State University
+    joshlerner:
+      name: Josh Lerner
+      inst: Harvard Business School
+    lesliejeng:
+      name: Leslie Jeng
+      inst: Private Capital Research Institute
+    theresejuneau:
+      name: Therese Juneau
+      inst: Private Capital Research Institute
+    ianmschmutte:
+      name: Ian M. Schmutte
+      inst: University of Georgia
+    alexandrawood:
+      name: Alexandra Wood
+      inst: Harvard University
+    micahaltman:
+      name: Micah Altman
+      inst: Massachusetts Institute of Technology
+    kobbinissim:
+      name: Kobbi Nissim
+      inst: Georgetown University
+    salilvadhan:
+      name: Salil Vadhan
+      inst: Harvard University
+    danielgoroff:
+      name: Daniel Goroff
+      inst: Alfred P. Sloan Foundation

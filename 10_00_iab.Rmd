@@ -2,7 +2,7 @@
 
 # Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results='asis'}
 source("programs/_plot_iab.R")
 printauthor("iab")
 ```
@@ -207,9 +207,8 @@ When data are used ||on-site|| or via ||remote execution||, both the ||RDC-IAB||
 
 As a second step, the ||RDC-IAB|| has developed a list of relatively simple rules that statistical output must satisfy. These rules might be overcautious in some cases but ensure that ||SDC|| can be done quickly without having to consider all eventualities. The most important pillars of these rules are as follows:
 
--   There is no disclosure of information based on one single observational unit (e.g., individual, household, or establishment). Every result must be based on at least twenty observational units. Primary cell suppression is used in tables that do meet this criterion.
-
--   Secondary cell suppression is used, which prevents the identification of information via subtotals and/or marginal totals. Secondary cell suppression might also be necessary in linked tables.
+- There is no disclosure of information based on one single observational unit (e.g., individual, household, or establishment). Every result must be based on at least twenty observational units. Primary cell suppression is used in tables that do meet this criterion.
+- Secondary cell suppression is used, which prevents the identification of information via subtotals and/or marginal totals. Secondary cell suppression might also be necessary in linked tables.
 
 ||RDC-IAB|| has developed some automated cell suppression routines that automatically pre-scan all output.[^iab19] These routines are used both for the IU-mode and the PP-mode output[^iab20] and reduce the amount of time needed for manual ||SDC|| considerably. These routines, however, cannot account for all eventualities found in users output files, so the manual ||SDC|| by ||RDC-IAB|| staff is still needed before output can be released. Excessive production of output or cases where manual ||SDC|| would become too time consuming are discussed bilaterally with the data users to find solutions that are easier to review and still satisfy the needs of the data users.
 
@@ -275,7 +274,7 @@ In general, user ratings are very good. For example, Figure \@ref(fig:iabfig4) s
 iabfigure4
 ```
 
-## About the Authors
+## About the Authors {-}
 
 Dana Müller is the Head of the ||Research Data Center|| (||RDC-IAB||) of the ||Federal Employment Agency|| (||BA||) at the ||Institute for Employment Research|| (||IAB||) in Nuremberg, Germany. Previously, she was a researcher at the ||IAB|| and the Chemnitz University of Technology. In these positions, Dana Müller has worked with survey data, administrative data, and big-data; she has developed a deep knowledge and extensive experience in linkages of social security records, administrative information, and survey data. She has led many initiatives, including the project "Quality of work and economic success" and "Biographical data of selected social insurance in Germany." Both projects were linking different administrative and survey data to advance social science research.
 
