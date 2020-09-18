@@ -169,7 +169,7 @@ Access is also time limited. All researchers sign legal assurances that they wil
 
 There are five forms that the individual researcher must file to apply for access: (1) a data use procedures and checklist, (2) a confidentiality form, (3) a data use agreement, (4) the Collaborative Institutional Training Initiative (CITI) responsible research use certification document, and (5) an institutional review board (IRB) approval letter.
 
-## The Five Safes Framework
+## Protection of Sensitive and Personal Data: The Five Safes Framework
 
 ### Safe Projects
 

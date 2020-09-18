@@ -35,7 +35,7 @@ The third main category of security threats is internal: authorized users become
 
 > The Facebook–Cambridge Analytica scandal ^[See [@confessore2018] for an overview.] is an example of the misuse of data by otherwise authorized users. While the initial collection and analysis of Facebook user data by developers was within the bounds of Facebook's terms of service, a researcher subsequently provided the data to Cambridge Analytica in violation of those terms.
 
-## Technical features of data access mechanisms
+## Technical Features of Data Access Mechanisms
 
 There are a variety of technical tools that can be used to protect against these security threats and are important for the implementation of secure data access mechanisms. This section provides a non-exhaustive introduction to a list of important tools, systems, and concepts. These tools broadly correspond to protecting three components of data access mechanisms: the transfer and storage of data, the researcher's access to the data, and the secure locations for data access. The chapter then proceeds to describe commonly used data access setups, the protections they provide, and their advantages and disadvantages.
 
@@ -53,7 +53,7 @@ Physical media is any device used to store data: hard drives, solid-state drives
 
 The use of cloud storage services^[As of 2020, Amazon Web Services, Box, Dropbox, Google Drive, and Microsoft OneDrive are all vendors of cloud storage services]. Mechanisms similar to cloud storage can also be implemented by data providers or intermediaries by using open-source software such as [Nextcloud](https://nextcloud.com) and is becoming more common, in particular in combination with cloud computing. Utilizing cloud storage services may place the data under the control of a third party, which may be prohibited depending on the data sharing agreement or relevant legal constraints. Files may be encrypted on cloud storage services.
 
-#### Reliability as a criterion
+#### Reliability as a Criterion
 
 Reliability of storage refers both to preventing data loss as well as maintaining system uptime. The risk of data loss can be mitigated by using one or more of the following techniques. Multiple disks can be organized in a redundant array (RAID) such that the failure of any one (or sometimes multiple) disk(s) does not result in the loss of data. Robust automated backup strategies tailored to the risk tolerance as well as any legal or data use agreement requirements can be used. Backup strategies involving manual action (plugging in a USB drive in combination with scheduled backup software) are fallible but may be considered as a last resort.
 
@@ -73,11 +73,11 @@ FDE occurs once when systems (servers, laptops) are booted up and can be combine
 
 In settings where cloud services are allowed, it is worthwhile to investigate the encryption practices of the cloud vendor. Many cloud vendors offer enterprise services that can meet higher standards of security suitable for meeting regulatory or legal requirements or can prevent the service provider from decrypting the data. However, while the cloud service may encrypt any data stored on its servers, the cloud storage service may be able (or even legally obligated) to decrypt the data. A work-around is to use additional file-level encryption before making the data available on the cloud service, and this may be mandated by the data sharing agreements.
 
-### Transfer of data
+### Transfer of Data
  
 Unless researchers access data at the data providers' computers and premises, data needs to be transferred.
 
-#### Transfer by physical media
+#### Transfer by Physical Media
 
 Physical media intended for data transfers such as USB drives and DVDs should always be encrypted. USB keys can be purchased with hardware-based encryption. When using physical media, the decryption keys (passwords) should always be transmitted separately; this prevents an unauthorized user who manages to obtain either the decryption key or the physical media from accessing the protected data.
 
@@ -127,7 +127,7 @@ Biometric authentication techniques can serve both as a primary form of identifi
 
 Rooms that house computing systems (both for storage and for access) can be secured against unauthorized access. Rooms can be constructed in ways that prevent unauthorized access and can be outfitted to monitor usage and users. ||Secure rooms|| may be required to have fully enclosed walls that extend from floor to ceiling, have a small number of possible entryways, and have doors, windows, air vents, and other possible entryways secured by bars, mesh, or other methods. Doors and walls may need to satisfy minimum specifications in terms of materials, construction techniques, and thickness to increase protection against physical attacks. For instance, reinforced doors and walls offer increased protection compared to regular home and office construction materials. Door hinges, access panels, partitions, windows, and other possible ways of entering the room can be installed from the inside of the secure room to prevent their removal from the outside. Additional requirements may extend to physically securing devices within the room. Computers may be required to have no outside network connections (air-gapped network) or no network connection at all. These restrictions are typically only utilized when mandated by data providers or required by law for the sharing of data. Building secure rooms is a costly endeavor, as few offices will meet these specifications without additional construction and hardening. Not all university campuses will have secure rooms, and when they do, there will often only be one secure room. Thus, access to secure rooms typically entails both long-distance and local travel, reducing overall accessibility.
 
-## Typical access mechanisms
+## Typical Access Mechanisms
 
 The above technological methods can be combined in various ways, yielding an access mechanism. The case studies in this handbook each implement one or more of these access mechanisms. This section provides four archetypal examples of data access mechanisms. These are broad categorizations of how data access mechanisms can be set up and are not exhaustive of all possibilities.
 
@@ -185,7 +185,7 @@ When proposing and negotiating a potential data use agreement , evaluating the p
 
 Each of the five aspects of data access mechanisms have specific interactions with physical security. Such interactions are highlighted further in the descriptions of the five aspects and examples provided. In all cases, relaxing restrictions increases risk with respect to physical security (safe settings) but can be mitigated by measures in the other safes of the Five Safes framework discussed in this chapter, allowing data providers to maintain an acceptable risk-cost-usability trade-off. The five aspects are not fully independent but neither are they tightly aligned. Thus, it is possible to combine low restrictions on the location of analysis computers with any level of agency over their configuration or have highly restricted access environments combined with a wide range of restrictions on analysis methods.
 
-### Researcher Agency over Analysis Computers
+### Researcher Agency Over Analysis Computers
 
 One of the key controls leveraged by data providers is the level of agency that researchers have over the analysis computer. This is typically implemented through restrictions on operating system configuration and software installation; the effect on researchers is the potential restrictions on the software that they can utilize.
 
@@ -291,7 +291,7 @@ Analysis methods may be **highly restricted**. Restrictions can include limiting
 |`r colorize("**Medium Security**",config$colors$aspect_med)`|An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on-site and JoSuA systems in which certain Stata commands are censored by the system and are unavailable to researchers but broadly allows for most econometric techniques.|
 |`r colorize("**Unrestricted**",config$colors$aspect_high)`|[OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their data use agreement, to ensure safe outputs.|
 
-## Specific data access mechanisms along the five aspects 
+## Specific Data Access Mechanisms Along the Five Aspects 
 
 This section evaluates several data access mechanisms along the five aspects. Some of these have already been referenced for individual aspects, but the following content provides a comprehensive picture of all aspects. These include case studies in this handbook as well as outside examples. They are chosen to provide a spectrum of access mechanisms, focusing on variability in the five aspects, not representativeness. Each example provides a "badge" summarizing the five aspects visually.
 
@@ -389,7 +389,7 @@ The NCES, a part of the United States Department of Education, allows researcher
 
 The NCES restricted licenses require minimal resources for the data access mechanism; using physical media minimizes the technical resources needed to establish and harden a transfer mechanism. Researchers can utilize their existing university resources to set up the access location. NCES relies on its disclosure review process (safe outputs) to protect against misuse.
 
-### Summary of examples
+### Summary of Examples
 
 The following table provides a summary of the five asppects of the data access mechanisms covered in this chapter as well as those in the case studies in the rest of the Handbook. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
 

@@ -10,15 +10,15 @@ printauthor<-function(chapter){
   authorlist <- eval(parse(text=authorlist))
   
   for(author in authorlist){
-    name1 <- c("config$contributor$",author,"$name")
-    name2 <- paste(name1, sep=" ", collapse="")
-    name3 <- eval(parse(text=name2))
+    name <- c("config$contributor$",author,"$name")
+    name <- paste(name, sep=" ", collapse="")
+    name <- eval(parse(text=name))
     
-    inst1 <- c("config$contributor$",author,"$inst")
-    inst2 <- paste(inst1, sep=" ", collapse="")
-    inst3 <- eval(parse(text=inst2))
+    inst <- c("config$contributor$",author,"$inst")
+    inst <- paste(inst, sep=" ", collapse="")
+    inst <- eval(parse(text=inst))
     
-    nameinst=paste0("*",name3,": ",inst3,"*  \n")
+    nameinst=paste0("*",name," (",inst,")*  \n")
     
     cat(nameinst)
   }
