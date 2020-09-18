@@ -1,6 +1,6 @@
 ## Appendix {-}
 
-### Resources and Dashboards {-}
+### Appendix A:  Resources and Dashboards {-}
 
 #### Resources {-}
 
@@ -22,7 +22,7 @@
 
 [Central Ohio Compact Dashboard](https://compact.chrr.ohio-state.edu/)
 
-### Case Study Images (Workforce Success Measures) {-}
+### Appendix B: Case Study Images (Workforce Success Measures) {-}
 
 ```{r echo=FALSE, out.width='100%'}
 knitr::include_graphics('./assets/olda/appendixb.png')

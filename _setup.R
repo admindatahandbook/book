@@ -56,3 +56,11 @@ config <- config::get()
 
 source(file.path(programdir,"_print_authors.R"))
 source(file.path(programdir,"_colorize.R"))
+
+# Copy Appendix Files Over
+
+dir.create("./_book")
+output.dir <- ("./_book")
+assets.dir <- ("./assets/appendix")
+file.copy(assets.dir, output.dir, recursive=TRUE)
+

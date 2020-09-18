@@ -18,10 +18,10 @@ default:
       - kelseyjack
       - derekstrong
       - brendanmaughanbrown
-  aurora:
+  ahc:
     authors:
-      - laurafeeneyfeeney
-      - amyfinkelsteinfinkelstein
+      - laurafeeney
+      - amyfinkelstein
   sfusd:
     authors:
       - moonhawkkim
