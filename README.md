@@ -17,7 +17,7 @@ Creating a new published version is a manual process.
 
 ### Step 1: Define a version number
 
-See our [versioning guide](VERSIONING.md).
+See our [versioning guide](96_00_contributing.Rmd).
 
 ### Step 2: Create a new version from the testing folder
 
