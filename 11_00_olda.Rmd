@@ -1,4 +1,4 @@
-# Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community
+# Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community {#olda}
 
 ```{r, echo=FALSE, results='asis'}
 source("programs/_plot_olda.R")

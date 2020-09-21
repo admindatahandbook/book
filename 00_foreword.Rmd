@@ -1,3 +1,5 @@
 # Foreword {-}
 
 Placeholder
+
+test referencing [introduction](#intro)
