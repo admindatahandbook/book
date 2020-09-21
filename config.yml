@@ -6,6 +6,9 @@ default:
     aspect_low: "#33a02c" #low flexibility, green
     aspect_med: "#a6cee3" #med flexibility, light blue
     aspect_high: "#1f78b4" #high flexibility, dark blue
+  foreword:
+    authors:
+      - danielgoroff
   intro:
     authors:
       - shawncole

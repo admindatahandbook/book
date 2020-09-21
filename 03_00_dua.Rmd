@@ -142,7 +142,7 @@ Amy O'Hara is a Research Professor in the Massive Data Institute at the McCourt 
 
 [^dua4]: See @yates2018 for a checklist from the data provider's perspective.
 
-[^dua5]: See @futureofprivacyforumandactionableintelligenceforsocialpolicy2018 toolkit.
+[^dua5]: See @futureofprivacyforum2018 toolkit.
 
 [^dua6]: See @aczel2020 guide and checklist.
 
@@ -155,7 +155,7 @@ This is a workaround for citations in footnotes, please ignore.
 @desai2016
 @goroff2018
 @yates2018
-@futureofprivacyforumandactionableintelligenceforsocialpolicy2018
+@futureofprivacyforum2018
 @aczel2020
 @coburn2013
 ```

@@ -1,5 +1,7 @@
 # Foreword {-}
 
-Placeholder
+```{r, echo=FALSE, results='asis'}
+printauthor("foreword")
+```
 
-test referencing [introduction](#intro)
+Placeholder
