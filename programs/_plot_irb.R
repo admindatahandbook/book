@@ -14,7 +14,7 @@ irbt1data <- data.frame(
            "Minimal risk (identifiable, personal or sensitive information)",
            "Greater than minimal risk (could include minimal risk research that does not fit in ||exempt|| or expedited review categories)"),
   des = c("Briefer application and typically reviewed in the IRB office",
-          "Reviewed in the office by one or more IRB members. If expedited reviewer does not approve, the study must go to the full board",
+          "Reviewed in the office by one or more IRB members. If expedited reviewer does not approve, the study may go to the full board",
           "All studies involving prisoners and certain research with vulnerable populations regardless of risk such as children, fetuses, and neonates. Projects can only be disapproved at a convened meeting"))
 
 irbtable1<-function(){

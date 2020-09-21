@@ -1,4 +1,4 @@
-# New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT
+# New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT {#nbirdt}
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("nbirdt")
