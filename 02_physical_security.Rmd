@@ -1,6 +1,6 @@
 # (PART) Special Topics {-} 
 
-# Physically Protecting Sensitive Data
+# Physically Protecting Sensitive Data  {#security}
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("security")

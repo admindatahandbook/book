@@ -1,4 +1,4 @@
-# The Use of Administrative Data at the International Monetary Fund
+# The Use of Administrative Data at the International Monetary Fund {#imf}
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("imf")
