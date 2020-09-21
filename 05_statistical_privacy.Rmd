@@ -1,7 +1,0 @@
-# Overview of Disclosure Avoidance Methods {#statpriv}
-
-```{r, echo=FALSE, results='asis'}
-printauthor("statpriv")
-```
-
-Placeholder
