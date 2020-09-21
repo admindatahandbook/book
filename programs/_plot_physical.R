@@ -95,41 +95,41 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
 }
 
 
-
+# Commented this out to see if removing ggpubr will improve build speed
 # # Summary Table Function
-plotallmechs<-function(){
-summarymechs <- read.csv("./assets/security/mechanisms.csv")
-
-# Create a ggtextable
-allmechs <- ggtexttable(summarymechs, rows = NULL, theme = ttheme("classic"),
-                        cols=c("Name",
-                               "Researcher\nAgency\nOver\nAnalysis\nComputer",
-                               "  Location  \nof Data and\nAnalysis\nComputer",
-                               "  Location  \nof Access\nComputer",
-                               "   Access   \nSecurity",
-                               " Range of \nAnalysis\nMethods\nAvailable"))
-
-# Specify colors for significant p-values
-
-# Coloring the table conditionnally using `ggpubr::table_cell_bg()`
-
-list = c("agency", "location","access","sec","range")
-
-for (i in list) {
-  summarymechs <- summarymechs %>% 
-    mutate(
-      fill = ifelse(summarymechs[, i] == 1, config$colors$aspect_low, ifelse(summarymechs[, i] == 2, config$colors$aspect_med, config$colors$aspect_high)),
-      color="black"
-    )
-  for(j in 1:nrow(summarymechs)){
-    row = j+1
-    column = which(colnames(summarymechs) == i)
-    allmechs <- table_cell_bg(
-      allmechs, row = row, column = column,
-      fill = summarymechs$fill[j], color = summarymechs$color[j]
-    )
-  }
-}
-
-print(allmechs)
-}
+# plotallmechs<-function(){
+# summarymechs <- read.csv("./assets/security/mechanisms.csv")
+# 
+# # Create a ggtextable
+# allmechs <- ggtexttable(summarymechs, rows = NULL, theme = ttheme("classic"),
+#                         cols=c("Name",
+#                                "Researcher\nAgency\nOver\nAnalysis\nComputer",
+#                                "  Location  \nof Data and\nAnalysis\nComputer",
+#                                "  Location  \nof Access\nComputer",
+#                                "   Access   \nSecurity",
+#                                " Range of \nAnalysis\nMethods\nAvailable"))
+# 
+# # Specify colors for significant p-values
+# 
+# # Coloring the table conditionnally using `ggpubr::table_cell_bg()`
+# 
+# list = c("agency", "location","access","sec","range")
+# 
+# for (i in list) {
+#   summarymechs <- summarymechs %>% 
+#     mutate(
+#       fill = ifelse(summarymechs[, i] == 1, config$colors$aspect_low, ifelse(summarymechs[, i] == 2, config$colors$aspect_med, config$colors$aspect_high)),
+#       color="black"
+#     )
+#   for(j in 1:nrow(summarymechs)){
+#     row = j+1
+#     column = which(colnames(summarymechs) == i)
+#     allmechs <- table_cell_bg(
+#       allmechs, row = row, column = column,
+#       fill = summarymechs$fill[j], color = summarymechs$color[j]
+#     )
+#   }
+# }
+# 
+# print(allmechs)
+# }

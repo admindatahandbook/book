@@ -14,5 +14,5 @@ introtable1<-function(){
     column_spec(1, width="10em") %>%
     column_spec(2, width="10em") %>%
     column_spec(3, width="20em") %>%
-    column_spec(4, width="20em")
+    column_spec(4, width="30em")
 }
