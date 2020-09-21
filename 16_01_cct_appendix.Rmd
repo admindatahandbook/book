@@ -79,7 +79,7 @@ Policy decisions are a function of the decision-making environment and the poten
 #### Research to evaluate the impact of past decisions {-}
 
 - Research that evaluates the impact of a policy decision over time is prioritized according to the budget and resource implications of a policy as well as its associated risks.
-- Program and project evaluation is often difficult, particularly when trying to ascertain impact as opposed to outcomes or outputs.
+- Program and project evaluation are often difficult, particularly when trying to ascertain impact as opposed to outcomes or outputs.
 - Funding and resources may be allocated for intensive impact assessments, beyond the scope of the routine Performance Management activities of CCT.
 
 #### Research that supports the City in experimenting with policy or operational responses to complex problems {-}
