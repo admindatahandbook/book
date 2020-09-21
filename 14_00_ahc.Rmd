@@ -1,4 +1,4 @@
-# Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support {#ahc}
+# Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("ahc")

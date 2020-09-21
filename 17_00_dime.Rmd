@@ -1,4 +1,4 @@
-# Administrative Data in Research at the World Bank: the Case of Development Impact Evaluation (DIME) {#dime}
+# Administrative Data in Research at the World Bank: the Case of Development Impact Evaluation (DIME)
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("dime")

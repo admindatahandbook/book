@@ -1,4 +1,4 @@
-# Using Administrative Data to Improve Social Protection in Indonesia {#indonesia}
+# Using Administrative Data to Improve Social Protection in Indonesia
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("indonesia")

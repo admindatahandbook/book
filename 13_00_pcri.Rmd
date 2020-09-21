@@ -1,4 +1,4 @@
-# The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry {#pcri}
+# The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("pcri")
