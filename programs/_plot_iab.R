@@ -74,7 +74,7 @@ iabt1data <- data.frame(
     "2 percent random sample (more than 1.8 million individuals) of the Integrated Employment Biographies, a database which includes records from:<br>- 1975 onwards: employment subject, receipt of benefits in accordance with Social Code Act III<br>- 1999 onwards: Marginal part-time employment<br>- 2000 onwards: participation in an employment or training measure<br>- 2007 onwards: Registered jobseeker",
     "1975 until 2017 for West Germany, 1992 until 2017 for East Germany, updated every 2nd year by RDC-IAB", 
     "DOI: 10.5164/IAB.SIAB7517.de.en.v1",
-    "Repeated cross sectional dataset (640,000-1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999), and thereof a 50percent random sample",
+    "Repeated cross-sectional dataset (640,000-1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999), and thereof a 50percent random sample",
     "1975 until 2018 for West Germany, 1992 until 2018 for East Germany, annual updated by RDC-IAB",
     "DOI: 10.5164/IAB.BHP7518.de.en.v1",
     "Worker information from administrative data are linked to the IAB-Establishment Panel, an annual representative survey since 1993 in West Germany and 1996 in East Germany including approx. 16,000 establishments per year
