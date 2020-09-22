@@ -1,4 +1,6 @@
 bookdown::gitbook:
+  includes:
+    in_header: [google_analytics.html]
   css: [assets/css/style.css, assets/css/toc.css, assets/css/font-awesome.min.css, assets/css/draft.css]
   split_by: "chapter"
   split_bib: TRUE
