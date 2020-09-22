@@ -7,7 +7,7 @@ output: bookdown::gitbook
 documentclass: book
 bibliography: [packages.bib,ideahandbook.bib] #Sloan-JPAL.bib
 link-citations: yes
-github-repo: labordynamicsinstitute/idea-handbook
+github-repo: admindatahandbook/book
 description: This is the handbook
 always_allow_html: true
 ---
@@ -20,9 +20,6 @@ source("_setup.R",echo=FALSE)
 
 This Handbook intends to inform Data Providers and researchers on how to provide privacy-protected access to, handle, and analyze administrative data, and to link them with existing resources, such as a database of data use agreements (DUA) and templates. Available publicly, the Handbook will provide guidance on data access requirements and procedures, data privacy, data security, property rights, regulations for public data use, data architecture, data use and storage, cost structure and recovery, ethics and privacy-protection, making data accessible for research, and dissemination for restricted access use.  The Handbook will serve as a resource for all researchers looking to work with administrative data and for Data Providers looking to make such data available. 
 
-## About J-PAL {-}
-
-The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center working to reduce poverty by ensuring that policy is informed by scientific evidence. Anchored by a network of more than 225 affiliated professors at universities around the world, J-PAL draws on results from randomized impact evaluations to answer critical questions in the fight against poverty. We build partnerships with governments, NGOs, donors, and others to share this knowledge, scale up effective programs, and advance evidence-informed decision-making. J-PAL was launched at the Massachusetts Institute of Technology in 2003 and has regional centers in Africa, Europe, Latin America & the Caribbean, the Middle East & North Africa, North America, South Asia, and Southeast Asia.
 
 ## About the Editors {-}
 
@@ -40,8 +37,11 @@ Anja Sautmann is a Research Economist in the World Bank's Development Research G
 
 ### Lars Vilhuber {-}
 
-Lars Vilhuber is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market, including mass layoffs, worker mobility, and the relationship between labor and housing markets. He also has extensive experience in the analysis, publication, replicability, and maintenance of large data sets. He has contributed to privacy-preserving public use statistics, metadata standards, and provenance documentation. Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
+Lars Vilhuber is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market. He also has extensive experience in the application of privacy-preserving publication and access to restricted data. He is chair of the scientific committee of the French restricted-access system [CASD](https://casd.eu), member of the governing board of the Canadian Research Data Centre Network ([CRDCN](https://crdcn.org)), and incoming chair of the  American Statistical Association‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home).  Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
 
+## About J-PAL {-}
+
+The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center working to reduce poverty by ensuring that policy is informed by scientific evidence. Anchored by a network of more than 225 affiliated professors at universities around the world, J-PAL draws on results from randomized impact evaluations to answer critical questions in the fight against poverty. We build partnerships with governments, NGOs, donors, and others to share this knowledge, scale up effective programs, and advance evidence-informed decision-making. J-PAL was launched at the Massachusetts Institute of Technology in 2003 and has regional centers in Africa, Europe, Latin America & the Caribbean, the Middle East & North Africa, North America, South Asia, and Southeast Asia.
 
 ```{block, type='rmdwarning'}
 This document is under development!
