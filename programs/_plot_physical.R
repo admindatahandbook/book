@@ -2,34 +2,31 @@
 # Description: This will generate various plots
 #     for the Physical Security dimensions.
 
-library(ggplot2)
-
-# names
-
+# Aspect Names
 aspect.names <- c(   "Researcher Agency Over Analysis Computer",
                      "Location of Data and Analysis Computer",
                      "Location of Access Computer",
                      "Access Security",
                      "Range of Analysis Methods Available")
+
 # Colors
 pal <- c(
-   "Data Provider" = config$color_aspect_low,
-   "Third-Party" = config$color_aspect_med,
-   "Researcher" = config$color_aspect_high,
-   "Low" = config$color_aspect_low,
-   "Medium" = config$color_aspect_med,
-   "High" = config$color_aspect_high,
-   "Data Custodian" = config$color_aspect_low, 
-   "High Security" = config$color_aspect_low,
-   "Medium Security" = config$color_aspect_med,
-   "Low Security" = config$color_aspect_high,
-   "Highly Restricted" = config$color_aspect_low,
-   "Limited Restrictions" = config$color_aspect_med,
-   "Unrestricted" = config$color_aspect_high
+   "Data Provider" = config$colors$aspect_low,
+   "Third-Party" = config$colors$aspect_med,
+   "Researcher" = config$colors$aspect_high,
+   "Low" = config$colors$aspect_low,
+   "Medium" = config$colors$aspect_med,
+   "High" = config$colors$aspect_high,
+   "Data Custodian" = config$colors$aspect_low, 
+   "High Security" = config$colors$aspect_low,
+   "Medium Security" = config$colors$aspect_med,
+   "Low Security" = config$colors$aspect_high,
+   "Highly Restricted" = config$colors$aspect_low,
+   "Limited Restrictions" = config$colors$aspect_med,
+   "Unrestricted" = config$colors$aspect_high
 )
 
-
-# function
+# Individual Table Function
 plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
    
    databar = data.frame(order=seq(1:5),metrics=aspect.names,rank=as.character(c(a,b,c,d,e)))
@@ -96,3 +93,43 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
       g
    }
 }
+
+
+# Commented this out to see if removing ggpubr will improve build speed
+# # Summary Table Function
+# plotallmechs<-function(){
+# summarymechs <- read.csv("./assets/security/mechanisms.csv")
+# 
+# # Create a ggtextable
+# allmechs <- ggtexttable(summarymechs, rows = NULL, theme = ttheme("classic"),
+#                         cols=c("Name",
+#                                "Researcher\nAgency\nOver\nAnalysis\nComputer",
+#                                "  Location  \nof Data and\nAnalysis\nComputer",
+#                                "  Location  \nof Access\nComputer",
+#                                "   Access   \nSecurity",
+#                                " Range of \nAnalysis\nMethods\nAvailable"))
+# 
+# # Specify colors for significant p-values
+# 
+# # Coloring the table conditionnally using `ggpubr::table_cell_bg()`
+# 
+# list = c("agency", "location","access","sec","range")
+# 
+# for (i in list) {
+#   summarymechs <- summarymechs %>% 
+#     mutate(
+#       fill = ifelse(summarymechs[, i] == 1, config$colors$aspect_low, ifelse(summarymechs[, i] == 2, config$colors$aspect_med, config$colors$aspect_high)),
+#       color="black"
+#     )
+#   for(j in 1:nrow(summarymechs)){
+#     row = j+1
+#     column = which(colnames(summarymechs) == i)
+#     allmechs <- table_cell_bg(
+#       allmechs, row = row, column = column,
+#       fill = summarymechs$fill[j], color = summarymechs$color[j]
+#     )
+#   }
+# }
+# 
+# print(allmechs)
+# }

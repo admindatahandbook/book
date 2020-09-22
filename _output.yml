@@ -13,7 +13,7 @@ bookdown::gitbook:
       scroll_highlight: yes
       before: null
       after: |
-              <li class="chapter""> ©️ 2019 Cole, Dhaliwal, Sautmann, Vilhuber </li>
+              <li class="chapter""> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
       #        <li class="chapter"><a href="https://creativecommons.org/licenses/by-nc/4.0/" alt="Link to CC BY-NC 4.0" target="_blank">
       #        <img alt="License: CC BY-NC 4.0" src="https://licensebuttons.net/l/by-nc/4.0/80x15.png" /></a></li>
       #<li class="chapter"><a href="https://doi.org/10.5281/zenodo.2621345"><img src="https://zenodo.org/badge/144227499.svg" alt="DOI 10.5281/zenodo.2621345"></a></li>

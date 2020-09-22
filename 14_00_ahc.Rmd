@@ -1,6 +1,6 @@
-# Aurora Health Care:  Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support
+# Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results='asis'}
 printauthor("ahc")
 ```
 
@@ -84,7 +84,7 @@ Both the NDA and the sub-award recognized that the purpose of the agreement and 
 
 Making the data usable for research required overcoming several hurdles and a significant amount of time from both Aurora- and MIT-based data analysts. First, the team worked to identify relevant data sets, tables, and variables for the study; to extract data from these tables; and to understand how to create a linked panel data set. Second, researchers had to interrogate the data generation process in order to understand each variable beyond existing documentation. Third, the team created a process to link individual-level data from multiple sources and generate indicators for relative dates in order to create a panel data set that would comply with ||**HIPAA**||'s de-identification standards.
 
-#### **Identifying relevant data**
+### Identifying Relevant Data
 
 Aurora uses the [Epic] (https://www.epic.com/) ||**EMR**|| system, the most common in the US, which includes an industry standard radiology information and order entry system. ACR Select, which is a third-party software designed by NDSC, integrates with Epic to generate best practice alerts, using a ruleset developed by the American College of Radiology (ACR).
 
@@ -94,7 +94,7 @@ In this structure, linking between tables is straightforward, but identifying th
 
 Data for this project came from the Epic reporting database, Clarity. Given the wide number of use cases for the data, the breadth of patient and health information stored, and the history of provider actions recorded within the database, Clarity contains an overwhelming number of tables.[^ahc5] Many of these had not been explored previously by Aurora analysts. For example, the research team wanted to confirm through data whether a BPA had been displayed in order to confirm that random assignment had been implemented properly. Because there had never been a business use for this data set, analysts at Aurora did not know whether these data would exist. Confirming the existence of these data and the name of the table was a team effort between MIT, Aurora, and NDSC.
 
-#### **Understanding beyond documentation**
+### Understanding Beyond Documentation
 
 The research team gained a deeper understanding of the data through observing and speaking with providers about their interactions with the ||**EMR**|| and through detailed discussions with the data analytics team at Aurora. During several visits to Aurora, the research team directly observed various health care providers interacting with the ||**EMR**|| and spoke with them about how they interact with the system and interpret the data entry fields. Researchers learned, for example, that there are several points at which providers are asked to enter a health indication (e.g., headache, broken bone). These include a visit diagnosis used for insurance billing, a separate indication to attach to a radiology scan order, and an optional field for additional instructions to a radiologist. Speaking with health care providers helped researchers to understand which of these indications was least likely to be impacted by an intervention, and which of these indications they spent relatively more time reviewing to ensure precision and accuracy. Observing and discussing the order in which providers entered data and moved through screens and pop-ups also enabled the team to better interpret patterns in the data, such as how a cancelled or revised scan order may appear in the database.
 
@@ -104,7 +104,7 @@ Both processes of locating and interpreting data required substantial input from
 
 By combining MIT's insight on the planned analysis with the clinical and systems expertise brought by Aurora, the team could determine whether additional information or data checks were necessary, ensuring that the results from potential analyses were fully justified by the underlying data and their accurate representation of clinical practices. If additional data were necessary to improve the quality of analyses, Aurora was willing to check ||**IRB**|| compliance and quickly send the new data to the MIT team.
 
-#### **Linking de-identified data**
+### Linking De-Identified Data
 
 Under the data sharing agreement, researchers were not able to receive patient, provider, or encounter IDs. In order to support a stable identifier for these entities (to allow for a replicable process as well as the appendage of additional data) a surrogate mapping process was created and verified by data analysts at Aurora. The mapping process populated a two-column table for each entity: the first column represents the source system identifier, and the second column represents the surrogate mapping ID produced by a random number generating procedure within SAS. Every ID that is extracted from the source data is merged into the mapping table for its respective entity. If an ID does not match an existing entry in the table, the ID is inserted, and a new unique surrogate mapping ID is produced for the source ID. The MIT research team wrote pseudo code and template SAS code for the Aurora team to use to verify that the de-identification and linking processes produced consistent results and accurate linkages. For example, pseudo code and documentation described a process to run the same merge twice and assert that the resulting data sets are identical. Other parts of the code print the number of unique records in each data set to be merged, the number of records from each data set that were successfully linked, and the number of unique IDs at each stage. This process was followed on-demand at regular intervals throughout the study period.
 
@@ -112,7 +112,7 @@ Aurora maintained this crosswalk and confirmed the stability of IDs within data 
 
 No action was taken to remove or de-duplicate records in this case, as a small number of duplicates was unlikely to cause issues given the provider-level analysis planned. Ensuring each patient is uniquely identified by a single Aurora internal ID is as much a priority for health care administration as it is for research. As an additional validation exercise, however, the Aurora data team created an algorithm to identify potential duplicates. First, a set of criteria was defined for assessing potential duplicates: same first and last name; same medical record number (MRN); same social security number (SSN); same Medicare number; same Medicaid number; same date of birth or four-decimal address geocode plus first and last initials. All potential duplicate matches were evaluated in terms of their similarity on previously standardized identifiers. Where possible, edit distance scores were calculated to capture the number of changes that would have to be made to a comparison identifier to turn it into the target (e.g., the last names Smith and Smyth have an edit distance of 1, reflecting that one letter would have to be changed to turn each into the other). Records with sufficient difference in identifiers were ruled out as potential duplicates. From the remainder of records, researchers estimated that a maximum of 0.998 percent of records could be duplicates, with the actual proportion likely to be between 0.376 percent and 0.607 percent. Given the type of analysis planned, these ranges did not cause concern.
 
-#### **Working with relative dates**
+### Working with Relative Dates
 
 Under ||**HIPAA**||, ||**de-identified data**|| may not contain exact dates. However, for the planned analysis, researchers needed at least some information on the relative sequence and time period of scan orders. For example, the team needed to identify scan orders from the pre-intervention period and for three-month periods within the year-long intervention period. Aurora developed a patient-specific reference date, converted each date variable into the number of days from that reference date, and sent only the relative days from that date to the MIT research team. The patient-specific reference date was necessary, as normalizing all dates to the same intercept would reveal more individual-level information and add specificity that would increase the risk of potential re-identification. Aurora maintained a crosswalk of patients' IDs and reference dates throughout the study to ensure consistency and replicability within the study period. Finally, Aurora created a series of binary variables to indicate the timeframe of an encounter or scan from the beginning of the intervention (binned in 2-month periods).
 
@@ -124,7 +124,7 @@ Two primary teams at Aurora had access to data and skills to process data. One t
 
 In this case study, the research team describes the sharing of data for a single research project, rather than the development of an overarching framework for providing secure access to data. Aurora had an established process for some steps; others were developed to meet the specific needs of the clinical decision support evaluation. Overall, assessments and approvals for the project as a whole took several months, during which researchers were cautious about devoting additional resources to a project that might not be approved. As such, the time for assessments and approvals pushed back the timeline for the research study. This timing is consistent with experience from other efforts to access administrative data and is typically reflective of long pauses or delays in response in between rounds of iteration or document review. Converting data from a raw, identified form into a linked, de-identified, and usable form ready to share with the MIT-based team may have taken a greater number of person-hours than working through the approvals process. However, this process of preparing data for transfer and use did not have a significant impact on the timeline of the study, since the team was able to simultaneously make progress on other aspects of the research.
 
-### Safe projects
+### Safe Projects
 
 The application and review process for the research and data sharing involved several formal steps established by Aurora. A research coordinator and team of regulatory support staff supported coordination between the Aurora principal investigator (PI) and various teams and review systems at Aurora. Informally, gaining support and generating enthusiasm among leaders at Aurora helped to facilitate the process and maintain the momentum needed to work through concerns. Much of the credit for the approval of the study is attributed to having the support of key leaders within Aurora and the ability of the research team to anticipate and address the unarticulated concerns and motivations of Aurora reviewers.
 
@@ -136,25 +136,25 @@ The research (including the use of data and the steps involved in implementing t
 
 The RAP application was submitted, and it received approval in December 2015; ||**IRB**|| applications were submitted in January 2016; conditional ||**IRB**|| approvals were received in February and March 2016, which enabled the research team to proceed with project planning and to begin negotiating a ||**data use agreement**||. The full approval process required iteration between ||**IRB**|| and data sharing review committees (a requirement for full approval by the ||**IRB**||was a finalized ||**data use agreement**||, and a requirement for approval of a ||**data use agreement**|| was approval by an ||**IRB**||). The team executed an agreement to receive a limited amount of data in the fall of 2015; they finalized an agreement to share more detailed data necessary for the full research study in September 2016 with additional variables added through a modification in January 2017.
 
-### Safe people
+### Safe People
 
 Aurora does not have a routine process for assessing researchers that is publicly available. As a part of the request for data and ||**IRB**|| approval, a memo was sent to Aurora describing the previous experience of the MIT team's two lead investigators---Amy Finkelstein and Joseph Doyle---with using confidential data and ||**protected health information**|| for research while maintaining high levels of security; this was accompanied by their CVs to demonstrate significant and relevant research experience. All investigators and research assistants completed [CITI] (https://about.citiprogram.org/en/homepage/) or [NIH] (https://nexus.od.nih.gov/all/2018/09/07/protecting-human-research-participants-phrp-online-tutorial-no-longer-available-as-of-september-26-2018/) training in human subjects research, which are commonly used in the United States to certify that researchers understand the rules and procedures governing ethics and safety when conducting human subjects research.
 
 Only ||**de-identified data**|| were shared with non-Aurora researchers, resulting in a straightforward data handling procedure without further inspection or oversight from Aurora.
 
-### Safe settings
+### Safe Settings
 
 The data sharing agreement allowed the MIT team to access only data sets that were de-identified per the ||**HIPAA**|| ||**Safe Harbor**|| standard. These data were shared via Secure File Transfer Protocol (SFTP) and stored on a secure, encrypted server maintained by IT professionals at the MIT Department of Economics. Researchers accessed this server using an encrypted Secure Shell (SSH) protocol after connecting to the MIT VPN, which utilizes an independent authentication system.
 
 The MIT investigators and data analysts made several visits to Aurora to meet with the data teams but were not permitted to directly interact with or view the raw data. Access to raw, identified data may have expedited the process of linking data sets and ensuring a replicable and consistent de-identification process. However, this level of access likely would not have reduced the time spent by either team in understanding and interpreting the data.
 
-### Safe data
+### Safe Data
 
 As described in the Legal Context section above, most of the data generated by a health care provider is protected by the ||**HIPAA Privacy Rule**||. Pricing and billing data, even when completely de-identified, are considered sensitive, as they could be used by competing health care systems or by insurance companies during pricing negotiations. The specifications of the data that would be released outside of Aurora, and that which could be released in a public use file, were negotiated specifically for this project. The specifications are included in the Appendix.
 
 In this case, it was possible to conduct the analysis on data that were de-identified at the patient and provider level per the ||**HIPAA**|| ||**Safe Harbor method**||. This process was conducted by analysts at Aurora. As discussed in the section Making Data Useable, a process was defined and followed specifically for this research study, and the MIT-based team consulted with the Aurora analysts to ensure record linkages would be replicable and stable throughout the research process.
 
-### Safe outputs
+### Safe Outputs
 
 The agreements between Aurora and MIT explicitly acknowledged and permitted the publication of scholarly work that would include analytic results based on the confidential information (i.e., the ||**de-identified data**|| shared by Aurora).[^ahc7] The sub-award agreement also permitted the creation of a public data set that would be able to replicate the published results.
 
@@ -166,13 +166,13 @@ Any future outputs from the shared data would need to undergo the same review pr
 
 ## Data Life Cycle and Replicability
 
-### Preservation and Reproducibility of Researcher-accessible Files
+### Preservation and Reproducibility of Researcher-Accessible Files
 
 Aurora Health Care does not actively maintain the researcher-accessible de-identified files made available for this research study. The files sent to MIT were snapshots of a data warehouse, which is periodically updated, with the potential for certain values to be over-written; for example, the status of a scan order will change as the scan is performed, changed, or canceled. The MIT team did not receive the code used by Aurora to extract data nor did the team request that this code be maintained in perpetuity.
 
 Within the study period, the MIT team received data in regular updates, typically every two to four weeks. These data were created when an analyst at Aurora manually initiated a query to extract data. Each data extract built cumulatively on the last, enabling researchers to quantify the extent of any changes. For each data extract, the team documented the date it was received, the description of the files and variables received, and the e-mail communications related to this extract.
 
-### Preservation of Researcher-generated Files
+### Preservation of Researcher-Generated Files
 
 Research-generated data files and code are preserved on MIT's secure servers. Researchers do not have permission to share the raw ||**de-identified data**|| nor the intermediate or final disaggregated data sets. The ||**data use agreements**|| require that MIT return or destroy confidential data upon request by Aurora; however, to date no such request has been made.
 
@@ -198,7 +198,7 @@ After the clinical decision support project, two of the key executives at ARI le
 
 Beyond process, the Aurora analysts who worked on data extraction gained insight into the data and techniques for processing data that have improved their efficiency. For example, the best practice alert data used for this project is not commonly analyzed by the health care system; however, the analysts stated that understanding these data has helped them respond to internal requests from the pharmacy information systems group on how to analyze their alert data. As another example, many internal reporting and assessment projects at Aurora require matching data across data systems, and the need for, and complexity of, linking data has increased as the teams must now integrate data from the Advocate systems. The Aurora analyst team has applied their knowledge gained on the CDS project of how to match patient names or other records in a string format to these internal projects.[^ahc9]
 
-## About the Authors 
+## About the Authors {-}
 
 **Laura Feeney** is the associate director of research and training at J-PAL North America. She provides strategic direction to the research and training team in efforts to support researchers and improve the quality and efficiency of randomized evaluations. She works with researchers, partners, and staff to develop and promote best practices in research, build the capacity of policymakers and research staff, and encourage the use of administrative data for research.
 
@@ -210,7 +210,7 @@ Laura holds an MA in economics from the University of British Columbia and a BA 
 
 Amy has led a number of randomized evaluations of health care policies, including the Oregon Health Insurance Experiment and a study of healthcare "hotspotting." She holds a PhD in economics from MIT, an MPhil in economics from Oxford, and an AB in government from Harvard.
 
-## Acknowledgements
+## Acknowledgements {-}
 
 We are grateful to a research grant from the Laura and John Arnold Foundation for the original research underlying this case study. We received feedback from many of the original data analysts, research assistants, and study co-authors, including Andrew Marek, Noah Pearce, and Sarah Reimer from Aurora, and Sarah Abraham, Joseph Doyle, Jesse Gubb, Andelyn Russell, and Sam Wang from the J-PAL and MIT research teams. We acknowledge and thank them for their time, input, and perspective. The interpretations expressed are solely those of the authors and do not represent the views of our funder nor Aurora Health Care.
 
@@ -218,7 +218,7 @@ We are grateful to a research grant from the Laura and John Arnold Foundation fo
 
 [^ahc2]: The HIPAA Privacy Rule (45 Code of Federal Regulations (CFR) Part 160 and Subparts A and E of Part 164, accessed at <https://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title45/45cfr160_main_02.tpl> on 06-23-2020.) provides regulation for the use, storage, and sharing of medical records and other ||**protected health information**||. It holds health care providers, health insurance providers, researchers, and others accountable for safeguarding certain types of health information in the United States. Compliance requirements differ based on the party, such as individuals, researchers, or health care providers or insurers; the purpose of the data usage; and on stipulations or structure of data use agreements. The US Department of Health & Human Services provides a detailed [guide] (https://www.hhs.gov/hipaa/for-professionals/special-topics/research/index.html) [see @u.s.departmentofhealthhumanservices2018a] to the requirements associated with research and identifiable health data, how the ||**HIPAA**|| ||**Privacy Rule**|| applies to research, and a [guide] (https://www.hhs.gov/hipaa/index.html) [see @u.s.departmentofhealthhumanservices] to understanding ||**HIPAA**|| for all types of users.
 
-[^ahc3]: The US Federal Policy for the Protection of Human Subjects or the "Common Rule", located in [45 CFR Part 46] (https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/index.html), provides regulatory guidance for research involving human subjects and governs institutional review boards (IRBs), which approve research [@u.s.departmentofhealthhumanservices2018].
+[^ahc3]: The US Federal Policy for the Protection of Human Subjects or the "Common Rule", located in [45 CFR Part 46] (https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/index.html), provides regulatory guidance for research involving human subjects and governs institutional review boards (IRBs), which approve research [@officeforhumanresearchprotections2018a].
 
 [^ahc4]: See the text of these clauses in the Appendix.
 
@@ -237,6 +237,6 @@ This is a workaround for citations in footnotes, please ignore.
 @pennmedicineinformationsystemsdataanalyticscenter
 @hentel2019
 @centersformedicaremedicaidservices2018
-@u.s.departmentofhealthhumanservices2018
+@officeforhumanresearchprotections2018a
 @aurorahealthcareinc.andaffiliates2018
 ```

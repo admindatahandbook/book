@@ -1,0 +1,50 @@
+## Appendix {-}
+
+### Appendix A {-}
+
+[Sample Text for Agreement Components](.\appendix\dua_appendix.pdf)
+
+### Appendix B {-}
+
+#### Toolkits and Guides {-}
+
+**[California Accountable Communities for Health Data-Sharing Toolkit](https://cachi.org/uploads/resources/ACH-Data-Sharing-Toolkit-December-2016.pdf)**  
+This toolkit is produced by the University of California Berkeley Center for Healthcare Organizational and Innovation Research and sponsored by the California Health and Human Services Agency and University of California Berkeley, School of Public Health. This report summarizes seven parameters for data sharing, Purpose/Aim, Relationship/Buy-in, Funding, Governance and Privacy, Data and Data-sharing, Technical Infrastructure, and Analytic Infrastructure while observing that parties will have varying levels of maturity and expertise across these categories.
+
+**[CMS Administrative Simplification: Covered Entity Guidance](https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/HIPAA-ACA/Downloads/CoveredEntitiesChart20160617.pdf)**  
+This clickable guide helps identify whether an organization or individual is a covered entity under the Administrative Simplification provisions of HIPAA. It is a good example of a straightforward tool that aids decision-makers to understand what laws apply to whom.
+
+**[Department of Education Data Sharing Tool for Communities](https://www2.ed.gov/programs/promiseneighborhoods/datasharingtool.pdf)**  
+This toolkit is designed to simplify the complex concepts of FERPA. It covers three primary focus areas: understanding the importance of data collection and sharing, understanding how to best protect student privacy when collectively using personally identifiable information from students’ education records that are protected by FERPA, and understanding how to manage shared data using integrated data systems. It includes a sample MOU and sample consent form.
+
+**[Health Care Systems Research Network DUA Toolkit](http://www.hcsrn.org/asset/ce41ec1a-c071-4300-ac07-14cd653f234C/HCSRN_DUAToolkit.pdf)**  
+This toolkit includes a useful flowchart called “When do I need a DUA?” and a good glossary of terms, especially for health or healthcare projects.
+
+**[National Association of County & City Health Officials (NACCHO) Data Sharing Framework](https://www.naccho.org/uploads/downloadable-resources/Issue-Brief-Data-Sharing-Framework-NA592.pdf)**  
+This report titled “Connecting the Dots: A Data Sharing Framework for the Local Public Health System” focuses on DUA content areas needed by local public health officials. It includes a case study involving data access in a Colorado community.
+
+**[National Governors Association, Improving Human Services Programs and Outcomes Through Shared Data](http://natlgovassoc.wpengine.com/wp-content/uploads/2018/07/1609ImprovingHumanServicesSharedData.pdf)**  
+More for policymakers than practitioners, this brief includes short examples of how data sharing helped states and their residents in Indiana, Kentucky, Maryland, Massachusetts, North Carolina, Pennsylvania, Rhode Island, South Carolina, Virginia, and Washington.
+
+**[National League of Cities Sharing Data for Better Results Guide](https://www.nlc.org/sharing-data-for-better-results)**  
+Prepared with Stewards of Change, this guide was written for officials, agency leadership and managers. It highlights their incentives to share data, what information can be shared, and who can receive the information with specific examples across domains including education, health, mental health, substance abuse, human services, and criminal justice. They include sample MOUs from two counties, a city, and a state and have an appendix listing major federal laws and regulations.
+
+**[Sharing Data for Social Impact: Guidebook to Establishing Responsible Governance Practices](https://beeckcenter.georgetown.edu/wp-content/uploads/2020/01/Data-Sharing-Report.pdf)**  
+Produced by Natalie Evans Harris, a program fellow with the Beeck Center for Social Impact and Innovation, this guide is for those who take action on the data and drive impact. The guide focuses on three phases: building the collective, defining the operations, and driving impact.
+
+#### Agreement Collections {-}
+
+**[NNIP's Collection of Example Data-Sharing Agreements](https://www.neighborhoodindicators.org/library/guides/nnip%E2%80%99s-collection-example-data-sharing-agreements)**  
+This collection of agreements comes from multiple domains including labor and human services, department of motor vehicles, criminal justice, education, housing, and health and healthcare. It also includes some generic agreements and other materials, such as an information security incident protocol, breach plan, and sample confidentiality pledge.
+
+**[Data2Health Data Use Agreement Library](https://github.com/data2health/governance-pathways/blob/master/library.md)**  
+An analysis of DUA practices across 48 Clinical and Translational Science Award (CTSA) institutions, this collection includes DUA templates, forms to request DUAs, and policies and guidance documents.
+
+**[Drexel Data Sharing Agreement Repository (DataSAR)](http://datasar.cci.drexel.edu/index.html)**  
+This repository is a collection of DUAs, samples, contracts, use policies, and forms. It can be filtered by domain and discipline. This collection is aligned with Drexel’s Licensing Model and Ecosystem for Data Sharing Initiative.
+
+**[Contracts for Data Collaboration](https://contractsfordatacollaboration.org/library/)**  
+This collection contains DUAs for domestic and international government administrative data and private sector information. The site also includes a guide describing forms of collaboration and explains how they categorized DUAs based on Who, What, When, Where, Why, and How the data sharing was occurring.
+
+**[Administrative Data Research Initiative Data Sharing Index](https://adri.georgetown.edu/)**  
+This index, a collection of standards, guides, and templates, is searchable by geographic categories including city, county, state, or federal and domain categories such as education, health, housing, human services, justice, or workforce.
