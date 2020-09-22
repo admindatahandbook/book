@@ -14,7 +14,7 @@ always_allow_html: true
 ---
 
 ```{r setup,include=FALSE}
-source("_setup.R",echo=FALSE)
+source("programs/setup.R",echo=FALSE)
 ```
 
 # Welcome to the Handbook {-}

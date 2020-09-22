@@ -1,6 +1,6 @@
 bookdown::gitbook:
   includes:
-    in_header: [google_analytics.html]
+    in_header: [includes/google_analytics.html]
   css: [assets/css/style.css, assets/css/toc.css, assets/css/font-awesome.min.css, assets/css/draft.css]
   split_by: "chapter"
   split_bib: TRUE
@@ -15,16 +15,13 @@ bookdown::gitbook:
       scroll_highlight: yes
       before: null
       after: |
-              <li class="chapter""> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
-      #        <li class="chapter"><a href="https://creativecommons.org/licenses/by-nc/4.0/" alt="Link to CC BY-NC 4.0" target="_blank">
-      #        <img alt="License: CC BY-NC 4.0" src="https://licensebuttons.net/l/by-nc/4.0/80x15.png" /></a></li>
-      #<li class="chapter"><a href="https://doi.org/10.5281/zenodo.2621345"><img src="https://zenodo.org/badge/144227499.svg" alt="DOI 10.5281/zenodo.2621345"></a></li>
+              <li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
     toolbar:
       position: fixed
 bookdown::pdf_book:
   keep_tex: yes
   includes:
-      in_header: preamble.tex
+      in_header: [includes/preamble.tex]
   toc_depth: 1
   citation_package: natbib
   biblio-style: "authoryear"
