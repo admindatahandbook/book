@@ -5,10 +5,10 @@ set -ev
 cd $(dirname $0)
 
 # set up the environment
-Rscript _bootstrap.R
+Rscript programs/bootstrap.R
 
 # build the handbook
-Rscript _build.R
+Rscript programs/build.R
 
 # move over a few files
 if [[ -d _book ]] 
