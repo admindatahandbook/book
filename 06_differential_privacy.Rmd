@@ -1,3 +1,7 @@
-# Differential Privacy
+# Designing Access with Differential Privacy {#diffpriv}
+
+```{r, echo=FALSE, results='asis'}
+printauthor("diffpriv")
+```
 
 Placeholder

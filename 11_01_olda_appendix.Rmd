@@ -1,8 +1,8 @@
-## Appendix
+## Appendix {-}
 
-### Resources and Dashboards {-}
+### Appendix A:  Resources and Dashboards {-}
 
-**Resources**
+#### Resources {-}
 
 [The Ohio Longitudinal Data Archive Project Page](https://chrr.osu.edu/projects/ohio-longitudinal-data-archive)
 
@@ -14,7 +14,7 @@
 
 [Metadata Link](https://www.chrr.ohio-state.edu/investigator/pages/search)
 
-**Dashboards**
+#### Dashboards {-}
 
 [Workforce Success Measures](https://workforcesuccess.chrr.ohio-state.edu/)
 
@@ -22,7 +22,7 @@
 
 [Central Ohio Compact Dashboard](https://compact.chrr.ohio-state.edu/)
 
-### Case Study Images (Workforce Success Measures) {-}
+### Appendix B: Case Study Images (Workforce Success Measures) {-}
 
 ```{r echo=FALSE, out.width='100%'}
 knitr::include_graphics('./assets/olda/appendixb.png')

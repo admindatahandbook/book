@@ -1,3 +1,7 @@
 # Foreword {-}
 
+```{r, echo=FALSE, results='asis'}
+printauthor("foreword")
+```
+
 Placeholder

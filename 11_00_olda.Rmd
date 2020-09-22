@@ -1,6 +1,6 @@
 # Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results='asis'}
 source("programs/_plot_olda.R")
 printauthor("olda")
 ```
@@ -9,7 +9,7 @@ printauthor("olda")
 
 The ||Ohio Longitudinal Data Archive|| (OLDA) is a collaborative arrangement between the State of Ohio and the Ohio State University (OSU). Operated jointly by the John Glenn College of Public Affairs and the Center for Human Resource Research (CHRR), the OLDA stores data from five agencies (Education, Higher Education, Housing, Job and Family Services, and Opportunities for Ohioans with Disabilities) in Ohio. These data are available to government agencies as well as to external researchers. *By providing access to both networks, Ohio creates a community focused on generating evidence-based research that is [used]{.ul} by government for both research and public policy.*
 
-The OLDA is an example of long-term partnerships between state government and research communities. The data system has increased its holdings to include longitudinal micro-data from education, labor, housing, and disability services. Data are made available through a secure platform. The entire system is governed by a memorandum of understanding that is renegotiated every two years.
+The OLDA is an example of long-term partnerships between state government and research communities. The data system has increased its holdings to include longitudinal microdata from education, labor, housing, and disability services. Data are made available through a secure platform. The entire system is governed by a memorandum of understanding that is renegotiated every two years.
 
 The initial idea for the data system emerged in 2007 out of a partnership between faculty at the university, which resulted in an MOU giving OSU access to state data.[^olda1] The OLDA is a linked to a college research center, the [Ohio Education Research Center]([www.oerc.osu.edu](http://www.oerc.osu.edu/)) (OERC). The OERC is a policy research and evaluation unit at the Glenn College and conducts contract research with state and local government. The OLDA and OERC are actively used at Ohio State University in teaching education policy, data sciences, and simulation and modeling.[^olda2]
 
@@ -31,7 +31,7 @@ State agencies revised the administrative code to develop longitudinal data syst
 
 The ||unemployment insurance wage record|| system controlled by the Ohio Department of Job and Family Services pre-dated the OLDA and reflects earlier federal efforts. The legal foundation of the current wage record system is based in the Federal Unemployment Tax Act of 1937, which set up a federal tax to cover unemployed workers. As part of the tax, states were asked to build (over time) a way of reporting earnings on a quarterly basis. Statute at the federal level currently establishes the framework for employers to report wage records as part of the administration of Unemployment Insurance (Workforce Information Council, 2014).
 
-The motivation for building newer research databases in each of these government agencies varies. In the 1990s, government experienced an expansion of technology. IT systems were being used more broadly as states, such as Florida, built database systems to manage key administrative data (e.g., education data). Many states also created data systems that required local schools or universities to submit administrative data using a planning schedule, thereby building the local capacity for data systems. A second major reason for expanding data systems was an increasing demand from researchers for unit record data. As awareness of administrative data became more widespread in the 1980s and 1990s, faculty and professional researchers increasingly requested confidential micro-data from states [@borus1982; @pfeiffer1998; @stevens1989; @stevens2012].
+The motivation for building newer research databases in each of these government agencies varies. In the 1990s, government experienced an expansion of technology. IT systems were being used more broadly as states, such as Florida, built database systems to manage key administrative data (e.g., education data). Many states also created data systems that required local schools or universities to submit administrative data using a planning schedule, thereby building the local capacity for data systems. A second major reason for expanding data systems was an increasing demand from researchers for unit record data. As awareness of administrative data became more widespread in the 1980s and 1990s, faculty and professional researchers increasingly requested confidential microdata from states [@borus1982; @pfeiffer1998; @stevens1989; @stevens2012].
 
 #### University role in building the data system {-}
 
@@ -59,9 +59,9 @@ There are some lessons from this story that are relevant to other states attempt
 
 Because of the budget process in individual states, state government has specific reasons why they support use of administrative data. State and local government offices are often asked to participate in long-term research in collaboration with the federal government. For example, in 2011 the data at the OLDA was used to support a collective evaluation of the Registered Apprenticeship program in multiple states. Another example concerns longitudinal analysis of employment for welfare to work that the Center for Human Resource Research provided in the mid- to late-1990s. [@centerforhumanresourceresearch2001; @reed2012]. In both cases, the primary motivation for the analysis of state administrative data was an external demand from the federal government. Federal requirements for evaluations, particularly in the Department of Labor, are important reference points for legal and program officers in state agencies, as the federal laws (||Code of Federal Regulations|| 20 (Section 603)) allow for use of data to evaluate a public program.
 
-## Data Use Examples
+### Data Use Examples
 
-The ||Ohio Longitudinal Data Archive|| is composed of micro-data from a core group of State of Ohio agencies, as well as project-specific data from federal and local government, and occasionally, the private sector. Therefore, a description of the data holdings will shift over time as the memorandum of understanding that govern data exchange are altered to meet the policy priorities of government and the needs of specific researchers.
+The ||Ohio Longitudinal Data Archive|| is composed of microdata from a core group of State of Ohio agencies, as well as project-specific data from federal and local government, and occasionally, the private sector. Therefore, a description of the data holdings will shift over time as the memorandum of understanding that govern data exchange are altered to meet the policy priorities of government and the needs of specific researchers.
 
 In 2019, the data holdings came from the following state agencies:
 
@@ -85,13 +85,13 @@ The research uses of the OLDA depend on the programs that contribute microdata. 
 
 The following topics are representative studies.
 
-- education data
-  - student dropout from high school
-  - progression of STEM students through high school
+Education data
+- Student dropout from high school
+- progression of STEM students through high school
 
-- workforce data
-  - impact of long-term unemployment on workforce participation
-  - workforce outcomes of higher education programs
+Workforce data
+- Impact of long-term unemployment on workforce participation
+- Workforce outcomes of higher education programs
 
 Table \@ref(tab:oldatable2) provides example titles from approved research projects. Researchers obtain the Ohio data by completing a standardized set of documents and obtaining Institutional Review Board (IRB) approval. The paperwork for the researchers requires an outline of the methodological approach and a formal description of the data sets and variables, in addition to a formal IRB review.
 
@@ -123,7 +123,7 @@ The investigator is a resource for experienced researchers. With this system res
 
 Data are also made useable because the research team provides guided support for applicants. When an individual proposes a research project or has trouble with data use, individual researchers can contact the staff for support.
 
-#### Metadata {-}
+### Metadata
 
 The metadata are published in an open application on the center website. Access is through a guest account or a designated user [account](https://www.chrr.ohio-state.edu/investigator/pages/login). The metadata include all files that have been ingested and documented, up to and including wage record files, K12 education data, and higher education enrollments. Technically, the metadata include all variable names, values, and counts or other summary statistics for variables. It is possible to learn, for example, what is the cohort size of each group of high school graduates over time in Ohio. The metadata also include a sophisticated search feature, allowing identification of variables and types of data, including created variables.
 
@@ -169,7 +169,7 @@ Access is also time limited. All researchers sign legal assurances that they wil
 
 There are five forms that the individual researcher must file to apply for access: (1) a data use procedures and checklist, (2) a confidentiality form, (3) a data use agreement, (4) the Collaborative Institutional Training Initiative (CITI) responsible research use certification document, and (5) an institutional review board (IRB) approval letter.
 
-## The Five Safes Framework
+## Protection of Sensitive and Personal Data: The Five Safes Framework
 
 ### Safe Projects
 
@@ -205,7 +205,7 @@ Safe data also require that researchers maintain cell counts of a certain number
 
 All data that are part of the ||Ohio Longitudinal Data Archive|| are preserved within the existing data agreements. Technically, these files are not replaced over time; additional years or quarters of data are added to the existing file structure. It is possible that the data will be deleted (subject to the legal agreement from the agency). OLDA has had occasions where the data for specific projects must be deleted but not the underlying microdata. However, if an agency requires deletion of the data, OLDA's legal MOU requires compliance.
 
-Researcher extracts are maintained permanently on OLDA systems. This is easy to accomplish as the files are simply combinations of existing micro-data. Moreover, even without the extracts OLDA staff can easily reconstruct data files from the metadata system. Individuals submit these queries for data extracts, and these data dictionaries are maintained in individual user accounts as well as by the research team.
+Researcher extracts are maintained permanently on OLDA systems. This is easy to accomplish as the files are simply combinations of existing microdata. Moreover, even without the extracts OLDA staff can easily reconstruct data files from the metadata system. Individuals submit these queries for data extracts, and these data dictionaries are maintained in individual user accounts as well as by the research team.
 
 OLDA does not keep researcher generated files except for those submitted to the disclosure review process. Individual files that generate statistical results for publications are maintained by approved researchers. In fact, these must be deleted at the end of the approved period of time. If a researcher has a year to use the data, they must delete the files at the end of that year. Individuals complete and notarize a data destruction certificate that must be forwarded to the research team.
 
@@ -218,8 +218,6 @@ At the creation of the formal data center, OLDA staff conducted a range of outre
 Outreach in these early years was quite formal. There was a research advisory committee that included tenured faculty from almost all schools in Ohio. The committee developed materials, solicited applications, and served as cheerleaders for data use at their individual campuses. Since the end of the ||Race to the Top|| and ||Workforce Data Quality Initiative||, OLDA has worked on outreach with established research teams as well as responding to individuals directed to our team by agencies. Some of the Ohio agencies actually direct researchers to OLDA systems.
 
 Outreach was also supported by presentations at national meetings, such as the National Center for Education Statistics (NCES) STATS-DC Data Summit and WDQI convening in Washington, DC. OLDA presented for approximately six years at these meetings to states, serving to get the word out about state level use of research data to improve programs. Additionally, OLDA teams made presentations for the US Department of Labor, the Data Quality Campaign, and the National Skills Coalition.
-
-### Revenue
 
 ### Metrics of Success
 
@@ -237,13 +235,13 @@ Organizational success also requires consistent political support. Ohio has had 
 
 OLDA researchers monitor a number of metrics (somewhat informally), including (1) the number of data sets provided, (2) the number of projects completed, and (3) the number of websites and dashboards. The following are examples of recent accounting on these metrics.
 
-*Datasets*. The OLDA maintains data from five different state agencies. The newest one was added in 2017 and the oldest one prior to 1999. Within each agency the number of data sets expands each year as the agencies increase holdings. For example, the Ohio education data began in 2001 and now includes data through 2019. It is updated annually. The LMI workforce data are added every quarter and started in 1995 with the unemployment wage record data. The volume of the data sets is significant, more so because some of the files have over 100,000 variables rather than because of the volume of storage OLDA maintains.
+*Data sets*. The OLDA maintains data from five different state agencies. The newest one was added in 2017 and the oldest one prior to 1999. Within each agency the number of data sets expands each year as the agencies increase holdings. For example, the Ohio education data began in 2001 and now includes data through 2019. It is updated annually. The LMI workforce data are added every quarter and started in 1995 with the unemployment wage record data. The volume of the data sets is significant, more so because some of the files have over 100,000 variables rather than because of the volume of storage OLDA maintains.
 
 *Projects completed*. Research output includes 28 published studies in the last five years. These include academic articles, working papers, and presentations submitted to the research center. The list is maintained in a [bibliography](https://www.chrr.ohio-state.edu/content/olda_bib/olda_bib.html) and is not inclusive of in-progress work or work that has been submitted to the center but not yet reviewed or finalized.
 
 *Dashboards*. The OLDA team works extensively on supporting state and local government in Ohio with dashboards and scorecards. The team has built several that are maintained every year for over five years and some that are more recent. OLDA keeps website hit traffic for these dashboards to examine the location and overall use of the dashboards in the state.
 
-## About the Author
+## About the Author {-}
 
 Joshua Hawley is a professor in the John Glenn College of Public Affairs at the Ohio State University (OSU). He also serves in leadership roles at two research centers of OSU: director of the Ohio Education Research Center at the Glenn College and Associate Director for the Center for Human Resource Research (CHRR). The focus of both centers is state level administrative data. Since approximately 2009 the centers have partnered with the State of Ohio to store Ohio administrative records. The primary project for the Ohio Analytics Partnership is the Ohio Longitudinal Data Archive. Professor Hawley currently serves as the lead faculty for this effort. In addition, he teaches classes in Education and Workforce Development policy and Data Sciences.
 
