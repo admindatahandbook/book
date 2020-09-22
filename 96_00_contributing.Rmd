@@ -6,19 +6,19 @@ The Handbook is intended to dynamically evolve over time. Releases are called "v
 
 ## Availability {-}
 
-The Handbook's primary location is on the [web](https://admindatahandbook.mit.edu). However, it is also a book, and we will, at regular intervals, make available printed copies and ebook versions. The online version and the ebook will be assigned Digital Object Identifiers (DOI). Online chapters will receive their own DOI for ease of citability. Both the ebook and the hard copy will be assigned ISBN numbers. The hard copy will be available for purchase through a number of outlets. The ebook will be available for download from the Handbook's primary location for free.
+The Handbook's primary location is on the web ([`r config$base_url`](`r config$base_url`)). However, it is also a book, and we will, at regular intervals, make available printed copies and ebook versions. The online version and the ebook will be assigned Digital Object Identifiers (DOI). Online chapters will receive their own DOI for ease of citability. Both the ebook and the hard copy will be assigned ISBN numbers. The hard copy will be available for purchase through a number of outlets. The ebook will be available for download from the Handbook's primary location for free.
 
 ## Contributions {-}
 
-Invited or contributed additions will be incorporated into the Handbook by a J-PAL-based editorial team. Not all contributions can be accepted. Each contribution will be subject to editorial review, and may be sent out to referees. Contributions will be asked to follow the [Content, Format, and Style Guidelines] and the [Case Study Template]. Contributions need to be licensed liberally, at least under [Creative Commons Attribution-NonCommercial (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/), and copyright will be retained by the contributing authors.
+Invited or contributed additions will be incorporated into the Handbook by a J-PAL-based editorial team. Not all contributions can be accepted. Each contribution will be subject to editorial review, and may be sent out to referees. Contributions will be asked to follow the [Content, Format, and Style Guidelines] and the [Case Study Template]. The entire process is mediated by a [Github workflow](https://guides.github.com/introduction/flow/), and while referee reports and editorial deliberations may not be public, the contents of the decision letter will be part of the public Github workflow.^[For the technically inclined: it will be the commit message of the pull request, or the rejection of such pull request.] 
 
 Updates will be accepted on a flow basis, and updates published on a flow basis as well (see [Versioning]). If there have been any updates, then a new version of the print copy will be issued once a year.
 
 We would appreciate it if any improvements, corrections, and other contributions were sent back to us, for instance via the "Issues" feature on Github.
 
-Contributing authors retain the copyright to their publication. Contributions are licensed under a [Creative Commons - Attribution Non-commercial](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license.
+Contributing authors retain the copyright to their publication. Contributions need to be licensed liberally, at least under  a [Creative Commons - Attribution Non-commercial](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license.
 
-Once accepted, a contribution will appear in at least one major version of the Handbook. Curators retain the right to remove contributions in later versions of the Handbook, and do not need to notify authors of such decisions.
+Once accepted, a contribution will appear in at least one major version of the Handbook. The Editors retain the right to remove contributions in later versions of the Handbook, and do not need to notify authors of such decisions.
 
 ## Content, Format, and Style Guidelines {-}
 
@@ -64,13 +64,13 @@ All case studies should *follow the same template* to make the contents quickly 
 
 ### Formatting Guidelines {-}
 
-Submit final drafts as either a **Microsoft Word doc** or a **Markdown or RMarkdown file**. Resources: [basics of markdown]( https://github.com/labordynamicsinstitute/replicability-training/blob/master/TrainingCurriculum/Basics_of_Markdown.md) ([Online Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html), [Printable Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)).
+Submit final drafts as either a **Microsoft Word doc** or a **Markdown or RMarkdown file**. 
 
 **Section and subsection** headings should use the MS Word “Heading 2” and “Heading 3” formatting styles. For submissions in Markdown, use Markdown level 2 and 3 heading syntax (## and ###). Do not include numbering in section headers (e.g., not “2.1.3 Data Use Examples”). Section numbers will be automatically generated later and are likely to change.
 
 The **title of each case study chapter** should reference the admin data provider and the data hosting organization (if different). As an example, authors could use a title naming the data provider, plus an informative subtitle, such as, [title] “City of Cape Town, South Africa” [subtitle] “Aligning internal data capabilities with external research partnerships.”
 
-**For all authors, please list their current primary affiliation**. Sample: “Shawn Cole, John G. McLean Professor of Business Administration, Harvard Business School.” A new optional section has been added to the chapter template ("About the authors") allowing authors to provide additional information there. Please also add a short paragraph to the summary of the case study (see below) that describes each author’s role in the project and dates of involvement (if not affiliated anymore).
+**All authors should list their current primary affiliation**. Sample: “Shawn Cole, John G. McLean Professor of Business Administration, Harvard Business School.” The chapter template contains a section ("About the authors") allowing authors to provide additional information there. Please also add a short paragraph to the summary of the case study (see below) that describes each author’s role in the project and dates of involvement (if not affiliated anymore).
 
 ### Index {-}
 
@@ -107,11 +107,11 @@ Other options might be important institutions (U.S. Census, state government, NI
 
 ### Bibliography {-}
 
-The bibliography must be submitted as a separate file compatible with reference management tools. Acceptable formats are bibtex, RIS, EndNote, XML. For details, see here.
+The bibliography must be submitted as a separate file compatible with reference management tools. Acceptable formats are bibtex, RIS, EndNote, XML. 
 
 References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, \[see \@ColeDhalSautVilh2020\] might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
 
-The content of bibliography entries should follow the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html).
+The content of bibliography entries should follow the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html). Note however that we will handle styling within the manuscript.
 
 - URLs pointing to **online documents** should cite the document with all the usual information (author, publication date, etc.).
 - **Legal code:** expand on acronyms and ideally point to online repositories, so interested parties can easily find the text of the legal code. Example:  
