@@ -30,6 +30,7 @@ jobs:
         with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
            publish_dir: _book
+           user_email: lars.vilhuber@cornell.edu
            destination_dir: testing
            publish_branch: published_version 
            keep_files: true
