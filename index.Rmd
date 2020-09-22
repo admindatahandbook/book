@@ -25,10 +25,6 @@ knitr::include_graphics('./assets/images/webcover.png')
 
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. This Handbook intends to inform data providers and researchers on how to provide privacy-protected access to, handle, and analyze administrative data. Available publicly, the Handbook provides guidance on data access requirements and procedures, data privacy, data security, regulations for public data use, data architecture, data use and storage, cost structure and recovery, ethics and privacy-protection, making data accessible for research, and dissemination for restricted access use. The Handbook serves as a resource for all researchers looking to work with administrative data and for data providers looking to make such data available.
 
-```{block, type='rmdwarning'}
-This document is under development!
-```
-
 # About Us {-}
 
 ## About the Editors {-}
@@ -47,7 +43,7 @@ Anja Sautmann is a Research Economist in the World Bank's Development Research G
 
 ### Lars Vilhuber {-}
 
-Lars Vilhuber is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market, including mass layoffs, worker mobility, and the relationship between labor and housing markets. He also has extensive experience in the analysis, publication, replicability, and maintenance of large data sets. He has contributed to privacy-preserving public use statistics, metadata standards, and provenance documentation. Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
+Lars Vilhuber is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market. He also has extensive experience in the application of privacy-preserving publication and access to restricted data. He is chair of the scientific committee of the French restricted-access system [CASD](https://casd.eu), member of the governing board of the Canadian Research Data Centre Network ([CRDCN](https://crdcn.org)), and incoming chair of the  American Statistical Association‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home).  Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
 
 ## About J-PAL {-}
 
