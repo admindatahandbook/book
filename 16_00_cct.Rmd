@@ -257,7 +257,7 @@ Brendan Maughan-Brown is the Research Advisor at J-PAL Africa and is leading the
 
 ## Acknowledgements {-}
 
-The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, Carol Wright, Joshua Hawley and the IDEA team at J-PAL for support of the collaboration and for constructive comments on the draft.
+The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, Carol Wright, Joshua Hawley, and the IDEA team at J-PAL for support of the collaboration and for constructive comments on the draft.
 
 [^cct6]: A summary of implementation activities associated with the Data Strategy is provided at http://osf.io/2a7ev. The document is not yet publicly available but will be provided at this same location when it becomes available.
 

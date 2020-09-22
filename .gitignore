@@ -4,6 +4,8 @@
 _publish.R
 _book
 _bookdown_files
+data
+figures
 rsconnect
 *.utf8.md
 [0-9]*.md
