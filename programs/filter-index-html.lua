@@ -12,7 +12,7 @@ return {
         return elem
       else
         elem.text = string.gsub(string.sub(text,2,-2),"_"," ")
-        return pandoc.Strong( elem )
+        return  elem 
       end
     end,
   }
