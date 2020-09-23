@@ -11,7 +11,7 @@ return {
         -- we did not find a pattern
         return elem
       else
-        elem.text = string.sub(text,2,-2)
+        elem.text = string.gsub(string.sub(text,2,-2),"_"," ")
         return pandoc.Strong( elem )
       end
     end,
