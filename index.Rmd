@@ -6,7 +6,7 @@ site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 bibliography: [packages.bib,ideahandbook.bib] #Sloan-JPAL.bib
-csl: chicago-author-date.csl
+csl: chicago-mod.csl
 link-citations: yes
 github-repo: admindatahandbook/book
 description: Handbook on Using Administrative Data for Research and Evidence-based Policy
@@ -20,7 +20,7 @@ source("programs/setup.R",echo=FALSE)
 # Welcome to the Handbook {-}
 
 ```{r coiver, echo=F,  out.width="100%"}
-knitr::include_graphics('./assets/images/fullcover.jpg')
+knitr::include_graphics('./assets/images/webcover.png')
 ```
 
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. This Handbook intends to inform data providers and researchers on how to provide privacy-protected access to, handle, and analyze administrative data. Available publicly, the Handbook provides guidance on data access requirements and procedures, data privacy, data security, regulations for public data use, data architecture, data use and storage, cost structure and recovery, ethics and privacy-protection, making data accessible for research, and dissemination for restricted access use. The Handbook serves as a resource for all researchers looking to work with administrative data and for data providers looking to make such data available.
