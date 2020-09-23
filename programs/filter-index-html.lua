@@ -1,4 +1,4 @@
---  filter index words in the LaTeX version
+--  filter index words in the HTML version
 local function isempty(s)
   return s == nil or s == ''
 end
