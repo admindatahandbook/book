@@ -6,7 +6,7 @@ site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 bibliography: [packages.bib,ideahandbook.bib] #Sloan-JPAL.bib
-csl: chicago-author-date.csl
+csl: chicago-mod.csl
 link-citations: yes
 github-repo: admindatahandbook/book
 description: Handbook on Using Administrative Data for Research and Evidence-based Policy
