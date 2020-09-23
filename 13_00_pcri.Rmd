@@ -90,7 +90,7 @@ Table: (\#tab:pcritable1) Number of distinct private capital firms provided by s
 
 
 ```{r pcrifigure1, echo=FALSE, out.width='100%', fig.cap='Overlap of private capital firms in PCRI database by source of information[^pcri10]'}
-knitr::include_graphics('./assets/pcri/pcrifigure1.png')
+knitr::include_graphics('./assets/pcri/pcrifigure1web.png')
 ```
 
 ### Processing of Data Received from Data Vendors or Primary Sources (LPs or GPs)
@@ -100,7 +100,7 @@ The process of combining and cleaning the various data sources is an arduous tas
 The PCRI databases include data for over 17,000 private capital firms, 33,000 private capital funds, and 110,000 portfolio companies covering a time span from the early 1970s to 2018. The portfolio companies are geographically diverse with over 50 percent outside the United States, including 32 percent in Europe and 10 percent in Asia [@jeng2015]. The PCRI database contains eight different data tables: company, deal, exit, fund, fund performance, fund quarterly cash flow, general partner (GP), and investment. See Appendix A for more information on the database. Figure \@ref(fig:pcrifigure2) below provides details on the tables, including the variables in each data table and the relationship between the tables. For more information on the PCRI databases, please see the data user manual available on the [PCRI website](http://privatecapitalresearchinstitute.org/images/news/pcri_manual_2\_4.pdf).
 
 ```{r pcrifigure2, echo=FALSE, out.width='100%', fig.cap='Table relationship diagram'}
-knitr::include_graphics('./assets/pcri/pcrifigure2.png')
+knitr::include_graphics('./assets/pcri/pcrifigure2web.png')
 ```
 
 The PCRI, has developed an ||**internal data processing system**|| that is used as a training guide for new research associates. The PCRI database is a relational database. When new data are received from either a commercial vendor or a private capital firm, the new data are separated into variables and put in a consistent format to be read in by Stata. Various rudimentary tabl­es are created that correspond to tables in the PCRI database (e.g., investment, exit, GP, fund). For each data item in a table, the PCRI then identifies a key that is a unique identifier specific to a data provider. This key is then mapped to a unique identifier for each unique observation within that table (the source ID). This process, whereby the key of the data provider is mapped to a source ID, is referred to as ||**local aliasing**||. These newly created source IDs are then mapped to a unique identifier within the larger PCRI database (the ID). This process is called ||**global aliasing**||. ||**The global aliasing** **file**|| contains the unique identifier-name-source link.

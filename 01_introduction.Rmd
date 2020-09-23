@@ -143,7 +143,7 @@ In all these cases, there are significant economies of scale, scope, and duratio
 Our case studies span data from the public and the private sector and many different data-hosting organizations from governments and international institutions to academic research centers. However, not by coincidence, most of our case studies describe data access mechanisms that in one way or another harness benefits from specialization, bundling, or scale economies.
 
 ```{r introfig1, fig.cap='Diversity of data or data providers and diversity of users', echo=F}
-knitr::include_graphics('./assets/intro/introfigure1.png')
+knitr::include_graphics('./assets/intro/introfigure1web.png')
 ```
 
 Figure \@ref(fig:introfig1) provides something of a taxonomy in regard to specialization and scale by placing the different access models of the case studies on two axes: the diversity of data or data providers and the diversity of users. Specialization benefits are realized when all researchers are affiliated with the same organization or when all data comes from the same data provider. Economies of scale are realized when many different users access the same data or when the same team of experts works with many data sets or data providers.
