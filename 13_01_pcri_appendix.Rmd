@@ -61,7 +61,7 @@ Table: (\#tab:pcritablea3) Portfolio Companies by Location: Companies by Region,
 
 ### Appendix B
 
-[Sample ||**Data Sponsor**|| Agreement](.\appendix\pcri_appendix_b.pdf)
+[Sample +Data Sponsor| Agreement](.\appendix\pcri_appendix_b.pdf)
 
 ### Appendix C {-}
 

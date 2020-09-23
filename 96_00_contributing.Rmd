@@ -74,14 +74,14 @@ The **title of each case study chapter** should reference the admin data provide
 
 ### Index {-}
 
-A list of **index terms** must be submitted as a list, ideally in a separate file. List the primary word or phrase, plus alternatives, separated by a comma. Use a new line for each new index word/phrase. In addition, please go through your chapter and tag each index word by bolding it and enclosing it in  “||…||”. When we implement the index, our publishing platform will automatically tag each occurrence of these words.
+A list of **index terms** must be submitted as a list, ideally in a separate file. List the primary word or phrase, plus alternatives, separated by a comma. Use a new line for each new index word/phrase. In addition, please go through your chapter and tag each index word by bolding it and enclosing it in  “|…|”. When we implement the index, our publishing platform will automatically tag each occurrence of these words.
 
 Sample index list:
 
 - *Family Education Rights and Privacy Act, FERPA*
 - *Data Use Agreement, Data Use License, DUA*
 
-Sample occurrence in text: “The template ||DUA|| explicitly references the ||Family Education Rights and Privacy Act||.”
+Sample occurrence in text: “The template +DUA| explicitly references the +Family Education Rights and Privacy Act|.”
 
 **What are good index words or phrases?** Index words or phrases should be **key terms from the case study that a reader may be searching for across cases studies** and that would otherwise hard to find. The article should not just mention the word in passing, but should provide substantive content related to the indexed term. Terms chosen for the index should not be extremely frequent or general terms, such as “administrative data”. They should also not be used to reference passages that can easily be found using the table of contents and section headers.
 
