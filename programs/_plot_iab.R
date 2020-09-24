@@ -91,10 +91,10 @@ iabtable1 <- function(df){
       kable_styling(full_width = F) %>%
       column_spec(1, width="10em") %>%
       #column_spec(2, width="25em") %>%
-      pack_rows("Sample of Integrated Labour Market Biographies (||SIAB||)",1,3) %>%
-      pack_rows("||Establishment History Panel|| (||BHP||)",4,6) %>%
-      pack_rows("||Linked Employer-Employee Data|| (||LIAB||)",7,9) %>%
-      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).")
+      pack_rows("Sample of Integrated Labour Market Biographies (SIAB)",1,3) %>%
+      pack_rows("Establishment History Panel (BHP)",4,6) %>%
+      pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
+      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).")
     
   } else {
     df <- data.frame(lapply(df, function(x) {gsub("<br>", "\n", x)}), stringsAsFactors = F)
@@ -114,10 +114,10 @@ iabtable1 <- function(df){
       kable("latex", escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
       column_spec(1, width="10em") %>%
       column_spec(2, width="25em") %>%
-      pack_rows("Sample of Integrated Labour Market Biographies (||SIAB||)",1,3) %>%
-      pack_rows("||Establishment History Panel|| (||BHP||)",4,6) %>%
-      pack_rows("||Linked Employer-Employee Data|| (||LIAB||)",7,9) %>%
-      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the IAB website: https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx.", threeparttable=T)
+      pack_rows("Sample of Integrated Labour Market Biographies (SIAB)",1,3) %>%
+      pack_rows("Establishment History Panel (BHP)",4,6) %>%
+      pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
+      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the RDC website: https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx.", threeparttable=T)
   }
 }
 
