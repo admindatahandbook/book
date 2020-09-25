@@ -136,7 +136,7 @@ Only major versions are printed. Minor versions are made available in ebook form
 
 ## Case Study Template {-}
 
-Case studies should follow the case study template. Below is an updated checklist and guidance for authors and reviewers. In a Word document, please use heading formatting (heading 2 and heading 3) for each section header. Do not number your sections. The template can be downloaded as [PDF](assets/contributing/case_study_template.pdf) or [Word](assets/contributing/case_study_template.docx).
+Case studies should follow the case study template. Below is an updated checklist and guidance for authors and reviewers. In a Word document, please use heading formatting (heading 2 and heading 3) for each section header. Do not number your sections. The template can be downloaded as [Word](assets/contributing/case_study_template.docx).
 
 ```{r child = 'assets/contributing/case_study_template.md'}
 ```
@@ -147,9 +147,7 @@ here()
 pandoc_convert(file.path(here(),"assets/contributing/case_study_template.md"),
    to="docx",
    output=file.path(here(),"assets/contributing/case_study_template.docx"))
-pandoc_convert(file.path(here(),"assets/contributing/case_study_template.md"),
-  to="html5",
-  output=file.path(here(),"assets/contributing/case_study_template.pdf"))
+#pandoc_convert(file.path(here(),"assets/contributing/case_study_template.md"),  to="pdf", output=file.path(here(),"assets/contributing/case_study_template.pdf"))
 
 ```
 
