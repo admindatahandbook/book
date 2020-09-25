@@ -1,11 +1,16 @@
-.body-inner::after{
-    content: "DRAFT";
+.page-inner::before{
+    content: " You are viewing a preliminary version of the Handbook which may differ from the version of record when the Handbook is officially released.";
+    display: inline-block;
     color: steelblue;
-    font-size: 120px;
+    font-size: 14px;
     /* text-align: center; */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity:0.1
+    left: 20%;
+    right: 20%;
+    /*-webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);*/
+    opacity:0.3;
 }
