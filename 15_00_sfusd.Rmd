@@ -1,4 +1,4 @@
-# The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes
+# The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes {#sfusd}
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("sfusd")

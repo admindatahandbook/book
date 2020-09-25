@@ -21,11 +21,28 @@ See our [versioning guide](96_00_contributing.Rmd).
 
 ### Step 2: Create a new version from the testing folder
 
-Ensure that the testing folder is up-to-date (check if [Actions](actions/) might have failed). If it all looks fine, the creation is a simple rename. Command-line actions are below, but the same can be achieved by using the Github client, and renaming of the folder in Windows or Mac.
+Ensure that the testing folder is up-to-date (check if [Actions](actions/) might have failed, and verify the URL (REPO)/testing). If it all looks fine, the creation is a simple rename. 
+
+#### GUI version
+
+- Go to [Actions](actions/)
+- Select the "Create new version"  workflow
+  - Select the "Use workflow from Branch:published_version"
+- Choose the grey "Run workflow" option.
+  - Enter your Name
+  - Enter the new version number (starting with numeric part, e.g., `0.0-rc1` or `1.0.3` - the "v" will be prepended)
+- Choose the green "Run workflow" option 
+
+This will rename the "testing" folder to the new version number. The new version will be an exact copy of the old "testing" folder. The "testing" URL will not work until a new change is made.
+
+#### Experts: From the command line
+
+Command-line actions are below:
 
 ```
 git checkout published_version
 git mv testing (VERSION)
+git commit -m '[skipci] Creating new version (VERSION) from testing'
 git push
 ```
 
@@ -35,7 +52,10 @@ This is currently a manual process:
 
 - Go to [Actions](actions/)
 - Select the "Set version and redirect"  workflow
-- Choose the "Run workflow" option.
+  - Select the "Use workflow from Branch:published_version"
+- Choose the grey "Run workflow" option.
+  - Enter your Name
+- Choose the green "Run workflow" option 
 
 This will update and deploy the "index.html" and redirect to the highest published version.
 

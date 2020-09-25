@@ -1,7 +1,7 @@
-# Foreword {-}
+# Foreword {- #foreword}
+
+*Forthcoming*
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("foreword")
 ```
-
-Placeholder

@@ -1,0 +1,37 @@
+name: Set version and redirect
+on: 
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Your name'
+        # Default value if no value is explicitly provided
+        default: 'Github'
+        # Input has to be provided for the workflow to run
+        required: true
+      version:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Version to create (must start with a number, e.g. 0.1-rc1 or 0.2 - the v will be prepended!)'
+        # Default value if no value is explicitly provided
+        default: '0.0'
+        # Input has to be provided for the workflow to run
+        required: true
+
+jobs:
+  set-version:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skipci]')"
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 
+        with:
+          ref: published_version
+      - name: Make executable
+        run: |
+          [[ -d testing ]] && git mv testing v${{ github.event.inputs.version }}
+          git config user.name ${{ github.event.inputs.name }}
+          git config user.email github-actions@github.com
+          git add index.html
+          git commit -m "[skipci] Creating version v${{ github.event.inputs.version }}"
+          git push

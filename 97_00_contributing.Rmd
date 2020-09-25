@@ -1,6 +1,6 @@
 # (APPENDIX) Appendix {-} 
 
-# Evolution of the Handbook and Contributing {-}
+# Evolution of the Handbook and Contributing {- #contributing}
 
 The Handbook is intended to dynamically evolve over time. Releases are called "versions", starting with `V1`. Because many of the aspects that influence data sharing evolve over time, and because the initial set of case studies cannot cover the full breadth of administrative data sharing, future contributions and updates are envisioned. 
 
@@ -109,7 +109,7 @@ Other options might be important institutions (U.S. Census, state government, NI
 
 The bibliography must be submitted as a separate file compatible with reference management tools. Acceptable formats are bibtex, RIS, EndNote, XML. 
 
-References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, \[see \@ColeDhalSautVilh2020\] might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
+References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, "see `r cat("@ColeDhalSautVilh2020")`" might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
 
 The content of bibliography entries should follow the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html). Note however that we will handle styling within the manuscript.
 
@@ -172,8 +172,6 @@ Figures or tables can be used to support the data use examples. Do not describe 
 
 #### Making Data Usable for Research {-}
 
-*Note: this section now includes “metadata” (previously a separate section) and was moved from its previous position below “legal context” to above (the section renamed to “legal and institutional framework”).*
-
 **Describe the steps for transforming the operational or administrative data records into usable data files (including metadata and documentation) for analysis.**
 
 This section should discuss both the preparation of the data itself and the data documentation and metadata. Focus on information that can help others understand the general process and the time and cost involved. Steps might be:
@@ -192,8 +190,6 @@ Modifications that are needed to protect the data before researchers can access 
 ### Legal and Institutional Framework {-}
 
 #### Institutional Setup {-}
-
-*Note: this is a newly added subsection.*
 
 **Describe how data access is organized from an institutional standpoint.**
 
@@ -216,8 +212,6 @@ This section should focus on the legal obligations of the data provider towards 
 *Note: the agreement between the data provider and the users of the data (e.g. researchers) should be described below and in the “five safes” section (with reference to data sensitivity and confidentiality). The legal framework for access should be described in a way that is intelligible to lay persons and an international readership.*
 
 #### Legal Framework for Granting Data Access {-}
-
-*Note: this part was slightly rearranged to reduce overlap with the “five safes” section. The sections “access” and “IP” were omitted/their contents recombined in favor of “legal context” and “legal framework”. *
 
 **Describe what legal agreements regulate the use of the data by others.**
 
@@ -292,8 +286,6 @@ Discuss the practical implementation, including e.g. how long the review takes a
 
 #### Preservation and Repoducibility of Researcher-Accessible Files {-}
 
-*Note: preservation and reproducibility were previously two sections.*
-
 **Describe to what degree and over which time period researcher-accessible files and master files are preserved.**
 
 - Is there active curation, or only preservation of current bitstreams? 
@@ -309,8 +301,6 @@ Discuss the practical implementation, including e.g. how long the review takes a
 - Does the data provider generate persistent identifiers for any of these?
 
 ### Sustainability and Continued Success {-}
-
-*Note: “revenue” was moved here, and combined with “outreach” and success metrics into one section.*
 
 #### Outreach {-}
 
