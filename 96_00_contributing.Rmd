@@ -150,4 +150,3 @@ pandoc_convert(file.path(here(),"assets/contributing/case_study_template.md"),
 #pandoc_convert(file.path(here(),"assets/contributing/case_study_template.md"),  to="pdf", output=file.path(here(),"assets/contributing/case_study_template.pdf"))
 
 ```
-

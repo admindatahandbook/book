@@ -17,7 +17,7 @@ There are three factors that a data custodian should bear in mind when deciding 
 
 Rather, this chapter provides an overview of the concepts and more widely-used methods of SDL. Relative to other primers that cover similar material, we focus more closely on the advantages and disadvantages of various methods from the perspective of data users. This chapter can serve as a reference that data providers and data users can use to discuss which forms of SDL are appropriate and will satisfy the needs of both parties. In particular, we focus on how common SDL tools affect different types of statistical analysis as well as the kind of confidentiality protections they support, drawing heavily on @abowd_economic_2015. SDL is a broad topic with a vast literature, starting with @fellegi_question_1972. Naturally, this brief summary is not a replacement for the textbook treatment of SDL in @duncan_statistical_2011. Finally, SDL methods must be implemented and deployed, and we provide pointers to existing "off-the-rack" tools in a variety of platforms (Stata, R, and Python). Readers might also consult other summaries and guides, such as @dupriez_dissemination_2010, @world_bank_dime_nodate, @kopper_j-pal_2020, and @liu_statistical_2020.
 
-## Purpose of statistical disclosure limitation methods: Definitions and Context
+## Purpose of Statistical Disclosure Limitation Methods: Definitions and Context
 
 <!-- (1-1.5 pages) -->
 
@@ -58,7 +58,7 @@ Briefly, SDL is *ignorable* for a particular analysis if the analysis can be per
 
 We briefly outline several of the methods most commonly used within national statistical offices. For interested readers, @harris-kojetin_statistical_2005 describe how SDL systems are implemented in the U.S. statistical system,^[As of the writing of this chapter in August 2020, WP22 is being revised and updated, but has not yet been published.] while @dupriez_dissemination_2010 offers a more multinational perspective.
 
-### De-identification
+### De-Identification
 
 In general, it is good practice to remove any variables from the data that are not needed for data processing or analysis, and that could be considered direct identifiers. What constitutes "direct identifiers" may differ on the context, but generally comprises any variable that might directly link to confidential information: names, account or identifier numbers, and sometimes exact birth dates or exact geo-identifiers.^[See guidance in @world_bank_dime_nodate and @kopper_j-pal_2020.] HIPAA defines sixteen identifiers that must be removed in order to comply with the law. It may be necessary to preserve identifiers through parts of the data processing or analysis if they are key variables needed for record linking. In field experiments, the identities of treatment and control units may need to be merged with an administrative dataset. It is also sometimes necessary to use direct identifiers to link records between surveys and administrative data, or precise geographic coordinates may be needed to compute distances as part of the analysis. If possible, the data provider should facilitate record linking while the data are secure, before they are shared with the research team.
 
@@ -114,7 +114,7 @@ Swapping is ignorable for analyses that only depend on the matching variables, s
 Sampling is the original SDL technique. Rather than the full confidential microdata, publishing a sample inherently limits the certainty with which an attackers can re-identify records.
 While sampling can provide a formal privacy guarantee, in modern, detailed surveys, sampling will not in general prevent re-identification. In combination with other tools, like coarsening, sampling may be particularly appealing because, while it is non-ignorable, researchers can adjust their analysis for the sampling using familiar methods. Sampling is often used in conjunction with other methods, including with formally private methods, to amplify the protection provided. 
 
-### Noise infusion
+### Noise Infusion
 
 Noise infusion can refer to an array of related methods, all of which involve distorting data with randomly distributed noise. There is a key distinction between methods where the microdata are infused with noise (+input_noise_infusion|), versus methods where noise is added to functions or aggregates of the data before publication (+output_noise_infusion|).
 
@@ -122,19 +122,19 @@ Noise infusion was developed as a substitute for cell suppression as an approach
 
 Noise infusion has the advantage that it mostly eliminates the need to suppress sensitive records or cells, allowing more information to be revealed from the confidential data while maintaining certain confidentiality protections. Noise infusion also generally preserves the means and covariances among variables. However, it will always inflate estimated variances and can lead to bias in estimates of statistical models, and in particular regression coefficients. Hence, noise infusion is, in general, not ignorable. If the details of the noise distribution can be made available to researchers, then it is possible to correct analysis for noise infusion. However, information about the noise distribution can also help an attacker reverse engineer the protections.
 
-### Synthetic data and multiple imputation
+### Synthetic Data and Multiple Imputation
 
 Synthetic data generation and multiple imputation are closely related. In fact, one particular variant of synthetic data as SDL -- partially synthetic data -- is also known as "suppress and impute" [@little_statistical_1993]. Sensitive values for some or all records are replaced by (multiple) imputations. More generally, fully synthetic data [@rubin_discussion_1993] replaces all values with draws from a posterior predictive distribution, estimated given the confidential data. For an overview, see @raghunathan_multiple_2003, @little_statistical_2004, and @drechsler_synthetic_2011.
 
 Synthetic data have been used in the Federal Reserve Board's Survey of Consumer Finances to protect sensitive income values [@kennickell_multiple_1998], and in the American Community Survey microdata to protect data from group quarters [such as prisons and university residences; see @hawala_disclosure_2009]. The U.S. Census Bureau's LODES data, included in the [OnTheMap](https://onthemap.ces.census.gov/) application, uses synthetic household data [@machanavajjhala_privacy_2008]. Synthetic data can be used in conjunction with validation servers: researchers use the synthetic data to create complex model-based estimation, then submit their analysis to a remote server with access to the confidential data for validation of the results. Such a mechanism has been used by the U.S. Census Bureau in collaboration with Cornell University for confidential business microdata [@kinney_towards_2011] and for survey data combined with administrative data [@abowd_final_2006]. The term is sometimes used as well for "test" data for remote submission systems, which typically makes no claims as to the validity - it is simply constructed to replicate the data schema of the confidential data, to test statistical code.
 
-### Some examples
+### Some Examples
 
 Table \@ref(tab:overviewtable) shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources. 
 
 ```{r overviewtable, echo=FALSE}
 #library(readODS)
-overview <- head(sapply(read_ods("./assets/discavoid/summary_methods.ods"),as.character) ,12)
+overview <- head(sapply(read_ods("./assets/discavoid/summary_methods.ods"),as.character),12)
 overview[is.na(overview)] <- " "
 kable(overview, caption = "Summary of SDL Methods", format = "html") %>% 
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
@@ -186,7 +186,7 @@ Lars Vilhuber is the Executive Director of the [Labor Dynamics Institute](http:/
 
 ## Acknowledgements {-}
 
-This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell University [@abowd_session_2016] . We gratefully acknowledge the support of Alfred P.\ [Sloan Foundation Grant G-2015-13903](https://sloan.org/grant-detail/6845) and [NSF Grant SES-1131848](http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848) for the earlier work. 
+This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell University [@abowd_session_2016]. We gratefully acknowledge the support of Alfred P.\ [Sloan Foundation Grant G-2015-13903](https://sloan.org/grant-detail/6845) and [NSF Grant SES-1131848](http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848) for the earlier work. 
 
 ## Disclaimer {-}
 
