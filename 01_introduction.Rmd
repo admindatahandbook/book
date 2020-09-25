@@ -17,7 +17,7 @@ At the same time, there are a wide variety of data sets already in existence, su
 
 Beyond these uses, carefully designed systematic research with administrative data, often partnering academic researchers with firms and governments, may carry out analyses, conduct experiments, and develop and field supplemental surveys to test specific mechanisms or hypotheses. This type of innovative research could dramatically expand the types of insights gained from the data. An increasing fraction of published papers in economics uses administrative data (see Figure \@ref(fig:introchetty), @chetty2012). However, researcher access to administrative data sets remains difficult and idiosyncratic [@card2010]. This Handbook is motivated by our view that easier access and an increased use of administrative data sets by researchers could dramatically improve the quantity and quality of available evidence on social programs and policies.
 
-```{r introchetty, fig.cap='Time Trends in the Use of Administrative Data for Empirical Research (Source: Chetty, 2012)', echo=F}
+```{r introchetty, fig.cap='Time Trends in the Use of Administrative Data for Empirical Research. Source: Chetty (2012). Used by permission.', echo=F}
 intrograph1
 ```
 The potential benefits of greater access to administrative data are enormous, as the scope of data held at governments, non-governmental organizations (NGOs), and private firms is increasing rapidly. Digital collection of data at point of origin (as opposed to *ex post* digitization of administrative forms and reports) is becoming the norm. These data often have useful properties. They can measure certain features objectively, such as distance traveled, price paid, locations visited, or contacts with a system or provider. This can avoid social desirability or recall biases of survey data. Checks and balances like biometric capture of beneficiaries or automatic geotagging can additionally make administrative data more reliable and accurate than self-reported information.
@@ -143,7 +143,7 @@ In all these cases, there are significant economies of scale, scope, and duratio
 Our case studies span data from the public and the private sector and many different data-hosting organizations from governments and international institutions to academic research centers. However, not by coincidence, most of our case studies describe data access mechanisms that in one way or another harness benefits from specialization, bundling, or scale economies.
 
 ```{r introfig1, fig.cap='Diversity of data or data providers and diversity of users', echo=F}
-knitr::include_graphics('./assets/intro/introfigure1.png')
+knitr::include_graphics('./assets/intro/introfigure1web.png')
 ```
 
 Figure \@ref(fig:introfig1) provides something of a taxonomy in regard to specialization and scale by placing the different access models of the case studies on two axes: the diversity of data or data providers and the diversity of users. Specialization benefits are realized when all researchers are affiliated with the same organization or when all data comes from the same data provider. Economies of scale are realized when many different users access the same data or when the same team of experts works with many data sets or data providers.

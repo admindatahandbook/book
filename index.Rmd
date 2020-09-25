@@ -5,8 +5,8 @@ date: "`r format(Sys.time(), '%Y-%m-%d')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [packages.bib,ideahandbook.bib] #Sloan-JPAL.bib
-csl: chicago-author-date.csl
+bibliography: [packages.bib,ideahandbook.bib,assets/discavoid/discavoid.bib] #Sloan-JPAL.bib
+csl: chicago-mod.csl
 link-citations: yes
 github-repo: admindatahandbook/book
 description: Handbook on Using Administrative Data for Research and Evidence-based Policy
@@ -14,7 +14,7 @@ always_allow_html: true
 ---
 
 ```{r setup,include=FALSE}
-source("_setup.R",echo=FALSE)
+source("programs/setup.R",echo=FALSE)
 ```
 
 # Welcome to the Handbook {-}
@@ -35,7 +35,7 @@ Shawn Cole is the John G McLean Professor of Business Administration at Harvard 
 
 ### Iqbal Dhaliwal {-}
 
-Iqbal Singh Dhaliwal is the Global Executive Director of J-PAL. He works with the Board of Directors to develop the organization’s strategic vision, and with the leadership of the six regional offices to coordinate J-PAL’s worldwide research, policy outreach, capacity building, and operations. He is a Co-Chair of IDEA. He began his career in public service as a member of the Indian Administrative Service (IAS), in which he served as a Deputy Secretary in a state government, director of a statewide welfare department, and CEO of a publicly owned company. He has a BA in economics from the University of Delhi, an MA in economics from the Delhi School of Economics, and an MPA in international development from Princeton School of Public and International Affairs.
+Iqbal Dhaliwal is the Global Executive Director of J-PAL and co-chair of IDEA. He works with the Board of Directors to develop J-PAL’s strategic vision, with leadership of the seven regional offices to coordinate J-PAL’s worldwide research, policy outreach, capacity building, and operations, and with funding partners to secure resources for J-PAL worldwide. He has setup many partnerships for J-PAL with data providers and implementing partners. He is a co-PI on a very large randomized evaluation in India that used both survey data and large admin datasets to help a state government reduce health care absenteeism. Iqbal has a deep appreciation of the concerns and constraints of data providers in governments as he began his career as a member of the Indian Administrative Service (IAS) formulating policy and implementing programs across many assignments. Later as a Director in an economic consulting firm in Chicago, he analyzed numerous very large data sets to provide critical insights to private sector clients in manufacturing, health, banking and automotive sectors. He has a BA in economics from the University of Delhi, an MA in economics from the Delhi School of Economics, and an MPA in international development from Princeton University.
 
 ### Anja Sautmann {-}
 
