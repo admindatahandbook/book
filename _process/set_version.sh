@@ -14,3 +14,5 @@ highest=$(echo "$list" | tr " " "\n" | sort -g | tail -1)
 # now fill in the template with the highest version
 
 sed "s/{% version %}/v$highest/g" _process/index.tmpl > index.html
+
+echo v$highest
