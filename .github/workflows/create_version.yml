@@ -1,4 +1,4 @@
-name: Set version and redirect
+name: Create version
 on: 
   workflow_dispatch:
     # Inputs the workflow accepts.
