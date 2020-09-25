@@ -134,7 +134,7 @@ Table \@ref(tab:overviewtable) shows how the various methods can be combined, dr
 
 ```{r overviewtable, echo=FALSE}
 #library(readODS)
-overview <- head(sapply(read_ods("./assets/discavoid/summary_methods.ods"),as.character) ,12)
+overview <- head(sapply(read_ods("./assets/discavoid/summary_methods.ods"),as.character),12)
 overview[is.na(overview)] <- " "
 kable(overview, caption = "Summary of SDL Methods", format = "html") %>% 
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
@@ -186,7 +186,7 @@ Lars Vilhuber is the Executive Director of the [Labor Dynamics Institute](http:/
 
 ## Acknowledgements {-}
 
-This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell University [@abowd_session_2016] . We gratefully acknowledge the support of Alfred P.\ [Sloan Foundation Grant G-2015-13903](https://sloan.org/grant-detail/6845) and [NSF Grant SES-1131848](http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848) for the earlier work. 
+This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell University [@abowd_session_2016]. We gratefully acknowledge the support of Alfred P.\ [Sloan Foundation Grant G-2015-13903](https://sloan.org/grant-detail/6845) and [NSF Grant SES-1131848](http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848) for the earlier work. 
 
 ## Disclaimer {-}
 

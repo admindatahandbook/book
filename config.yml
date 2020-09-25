@@ -1,5 +1,5 @@
 default:
-  base_url: "https://labordynamicsinstitute.github.io/idea-handbook/"
+  base_url: "https://admindatahandbook.github.io/book"
   last_update: !expr Sys.Date()
   first_publish_date: "April 2020"
   colors:

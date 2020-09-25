@@ -10,9 +10,14 @@ bookdown::gitbook:
   highlight: tango
   keep_md: TRUE
   config:
+    fontsettings:
+      theme: white
+      family: serif
+      size: 2
     sharing:
       facebook: no
-      github: yes
+      github: no
+      twitter: no
     toc:
       collapse: section
       scroll_highlight: yes
