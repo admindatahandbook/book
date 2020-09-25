@@ -11,11 +11,11 @@ Rscript programs/bootstrap.R
 Rscript programs/build.R
 
 # move over a few files
-if [[ -d _book ]] 
+if [ -d _book ] 
 then
-  [[ -d _book/_process ]] || mkdir _book/_process
-  [[ -f _process/index.tmpl ]] && cp _process/index.tmpl _book/_process
-  [[ -f _process/set_version.sh ]] && cp _process/set_version.sh _book/_process
+  if [ ! -d _book/_process ] ; then mkdir _book/_process ; fi
+  if [ -f _process/index.tmpl ] ; then cp _process/index.tmpl _book/_process ; fi
+  if [ -f _process/set_version.sh ] ; then cp _process/set_version.sh _book/_process ; fi
   tar czvf _book/_process/github_workflow.tgz .github/workflows/
 fi
 
