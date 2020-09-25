@@ -1,0 +1,37 @@
+name: Set version and redirect
+on: 
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Your name'
+        # Default value if no value is explicitly provided
+        default: 'Github'
+        # Input has to be provided for the workflow to run
+        required: true
+
+jobs:
+  set-version:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skipci]')"
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 
+        with:
+          ref: published_version
+      - name: Run script to set redirect
+        run: |
+          # pull latest versions 
+          [[ -f latest/_process/set_version.sh ]] && cp ./latest/_process/set_version.sh ./_process/set_version.sh
+          [[ -f latest/_process/index.tmpl ]] && cp ./latest/_process/index.tmpl ./_process/index.tmpl
+          [[ -f latest/_process/github_workflow.tgz ]] && tar xzvf latest/_process/github_workflow.tgz
+          # make executable
+          chmod +x ./_process/set_version.sh
+          # run it
+          result=$(./_process/set_version.sh)
+          git config user.name ${{ github.event.inputs.name }}
+          git config user.email github-actions@github.com
+          git add index.html _process .github
+          git commit -m "[skipci] Set version for redirect to $result"
+          git push
