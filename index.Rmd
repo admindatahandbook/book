@@ -4,7 +4,7 @@ author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
-documentclass: book
+documentclass: WileySix
 bibliography: [packages.bib,ideahandbook.bib,assets/discavoid/discavoid.bib] #Sloan-JPAL.bib
 csl: chicago-mod.csl
 link-citations: yes
@@ -15,15 +15,20 @@ always_allow_html: true
 
 ```{r setup,include=FALSE}
 source("programs/setup.R",echo=FALSE)
-```
 
+```
+```{=latex}
+\include{includes/header.tex}
+```
 # Welcome to the Handbook {-}
 
 ```{r cover, echo=F}
 knitr::include_graphics('./assets/images/webcover.png')
 ```
 
+```{=html}
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. Readers can also obtain the Handbook for free as an ebook or a printable PDF, or can purchase a printed copy, from the [Handbook's home page](https://admindatahandbook.mit.edu/).
+```
 
 # About Us {- #about}
 

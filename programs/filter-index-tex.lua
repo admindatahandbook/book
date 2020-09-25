@@ -6,16 +6,18 @@ end
 return {
   {
     Str = function (elem)
-      a,b,text = string.find(elem.text,"(%b+|)")
+      a,b,before,text,after = string.find(elem.text,"(.*)(%b+|)(.*)")
       if isempty(a) then
         -- we did not find a pattern
         return elem
       else
-        elem.text = string.gsub(string.sub(text,2,-2),"_"," ")
+        text = string.gsub(string.sub(text,2,-2),"_"," ")
         return {
+            pandoc.utils.stringify(before), 
             pandoc.RawInline('latex', '\\index{'), 
-            pandoc.utils.stringify(elem), 
-            pandoc.RawInline('latex', '}')
+            pandoc.utils.stringify(text), 
+            pandoc.RawInline('latex', '}'),
+            pandoc.utils.stringify(after)
         }
       end
     end,

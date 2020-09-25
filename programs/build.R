@@ -9,8 +9,7 @@ if ( sysinf['sysname'] == 'Darwin' ) {
 }
 
 #run bookdown
-bookdown::render_book('index.Rmd', 'bookdown::gitbook')
+#bookdown::render_book('index.Rmd', 'bookdown::gitbook')
 
-# rmarkdown::render('LICENSE.Rmd', 'html_document', '_book/license.html')
-# bookdown::render_book('index.Rmd', 'bookdown::pdf_book')
+bookdown::render_book('index.Rmd', 'bookdown::pdf_book')
 # "bookdown::render_book('index.Rmd', 'bookdown::epub_book')
