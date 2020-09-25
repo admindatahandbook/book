@@ -84,11 +84,11 @@ The researcher needs to communicate with the right decision-makers within the da
 
 ### Asking Questions About the Process
 
-The researcher should discuss with the data provider how the negotiation will proceed before submitting the request. Does the data provider have an iterative process? Will they counter or iterate on the request? If one part of the request is denied, will the rest proceed or will the whole request be returned? Does the data provider require an |IRB| or +ethics_board| review and approval from their end, or do they require that a researcher obtain IRB approval from their institution before requesting or accessing data? What is the signature process for all parties to the agreement? Who are authorized individuals permitted to sign on behalf of the researcher's or data provider's organization? Will the data provider require background checks on researchers?
+The researcher should discuss with the data provider how the negotiation will proceed before submitting the request. Does the data provider have an iterative process? Will they counter or iterate on the request? If one part of the request is denied, will the rest proceed or will the whole request be returned? Does the data provider require an +IRB| or +ethics_board| review and approval from their end, or do they require that a researcher obtain IRB approval from their institution before requesting or accessing data? What is the signature process for all parties to the agreement? Who are authorized individuals permitted to sign on behalf of the researcher's or data provider's organization? Will the data provider require background checks on researchers?
 
 ### Understanding the Reasons Behind a Negative Response
 
-|Data providers| say no for many reasons. It is important to understand what the "no" means in order to determine how best to respond. The researcher should determine whether the response is stemming from a legal, policy, or cultural barrier.
++Data_providers| say no for many reasons. It is important to understand what the "no" means in order to determine how best to respond. The researcher should determine whether the response is stemming from a legal, policy, or cultural barrier.
 
 Organizations without existing systems for data sharing may turn down a request because they lack clear internal roles and responsibilities or resources to administer the agreement development, data exchange, and relationship monitoring. Obtaining funding or external resources can help to support the process.
 
