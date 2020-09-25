@@ -1,8 +1,90 @@
 % addtional packages for the book
 %\usepackage{chapterbib}
 %\usepackage{makeidx}
+\usepackage{setspace}
+\usepackage{ragged2e}
+
 \usepackage{comment}
-\usepackage{w-bookps}
 
 \excludecomment{invisible}
 \excludecomment{bbox}
+
+
+\usepackage[paperheight=9in,paperwidth=6in,top=1in,bottom=1in,right=1in,left=1in, showcrop]{geometry}
+
+% lists:
+%\usepackage{enumitem}
+% tables
+%\usepackage{booktabs}
+% use one of those if needed for referencing figures etc.
+%\usepackage{varioref}
+%\usepackage{hyperref}
+%\usepackage{cleveref}
+
+% headers and footers
+\usepackage{fancyhdr}
+% Section and chapter titles
+\usepackage{titling}
+
+
+% wholesale set the titles of chapters and sections to sctype and small - can be improved - want "label" (Chapter 1) to be sc, but actual chapter title standard font or sans serif as book cover
+\usepackage[ sc, small ]{titlesec}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\itshape \scriptsize \scshape Using Administrative Data for Research and Evidence-Based Policy}
+\fancyhead[LE]{\scshape \scriptsize Chapter \thechapter}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\scriptsize \scshape \thepage}
+\fancyfoot[LO,CE]{}
+\fancyfoot[CO,RE]{}
+\renewcommand{\headrulewidth}{0.0pt}
+
+%% Title page:
+% Formatting the title of the book to flush left
+\pretitle{ \begin{flushleft}  }
+\posttitle{ \par \end{flushleft} \vskip 2em}
+
+
+% Formatting the author list
+\preauthor{}
+\DeclareRobustCommand{\authorthing}
+{\begin{flushleft}\large
+\begin{tabular}{l}
+ Shawn Cole \\ Iqbal Dhaliwal \\ Anja Sautmann \\ Lars Vilhuber 
+\end{tabular}
+\end{flushleft}
+}
+\postauthor{}
+
+% Chapter titles with authors in ToC and chapter 
+\makeatletter
+
+\newcommand\chapterauthor[1]{\authortoc{#1}\printchapterauthor{#1}}
+
+\newcommand{\printchapterauthor}[1]{%
+  {\parindent0pt\vspace*{-35pt}%
+  \linespread{1.1}\large #1%
+  \par\nobreak\vspace*{35pt}}
+  \@afterheading%
+}
+\newcommand{\authortoc}[1]{%
+  \addtocontents{toc}{\vskip-10pt}%
+  \addtocontents{toc}{%
+    \protect\contentsline{chapter}%
+    {\hskip1.3em \mdseries\protect\scriptsize #1}{}{}}
+  \addtocontents{toc}{\vskip2pt}%
+}
+\makeatother
+
+%paragraphs
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{.2cm plus 1mm minus 1mm}
+
+% TOC
+%\setcounter{tocdepth}{0}
+
+% font
+\renewcommand{\rmdefault}{ppl}
+\renewcommand{\sfdefault}{phv}
