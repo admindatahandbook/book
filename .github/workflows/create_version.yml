@@ -32,6 +32,5 @@ jobs:
           [[ -d testing ]] && git mv testing v${{ github.event.inputs.version }}
           git config user.name ${{ github.event.inputs.name }}
           git config user.email github-actions@github.com
-          git add index.html
           git commit -m "[skipci] Creating version v${{ github.event.inputs.version }}"
           git push
