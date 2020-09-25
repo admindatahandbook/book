@@ -15,4 +15,6 @@ highest=$(echo "$list" | tr " " "\n" | sort -g | tail -1)
 
 sed "s/{% version %}/v$highest/g" _process/index.tmpl > index.html
 
+ln -sf $highest latest
+
 echo v$highest
