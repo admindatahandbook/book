@@ -1,8 +1,5 @@
 name: Set version and redirect
 on: 
-  push:
-    branches: 
-      - published_version
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
@@ -23,7 +20,7 @@ jobs:
         uses: actions/checkout@v2 
         with:
           ref: published_version
-      - name: Make executable
+      - name: Run script to set redirect
         run: |
           # make executable
           chmod +x ./_process/set_version.sh

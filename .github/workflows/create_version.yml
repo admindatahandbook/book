@@ -1,8 +1,5 @@
-name: Create new version
+name: Set version and redirect
 on: 
-  push:
-    branches: 
-      - published_version
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
