@@ -18,18 +18,17 @@ jobs:
         with:
           args: "/github/workspace/_build.sh"
           
-#      # Runs a set of commands using the runners shell
-#      - name: Run docker for R 
-#        uses: docker://rocker/r-apt:disco
-#        with:
-#          args: "Rscript --vanilla programs/libraries.R ubuntu"      
           
       # send it to gh-pages
+      # We use a personal token to allow for posting despite branch controls - see https://github.com/peaceiris/actions-gh-pages for parameters
+      # We also use a *beta* feature to post to a particular destination_dir. 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.0-8
         with:
-           github_token: ${{ secrets.GITHUB_TOKEN }}
+           github_token: ${{ secrets.PUBLISH_TOKEN_LARS }}
            publish_dir: _book
+           user_name: 'Github Action Bot'
+           user_email: 'lars.vilhuber@cornell.edu'
            destination_dir: testing
            publish_branch: published_version 
            keep_files: true
