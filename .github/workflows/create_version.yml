@@ -1,4 +1,4 @@
-name: Set version and redirect
+name: Create new version
 on: 
   push:
     branches: 
