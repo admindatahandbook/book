@@ -25,7 +25,7 @@ After the core federal funding ended, the OLDA has persisted through a combinati
 
 ### Motivation and Background
 
-#### Historical background on use of administrative data in Ohio {-}
+#### Historical Background on Use of Administrative Data in Ohio {-}
 
 State agencies revised the administrative code to develop longitudinal data systems over time. As education organizations (e.g., schools or colleges) in the 1990s moved to using databases to manage regular business---such as registration, course enrollment, or testing---state agencies supervising these schools developed the data systems to help schools and universities carry out the day-to-day work. During these years, the key data systems for education, including the Education Management Information System, the Adult Workforce Education Data System, the Adult Basic Education Data System, and the Higher Education Information System were formally developed to capture data submitted by individual education organizations. These data systems were developed by agencies and often under contract with an external consulting firm. The legal basis for these data systems came from Ohio Revised Code.[^olda3]
 
@@ -33,7 +33,7 @@ The +unemployment_insurance_wage_record| system controlled by the Ohio Departmen
 
 The motivation for building newer research databases in each of these government agencies varies. In the 1990s, government experienced an expansion of technology. IT systems were being used more broadly as states, such as Florida, built database systems to manage key administrative data (e.g., education data). Many states also created data systems that required local schools or universities to submit administrative data using a planning schedule, thereby building the local capacity for data systems. A second major reason for expanding data systems was an increasing demand from researchers for unit record data. As awareness of administrative data became more widespread in the 1980s and 1990s, faculty and professional researchers increasingly requested confidential microdata from states [@borus1982; @pfeiffer1998; @stevens1989; @stevens2012].
 
-#### University role in building the data system {-}
+#### University Role in Building the Data System {-}
 
 OSU worked with the Department of Job and Family Services on a periodic basis between 1995 and 2010 to conduct studies using wage records in combination with a wide range of other data files, including those from Aid for Families with Dependent Children and Workforce Investment Act programs [@centerforhumanresourceresearch2001]. The increase in data use for research purposes was directly related to federal policy changes. For example, the US Department of Labor established the Administrative Data Research and Evaluation Project (ADARE) for states to collaborate on research and evaluation projects. The ADARE states, including Ohio, worked together to improve access to labor, training, and education data among the research community [@stevens2012].
 
@@ -43,7 +43,7 @@ Both of these activities, legal and technical, help to sharpen one's understandi
 
 The legislative process, including the biennial operating and capital budgets in Ohio, creates regular demand for research using state data. In addition to regular demand for data on the employment outcomes of education, the legislature and executive branch frequently demand specific reports on a wide range of topics that are mandated by law. There are exceptions, but the majority of the time, research projects are requested and delivered in one- or two-year cycles. This time limited nature means that the work that state agencies request from Ohio universities tend to be short-term and related to constantly changing state policy priorities. For example, the state will often request a report on short-term employment outcomes because it can show results before the next budget is written as opposed to initiating a long-term study.
 
-#### Role of targeted federal funding in supporting use of administrative data {-}
+#### Role of Targeted Federal Funding in Supporting Use of Administrative Data {-}
 
 OSU worked with the state to build the OLDA to help increase access to administrative data for research purposes. The university conducted research on an ad hoc basis between 1995 and 2010. Several of these projects relied on data from across institutions as well as different state agencies. For example, in 2002 to 2003, the state commissioned a study of the outcomes of adult workforce education [@hawley2003; @hawley2003a; @hawley2005]. In 2007, the state also asked for a study of developmental education [@hawley2013; @hawley2017]. In both cases the university received data on an ad hoc basis, straining both the technical systems to ensure security for private student records and the legal frameworks in Ohio. OSU's legal staff worked directly with the Ohio Attorney General's Office.
 
@@ -53,7 +53,7 @@ The +Workforce_Data_Quality_Initiative| provided funding for the establishment o
 
 This federal funding was dramatically expanded after the State of Ohio hired OSU to build the Ohio Education Research Center as a deliverable for the +Race_to_the_Top| Project in 2012. The Race to the Top proposal was delivered in January 2012 and included a deliverable to expand the +OLDA| to include K12 education data. There were several features of this proposal that dramatically increased research use of the administrative data in Ohio. First, almost all doctoral granting institutions in the State of Ohio were collaborators in the original proposal.[^olda5] Second, Race to the Top required a prodigious number of independent research and evaluation studies that made use of administrative data between 2012 and 2017. The Ohio Education Research Center [website](www.oerc.osu.edu) maintains an archive of research studies conducted under the Race to the Top project.
 
-#### Lessons from the establishment of the OLDA {-}
+#### Lessons from the Establishment of the OLDA {-}
 
 There are some lessons from this story that are relevant to other states attempting to build integrated data systems. Federal money can be transformative, because it provides scarce resources in moments where radical technical and administrative change is scary. It is natural to think federal financial support is mostly used to pay staff and buy technology. However, the funding can also help convince skeptical senior staff in state government. This research has found, at critical junctures in making arguments to link confidential microdata, that states will often follow the lead of federal agencies. One example of this is states such as Ohio explicitly changed state law to enable them to receive funding under +Race_to_the_Top|. This policy action at the state level was necessary to ensure that school funding was provided under the American Recovery and Reinvestment Act ARRA mechanism.
 
@@ -79,7 +79,7 @@ oldatable1()
 
 The uses of the data resources can be separated into three distinct areas: research use, government use, and training use. Initially, there are some similarities across the data uses. These three data users all make use of the OLDA for both analytical and evaluative reasons. For example, researchers most often wish to make use of the data for explicit analysis of the outcomes of Ohio programs, such as the impact of higher education on employment.
 
-#### Research use {-}
+#### Research Use {-}
 
 The research uses of the OLDA depend on the programs that contribute microdata. These data allow researchers to analyze the impacts of state or federal policies on economic or educational outcomes. The specific data a researcher acquires and then uses depends on the analysis and the questions proposed.
 
@@ -105,7 +105,7 @@ The registered apprenticeship work conducted in collaboration with the State of 
 oldatable2()
 ```
 
-#### Government use {-}
+#### Government Use {-}
 
 The OLDA makes no distinction between research and government use of data from a data access perspective. Researchers based in government apply to use data through the same procedures as researchers in universities. While there are no formal differences in application, there are some dissimilarities in terms of the kinds of data that government requests and the projects they propose. Government officials tend to propose projects that are strongly related to public policies in state or local government. For example, researchers from Ohio Housing Finance Agency (OHFA) are currently collaborating with researchers at the Ohio State University on an experimental analysis of housing supports on employment. A second example focuses on the workforce data tools dashboard. In collaboration with the Ohio Department of Job and Family Services, researchers have built a dashboard to compare supply and demand on workers in the state.
 
@@ -153,7 +153,7 @@ Through a study of the employment outcomes of individuals enrolled in welfare, r
 |Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014|<https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf>|
 Table: (\#tab:oldatable3) Important Legal Documents to Review for the Research Community
 
-#### Formal governance process {-}
+#### Formal Governance Process {-}
 
 The OLDA is governed by a formal memorandum of understanding (MOU) and a data sharing agreement that is completed on an annual or biannual basis. This MOU is initiated by one of the member agencies (Ohio Department of Job and Family Services), signed by all the remaining agencies (Education, Higher Education, Housing Finance, and Opportunities for Ohioans with Disabilities), and thereafter by the Ohio State University. The overarching legal agreement establishes three governance committees that oversee the rules of the MOU. The Policy Council governs larger questions about how the data system can be used and includes representatives from the senior management of all of the executive agencies as well as the governor's office. The data stewards govern specific data systems included in the OLDA and serves as a technical resource for the analysts proposing and completing projects. The Governing Committee is a single point of contact between the center director and the lead agency (ODJFS).
 
@@ -221,7 +221,7 @@ Outreach was also supported by presentations at national meetings, such as the N
 
 ### Metrics of Success
 
-#### Overall qualitative outcomes {-}
+#### Overall Qualitative Outcomes {-}
 
 There are a relatively small number of research centers with state administrative data in the United States. There are two models of administrative data centers, States such as Kentucky maintain an administrative data center inside state government. In contrast, centers such as the Indiana Business Research Center and OLDA are maintained within colleges or universities. Therefore, grading the progress made is difficult.
 

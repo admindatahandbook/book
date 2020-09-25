@@ -13,5 +13,3 @@ Words mentioned in this book that are known to be trademarks, whether
 registered or unregistered, have been capitalised or use initial
 capitals. Terms identified as trademarks include Cisco®, Microsoft®,
 Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
-
-# References {-}

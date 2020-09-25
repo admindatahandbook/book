@@ -1,0 +1,152 @@
+# (APPENDIX) Appendix {-} 
+
+# Evolution of the Handbook and Contributing {- #contributing}
+
+The Handbook is intended to dynamically evolve over time. Releases are called "versions", starting with `v1.0`. Because many of the aspects that influence data sharing evolve over time, and because the initial set of case studies cannot cover the full breadth of administrative data sharing, future contributions and updates are envisioned. 
+
+## Availability {-}
+
+The Handbook's primary location is on the web ([`r config$base_url`](`r config$base_url`)). However, it is also a book, and we will, at regular intervals, make available printed copies and ebook versions. The online version and the ebook will be assigned Digital Object Identifiers (DOI). Online chapters will receive their own DOI for ease of citability. Both the ebook and the hard copy will be assigned ISBN numbers. The hard copy will be available for purchase through a number of outlets. The ebook will be available for download from the Handbook's primary location for free.
+
+## Contributions {-}
+
+Invited or contributed additions will be incorporated into the Handbook by a J-PAL-based editorial team. Not all contributions can be accepted. Each contribution will be subject to editorial review, and may be sent out to referees. Contributions will be asked to follow the [Content, Format, and Style Guidelines] and the [Case Study Template]. The entire process is mediated by a [Github workflow](https://guides.github.com/introduction/flow/), and while referee reports and editorial deliberations may not be public, the contents of the decision letter will be part of the public Github workflow.^[For the technically inclined: it will be the commit message of the pull request, or the rejection of such pull request.] 
+
+Updates will be accepted on a flow basis, and updates published on a flow basis as well (see [Versioning]). If there have been any updates, then a new version of the print copy will be issued once a year.
+
+We would appreciate it if any improvements, corrections, and other contributions were sent back to us, for instance via the "Issues" feature on Github.
+
+Contributing authors retain the copyright to their publication. Contributions need to be licensed liberally, at least under  a [Creative Commons - Attribution Non-commercial](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license.
+
+Once accepted, a contribution will appear in at least one major version of the Handbook. The Editors retain the right to remove contributions in later versions of the Handbook, and do not need to notify authors of such decisions.
+
+## Content, Format, and Style Guidelines {-}
+
+This handbook is intended as a reference for both researchers (users of administrative data) and data providers (holders of administrative data), as well as organizations that would like to facilitate administrative data collaborations, such as universities. The technical chapters are intended to support these different audiences in learning about options, making decisions based on their individual circumstances, and finding additional resources. The case studies in this handbook should focus on showcasing:
+
+- *Mutually beneficial partnerships* that have led to innovative research projects while also answering pressing policy questions or helping the data provider understand their own data better;
+- A process of finding *innovative, robust, and scalable solutions* to technical, financial, legal, or ethical challenges which have led to *sustainable access to administrative data* that does not rely on just one research team or the personal championship of one individual in the partner organization;
+- Access to *innovative types of administrative data or completely new data sources*, including the creation of new datasets, describing the process of making this data useful for both the data provider and the research team;
+- Administrative data used in conducting *novel RCTs*, standalone or linked with primary data collection.
+
+### Content Guidelines {-}
+
+The Handbook aims to provide practical, actionable guidance to researchers, administrators, policy makers, and other practitioners faced with the issue of implementing a new data access mechanism, or improving an existing mechanism.
+
+Case studies and chapters should therefore **speak to the diverse points of view and interests of data providers, researchers, and third-party data hosting organizations** (data custodians, intermediaries). For example, data intermediaries will be interested in particular in umbrella agreements and templates, and automated processes that reduce the cost of individual data use cases. Data providers are interested in access modalities and review processes that ensure that their constituents and interests will be protected and the research is in alignment with their policy priorities. Researchers are usually interested in data representativeness and quality and the right to freely publish findings, as well as in secure and unbureaucratic access processes.
+
+Case studies should be **specific** enough so that they can serve a **starting point for implementing the showcased data access mechanism** in another location or with another partner. 
+
+- What information would be useful for implementing the same solutions described in the chapter? 
+- What advice do the authors have in hindsight on the advantages or disadvantages of their approach? 
+- What considerations and priorities informed their decisions? Understanding the parameters and environment of the setup described will help others assess if their situation is the same or different; from budget and personnel capacity to data characteristics and legal environment.
+
+**It may not be possible to describe every aspect of the case study in equal detail and depth**. In this case the authors should focus on areas in which they innovated or have particularly deep knowledge to share. We expect case studies to be about **15-20 pages** long. Case study submissions can **include tools, materials, and text samples** where appropriate; these can be added in an appendix or as an online download of any length.
+
+All case studies should contain a **description of the different data sets** being provided for access. This description could be provided in table form if there are several data sets, or can link to an online catalog of such datasets, if a large number of data sets are made available. Where feasible, it should include:
+
+- Name/title of the data set (or group of data sets)
+- The population and sample size covered
+- Time period covered and frequency 
+- Any notable information on the data, such as 
+	- the sensitivity of the data and if PII or location information is included in researcher access; 
+	- whether there are inclusion rules, updates over time, exclusions, deletions, or data purges that have a significant influence on sample selection or data availability and reliability.
+
+### Style Guidelines {-}
+
+Handbook chapters should adhere to an academic writing style for a well-informed, but not expert audience. Readers may not necessarily be familiar with the authors’ academic discipline. This means the writing should be clear, precise, concise, and well organized, but avoid jargon.
+
+Please support assertions with *sources and references* wherever possible. For example, if a case study mentions a policy decision that was influenced by the research, a newspaper report, legal decision, or public announcement should be cited.
+
+Authors should properly *expand all acronyms* upon first use and keep an international audience in mind, as well as readers from a different discipline and career background (e.g. readers may be civil servants, research economists, technical consultants, public health specialists, etc.). Jargon or country-specific organizations, customs, legal frameworks, and institutions need to be sufficiently explained (e.g. the specifics of the education system or legal code).
+
+All case studies should *follow the same template* to make the contents quickly and easily accessible.
+
+### Formatting Guidelines {-}
+
+Submit final drafts as either a **Microsoft Word doc** or a **Markdown or RMarkdown file**. 
+
+**Section and subsection** headings should use the MS Word “Heading 2” and “Heading 3” formatting styles. For submissions in Markdown, use Markdown level 2 and 3 heading syntax (## and ###). Do not include numbering in section headers (e.g., not “2.1.3 Data Use Examples”). Section numbers will be automatically generated later and are likely to change.
+
+The **title of each case study chapter** should reference the admin data provider and the data hosting organization (if different). As an example, authors could use a title naming the data provider, plus an informative subtitle, such as, [title] “City of Cape Town, South Africa” [subtitle] “Aligning internal data capabilities with external research partnerships.”
+
+**All authors should list their current primary affiliation**. Sample: “Shawn Cole, John G. McLean Professor of Business Administration, Harvard Business School.” The chapter template contains a section ("About the authors") allowing authors to provide additional information there. Please also add a short paragraph to the summary of the case study (see below) that describes each author’s role in the project and dates of involvement (if not affiliated anymore).
+
+### Index {-}
+
+A list of **index terms** must be submitted as a list, ideally in a separate file. List the primary word or phrase, plus alternatives, separated by a comma. Use a new line for each new index word/phrase. In addition, please go through your chapter and tag each index word by bolding it and enclosing it in  “+…|”. When we implement the index, our publishing platform will automatically tag each occurrence of these words.
+
+Sample index list:
+
+- *Family Education Rights and Privacy Act, FERPA*
+- *Data Use Agreement, Data Use License, DUA*
+
+Sample occurrence in text: “The template +DUA| explicitly references the +Family Education Rights and Privacy Act|.”
+
+**What are good index words or phrases?** Index words or phrases should be **key terms from the case study that a reader may be searching for across cases studies** and that would otherwise hard to find. The article should not just mention the word in passing, but should provide substantive content related to the indexed term. Terms chosen for the index should not be extremely frequent or general terms, such as “administrative data”. They should also not be used to reference passages that can easily be found using the table of contents and section headers.
+
+Index terms might be important technical words and phrases, for example:
+
+- Umbrella DUA, institutional DUA
+- Consent, informed consent
+- Personally identifiable information, personal data, PII
+- Data enclave
+
+They could reference specific laws relevant to administrative data sharing:
+
+- Family Education Rights and Privacy Act (FERPA) 
+- Code of Federal Regulations 20 (Section 603)
+- Health Insurance Portability and Accountability Act (HIPAA)
+- Workforce Innovation and Opportunities Act (WIOA)
+- Supplementary Nutrition Assistance Program (SNAP)
+- Temporary Assistance to Needy Families (TANF)
+- Ohio Revised Code
+- Title 13, United States Code
+
+Other options might be important institutions (U.S. Census, state government, NIH, etc.), technical roles (data manager, data officer) etc., or acronyms (assuming they were abbreviated for frequent use) as long as **the chapter provides useful information about these terms** related to administrative data access.
+
+### Bibliography {-}
+
+The bibliography must be submitted as a separate file compatible with reference management tools. Acceptable formats are bibtex, RIS, EndNote, XML. 
+
+References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, "see &amp;ColeDhalSautVilh2020" might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
+
+The content of bibliography entries should follow the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html). Note however that we will handle styling within the manuscript.
+
+- URLs pointing to **online documents** should cite the document with all the usual information (author, publication date, etc.).
+- **Legal code:** expand on acronyms and ideally point to online repositories, so interested parties can easily find the text of the legal code. Example:  
+  - *5 United States Code (U.S.C.) § 552b. Accessed at*  *https://www.law.cornell.edu/uscode/text/5/552b on 02-28-2020.*
+- Only when citing a **generic webpage**, use a footnote citation; where appropriate, indicate the date when last consulted. (e.g. *“Available at [www.google.com](http://www.google.com/).”* or “See J-PAL’s policies for RCT registration, accessed at [www.povertyactionlab.org/page/information-affiliates](http://www.povertyactionlab.org/page/information-affiliates) on 03-21-2020.”)
+
+
+## Versioning {-}
+
+As an online-first publication, we adopt the following versioning policy:
+
+- The Handbook follows a variant of [Semantic Versioning](https://semver.org/) rules. A version is identified by a numeric version number in the format "`vX.Y.Z`" (Major.Minor.Patch).
+- As new chapters are added or existing chapters modified or removed, new versions of the Handbook are released. 
+  - Minor edits and corrections are identified internally with a `patch` number (e.g., `v1.0.1`) but not identified in the publicly available version. 
+  - Additions of case studies and chapters necessarily lead to an increment in the `minor` number (e.g., `v1.1`). However, such additions can be added in batches. 
+  - Whenever a chapter is removed, a new `major` version is released (e.g., `v2.0.0`).
+  - When the curators estimate that a sufficiently large number of additions warrant highlighting through a new `major` number, such a `major` version may also be released.
+- Much of the development of the Handbook occurs openly. To make clear that a particular online version of the Handbook is not officially published, development versions have a `-dev`  sufffix, e.g., `v1.2.0-dev` if leading up to a proposed `v1.2.0` release. 
+  - Nearly completed versions that are being reviewed will have a `-rc[n]` suffix (e.g., `v1.2.0-rc1`), where `rc` stands for "release candidate."
+
+Only major versions are printed. Minor versions are made available in ebook formats. Patch versions may be made available in ebook formats.
+
+## Case Study Template {-}
+
+Case studies should follow the case study template. Below is an updated checklist and guidance for authors and reviewers. In a Word document, please use heading formatting (heading 2 and heading 3) for each section header. Do not number your sections. The template can be downloaded as [Word](assets/contributing/case_study_template.docx).
+
+```{r child = 'assets/contributing/case_study_template.md'}
+```
+
+```{r pandoc,echo=FALSE,include=FALSE}
+library(rmarkdown)
+here()
+pandoc_convert(file.path(here(),"assets/contributing/case_study_template.md"),
+   to="docx",
+   output=file.path(here(),"assets/contributing/case_study_template.docx"))
+#pandoc_convert(file.path(here(),"assets/contributing/case_study_template.md"),  to="pdf", output=file.path(here(),"assets/contributing/case_study_template.pdf"))
+
+```
