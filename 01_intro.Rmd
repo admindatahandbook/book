@@ -18,6 +18,7 @@ Beyond these uses, carefully designed systematic research with administrative da
 ```{r introchetty, fig.cap='Time Trends in the Use of Administrative Data for Empirical Research. Source: Chetty (2012). Used by permission.', echo=F}
 intrograph1
 ```
+
 The potential benefits of greater access to administrative data are enormous, as the scope of data held at governments, non-governmental organizations (NGOs), and private firms is increasing rapidly. Digital collection of data at point of origin (as opposed to *ex post* digitization of administrative forms and reports) is becoming the norm. These data often have useful properties. They can measure certain features objectively, such as distance traveled, price paid, locations visited, or contacts with a system or provider. This can avoid social desirability or recall biases of survey data. Checks and balances like biometric capture of beneficiaries or automatic geotagging can additionally make administrative data more reliable and accurate than self-reported information.
 
 Broad coverage and routine collection as part of day-to-day operations also often make administrative data more representative and may solve an Achilles' heel of many potential surveys and experiments: attrition. The size of administrative data sets can make it possible to run experiments with more treatment arms without loss of statistical power and to detect even effects that are small or heterogeneous between groups.
