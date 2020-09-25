@@ -17,7 +17,7 @@ always_allow_html: true
 
 # Welcome to the Handbook {-}
 
-![](./assets/images/webcover2.png)<!-- -->
+![](./assets/images/webcover.png)<!-- -->
 
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. Readers can also obtain the Handbook for free as an ebook or a printable PDF, or can purchase a printed copy, from the [Handbook's home page](https://admindatahandbook.mit.edu/).
 
@@ -76,6 +76,7 @@ Beyond these uses, carefully designed systematic research with administrative da
 <img src="figures/introchetty-1.png" alt="Time Trends in the Use of Administrative Data for Empirical Research. Source: Chetty (2012). Used by permission."  />
 <p class="caption">(\#fig:introchetty)Time Trends in the Use of Administrative Data for Empirical Research. Source: Chetty (2012). Used by permission.</p>
 </div>
+
 The potential benefits of greater access to administrative data are enormous, as the scope of data held at governments, non-governmental organizations (NGOs), and private firms is increasing rapidly. Digital collection of data at point of origin (as opposed to *ex post* digitization of administrative forms and reports) is becoming the norm. These data often have useful properties. They can measure certain features objectively, such as distance traveled, price paid, locations visited, or contacts with a system or provider. This can avoid social desirability or recall biases of survey data. Checks and balances like biometric capture of beneficiaries or automatic geotagging can additionally make administrative data more reliable and accurate than self-reported information.
 
 Broad coverage and routine collection as part of day-to-day operations also often make administrative data more representative and may solve an Achilles' heel of many potential surveys and experiments: attrition. The size of administrative data sets can make it possible to run experiments with more treatment arms without loss of statistical power and to detect even effects that are small or heterogeneous between groups.
@@ -326,7 +327,7 @@ The existing literature also provides high-level guidance on numerous topics, in
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@australianbureauofstatistics2017</span> <span class="citation">@statisticscanada2018</span> <span class="citation">@bcministryofcitizensservices</span> <span class="citation">@altman2015</span></p>
 </div>
 
-<!--chapter:end:01_introduction.Rmd-->
+<!--chapter:end:01_intro.Rmd-->
 
 # (PART) Special Topics {-} 
 
@@ -728,7 +729,7 @@ Lars Vilhuber is the Executive Director of the [Labor Dynamics Institute](http:/
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@cichonski2012</span> <span class="citation">@confessore2018</span></p>
 </div>
 
-<!--chapter:end:02_physical_security.Rmd-->
+<!--chapter:end:02_security.Rmd-->
 
 # Model Data Use Agreements: A Practical Guide {#dua}
 
@@ -1504,7 +1505,8 @@ However, $k$-anonymity does not protect against attribute disclosure. If all $k$
 
 ### Data Quality
 
-When the released data or output is tabular (histograms, cross-tabulations) or is a limited set of population or model parameters (means, coefficients), a set of distance-based metrics (so-called "$\ell_p$ distance" metrics) can be used to compare the quality of the perturbed data. Note that this is a specific metric, as it is limited to those statistics taken into account - the data quality may be very poor in non-measured attributes! For $p=1$, the $\ell_1$ distance is the sum of absolute differences between the confidential and perturbed data. For $p = 2$, the $l_2$ distance is the sum of squared differences between the two datasets (normalized by $n$ the number of observations, it is the Mean Squared Error, MSE). 
+When the released data or output is tabular (histograms, cross-tabulations) or is a limited set of population or model parameters (means, coefficients), a set of distance-based metrics (so-called "$\ell_p$ distance" metrics) can be used to compare the quality of the perturbed data. Note that this is a specific metric, as it is limited to those statistics taken into account - the data quality may be very poor in non-measured attributes! For $p=1$, the $\ell_1$ distance is the sum of absolute differences between the confidential and perturbed data. For $p = 2$, the $l_2$ distance is the sum of squared differences between the two datasets (normalized by $n$ the number of observations, it is the Mean Squared Error, MSE).
+
 In settings where it is important to measure data quality over an entire distribution, the Kullbach-Leibler (KL) divergence measure can also be used. The KL-divergence is related to the concept of entropy from information theory and, loosely, measures the amount of surprise associated with seeing an observation drawn from one distribution when you expected them to come from another distribution. Other metrics are based on propensity scores [@woo_global_2009; @snoke_general_2018]. More specific measures will often compare specific analysis output, a task that is quite difficult to conduct in general. @reiter_verification_2009 propose to summarize the difference between regression coefficients when analyses can be run on both confidential and protected data,in the context of verification servers.
 
 ## Tools
@@ -1540,7 +1542,7 @@ This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell
 The views expressed in this paper are those of the authors and not those of the U.S. Census Bureau or other sponsors.
 
 
-<!--chapter:end:05_disclosure_avoidance.Rmd-->
+<!--chapter:end:05_discavoid.Rmd-->
 
 # Designing Access with Differential Privacy {#diffpriv}
 
@@ -1555,7 +1557,7 @@ This chapter seeks to explain how administrative data containing personal inform
 
 This chapter is intended as a practical resource for government agencies and research organizations interested in exploring the possibility of implementing differentially private tools. Using intuitive examples rather than the mathematical formalism used in other guides, this chapter introduces the differential privacy definition and the risks it was developed to address. It employs modern privacy frameworks to explain how to determine whether the use of differential privacy is an appropriate solution in a given setting. It also discusses the design considerations one should take into account when implementing differential privacy. This discussion incorporates a review of real-world implementations, including tools designed for tiered access systems combining differential privacy with other privacy controls presented in this handbook, such as consent mechanisms, data use agreements, and secure environments.
 
-<!--chapter:end:06_differential_privacy.Rmd-->
+<!--chapter:end:06_diffpriv.Rmd-->
 
 # (PART) Case Studies {-} 
 
@@ -5023,7 +5025,7 @@ Only major versions are printed. Minor versions are made available in ebook form
 ## Disclaimer {-}
 The views expressed in this paper are those of the authors and not those of any sponsors.
 
-<!--chapter:end:97_00_contributing.Rmd-->
+<!--chapter:end:96_00_contributing.Rmd-->
 
 # Acknowledgements {- #handbook_acknowledgements}
 
@@ -5033,7 +5035,7 @@ We thank [Jim Shen](https://www.povertyactionlab.org/person/shen) for his work m
 
 [Elizabeth Bond](https://www.povertyactionlab.org/person/bond) designed the Handbook cover and other associated materials and Theresa Lewis provided copy editing for the Handbook. We appreciate their attention to detail and hard work that helped turn 16 distinct chapters into a cohesive whole. Additional thanks go to [Aparna Krishnan](https://www.povertyactionlab.org/person/krishnan) (Project Director, J-PAL South Asia) and [Claudia Macías](https://www.povertyactionlab.org/person/macias) (Associate Director of Policy, Training and Research, J-PAL Latin America & the Caribbean) for their continuing support of IDEA.
 
-<!--chapter:end:98_00_acknowledgements.Rmd-->
+<!--chapter:end:97_00_handbook_acknowledgements.Rmd-->
 
 # Third-party Licenses {-}
 
@@ -5051,7 +5053,9 @@ registered or unregistered, have been capitalised or use initial
 capitals. Terms identified as trademarks include Cisco®, Microsoft®,
 Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
 
+<!--chapter:end:98_00_licenses.Rmd-->
+
 # References {-}
 
-<!--chapter:end:99_00_licenses.Rmd-->
+<!--chapter:end:99_00_references.Rmd-->
 
