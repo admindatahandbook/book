@@ -1,4 +1,4 @@
-name: Set version and redirect
+name: Create version
 on: 
   workflow_dispatch:
     # Inputs the workflow accepts.
@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v2 
         with:
           ref: published_version
-      - name: Make executable
+      - name: Create new version
         run: |
           [[ -d testing ]] && git mv testing v${{ github.event.inputs.version }}
           git config user.name ${{ github.event.inputs.name }}
