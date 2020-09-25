@@ -1,5 +1,5 @@
 .page-inner::before{
-    content: "The chapters you are viewing have been accepted for publication and have undergone full peer review but have not completed all copyediting, typesetting, pagination and proofreading. There may be differences between this version and the version of record when it is released.";
+    content: " You are viewing a preliminary version of the Handbook. Some chapters may still be subject to copyediting, typesetting, pagination and proofreading. There may be differences between this version and the version of record when it is released.";
     display: inline-block;
     color: steelblue;
     font-size: 14px;
