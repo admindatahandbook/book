@@ -19,7 +19,7 @@ source("programs/setup.R",echo=FALSE)
 
 # Welcome to the Handbook {-}
 
-```{r cover, echo=F,  out.width="100%"}
+```{r cover, echo=F}
 knitr::include_graphics('./assets/images/webcover2.png')
 ```
 
