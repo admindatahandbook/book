@@ -17,11 +17,11 @@ always_allow_html: true
 
 # Welcome to the Handbook {-}
 
-<img src="./assets/images/webcover.png" width="100%" />
+<img src="./assets/images/webcover2.png" width="100%" />
 
-This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. This Handbook intends to inform data providers and researchers on how to provide privacy-protected access to, handle, and analyze administrative data. Available publicly, the Handbook provides guidance on data access requirements and procedures, data privacy, data security, regulations for public data use, data architecture, data use and storage, cost structure and recovery, ethics and privacy-protection, making data accessible for research, and dissemination for restricted access use. The Handbook serves as a resource for all researchers looking to work with administrative data and for data providers looking to make such data available.
+This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. Readers can also obtain the Handbook for free as an ebook or a printable PDF, or can purchase a printed copy, from the [Handbook's home page](https://admindatahandbook.mit.edu/).
 
-# About Us {-}
+# About Us {- #about}
 
 ## About the Editors {-}
 
@@ -39,7 +39,7 @@ Anja Sautmann is a Research Economist in the World Bank's Development Research G
 
 ### Lars Vilhuber {-}
 
-Lars Vilhuber is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market. He also has extensive experience in the application of privacy-preserving publication and access to restricted data. He is chair of the scientific committee of the French restricted-access system [CASD](https://casd.eu), member of the governing board of the Canadian Research Data Centre Network ([CRDCN](https://crdcn.org)), and incoming chair of the  American Statistical Association‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home).  Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
+Lars Vilhuber is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market. He also has extensive experience in the application of privacy-preserving publication and access to restricted data. He is chair of the scientific committee of the French restricted-access system [CASD](https://casd.eu), member of the governing board of the Canadian Research Data Centre Network ([CRDCN](https://crdcn.org)), and incoming chair of the  American Statistical Association‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home). Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
 
 ## About J-PAL {-}
 
@@ -47,11 +47,11 @@ The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center wo
 
 <!--chapter:end:index.Rmd-->
 
-# Foreword {-}
+# Foreword {- #foreword}
+
+*Forthcoming*
 
 *Daniel Goroff (Alfred P. Sloan Foundation)*  
-
-Placeholder
 
 <!--chapter:end:00_foreword.Rmd-->
 
@@ -61,8 +61,6 @@ Placeholder
 *Iqbal Dhaliwal (J-PAL)*  
 *Anja Sautmann (World Bank)*  
 *Lars Vilhuber (Cornell University)*  
-
-Note: Links to other chapters temporarily don't work.
 
 ## The Potential of Administrative Data for Research and Policymaking
 
@@ -277,7 +275,7 @@ Our case studies span data from the public and the private sector and many diffe
 
 Figure \@ref(fig:introfig1) provides something of a taxonomy in regard to specialization and scale by placing the different access models of the case studies on two axes: the diversity of data or data providers and the diversity of users. Specialization benefits are realized when all researchers are affiliated with the same organization or when all data comes from the same data provider. Economies of scale are realized when many different users access the same data or when the same team of experts works with many data sets or data providers.
 
-In one type of model for administrative data access, benefits from bundling are realized by a data intermediary, **a center or unit in long-term partnership with an institutional partner** that provides different data sets or the same data over many periods of time. Examples in our case studies are the chapters on the Stanford--San Francisco Unified School District (SFUSD) by Eric Bettinger, Moonhawk Kim, Norma Ming, Michelle Reininger, Jim Shen, and Laura Wentworth ([chapter 12](#sfusd)) and on the City of Cape Town (CCT) partnership by Hugh Cole, Kelsey Jack, Brendan Maughan-Brown and Derek Strong, ([chapter 13](#cct)). In these settings, relationship-building between the data intermediary and the data provider and careful design of the legal and institutional framework ensure that policy interests and research conducted with the data are closely aligned.
+In one type of model for administrative data access, benefits from bundling are realized by a data intermediary, **a center or unit in long-term partnership with an institutional partner** that provides different data sets or the same data over many periods of time. Examples in our case studies are the chapters on the Stanford-San Francisco Unified School District (SFUSD) Partnership by Eric Bettinger, Moonhawk Kim, Norma Ming, Michelle Reininger, Jim Shen, and Laura Wentworth ([chapter 12](#sfusd)) and on the City of Cape Town (CCT) partnership by Hugh Cole, Kelsey Jack, Brendan Maughan-Brown and Derek Strong, ([chapter 13](#cct)). In these settings, relationship-building between the data intermediary and the data provider and careful design of the legal and institutional framework ensure that policy interests and research conducted with the data are closely aligned.
 
 A dedicated data access center can provide additional value by creating access for data provider staff for policy analysis (or conducting such analysis) and by maintaining policy engagement after the research ends. Appropriate data use agreements can encourage researchers to contribute data cleaning, data documentation, or policy analysis to the center. Since the partnership is close and the data and its possible uses are well circumscribed, data extraction processes can typically be streamlined and partially automated, and DUAs can follow a template, facilitating and speeding up access for the benefit of all parties. Vibrant administrative research centers can also create a local ecosystem of like-minded experts and provide technical training and attractive prospects for high-caliber researchers and staff.
 
@@ -722,10 +720,9 @@ A final related point is that the enforcement of the terms of the +DUA| is an im
 
 ## About the Authors {-}
 
-Jim Shen is the Senior Manager for the Innovations in Data for Experiments and Action Initiative (IDEA) at the Abdul Latif Jameel Poverty Action Lab based at MIT. He was the Data Manager for the Center for Education Policy Analysis (CEPA) from January 2015 to August 2019 where he managed the CEPA data warehouse. He was responsible for the day-to-day operations of the CEPA data warehouse, serving as the point of contact for Stanford researchers utilizing San Francisco Unified School District (SFUSD) data and SFUSD staff for data exchanges.
+Jim Shen is the Senior Manager for the [Innovations in Data and Experiments for Action Initiative (IDEA)](https://www.povertyactionlab.org/initiative/innovations-data-experiments-action) at the Abdul Latif Jameel Poverty Action Lab based at MIT. He was the Data Manager for the Center for Education Policy Analysis (CEPA) from January 2015 to August 2019 where he managed the CEPA data warehouse. He was responsible for the day-to-day operations of the CEPA data warehouse, serving as the point of contact for Stanford researchers utilizing San Francisco Unified School District (SFUSD) data and SFUSD staff for data exchanges.
 
-Lars Vilhuber is the Executive Director of the [Labor Dynamics Institute](http://www.ilr.cornell.edu/ldi "LDI") at [Cornell University](http://www.cornell.edu "Cornell University"). He has worked for many years with the [Research and Methodology Directorate](https://www.census.gov/research/) at the U.S. Census Bureau on a variety of projects, including implementing disclosure avoidance techniques. He is a member of governing or scientific committees of secure data access center in Canada ([CRDCN](https://crdcn.org/) and France ([CASD](http://casd.eu), and a member of the [American Statistical Association](https://www.amstat.org/)‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home). He is the inaugural Data Editor for the [American Economic Association](https://www.aeaweb.org/), and the Managing (Executive) Editor of the [Journal of Privacy and Confidentiality](https://journalprivacyconfidentiality.org/). He is the [Co-Chair, Innovations in Data and Experiments for Action (IDEA) Initiative](https://www.povertyactionlab.org/initiative/innovations-data-experiments-action) at [J-PAL](https://www.povertyactionlab.org/).
-
+Lars Vilhuber is the Executive Director of the [Labor Dynamics Institute](http://www.ilr.cornell.edu/ldi "LDI") at [Cornell University](http://www.cornell.edu "Cornell University"). He has worked for many years with the [Research and Methodology Directorate](https://www.census.gov/research/) at the U.S. Census Bureau on a variety of projects, including implementing disclosure avoidance techniques. He is a member of governing or scientific committees of secure data access center in Canada ([CRDCN](https://crdcn.org/) and France ([CASD](http://casd.eu), and a member of the [American Statistical Association](https://www.amstat.org/)‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home). He is the inaugural Data Editor for the [American Economic Association](https://www.aeaweb.org/), and the Managing (Executive) Editor of the [Journal of Privacy and Confidentiality](https://journalprivacyconfidentiality.org/). He is the [Co-Chair, IDEA](https://www.povertyactionlab.org/initiative/innovations-data-experiments-action) at [J-PAL](https://www.povertyactionlab.org/).
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@cichonski2012</span> <span class="citation">@confessore2018</span></p>
@@ -1210,10 +1207,7 @@ First, people may be more truthful in surveys if they believe their data is not 
 
 There are three factors that a data custodian should bear in mind when deciding whether and how to implement an SDL system in support of making data accessible. First, it is necessary to clarify the specific privacy requirements based on the nature of the underlying data, institutional and policy criteria, and ethical considerations. In addition, the custodian, perhaps in consultation with users, should clarify what sorts of analyses the data will support. Finally, SDL is often part of a broader system to protect sensitive data that can also involve access restrictions and other technical barriers. The broader system may allow for less stringent SDL techniques when providing data to researchers in secure environments than would be possible if data were to be released as unrestricted public use data.^[The [chapter on the RDC-IAB](#iab) provides a good illustration of how various SDL methods are combined with different access methods to provide multiple combinations of analytic validity and risk of disclosure.] This implies in particular that we will not provide a recommendation for a "best" method, since no such globally optimal method exists in isolation.
 
-Rather, this chapter provides an overview of the concepts and more widely-used methods of SDL.
-Relative to other primers that cover similar material, we focus more closely on the advantages and disadvantages of various methods from the perspective of data users.
-This chapter can serve as a reference that data providers and data users can use to discuss which forms of SDL are appropriate and will satisfy the needs of both parties. In particular, we focus on how common SDL tools affect different types of statistical analysis as well as the kind of confidentiality protections they support, drawing heavily on @abowd_economic_2015. SDL is a broad topic with a vast literature, starting with @fellegi_question_1972. Naturally, this brief summary is not a replacement for the textbook treatment of SDL in @duncan_statistical_2011.
-Finally, SDL methods must be implemented and deployed, and we provide pointers to existing "off-the-rack" tools in a variety of platforms (Stata, R, and Python). Readers might also consult other summaries and guides, such as @dupriez_dissemination_2010, @world_bank_dime_nodate, @kopper_j-pal_2020, and @liu_statistical_2020.
+Rather, this chapter provides an overview of the concepts and more widely-used methods of SDL. Relative to other primers that cover similar material, we focus more closely on the advantages and disadvantages of various methods from the perspective of data users. This chapter can serve as a reference that data providers and data users can use to discuss which forms of SDL are appropriate and will satisfy the needs of both parties. In particular, we focus on how common SDL tools affect different types of statistical analysis as well as the kind of confidentiality protections they support, drawing heavily on @abowd_economic_2015. SDL is a broad topic with a vast literature, starting with @fellegi_question_1972. Naturally, this brief summary is not a replacement for the textbook treatment of SDL in @duncan_statistical_2011. Finally, SDL methods must be implemented and deployed, and we provide pointers to existing "off-the-rack" tools in a variety of platforms (Stata, R, and Python). Readers might also consult other summaries and guides, such as @dupriez_dissemination_2010, @world_bank_dime_nodate, @kopper_j-pal_2020, and @liu_statistical_2020.
 
 ## Purpose of statistical disclosure limitation methods: Definitions and Context
 
@@ -1498,8 +1492,7 @@ Table \@ref(tab:overviewtable) shows how the various methods can be combined, dr
 
 <!-- How do you measure risk, and the reduction in risk achieved by applying above methods? Mention uniqueness criteria, k-anonymity, l-diversity, matching metrics, etc. -->
 
-The design of an SDL system depends on determinations about what constitutes an acceptable level of disclosure risk, balanced with the proposed uses of the data.
-There are many different ways to describe and measure disclosure risk. These share in common a sense of how unique a record or combination of attributes is in the data, which corresponds intuitively to a sense of how easy it would be to single-out that record and re-identify the respondent, perhaps aided by a linked dataset. Likewise, there are many different ways to assess whether the released data are suitable, or fit, for their intended use. These quality measures are often based on how closely the released data match the true data on certain statistical summaries, and it will be important for researchers and data custodians to agree on what are the most relevant summaries.
+The design of an SDL system depends on determinations about what constitutes an acceptable level of disclosure risk, balanced with the proposed uses of the data. There are many different ways to describe and measure disclosure risk. These share in common a sense of how unique a record or combination of attributes is in the data, which corresponds intuitively to a sense of how easy it would be to single-out that record and re-identify the respondent, perhaps aided by a linked dataset. Likewise, there are many different ways to assess whether the released data are suitable, or fit, for their intended use. These quality measures are often based on how closely the released data match the true data on certain statistical summaries, and it will be important for researchers and data custodians to agree on what are the most relevant summaries.
 
 ### Disclosure Risk
 
@@ -1558,13 +1551,17 @@ The views expressed in this paper are those of the authors and not those of the 
 *Kobbi Nissim (Georgetown University)*  
 *Salil Vadhan (Harvard University)*  
 
-Placeholder
+*Forthcoming*
+
+This chapter seeks to explain how administrative data containing personal information can be collected, analyzed, and published in a way that ensures that the individuals in the data will be afforded the strong protections of differential privacy. 
+
+This chapter is intended as a practical resource for government agencies and research organizations interested in exploring the possibility of implementing differentially private tools. Using intuitive examples rather than the mathematical formalism used in other guides, this chapter introduces the differential privacy definition and the risks it was developed to address. It employs modern privacy frameworks to explain how to determine whether the use of differential privacy is an appropriate solution in a given setting. It also discusses the design considerations one should take into account when implementing differential privacy. This discussion incorporates a review of real-world implementations, including tools designed for tiered access systems combining differential privacy with other privacy controls presented in this handbook, such as consent mechanisms, data use agreements, and secure environments.
 
 <!--chapter:end:06_differential_privacy.Rmd-->
 
 # (PART) Case Studies {-} 
 
-# Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers
+# Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers {#iab}
 
 *Dana Müller (Institute for Employment Research)*  
 *Phillip vom Berge (Institute for Employment Research)*  
@@ -1984,7 +1981,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 <!--chapter:end:10_00_iab.Rmd-->
 
-# Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community
+# Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community {#olda}
 
 *Joshua D. Hawley (Ohio State University)*  
 
@@ -2339,7 +2336,7 @@ Joshua Hawley is a professor in the John Glenn College of Public Affairs at the 
 
 <!--chapter:end:11_01_olda_appendix.Rmd-->
 
-# New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT
+# New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT {#nbirdt}
 
 *Donna Curtis Maillet (University of New Brunswick)*  
 *James Ted McDonald (University of New Brunswick)*  
@@ -2585,7 +2582,7 @@ James Ted McDonald is a professor of economics at the University of New Brunswic
 
 <!--chapter:end:12_00_nbirdt.Rmd-->
 
-# The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry
+# The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry {#pcri}
 
 *Josh Lerner (Harvard Business School)*  
 *Leslie Jeng (Private Capital Research Institute)*  
@@ -2990,7 +2987,7 @@ Table: (\#tab:pcritablea3) Portfolio Companies by Location: Companies by Region,
 
 <!--chapter:end:13_01_pcri_appendix.Rmd-->
 
-# Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support
+# Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support {#ahc}
 
 *Laura Feeney (J-PAL North America)*  
 *Amy Finkelstein (Massachusetts Institute of Technology)*  
@@ -3251,7 +3248,7 @@ The following is from the NDA:
 
 <!--chapter:end:14_01_ahc_appendix.Rmd-->
 
-# The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes
+# The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes {#sfusd}
 
 *Moonhawk Kim (University of California, Berkeley)*  
 *Jim Shen (J-PAL)*  
@@ -3575,7 +3572,7 @@ Laura Wentworth is the Director of Research Practice Partnerships at California 
 
 <!--chapter:end:15_01_sfusd_appendix.Rmd-->
 
-# City of Cape Town, South Africa: Aligning Internal Data Capabilities with External Research Partnerships
+# City of Cape Town, South Africa: Aligning Internal Data Capabilities with External Research Partnerships {#cct}
 
 *Hugh Cole (City of Cape Town)*  
 *Kelsey Jack (University of California, Santa Barbara)*  
@@ -4054,7 +4051,7 @@ Coverage          time for which data are     intervals when data were
 
 <!--chapter:end:16_01_cct_appendix.Rmd-->
 
-# Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME)
+# Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME) {#dime}
 
 *Arianna Legovini (World Bank)*  
 *Maria Ruth Jones (World Bank)*  
@@ -4323,7 +4320,7 @@ Maria Ruth Jones is a Survey Specialist in DIME. Maria co-founded and now leads 
 
 <!--chapter:end:17_00_dime.Rmd-->
 
-# The Use of Administrative Data at the International Monetary Fund
+# The Use of Administrative Data at the International Monetary Fund {#imf}
 
 *Era Dabla-Norris (International Monetary Fund)*  
 *Federico J. Díez (International Monetary Fund)*  
@@ -4481,7 +4478,7 @@ The intensity and frequency with which administrative data are used at the IMF d
 
 <!--chapter:end:18_00_imf.Rmd-->
 
-# Using Administrative Data to Improve Social Protection in Indonesia
+# Using Administrative Data to Improve Social Protection in Indonesia {#indonesia}
 
 *Vivi Alatas (Asa Kreativita)*  
 *Farah Amalia (J-PAL Southeast Asia)*  
@@ -4682,7 +4679,7 @@ We thank the many J-PAL SEA staff members who contributed to the projects discus
 
 # (APPENDIX) Appendix {-} 
 
-# Evolution of the Handbook and Contributing {-}
+# Evolution of the Handbook and Contributing {- #contributing}
 
 The Handbook is intended to dynamically evolve over time. Releases are called "versions", starting with `V1`. Because many of the aspects that influence data sharing evolve over time, and because the initial set of case studies cannot cover the full breadth of administrative data sharing, future contributions and updates are envisioned. 
 
@@ -4791,7 +4788,7 @@ Other options might be important institutions (U.S. Census, state government, NI
 
 The bibliography must be submitted as a separate file compatible with reference management tools. Acceptable formats are bibtex, RIS, EndNote, XML. 
 
-References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, \[see \@ColeDhalSautVilh2020\] might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
+References in the text should use the citation handle from the reference database after the symbol “@”. Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. For example, "see " might reference the bibliography entry for this handbook. Full information on how to include inline citations can be found here.
 
 The content of bibliography entries should follow the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html). Note however that we will handle styling within the manuscript.
 
@@ -4854,8 +4851,6 @@ Figures or tables can be used to support the data use examples. Do not describe 
 
 #### Making Data Usable for Research {-}
 
-*Note: this section now includes “metadata” (previously a separate section) and was moved from its previous position below “legal context” to above (the section renamed to “legal and institutional framework”).*
-
 **Describe the steps for transforming the operational or administrative data records into usable data files (including metadata and documentation) for analysis.**
 
 This section should discuss both the preparation of the data itself and the data documentation and metadata. Focus on information that can help others understand the general process and the time and cost involved. Steps might be:
@@ -4874,8 +4869,6 @@ Modifications that are needed to protect the data before researchers can access 
 ### Legal and Institutional Framework {-}
 
 #### Institutional Setup {-}
-
-*Note: this is a newly added subsection.*
 
 **Describe how data access is organized from an institutional standpoint.**
 
@@ -4898,8 +4891,6 @@ This section should focus on the legal obligations of the data provider towards 
 *Note: the agreement between the data provider and the users of the data (e.g. researchers) should be described below and in the “five safes” section (with reference to data sensitivity and confidentiality). The legal framework for access should be described in a way that is intelligible to lay persons and an international readership.*
 
 #### Legal Framework for Granting Data Access {-}
-
-*Note: this part was slightly rearranged to reduce overlap with the “five safes” section. The sections “access” and “IP” were omitted/their contents recombined in favor of “legal context” and “legal framework”. *
 
 **Describe what legal agreements regulate the use of the data by others.**
 
@@ -4974,8 +4965,6 @@ Discuss the practical implementation, including e.g. how long the review takes a
 
 #### Preservation and Repoducibility of Researcher-Accessible Files {-}
 
-*Note: preservation and reproducibility were previously two sections.*
-
 **Describe to what degree and over which time period researcher-accessible files and master files are preserved.**
 
 - Is there active curation, or only preservation of current bitstreams? 
@@ -4991,8 +4980,6 @@ Discuss the practical implementation, including e.g. how long the review takes a
 - Does the data provider generate persistent identifiers for any of these?
 
 ### Sustainability and Continued Success {-}
-
-*Note: “revenue” was moved here, and combined with “outreach” and success metrics into one section.*
 
 #### Outreach {-}
 
@@ -5038,13 +5025,17 @@ Only major versions are printed. Minor versions are made available in ebook form
 ## Disclaimer {-}
 The views expressed in this paper are those of the authors and not those of any sponsors.
 
-<!--chapter:end:96_00_contributing.Rmd-->
+<!--chapter:end:97_00_contributing.Rmd-->
 
-# Acknowledgements {-}
+# Acknowledgements {- #handbook_acknowledgements}
 
-The editors of the handbook would like to thank the [Alfred P. Sloan Foundation](https://sloan.org) for providing  financial support that made this work possible. We would also like to express our  thanks to all the authors who have contributed to this report, and to the reviewers of the various chapters who helped to improve all contributions. Additional thanks go to the many J-PAL staff members who provided additional feedback on the various components of this handbook.
+The editors of the Handbook would like to thank the Alfred P. Sloan Foundation for providing financial support that made this work possible. We would also like to express our thanks to all the authors who contributed to the Handbook and provided invaluable feedback and workshopping, as well as [Steven Glazerman](https://www.poverty-action.org/people/steven-glazerman), [Jennifer Sturdy](https://www.bitss.org/people/jennifer-sturdy/), and [Torsten Walter](https://nyuad.nyu.edu/en/academics/divisions/social-science/faculty/torsten-bernd-norbert-figueiredo-walter.html) for insightful comments and review.
 
-<!--chapter:end:98-acknowledgements.Rmd-->
+We thank [Jim Shen](https://www.povertyactionlab.org/person/shen) for his work managing the Innovations for Data, Experiments, and Action Initiative (IDEA) and the creation of the Handbook, while also coauthoring two chapters in this book, [Evan Williams](https://www.povertyactionlab.org/person/williams) for creating or co-creating many of the accompanying materials for the handbook, such as the webinar series, and providing invaluable assistance from organizing the chapter review process to proof-reading, [Sam Friedlander](https://www.povertyactionlab.org/person/friedlander) for staffing IDEA early on, and the many J-PAL staff members who provided additional feedback on the various components of this handbook.
+
+[Elizabeth Bond](https://www.povertyactionlab.org/person/bond) designed the handbook cover and other associated materials and Theresa Lewis provided copy-editing this Handbook. We appreciate their attention to detail and hard work that helped turn 16 distinct chapters into a cohesive whole. Additional thanks go to [Aparna Krishnan](https://www.povertyactionlab.org/person/krishnan) (Project Director, J-PAL South Asia) and [Claudia Macías](https://www.povertyactionlab.org/person/macias) (Associate Director of Policy, Training and Research, J-PAL Latin America & the Carribean) for their continuing support of IDEA.
+
+<!--chapter:end:98_00_acknowledgements.Rmd-->
 
 # Third-party Licenses {-}
 
@@ -5064,5 +5055,5 @@ Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
 
 # References {-}
 
-<!--chapter:end:99-licenses.Rmd-->
+<!--chapter:end:99_00_licenses.Rmd-->
 
