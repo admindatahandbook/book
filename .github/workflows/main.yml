@@ -25,7 +25,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.0-8
         with:
-           github_token: ${{ secrets.PUBLISH_TOKEN_LARS }}
+           github_token: ${{ secrets.JIM_BRANCH_PUBLISH_TOKEN }}
            publish_dir: _book
            user_name: 'Github Action Bot'
            user_email: 'lars.vilhuber@cornell.edu'
