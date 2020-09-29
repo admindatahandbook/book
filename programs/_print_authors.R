@@ -48,7 +48,7 @@ printauthor<-function(chapter,debug=FALSE){
 #  if (knitr::is_html_output()) {
     cat(readLines("./includes/citation-block.html"))
     cat('<div id="myCitation" style="display: none;">')
-    cat(paste0(authors.and,". ",pubdate[2],". ","\"Title.\" In: "))
+    cat(paste0(authors.and,". ",pubdate[2],". ","\"<span id=\"chapTitle\">Title</span>.\" In: "))
     cat(paste0(config$editors," (eds), *",config$title,"*. Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>."))
     cat('</div>')
 #  }
