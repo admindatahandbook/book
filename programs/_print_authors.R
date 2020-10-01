@@ -15,11 +15,13 @@ printauthor<-function(chapter,debug=FALSE){
     name <- authorinfo$name
     inst <- authorinfo$inst
 
-    # output to document
+  # output to HTML document
+  if (knitr::is_html_output()) {
     nameinst=paste0("*",name," (",inst,")*  \n")
     cat(nameinst)
-    if ( debug ) { print(i) }
+  }
 
+    if ( debug ) { print(i) }
     # collect names for citation
     if ( i == 1 ) {
       authors.and <- name
@@ -42,16 +44,18 @@ printauthor<-function(chapter,debug=FALSE){
     if ( debug ) { print(authors.and)}
   }
 
-# for HTML, we also output the citation block
+  # The publication is read from the config file. We might also read the DOI from there.
   pubdate <- config$first_publish_date %>%  str_split_fixed(" ",2) 
 
-#  if (knitr::is_html_output()) {
-    cat(readLines("./includes/citation-block.html"))
+
+
+  if (knitr::is_html_output()) {
+    cat(readLines("./includes/citation-block-link.html"))
     cat('<div id="myCitation" style="display: none;">')
     cat(paste0(authors.and,". ",pubdate[2],". ","\"<span id=\"chapTitle\">Title</span>.\" In: "))
     cat(paste0(config$editors," (eds), *",config$title,"*. Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>."))
     cat('</div>')
-#  }
+  }
 
   if (knitr::is_latex_output()) {
     # not defined yet
