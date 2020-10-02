@@ -853,7 +853,7 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>For data providers faced with the need to start providing safe data for use by external researchers, a growing number of software packages are available that implement the methods described in this chapter. The ICPSR has a checklist that may be of use in early development of an SDL system <span class="citation">(ICPSR <a href="#ref-icpsr_disclosure_2020" role="doc-biblioref">2020</a>)</span>. The listing of tools below is incomplete, but will provide practitioners with a place to start. A fully-developed SDL system will have unique requirements and may require custom programming. Nevertheless, many tools are useful across a wide range of applications.</p>
 <p>Statistics Netherlands maintains the ARGUS software for SDL <span class="citation">(Hundepool and Willenborg <a href="#ref-hundepool_argus_1998" role="doc-biblioref">1998</a>)</span>, including τ-ARGUS to protect tabular data <span class="citation">(De Wolf <a href="#ref-de_wolf_-argus_2018" role="doc-biblioref">2018</a>)</span>, and μ-ARGUS for protecting microdata <span class="citation">(Hundepool and Ramaswamy <a href="#ref-hundepool_-argus_2018" role="doc-biblioref">2018</a>)</span>. The software appears to be widely used in statistical agencies in Europe. An open-source R package, <code>sdcMicro</code> implements a full suite of tools needed to apply SDL, from computation of risk measures, including <span class="math inline">\(k\)</span>-anonymity and <span class="math inline">\(l\)</span>-diversity, to implementation of SDL methods and the computation of data quality measures <span class="citation">(Templ, Kowarik, and Meindl <a href="#ref-templ_statistical_2015" role="doc-biblioref">2015</a> ; Templ, Meindl, and Kowarik <a href="#ref-templ_sdcmicro_2020" role="doc-biblioref">2020</a>)</span>.</p>
 <p>Simpler tools, focusing on removing direct identifiers, can be found at J-PAL for Stata (<a href="https://github.com/J-PAL/stata_PII_scan">stata_PII_scan</a>) and R (<a href="https://github.com/J-PAL/PII-Scan">PII-scan</a>), and at Innovations for Poverty Action for Python or Windows (<a href="https://github.com/PovertyAction/PII_detection">PII_detection</a>) [<span class="citation">J-PAL (<a href="#ref-j-pal_j-palstata_pii_scan_2020" role="doc-biblioref">2020</a><a href="#ref-j-pal_j-palstata_pii_scan_2020" role="doc-biblioref">b</a>)</span>; <span class="citation">J-PAL (<a href="#ref-j-pal_j-palpii-scan_2020" role="doc-biblioref">2020</a><a href="#ref-j-pal_j-palpii-scan_2020" role="doc-biblioref">a</a>)</span>; <span class="citation">Innovations for Poverty Action (<a href="#ref-innovations_for_poverty_action_povertyactionpii_detection_2020" role="doc-biblioref">2020</a>)</span>).</p>
-<p>A number of R packages facilitate generation of synthetic data. <span class="citation">Raab, Nowok, and Dibben (<a href="#ref-raab_practical_2016" role="doc-biblioref">2016</a>)</span> and <span class="citation">Nowok, Raab, and Dibben (<a href="#ref-nowok_synthpop_2016" role="doc-biblioref">2016</a>)</span> provide a flexible and up-to-date packages with methods for generating synthetic microdata. <span class="citation">Templ et al. (<a href="#ref-templ_simpop_2019" role="doc-biblioref">2019</a>)</span> can also generate synthetic populations from aggregate data, which can be useful for testing SDL systems on non-sensitive data. In some cases, one might also consider using general-purpose software for multiple imputation for data synthesis.<a href="#fn39" class="footnote-ref" id="fnref39"><sup>39</sup></a></p>
+<p>A number of R packages facilitate generation of synthetic data. <span class="citation">Raab, Nowok, and Dibben (<a href="#ref-raab_practical_2016" role="doc-biblioref">2016</a>)</span> and <span class="citation">Nowok, Raab, and Dibben (<a href="#ref-nowok_synthpop_2016" role="doc-biblioref">2016</a>)</span> provide <code>synthpop</code>, a flexible and up-to-date package with methods for generating synthetic microdata. The R package <code>simPop</code> <span class="citation">Templ et al. (<a href="#ref-templ_simpop_2019" role="doc-biblioref">2019</a>)</span> can also generate synthetic populations from aggregate data, which can be useful for testing SDL systems on non-sensitive data. In some cases, one might also consider using general-purpose software for multiple imputation for data synthesis.<a href="#fn39" class="footnote-ref" id="fnref39"><sup>39</sup></a></p>
 <p>Many of the methods described in this chapter are technical and require statistical and programming expertise. If that expertise is not already available among staff, some institutions provide guidance to researchers who wish to apply SDL techniques.</p>
 </div>
 <div id="conclusion" class="section level2">
@@ -882,7 +882,7 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>Abowd, J M, B E Stephens, L Vilhuber, F Andersson, K L McKinney, M Roemer, and S D Woodcock. 2009. “The LEHD Infrastructure Files and the Creation of the Quarterly Workforce Indicators.” In <em>Producer Dynamics: New Evidence from Micro Data</em>, edited by T. Dunne and J B Jensen and M J Roberts. University of Chicago Press.</p>
 </div>
 <div id="ref-abowd_dynamically_2012">
-<p>Abowd, John M, R Kaj Kaj Gittings, Kevin L McKinney, Bryce Stephens, Lars Vilhuber, and Simon D Woodcock. 2012. “Dynamically Consistent Noise Infusion and Partially Synthetic Data as Confidentiality Protection Measures for Related Time Series.” 12-13. U.S. Census Bureau, Center for Economic Studies. <a href="https://doi.org/10.2139/ssrn.2159800">https://doi.org/10.2139/ssrn.2159800</a>.</p>
+<p>Abowd, John M, R Kaj Gittings, Kevin L McKinney, Bryce Stephens, Lars Vilhuber, and Simon D Woodcock. 2012. “Dynamically Consistent Noise Infusion and Partially Synthetic Data as Confidentiality Protection Measures for Related Time Series.” 12-13. U.S. Census Bureau, Center for Economic Studies. <a href="https://doi.org/10.2139/ssrn.2159800">https://doi.org/10.2139/ssrn.2159800</a>.</p>
 </div>
 <div id="ref-abowd_introductory_2019">
 <p>Abowd, John M., Ian Schmutte, William Sexton, and Lars Vilhuber. 2019. “Introductory Readings in Formal Privacy for Economists.” Document 2662639. Labor Dynamics Institute, Cornell University. <a href="https://doi.org/10.5281/zenodo.2662639">https://doi.org/10.5281/zenodo.2662639</a>.</p>
@@ -900,7 +900,7 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>Abowd, John, and Ian M. Schmutte. 2015. “Economic Analysis and Statistical Disclosure Limitation.” <em>Brookings Papers on Economic Activity</em>, 221–67. <a href="https://doi.org/10.1353/eca.2016.0004">https://doi.org/10.1353/eca.2016.0004</a>.</p>
 </div>
 <div id="ref-black_6_2020">
-<p>Black, Kate, Gretchen A. Ramos, and Giovanni Biscardi. 2020. “6 Months Until Brazil’s LGPD Takes Effect – Are You Ready?” <em>The National Law Review</em>. <a href="https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready">https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready</a>.</p>
+<p>Black, Kate, Gretchen A. Ramos, and Giovanni Biscardi. 2020. “6 Months Until Brazil’s LGPD Takes Effect – Are You Ready?” <em>The National Law Review</em>, March. <a href="https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready">https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready</a>.</p>
 </div>
 <div id="ref-burkhauser_estimating_2011">
 <p>Burkhauser, Richard V., Shuaizhang Feng, Stephen P. Jenkins, and Jeff Larrimore. 2011. “Estimating Trends in US Income Inequality Using the Current Population Survey: The Importance of Controlling for Censoring.” <em>The Journal of Economic Inequality</em> 9 (3): 393–415. <a href="https://doi.org/10.1007/s10888-010-9131-6">https://doi.org/10.1007/s10888-010-9131-6</a>.</p>
@@ -924,13 +924,13 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>Dalenius, Tore. 1977. “Towards a Methodology for Statistical Disclosure Control.” <em>Statistik Tidskrift</em> 15: 429–44. <a href="https://doi.org/10.1145/320613.320616">https://doi.org/10.1145/320613.320616</a>.</p>
 </div>
 <div id="ref-department_of_health_and_human_services_methods_2012">
-<p>Department of Health and Human Services. 2012. “Methods for de-Identification of PHI.” Text. <em>HHS.gov</em>. <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html">https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html</a>.</p>
+<p>Department of Health and Human Services. 2012. “Methods for de-Identification of PHI.” <em>HHS.gov</em>, September. <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html">https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html</a>.</p>
 </div>
 <div id="ref-desai2016">
 <p>Desai, Tanvi, Felix Ritchie, and Richard Welpton. 2016. “Five Safes: Designing Data Access for Research.” University of the West of England. <a href="https://uwe-repository.worktribe.com/output/914745">https://uwe-repository.worktribe.com/output/914745</a>.</p>
 </div>
 <div id="ref-de_wolf_-argus_2018">
-<p>De Wolf, Peter-Paul. 2018. “Τ-ARGUS.” <a href="http://research.cbs.nl/casc/tau.htm">http://research.cbs.nl/casc/tau.htm</a>.</p>
+<p>De Wolf, Peter-Paul. 2018. “Τ-ARGUS,” August. <a href="http://research.cbs.nl/casc/tau.htm">http://research.cbs.nl/casc/tau.htm</a>.</p>
 </div>
 <div id="ref-drechsler_synthetic_2011">
 <p>Drechsler, Jörg. 2011. <em>Synthetic Datasets for Statistical Disclosure Control: Theory and Implementation</em>. Lecture Notes in Statistics. New York: Springer-Verlag. <a href="https://doi.org/10.1007/978-1-4614-0326-5">https://doi.org/10.1007/978-1-4614-0326-5</a>.</p>
@@ -972,7 +972,7 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>Harris-Kojetin, Brian A., Wendy L. Alvey, Lynda Carlson, Steven B. Cohen, Steve H. Cohen, Lawrence H. Cox, Robert E. Fay, et al. 2005. “Statistical Policy Working Paper 22: Report on Statistical Disclosure Limitation Methodology.” Research Report. U.S. Federal Committee on Statistical Methodology. <a href="https://nces.ed.gov/FCSM/pdf/spwp22.pdf">https://nces.ed.gov/FCSM/pdf/spwp22.pdf</a>.</p>
 </div>
 <div id="ref-hawala_disclosure_2009">
-<p>Hawala, Sam, and Rolando Rodriguez. 2009. “Disclosure Avoidance for Group Quarters in the American Community Survey: Details of the Synthetic Data Method.” Presentation. <a href="https://ecommons.cornell.edu/handle/1813/47676">https://ecommons.cornell.edu/handle/1813/47676</a>.</p>
+<p>Hawala, Sam, and Rolando Rodriguez. 2009. “Disclosure Avoidance for Group Quarters in the American Community Survey: Details of the Synthetic Data Method,” July. <a href="https://ecommons.cornell.edu/handle/1813/47676">https://ecommons.cornell.edu/handle/1813/47676</a>.</p>
 </div>
 <div id="ref-health_and_retirement_study_disclosure_nodate">
 <p>Health and Retirement Study. n.d. “Disclosure Limitation Review.” Accessed August 9, 2020. <a href="https://hrs.isr.umich.edu/data-products/restricted-data/disclosure-limitation-review">https://hrs.isr.umich.edu/data-products/restricted-data/disclosure-limitation-review</a>.</p>
@@ -984,7 +984,7 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>Hsu, Justin, Marco Gaboardi, Andreas Haeberlen, Sanjeev Khanna, Arjun Narayan, Benjamin C. Pierce, and Aaron Roth. 2014. “Differential Privacy: An Economic Method for Choosing Epsilon.” <em>2014 IEEE 27th Computer Security Foundations Symposium</em>, July, 398–410. <a href="https://doi.org/10.1109/CSF.2014.35">https://doi.org/10.1109/CSF.2014.35</a>.</p>
 </div>
 <div id="ref-hundepool_-argus_2018">
-<p>Hundepool, Anco, and Ramya Ramaswamy. 2018. “Μ-ARGUS.” <a href="http://research.cbs.nl/casc/mu.htm">http://research.cbs.nl/casc/mu.htm</a>.</p>
+<p>Hundepool, Anco, and Ramya Ramaswamy. 2018. “Μ-ARGUS,” March. <a href="http://research.cbs.nl/casc/mu.htm">http://research.cbs.nl/casc/mu.htm</a>.</p>
 </div>
 <div id="ref-hundepool_argus_1998">
 <p>Hundepool, Anco, and Leon Willenborg. 1998. “ARGUS, Software Packages for Statistical Disclosure Control.” In <em>COMPSTAT</em>, edited by Roger Payne and Peter Green, 341–45. Heidelberg: Physica-Verlag HD. <a href="https://doi.org/10.1007/978-3-662-01131-7_45">https://doi.org/10.1007/978-3-662-01131-7_45</a>.</p>
@@ -993,13 +993,13 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>ICPSR. 2020. “Disclosure Risk Worksheet.” Document 156095. University of Michigan. <a href="http://hdl.handle.net/2027.42/156095">http://hdl.handle.net/2027.42/156095</a>.</p>
 </div>
 <div id="ref-innovations_for_poverty_action_povertyactionpii_detection_2020">
-<p>Innovations for Poverty Action. 2020. “PovertyAction/PII_detection.” Innovations for Poverty Action. <a href="https://github.com/PovertyAction/PII_detection">https://github.com/PovertyAction/PII_detection</a>.</p>
+<p>Innovations for Poverty Action. 2020. “PovertyAction/PII_detection,” August. <a href="https://github.com/PovertyAction/PII_detection">https://github.com/PovertyAction/PII_detection</a>.</p>
 </div>
 <div id="ref-j-pal_j-palpii-scan_2020">
-<p>J-PAL. 2020a. “J-PAL/PII-Scan.” The Abdul Latif Jameel Poverty Action Lab. <a href="https://github.com/J-PAL/PII-Scan">https://github.com/J-PAL/PII-Scan</a>.</p>
+<p>J-PAL. 2020a. “J-PAL/PII-Scan,” March. <a href="https://github.com/J-PAL/PII-Scan">https://github.com/J-PAL/PII-Scan</a>.</p>
 </div>
 <div id="ref-j-pal_j-palstata_pii_scan_2020">
-<p>J-PAL. 2020b. “J-PAL/Stata_PII_scan.” The Abdul Latif Jameel Poverty Action Lab. <a href="https://github.com/J-PAL/stata_PII_scan">https://github.com/J-PAL/stata_PII_scan</a>.</p>
+<p>J-PAL. 2020b. “J-PAL/Stata_PII_scan,” June. <a href="https://github.com/J-PAL/stata_PII_scan">https://github.com/J-PAL/stata_PII_scan</a>.</p>
 </div>
 <div id="ref-kennickell_multiple_1998">
 <p>Kennickell, A B. 1998. “Multiple Imputation in the Survey of Consumer Finances.” In <em>Proceedings of the Section on Survey Research</em>. <a href="https://www.federalreserve.%20gov/econresdata/scf/files/impute98.pdf">https://www.federalreserve. gov/econresdata/scf/files/impute98.pdf</a>.</p>
@@ -1038,7 +1038,7 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>Nowok, Beata, Gillian M. Raab, and Chris Dibben. 2016. “Synthpop: Bespoke Creation of Synthetic Data in R.” <em>Journal of Statistical Software</em> 74 (1): 1–26. <a href="https://doi.org/10.18637/jss.v074.i11">https://doi.org/10.18637/jss.v074.i11</a>.</p>
 </div>
 <div id="ref-panakal_indias_2019">
-<p>Panakal, Dominic Dhil. 2019. “India’s Proposed Privacy Law Allows Government Access and Some Data Localization.” <em>The National Law Review</em>. <a href="https://www.natlawreview.com/article/india-s-proposed-privacy-law-allows-government-access-and-some-data-localization">https://www.natlawreview.com/article/india-s-proposed-privacy-law-allows-government-access-and-some-data-localization</a>.</p>
+<p>Panakal, Dominic Dhil. 2019. “India’s Proposed Privacy Law Allows Government Access and Some Data Localization.” <em>The National Law Review</em>, December. <a href="https://www.natlawreview.com/article/india-s-proposed-privacy-law-allows-government-access-and-some-data-localization">https://www.natlawreview.com/article/india-s-proposed-privacy-law-allows-government-access-and-some-data-localization</a>.</p>
 </div>
 <div id="ref-raab_practical_2016">
 <p>Raab, Gillian M., Beata Nowok, and Chris Dibben. 2016. “Practical Data Synthesis for Large Samples.” <em>Journal of Privacy and Confidentiality</em> 7 (3): 67–97. <a href="https://doi.org/10.29012/jpc.v7i3.407">https://doi.org/10.29012/jpc.v7i3.407</a>.</p>
@@ -1068,10 +1068,10 @@ The concept of <span class="math inline">\(k\)</span>-anonymity can provide some
 <p>Templ, Matthias, Alexander Kowarik, and Bernhard Meindl. 2015. “Statistical Disclosure Control for Micro-Data Using the R Package sdcMicro.” <em>Journal of Statistical Software</em> 67 (4). <a href="https://doi.org/10.18637/jss.v067.i04">https://doi.org/10.18637/jss.v067.i04</a>.</p>
 </div>
 <div id="ref-templ_simpop_2019">
-<p>Templ, Matthias, Alexander Kowarik, Bernhard Meindl, Andreas Alfons, Mathieu Ribatet, and Johannes Gussenbauer. 2019. “simPop: Simulation of Synthetic Populations for Survey Data Considering Auxiliary Information.” <a href="https://CRAN.R-project.org/package=simPop">https://CRAN.R-project.org/package=simPop</a>.</p>
+<p>Templ, Matthias, Alexander Kowarik, Bernhard Meindl, Andreas Alfons, Mathieu Ribatet, and Johannes Gussenbauer. 2019. “simPop: Simulation of Synthetic Populations for Survey Data Considering Auxiliary Information,” July. <a href="https://CRAN.R-project.org/package=simPop">https://CRAN.R-project.org/package=simPop</a>.</p>
 </div>
 <div id="ref-templ_sdcmicro_2020">
-<p>Templ, Matthias, Bernhard Meindl, and Alexander Kowarik. 2020. “sdcMicro: Statistical Disclosure Control Methods for Anonymization of Data and Risk Estimation.” <a href="https://CRAN.R-project.org/package=sdcMicro">https://CRAN.R-project.org/package=sdcMicro</a>.</p>
+<p>Templ, Matthias, Bernhard Meindl, and Alexander Kowarik. 2020. “sdcMicro: Statistical Disclosure Control Methods for Anonymization of Data and Risk Estimation,” February. <a href="https://CRAN.R-project.org/package=sdcMicro">https://CRAN.R-project.org/package=sdcMicro</a>.</p>
 </div>
 <div id="ref-us_census_bureau_finalpublic_2011">
 <p>U.S. Census Bureau. 2011. “FinalPublic Use Microdata Area (PUMA) Criteria and Guidelines for the 2010 Census and the American Community Survey.” <a href="American%20Community%20Survey%20Office">American Community Survey Office</a>.</p>
