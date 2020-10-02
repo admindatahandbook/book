@@ -74,3 +74,7 @@ pre code {
 #citationDate {
 background-color: #f8afaf;
 }
+
+#citationLink {
+    margin-bottom: 1em;
+}
