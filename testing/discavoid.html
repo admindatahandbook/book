@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods | Handbook on Using Administrative Data for Research and Evidence-based Policy</title>
+  <meta name="description" content="5 Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="5 Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="github-repo" content="admindatahandbook/book" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  
+  <meta name="twitter:description" content="5 Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  
+
+<meta name="author" content="Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber" />
+
+
+<meta name="date" content="2020-10-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="irb.html"/>
+<link rel="next" href="diffpriv.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2579240-16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2579240-16');
+</script>
+
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
+
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/toc.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/draft.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to the Handbook</a></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About Us</a><ul>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html#about-the-editors"><i class="fa fa-check"></i>About the Editors</a></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html#about-j-pal"><i class="fa fa-check"></i>About J-PAL</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#the-potential-of-administrative-data-for-research-and-policymaking"><i class="fa fa-check"></i><b>1.1</b> The Potential of Administrative Data for Research and Policymaking</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#why-is-the-analysis-of-administrative-data-still-relatively-rare"><i class="fa fa-check"></i><b>1.2</b> Why is the Analysis of Administrative Data Still Relatively Rare?</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#this-handbook"><i class="fa fa-check"></i><b>1.3</b> This Handbook</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#further-reading"><i class="fa fa-check"></i><b>1.4</b> Further Reading</a></li>
+</ul></li>
+<li class="part"><span><b>I Special Topics</b></span></li>
+<li class="chapter" data-level="2" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>2</b> Physically Protecting Sensitive Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="security.html"><a href="security.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="security.html"><a href="security.html#types-of-security-threats"><i class="fa fa-check"></i><b>2.2</b> Types of Security Threats</a></li>
+<li class="chapter" data-level="2.3" data-path="security.html"><a href="security.html#technical-features-of-data-access-mechanisms"><i class="fa fa-check"></i><b>2.3</b> Technical Features of Data Access Mechanisms</a></li>
+<li class="chapter" data-level="2.4" data-path="security.html"><a href="security.html#typical-access-mechanisms"><i class="fa fa-check"></i><b>2.4</b> Typical Access Mechanisms</a></li>
+<li class="chapter" data-level="2.5" data-path="security.html"><a href="security.html#five-aspects-of-data-access-mechanisms"><i class="fa fa-check"></i><b>2.5</b> Five Aspects of Data Access Mechanisms</a></li>
+<li class="chapter" data-level="2.6" data-path="security.html"><a href="security.html#specific-data-access-mechanisms-along-the-five-aspects"><i class="fa fa-check"></i><b>2.6</b> Specific Data Access Mechanisms Along the Five Aspects</a></li>
+<li class="chapter" data-level="2.7" data-path="security.html"><a href="security.html#guidance-for-data-providers-and-researchers"><i class="fa fa-check"></i><b>2.7</b> Guidance for Data Providers and Researchers</a></li>
+<li class="chapter" data-level="" data-path="security.html"><a href="security.html#about-the-authors"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dua.html"><a href="dua.html"><i class="fa fa-check"></i><b>3</b> Model Data Use Agreements: A Practical Guide</a><ul>
+<li class="chapter" data-level="3.1" data-path="dua.html"><a href="dua.html#overview"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
+<li class="chapter" data-level="3.2" data-path="dua.html"><a href="dua.html#negotiating-the-data-use-request"><i class="fa fa-check"></i><b>3.2</b> Negotiating the Data Use Request</a></li>
+<li class="chapter" data-level="3.3" data-path="dua.html"><a href="dua.html#compliance"><i class="fa fa-check"></i><b>3.3</b> Compliance</a></li>
+<li class="chapter" data-level="3.4" data-path="dua.html"><a href="dua.html#summary"><i class="fa fa-check"></i><b>3.4</b> Summary</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="irb.html"><a href="irb.html"><i class="fa fa-check"></i><b>4</b> Collaborating with the Institutional Review Board (IRB)</a><ul>
+<li class="chapter" data-level="4.1" data-path="irb.html"><a href="irb.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="irb.html"><a href="irb.html#what-is-the-irb"><i class="fa fa-check"></i><b>4.2</b> What is the IRB</a></li>
+<li class="chapter" data-level="4.3" data-path="irb.html"><a href="irb.html#irbs-and-international-research"><i class="fa fa-check"></i><b>4.3</b> IRBs and International Research</a></li>
+<li class="chapter" data-level="4.4" data-path="irb.html"><a href="irb.html#what-an-irb-does-not-do"><i class="fa fa-check"></i><b>4.4</b> What an IRB Does Not Do</a></li>
+<li class="chapter" data-level="4.5" data-path="irb.html"><a href="irb.html#what-the-irb-will-do-to-ensure-the-protection-of-participants"><i class="fa fa-check"></i><b>4.5</b> What the IRB Will Do to Ensure the Protection of Participants</a></li>
+<li class="chapter" data-level="4.6" data-path="irb.html"><a href="irb.html#considerations-of-the-irb"><i class="fa fa-check"></i><b>4.6</b> Considerations of the IRB</a></li>
+<li class="chapter" data-level="4.7" data-path="irb.html"><a href="irb.html#strategies-for-communicating-with-the-irb"><i class="fa fa-check"></i><b>4.7</b> Strategies for Communicating With the IRB</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#about-the-author-1"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#appendix-1"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discavoid.html"><a href="discavoid.html"><i class="fa fa-check"></i><b>5</b> Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods</a><ul>
+<li class="chapter" data-level="5.1" data-path="discavoid.html"><a href="discavoid.html#purpose-of-statistical-disclosure-limitation-methods-definitions-and-context"><i class="fa fa-check"></i><b>5.1</b> Purpose of Statistical Disclosure Limitation Methods: Definitions and Context</a></li>
+<li class="chapter" data-level="5.2" data-path="discavoid.html"><a href="discavoid.html#methods"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="discavoid.html"><a href="discavoid.html#metrics"><i class="fa fa-check"></i><b>5.3</b> Metrics</a></li>
+<li class="chapter" data-level="5.4" data-path="discavoid.html"><a href="discavoid.html#tools"><i class="fa fa-check"></i><b>5.4</b> Tools</a></li>
+<li class="chapter" data-level="5.5" data-path="discavoid.html"><a href="discavoid.html#conclusion"><i class="fa fa-check"></i><b>5.5</b> Conclusion</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#about-the-authors-1"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="diffpriv.html"><a href="diffpriv.html"><i class="fa fa-check"></i><b>6</b> Designing Access with Differential Privacy</a></li>
+<li class="part"><span><b>II Case Studies</b></span></li>
+<li class="chapter" data-level="7" data-path="iab.html"><a href="iab.html"><i class="fa fa-check"></i><b>7</b> Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers</a><ul>
+<li class="chapter" data-level="7.1" data-path="iab.html"><a href="iab.html#summary-1"><i class="fa fa-check"></i><b>7.1</b> Summary</a></li>
+<li class="chapter" data-level="7.2" data-path="iab.html"><a href="iab.html#introduction-2"><i class="fa fa-check"></i><b>7.2</b> Introduction</a></li>
+<li class="chapter" data-level="7.3" data-path="iab.html"><a href="iab.html#making-data-usable-for-research"><i class="fa fa-check"></i><b>7.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="7.4" data-path="iab.html"><a href="iab.html#legal-and-institutional-framework"><i class="fa fa-check"></i><b>7.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="7.5" data-path="iab.html"><a href="iab.html#protection-of-sensitive-and-personal-data-the-five-safes-framework"><i class="fa fa-check"></i><b>7.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="7.6" data-path="iab.html"><a href="iab.html#data-life-cycle-and-replicability"><i class="fa fa-check"></i><b>7.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="7.7" data-path="iab.html"><a href="iab.html#sustainability-and-continued-success"><i class="fa fa-check"></i><b>7.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="iab.html"><a href="iab.html#about-the-authors-2"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="olda.html"><a href="olda.html"><i class="fa fa-check"></i><b>8</b> Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community</a><ul>
+<li class="chapter" data-level="8.1" data-path="olda.html"><a href="olda.html#summary-2"><i class="fa fa-check"></i><b>8.1</b> Summary</a></li>
+<li class="chapter" data-level="8.2" data-path="olda.html"><a href="olda.html#introduction-3"><i class="fa fa-check"></i><b>8.2</b> Introduction</a></li>
+<li class="chapter" data-level="8.3" data-path="olda.html"><a href="olda.html#making-data-usable-for-research-1"><i class="fa fa-check"></i><b>8.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="8.4" data-path="olda.html"><a href="olda.html#legal-and-institutional-framework-1"><i class="fa fa-check"></i><b>8.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="8.5" data-path="olda.html"><a href="olda.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-1"><i class="fa fa-check"></i><b>8.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="8.6" data-path="olda.html"><a href="olda.html#data-life-cycle-and-reproducibility"><i class="fa fa-check"></i><b>8.6</b> Data Life Cycle and Reproducibility</a></li>
+<li class="chapter" data-level="8.7" data-path="olda.html"><a href="olda.html#sustainability-and-continued-success-1"><i class="fa fa-check"></i><b>8.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#about-the-author-2"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#appendix-2"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="nbirdt.html"><a href="nbirdt.html"><i class="fa fa-check"></i><b>9</b> New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT</a><ul>
+<li class="chapter" data-level="9.1" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-summ"><i class="fa fa-check"></i><b>9.1</b> Summary</a></li>
+<li class="chapter" data-level="9.2" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-intro"><i class="fa fa-check"></i><b>9.2</b> Introduction</a></li>
+<li class="chapter" data-level="9.3" data-path="nbirdt.html"><a href="nbirdt.html#making-data-usable-for-research-nbirdt-making"><i class="fa fa-check"></i><b>9.3</b> Making Data Usable for Research (#nbirdt-making)</a></li>
+<li class="chapter" data-level="9.4" data-path="nbirdt.html"><a href="nbirdt.html#legal-and-institutional-framework-nbirdt-framework"><i class="fa fa-check"></i><b>9.4</b> Legal and Institutional Framework (#nbirdt-framework)</a></li>
+<li class="chapter" data-level="9.5" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-legalaccess"><i class="fa fa-check"></i><b>9.5</b> Legal Framework for Granting Data Access</a></li>
+<li class="chapter" data-level="9.6" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-fivesafes"><i class="fa fa-check"></i><b>9.6</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="9.7" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-replicability"><i class="fa fa-check"></i><b>9.7</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="9.8" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-sustain"><i class="fa fa-check"></i><b>9.8</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="nbirdt.html"><a href="nbirdt.html#about-the-authors-3"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pcri.html"><a href="pcri.html"><i class="fa fa-check"></i><b>10</b> The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry</a><ul>
+<li class="chapter" data-level="10.1" data-path="pcri.html"><a href="pcri.html#summary-3"><i class="fa fa-check"></i><b>10.1</b> Summary</a></li>
+<li class="chapter" data-level="10.2" data-path="pcri.html"><a href="pcri.html#introduction-4"><i class="fa fa-check"></i><b>10.2</b> Introduction</a></li>
+<li class="chapter" data-level="10.3" data-path="pcri.html"><a href="pcri.html#making-data-useable-for-research"><i class="fa fa-check"></i><b>10.3</b> Making Data Useable for Research</a></li>
+<li class="chapter" data-level="10.4" data-path="pcri.html"><a href="pcri.html#legal-and-institutional-framework-2"><i class="fa fa-check"></i><b>10.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="10.5" data-path="pcri.html"><a href="pcri.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-2"><i class="fa fa-check"></i><b>10.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="10.6" data-path="pcri.html"><a href="pcri.html#data-life-cycle-and-replicability-1"><i class="fa fa-check"></i><b>10.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="10.7" data-path="pcri.html"><a href="pcri.html#sustainability-and-continued-success-2"><i class="fa fa-check"></i><b>10.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#about-the-authors-4"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#acknowledgements-1"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#appendix-3"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ahc.html"><a href="ahc.html"><i class="fa fa-check"></i><b>11</b> Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support</a><ul>
+<li class="chapter" data-level="11.1" data-path="ahc.html"><a href="ahc.html#summary-4"><i class="fa fa-check"></i><b>11.1</b> Summary</a></li>
+<li class="chapter" data-level="11.2" data-path="ahc.html"><a href="ahc.html#introduction-5"><i class="fa fa-check"></i><b>11.2</b> Introduction</a></li>
+<li class="chapter" data-level="11.3" data-path="ahc.html"><a href="ahc.html#legal-and-institutional-framework-3"><i class="fa fa-check"></i><b>11.3</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="11.4" data-path="ahc.html"><a href="ahc.html#making-data-usable-for-research-2"><i class="fa fa-check"></i><b>11.4</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="11.5" data-path="ahc.html"><a href="ahc.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-3"><i class="fa fa-check"></i><b>11.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="11.6" data-path="ahc.html"><a href="ahc.html#data-life-cycle-and-replicability-2"><i class="fa fa-check"></i><b>11.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="11.7" data-path="ahc.html"><a href="ahc.html#sustainability-and-continued-success-3"><i class="fa fa-check"></i><b>11.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#about-the-authors-5"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#acknowledgements-2"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#appendix-4"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sfusd.html"><a href="sfusd.html"><i class="fa fa-check"></i><b>12</b> The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes</a><ul>
+<li class="chapter" data-level="12.1" data-path="sfusd.html"><a href="sfusd.html#summary-5"><i class="fa fa-check"></i><b>12.1</b> Summary</a></li>
+<li class="chapter" data-level="12.2" data-path="sfusd.html"><a href="sfusd.html#introduction-6"><i class="fa fa-check"></i><b>12.2</b> Introduction</a></li>
+<li class="chapter" data-level="12.3" data-path="sfusd.html"><a href="sfusd.html#making-data-usable-for-research-3"><i class="fa fa-check"></i><b>12.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="12.4" data-path="sfusd.html"><a href="sfusd.html#legal-and-institutional-framework-4"><i class="fa fa-check"></i><b>12.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="12.5" data-path="sfusd.html"><a href="sfusd.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-4"><i class="fa fa-check"></i><b>12.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="12.6" data-path="sfusd.html"><a href="sfusd.html#data-life-cycle-and-replicability-3"><i class="fa fa-check"></i><b>12.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="12.7" data-path="sfusd.html"><a href="sfusd.html#sustainability-and-continued-success-4"><i class="fa fa-check"></i><b>12.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="12.8" data-path="sfusd.html"><a href="sfusd.html#concluding-remarks-1"><i class="fa fa-check"></i><b>12.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#about-the-authors-6"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#appendix-5"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="cct.html"><a href="cct.html"><i class="fa fa-check"></i><b>13</b> City of Cape Town, South Africa: Aligning Internal Data Capabilities with External Research Partnerships</a><ul>
+<li class="chapter" data-level="13.1" data-path="cct.html"><a href="cct.html#summary-6"><i class="fa fa-check"></i><b>13.1</b> Summary</a></li>
+<li class="chapter" data-level="13.2" data-path="cct.html"><a href="cct.html#introduction-7"><i class="fa fa-check"></i><b>13.2</b> Introduction</a></li>
+<li class="chapter" data-level="13.3" data-path="cct.html"><a href="cct.html#making-data-usable-for-research-4"><i class="fa fa-check"></i><b>13.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="13.4" data-path="cct.html"><a href="cct.html#legal-and-institutional-framework-5"><i class="fa fa-check"></i><b>13.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="13.5" data-path="cct.html"><a href="cct.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-5"><i class="fa fa-check"></i><b>13.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="13.6" data-path="cct.html"><a href="cct.html#data-life-cycle-and-reproducibility-1"><i class="fa fa-check"></i><b>13.6</b> Data Life Cycle and Reproducibility</a></li>
+<li class="chapter" data-level="13.7" data-path="cct.html"><a href="cct.html#sustainability-and-continued-success-5"><i class="fa fa-check"></i><b>13.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="13.8" data-path="cct.html"><a href="cct.html#concluding-remarks-2"><i class="fa fa-check"></i><b>13.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#supplemental-materials"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#about-the-authors-7"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#acknowledgements-3"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#appendix-6"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="dime.html"><a href="dime.html"><i class="fa fa-check"></i><b>14</b> Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME)</a><ul>
+<li class="chapter" data-level="14.1" data-path="dime.html"><a href="dime.html#summary-7"><i class="fa fa-check"></i><b>14.1</b> Summary</a></li>
+<li class="chapter" data-level="14.2" data-path="dime.html"><a href="dime.html#introduction-8"><i class="fa fa-check"></i><b>14.2</b> Introduction</a></li>
+<li class="chapter" data-level="14.3" data-path="dime.html"><a href="dime.html#making-data-usable-for-research-5"><i class="fa fa-check"></i><b>14.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="14.4" data-path="dime.html"><a href="dime.html#legal-and-institutional-framework-6"><i class="fa fa-check"></i><b>14.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="14.5" data-path="dime.html"><a href="dime.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-6"><i class="fa fa-check"></i><b>14.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="14.6" data-path="dime.html"><a href="dime.html#data-life-cycle-and-replicability-4"><i class="fa fa-check"></i><b>14.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="14.7" data-path="dime.html"><a href="dime.html#sustainability-and-continued-success-6"><i class="fa fa-check"></i><b>14.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="14.8" data-path="dime.html"><a href="dime.html#concluding-remarks-3"><i class="fa fa-check"></i><b>14.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="dime.html"><a href="dime.html#about-the-authors-8"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="imf.html"><a href="imf.html"><i class="fa fa-check"></i><b>15</b> The Use of Administrative Data at the International Monetary Fund</a><ul>
+<li class="chapter" data-level="15.1" data-path="imf.html"><a href="imf.html#summary-8"><i class="fa fa-check"></i><b>15.1</b> Summary</a></li>
+<li class="chapter" data-level="15.2" data-path="imf.html"><a href="imf.html#introduction-9"><i class="fa fa-check"></i><b>15.2</b> Introduction</a></li>
+<li class="chapter" data-level="15.3" data-path="imf.html"><a href="imf.html#legal-framework"><i class="fa fa-check"></i><b>15.3</b> Legal Framework</a></li>
+<li class="chapter" data-level="15.4" data-path="imf.html"><a href="imf.html#making-data-usable"><i class="fa fa-check"></i><b>15.4</b> Making Data Usable</a></li>
+<li class="chapter" data-level="15.5" data-path="imf.html"><a href="imf.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-7"><i class="fa fa-check"></i><b>15.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="15.6" data-path="imf.html"><a href="imf.html#sustainability-and-continued-success-7"><i class="fa fa-check"></i><b>15.6</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="15.7" data-path="imf.html"><a href="imf.html#concluding-remarks-4"><i class="fa fa-check"></i><b>15.7</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="imf.html"><a href="imf.html#about-the-authors-9"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="indonesia.html"><a href="indonesia.html"><i class="fa fa-check"></i><b>16</b> Using Administrative Data to Improve Social Protection in Indonesia</a><ul>
+<li class="chapter" data-level="16.1" data-path="indonesia.html"><a href="indonesia.html#summary-9"><i class="fa fa-check"></i><b>16.1</b> Summary</a></li>
+<li class="chapter" data-level="16.2" data-path="indonesia.html"><a href="indonesia.html#the-use-of-administrative-data-to-implement-and-monitor-experimental-treatments"><i class="fa fa-check"></i><b>16.2</b> The Use of Administrative Data to Implement and Monitor Experimental Treatments</a></li>
+<li class="chapter" data-level="16.3" data-path="indonesia.html"><a href="indonesia.html#using-administrative-data-to-measure-outcomes"><i class="fa fa-check"></i><b>16.3</b> Using Administrative Data to Measure Outcomes</a></li>
+<li class="chapter" data-level="16.4" data-path="indonesia.html"><a href="indonesia.html#studying-the-collection-of-administrative-data-itself"><i class="fa fa-check"></i><b>16.4</b> Studying the Collection of Administrative Data Itself</a></li>
+<li class="chapter" data-level="16.5" data-path="indonesia.html"><a href="indonesia.html#concluding-remarks-5"><i class="fa fa-check"></i><b>16.5</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#about-the-authors-10"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#acknowledgements-4"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html"><i class="fa fa-check"></i>Evolution of the Handbook and Contributing</a><ul>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#availability"><i class="fa fa-check"></i>Availability</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#contributions"><i class="fa fa-check"></i>Contributions</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#content-format-and-style-guidelines"><i class="fa fa-check"></i>Content, Format, and Style Guidelines</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#versioning"><i class="fa fa-check"></i>Versioning</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#case-study-template"><i class="fa fa-check"></i>Case Study Template</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="handbook-acknowledgements.html"><a href="handbook-acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html"><i class="fa fa-check"></i>Third-party Licenses</a><ul>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
+<li class="chapter">Individual chapters ©️ by their authors.</li>
+<li class="chapter"><a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/> CC-BY-NC</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Handbook on Using Administrative Data for Research and Evidence-based Policy</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="discavoid" class="section level1">
+<h1><span class="header-section-number">5</span> Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods</h1>
+<em>Ian M. Schmutte (University of Georgia)</em><br />
+<em>Lars Vilhuber (Cornell University)</em><br />
+
+<div id="citationLink">
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+</div>
+<div id="myCitation" style="display: none;">
+Ian M. Schmutte and Lars Vilhuber. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
+<p>The purpose of this handbook is to provide guidance on how to enable broader but ethical and legal access to data. Within the “Five Safes” framework <span class="citation">(Desai, Ritchie, and Welpton <a href="#ref-desai2016" role="doc-biblioref">2016</a>)</span>, data providers need to create “safe data” that can be provided to trusted “safe users”, within “<a href="security.html#security">safe settings</a>”, subject to legal and <a href="dua.html#dua">contractual safeguards</a>. Related, but distinct, is the question of how to create “safe outputs” from researchers’ findings, before those findings finally make their way into the public through, say, policy briefs or the academic literature. The processes used to create “safe data” and “safe outputs” - manipulations that render data less sensitive and therefore more appropriate for public release - are generally referred to as statistical disclosure limitation (SDL).<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a> In this chapter, we will describe methods traditionally used within the field of SDL, pointing at methods as well as metrics to assess the resultant statistical quality and sensitivity of the data. Newer methods, generally referred to as “formal privacy methods,” are described in a separate <a href="diffpriv.html#diffpriv">chapter</a>.</p>
+<p>At their core, SDL methods prevent outsiders from learning “too much” about any one record in the data <span class="citation">(Dalenius <a href="#ref-dalenius_towards_1977" role="doc-biblioref">1977</a>)</span> by deliberately, and judiciously, adding distortions. Ideally, these distortions maintain the validity of the data for statistical analysis, but strongly reduce the ability to isolate records and infer precise information about individual people, firms, or cases. In general, it is necessary to sacrifice validity in order to prevent disclosure <span class="citation">(Goroff <a href="#ref-goroff_balancing_2015" role="doc-biblioref">2015</a>; Abowd and Schmutte <a href="#ref-abowd_economic_2015" role="doc-biblioref">2015</a>)</span>. It is therefore important for data custodians to bear this tradeoff in mind when deciding whether and how to use SDL.</p>
+<p>One key challenge for implementing privacy systems lies in choosing the amount, or type, of privacy to provide. Answering this question requires some way to understand the individual and social value of privacy. <span class="citation">Abowd and Schmutte (<a href="#ref-abowd_economic_2019" role="doc-biblioref">2019</a>)</span> discuss the question of optimal privacy protection (see also <span class="citation">Hsu et al. (<a href="#ref-hsu_differential_2014" role="doc-biblioref">2014</a>)</span> in the specific context of differential privacy). For an illustration, see <span class="citation">Spencer and Seeskin (<a href="#ref-spencer_effects_2015" role="doc-biblioref">2015</a>)</span>, who use a calibration exercise to study the costs, measured in misallocated congressional seats, of reduced accuracy in population census data.</p>
+<p>Part of the social value of privacy arises from its relationship to scientific integrity. While the law of information recovery suggests that improved privacy must come at the cost of increased error in published statistics, these effects might be mitigated through two distinct channels.
+First, people may be more truthful in surveys if they believe their data is not at risk, as <span class="citation">Couper et al. (<a href="#ref-couper_risk_2008" role="doc-biblioref">2008</a>)</span> illustrate. Second, work in computer science and statistics <span class="citation">(Dwork et al. <a href="#ref-dwork_generalization_2015" role="doc-biblioref">2015</a>; Dwork and Ullman <a href="#ref-dwork_fienberg_2018" role="doc-biblioref">2018</a>; Cummings et al. <a href="#ref-cummings_adaptive_2016" role="doc-biblioref">2016</a>)</span> suggests a somewhat surprising benefit of differential privacy: protection against overfitting.</p>
+<p>There are three factors that a data custodian should bear in mind when deciding whether and how to implement an SDL system in support of making data accessible. First, it is necessary to clarify the specific privacy requirements based on the nature of the underlying data, institutional and policy criteria, and ethical considerations. In addition, the custodian, perhaps in consultation with users, should clarify what sorts of analyses the data will support. Finally, SDL is often part of a broader system to protect sensitive data that can also involve access restrictions and other technical barriers. The broader system may allow for less stringent SDL techniques when providing data to researchers in secure environments than would be possible if data were to be released as unrestricted public use data.<a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a> This implies in particular that we will not provide a recommendation for a “best” method, since no such globally optimal method exists in isolation.</p>
+<p>Rather, this chapter provides an overview of the concepts and more widely-used methods of SDL. Relative to other primers that cover similar material, we focus more closely on the advantages and disadvantages of various methods from the perspective of data users. This chapter can serve as a reference that data providers and data users can use to discuss which forms of SDL are appropriate and will satisfy the needs of both parties. In particular, we focus on how common SDL tools affect different types of statistical analysis as well as the kind of confidentiality protections they support, drawing heavily on <span class="citation">Abowd and Schmutte (<a href="#ref-abowd_economic_2015" role="doc-biblioref">2015</a>)</span>. SDL is a broad topic with a vast literature, starting with <span class="citation">Fellegi (<a href="#ref-fellegi_question_1972" role="doc-biblioref">1972</a>)</span>. Naturally, this brief summary is not a replacement for the textbook treatment of SDL in <span class="citation">G. T. Duncan, Elliot, and Salazar-González (<a href="#ref-duncan_statistical_2011" role="doc-biblioref">2011</a><a href="#ref-duncan_statistical_2011" role="doc-biblioref">b</a>)</span>. Finally, SDL methods must be implemented and deployed, and we provide pointers to existing “off-the-rack” tools in a variety of platforms (Stata, R, and Python). Readers might also consult other summaries and guides, such as <span class="citation">Dupriez and Boyko (<a href="#ref-dupriez_dissemination_2010" role="doc-biblioref">2010</a><a href="#ref-dupriez_dissemination_2010" role="doc-biblioref">b</a>)</span>, <span class="citation">World Bank (<a href="#ref-world_bank_dime_nodate" role="doc-biblioref">n.d.</a>)</span>, <span class="citation">Kopper, Sautmann, and Turitto (<a href="#ref-kopper_j-pal_2020" role="doc-biblioref">2020</a>)</span>, and <span class="citation">F. Liu (<a href="#ref-liu_statistical_2020" role="doc-biblioref">2020</a><a href="#ref-liu_statistical_2020" role="doc-biblioref">b</a>)</span>.</p>
+<div id="purpose-of-statistical-disclosure-limitation-methods-definitions-and-context" class="section level2">
+<h2><span class="header-section-number">5.1</span> Purpose of Statistical Disclosure Limitation Methods: Definitions and Context</h2>
+<!-- (1-1.5 pages) -->
+<p>A clear and precise sense of what constitutes an unauthorized disclosure is a prerequisite to implementing SDL. Are all data items equally sensitive? How much more should one be able to learn about certain classes of people, firms, villages, etc.? Note that even when “trusted researchers” (“safe people”) can be sworn to secrecy, the ultimate goal is to publish using information gleaned from the data, and the final audience can never be considered trusted.<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a></p>
+<p>The key concepts are privacy and confidentiality. Privacy can be viewed, in this context, as the right to restrict others’ access to personal information, whether through query or through observation <span class="citation">(Hirshleifer <a href="#ref-hirshleifer_privacy_1980" role="doc-biblioref">1980</a>)</span>. Confidentiality pertains to data that have already been collected, and describes the principle that the data should not be used in ways that could harm the persons that provided it.</p>
+<blockquote>
+<p>For example, Ann, who is asked to participate in a study about health behaviors, has a <em>privacy</em> right to refuse to answer a question about smoking. If she does answer the question, it would breach <em>confidentiality</em> if her response was then used by an insurance company to adjust her premiums <span class="citation">(Duncan, Jabine, and Wolf <a href="#ref-duncan_private_1993" role="doc-biblioref">1993</a>)</span>.</p>
+</blockquote>
+<p><span class="citation">Harris-Kojetin et al. (<a href="#ref-harris-kojetin_statistical_2005" role="doc-biblioref">2005</a>)</span> define “disclosure” as the “inappropriate attribution of information to a data subject, whether an individual or an organization” <span class="citation">(Harris-Kojetin et al. <a href="#ref-harris-kojetin_statistical_2005" role="doc-biblioref">2005</a>, 4)</span>, and describe three different types of disclosure. An <em>identity disclosure</em> is one where it is possible to learn that a particular record or data item belongs to a particular participant (individual or organization). An <em>attribute disclosure</em> happens if publication of the data reveals an attribute of a participant. Note that an <em>identity disclosure</em> necessarily entails attribute disclosure, but the reverse is not the case.</p>
+<blockquote>
+<p>In our hypothetical health study, if Ann responds that she is a smoker, an identity disclosure would mean someone can determine which record is hers, and therefore can also learn that she is a smoker – an attribute disclosure. However, an attribute disclosure could also occur if someone knows that Ann was in the study, they know that Ann lives in a particular zip code, and the data reveal that all participants from that zip code are also smokers. Her full record is not revealed, but confidentiality was breached all the same.</p>
+</blockquote>
+<p>With these concepts in mind, it is necessary to ask whether it is sufficient to prevent blatant “all-or-nothing” identity or attribute disclosures. Usually not, as it may be possible to learn a sensitive attribute with high, but not total, certainty. This is called an <em>inferential disclosure</em> <span class="citation">(Dalenius <a href="#ref-dalenius_towards_1977" role="doc-biblioref">1977</a>; Duncan and Lambert <a href="#ref-duncan_disclosure-limited_1986" role="doc-biblioref">1986</a>)</span>.</p>
+<blockquote>
+<p>Suppose Ann’s health insurer knows that Ann is in the data, and that she lives in a particular zip code. If the data have 100 records from that zip code and 99 are smokers, then the insurer has learned Ann’s smoking status with imperfect, but high precision.</p>
+</blockquote>
+<p>In addition to deciding what kinds of disclosure can be tolerated and to what extent, in many cases it may also be meaningful to decide which characteristics are and are not sensitive. Smoking behavior may nowadays be regarded as sensitive, but depending on the context, gender might not be. Or, in the case of business data, total sales volume or total payroll are highly sensitive trade secrets. Generally, the county in which the business is located, or the industry in which it operates might not be, but consider a survey of self-employed business people - the location of the business might be the home address, which might be considered highly sensitive. These decisions on what is sensitive affect the implementation of a privacy protection system.<a href="#fn34" class="footnote-ref" id="fnref34"><sup>34</sup></a></p>
+<p>However, additional care must be taken because variables that are not inherently sensitive can still be used to isolate and identify records. Such variables are sometimes referred to as <em>quasi-identifiers</em> and they can be exploited for <em>reidentification</em> attacks. In business data, if the data show that there is only one firm operating in a particular county and sector, then their presence inherently leads to identity disclosure. Many of the traditional approaches to SDL operate in large part by preventing re-identification.<a href="#fn35" class="footnote-ref" id="fnref35"><sup>35</sup></a> <span class="citation">Garfinkel (<a href="#ref-garfinkel_-identification_2015" role="doc-biblioref">2015</a>)</span> discusses techniques for de-identifying data and the many ways in which modern computing tools and a data-rich environment may render effective de-identification impossible, reinforcing the growing need for formal privacy models like differential privacy.</p>
+<!-- > Confidential should mean that the dissemination of data in a manner that would allow public identification of the respondent or would in any way be harmful to him is prohibited and that the data are immune from legal process. (SOURCE?) -->
+<p>SDL methods may be required for legal and ethical reasons. Institutional Review Boards (IRBs) require that individual’s well-being be protected (see the <a href="irb.html#irb">chapter on IRBs</a>). Legal mandates may intersect with ethical concerns, or prescribe certain (minimal) criteria. Thus, the U.S. Health Insurance Portability and Accountability Act of 1996 (HIPAA) <span class="citation">(U.S. Department of Health &amp; Human Services <a href="#ref-us_department_of_health__human_services_health_nodate" role="doc-biblioref">n.d.</a><a href="#ref-us_department_of_health__human_services_health_nodate" role="doc-biblioref">a</a>)</span> has precise definitions of variables that need to be removed in order to comply with the law’s mandate of deidentification <span class="citation">(Department of Health and Human Services <a href="#ref-department_of_health_and_human_services_methods_2012" role="doc-biblioref">2012</a>)</span>. The European General Data Protection Regulation (GDPR) came into effect in 2018, and has defined both broadly the way researchers can access data, and more narrowly the requirements for disclosure limitation <span class="citation">(Cohen and Nissim <a href="#ref-cohen_towards_2020" role="doc-biblioref">2020</a>; Greene et al. <a href="#ref-greene_adjusting_2019" role="doc-biblioref">2019</a>; Molnár-Gábor <a href="#ref-molnar-gabor_germany_2018" role="doc-biblioref">2018</a>)</span>. Similar laws are emerging around the world, and will define both minimal requirements and limits of SDL and other access controls. The California Consumer Privacy Act (CCPA) <span class="citation">(Marini, Kateifides, and Bates <a href="#ref-marini_comparing_2018" role="doc-biblioref">2018</a>)</span> and the Brazilian Lei Geral de Proteção de Dados (LGDP) <span class="citation">(Black, Ramos, and Biscardi <a href="#ref-black_6_2020" role="doc-biblioref">2020</a>)</span> came into effect in 2020, and India is currently considering such a law <span class="citation">(Panakal <a href="#ref-panakal_indias_2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p>We note, finally, that there is a parallel concept of non-statistical disclosure limitation that is a complementary part of secure data dissemination. This applies to the metadata—like codebooks, data descriptions, and other summary information—that can leak potentially sensitive information. For example, data documentation might reveal that only certain geographic areas were included in a particular collection, information that could be used as an element in a re-identification attack. While typically not considered quantitative disclosure avoidance, some of the same concepts we will describe here can apply to such metadata as well. For instance, removing mention of the collection area from the documentation is akin to <a href="discavoid.html#suppression">suppression</a>, while only revealing broad regions of data collection is akin to <a href="discavoid.html#coarsening">coarsening</a>.</p>
+</div>
+<div id="methods" class="section level2">
+<h2><span class="header-section-number">5.2</span> Methods</h2>
+<p>There are many different SDL methods, and the decision of which to use depends on what needs to be protected, how their use will affect approved analyses, and their technical properties. At a very high level, we can think of an SDL system as a mechanism that takes the raw confidential data, <span class="math inline">\(D\)</span>, as an input and produces a modified dataset, <span class="math inline">\(\tilde{D}\)</span>. The researcher then conducts their analysis with the modified <span class="math inline">\(\tilde{D}\)</span>. Ideally, the researcher can do their analysis as planned, but the risk of disclosure in <span class="math inline">\(\tilde{D}\)</span> is reduced.</p>
+<p>Researchers generally need to consider all of the design features that went into producing the data used for an analysis. Most already do so in the context of surveys, where design measures are incorporated into the analysis, often directly in software packages. Some of these adjustments may already take into account various SDL techniques. Traditional survey design adjustments can take into account <a href="discavoid.html#sampling">sampling</a>. Some forms of <a href="discavoid.html#coarsening">coarsening</a> may already be amenable to adjustment using various clustering techniques, such as <span class="citation">Moulton (<a href="#ref-moulton_random_1986" role="doc-biblioref">1986</a>)</span> (see <span class="citation">Cameron and Miller (<a href="#ref-cameron_practitioners_2015" role="doc-biblioref">2015</a>)</span>).</p>
+<p>More generally, the inclusion of edits to the data done in service of disclosure limitation is less well supported, and less well integrated into standard research methods. <span class="citation">Abowd and Schmutte (<a href="#ref-abowd_economic_2015" role="doc-biblioref">2015</a>)</span> argue that the analysis of SDL-laden data is inherently compromised because the details of the SDL protections cannot be disclosed. If they cannot be disclosed, their consequences for inference are unknowable, and, as they show, may be substantial. Regression models, regression discontinuity designs, and instrumental variables models are, generally speaking, affected when SDL is present. The exact nature of any bias or inconsistency will depend on whether SDL was applied to explanatory variables, dependent variables, instruments, or all of the above. Furthermore, it is not always the case that SDL induces an attenuating bias.</p>
+<p>With these goals in mind, following <span class="citation">Abowd and Schmutte (<a href="#ref-abowd_economic_2015" role="doc-biblioref">2015</a>)</span> we distinguish between <em>ignorable</em> and <em>non-ignorable</em> SDL systems.
+Briefly, SDL is <em>ignorable</em> for a particular analysis if the analysis can be performed on the modified data, <span class="math inline">\(\tilde{D}\)</span> as though it were the true data. In a non-ignorable analysis, the result differs in some material way when <span class="math inline">\(\tilde{D}\)</span> is substituted for <span class="math inline">\(D\)</span>. When the SDL method is <em>known</em>, then it may be possible for the researcher to perform an <em>SDL-aware</em> analysis that corrects for non-ignorability. However, SDL methods are generally not ignorable except in certain specific applications.</p>
+<p>We briefly outline several of the methods most commonly used within national statistical offices. For interested readers, <span class="citation">Harris-Kojetin et al. (<a href="#ref-harris-kojetin_statistical_2005" role="doc-biblioref">2005</a>)</span> describe how SDL systems are implemented in the U.S. statistical system,<a href="#fn36" class="footnote-ref" id="fnref36"><sup>36</sup></a> while <span class="citation">Dupriez and Boyko (<a href="#ref-dupriez_dissemination_2010" role="doc-biblioref">2010</a><a href="#ref-dupriez_dissemination_2010" role="doc-biblioref">b</a>)</span> offers a more multinational perspective.</p>
+<div id="de-identification" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> De-Identification</h3>
+<p>In general, it is good practice to remove any variables from the data that are not needed for data processing or analysis, and that could be considered direct identifiers. What constitutes “direct identifiers” may differ on the context, but generally comprises any variable that might directly link to confidential information: names, account or identifier numbers, and sometimes exact birth dates or exact geo-identifiers.<a href="#fn37" class="footnote-ref" id="fnref37"><sup>37</sup></a> HIPAA defines sixteen identifiers that must be removed in order to comply with the law. It may be necessary to preserve identifiers through parts of the data processing or analysis if they are key variables needed for record linking. In field experiments, the identities of treatment and control units may need to be merged with an administrative dataset. It is also sometimes necessary to use direct identifiers to link records between surveys and administrative data, or precise geographic coordinates may be needed to compute distances as part of the analysis. If possible, the data provider should facilitate record linking while the data are secure, before they are shared with the research team.</p>
+</div>
+<div id="suppression" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Suppression</h3>
+<!-- Also mention rules that point to "suppress regression coefficients when derived from less than x% of sample, or the p-percent rule" as they are applied to "safe output" rules in RDC and MOU scenarios. -->
+<p>Suppression is perhaps the most common form of SDL, and one of the oldest <span class="citation">(Fellegi <a href="#ref-fellegi_question_1972" role="doc-biblioref">1972</a>)</span>. In their most basic form, suppression rules work as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Model the sensitivity of a particular data item, table cell, or observation (“disclosure risk”)</li>
+<li>Do not allow the release of data items that have excessive disclosure risk (primary suppression)</li>
+<li>Do not allow the release of other data from which the sensitive item can be calculated (complementary suppression)</li>
+</ol>
+<p>Suppression rules can be applied to microdata, in which case the sensitive observations are removed from the microdata, or to tabular data, where the relevant cells are suppressed.</p>
+<p>In the case of business microdata, a firm that is unique in its county and industry might be flagged as having high disclosure risk and eliminated from the data. Another less damaging possibility is that just its sensitive attributes are suppressed, so a researcher would still know that there was a firm operating in that industry and location; just not what its other attributes were. For tabular data, the principle is the same. Continuing with the business application, suppose there is one large firm and several smaller competitors in a given industry and location. If the cell is published, it might be possible for its local competitors to learn the receipts of the dominant firm to a high degree of precision.</p>
+<p>Cell suppression rules based on this sort of reasoning are called <em>p</em>-percent rules, where <em>p</em> describes the precision with which the largest firm’s information can be learned. A conservative estimate of this occurs when the largest firm’s value is <em>(1-p)%</em> of the cell’s value.</p>
+<p>A variant of this rule takes into account prior precision <em>q</em> (the “pq percent rule”). Another rule is known as the <em>n,k</em> rule: a cell is suppressed if <em>n</em> or fewer entities contribute <em>k</em> percent or more of the cell’s value. These rules are frequently applied to statistics produced by national statistical agencies <span class="citation">(Harris-Kojetin et al. <a href="#ref-harris-kojetin_statistical_2005" role="doc-biblioref">2005</a>)</span>. Simpler rules based entirely on cell counts are also encountered, for instance in the Health and Retirement Study <span class="citation">(Health and Retirement Study <a href="#ref-health_and_retirement_study_disclosure_nodate" role="doc-biblioref">n.d.</a>)</span>. Tables produced using HRS confidential geo-coded data are only allowed to display values when the cell contains three or more records (five for marginal cells).</p>
+<p>If a cell in a contingency table is suppressed based on any one of these rules, it could be backed out by using the information in the table margins and the fact that table cells need to sum up to their margins. Some data providers therefore require that additional cells are suppressed to ensure this sort of reverse engineering is not possible. Figuring out how to choose these <em>complementary suppressions</em> in an efficient manner is a non-trivial challenge.</p>
+<p>In general, cell suppression is not an ignorable form of SDL. It remains popular because it is easy to explain and does not affect the un-suppressed cells.</p>
+<p>Data suppression is clearly non-ignorable, and is quite difficult to correct for suppression in an SDL-aware analysis.<a href="#fn38" class="footnote-ref" id="fnref38"><sup>38</sup></a> The features of the data that lead to suppression are often related to the underlying phenomenon of interest. <span class="citation">Chetty and Friedman (<a href="#ref-chetty_practical_2019" role="doc-biblioref">2019</a>)</span> provide a clear illustration. They publish neighborhood-level summaries of intergenerational mobility based on tax records linked to Census data. The underlying microdata are highly sensitive, and to protect privacy they used a variant of a differentially privacy model. They show that if they had instead used a cell suppression rule, the published data would be misleading with respect to the relationship between neighborhood poverty and teen pregnancy because both variables are associated with neighborhood population. Hence, the missingness induced by cell suppression is not ignorable.</p>
+<p>Suppression can also be applied to model-based statistics. For instance, after having run a regression, coefficients that correspond to cells with fewer than <em>n</em> cases may be suppressed. This most often occurs when using dichotomous variables (dummy variables), which represent conditional means for particular subgroups.</p>
+<blockquote>
+<p>In a regression, a researcher includes a set of dummies for interacting occupation and location. When cross-tabulating occupation and location, many cells have less than 5 observations contributing to the coefficient. The data provider requires that these be suppressed.</p>
+</blockquote>
+</div>
+<div id="coarsening" class="section level3">
+<h3><span class="header-section-number">5.2.3</span> Coarsening</h3>
+<p>Coarsening takes detailed attributes that can serve as quasi-identifiers and collapses them into a smaller number of categories. Computer scientists call this “generalizing”, and it is also sometimes referred to as “masking”. Coarsening can be applied to quasi-identifiers, to prevent re-identification, or to attributes, to prevent accurate attribute inference. When applied to quasi-identifiers, the concern is that an outsider could use detailed quasi-identifiers to single-out a particular record and learn who it belonged to. By coarsening quasi-identifiers, the set of matching records is increased, raising uncertainty about any re-identified individual’s true identity. In principle, all variables can serve as quasi-identifiers, and the concept of <em>k-anonymity</em> introduced by <span class="citation">Sweeney (<a href="#ref-sweeney_achieving_2002" role="doc-biblioref">2002</a>)</span> is a useful framework for thinking about how to implement coarsening and other microdata SDL. We discuss k-anonymity in the section on <a href="discavoid.html#disclosure-risk">disclosure risk</a>.</p>
+<p>Coarsening is common in microdata releases. As a general rule of thumb, it may make sense to consider coarsening variables with heavy tails (earnings, payroll), residuals (truncate range, suppress labels of range).
+In public-use microdata from the American Community Survey, geographic areas are coarsened until all such areas represent at least 100,000 individuals <span class="citation">(U.S. Census Bureau <a href="#ref-us_census_bureau_finalpublic_2011" role="doc-biblioref">2011</a>)</span>. In many data sources, characteristics like age and income, are reported in bins even when the raw data are more detailed. Topcoding is a common type of coarsening, in which variables, e.g. incomes, above a certain threshold are replaced with some topcoded value (e.g., $200,000 in the Current Population Survey). When releasing model-based estimates, rounding, another form of coarsening, can satisfy statistical best practice – not releasing numbers beyond their statistical precision – as well as disclosure avoidance principles – by preventing inferences that could be too precise about specific records in the data.</p>
+<p>Whether coarsening is ignorable or not depends on the analysis to be performed. Consider the case in which incomes are topcoded above the 95th percentile. This form of SDL is ignorable with respect to estimating the 90th percentile of the income distribution (and all other quantiles below the 95th). However, coarsening age is not ignorable if the goal is to conduct an analysis of behavior of individuals right around some age or date-of-birth cutoff. Coarsening rules should therefore bear in mind the intended analysis for the data and may be usefully paired with restricted-access protocols that allow trusted researchers access to the more detailed data. See <span class="citation">Burkhauser et al. (<a href="#ref-burkhauser_estimating_2011" role="doc-biblioref">2011</a>)</span> for an example of the impact of top-coding on estimates of earnings inequality.</p>
+</div>
+<div id="swapping" class="section level3">
+<h3><span class="header-section-number">5.2.4</span> Swapping</h3>
+<p>The premise behind the technique of <em>swapping</em> is similar to suppression. Again, each record is assigned a level of disclosure risk. Then, any high-risk record is matched to a less risky record on a set of key variables, and all of the other non-key attributes are swapped. The result is a dataset that preserves the distribution among all the key variables used for matching.
+If the original purpose of the data was to publish cross-tabulations of the matching variables, swapping can produce microdata that are consistent with those tabulations.
+This approach is more commonly used in censuses and surveys of people or households, and rarely used with establishment data.</p>
+<blockquote>
+<p>For example, consider our hypothetical health study again, and now suppose we know Ann’s zip code, gender, race, ethnicity, age, smoking behavior, and the size of her household. Ann’s record might be classified as high risk if, say, she has a very large household relative to the rest of the other respondents who are also from her zip code. If the data are used to publish, say, summaries of smoking behavior by age, race, and gender, then Ann’s record would be matched to another record with the same age, race, gender and smoking behavior, and the values of the household size and zip code attributes would be swapped.</p>
+</blockquote>
+<p>Swapping is ignorable for analyses that only depend on the matching variables, since the relationships among them will be preserved. However, swapping distorts relationships among the other variables, and between the matching variables and the other variables. In the example above, the swapping would be non-ignorable in the context of a study of how smoking behavior various across zip codes. In general, statistical agencies are not willing to publish detailed information about how swapping is implemented since that information could be used to reverse-engineer some of the swaps, undoing the protection. Hence, SDL-aware analysis may not be possible, and inference validity negatively affected.</p>
+</div>
+<div id="sampling" class="section level3">
+<h3><span class="header-section-number">5.2.5</span> Sampling</h3>
+<p>Sampling is the original SDL technique. Rather than the full confidential microdata, publishing a sample inherently limits the certainty with which an attackers can re-identify records.
+While sampling can provide a formal privacy guarantee, in modern, detailed surveys, sampling will not in general prevent re-identification. In combination with other tools, like coarsening, sampling may be particularly appealing because, while it is non-ignorable, researchers can adjust their analysis for the sampling using familiar methods. Sampling is often used in conjunction with other methods, including with formally private methods, to amplify the protection provided.</p>
+</div>
+<div id="noise-infusion" class="section level3">
+<h3><span class="header-section-number">5.2.6</span> Noise Infusion</h3>
+<p>Noise infusion can refer to an array of related methods, all of which involve distorting data with randomly distributed noise. There is a key distinction between methods where the microdata are infused with noise (input noise infusion), versus methods where noise is added to functions or aggregates of the data before publication (output noise infusion).</p>
+<p>Noise infusion was developed as a substitute for cell suppression as an approach to protecting tabular summaries of business data. Originally proposed by <span class="citation">Evans, Zayatz, and Slanta (<a href="#ref-evans_using_1998" role="doc-biblioref">1998</a>)</span>, the basic approach assigns each microdata unit (a business establishment) a multiplicative noise factor drawn from a symmetric distribution (e.g., centered on one), and multiplies sensitive (or all) characteristics by that factor. Tabular summaries can then be made from the distorted characteristics. As cell sizes increase, the distortions applied to each unit average out. Thus, while small cells may be quite distorted and thus protected, large cells usually have little distortion. Most cells no longer need to be suppressed. These approaches are used in the U.S. Census Bureau’s Quarterly Workforce Indicators <span class="citation">(Abowd et al. <a href="#ref-abowd_lehd_2009" role="doc-biblioref">2009</a> ; John M Abowd et al. <a href="#ref-abowd_dynamically_2012" role="doc-biblioref">2012</a>)</span> and County Business Patterns, with a truncated distribution. When the noise distribution is unbounded, for instance Gaussian, noise infusion may be differentially private, see the <a href="diffpriv.html#diffpriv">chapter on differential privacy</a>.</p>
+<p>Noise infusion has the advantage that it mostly eliminates the need to suppress sensitive records or cells, allowing more information to be revealed from the confidential data while maintaining certain confidentiality protections. Noise infusion also generally preserves the means and covariances among variables. However, it will always inflate estimated variances and can lead to bias in estimates of statistical models, and in particular regression coefficients. Hence, noise infusion is, in general, not ignorable. If the details of the noise distribution can be made available to researchers, then it is possible to correct analysis for noise infusion. However, information about the noise distribution can also help an attacker reverse engineer the protections.</p>
+</div>
+<div id="synthetic-data-and-multiple-imputation" class="section level3">
+<h3><span class="header-section-number">5.2.7</span> Synthetic Data and Multiple Imputation</h3>
+<p>Synthetic data generation and multiple imputation are closely related. In fact, one particular variant of synthetic data as SDL – partially synthetic data – is also known as “suppress and impute” <span class="citation">(Little <a href="#ref-little_statistical_1993" role="doc-biblioref">1993</a>)</span>. Sensitive values for some or all records are replaced by (multiple) imputations. More generally, fully synthetic data <span class="citation">(Rubin <a href="#ref-rubin_discussion_1993" role="doc-biblioref">1993</a>)</span> replaces all values with draws from a posterior predictive distribution, estimated given the confidential data. For an overview, see <span class="citation">Raghunathan, Reiter, and Rubin (<a href="#ref-raghunathan_multiple_2003" role="doc-biblioref">2003</a>)</span>, <span class="citation">Little, Liu, and Raghunathan (<a href="#ref-little_statistical_2004" role="doc-biblioref">2004</a>)</span>, and <span class="citation">Drechsler (<a href="#ref-drechsler_synthetic_2011" role="doc-biblioref">2011</a>)</span>.</p>
+<p>Synthetic data have been used in the Federal Reserve Board’s Survey of Consumer Finances to protect sensitive income values <span class="citation">(Kennickell <a href="#ref-kennickell_multiple_1998" role="doc-biblioref">1998</a>)</span>, and in the American Community Survey microdata to protect data from group quarters <span class="citation">(such as prisons and university residences; see Hawala and Rodriguez <a href="#ref-hawala_disclosure_2009" role="doc-biblioref">2009</a>)</span>. The U.S. Census Bureau’s LODES data, included in the <a href="https://onthemap.ces.census.gov/">OnTheMap</a> application, uses synthetic household data <span class="citation">(Machanavajjhala et al. <a href="#ref-machanavajjhala_privacy_2008" role="doc-biblioref">2008</a>)</span>. Synthetic data can be used in conjunction with validation servers: researchers use the synthetic data to create complex model-based estimation, then submit their analysis to a remote server with access to the confidential data for validation of the results. Such a mechanism has been used by the U.S. Census Bureau in collaboration with Cornell University for confidential business microdata <span class="citation">(Kinney et al. <a href="#ref-kinney_towards_2011" role="doc-biblioref">2011</a>)</span> and for survey data combined with administrative data <span class="citation">(Abowd, Stinson, and Benedetto <a href="#ref-abowd_final_2006" role="doc-biblioref">2006</a>)</span>. The term is sometimes used as well for “test” data for remote submission systems, which typically makes no claims as to the validity - it is simply constructed to replicate the data schema of the confidential data, to test statistical code.</p>
+</div>
+<div id="some-examples" class="section level3">
+<h3><span class="header-section-number">5.2.8</span> Some Examples</h3>
+<p>Table <a href="discavoid.html#tab:overviewtable">5.1</a> shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources.</p>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:overviewtable">Table 5.1: </span>Summary of SDL Methods
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Example
+</th>
+<th style="text-align:left;">
+In this handbook
+</th>
+<th style="text-align:left;">
+Removal of direct identifiers
+</th>
+<th style="text-align:left;">
+Removal of quasi-identifiers
+</th>
+<th style="text-align:left;">
+Suppression
+</th>
+<th style="text-align:left;">
+Coarsening
+</th>
+<th style="text-align:left;">
+Swapping
+</th>
+<th style="text-align:left;">
+Sampling
+</th>
+<th style="text-align:left;">
+Noise infusion
+</th>
+<th style="text-align:left;">
+Synthetic Data
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+IAB on-site access
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Some variables
+</td>
+<td style="text-align:left;">
+Yes (birth date, residence, industry)
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+IAB Scientific Use Files
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+More variables
+</td>
+<td style="text-align:left;">
+More
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OLDA
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Some
+</td>
+<td style="text-align:left;">
+Some case-specific suppressions
+</td>
+<td style="text-align:left;">
+Yes (birth date)
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NBIRDT
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Substantial (only retention of necessary variables)
+</td>
+<td style="text-align:left;">
+Yes (f.i. postal codes, dates)
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PCRI
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Aurora public-use file
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+(per HIPAA)
+</td>
+<td style="text-align:left;">
+Some
+</td>
+<td style="text-align:left;">
+Substantial (only retention of necessary variables)
+</td>
+<td style="text-align:left;">
+Yes (age bins, average characteristics)
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SFUSD
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Not always
+</td>
+<td style="text-align:left;">
+(per FERPA)
+</td>
+<td style="text-align:left;">
+Substantial (only retention of approved variables)
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cape Town
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+When possible
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Sometimes (aggregation)
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DIME/World Bank
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Encouraged internally, required for public posting
+</td>
+<td style="text-align:left;">
+Yes, for public posting
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Being considered
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Survey of Consumer Finances
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Some case-specific suppressions
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+American Community Survey
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Some
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Quarterly Workforce Indicators
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Some case-specific suppressions
+</td>
+<td style="text-align:left;">
+Yes (aggregate data)
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="metrics" class="section level2">
+<h2><span class="header-section-number">5.3</span> Metrics</h2>
+<!-- How do you measure risk, and the reduction in risk achieved by applying above methods? Mention uniqueness criteria, k-anonymity, l-diversity, matching metrics, etc. -->
+<p>The design of an SDL system depends on determinations about what constitutes an acceptable level of disclosure risk, balanced with the proposed uses of the data. There are many different ways to describe and measure disclosure risk. These share in common a sense of how unique a record or combination of attributes is in the data, which corresponds intuitively to a sense of how easy it would be to single-out that record and re-identify the respondent, perhaps aided by a linked dataset. Likewise, there are many different ways to assess whether the released data are suitable, or fit, for their intended use. These quality measures are often based on how closely the released data match the true data on certain statistical summaries, and it will be important for researchers and data custodians to agree on what are the most relevant summaries.</p>
+<div id="disclosure-risk" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Disclosure Risk</h3>
+<p>Early definitions of disclosure risk were based on rules and guidelines derived from institutional knowledge, assessment of summary measures, and reidentification experiments (<span class="citation">Harris-Kojetin et al. (<a href="#ref-harris-kojetin_statistical_2005" role="doc-biblioref">2005</a>)</span>). Statisticians have subsequently developed more formal models to measure risk of re-identification for specific types of publication and with particular threat models. For instance, <span class="citation">Shlomo and Skinner (<a href="#ref-shlomo_assessing_2010" role="doc-biblioref">2010</a>)</span> model reidentification risk in survey microdata when an attacker is matching on certain categorical variables.</p>
+<p>Recently, computer scientists and statisticians have introduced more general concepts of disclosure risk and data privacy. Latanya Sweeny proposed the concept of <span class="math inline">\(k\)</span>-anonymity <span class="citation">(Sweeney <a href="#ref-sweeney_achieving_2002" role="doc-biblioref">2002</a>)</span> which defines disclosure risk in terms of the number of records that share the same combination of attributes. If a single record is uniquely identified by some combination of attributes, disclosure risk is high. Sweeny says that a dataset can be called <span class="math inline">\(k\)</span>-anonymous if for all feasible combinations of attributes, at least <span class="math inline">\(k\)</span> records have that combination. Intuitively, increases in <span class="math inline">\(k\)</span> reduce the risk that observations can be singled out by linking other datasets that contain the same attributes.
+The concept of <span class="math inline">\(k\)</span>-anonymity can provide some guidance when thinking about how to implement the SDL systems described above. For example, if records are uniquely identified by age, race, and gender, then one might collapse age into brackets until there are at least <span class="math inline">\(k&gt;1\)</span> records for each such combination.</p>
+<p>However, <span class="math inline">\(k\)</span>-anonymity does not protect against attribute disclosure. If all <span class="math inline">\(k\)</span> observations with the same combination of attributes also share the same sensitive attribute, say smoking behavior, then the published data do not fully prevent disclosure of smoking behavior. Recognizing this, <span class="citation">Machanavajjhala et al. (<a href="#ref-machanavajjhala_l-diversity_2007" role="doc-biblioref">2007</a>)</span> introduce the concept of <span class="math inline">\(\ell\)</span>-diversity. The idea is that whenever a group of records are identical on some set of variables, there must be a certain amount of heterogeneity in important sensitive traits. If a certain group of records match on a set of quasi-identifiers and also all share the same smoking status, then to achieve <span class="math inline">\(\ell\)</span>-diversity, we might alter the reported smoking behavior of some fraction (<span class="math inline">\(\ell\)</span>) of the records - a form of noise infusion.</p>
+</div>
+<div id="data-quality" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> Data Quality</h3>
+<p>When the released data or output is tabular (histograms, cross-tabulations) or is a limited set of population or model parameters (means, coefficients), a set of distance-based metrics (so-called “<span class="math inline">\(\ell_p\)</span> distance” metrics) can be used to compare the quality of the perturbed data. Note that this is a specific metric, as it is limited to those statistics taken into account - the data quality may be very poor in non-measured attributes! For <span class="math inline">\(p=1\)</span>, the <span class="math inline">\(\ell_1\)</span> distance is the sum of absolute differences between the confidential and perturbed data. For <span class="math inline">\(p = 2\)</span>, the <span class="math inline">\(\ell_2\)</span> distance is the sum of squared differences between the two datasets (normalized by <span class="math inline">\(n\)</span> the number of observations, it is the Mean Squared Error, MSE).</p>
+<p>In settings where it is important to measure data quality over an entire distribution, the Kullbach-Leibler (KL) divergence measure can also be used. The KL-divergence is related to the concept of entropy from information theory and, loosely, measures the amount of surprise associated with seeing an observation drawn from one distribution when you expected them to come from another distribution. Other metrics are based on propensity scores <span class="citation">(Woo et al. <a href="#ref-woo_global_2009" role="doc-biblioref">2009</a>; Snoke et al. <a href="#ref-snoke_general_2018" role="doc-biblioref">2018</a>)</span>. More specific measures will often compare specific analysis output, a task that is quite difficult to conduct in general. <span class="citation">Reiter, Oganian, and Karr (<a href="#ref-reiter_verification_2009" role="doc-biblioref">2009</a>)</span> propose to summarize the difference between regression coefficients when analyses can be run on both confidential and protected data,in the context of verification servers.</p>
+</div>
+</div>
+<div id="tools" class="section level2">
+<h2><span class="header-section-number">5.4</span> Tools</h2>
+<p>For data providers faced with the need to start providing safe data for use by external researchers, a growing number of software packages are available that implement the methods described in this chapter. The ICPSR has a checklist that may be of use in early development of an SDL system <span class="citation">(ICPSR <a href="#ref-icpsr_disclosure_2020" role="doc-biblioref">2020</a>)</span>. The listing of tools below is incomplete, but will provide practitioners with a place to start. A fully-developed SDL system will have unique requirements and may require custom programming. Nevertheless, many tools are useful across a wide range of applications.</p>
+<p>Statistics Netherlands maintains the ARGUS software for SDL <span class="citation">(Hundepool and Willenborg <a href="#ref-hundepool_argus_1998" role="doc-biblioref">1998</a>)</span>, including τ-ARGUS to protect tabular data <span class="citation">(De Wolf <a href="#ref-de_wolf_-argus_2018" role="doc-biblioref">2018</a>)</span>, and μ-ARGUS for protecting microdata <span class="citation">(Hundepool and Ramaswamy <a href="#ref-hundepool_-argus_2018" role="doc-biblioref">2018</a>)</span>. The software appears to be widely used in statistical agencies in Europe. An open-source R package, <code>sdcMicro</code> implements a full suite of tools needed to apply SDL, from computation of risk measures, including <span class="math inline">\(k\)</span>-anonymity and <span class="math inline">\(l\)</span>-diversity, to implementation of SDL methods and the computation of data quality measures <span class="citation">(Templ, Kowarik, and Meindl <a href="#ref-templ_statistical_2015" role="doc-biblioref">2015</a> ; Templ, Meindl, and Kowarik <a href="#ref-templ_sdcmicro_2020" role="doc-biblioref">2020</a>)</span>.</p>
+<p>Simpler tools, focusing on removing direct identifiers, can be found at J-PAL for Stata (<a href="https://github.com/J-PAL/stata_PII_scan">stata_PII_scan</a>) and R (<a href="https://github.com/J-PAL/PII-Scan">PII-scan</a>), and at Innovations for Poverty Action for Python or Windows (<a href="https://github.com/PovertyAction/PII_detection">PII_detection</a>) [<span class="citation">J-PAL (<a href="#ref-j-pal_j-palstata_pii_scan_2020" role="doc-biblioref">2020</a><a href="#ref-j-pal_j-palstata_pii_scan_2020" role="doc-biblioref">b</a>)</span>; <span class="citation">J-PAL (<a href="#ref-j-pal_j-palpii-scan_2020" role="doc-biblioref">2020</a><a href="#ref-j-pal_j-palpii-scan_2020" role="doc-biblioref">a</a>)</span>; <span class="citation">Innovations for Poverty Action (<a href="#ref-innovations_for_poverty_action_povertyactionpii_detection_2020" role="doc-biblioref">2020</a>)</span>).</p>
+<p>A number of R packages facilitate generation of synthetic data. <span class="citation">Raab, Nowok, and Dibben (<a href="#ref-raab_practical_2016" role="doc-biblioref">2016</a>)</span> and <span class="citation">Nowok, Raab, and Dibben (<a href="#ref-nowok_synthpop_2016" role="doc-biblioref">2016</a>)</span> provide <code>synthpop</code>, a flexible and up-to-date package with methods for generating synthetic microdata. The R package <code>simPop</code> <span class="citation">Templ et al. (<a href="#ref-templ_simpop_2019" role="doc-biblioref">2019</a>)</span> can also generate synthetic populations from aggregate data, which can be useful for testing SDL systems on non-sensitive data. In some cases, one might also consider using general-purpose software for multiple imputation for data synthesis.<a href="#fn39" class="footnote-ref" id="fnref39"><sup>39</sup></a></p>
+<p>Many of the methods described in this chapter are technical and require statistical and programming expertise. If that expertise is not already available among staff, some institutions provide guidance to researchers who wish to apply SDL techniques.</p>
+</div>
+<div id="conclusion" class="section level2">
+<h2><span class="header-section-number">5.5</span> Conclusion</h2>
+<p>There is a greater demand than ever for all kinds of data. More than ever before, scholars and analysts have the tools to use data to better understand the economy and society, and to inform policy. Alongside these advances, data custodians find themselves under pressure to make databases available to outsiders. However, the pressure to make data available is not always accompanied by the resources, tools, or expertise needed to do so safely.</p>
+<p>The same advances driving these new demands have a darker side. Computing power together with the availability of detailed outside data make it easier than ever for attackers to exploit improperly protected data. Therefore, when making data available for research, agency stewards must take great care to also protect the subjects in the data. This chapter provides an overview of techniques traditionally used to modify the data to achieve that goal. There is a legitimate concern that some of the methods discussed here cannot protect against all possible attacks made possible with modern computing power. Those concerns animate the discussion of formal methods that yield provable privacy guarantees elsewhere in this Handbook.</p>
+</div>
+<div id="about-the-authors-1" class="section level2 unnumbered">
+<h2>About the Authors</h2>
+<p><a href="http://ianschmutte.org/">Ian M. Schmutte</a> is Associate Professor in the Department of Economics at the University of Georgia. Schmutte is currently working with the U.S. Census Bureau on new methods for protecting confidential data. His research has appeared in the American Economic Review, Journal of Labor Economics, Journal of Human Resources, Journal of Business and Economic Statistics, and the Brookings Papers on Economic Activity.</p>
+<p><a href="https://www.vilhuber.com/lars/">Lars Vilhuber</a> is the Executive Director of the <a href="http://www.ilr.cornell.edu/ldi" title="LDI">Labor Dynamics Institute</a> at <a href="http://www.cornell.edu" title="Cornell University">Cornell University</a>. He has worked for many years with the <a href="https://www.census.gov/research/">Research and Methodology Directorate</a> at the U.S. Census Bureau on a variety of projects, including implementing disclosure avoidance techniques. He is a member of governing or scientific committees of secure data access center in Canada (<a href="https://crdcn.org/">CRDCN</a> and France (<a href="http://casd.eu">CASD</a>, and a member of the <a href="https://www.amstat.org/">American Statistical Association</a>‘s <a href="https://community.amstat.org/cpc/home">Committee on Privacy and Confidentiality</a>. He is the inaugural Data Editor for the <a href="https://www.aeaweb.org/">American Economic Association</a>, and the Managing (Executive) Editor of the <a href="https://journalprivacyconfidentiality.org/">Journal of Privacy and Confidentiality</a>. He is the <a href="https://www.povertyactionlab.org/initiative/innovations-data-experiments-action">Co-Chair, Innovations in Data and Experiments for Action Initiative (IDEA)</a> at <a href="https://www.povertyactionlab.org/">J-PAL</a>.</p>
+</div>
+<div id="acknowledgements" class="section level2 unnumbered">
+<h2>Acknowledgements</h2>
+<p>This chapter draws on <span class="citation">John M. Abowd et al. (<a href="#ref-abowd_introductory_2019" role="doc-biblioref">2019</a>)</span> and the INFO7470 class at Cornell University <span class="citation">(Abowd and Vilhuber <a href="#ref-abowd_session_2016" role="doc-biblioref">2016</a>)</span>. We gratefully acknowledge the support of Alfred P. <a href="https://sloan.org/grant-detail/6845">Sloan Foundation Grant G-2015-13903</a> and <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848">NSF Grant SES-1131848</a> for the earlier work.</p>
+</div>
+<div id="disclaimer" class="section level2 unnumbered">
+<h2>Disclaimer</h2>
+<p>The views expressed in this paper are those of the authors and not those of the U.S. Census Bureau or other sponsors.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-abowd_lehd_2009">
+<p>Abowd, J M, B E Stephens, L Vilhuber, F Andersson, K L McKinney, M Roemer, and S D Woodcock. 2009. “The LEHD Infrastructure Files and the Creation of the Quarterly Workforce Indicators.” In <em>Producer Dynamics: New Evidence from Micro Data</em>, edited by T. Dunne and J B Jensen and M J Roberts. University of Chicago Press.</p>
+</div>
+<div id="ref-abowd_dynamically_2012">
+<p>Abowd, John M, R Kaj Gittings, Kevin L McKinney, Bryce Stephens, Lars Vilhuber, and Simon D Woodcock. 2012. “Dynamically Consistent Noise Infusion and Partially Synthetic Data as Confidentiality Protection Measures for Related Time Series.” 12-13. U.S. Census Bureau, Center for Economic Studies. <a href="https://doi.org/10.2139/ssrn.2159800">https://doi.org/10.2139/ssrn.2159800</a>.</p>
+</div>
+<div id="ref-abowd_introductory_2019">
+<p>Abowd, John M., Ian Schmutte, William Sexton, and Lars Vilhuber. 2019. “Introductory Readings in Formal Privacy for Economists.” Document 2662639. Labor Dynamics Institute, Cornell University. <a href="https://doi.org/10.5281/zenodo.2662639">https://doi.org/10.5281/zenodo.2662639</a>.</p>
+</div>
+<div id="ref-abowd_final_2006">
+<p>Abowd, John M, Martha Stinson, and Gary Benedetto. 2006. “Final Report to the Social Security Administration on the SIPP/SSA/IRS Public Use File Project.” 1813/43929. U.S. Census Bureau. <a href="http://hdl.handle.net/1813/43929">http://hdl.handle.net/1813/43929</a>.</p>
+</div>
+<div id="ref-abowd_session_2016">
+<p>Abowd, John M., and Lars Vilhuber. 2016. “Session 12: Statistical Tools: Methods of Confidentiality Protection.” Presentation 45060. Labor Dynamics Institute, Cornell University. <a href="https://hdl.handle.net/1813/45060">https://hdl.handle.net/1813/45060</a>.</p>
+</div>
+<div id="ref-abowd_economic_2019">
+<p>Abowd, John, and Ian Schmutte. 2019. “An Economic Analysis of Privacy Protection and Statistical Accuracy as Social Choices.” <em>American Economic Review</em> 109 (1): 171–202. <a href="https://doi.org/10.1257/aer.20170627">https://doi.org/10.1257/aer.20170627</a>.</p>
+</div>
+<div id="ref-abowd_economic_2015">
+<p>Abowd, John, and Ian M. Schmutte. 2015. “Economic Analysis and Statistical Disclosure Limitation.” <em>Brookings Papers on Economic Activity</em>, 221–67. <a href="https://doi.org/10.1353/eca.2016.0004">https://doi.org/10.1353/eca.2016.0004</a>.</p>
+</div>
+<div id="ref-black_6_2020">
+<p>Black, Kate, Gretchen A. Ramos, and Giovanni Biscardi. 2020. “6 Months Until Brazil’s LGPD Takes Effect – Are You Ready?” <em>The National Law Review</em>, March. <a href="https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready">https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready</a>.</p>
+</div>
+<div id="ref-burkhauser_estimating_2011">
+<p>Burkhauser, Richard V., Shuaizhang Feng, Stephen P. Jenkins, and Jeff Larrimore. 2011. “Estimating Trends in US Income Inequality Using the Current Population Survey: The Importance of Controlling for Censoring.” <em>The Journal of Economic Inequality</em> 9 (3): 393–415. <a href="https://doi.org/10.1007/s10888-010-9131-6">https://doi.org/10.1007/s10888-010-9131-6</a>.</p>
+</div>
+<div id="ref-cameron_practitioners_2015">
+<p>Cameron, A. Colin, and Douglas L. Miller. 2015. “A Practitioner’s Guide to Cluster-Robust Inference.” <em>Journal of Human Resources</em> 50 (2): 317–72. <a href="https://doi.org/10.3368/jhr.50.2.317">https://doi.org/10.3368/jhr.50.2.317</a>.</p>
+</div>
+<div id="ref-chetty_practical_2019">
+<p>Chetty, Raj, and John N. Friedman. 2019. “A Practical Method to Reduce Privacy Loss When Disclosing Statistics Based on Small Samples.” <em>Journal of Privacy and Confidentiality</em> 9 (2). <a href="https://doi.org/10.29012/jpc.716">https://doi.org/10.29012/jpc.716</a>.</p>
+</div>
+<div id="ref-cohen_towards_2020">
+<p>Cohen, Aloni, and Kobbi Nissim. 2020. “Towards Formalizing the GDPR’s Notion of Singling Out.” <em>Proceedings of the National Academy of Sciences of the United States of America</em> 117 (15): 8344–52. <a href="https://doi.org/10.1073/pnas.1914598117">https://doi.org/10.1073/pnas.1914598117</a>.</p>
+</div>
+<div id="ref-couper_risk_2008">
+<p>Couper, Mick P, Eleanor Singer, Frederick G Conrad, and Robert M Groves. 2008. “Risk of Disclosure, Perceptions of Risk, and Concerns About Privacy and Confidentiality as Factors in Survey Participation.” <em>Journal of Official Statistics</em> 24 (2): 255. <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/risk-of-disclosure-perceptions-of-risk-and-concerns-about-privacy-and-confidentiality-as-factors-in-survey-participation.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/risk-of-disclosure-perceptions-of-risk-and-concerns-about-privacy-and-confidentiality-as-factors-in-survey-participation.pdf</a>.</p>
+</div>
+<div id="ref-cummings_adaptive_2016">
+<p>Cummings, Rachel, Katrina Ligett, Kobbi Nissim, Aaron Roth, and Zhiwei Steven Wu. 2016. “Adaptive Learning with Robust Generalization Guarantees.” <em>CoRR</em> abs/1602.07726. <a href="http://arxiv.org/abs/1602.07726">http://arxiv.org/abs/1602.07726</a>.</p>
+</div>
+<div id="ref-dalenius_towards_1977">
+<p>Dalenius, Tore. 1977. “Towards a Methodology for Statistical Disclosure Control.” <em>Statistik Tidskrift</em> 15: 429–44. <a href="https://doi.org/10.1145/320613.320616">https://doi.org/10.1145/320613.320616</a>.</p>
+</div>
+<div id="ref-department_of_health_and_human_services_methods_2012">
+<p>Department of Health and Human Services. 2012. “Methods for de-Identification of PHI.” <em>HHS.gov</em>, September. <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html">https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html</a>.</p>
+</div>
+<div id="ref-desai2016">
+<p>Desai, Tanvi, Felix Ritchie, and Richard Welpton. 2016. “Five Safes: Designing Data Access for Research.” University of the West of England. <a href="https://uwe-repository.worktribe.com/output/914745">https://uwe-repository.worktribe.com/output/914745</a>.</p>
+</div>
+<div id="ref-de_wolf_-argus_2018">
+<p>De Wolf, Peter-Paul. 2018. “Τ-ARGUS,” August. <a href="http://research.cbs.nl/casc/tau.htm">http://research.cbs.nl/casc/tau.htm</a>.</p>
+</div>
+<div id="ref-drechsler_synthetic_2011">
+<p>Drechsler, Jörg. 2011. <em>Synthetic Datasets for Statistical Disclosure Control: Theory and Implementation</em>. Lecture Notes in Statistics. New York: Springer-Verlag. <a href="https://doi.org/10.1007/978-1-4614-0326-5">https://doi.org/10.1007/978-1-4614-0326-5</a>.</p>
+</div>
+<div id="ref-duncan_disclosure-limited_1986">
+<p>Duncan, George, and Diane Lambert. 1986. “Disclosure-Limited Data Dissemination.” <em>Journal of the American Statistical Association</em> 81 (393): 10–18. <a href="https://doi.org/10.1080/01621459.1986.10478229">https://doi.org/10.1080/01621459.1986.10478229</a>.</p>
+</div>
+<div id="ref-duncan_statistical_2011">
+<p>Duncan, George T., Mark Elliot, and Juan-José Salazar-González. 2011b. <em>Statistical Confidentiality: Principles and Practice</em>. Statistics for Social and Behavioral Sciences. New York: Springer-Verlag. <a href="https://doi.org/10.1111/j.1751-5823.2012.00196_11.x">https://doi.org/10.1111/j.1751-5823.2012.00196_11.x</a>.</p>
+</div>
+<div id="ref-duncan_private_1993">
+<p>Duncan, George T., Thomas B. Jabine, and Virginia A. de Wolf, eds. 1993. <em>Private Lives and Public Policies: Confidentiality and Accessibility of Government Statistics</em>. National Academies Press. <a href="https://doi.org/10.17226/2122">https://doi.org/10.17226/2122</a>.</p>
+</div>
+<div id="ref-dupriez_dissemination_2010">
+<p>Dupriez, Olivier, and Ernie Boyko. 2010b. “Dissemination of Microdata Files - Principles, Procedures and Practices.” Working Paper 005. The World Bank. <a href="http://ihsn.org/dissemination-of-microdata-files">http://ihsn.org/dissemination-of-microdata-files</a>.</p>
+</div>
+<div id="ref-dwork_generalization_2015">
+<p>Dwork, Cynthia, Vitaly Feldman, Moritz Hardt, Toni Pitassi, Omer Reingold, and Aaron Roth. 2015. “Generalization in Adaptive Data Analysis and Holdout Reuse.” In <em>Advances in Neural Information Processing Systems 28</em>, edited by C. Cortes, N. D. Lawrence, D. D. Lee, M. Sugiyama, and R. Garnett, 2341–9. <a href="http://papers.nips.cc/paper/5993-generalization-in-adaptive-data-analysis-and-holdout-reuse.pdf">http://papers.nips.cc/paper/5993-generalization-in-adaptive-data-analysis-and-holdout-reuse.pdf</a>.</p>
+</div>
+<div id="ref-dwork_fienberg_2018">
+<p>Dwork, Cynthia, and Jonathan Ullman. 2018. “The Fienberg Problem: How to Allow Human Interactive Data Analysis in the Age of Differential Privacy.” <em>Journal of Privacy and Confidentiality</em> 8 (1). <a href="https://doi.org/10.29012/jpc.687">https://doi.org/10.29012/jpc.687</a>.</p>
+</div>
+<div id="ref-evans_using_1998">
+<p>Evans, Timothy, Laura Zayatz, and John Slanta. 1998. “Using Noise for Disclosure Limitation of Establishment Tabular Data.” <em>Journal of Official Statistics</em> 14 (4): 537–51.</p>
+</div>
+<div id="ref-fellegi_question_1972">
+<p>Fellegi, I. P. 1972. “On the Question of Statistical Confidentiality.” <em>Journal of the American Statistical Association</em> 67 (337): 7–18. <a href="https://doi.org/10.2307/2284695">https://doi.org/10.2307/2284695</a>.</p>
+</div>
+<div id="ref-garfinkel_-identification_2015">
+<p>Garfinkel, Simson. 2015. “De-Identification of Personal Information.” Internal Report 8053. National Institute of Standards; Technology. <a href="https://doi.org/10.6028/nist.ir.8053">https://doi.org/10.6028/nist.ir.8053</a>.</p>
+</div>
+<div id="ref-goroff_balancing_2015">
+<p>Goroff, D. L. 2015. “Balancing Privacy Versus Accuracy in Research Protocols.” <em>Science</em> 347 (6221): 479–80. <a href="https://doi.org/10.1126/science.aaa3483">https://doi.org/10.1126/science.aaa3483</a>.</p>
+</div>
+<div id="ref-greene_adjusting_2019">
+<p>Greene, Travis, Galit Shmueli, Soumya Ray, and Jan Fell. 2019. “Adjusting to the GDPR: The Impact on Data Scientists and Behavioral Researchers.” <em>Big Data</em> 7 (3): 140–62. <a href="https://doi.org/10.1089/big.2018.0176">https://doi.org/10.1089/big.2018.0176</a>.</p>
+</div>
+<div id="ref-harris-kojetin_statistical_2005">
+<p>Harris-Kojetin, Brian A., Wendy L. Alvey, Lynda Carlson, Steven B. Cohen, Steve H. Cohen, Lawrence H. Cox, Robert E. Fay, et al. 2005. “Statistical Policy Working Paper 22: Report on Statistical Disclosure Limitation Methodology.” Research Report. U.S. Federal Committee on Statistical Methodology. <a href="https://nces.ed.gov/FCSM/pdf/spwp22.pdf">https://nces.ed.gov/FCSM/pdf/spwp22.pdf</a>.</p>
+</div>
+<div id="ref-hawala_disclosure_2009">
+<p>Hawala, Sam, and Rolando Rodriguez. 2009. “Disclosure Avoidance for Group Quarters in the American Community Survey: Details of the Synthetic Data Method,” July. <a href="https://ecommons.cornell.edu/handle/1813/47676">https://ecommons.cornell.edu/handle/1813/47676</a>.</p>
+</div>
+<div id="ref-health_and_retirement_study_disclosure_nodate">
+<p>Health and Retirement Study. n.d. “Disclosure Limitation Review.” Accessed August 9, 2020. <a href="https://hrs.isr.umich.edu/data-products/restricted-data/disclosure-limitation-review">https://hrs.isr.umich.edu/data-products/restricted-data/disclosure-limitation-review</a>.</p>
+</div>
+<div id="ref-hirshleifer_privacy_1980">
+<p>Hirshleifer, Jack. 1980. “Privacy: Its Origin, Function, and Future.” <em>The Journal of Legal Studies</em> 9 (4): 649–64. <a href="https://doi.org/10.1086/467659">https://doi.org/10.1086/467659</a>.</p>
+</div>
+<div id="ref-hsu_differential_2014">
+<p>Hsu, Justin, Marco Gaboardi, Andreas Haeberlen, Sanjeev Khanna, Arjun Narayan, Benjamin C. Pierce, and Aaron Roth. 2014. “Differential Privacy: An Economic Method for Choosing Epsilon.” <em>2014 IEEE 27th Computer Security Foundations Symposium</em>, July, 398–410. <a href="https://doi.org/10.1109/CSF.2014.35">https://doi.org/10.1109/CSF.2014.35</a>.</p>
+</div>
+<div id="ref-hundepool_-argus_2018">
+<p>Hundepool, Anco, and Ramya Ramaswamy. 2018. “Μ-ARGUS,” March. <a href="http://research.cbs.nl/casc/mu.htm">http://research.cbs.nl/casc/mu.htm</a>.</p>
+</div>
+<div id="ref-hundepool_argus_1998">
+<p>Hundepool, Anco, and Leon Willenborg. 1998. “ARGUS, Software Packages for Statistical Disclosure Control.” In <em>COMPSTAT</em>, edited by Roger Payne and Peter Green, 341–45. Heidelberg: Physica-Verlag HD. <a href="https://doi.org/10.1007/978-3-662-01131-7_45">https://doi.org/10.1007/978-3-662-01131-7_45</a>.</p>
+</div>
+<div id="ref-icpsr_disclosure_2020">
+<p>ICPSR. 2020. “Disclosure Risk Worksheet.” Document 156095. University of Michigan. <a href="http://hdl.handle.net/2027.42/156095">http://hdl.handle.net/2027.42/156095</a>.</p>
+</div>
+<div id="ref-innovations_for_poverty_action_povertyactionpii_detection_2020">
+<p>Innovations for Poverty Action. 2020. “PovertyAction/PII_detection,” August. <a href="https://github.com/PovertyAction/PII_detection">https://github.com/PovertyAction/PII_detection</a>.</p>
+</div>
+<div id="ref-j-pal_j-palpii-scan_2020">
+<p>J-PAL. 2020a. “J-PAL/PII-Scan,” March. <a href="https://github.com/J-PAL/PII-Scan">https://github.com/J-PAL/PII-Scan</a>.</p>
+</div>
+<div id="ref-j-pal_j-palstata_pii_scan_2020">
+<p>J-PAL. 2020b. “J-PAL/Stata_PII_scan,” June. <a href="https://github.com/J-PAL/stata_PII_scan">https://github.com/J-PAL/stata_PII_scan</a>.</p>
+</div>
+<div id="ref-kennickell_multiple_1998">
+<p>Kennickell, A B. 1998. “Multiple Imputation in the Survey of Consumer Finances.” In <em>Proceedings of the Section on Survey Research</em>. <a href="https://www.federalreserve.%20gov/econresdata/scf/files/impute98.pdf">https://www.federalreserve. gov/econresdata/scf/files/impute98.pdf</a>.</p>
+</div>
+<div id="ref-kinney_towards_2011">
+<p>Kinney, Satkartar K., Jerome P. Reiter, Arnold P. Reznek, Javier Miranda, Ron S. Jarmin, and John M. Abowd. 2011. “Towards Unrestricted Public Use Business Microdata: The Synthetic Longitudinal Business Database.” Working Papers 11-04. Center for Economic Studies, U.S. Census Bureau. <a href="https://ideas.repec.org/p/cen/wpaper/11-04.html">https://ideas.repec.org/p/cen/wpaper/11-04.html</a>.</p>
+</div>
+<div id="ref-kopper_j-pal_2020">
+<p>Kopper, Sarah, Anja Sautmann, and James Turitto. 2020. “J-PAL Guide to de-Identifying Data.” J-PAL Global. <a href="https://www.povertyactionlab.org/sites/default/files/research-resources/J-PAL-guide-to-deidentifying-data.pdf">https://www.povertyactionlab.org/sites/default/files/research-resources/J-PAL-guide-to-deidentifying-data.pdf</a>.</p>
+</div>
+<div id="ref-little_statistical_1993">
+<p>Little, Roderick JA. 1993. “Statistical Analysis of Masked Data.” <em>Journal of Official Statistics</em> 9 (2): 407–26. <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/statistical-analysis-of-masked-data.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/statistical-analysis-of-masked-data.pdf</a>.</p>
+</div>
+<div id="ref-little_statistical_2004">
+<p>Little, Roderick J A, Fang Liu, and Trivellore E Raghunathan. 2004. “Statistical Disclosure Techniques Based on Multiple Imputation.” In <em>Applied Bayesian Modeling and Causal Inference from Incomplete-Data Perspectives</em>, edited by Andrew Gelman and Xiao Li Meng, 141–52. Wiley. <a href="https://doi.org/10.1002/0470090456.ch13">https://doi.org/10.1002/0470090456.ch13</a>.</p>
+</div>
+<div id="ref-liu_statistical_2020">
+<p>Liu, Fang. 2020b. “A Statistical Overview on Data Privacy.” <em>arXiv:2007.00765 [Cs, Stat]</em>, July. <a href="http://arxiv.org/abs/2007.00765">http://arxiv.org/abs/2007.00765</a>.</p>
+</div>
+<div id="ref-machanavajjhala_privacy_2008">
+<p>Machanavajjhala, A., D. Kifer, J. Abowd, J. Gehrke, and L. Vilhuber. 2008. “Privacy: Theory Meets Practice on the Map.” In <em>Proceedings of the 2008 IEEE 24th International Conference on Data Engineering</em>, 277–86. <a href="https://doi.org/10.1109/ICDE.2008.4497436">https://doi.org/10.1109/ICDE.2008.4497436</a>.</p>
+</div>
+<div id="ref-machanavajjhala_l-diversity_2007">
+<p>Machanavajjhala, Ashwin, Daniel Kifer, Johannes Gehrke, and Muthuramakrishnan Venkitasubramaniam. 2007. “L-Diversity: Privacy Beyond K-Anonymity.” <em>ACM Transactions on Knowledge Discovery from Data</em> 1 (1). <a href="https://doi.org/10.1145/1217299.1217302">https://doi.org/10.1145/1217299.1217302</a>.</p>
+</div>
+<div id="ref-marini_comparing_2018">
+<p>Marini, Alice, Alexis Kateifides, and Joel Bates. 2018. “Comparing Privacy Laws: GDPR V. CCPA.” Future of Privacy Forum. <a href="https://fpf.org/wp-content/uploads/2018/11/GDPR_CCPA_Comparison-Guide.pdf">https://fpf.org/wp-content/uploads/2018/11/GDPR_CCPA_Comparison-Guide.pdf</a>.</p>
+</div>
+<div id="ref-molnar-gabor_germany_2018">
+<p>Molnár-Gábor, Fruzsina. 2018. “Germany: A Fair Balance Between Scientific Freedom and Data Subjects’ Rights?” <em>Human Genetics</em> 137 (8): 619–26. <a href="https://doi.org/10.1007/s00439-018-1912-1">https://doi.org/10.1007/s00439-018-1912-1</a>.</p>
+</div>
+<div id="ref-moulton_random_1986">
+<p>Moulton, Brent R. 1986. “Random Group Effects and the Precision of Regression Estimates.” <em>Journal of Econometrics</em> 32 (3): 385–97. <a href="https://doi.org/10.1016/0304-4076(86)90021-7">https://doi.org/10.1016/0304-4076(86)90021-7</a>.</p>
+</div>
+<div id="ref-nowok_synthpop_2016">
+<p>Nowok, Beata, Gillian M. Raab, and Chris Dibben. 2016. “Synthpop: Bespoke Creation of Synthetic Data in R.” <em>Journal of Statistical Software</em> 74 (1): 1–26. <a href="https://doi.org/10.18637/jss.v074.i11">https://doi.org/10.18637/jss.v074.i11</a>.</p>
+</div>
+<div id="ref-panakal_indias_2019">
+<p>Panakal, Dominic Dhil. 2019. “India’s Proposed Privacy Law Allows Government Access and Some Data Localization.” <em>The National Law Review</em>, December. <a href="https://www.natlawreview.com/article/india-s-proposed-privacy-law-allows-government-access-and-some-data-localization">https://www.natlawreview.com/article/india-s-proposed-privacy-law-allows-government-access-and-some-data-localization</a>.</p>
+</div>
+<div id="ref-raab_practical_2016">
+<p>Raab, Gillian M., Beata Nowok, and Chris Dibben. 2016. “Practical Data Synthesis for Large Samples.” <em>Journal of Privacy and Confidentiality</em> 7 (3): 67–97. <a href="https://doi.org/10.29012/jpc.v7i3.407">https://doi.org/10.29012/jpc.v7i3.407</a>.</p>
+</div>
+<div id="ref-raghunathan_multiple_2003">
+<p>Raghunathan, Trivellore E, Jerry P. Reiter, and Donald B Rubin. 2003. “Multiple Imputation for Statistical Disclosure Limitation.” <em>Journal of Official Statistics</em> 19 (1). <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/multiple-imputation-for-statistical-disclosure-limitation.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/multiple-imputation-for-statistical-disclosure-limitation.pdf</a>.</p>
+</div>
+<div id="ref-reiter_verification_2009">
+<p>Reiter, Jerome P, Anna Oganian, and Alan F Karr. 2009. “Verification Servers: Enabling Analysts to Assess the Quality of Inferences from Public Use Data.” <em>Computational Statistics &amp; Data Analysis</em> 53 (4): 1475–82. <a href="https://doi.org/10.1016/j.csda.2008.10.006">https://doi.org/10.1016/j.csda.2008.10.006</a>.</p>
+</div>
+<div id="ref-rubin_discussion_1993">
+<p>Rubin, Donald B. 1993. “Discussion: Statistical Disclosure Limitation.” <em>Journal of Official Statistics</em> 9 (2): 461–68. <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/discussion-statistical-disclosure-limitation2.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/discussion-statistical-disclosure-limitation2.pdf</a>.</p>
+</div>
+<div id="ref-shlomo_assessing_2010">
+<p>Shlomo, Natalie, and Chris Skinner. 2010. “Assessing the Protection Provided by Misclassification-Based Disclosure Limitation Methods for Survey Microdata.” <em>Annals of Applied Statistics</em> 4 (3): 1291–1310. <a href="https://doi.org/10.1214/09-AOAS317">https://doi.org/10.1214/09-AOAS317</a>.</p>
+</div>
+<div id="ref-snoke_general_2018">
+<p>Snoke, Joshua, Gillian M. Raab, Beata Nowok, Chris Dibben, and Aleksandra Slavkovic. 2018. “General and Specific Utility Measures for Synthetic Data.” <em>Journal of the Royal Statistical Society: Series A (Statistics in Society)</em> 181 (3): 663–88. <a href="https://doi.org/10.1111/rssa.12358">https://doi.org/10.1111/rssa.12358</a>.</p>
+</div>
+<div id="ref-spencer_effects_2015">
+<p>Spencer, Bruce David, and Zachary H. Seeskin. 2015. “Effects of Census Accuracy on Apportionment of Congress and Allocations of Federal Funds.” <em>JSM Proceedings, Government Statistics Section</em>, 3061–75. <a href="https://www.ipr.northwestern.edu/publications/papers/2015/ipr-wp-15-05.html">https://www.ipr.northwestern.edu/publications/papers/2015/ipr-wp-15-05.html</a>.</p>
+</div>
+<div id="ref-sweeney_achieving_2002">
+<p>Sweeney, L. 2002. “Achieving K-Anonymity Privacy Protection Using Generalization and Suppression.” <em>International Journal on Uncertainty, Fuzziness and Knowledge-Based Systems</em> 10 (5): 571–88. <a href="https://doi.org/10.1142/s021848850200165x">https://doi.org/10.1142/s021848850200165x</a>.</p>
+</div>
+<div id="ref-templ_statistical_2015">
+<p>Templ, Matthias, Alexander Kowarik, and Bernhard Meindl. 2015. “Statistical Disclosure Control for Micro-Data Using the R Package sdcMicro.” <em>Journal of Statistical Software</em> 67 (4). <a href="https://doi.org/10.18637/jss.v067.i04">https://doi.org/10.18637/jss.v067.i04</a>.</p>
+</div>
+<div id="ref-templ_simpop_2019">
+<p>Templ, Matthias, Alexander Kowarik, Bernhard Meindl, Andreas Alfons, Mathieu Ribatet, and Johannes Gussenbauer. 2019. “simPop: Simulation of Synthetic Populations for Survey Data Considering Auxiliary Information,” July. <a href="https://CRAN.R-project.org/package=simPop">https://CRAN.R-project.org/package=simPop</a>.</p>
+</div>
+<div id="ref-templ_sdcmicro_2020">
+<p>Templ, Matthias, Bernhard Meindl, and Alexander Kowarik. 2020. “sdcMicro: Statistical Disclosure Control Methods for Anonymization of Data and Risk Estimation,” February. <a href="https://CRAN.R-project.org/package=sdcMicro">https://CRAN.R-project.org/package=sdcMicro</a>.</p>
+</div>
+<div id="ref-us_census_bureau_finalpublic_2011">
+<p>U.S. Census Bureau. 2011. “FinalPublic Use Microdata Area (PUMA) Criteria and Guidelines for the 2010 Census and the American Community Survey.” <a href="American%20Community%20Survey%20Office">American Community Survey Office</a>.</p>
+</div>
+<div id="ref-us_department_of_health__human_services_health_nodate">
+<p>U.S. Department of Health &amp; Human Services. n.d.a. “Health Information Privacy.” Accessed June 23, 2020. <a href="https://www.hhs.gov/hipaa/index.html">https://www.hhs.gov/hipaa/index.html</a>.</p>
+</div>
+<div id="ref-woo_global_2009">
+<p>Woo, M., J. P. Reiter, A. Oganian, and A. F. Karr. 2009. “Global Measures of Data Utility for Microdata Masked for Disclosure Limitation.” <em>Privacy and Confidentiality</em> 1 (1): 111–24. <a href="http://repository.cmu.edu/cgi/viewcontent.cgi?article=1006&amp;context=jpc">http://repository.cmu.edu/cgi/viewcontent.cgi?article=1006&amp;context=jpc</a>.</p>
+</div>
+<div id="ref-world_bank_dime_nodate">
+<p>World Bank. n.d. “DIME Wiki: De-Identification.” Accessed August 8, 2020. <a href="https://dimewiki.worldbank.org/wiki/De-identification">https://dimewiki.worldbank.org/wiki/De-identification</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="31">
+<li id="fn31"><p>Other terms sometimes used are “anonymization” or “de-identification,” but as this chapter will show, de-identification is a particular method of SDL, and anonymization is a goal, never fully achieved, rather than a method.<a href="discavoid.html#fnref31" class="footnote-back">↩︎</a></p></li>
+<li id="fn32"><p>The <a href="iab.html#iab">chapter on the RDC-IAB</a> provides a good illustration of how various SDL methods are combined with different access methods to provide multiple combinations of analytic validity and risk of disclosure.<a href="discavoid.html#fnref32" class="footnote-back">↩︎</a></p></li>
+<li id="fn33"><p>In the United States, 62% of individuals are aware (and possibly resigned) that government and private companies collect data on them, and seem to believe that there is little benefit to them of such collection: 81% think so when companies do the data collection, and 66% when the government does so <span class="citation">(Auxier et al. <a href="#ref-auxier_americans_2019" role="doc-biblioref">2019</a>)</span>.<a href="discavoid.html#fnref33" class="footnote-back">↩︎</a></p></li>
+<li id="fn34"><p>There is a large and robust literature in economics on the value of privacy. For an overview of ideas in this literature, we recommend <span class="citation">Varian (<a href="#ref-varian_economic_2002" role="doc-biblioref">2002</a>)</span> and <span class="citation">Acquisti, Taylor, and Wagman (<a href="#ref-acquisti_economics_2016" role="doc-biblioref">2016</a>)</span>.<a href="discavoid.html#fnref34" class="footnote-back">↩︎</a></p></li>
+<li id="fn35"><p>Thus the occasional reference to methods as <em>deidentification</em> or <em>anonymization</em>, though these terms can sometimes be misleading in regard to what they can actually achieve.<a href="discavoid.html#fnref35" class="footnote-back">↩︎</a></p></li>
+<li id="fn36"><p>As of the writing of this chapter in August 2020, WP22 is being revised and updated, but has not yet been published.<a href="discavoid.html#fnref36" class="footnote-back">↩︎</a></p></li>
+<li id="fn37"><p>See guidance in <span class="citation">World Bank (<a href="#ref-world_bank_dime_nodate" role="doc-biblioref">n.d.</a>)</span> and <span class="citation">Kopper, Sautmann, and Turitto (<a href="#ref-kopper_j-pal_2020" role="doc-biblioref">2020</a>)</span>.<a href="discavoid.html#fnref37" class="footnote-back">↩︎</a></p></li>
+<li id="fn38"><p>One approach is to replace suppressed cells with imputed values, and then treat the data as multiply-imputed.<a href="discavoid.html#fnref38" class="footnote-back">↩︎</a></p></li>
+<li id="fn39"><p>See “<a href="https://stats.idre.ucla.edu/stata/seminars/mi_in_stata_pt1_new/">Multiple imputation in Stata</a>” or the <code>mice</code> package in R <span class="citation">(Buuren and Groothuis-Oudshoorn <a href="#ref-buuren_mice_2011" role="doc-biblioref">2011</a>)</span>.<a href="discavoid.html#fnref39" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="irb.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="diffpriv.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
