@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,7 +311,11 @@
             <section class="normal" id="section-">
 <div id="irb" class="section level1">
 <h1><span class="header-section-number">4</span> Collaborating with the Institutional Review Board (IRB)</h1>
-<p><em>Kathleen Murphy (Northwestern University (ret.))</em></p>
+<em>Kathleen Murphy (Northwestern University (ret.))</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Kathleen Murphy. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <div id="introduction-1" class="section level2">
 <h2><span class="header-section-number">4.1</span> Introduction</h2>
 <p>This chapter is focused on the institutional review board (IRB)<a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a>, an administrative body created at a university or other organization to review research to ensure ethical protection of participants involved. This chapter focuses on what the IRB does and does not do and what researchers, data providers, and related stakeholders can expect from IRB review of research that involves humans. While all research uses information in various formats that is “data,” for the purpose of this chapter, the focus will be on research that accesses and uses administrative data in different forms, formats, and contexts. This may include research activity where administrative data are the central feature or where the data are part of a larger project. There may be different contexts such as international research or collaborative research (or both) where there are different regulatory requirements, as well as different review processes. Some data-driven projects will include only existing administrative data, while others include retrospective or prospective data alone or in conjunction with other research methods, such as experimental interventions, surveys, interviews, or observation. Some projects only involve the analysis of data, while others can include multiple iterations of experimental and comparison interventions as well as innovative analysis of multiple data sets, which are linked by a subset of identifiers. In the United States, the IRB review of such projects takes all of these design factors into consideration in the context of a well-established ethical and regulatory process as described in the section on what the IRB does.</p>

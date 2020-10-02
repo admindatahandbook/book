@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,8 +311,12 @@
             <section class="normal" id="section-">
 <div id="dime" class="section level1">
 <h1><span class="header-section-number">14</span> Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME)</h1>
-<p><em>Arianna Legovini (World Bank)</em><br />
-<em>Maria Ruth Jones (World Bank)</em></p>
+<em>Arianna Legovini (World Bank)</em><br />
+<em>Maria Ruth Jones (World Bank)</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Arianna Legovini and Maria Ruth Jones. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <div id="summary-7" class="section level2">
 <h2><span class="header-section-number">14.1</span> Summary</h2>
 <p>DIME evaluates impact. Evaluating impact is a good organizing principle for constituting high-quality data sets. It helps researchers structure the content and characteristics of data sets to enable policy analysis. This is not the case for administrative data, which are designed to monitor processes. The vector of variables and the selection of observations into administrative data can restrict its use for analysis. Low research capacity in government agencies further limits the use of administrative data even for its intended purpose. This chapter describes how the Development Impact Evaluation <a href="https://www.worldbank.org/en/research/dime">DIME</a> department of the World Bank combines an evaluative and capacity-building approach to secure access to existing administrative data, then fuses it and integrates it with other existing or newly collected data, to make administrative data analysis-ready and provide added value to country clients.</p>

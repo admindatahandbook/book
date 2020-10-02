@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,8 +311,12 @@
             <section class="normal" id="section-">
 <div id="iab" class="section level1">
 <h1><span class="header-section-number">7</span> Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers</h1>
-<p><em>Dana Müller (Institute for Employment Research)</em><br />
-<em>Phillip vom Berge (Institute for Employment Research)</em></p>
+<em>Dana Müller (Institute for Employment Research)</em><br />
+<em>Phillip vom Berge (Institute for Employment Research)</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Dana Müller and Phillip vom Berge. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <div id="summary-1" class="section level2">
 <h2><span class="header-section-number">7.1</span> Summary</h2>
 <p>This chapter describes the Research-Data-Center in Research-Data-Center RDC-in-RDC approach, which is a project that implemented decentralized data access to confidential German labor market data provided by the Research Data Center at the Institute for Employment Research RDC-IAB in Nuremberg, Germany via data access points at collaborating research data centers (RDC), research institutes, and universities. RDC-in-RDC improves data access for researchers who want to work with confidential data but are unable to come to Nuremberg to work with the data on-site. The project started in 2010 and was funded by the German Federal Ministry of Education and Research (BMBF). The chapter covers the challenges involved in developing standardized procedures in an international context in order to ensure user-friendly and sustainable data access in compliance with legal requirements.</p>

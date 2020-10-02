@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,10 +311,14 @@
             <section class="normal" id="section-">
 <div id="diffpriv" class="section level1">
 <h1><span class="header-section-number">6</span> Designing Access with Differential Privacy</h1>
-<p><em>Alexandra Wood (Harvard University)</em><br />
+<em>Alexandra Wood (Harvard University)</em><br />
 <em>Micah Altman (Massachusetts Institute of Technology)</em><br />
 <em>Kobbi Nissim (Georgetown University)</em><br />
-<em>Salil Vadhan (Harvard University)</em></p>
+<em>Salil Vadhan (Harvard University)</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Alexandra Wood,, and Micah Altman, and Kobbi Nissim, and Salil Vadhan. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <p><em>Forthcoming</em></p>
 <p>This chapter seeks to explain how administrative data containing personal information can be collected, analyzed, and published in a way that ensures that the individuals in the data will be afforded the strong protections of differential privacy.</p>
 <p>This chapter is intended as a practical resource for government agencies and research organizations interested in exploring the possibility of implementing differentially private tools. Using intuitive examples rather than the mathematical formalism used in other guides, this chapter introduces the differential privacy definition and the risks it was developed to address. It employs modern privacy frameworks to explain how to determine whether the use of differential privacy is an appropriate solution in a given setting. It also discusses the design considerations one should take into account when implementing differential privacy. This discussion incorporates a review of real-world implementations, including tools designed for tiered access systems combining differential privacy with other privacy controls presented in this handbook, such as consent mechanisms, data use agreements, and secure environments.</p>

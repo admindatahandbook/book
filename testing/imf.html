@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,9 +311,13 @@
             <section class="normal" id="section-">
 <div id="imf" class="section level1">
 <h1><span class="header-section-number">15</span> The Use of Administrative Data at the International Monetary Fund</h1>
-<p><em>Era Dabla-Norris (International Monetary Fund)</em><br />
+<em>Era Dabla-Norris (International Monetary Fund)</em><br />
 <em>Federico J. Díez (International Monetary Fund)</em><br />
-<em>Romain Duval (International Monetary Fund)</em></p>
+<em>Romain Duval (International Monetary Fund)</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Era Dabla-Norris,, and Federico J. Díez, and Romain Duval. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <div id="summary-8" class="section level2">
 <h2><span class="header-section-number">15.1</span> Summary</h2>
 <p>This chapter describes the use of administrative data at the International Monetary Fund (IMF, the Fund) in the context of its three main operations: macroeconomic surveillance and research, lending to member countries, and technical assistance to build capacity in policymaking in member countries. The chapter notes how the Fund has a long-standing tradition of using administrative data in some activities, but the systematic use for monitoring economic developments in member countries and research is still in its infancy. This is partly because the use of administrative data for macroeconomic analysis remains relatively recent, is resource-intensive, and often comes with strings attached. Several examples of interactions with government authorities (the ultimate providers of administrative data) in the context of specific projects are provided; these show wide variation in the degree of collaboration with national authorities, as well as in the procedures and (legal and technical) constraints in accessing and using the data. These country examples also highlight the challenges and opportunities, some of them unique to the institution, for IMF staff to obtain and work with such data. On the legal front, for example, while traditional judicial enforcement mechanisms for data use agreements are not applicable, since the IMF as an international organization is immune from the judicial process, potential partners that provide administrative data are comforted by other features of the IMF’s immunities that provide strong protections to confidential information—and staff can and do negotiate one-off data access agreements with national authorities. The IMF’s specificities also show in how it can ensure safe projects, people, settings, data, and outputs. For example, staff can leverage the institution’s strong credibility, infrastructure, and procedures along these safe dimensions, but there is still wide variation in practices depending on individual member countries’ requirements, and overall success in accessing and using administrative data is easier to achieve in a technical assistance context where demand for IMF analysis and research originates from the source country itself. In the future, through its bilateral engagement with its 189 member countries, participation in international data initiatives, and partnerships with universities and research networks, the IMF has the potential to gradually enhance the comparability, access, and use of (selected) administrative data produced by national authorities.</p>

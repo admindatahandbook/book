@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,12 +311,16 @@
             <section class="normal" id="section-">
 <div id="sfusd" class="section level1">
 <h1><span class="header-section-number">12</span> The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes</h1>
-<p><em>Moonhawk Kim (University of California, Berkeley)</em><br />
+<em>Moonhawk Kim (University of California, Berkeley)</em><br />
 <em>Jim Shen (J-PAL)</em><br />
 <em>Laura Wentworth (California Education Partners)</em><br />
 <em>Norma Ming (San Francisco Unified School District)</em><br />
 <em>Michelle Reininger (University of Colorado at Boulder)</em><br />
-<em>Eric Bettinger (Stanford University)</em></p>
+<em>Eric Bettinger (Stanford University)</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Moonhawk Kim,, and Jim Shen, and Laura Wentworth, and Norma Ming, and Michelle Reininger, and Eric Bettinger. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <div id="summary-5" class="section level2">
 <h2><span class="header-section-number">12.1</span> Summary</h2>
 <p>Research-practice partnerships (RPPs) have a growing reputation for making important connections between the worlds of research and practice in education <span class="citation">(Farley-Ripple et al. <a href="#ref-farley-ripple2018" role="doc-biblioref">2018</a>; Farrell, Coburn, and Chong <a href="#ref-farrell2019" role="doc-biblioref">2019</a>)</span>. These partnerships are long-term, mutualistic, and strategic relationships between researchers and practitioners in education: the product is research that is both related to practical challenges and generalizable to the broader field <span class="citation">(Coburn, Penuel, and Geil <a href="#ref-coburn2013" role="doc-biblioref">2013</a>; Coburn and Penuel <a href="#ref-coburn2016" role="doc-biblioref">2016</a>)</span>. An essential component of some of these partnerships is the data management and data sharing needed for operationalizing research, yet there is little documentation for how to develop and maintain the data infrastructure to support these partnerships.</p>

@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,8 +311,12 @@
             <section class="normal" id="section-">
 <div id="discavoid" class="section level1">
 <h1><span class="header-section-number">5</span> Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods</h1>
-<p><em>Ian M. Schmutte (University of Georgia)</em><br />
-<em>Lars Vilhuber (Cornell University)</em></p>
+<em>Ian M. Schmutte (University of Georgia)</em><br />
+<em>Lars Vilhuber (Cornell University)</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Ian M. Schmutte and Lars Vilhuber. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <p>The purpose of this handbook is to provide guidance on how to enable broader but ethical and legal access to data. Within the “Five Safes” framework <span class="citation">(Desai, Ritchie, and Welpton <a href="#ref-desai2016" role="doc-biblioref">2016</a>)</span>, data providers need to create “safe data” that can be provided to trusted “safe users”, within “<a href="security.html#security">safe settings</a>”, subject to legal and <a href="dua.html#dua">contractual safeguards</a>. Related, but distinct, is the question of how to create “safe outputs” from researchers’ findings, before those findings finally make their way into the public through, say, policy briefs or the academic literature. The processes used to create “safe data” and “safe outputs” - manipulations that render data less sensitive and therefore more appropriate for public release - are generally referred to as statistical disclosure limitation (SDL).<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a> In this chapter, we will describe methods traditionally used within the field of SDL, pointing at methods as well as metrics to assess the resultant statistical quality and sensitivity of the data. Newer methods, generally referred to as “formal privacy methods,” are described in a separate <a href="diffpriv.html#diffpriv">chapter</a>.</p>
 <p>At their core, SDL methods prevent outsiders from learning “too much” about any one record in the data <span class="citation">(Dalenius <a href="#ref-dalenius_towards_1977" role="doc-biblioref">1977</a>)</span> by deliberately, and judiciously, adding distortions. Ideally, these distortions maintain the validity of the data for statistical analysis, but strongly reduce the ability to isolate records and infer precise information about individual people, firms, or cases. In general, it is necessary to sacrifice validity in order to prevent disclosure <span class="citation">(Goroff <a href="#ref-goroff_balancing_2015" role="doc-biblioref">2015</a>; Abowd and Schmutte <a href="#ref-abowd_economic_2015" role="doc-biblioref">2015</a>)</span>. It is therefore important for data custodians to bear this tradeoff in mind when deciding whether and how to use SDL.</p>
 <p>One key challenge for implementing privacy systems lies in choosing the amount, or type, of privacy to provide. Answering this question requires some way to understand the individual and social value of privacy. <span class="citation">Abowd and Schmutte (<a href="#ref-abowd_economic_2019" role="doc-biblioref">2019</a>)</span> discuss the question of optimal privacy protection (see also <span class="citation">Hsu et al. (<a href="#ref-hsu_differential_2014" role="doc-biblioref">2014</a>)</span> in the specific context of differential privacy). For an illustration, see <span class="citation">Spencer and Seeskin (<a href="#ref-spencer_effects_2015" role="doc-biblioref">2015</a>)</span>, who use a calibration exercise to study the costs, measured in misallocated congressional seats, of reduced accuracy in population census data.</p>

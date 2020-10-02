@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,13 +311,17 @@
             <section class="normal" id="section-">
 <div id="indonesia" class="section level1">
 <h1><span class="header-section-number">16</span> Using Administrative Data to Improve Social Protection in Indonesia</h1>
-<p><em>Vivi Alatas (Asa Kreativita)</em><br />
+<em>Vivi Alatas (Asa Kreativita)</em><br />
 <em>Farah Amalia (J-PAL Southeast Asia)</em><br />
 <em>Abhijit Banerjee (Massachusetts Institute of Technology)</em><br />
 <em>Benjamin A. Olken (Massachusetts Institute of Technology)</em><br />
 <em>Rema Hanna (Harvard Kennedy School)</em><br />
 <em>Sudarno Sumarto (SMERU and TNP2K)</em><br />
-<em>Putu Poppy Widyasari (J-PAL Southeast Asia)</em></p>
+<em>Putu Poppy Widyasari (J-PAL Southeast Asia)</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Vivi Alatas,, and Farah Amalia, and Abhijit Banerjee, and Benjamin A. Olken, and Rema Hanna, and Sudarno Sumarto, and Putu Poppy Widyasari. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <div id="summary-9" class="section level2">
 <h2><span class="header-section-number">16.1</span> Summary</h2>
 <p>This chapter describes a long-run engagement, conducted over more than a decade, between researchers and the Government of Indonesia to use randomized evaluations combined with administrative data to understand and improve the delivery of social protection programs. Like many countries worldwide, Indonesia provides citizens with social protection programs to help combat extreme poverty and reduce inequality. These types of programs take many forms: from social safety net programs that provide cash or in-kind goods to poor households, to subsidized and/or contributory health and unemployment insurance programs, to active labor market programs providing wage subsidies or public employment placement services.</p>

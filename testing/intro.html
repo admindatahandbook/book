@@ -65,6 +65,30 @@
   gtag('config', 'UA-2579240-16');
 </script>
 
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -287,10 +311,14 @@
             <section class="normal" id="section-">
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">1</span> Introduction</h1>
-<p><em>Shawn Cole (Harvard Business School)</em><br />
+<em>Shawn Cole (Harvard Business School)</em><br />
 <em>Iqbal Dhaliwal (J-PAL)</em><br />
 <em>Anja Sautmann (World Bank)</em><br />
-<em>Lars Vilhuber (Cornell University)</em></p>
+<em>Lars Vilhuber (Cornell University)</em><br />
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<div id="myCitation" style="display: none;">
+Shawn Cole,, and Iqbal Dhaliwal, and Anja Sautmann, and Lars Vilhuber. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
+</div>
 <div id="the-potential-of-administrative-data-for-research-and-policymaking" class="section level2">
 <h2><span class="header-section-number">1.1</span> The Potential of Administrative Data for Research and Policymaking</h2>
 <p>Over the course of our careers, we, the editors of this Handbook, have been witness to extraordinary changes in economics and economic research. One of them has been the rise of research in applied microeconomics and development economics that focuses on working closely with policymaking bodies and creating an evidence base for better social programming. Two key factors have contributed to this trend: increased availability of new data sources, and the rapid growth in the use of experiments (randomized control trials or randomized evaluations) in the social sciences. These developments have enabled many new avenues of research, such as how behavioral factors affect optimal policy design, how to credibly evaluate long-run effects of landmark social programs, or how to make changes to these programs informed by a better understanding of the levers of impact. In the process, they have dramatically improved the quality and breadth of evidence used to inform policy.</p>
