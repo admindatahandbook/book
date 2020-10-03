@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-10-02"
+date: "2020-10-03"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -2682,7 +2682,7 @@ PCRI's first goal is to gather data directly from the private capital firms. In 
 
 Gathering information directly from private capital firms has its own limitations. Even if every active group chose to participate, there would still be some groups that have gone out of business and no longer keep their records or would be difficult to contact. In addition, as the PCRI began collecting data from individual private capital firms, one of the major concerns raised was that it would take too long for the PCRI to get a database large enough to disguise the data to preserve anonymity. The PCRI thus realized the importance of quickly building a large foundation for the database. As a result, the Institute is complementing the data that is gathered from the private capital firms with data from commercial sources, even if it is not always of the same quality as that provided directly by the general partners.
 
-The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent. After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in [@jeng2015], which is available on the PCRI's website.
+The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in [@jeng2015], which is available on the PCRI's website.
 
 
 |Vendor|Number of Distinct private Capital Firms|
@@ -2696,8 +2696,8 @@ Table: (\#tab:pcritable1) Number of distinct private capital firms provided by s
 
 
 <div class="figure">
-<img src="./assets/pcri/pcrifigure1web.png" alt="Overlap of private capital firms in PCRI database by source of information[^pcri10]" width="100%" />
-<p class="caption">(\#fig:pcrifigure1)Overlap of private capital firms in PCRI database by source of information[^pcri10]</p>
+<img src="./assets/pcri/pcrifigure1web.png" alt="Overlap of private capital firms in PCRI database by source of information" width="100%" />
+<p class="caption">(\#fig:pcrifigure1)Overlap of private capital firms in PCRI database by source of information</p>
 </div>
 
 ### Processing of Data Received from Data Vendors or Primary Sources (LPs or GPs)
