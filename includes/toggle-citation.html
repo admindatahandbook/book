@@ -1,0 +1,24 @@
+
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Cite this chapter";
+  }
+} 
+
+</script>

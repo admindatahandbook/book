@@ -45,6 +45,8 @@ pre code {
   font-size: 45px;
 }
 
+/* used for boxes within text */
+
 .bbox {
   padding: 1em;
   background-color: #fafafa;
@@ -53,6 +55,26 @@ pre code {
   border-color: #1e2d56;
   border-radius: 10px;
 }
+
+/* used to add invisible data elements */
+
 .invisible {
   display: none;
+}
+
+
+/* used for citations */
+#myCitation {
+  display: none;
+  padding: 1em;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+#citationDate {
+background-color: #f8afaf;
+}
+
+#citationLink {
+    margin-bottom: 1em;
 }

@@ -1,5 +1,7 @@
 default:
   base_url: "https://admindatahandbook.mit.edu/book/"
+  title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
+  editors: "Cole, Dhaliwal, Sautmann, and Vilhuber"
   last_update: !expr Sys.Date()
   first_publish_date: "September 2020"
   colors:

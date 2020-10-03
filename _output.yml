@@ -2,7 +2,7 @@ bookdown::gitbook:
   pandoc_args:
     - --lua-filter=programs/filter-index-html.lua
   includes:
-    in_header: [includes/google_analytics.html]
+    in_header: [includes/google_analytics.html,includes/toggle-citation.html]
   css: [assets/css/style.css, assets/css/toc.css, assets/css/font-awesome.min.css, assets/css/draft.css]
   split_by: chapter
   split_bib: TRUE
@@ -24,6 +24,8 @@ bookdown::gitbook:
       before: null
       after: |
               <li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
+              <li class="chapter">Individual chapters ©️ by their authors.</li>
+              <li class="chapter"><a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/> CC-BY-NC</a></li>
     toolbar:
       position: fixed
 bookdown::pdf_book:
