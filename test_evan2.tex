@@ -22,6 +22,10 @@
 % wholesale set the titles of chapters and sections to sctype and small - can be improved - want "label" (Chapter 1) to be sc, but actual chapter title standard font or sans serif as book cover
 \usepackage[sc , small]{titlesec}
 
+
+\input{includes/preamble.tex}
+\input{includes/preamble-extra.tex} % used for non-pandoc compile only
+
 % Font:
 %To use garamond, enable these two lines and disable the \rmdefault like below
 %\usepackage[T1]{fontenc}
@@ -143,24 +147,10 @@ Shawn Cole \\ Iqbal Dhaliwal \\ Anja Sautmann \\ Lars Vilhuber
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document start
 \begin{document}
-\pagenumbering{roman}
 
-\frontmatter
-
- % Title page rendering
-\maketitle
-
-\newpage
-
-% TOC
-\tableofcontents
-
-\newpage
-\pagestyle{fancy}
-
-\pagenumbering{arabic} % wonder if we want to have the pre-amble parts in roman numbering and only the chapters in arabic?
-\mainmatter
+\input{includes/header.tex}
 
 \include{_main}
 
+\bibliography{packages.bib,ideahandbook.bib}
 \end{document}

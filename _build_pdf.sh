@@ -20,7 +20,10 @@ Rscript programs/build_pdf.R > _R.log 2>&1
 # post-processing
 # For some reason, these appear in the tex files
 sed -i 's/NULL//' _main.tex
-sed -i 's/'
+sed -i 's/\\chapter\*{(PART) /\\part*{/' _main.tex
+sed -i 's/\\chapter\*{(APPENDIX) /\\part*{/' _main.tex
+sed -i 's/\\addcontentsline{toc}{chapter}{(PART) /\\partline{/' _main.tex
+sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
 
 # now compile it
 
