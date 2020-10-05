@@ -41,7 +41,7 @@ latex_fragment:
   citation_package: natbib
   latex_engine: xelatex
   pandoc_args:
-    - --lua-filter=programs/filter-index-html.lua
+    - --lua-filter=programs/filter-index-tex.lua
  
   
 
