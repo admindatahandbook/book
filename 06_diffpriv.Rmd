@@ -9,3 +9,7 @@ printauthor("diffpriv")
 This chapter seeks to explain how administrative data containing personal information can be collected, analyzed, and published in a way that ensures that the individuals in the data will be afforded the strong protections of differential privacy. 
 
 This chapter is intended as a practical resource for government agencies and research organizations interested in exploring the possibility of implementing differentially private tools. Using intuitive examples rather than the mathematical formalism used in other guides, this chapter introduces the differential privacy definition and the risks it was developed to address. It employs modern privacy frameworks to explain how to determine whether the use of differential privacy is an appropriate solution in a given setting. It also discusses the design considerations one should take into account when implementing differential privacy. This discussion incorporates a review of real-world implementations, including tools designed for tiered access systems combining differential privacy with other privacy controls presented in this handbook, such as consent mechanisms, data use agreements, and secure environments.
+
+\putbib
+
+

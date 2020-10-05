@@ -339,3 +339,8 @@ Philipp's main research interest lies at the intersection of labor and regional 
 This is a workaround for citations in footnotes, please ignore.
 @hochfellner2012
 ```
+
+
+\putbib
+
+

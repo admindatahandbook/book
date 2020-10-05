@@ -240,3 +240,7 @@ This is a workaround for citations in footnotes, please ignore.
 @officeforhumanresearchprotections2018a
 @aurorahealthcareinc.andaffiliates2018
 ```
+
+\putbib
+
+

@@ -196,3 +196,7 @@ This is a workaround for citations in footnotes, please ignore.
 @behrman1999
 @gertler2004
 ```
+
+\putbib
+
+

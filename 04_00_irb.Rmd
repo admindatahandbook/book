@@ -219,3 +219,7 @@ This is a workaround for citations in footnotes, please ignore.
 @nhshealthresearchauthority2020
 @chicagopublicschools2020
 ```
+
+\putbib
+
+

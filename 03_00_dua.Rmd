@@ -159,3 +159,7 @@ This is a workaround for citations in footnotes, please ignore.
 @aczel2020
 @coburn2013
 ```
+
+\putbib
+
+

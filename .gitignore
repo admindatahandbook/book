@@ -12,3 +12,6 @@ rsconnect
 _main*
 assets/contributing/case_study_template.pdf
 assets/contributing/case_study_template.docx
+*.blg
+*.bbl
+*.aux

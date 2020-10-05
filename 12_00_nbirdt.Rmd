@@ -240,3 +240,7 @@ Audits of data sets accessed and data project activity are a requirement of data
 This is a workaround for citations in footnotes, please ignore.
 @governmentofcanada1985
 ```
+
+\putbib
+
+

@@ -11,6 +11,7 @@ link-citations: yes
 github-repo: admindatahandbook/book
 description: Handbook on Using Administrative Data for Research and Evidence-based Policy
 always_allow_html: true
+after_chapter_script: ["programs/after_chapter.R"]
 ---
 
 ```{r setup,include=FALSE}

@@ -192,3 +192,8 @@ This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell
 
 The views expressed in this paper are those of the authors and not those of the U.S. Census Bureau or other sponsors.
 
+
+
+\putbib
+
+

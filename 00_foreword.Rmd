@@ -5,3 +5,8 @@
 ```{r, echo=FALSE, results='asis'}
 printauthor("foreword")
 ```
+
+
+\putbib
+
+

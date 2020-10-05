@@ -298,3 +298,7 @@ This is a workaround for citations in footnotes, please ignore.
 @kaplan2017
 @gurung2008
 ```
+
+\putbib
+
+

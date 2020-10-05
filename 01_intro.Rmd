@@ -201,3 +201,6 @@ This is a workaround for citations in footnotes, please ignore.
 @bcministryofcitizensservices
 @altman2015
 ```
+
+\putbib
+

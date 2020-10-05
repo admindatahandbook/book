@@ -419,3 +419,7 @@ This is a workaround for citations in footnotes, please ignore.
 @cichonski2012
 @confessore2018
 ```
+
+\putbib
+
+
