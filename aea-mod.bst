@@ -352,7 +352,7 @@ FUNCTION {format.phd}
 FUNCTION {format.note}
 { note empty$
     { "" }
-	{ note }
+	{ "" }
 	if$
 }
 
