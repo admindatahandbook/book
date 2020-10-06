@@ -1,22 +1,29 @@
-% from test_evan2.tex
-
-
-\pagenumbering{roman}
+% from design_all-charter.tex
 
 \frontmatter
+\newpage\null\thispagestyle{empty}
+\newpage
+
+\pagenumbering{roman}
 
  % Title page rendering
 \maketitle
 
-\newpage
+\newpage\null\thispagestyle{empty}\newpage
+
 
 % TOC
-\tableofcontents
+\tableofcontents 
+\newpage
 \listoftables
+\newpage
 \listoffigures
 
 \newpage
 \pagestyle{fancy}
 
-\pagenumbering{arabic} % wonder if we want to have the pre-amble parts in roman numbering and only the chapters in arabic?
-\mainmatter
+\cleardoublepage
+\phantomsection
+
+%\pagenumbering{arabic} % wonder if we want to have the pre-amble parts in roman numbering and only the chapters in arabic?
+%\mainmatter
