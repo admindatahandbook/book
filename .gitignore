@@ -15,3 +15,10 @@ assets/contributing/case_study_template.docx
 *.blg
 *.bbl
 *.aux
+*.lot
+*.lof
+*.log
+*.ilg
+*.idx
+*.ind
+*.toc

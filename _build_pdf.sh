@@ -2,7 +2,7 @@
 
 set -ev
 LATEX=xelatex
-FILE=test_evan2
+FILE=test_book
 
 cd $(dirname $0)
 
@@ -39,6 +39,7 @@ for arg in $(ls bu*aux)
 do
 	bibtex $arg >> _bib.log 2>&1 || echo "Completed bibtex with an error"
 done
+makeindex ${FILE}
 $LATEX ${FILE}.tex > _tex.log 2>&1
 $LATEX ${FILE}.tex > _tex.log 2>&1
 $LATEX ${FILE}.tex > _tex.log 2>&1

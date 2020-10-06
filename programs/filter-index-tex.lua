@@ -16,6 +16,7 @@ return {
         elem.text = text
 	      return {
           pandoc.Str(before),
+          elem,
           pandoc.RawInline('latex','\\index{') ,
           elem,
           pandoc.RawInline('latex','}') ,
