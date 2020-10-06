@@ -155,3 +155,7 @@ This is a workaround for citations in footnotes, please ignore.
 @holtsmark2020
 @hutton2017
 ```
+
+\putbib
+
+

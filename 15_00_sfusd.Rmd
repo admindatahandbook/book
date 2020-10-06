@@ -305,3 +305,7 @@ This is a workaround for citations in footnotes, please ignore.
 @wentworth2016
 @wentworth2017
 ```
+
+\putbib
+
+

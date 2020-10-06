@@ -11,17 +11,11 @@ return {
         -- we did not find a pattern
         return elem
       else
-        -- text = before .. string.gsub(string.sub(text,2,-2),"_"," ") .. after
         text = string.gsub(string.sub(text,2,-2),"_"," ")
-        elem.text = text
-	      return {
-          pandoc.Str(before),
-          elem,
-          pandoc.RawInline('latex','\\index{') ,
-          elem,
-          pandoc.RawInline('latex','}') ,
-          pandoc.Str(after)
-        }
+	print(text .. ": " ..  pandoc.utils.stringify(before) ..  '\\index{' ..   pandoc.utils.stringify(text) .. '}' ..    pandoc.utils.stringify(after))
+	repl_text =  pandoc.utils.stringify(before) ..  '\\index{' ..   pandoc.utils.stringify(text) .. '}' ..    pandoc.utils.stringify(after)
+        elem.text = repl_text
+	return elem
       end
     end,
   }

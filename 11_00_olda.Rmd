@@ -264,3 +264,8 @@ This is a workaround for citations in footnotes, please ignore.
 @hosseinichimeh2017
 @hawley2017a
 ```
+
+
+\putbib
+
+

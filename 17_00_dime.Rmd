@@ -259,3 +259,8 @@ knitr::include_graphics('./assets/dime/dimefigure6web.png')
 [^dime1]: [Procedure for Development Data set Acquisition, Archiving and Dissemination](https://policies.worldbank.org/sites/ppf3/PPFDocuments/17edbe3e480a4ee491d7c6a4e2ae9f32.pdf).
 
 [^dime2]: [Data License Agreement template](https://worldbankgroup.sharepoint.com/teams/ddh/SiteAssets/SitePages/ddh/DataLicenseAgreementTemplate_v4.pdf)
+
+
+\putbib
+
+

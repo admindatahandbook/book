@@ -272,3 +272,8 @@ The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, C
 [^cct9]: Current research request guidelines and a web form can be found at http://www.capetown.gov.za/City-Connect/Access-information/Submit-a-research-request
 
 [^cct10]: For example, Condition 4, section 15 (3) on the further processing of personal information states: "The further processing of personal information is not incompatible with the purpose of collection if--- ... *(e)* the information is used for historical, statistical or research purposes and the responsible party ensures that the further processing is carried out solely for such purposes and will not be published in an identifiable form."
+
+
+\putbib
+
+

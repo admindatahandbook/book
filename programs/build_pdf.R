@@ -9,7 +9,5 @@ if ( sysinf['sysname'] == 'Darwin' ) {
 }
 
 #run bookdown
-bookdown::render_book('index.Rmd', 'bookdown::gitbook')
-
-#bookdown::render_book('index.Rmd', 'bookdown::pdf_book')
+bookdown::render_book('index.Rmd', 'latex_fragment')
 # "bookdown::render_book('index.Rmd', 'bookdown::epub_book')

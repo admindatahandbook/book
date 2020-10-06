@@ -1,3 +1,15 @@
 % addtional packages for the book
 %\usepackage{chapterbib}
-\usepackage{makeidx}
+\usepackage{imakeidx}
+\makeindex
+\usepackage{setspace}
+\usepackage{ragged2e}
+
+\usepackage{comment}
+
+\excludecomment{invisible}
+% for now - must be included later
+\excludecomment{bbox}
+
+% workaround
+\newcommand{\partline}[1]{\cftaddtitleline{toc}{part}{#1}{}}

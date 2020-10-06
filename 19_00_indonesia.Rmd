@@ -50,7 +50,8 @@ Obtaining the beneficiary list data from the Unified Database (UDB) was key to i
 
 Importantly, this is very sensitive data, as it includes the names and addresses of individuals, along with their income and assets. Therefore, both the government and the researchers instituted strong data sharing and storage protocols to ensure that the information was protected. First, the research team obtained institutional review board (IRB) approvals on processes to use, store, and handle data. Second, only two local staff members from the research team accessed and handled the identified beneficiary data, and both were required to sign non-disclosure agreements with the government. Third, all data with personally identified information were stored in encrypted folders, and personal identifiers were removed from the data as soon as possible. After the UDB data were merged to the endline survey data, all personal identifiers were stripped from the files by select team members, and only de-identified data were shared with the rest of team for analysis.
 
-```{r indonesiafigure1, echo=FALSE, out.width='100%', fig.cap='Sample Raskin cards^[Note: the names in these sample cards are fictitious and for demonstration purposes only.] [@banerjee2018]'}
+```{r indonesiafigure1, echo=FALSE, out.width='100%', fig.cap='Sample Raskin cards. The names in these sample cards are fictitious and for demonstration purposes only. '}
+# Removed [@banerjee2018] from caption, does not work in Rmd/LaTeX
 knitr::include_graphics('./assets/indonesia/indonesiafigure1web.png')
 ```
 
@@ -195,3 +196,7 @@ This is a workaround for citations in footnotes, please ignore.
 @behrman1999
 @gertler2004
 ```
+
+\putbib
+
+
