@@ -1,25 +1,31 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-10-05"
+date: "2020-10-06"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [packages.bib,ideahandbook.bib,assets/discavoid/discavoid.bib] #Sloan-JPAL.bib
+bibliography: [packages.bib,ideahandbook.bib] #Sloan-JPAL.bib
 csl: chicago-mod.csl
 link-citations: yes
 github-repo: admindatahandbook/book
 description: Handbook on Using Administrative Data for Research and Evidence-based Policy
 always_allow_html: true
+after_chapter_script: ["programs/after_chapter.R"]
 ---
-
 
 
 # Welcome to the Handbook {-}
 
 ![](./assets/images/webcover.png)<!-- -->
 
+```{=html}
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. Readers can also obtain the Handbook for free as an ebook or a printable PDF, or can purchase a printed copy, from the [Handbook's home page](https://admindatahandbook.mit.edu/).
+```
+
+```{=latex}
+This is placeholder text for the welcome page in the PDF versio only.
+```
 
 # About Us {- #about}
 
@@ -53,6 +59,11 @@ The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center wo
 
 *Daniel Goroff (Alfred P. Sloan Foundation)*  
 <div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Daniel Goroff. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+
+
+\putbib
+
+
 
 <!--chapter:end:00_foreword.Rmd-->
 
@@ -340,9 +351,19 @@ The existing literature also provides high-level guidance on numerous topics, in
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@australianbureauofstatistics2017</span> <span class="citation">@statisticscanada2018</span> <span class="citation">@bcministryofcitizensservices</span> <span class="citation">@altman2015</span></p>
 </div>
 
+\putbib
+
+
 <!--chapter:end:01_intro.Rmd-->
 
 # (PART) Special Topics {-} 
+
+
+\putbib
+
+
+
+<!--chapter:end:01_zz_part_specialtopics.Rmd-->
 
 # Physically Protecting Sensitive Data {#security}
 
@@ -743,6 +764,10 @@ A final related point is that the enforcement of the terms of the +DUA| is an im
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@cichonski2012</span> <span class="citation">@confessore2018</span></p>
 </div>
 
+\putbib
+
+
+
 <!--chapter:end:02_security.Rmd-->
 
 # Model Data Use Agreements: A Practical Guide {#dua}
@@ -896,6 +921,10 @@ No matter the size of the project or the volume of data needed, all parties shou
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@desai2016</span> <span class="citation">@goroff2018</span> <span class="citation">@yates2018</span> <span class="citation">@futureofprivacyforum2018</span> <span class="citation">@aczel2020</span> <span class="citation">@coburn2013</span></p>
 </div>
 
+\putbib
+
+
+
 <!--chapter:end:03_00_dua.Rmd-->
 
 ## Appendix {-}
@@ -948,6 +977,11 @@ This collection contains DUAs for domestic and international government administ
 
 **[Administrative Data Research Initiative Data Sharing Index](https://adri.georgetown.edu/)**  
 This index, a collection of standards, guides, and templates, is searchable by geographic categories including city, county, state, or federal and domain categories such as education, health, housing, human services, justice, or workforce.
+
+
+\putbib
+
+
 
 <!--chapter:end:03_01_dua_appendix.Rmd-->
 
@@ -1200,11 +1234,19 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@nhshealthresearchauthority2020</span> <span class="citation">@chicagopublicschools2020</span></p>
 </div>
 
+\putbib
+
+
+
 <!--chapter:end:04_00_irb.Rmd-->
 
 ## Appendix {-}
 
 [Data-Only Protocol Template](.\appendix\irb_appendix.pdf)
+
+\putbib
+
+
 
 <!--chapter:end:04_01_irb_appendix.Rmd-->
 
@@ -1559,6 +1601,11 @@ This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell
 The views expressed in this paper are those of the authors and not those of the U.S. Census Bureau or other sponsors.
 
 
+
+\putbib
+
+
+
 <!--chapter:end:05_discavoid.Rmd-->
 
 # Designing Access with Differential Privacy {#diffpriv}
@@ -1575,9 +1622,20 @@ This chapter seeks to explain how administrative data containing personal inform
 
 This chapter is intended as a practical resource for government agencies and research organizations interested in exploring the possibility of implementing differentially private tools. Using intuitive examples rather than the mathematical formalism used in other guides, this chapter introduces the differential privacy definition and the risks it was developed to address. It employs modern privacy frameworks to explain how to determine whether the use of differential privacy is an appropriate solution in a given setting. It also discusses the design considerations one should take into account when implementing differential privacy. This discussion incorporates a review of real-world implementations, including tools designed for tiered access systems combining differential privacy with other privacy controls presented in this handbook, such as consent mechanisms, data use agreements, and secure environments.
 
+\putbib
+
+
+
 <!--chapter:end:06_diffpriv.Rmd-->
 
 # (PART) Case Studies {-} 
+
+
+\putbib
+
+
+
+<!--chapter:end:09_zz_part_case_studies.Rmd-->
 
 # Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers {#iab}
 
@@ -1998,6 +2056,11 @@ Philipp's main research interest lies at the intersection of labor and regional 
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@hochfellner2012</span></p>
 </div>
 
+
+\putbib
+
+
+
 <!--chapter:end:10_00_iab.Rmd-->
 
 # Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community {#olda}
@@ -2324,6 +2387,11 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@hosseinichimeh2017</span> <span class="citation">@hawley2017a</span></p>
 </div>
 
+
+\putbib
+
+
+
 <!--chapter:end:11_00_olda.Rmd-->
 
 ## Appendix {-}
@@ -2353,6 +2421,10 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 ### Appendix B: Case Study Images (Workforce Success Measures) {-}
 
 <img src="./assets/olda/appendixb.png" width="100%" />
+
+\putbib
+
+
 
 <!--chapter:end:11_01_olda_appendix.Rmd-->
 
@@ -2600,6 +2672,10 @@ Audits of data sets accessed and data project activity are a requirement of data
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@governmentofcanada1985</span></p>
 </div>
+
+\putbib
+
+
 
 <!--chapter:end:12_00_nbirdt.Rmd-->
 
@@ -2901,6 +2977,10 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@privateequitygrowthcapitalcouncil2013</span> <span class="citation">@jeng2015</span> <span class="citation">@brown2015</span> <span class="citation">@maats2011</span> <span class="citation">@kaplan2017</span> <span class="citation">@gurung2008</span></p>
 </div>
 
+\putbib
+
+
+
 <!--chapter:end:13_00_pcri.Rmd-->
 
 ## Appendix  {-}
@@ -3002,6 +3082,10 @@ Table: (\#tab:pcritablea3) Portfolio Companies by Location: Companies by Region,
 - Protection Provisions  
 - Guaranteed Returns  
 - Restrictions  
+
+\putbib
+
+
 
 <!--chapter:end:13_01_pcri_appendix.Rmd-->
 
@@ -3243,6 +3327,10 @@ We are grateful to a research grant from the Laura and John Arnold Foundation fo
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@pennmedicineinformationsystemsdataanalyticscenter</span> <span class="citation">@hentel2019</span> <span class="citation">@centersformedicaremedicaidservices2018</span> <span class="citation">@officeforhumanresearchprotections2018a</span> <span class="citation">@aurorahealthcareinc.andaffiliates2018</span></p>
 </div>
 
+\putbib
+
+
+
 <!--chapter:end:14_00_ahc.Rmd-->
 
 ## Appendix {-}
@@ -3264,6 +3352,11 @@ The following is from the sub-award agreement:
 The following is from the NDA:
 
 "Aurora acknowledges that MIT is receiving Confidential Information in anticipation of its faculty preparing written scholarly work ("Scholarly Work"). In the event MIT personnel seek to publish a Scholarly Work, Aurora will have a thirty (30) day period to review the Scholarly Work for any disclosure of Confidential Information. Aurora shall, within the thirty (30) day period, give MIT notice identifying specifically any Confidential Information it believes would be disclosed in the Scholarly Work. If Aurora does not provide timely notice, it will be deemed to have waived any objection to disclosure of Confidential Information."
+
+
+\putbib
+
+
 
 <!--chapter:end:14_01_ahc_appendix.Rmd-->
 
@@ -3578,6 +3671,10 @@ Norma Ming has worked as Supervisor of Research in SFUSD's RPA division since Se
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@wentworth2016</span> <span class="citation">@wentworth2017</span></p>
 </div>
 
+\putbib
+
+
+
 <!--chapter:end:15_00_sfusd.Rmd-->
 
 ## Appendix {-}
@@ -3589,6 +3686,10 @@ Norma Ming has worked as Supervisor of Research in SFUSD's RPA division since Se
 ### Appendix B {- #sfusd-appendixb}
 
 [Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](.\appendix\sfusd_appendix_b.pdf)
+
+\putbib
+
+
 
 <!--chapter:end:15_01_sfusd_appendix.Rmd-->
 
@@ -3870,6 +3971,11 @@ The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, C
 
 [^cct10]: For example, Condition 4, section 15 (3) on the further processing of personal information states: "The further processing of personal information is not incompatible with the purpose of collection if--- ... *(e)* the information is used for historical, statistical or research purposes and the responsible party ensures that the further processing is carried out solely for such purposes and will not be published in an identifiable form."
 
+
+\putbib
+
+
+
 <!--chapter:end:16_00_cct.Rmd-->
 
 ## Appendix {-}
@@ -4073,6 +4179,11 @@ Coverage          time for which data are     intervals when data were
                                               latest dates for which     
                                               data were recorded         
 -------------------------------------------------------------------------
+
+
+\putbib
+
+
 
 <!--chapter:end:16_01_cct_appendix.Rmd-->
 
@@ -4344,6 +4455,11 @@ Since 2018, +DIME| has required that all working papers pass a +computational_re
 
 [^dime2]: [Data License Agreement template](https://worldbankgroup.sharepoint.com/teams/ddh/SiteAssets/SitePages/ddh/DataLicenseAgreementTemplate_v4.pdf)
 
+
+\putbib
+
+
+
 <!--chapter:end:17_00_dime.Rmd-->
 
 # The Use of Administrative Data at the International Monetary Fund {#imf}
@@ -4503,6 +4619,10 @@ The intensity and frequency with which administrative data are used at the IMF d
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@holtsmark2020</span> <span class="citation">@hutton2017</span></p>
 </div>
 
+\putbib
+
+
+
 <!--chapter:end:18_00_imf.Rmd-->
 
 # Using Administrative Data to Improve Social Protection in Indonesia {#indonesia}
@@ -4563,8 +4683,8 @@ Obtaining the beneficiary list data from the Unified Database (UDB) was key to i
 Importantly, this is very sensitive data, as it includes the names and addresses of individuals, along with their income and assets. Therefore, both the government and the researchers instituted strong data sharing and storage protocols to ensure that the information was protected. First, the research team obtained institutional review board (IRB) approvals on processes to use, store, and handle data. Second, only two local staff members from the research team accessed and handled the identified beneficiary data, and both were required to sign non-disclosure agreements with the government. Third, all data with personally identified information were stored in encrypted folders, and personal identifiers were removed from the data as soon as possible. After the UDB data were merged to the endline survey data, all personal identifiers were stripped from the files by select team members, and only de-identified data were shared with the rest of team for analysis.
 
 <div class="figure">
-<img src="./assets/indonesia/indonesiafigure1web.png" alt="Sample Raskin cards^[Note: the names in these sample cards are fictitious and for demonstration purposes only.] [@banerjee2018]" width="100%" />
-<p class="caption">(\#fig:indonesiafigure1)Sample Raskin cards^[Note: the names in these sample cards are fictitious and for demonstration purposes only.] [@banerjee2018]</p>
+<img src="./assets/indonesia/indonesiafigure1web.png" alt="Sample Raskin cards. The names in these sample cards are fictitious and for demonstration purposes only. " width="100%" />
+<p class="caption">(\#fig:indonesiafigure1)Sample Raskin cards. The names in these sample cards are fictitious and for demonstration purposes only. </p>
 </div>
 
 Note: the names in these sample cards are fictitious and for demonstration purposes only.
@@ -4703,9 +4823,16 @@ We thank the many J-PAL SEA staff members who contributed to the projects discus
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@newhouse1993</span> <span class="citation">@behrman1999</span> <span class="citation">@gertler2004</span></p>
 </div>
 
+\putbib
+
+
+
 <!--chapter:end:19_00_indonesia.Rmd-->
 
 # (APPENDIX) Appendix {-} 
+
+
+<!--chapter:end:90_zz_part_appendix.Rmd-->
 
 # Evolution of the Handbook and Contributing {- #contributing}
 
@@ -5088,7 +5215,8 @@ Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
 
 <!--chapter:end:98_00_licenses.Rmd-->
 
-# References {-}
+
+
 
 <!--chapter:end:99_00_references.Rmd-->
 
