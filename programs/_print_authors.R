@@ -42,6 +42,7 @@ printauthor<-function(chapter,debug=FALSE){
       authors.and <- paste(authors.and,name)
     }
     if ( debug ) { print(authors.and)}
+    authors.comma <- str_replace(authors.and," and "," ")
   }
 
   # The publication is read from the config file. We might also read the DOI from there.
@@ -61,6 +62,8 @@ printauthor<-function(chapter,debug=FALSE){
     # not defined yet
     # citation info should go into the footnote on the title page
     # possibly something like 
+    cat(paste0("\\chapterauthor{",authors.comma,"}"))
+    cat("\\hrulefill")
   }
 
 }
