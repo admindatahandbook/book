@@ -5,7 +5,7 @@ date: "2020-10-06"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [packages.bib,ideahandbook.bib] #Sloan-JPAL.bib
+bibliography: [packages.bib,ideahandbook.bib,assets/discavoid/discavoid.bib] #Sloan-JPAL.bib
 csl: chicago-mod.csl
 link-citations: yes
 github-repo: admindatahandbook/book
