@@ -82,9 +82,10 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
             axis.ticks.y=element_blank(),
             legend.position = "none") +
       scale_fill_manual(values = pal) +
-      geom_text(aes(label=paste(metrics,": ",rank)),
+      geom_text(aes(label=paste(metrics,": ",rank, sep="")),
                 color="black",
-                position = position_stack(vjust=0.5)) +
+                position = position_stack(vjust=0.5),
+                size=3) +
       coord_flip() +
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
             panel.background = element_blank())
@@ -92,6 +93,26 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
    if ( display ) {
       g
    }
+}
+
+# Summary Table
+
+summarymechs <- read.csv("./assets/security/mechanisms.csv")
+plotallmechs<-function() {
+   summarymechs %>%
+   kable(escape=F, "html", align="cccccc",
+         col.names = c("Data Access Mechanism","Researcher Agency Over Analysis Computer",
+                       "Location of Data and Analysis Computer",
+                       "Location of Access Computer",
+                       "Access Security",
+                       "Range of Analysis Methods Available")) %>%
+   kable_styling(font_size=12) %>%
+   column_spec(1, width="10em") %>%
+   column_spec(2, width="17em", background=(ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Low",config$colors$aspect_low,ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Medium",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   column_spec(3, width="17em", background=(ifelse(summarymechs$location[1:nrow(summarymechs)]=="Data Provider",config$colors$aspect_low,ifelse(summarymechs$location[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   column_spec(4, width="17em", background=(ifelse(summarymechs$access[1:nrow(summarymechs)]=="Data Custodian",config$colors$aspect_low,ifelse(summarymechs$access[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   column_spec(5, width="17em", background=(ifelse(summarymechs$sec[1:nrow(summarymechs)]=="High Security",config$colors$aspect_low,ifelse(summarymechs$sec[1:nrow(summarymechs)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   column_spec(6, width="17em", background=(ifelse(summarymechs$range[1:nrow(summarymechs)]=="Highly Restricted",config$colors$aspect_low,ifelse(summarymechs$range[1:nrow(summarymechs)]=="Limited",config$colors$aspect_med,config$colors$aspect_high))))
 }
 
 
