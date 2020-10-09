@@ -360,7 +360,7 @@ This section evaluates several data access mechanisms along the five aspects. So
 
 ### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, nbirdtplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("NB-IRDT",nbirdt,2,2,1,1,2)
 ```
 
@@ -370,7 +370,7 @@ The NB-IRDT requires over two dozen staff^[https://www.unb.ca/nbirdt/about/team.
 
 ### Institute for Employment Research (RDC-IAB)
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, iabrdcplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("RDC-IAB RDC",iab1,2,1,2,1,2)
 ```
 
@@ -378,13 +378,13 @@ The [RDC-IAB](#iab) is an entity within the German Federal Employment Agency, se
 
 The most restrictive access method is RDC-IAB on-site access, which makes de-identified individual data available to researchers. The RDC-IAB maintains the data and analysis computers. Researchers have low agency over the analysis computers, being restricted to approved statistical software; other user-provided software is not allowed, and third-party packages for authorized software must be approved and installed by RDC-IAB staff. Access computers ([thin clients] and secure workstations) are located at the RDC-IAB headquarters and guest RDCs at various trusted institutions around the world, which then act as third-party access providers. The access locations are subject to high security with physical monitoring of researchers and room access controls.
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, iabjosuaplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("RDC-IAB JoSuA",iab2,2,2,3,3,2)
 ```
 
 The JoSuA remote execution system allows researchers to utilize the same microdata, though they cannot view the data directly. Researchers are limited to viewing the de-identified output from their analysis, and there are some restrictions on Stata commands. In return, controls around access computers and locations are relaxed: Researchers utilize their own computers to use the JoSuA interface, and there are no restrictions on access locations. The data and analysis computer remains located with the RDC-IAB, and researchers are subject to the same limitations on their agency over analysis computers and available analysis methods.
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, iabsufplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("RDC-IAB SUF",iab3,3,3,3,2,3)
 ```
 
@@ -394,7 +394,7 @@ The RDC-IAB has a staff of over two dozen people^[https://www.iab.de/839/section
 
 ### Ohio Longitudinal Data Archive (OLDA)
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, oldaplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("OLDA",olda,3,3,3,3,3)
 ```
 
@@ -404,7 +404,7 @@ Approximately a dozen full-time staff maintain the data access mechanism. OLDA r
 
 #### Private Capital Research Institute (PCRI)
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, pcriplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("PCRI",pcri,2,1,3,3,2)
 ```
 
@@ -414,7 +414,7 @@ PCRI itself has three full -time and six part-time staff to make the data usable
 
 ### Federal Statistical Research Data Centers (FSRDC)
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, fsrdcplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("FSRDC",fsrdc,2,1,1,1,3)
 ```
 
@@ -424,7 +424,7 @@ Each of the currently 29 RDC locations has at least one full-time staff member, 
 
 ### Statistics Canada Real Time Remote Access (RTRA)
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, rtraplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("RTRA",rtra,1,1,3,3,1)
 ```
 
@@ -434,7 +434,7 @@ The RTRA system is maintained by Statistics Canada, a major national statistical
 
 ### SafePod Network (SPN)
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, spnplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("SPN",safepod,1,2,2,2,3)
 ```
 
@@ -444,7 +444,7 @@ SafePods are relatively cheap, requiring only a suitable location to place a pre
 
 ### National Center for Education Statistics (NCES) Restricted-Use Data License
 
-```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, ncesplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("NCES",nces,3,3,3,2,3)
 ```
 
@@ -456,7 +456,7 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 The following table provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
 
-```{r summarytable, echo=F, fig.cap="Summary of Access Mechanisms Along the Five Aspects"}
+```{r, summarytable, echo=F, fig.cap="Summary of Access Mechanisms Along the Five Aspects"}
 plotallmechs()
 #knitr::include_graphics('./assets/security/summarytable.png')
 ```
@@ -486,3 +486,5 @@ This is a workaround for citations in footnotes, please ignore.
 ```
 
 \putbib
+
+
