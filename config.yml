@@ -5,9 +5,9 @@ default:
   last_update: !expr Sys.Date()
   first_publish_date: "September 2020"
   colors:
-    aspect_low: "#33a02c" #low flexibility, green
-    aspect_med: "#a6cee3" #med flexibility, light blue
-    aspect_high: "#1f78b4" #high flexibility, dark blue
+    aspect_low: "#e0f3db"  #low flexibility, light green, formerly "#33a02c"
+    aspect_med: "#a8ddb5" #med flexibility, dark green blue, formerly "#a6cee3"
+    aspect_high: "#43a2ca" #high flexibility, blue, formerly "#1f78b4"
   foreword:
     authors:
       - danielgoroff

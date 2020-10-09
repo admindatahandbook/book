@@ -201,11 +201,18 @@ A **medium agency** setting may allow researchers some choice of software or lim
 
 In the **high researcher agency** settings, researchers have few restrictions on how the analysis computer can be configured. They may have administrative privileges to the analysis computer and few, if any, restrictions on the software that can be installed. The researcher may own and physically control the analysis computer or may be granted administrative privileges to a computer that is owned by the data provider or third party. Data providers may still mandate technical solutions such as the use of monitoring, operating system patch management software, or anti-virus software.
 
-|Researcher Agency|Example|
-|-----|------------------------|
-|`r colorize("**Low Agency**", config$colors$aspect_low)`|In the [Statistics Canada Real Time Remote Access (RTRA)] system, researchers can only use SAS and cannot directly view the data with no exceptions allowed.|
-|`r colorize("**Medium Agency**",config$colors$aspect_med)`|The [Federal Statistical Research Data Centers (FSRDC)] network has a specific set of software on their secure computing network that is made available to researchers. Additional software can be requested, which must be approved by program managers and security analysts.|
-|`r colorize("**High Agency**",config$colors$aspect_high)`|In the [National Center for Education Statistics (NCES) restricted-use data license], the researcher must set up a secure data room in accordance with NCES requirements. However, researchers provide and retain full administrative control over the analysis computer and can utilize any software.|
+```{r, securitytable1, echo=F}
+securityt1data<-data.frame(
+  agency=c("Low Agency","Medium Agency","High Agency"),
+  example=c("In the [Statistics Canada Real Time Remote Access (RTRA)] system, researchers can only use SAS and cannot directly view the data with no exceptions allowed.",
+            "The [Federal Statistical Research Data Centers (FSRDC)] network has a specific set of software on their secure computing network that is made available to researchers. Additional software can be requested, which must be approved by program managers and security analysts.",
+            "In the [National Center for Education Statistics (NCES) restricted-use data license], the researcher must set up a secure data room in accordance with NCES requirements. However, researchers provide and retain full administrative control over the analysis computer and can utilize any software.")
+)
+
+kable(securityt1data, col.names=c("","Example")) %>%
+     column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+  kable_styling(font_size=12)
+```
 
 The advantage of low researcher agency is the reduced likelihood of inadvertent or intentional unauthorized use of data. The cost of low or medium agency is varied. Restrictions on software may increase training expenditures for researchers. Restrictions on physical attributes of the analysis computers may increase the expense of providing more storage or limit computationally intensive analyses, slowing down research. A low researcher agency agreement shifts most of the burden of maintaining the analysis computer onto the data provider. Thus the increased security of low agency is gained through slower research and higher costs for the data provider.
 
@@ -221,11 +228,24 @@ In some cases, the distinction between these two categories becomes blurred. A d
  
 Finally, individual **researchers** can act as the data custodian. This is still quite frequently used, in particular when no previous data access existed. For the researcher, acting as the data custodian enables more flexibility for accessing the data without traveling or remote access systems. Most of the cost of maintaining IT infrastructure and security fall onto the researcher, subject to other conditions in the overall data access plan; in addition, researchers assume the risk and liability associated with housing data. Security provisions include keeping analysis computers offline with no external network connections or other provisions. The enforcement of the DUA becomes a key mechanism for preventing the misuse of the data. Researcher agency over the analysis computer may also be limited, despite the researcher having physical control of the analysis computer. For instance, some data providers (often commercial companies) provide researchers with fully encrypted and remotely managed laptops. While the laptop and data are located with the researcher, the researcher has only low agency over the analysis computer.
 
-|Data Location|Example|
-|-----|------------------------|
-|`r colorize("**Data Provider**",config$colors$aspect_low)`|The [Institute for Employment Research (RDC-IAB)] (on-site access) house all highly confidential RDC-IAB data on their own servers, which are accessed remotely by researchers from various locations.|
-|`r colorize("**Third Party**",config$colors$aspect_med)`|The [Private Capital Research Institute (PCRI)] serves as a trusted third party for its data providers (private capital firms) and in turn contracts with a third party (National Opinion Research Center, NORC) to maintain the analysis computers and data access mechanism.|
-|`r colorize("**Researcher**",config$colors$aspect_high)`|The Aurora Health Care and MIT data exchange has the data and analysis computer located with the researcher. Researchers must store the data in accordance with security requirements outlined in their DUA.|
+```{r, securitytable2, echo=F}
+securityt2data<-data.frame(
+  location=c("Data Provider","Third Party","Researcher"),
+  example=c("The [Institute for Employment Research (RDC-IAB)] (on-site access) house all highly confidential RDC-IAB data on their own servers, which are accessed remotely by researchers from various locations.",
+            "The [Private Capital Research Institute (PCRI)] serves as a trusted third party for its data providers (private capital firms) and in turn contracts with a third party (National Opinion Research Center, NORC) to maintain the analysis computers and data access mechanism.",
+            "The Aurora Health Care and MIT data exchange has the data and analysis computer located with the researcher. Researchers must store the data in accordance with security requirements outlined in their DUA.")
+)
+
+kable(securityt2data, col.names=c("","Example")) %>%
+     column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+  kable_styling(font_size=12)
+```
+
+<!-- |Data Location|Example| -->
+<!-- |-----|------------------------| -->
+<!-- |`r colorize("**Data Provider**",config$colors$aspect_low)`|The [Institute for Employment Research (RDC-IAB)] (on-site access) house all highly confidential RDC-IAB data on their own servers, which are accessed remotely by researchers from various locations.| -->
+<!-- |`r colorize("**Third Party**",config$colors$aspect_med)`|The [Private Capital Research Institute (PCRI)] serves as a trusted third party for its data providers (private capital firms) and in turn contracts with a third party (National Opinion Research Center, NORC) to maintain the analysis computers and data access mechanism.| -->
+<!-- |`r colorize("**Researcher**",config$colors$aspect_high)`|The Aurora Health Care and MIT data exchange has the data and analysis computer located with the researcher. Researchers must store the data in accordance with security requirements outlined in their DUA.| -->
 
 In all cases where the data provider relinquishes the data custodial role, data are transferred. While secure data transfer mechanisms exist, this is an additional risk within the overall framework; as described earlier, the cost is typically low to null.
 
@@ -241,11 +261,24 @@ Data providers can choose a **third-party** access provider. Note that the third
 
 Finally, access computers can be located with the **researcher**. Trivially, locating the analysis computer with the researcher makes the access computer co-incidental. However, there are numerous cases where the access computer is with the researcher while the analysis computer is not. Examples include any web-based access, most [remote execution] systems, and many [remote desktop] systems: researchers use their own computers to access the portal while all computation occurs elsewhere. In almost all cases, locating access computers with researchers allows them to work from a location of their choice, though in some cases this may be restricted to a designated university office.
 
-|Access Location|Example|
-|-----|------------------------|
-|`r colorize("**Data Provider**",config$colors$aspect_low)`|The [New Brunswick Institute for Research, Data and Training (NB-IRDT)] is an example of locating access computers with the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers.|
-|`r colorize("**Third Party**",config$colors$aspect_med)`|The [SafePod Network (SPN)] in the United Kingdom is an example of locating access computers with a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network [@universityofbristol].|
-|`r colorize("**Researcher**",config$colors$aspect_high)`|The [RDC-IAB][Institute for Employment Research (RDC-IAB)] Job Submission Application (JoSuA) system is a web interface that researchers can use from their own computers to submit analysis files to the IAB-RDC for execution on IAB systems.|
+```{r, securitytable3, echo=F}
+securityt3data<-data.frame(
+  location=c("Data Custodian","Third Party","Researcher"),
+  example=c("The [New Brunswick Institute for Research, Data and Training (NB-IRDT)] is an example of locating access computers with the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers.",
+            "The [SafePod Network (SPN)] in the United Kingdom is an example of locating access computers with a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network [@universityofbristol].",
+            "The [RDC-IAB][Institute for Employment Research (RDC-IAB)] Job Submission Application (JoSuA) system is a web interface that researchers can use from their own computers to submit analysis files to the IAB-RDC for execution on IAB systems.")
+)
+
+kable(securityt3data, col.names=c("","Example")) %>%
+     column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+  kable_styling(font_size=12)
+```
+
+<!-- |Access Location|Example| -->
+<!-- |-----|------------------------| -->
+<!-- |`r colorize("**Data Provider**",config$colors$aspect_low)`|The [New Brunswick Institute for Research, Data and Training (NB-IRDT)] is an example of locating access computers with the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers.| -->
+<!-- |`r colorize("**Third Party**",config$colors$aspect_med)`|The [SafePod Network (SPN)] in the United Kingdom is an example of locating access computers with a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network [@universityofbristol].| -->
+<!-- |`r colorize("**Researcher**",config$colors$aspect_high)`|The [RDC-IAB][Institute for Employment Research (RDC-IAB)] Job Submission Application (JoSuA) system is a web interface that researchers can use from their own computers to submit analysis files to the IAB-RDC for execution on IAB systems.| -->
 
 In general, the closer access computers are located to the data provider, the higher the security arrangements that apply. However, the two aspects are not perfectly correlated. In particular, access computers located with researchers can have very different security arrangements.
 
@@ -265,11 +298,24 @@ A **low security access location** has few or no access controls. Simple restric
 
 In addition to the locational security described above, the **type of access computer** can also range from high security to low security. Highly secure access computers (which do not contain data) may still include fully encrypted operating systems, the use of [VPNs][virtual private networks], [remote desktop] software, [secure network protocols], and [encryption] or requiring [biometric authentication] of the access computer. This can take the form of dedicated thin clients. Low security access computers are typically allowed for remote submission or web portal-type access, where any computer, in any location, is allowed.
 
-|Access Security|Example|
-|-----|------------------------|
-|`r colorize("**High Security**",config$colors$aspect_low)`|The [FSRDC][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations [@unitedstatescensusbureaua]. While these secure rooms are located at partner organizations (universities, research centers, Federal Reserve Banks), the rooms themselves are under the control of the US Census Bureau and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus or to a partner organization) to use the thin clients to access analysis computers located within the secure computing center of the Census Bureau [@unitedstatescensusbureaua].|
-|`r colorize("**Medium Security**",config$colors$aspect_med)`|Data distributed under the [NCES restricted-use data license][National Center for Education Statistics (NCES) Restricted-Use Data License] must be kept in a locked room with access restricted only to licensed researchers, and the security arrangements are subject to random audits by NCES.|
-|`r colorize("**Low Security**",config$colors$aspect_high)`|The Stanford-SFUSD Partnership uses low security access locations. While the data are stored on secured servers at Stanford, researchers can access the data from anywhere as long as they take reasonable and appropriate efforts to keep the data secure from unauthorized access as specified in their DUA.|
+```{r, securitytable4, echo=F}
+securityt4data<-data.frame(
+  security=c("High Security","Medium Security","Low Security"),
+  example=c("The [FSRDC][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations [@unitedstatescensusbureaua]. While these secure rooms are located at partner organizations (universities, research centers, Federal Reserve Banks), the rooms themselves are under the control of the US Census Bureau and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus or to a partner organization) to use the thin clients to access analysis computers located within the secure computing center of the Census Bureau [@unitedstatescensusbureaua].",
+            "Data distributed under the [NCES restricted-use data license][National Center for Education Statistics (NCES) Restricted-Use Data License] must be kept in a locked room with access restricted only to licensed researchers, and the security arrangements are subject to random audits by NCES.",
+            "The Stanford-SFUSD Partnership uses low security access locations. While the data are stored on secured servers at Stanford, researchers can access the data from anywhere as long as they take reasonable and appropriate efforts to keep the data secure from unauthorized access as specified in their DUA.")
+)
+
+kable(securityt4data, col.names=c("","Example")) %>%
+     column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+  kable_styling(font_size=12)
+```
+
+<!-- |Access Security|Example| -->
+<!-- |-----|------------------------| -->
+<!-- |`r colorize("**High Security**",config$colors$aspect_low)`|The [FSRDC][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations [@unitedstatescensusbureaua]. While these secure rooms are located at partner organizations (universities, research centers, Federal Reserve Banks), the rooms themselves are under the control of the US Census Bureau and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus or to a partner organization) to use the thin clients to access analysis computers located within the secure computing center of the Census Bureau [@unitedstatescensusbureaua].| -->
+<!-- |`r colorize("**Medium Security**",config$colors$aspect_med)`|Data distributed under the [NCES restricted-use data license][National Center for Education Statistics (NCES) Restricted-Use Data License] must be kept in a locked room with access restricted only to licensed researchers, and the security arrangements are subject to random audits by NCES.| -->
+<!-- |`r colorize("**Low Security**",config$colors$aspect_high)`|The Stanford-SFUSD Partnership uses low security access locations. While the data are stored on secured servers at Stanford, researchers can access the data from anywhere as long as they take reasonable and appropriate efforts to keep the data secure from unauthorized access as specified in their DUA.| -->
 
 This section combines the type of access and location into one aspect, since the ultimate convenience to researchers arises from a combination of the two security measures. For instance, a data provider might provide researchers with a dedicated secure laptop, which can only be used to remotely access the analysis computers and nothing else. While there may be no location restrictions imposed on the researcher, the researcher is unlikely to carry two laptops around, and this would be considered to be a de-facto **medium** security solution.
 
@@ -289,11 +335,24 @@ When **limited restrictions** are imposed, some methods might be prevented, even
 
 Analysis methods may be **highly restricted**. Restrictions can include limiting the methods available to researchers to a whitelisted set of commands or, in more extreme examples, limit researchers to the use of tabulator software that can only provide conditional tables. Most researchers will perceive this to impose strong limitations on their ability to conduct research as usual, but such methods are sometimes used to reach a wide range of users while allowing for more relaxed conditions on the rest of the Five Safes framework.
 
-|Access Security|Example|
-|-----|------------------------|
-|`r colorize("**Highly Restricted**",config$colors$aspect_low)`|The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to employ a set of approved SAS commands. There are further limits on the number of variables and observations that can be included in analysis.|
-|`r colorize("**Medium Restrictions **",config$colors$aspect_med)`|An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on-site and JoSuA systems in which certain Stata commands are censored by the system and are unavailable to researchers but broadly allows for most econometric techniques.|
-|`r colorize("**Unrestricted**",config$colors$aspect_high)`|[OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their DUA, to ensure safe outputs.|
+```{r, securitytable5, echo=F}
+securityt5data<-data.frame(
+  restrictions=c("Highly Restricted","Limited Restrictions","Unrestricted"),
+  example=c("The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to employ a set of approved SAS commands. There are further limits on the number of variables and observations that can be included in analysis.",
+            "An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on-site and JoSuA systems in which certain Stata commands are censored by the system and are unavailable to researchers but broadly allows for most econometric techniques.",
+            "[OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their DUA, to ensure safe outputs.")
+)
+
+kable(securityt5data, col.names=c("","Example")) %>%
+     column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+  kable_styling(font_size=12)
+```
+
+<!-- |Access Security|Example| -->
+<!-- |-----|------------------------| -->
+<!-- |`r colorize("**Highly Restricted**",config$colors$aspect_low)`|The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to employ a set of approved SAS commands. There are further limits on the number of variables and observations that can be included in analysis.| -->
+<!-- |`r colorize("**Medium Restrictions **",config$colors$aspect_med)`|An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on-site and JoSuA systems in which certain Stata commands are censored by the system and are unavailable to researchers but broadly allows for most econometric techniques.| -->
+<!-- |`r colorize("**Unrestricted**",config$colors$aspect_high)`|[OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their DUA, to ensure safe outputs.| -->
 
 ## Specific Data Access Mechanisms Along the Five Aspects 
 
@@ -301,7 +360,7 @@ This section evaluates several data access mechanisms along the five aspects. So
 
 ### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("NB-IRDT",nbirdt,2,2,1,1,2)
 ```
 
@@ -311,7 +370,7 @@ The NB-IRDT requires over two dozen staff^[https://www.unb.ca/nbirdt/about/team.
 
 ### Institute for Employment Research (RDC-IAB)
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("RDC-IAB RDC",iab1,2,1,2,1,2)
 ```
 
@@ -319,13 +378,13 @@ The [RDC-IAB](#iab) is an entity within the German Federal Employment Agency, se
 
 The most restrictive access method is RDC-IAB on-site access, which makes de-identified individual data available to researchers. The RDC-IAB maintains the data and analysis computers. Researchers have low agency over the analysis computers, being restricted to approved statistical software; other user-provided software is not allowed, and third-party packages for authorized software must be approved and installed by RDC-IAB staff. Access computers ([thin clients] and secure workstations) are located at the RDC-IAB headquarters and guest RDCs at various trusted institutions around the world, which then act as third-party access providers. The access locations are subject to high security with physical monitoring of researchers and room access controls.
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("RDC-IAB JoSuA",iab2,2,2,3,3,2)
 ```
 
 The JoSuA remote execution system allows researchers to utilize the same microdata, though they cannot view the data directly. Researchers are limited to viewing the de-identified output from their analysis, and there are some restrictions on Stata commands. In return, controls around access computers and locations are relaxed: Researchers utilize their own computers to use the JoSuA interface, and there are no restrictions on access locations. The data and analysis computer remains located with the RDC-IAB, and researchers are subject to the same limitations on their agency over analysis computers and available analysis methods.
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("RDC-IAB SUF",iab3,3,3,3,2,3)
 ```
 
@@ -335,7 +394,7 @@ The RDC-IAB has a staff of over two dozen people^[https://www.iab.de/839/section
 
 ### Ohio Longitudinal Data Archive (OLDA)
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("OLDA",olda,3,3,3,3,3)
 ```
 
@@ -345,7 +404,7 @@ Approximately a dozen full-time staff maintain the data access mechanism. OLDA r
 
 #### Private Capital Research Institute (PCRI)
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("PCRI",pcri,2,1,3,3,2)
 ```
 
@@ -355,7 +414,7 @@ PCRI itself has three full -time and six part-time staff to make the data usable
 
 ### Federal Statistical Research Data Centers (FSRDC)
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("FSRDC",fsrdc,2,1,1,1,3)
 ```
 
@@ -365,7 +424,7 @@ Each of the currently 29 RDC locations has at least one full-time staff member, 
 
 ### Statistics Canada Real Time Remote Access (RTRA)
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("RTRA",rtra,1,1,3,3,1)
 ```
 
@@ -375,7 +434,7 @@ The RTRA system is maintained by Statistics Canada, a major national statistical
 
 ### SafePod Network (SPN)
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("SPN",safepod,1,2,2,2,3)
 ```
 
@@ -385,7 +444,7 @@ SafePods are relatively cheap, requiring only a suitable location to place a pre
 
 ### National Center for Education Statistics (NCES) Restricted-Use Data License
 
-```{r, echo=FALSE, fig.width=5, fig.height=2}
+```{r, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
 plot_summary("NCES",nces,3,3,3,2,3)
 ```
 
@@ -395,11 +454,11 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 ### Summary of Examples
 
-The following table provides a summary of the five asppects of the data access mechanisms covered in this chapter as well as those in the case studies in the rest of the Handbook. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
+The following table provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
 
-```{r summarytable, echo=F, fig.cap="Summary of Access Mechanisms Along the Five Aspects", fig.width=6, fig.height=6}
-#plotallmechs()
-knitr::include_graphics('./assets/security/summarytable.png')
+```{r summarytable, echo=F, fig.cap="Summary of Access Mechanisms Along the Five Aspects"}
+plotallmechs()
+#knitr::include_graphics('./assets/security/summarytable.png')
 ```
 
 ## Guidance for Data Providers and Researchers

@@ -1,16 +1,15 @@
 name,agency,location,access,sec,range
-"NB-IRDT",2,2,1,1,2
-"IAB RDC",2,1,2,1,2
-"IAB JoSuA",2,2,3,3,2
-"IAB SUF",3,3,3,2,3
-"OLDA",3,3,3,3,3
-"PCRI",2,1,3,3,2
-"FSRDC",2,1,1,1,3
-"RTRA",1,1,3,3,1
-"SPN",1,2,2,2,3
-"NCES",3,3,3,2,3
-"SFUSD",3,3,3,3,3
-"OLDA",3,3,3,3,3
-"Aurora",3,3,3,3,3
-"CCT",3,3,3,3,3
-"DIME",3,3,3,3,3
+NB-IRDT,Medium,Third-Party,Data Custodian,High Security,Limited
+IAB RDC,Medium,Data Provider,Third-Party,High Security,Limited
+IAB JoSuA,Medium,Third-Party,Researcher,Low Security,Limited
+IAB SUF,High,Researcher,Researcher,Medium Security,Unrestricted
+OLDA,High,Researcher,Researcher,Low Security,Unrestricted
+PCRI,Medium,Data Provider,Researcher,Low Security,Limited
+FSRDC,Medium,Data Provider,Data Custodian,High Security,Unrestricted
+RTRA,Low,Data Provider,Researcher,Low Security,Highly Restricted
+SPN,Low,Third-Party,Third-Party,Medium Security,Unrestricted
+NCES,High,Researcher,Researcher,Medium Security,Unrestricted
+Aurora,High,Researcher,Researcher,Low Security,Unrestricted
+CCT,High,Researcher,Researcher,Low Security,Unrestricted
+DIME,High,Researcher,Researcher,Low Security,Unrestricted
+Stanford-SFUSD,High,Researcher,Researcher,Low Security,Unrestricted
