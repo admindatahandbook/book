@@ -486,5 +486,3 @@ This is a workaround for citations in footnotes, please ignore.
 ```
 
 \putbib
-
-
