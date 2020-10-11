@@ -8,11 +8,15 @@
 
 % Font:
 \renewcommand{\rmdefault}{bch}
-\renewcommand{\sfdefault}{bch}
-
+\renewcommand{\sfdefault}{phv}
+%Define font size between huge and Huge
+\makeatletter 
+\newcommand\semiHuge{\@setfontsize\semiHuge{22.72}{27.38}}
+\makeatother
 
 % page margins 
 \usepackage[paperheight=9in,paperwidth=7in,top=1in,bottom=1in,right=1in,left=1in]{geometry}
+\usepackage{changepage}
 %\usepackage[cam,letter,center]{crop}
 
 % lists:
@@ -26,7 +30,6 @@
 
 % headers and footers
 \usepackage{fancyhdr}
-\usepackage{emptypage} % removes headers and footers from empty pages
 % Section and chapter titles
 \usepackage{titling}
 
@@ -45,12 +48,12 @@
 %\setuphead[chapter][align={flushleft, nothyphenated, verytolerant}]
 %Format chapter titles on chapter title pages
 \titleformat{\chapter}[display]
-  {\Large\sffamily}{\chaptertitlename\ \thechapter}{20pt}{\Huge\bfseries}
+  {\Large\sffamily}{\chaptertitlename\ \thechapter}{14pt}{\semiHuge\bfseries}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
 %Set heading styles
-\titleformat*{\section}{\LARGE\sffamily\bfseries\parindent0pt}
-\titleformat*{\subsection}{\Large\sffamily\bfseries}
-\titleformat*{\subsubsection}{\large\sffamily\bfseries}
+\titleformat*{\section}{\Large\sffamily\bfseries\parindent0pt}
+\titleformat*{\subsection}{\large\sffamily\bfseries}
+\titleformat*{\subsubsection}{\normalsize\sffamily\bfseries}
 %\renewcommand{\maketitlehooka}{\rmfamily}
 
 
@@ -60,9 +63,9 @@
 \fancyhf{}% Clear header/footer
 %Headers:
 \makeatletter
-\fancyhead[RO]{\sffamily \scriptsize Using Administrative Data for Research and Evidence-Based Policy}
+\fancyhead[RO]{\sffamily \scriptsize \scshape Using Administrative Data for Research and Evidence-Based Policy}
 \fancyhead[LO]{ }
-\fancyhead[LE]{\sffamily \scriptsize \if@mainmatter CHAPTER \thechapter\fi}
+\fancyhead[LE]{\sffamily \scshape \scriptsize \if@mainmatter Chapter \thechapter\fi}
 \makeatother
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
@@ -93,11 +96,12 @@
 \preauthor{ }
 \DeclareRobustCommand{\authorthing}
 {\begin{flushleft}\Large
+\begin{adjustwidth}{-.16cm}{}
     \begin{tabular}{l}
     %\setlength{\tabcolsep}{1pt}
     Shawn Cole \\ Iqbal Dhaliwal \\ Anja Sautmann \\ Lars Vilhuber 
 \end{tabular}
-
+\end{adjustwidth}
 \end{flushleft}
 }
 \postauthor{}
@@ -106,12 +110,13 @@
 % Title page
 \pretitle{ \begin{flushleft}\LARGE\sffamily  }
 
-\title{ \Large \uppercase{Handbook on} \\\Huge\bfseries {Using Administrative Data \\ for Research and \\ Evidence-based Policy}}
+\title{ \Large \uppercase{Handbook on} \\\semiHuge\bfseries {Using Administrative Data \\ for Research and \\ Evidence-based Policy}}
 \posttitle{ \par \end{flushleft} \vskip 2em} 
 
 \author{\sffamily \Large \authorthing}
 
 \date{ }
+
 
 
 % Chapter titles with authors in ToC and chapter 
