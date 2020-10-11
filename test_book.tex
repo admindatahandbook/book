@@ -1,7 +1,12 @@
 \documentclass[11pt]{book}
 \usepackage[utf8]{inputenc}
+\usepackage{adjustbox}
+\usepackage{ltablex}
+\usepackage{rotating}
 
 
+%captioning
+\usepackage[format=hang,justification=raggedright,  font={small,singlespacing}, labelfont={small,sf,bf}]{caption}
 %Spacing
 \usepackage{setspace}
 \setstretch{1.15}
@@ -23,17 +28,19 @@
 %\usepackage{enumitem}
 % tables
 \usepackage{booktabs}
-% use one of those if needed for referencing figures etc.
-%\usepackage{varioref}
-%\usepackage{hyperref}
-%\usepackage{cleveref}
+\usepackage{array}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 
 % headers and footers
 \usepackage{fancyhdr}
-% Section and chapter titles
+\usepackage{emptypage} % removes headers and footers from empty pages
+
+%%%% Section and chapter titles
 \usepackage{titling}
 
-%Headings and chapter titles
+%%%%%Headings and chapter titles
 \usepackage{titlesec}
 %Make "Chapter 1" all caps
 \renewcommand{\chaptername}{CHAPTER}
@@ -46,7 +53,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\setuphead[chapter][align={flushleft, nothyphenated, verytolerant}]
-%Format chapter titles on chapter title pages
+
+%%%%%Format chapter titles on chapter title pages
 \titleformat{\chapter}[display]
   {\Large\sffamily}{\chaptertitlename\ \thechapter}{14pt}{\semiHuge\bfseries}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
