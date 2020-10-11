@@ -51,16 +51,17 @@
 % 
 
 %%%%% bib
+\usepackage[]{natbib}
+\setcitestyle{round}
+
+\usepackage[sectionbib,globalcitecopy]{bibunits}
+
+
 \setlength{\bibsep}{0.0pt}
 \setlength{\bibhang}{6pt}
 
 \renewcommand{\bibpreamble}{\footnotesize} 
 %\renewcommand{\bibname}{References in Chapter \thechapter}
-
-\usepackage[sectionbib,globalcitecopy]{bibunits}
-
-\usepackage[]{natbib}
-\setcitestyle{round}
 
 %
 %  automatically add \putbib at end of each chapter
@@ -78,3 +79,14 @@
 % Change name of bibliography
 
 \renewcommand{\bibname}{References}
+
+%
+% Chapter author tables
+%
+\newenvironment{authorlist}{\renewcommand{\arraystretch}{0.6}\itshape\begin{tabular}{l}}{\end{tabular}}
+
+%
+% Handle Unicode in a few cases
+%
+\DeclareUnicodeCharacter{03C4}{$\tau$}
+\DeclareUnicodeCharacter{03BC}{$\mu$}

@@ -47,8 +47,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{includes/preamble.tex}
 \input{includes/preamble-extra.tex} % used for non-pandoc compile only
+
+\input{includes/preamble.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -131,6 +132,7 @@
 \makeatletter
 
 \newcommand{\chapterauthor}[1]{\authortoc{#1}\printchapterauthor{#1}}
+
 
 \newcommand{\printchapterauthor}[1]{%
     {\parindent0pt\vspace*{-35pt}%
