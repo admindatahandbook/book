@@ -50,6 +50,3 @@ This collection contains DUAs for domestic and international government administ
 This index, a collection of standards, guides, and templates, is searchable by geographic categories including city, county, state, or federal and domain categories such as education, health, housing, human services, justice, or workforce.
 
 
-\putbib
-
-

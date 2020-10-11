@@ -95,6 +95,5 @@ Table: (\#tab:pcritablea3) Portfolio Companies by Location: Companies by Region,
 - Guaranteed Returns  
 - Restrictions  
 
-\putbib
 
 
