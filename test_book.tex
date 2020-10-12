@@ -19,6 +19,16 @@
 \newcommand\semiHuge{\@setfontsize\semiHuge{22.72}{27.38}}
 \makeatother
 
+
+%Spacing
+\usepackage{setspace}
+\setstretch{1.15}
+
+% Font:
+\renewcommand{\rmdefault}{bch}
+\renewcommand{\sfdefault}{bch}
+
+
 % page margins 
 \usepackage[paperheight=9in,paperwidth=7in,top=1in,bottom=1in,right=1in,left=1in]{geometry}
 \usepackage{changepage}
@@ -36,11 +46,10 @@
 % headers and footers
 \usepackage{fancyhdr}
 \usepackage{emptypage} % removes headers and footers from empty pages
-
-%%%% Section and chapter titles
+% Section and chapter titles
 \usepackage{titling}
 
-%%%%%Headings and chapter titles
+%Headings and chapter titles
 \usepackage{titlesec}
 %Make "Chapter 1" all caps
 \renewcommand{\chaptername}{CHAPTER}
