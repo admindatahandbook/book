@@ -58,7 +58,7 @@ def replace(infile, outfile, lookup):
 
 if __name__ == "__main__":
     inputfile, outputfile = parseargs(sys.argv[1:])
-    matches = replace(inputfile,outputfile,lookup='lookup.csv')
+    matches = replace(inputfile,outputfile,lookup='index_term_mapping.csv')
     print(matches," matches found")
 
 
