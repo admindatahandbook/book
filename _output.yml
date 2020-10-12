@@ -29,17 +29,14 @@ bookdown::gitbook:
     toolbar:
       position: fixed
 bookdown::pdf_book:
-  latex_engine: xelatex
-  keep_tex: yes
-  includes:
-      in_header: [includes/preamble.tex]
-  toc_depth: 1
+  latex_engine: pdflatex
   citation_package: natbib
-  biblio-style: "authoryear"
-  geometry: "paperheight=9in,paperwidth=6in,top=1in,bottom=1in,right=1in,left=1in"
+  base_format: rmarkdown::latex_fragment
+  pandoc_args:
+    - --lua-filter=programs/filter-index-tex.lua
 latex_fragment:
   citation_package: natbib
-  latex_engine: xelatex
+  latex_engine: pdflatex
   pandoc_args:
     - --lua-filter=programs/filter-index-tex.lua
  

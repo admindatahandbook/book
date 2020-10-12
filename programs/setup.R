@@ -44,6 +44,8 @@ source(file.path(programdir,"libraries.R"))
 #
 knitr::opts_chunk$set(fig.path = 'figures/')
 knitr::opts_chunk$set(message = FALSE)
+# This will load a PDF for latex if it exists
+options(knitr.graphics.auto_pdf = TRUE)
 
 
 #
@@ -59,8 +61,18 @@ source(file.path(programdir,"_colorize.R"))
 
 # Copy Appendix Files Over
 
-dir.create("./_book")
 output.dir <- ("./_book")
 assets.dir <- ("./assets/appendix")
+
+if ( ! file.exists(output.dir) ) {
+dir.create(output.dir)
+}
+
 file.copy(assets.dir, output.dir, recursive=TRUE)
+
+# some customizations
+
+if ( knitr::is_latex_output() ) {
+   knitr::opts_chunk$set(dpi = NA)
+} 
 
