@@ -1,5 +1,23 @@
 \documentclass[11pt]{book}
 \usepackage[utf8]{inputenc}
+\usepackage{adjustbox}
+\usepackage{ltablex}
+\usepackage{rotating}
+
+
+%captioning
+\usepackage[format=hang,justification=raggedright,  font={small,singlespacing}, labelfont={small,sf,bf}]{caption}
+%Spacing
+\usepackage{setspace}
+\setstretch{1.15}
+
+% Font:
+\renewcommand{\rmdefault}{bch}
+\renewcommand{\sfdefault}{phv}
+%Define font size between huge and Huge
+\makeatletter 
+\newcommand\semiHuge{\@setfontsize\semiHuge{22.72}{27.38}}
+\makeatother
 
 
 %Spacing
@@ -13,16 +31,17 @@
 
 % page margins 
 \usepackage[paperheight=9in,paperwidth=7in,top=1in,bottom=1in,right=1in,left=1in]{geometry}
+\usepackage{changepage}
 %\usepackage[cam,letter,center]{crop}
 
 % lists:
 %\usepackage{enumitem}
 % tables
 \usepackage{booktabs}
-% use one of those if needed for referencing figures etc.
-%\usepackage{varioref}
-%\usepackage{hyperref}
-%\usepackage{cleveref}
+\usepackage{array}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 
 % headers and footers
 \usepackage{fancyhdr}
@@ -37,20 +56,22 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{includes/preamble.tex}
 \input{includes/preamble-extra.tex} % used for non-pandoc compile only
+
+\input{includes/preamble.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\setuphead[chapter][align={flushleft, nothyphenated, verytolerant}]
-%Format chapter titles on chapter title pages
+
+%%%%%Format chapter titles on chapter title pages
 \titleformat{\chapter}[display]
-  {\Large\sffamily}{\chaptertitlename\ \thechapter}{20pt}{\Huge\bfseries}
+  {\Large\sffamily\raggedright}{\chaptertitlename\ \thechapter}{14pt}{\semiHuge\bfseries}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
 %Set heading styles
-\titleformat*{\section}{\LARGE\sffamily\bfseries\parindent0pt}
-\titleformat*{\subsection}{\Large\sffamily\bfseries}
-\titleformat*{\subsubsection}{\large\sffamily\bfseries}
+\titleformat*{\section}{\Large\sffamily\bfseries\raggedright\parindent0pt}
+\titleformat*{\subsection}{\large\sffamily\raggedright\bfseries}
+\titleformat*{\subsubsection}{\normalsize\sffamily\raggedright\bfseries}
 %\renewcommand{\maketitlehooka}{\rmfamily}
 
 
@@ -60,9 +81,9 @@
 \fancyhf{}% Clear header/footer
 %Headers:
 \makeatletter
-\fancyhead[RO]{\sffamily \scriptsize Using Administrative Data for Research and Evidence-Based Policy}
+\fancyhead[RO]{\sffamily \scriptsize \scshape Using Administrative Data for Research and Evidence-Based Policy}
 \fancyhead[LO]{ }
-\fancyhead[LE]{\sffamily \scriptsize \if@mainmatter CHAPTER \thechapter\fi}
+\fancyhead[LE]{\sffamily \scshape \scriptsize \if@mainmatter Chapter \thechapter\fi}
 \makeatother
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
@@ -93,11 +114,12 @@
 \preauthor{ }
 \DeclareRobustCommand{\authorthing}
 {\begin{flushleft}\Large
+\begin{adjustwidth}{-.16cm}{}
     \begin{tabular}{l}
     %\setlength{\tabcolsep}{1pt}
     Shawn Cole \\ Iqbal Dhaliwal \\ Anja Sautmann \\ Lars Vilhuber 
 \end{tabular}
-
+\end{adjustwidth}
 \end{flushleft}
 }
 \postauthor{}
@@ -106,7 +128,7 @@
 % Title page
 \pretitle{ \begin{flushleft}\LARGE\sffamily  }
 
-\title{ \Large \uppercase{Handbook on} \\\Huge\bfseries {Using Administrative Data \\ for Research and \\ Evidence-based Policy}}
+\title{ \Large \uppercase{Handbook on} \\\semiHuge\bfseries {Using Administrative Data \\ for Research and \\ Evidence-based Policy}}
 \posttitle{ \par \end{flushleft} \vskip 2em} 
 
 \author{\sffamily \Large \authorthing}
@@ -114,10 +136,12 @@
 \date{ }
 
 
+
 % Chapter titles with authors in ToC and chapter 
 \makeatletter
 
 \newcommand{\chapterauthor}[1]{\authortoc{#1}\printchapterauthor{#1}}
+
 
 \newcommand{\printchapterauthor}[1]{%
     {\parindent0pt\vspace*{-35pt}%

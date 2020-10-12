@@ -19,6 +19,3 @@ The following is from the NDA:
 "Aurora acknowledges that MIT is receiving Confidential Information in anticipation of its faculty preparing written scholarly work ("Scholarly Work"). In the event MIT personnel seek to publish a Scholarly Work, Aurora will have a thirty (30) day period to review the Scholarly Work for any disclosure of Confidential Information. Aurora shall, within the thirty (30) day period, give MIT notice identifying specifically any Confidential Information it believes would be disclosed in the Scholarly Work. If Aurora does not provide timely notice, it will be deemed to have waived any objection to disclosure of Confidential Information."
 
 
-\putbib
-
-

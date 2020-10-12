@@ -28,6 +28,5 @@
 knitr::include_graphics('./assets/olda/appendixb.png')
 ```
 
-\putbib
 
 

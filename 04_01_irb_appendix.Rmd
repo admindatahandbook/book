@@ -2,6 +2,5 @@
 
 [Data-Only Protocol Template](.\appendix\irb_appendix.pdf)
 
-\putbib
 
 

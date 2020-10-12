@@ -1,6 +1,5 @@
 # (PART) Case Studies {-} 
 
 
-\putbib
 
 

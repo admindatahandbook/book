@@ -360,7 +360,7 @@ This section evaluates several data access mechanisms along the five aspects. So
 
 ### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
-```{r, nbirdtplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, nbirdtplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("NB-IRDT",nbirdt,2,2,1,1,2)
 ```
 
@@ -370,7 +370,7 @@ The NB-IRDT requires over two dozen staff^[https://www.unb.ca/nbirdt/about/team.
 
 ### Institute for Employment Research (RDC-IAB)
 
-```{r, iabrdcplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, iabrdcplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("RDC-IAB RDC",iab1,2,1,2,1,2)
 ```
 
@@ -378,13 +378,13 @@ The [RDC-IAB](#iab) is an entity within the German Federal Employment Agency, se
 
 The most restrictive access method is RDC-IAB on-site access, which makes de-identified individual data available to researchers. The RDC-IAB maintains the data and analysis computers. Researchers have low agency over the analysis computers, being restricted to approved statistical software; other user-provided software is not allowed, and third-party packages for authorized software must be approved and installed by RDC-IAB staff. Access computers ([thin clients] and secure workstations) are located at the RDC-IAB headquarters and guest RDCs at various trusted institutions around the world, which then act as third-party access providers. The access locations are subject to high security with physical monitoring of researchers and room access controls.
 
-```{r, iabjosuaplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, iabjosuaplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("RDC-IAB JoSuA",iab2,2,2,3,3,2)
 ```
 
 The JoSuA remote execution system allows researchers to utilize the same microdata, though they cannot view the data directly. Researchers are limited to viewing the de-identified output from their analysis, and there are some restrictions on Stata commands. In return, controls around access computers and locations are relaxed: Researchers utilize their own computers to use the JoSuA interface, and there are no restrictions on access locations. The data and analysis computer remains located with the RDC-IAB, and researchers are subject to the same limitations on their agency over analysis computers and available analysis methods.
 
-```{r, iabsufplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, iabsufplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("RDC-IAB SUF",iab3,3,3,3,2,3)
 ```
 
@@ -394,7 +394,7 @@ The RDC-IAB has a staff of over two dozen people^[https://www.iab.de/839/section
 
 ### Ohio Longitudinal Data Archive (OLDA)
 
-```{r, oldaplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, oldaplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("OLDA",olda,3,3,3,3,3)
 ```
 
@@ -404,7 +404,7 @@ Approximately a dozen full-time staff maintain the data access mechanism. OLDA r
 
 #### Private Capital Research Institute (PCRI)
 
-```{r, pcriplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, pcriplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("PCRI",pcri,2,1,3,3,2)
 ```
 
@@ -414,7 +414,7 @@ PCRI itself has three full -time and six part-time staff to make the data usable
 
 ### Federal Statistical Research Data Centers (FSRDC)
 
-```{r, fsrdcplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, fsrdcplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("FSRDC",fsrdc,2,1,1,1,3)
 ```
 
@@ -424,7 +424,7 @@ Each of the currently 29 RDC locations has at least one full-time staff member, 
 
 ### Statistics Canada Real Time Remote Access (RTRA)
 
-```{r, rtraplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, rtraplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("RTRA",rtra,1,1,3,3,1)
 ```
 
@@ -434,17 +434,17 @@ The RTRA system is maintained by Statistics Canada, a major national statistical
 
 ### SafePod Network (SPN)
 
-```{r, spnplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, spnplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("SPN",safepod,1,2,2,2,3)
 ```
 
-The SafePod Network in the United Kingdom makes de-identified administrative data from several UK administrative data providers available for researchers. A SafePod is a prefabricated room with a single [thin client][thin clients] with remote access. Analysis computers and data are located with the data provider, accessible through secure VPN connections [@universityofbristol]. Each data provider decides about the agency level that researchers have over analysis computers and restrictions on analysis methods. For instance, at the Office for National Statistics, researchers have medium agency over the analysis computers and no restrictions on analysis methods [@officefornationalstatistics]. The unique aspect of the SafePod is the security of the access locations. SafePods are a minimalistic yet robust implementation of a medium security location (an access-controlled space with CCTV monitoring) that can exist within low security environments such as university libraries.
+The SafePod Network in the United Kingdom makes de-identified administrative data from several UK administrative data providers available for researchers. A SafePod is a prefabricated room with a single [thin client][thin clients] with remote access. Analysis computers and data are located with the data provider, accessible through secure VPN connections [@universityofbristol]. Each data provider decides about the agency level that researchers have over analysis computers and restrictions on analysis methods. For instance, at the Office for National Statistics, researchers have medium agency over the analysis computers and no restrictions on analysis methods [@officefornationalstatistics2020]. The unique aspect of the SafePod is the security of the access locations. SafePods are a minimalistic yet robust implementation of a medium security location (an access-controlled space with CCTV monitoring) that can exist within low security environments such as university libraries.
 
 SafePods are relatively cheap, requiring only a suitable location to place a prefabricated room and can use existing staff members to manage access to the SafePod. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation for more access locations to provide protection against the various security threats at a lower cost than a traditional full-scale research data center.
 
 ### National Center for Education Statistics (NCES) Restricted-Use Data License
 
-```{r, ncesplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"'}
+```{r, ncesplot, echo=FALSE, fig.width=4, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 plot_summary("NCES",nces,3,3,3,2,3)
 ```
 

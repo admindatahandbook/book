@@ -4,46 +4,77 @@
 #              section of config.yml
 
 printauthor<-function(chapter,debug=FALSE){
+
+  my_is_latex_output <- function(debug=FALSE) {
+    if (debug) {
+      return(TRUE)
+    } else {
+      return(knitr::is_latex_output())
+    }
+  }
   
   authorlist <- config::get(chapter)$authors
   
   authors.and <- ""
 
+    if (my_is_latex_output(debug)) {
+    # prepare author list for latex
+    cat(paste0("\\printchapterauthor{%\n"))
+    cat("\\begin{authorlist}\n")
+    
+    }
+
+
   for(i in 1:length(authorlist)){
+    if ( debug ) { print(i) }
+ 
     author <- authorlist[i]
     authorinfo <- eval(parse(text=paste0("config$contributor$",author)))
     name <- authorinfo$name
     inst <- authorinfo$inst
+    nameinst=paste0(name," (",inst,")")
+    if ( debug ) { print(paste0("nameinst=",nameinst)) }
+    
 
   # output to HTML document
   if (knitr::is_html_output()) {
-    nameinst=paste0("*",name," (",inst,")*  \n")
-    cat(nameinst)
-  }
+    cat(paste0("*",nameinst,"*  \n"))
+    }
+# output to LaTeX document
+  if (my_is_latex_output(debug)) {
+    if ( debug ) { print("Output of nameinst") }
+    cat(paste0("  ",nameinst,"  \\\\\n"))
+    }
 
-    if ( debug ) { print(i) }
-    # collect names for citation
-    if ( i == 1 ) {
+     # collect names for citation
+  if ( i == 1 ) {
       authors.and <- name
     }
-    if ( debug ) { print(authors.and)}
+  if ( debug ) { print(authors.and)}
 
-    if ( length(authorlist) > 2 ) {
+  if ( length(authorlist) > 1 & i>1 ) {
+      if (debug) { print("authorlist>2 not i=1, adding comma")}
       authors.and <- paste0(authors.and,",")
     }
-    if ( debug ) { print(authors.and)}
+  if ( debug ) { print(authors.and)}
 
-    if ( length(authorlist) > 1 & i > 1 ) {
+  if ( length(authorlist) > 1 & i == length(authorlist) ) {
+      if (debug) { print("authorlist>1 and i at end, adding and")}
       authors.and <- paste0(authors.and," and")
     }
-    if ( debug ) { print(authors.and)}
+  if ( debug ) { print(authors.and)}
 
-    if ( i <= length(authorlist) & i > 1 ) {
+  if ( i <= length(authorlist) & i > 1 ) {
+      if (debug) { print("print name")}
       authors.and <- paste(authors.and,name)
     }
-    if ( debug ) { print(authors.and)}
+  if ( debug ) { print(authors.and)}
+    # create the comma version
+    if (debug) { print("Create the comma version")}
     authors.comma <- str_replace(authors.and," and "," ")
-  }
+    if (debug) { print(authors.comma)}
+  } 
+# end of length(authorlist)
 
   # The publication is read from the config file. We might also read the DOI from there.
   pubdate <- config$first_publish_date %>%  str_split_fixed(" ",2) 
@@ -58,12 +89,13 @@ printauthor<-function(chapter,debug=FALSE){
     cat('</div>')
   }
 
-  if (knitr::is_latex_output()) {
-    # not defined yet
-    # citation info should go into the footnote on the title page
-    # possibly something like 
-    cat(paste0("\\chapterauthor{",authors.comma,"}"))
-    cat("\\hrulefill")
+  if (my_is_latex_output(debug)) {
+    # finishing up the latex version
+    cat(paste0("\\end{authorlist}}\n"))
+    cat(paste0("\\authortoc{",authors.comma,"}\n"))
+    cat("\\hrulefill\n")
+
+
   }
 
 }

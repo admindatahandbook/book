@@ -159,6 +159,3 @@ cctapptabdata<- data.frame(
 ```
 
 
-\putbib
-
-

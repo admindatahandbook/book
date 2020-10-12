@@ -33,3 +33,7 @@ intrograph1 <- ggplot(chetty2,aes(Year,adminpct,color=Journal)) +
   theme(panel.grid.minor = element_blank()) +
   scale_colour_manual(values=cbbPalette) +
   ylab("") 
+ggsave("./figures/intrograph1.pdf",intrograph1,dpi=600)
+ggsave("./figures/intrograph1.png",intrograph1,dpi=300)
+
+

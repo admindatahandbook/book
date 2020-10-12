@@ -19,6 +19,8 @@ iabfigure1 <- ggplot(iabf1data, aes(fill=Mode, y=Count, x=Date)) +
         axis.title.y=element_blank(),
         legend.title=element_blank(),
         legend.position="bottom")
+ggsave("./figures/iabfigure1.pdf",iabfigure1,dpi=600)
+ggsave("./figures/iabfigure1.png",iabfigure1,dpi=300)
 
 # Figure 2
 iabf2data <- read.csv("./assets/iab/figure2.csv")  # read csv file 
