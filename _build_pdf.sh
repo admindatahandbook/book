@@ -33,6 +33,13 @@ Rscript programs/build_pdf.R > _R.log 2>&1
 sed -i 's/\\part{/\\partline{/' _main.tex
 #sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
 
+# Fix the index terms
+# Needs "index_term_mapping.csv"
+
+mv _main.tex _main_pre_index.tex
+
+python3 map_index.py -i _main_pre_index.tex -o _main.tex
+
 # now compile it
 
 $LATEX ${FILE}.tex > _tex.log 2>&1
