@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-10-09"
+date: "2020-10-12"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -16,7 +16,7 @@ always_allow_html: true
 
 # Welcome to the Handbook {-}
 
-![](./assets/images/webcover.png)<!-- -->
+<img src="./assets/images/webcover.png" width="770" />
 
 ```{=html}
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. Readers can also obtain the Handbook for free as an ebook or a printable PDF, or can purchase a printed copy, from the [Handbook's home page](https://admindatahandbook.mit.edu/).
@@ -44,10 +44,6 @@ This is placeholder text for the welcome page in the PDF versio only.
 
 The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center working to reduce poverty by ensuring that policy is informed by scientific evidence. Anchored by a network of more than 225 affiliated professors at universities around the world, J-PAL draws on results from randomized impact evaluations to answer critical questions in the fight against poverty. We build partnerships with governments, NGOs, donors, and others to share this knowledge, scale up effective programs, and advance evidence-informed decision-making. J-PAL was launched at the Massachusetts Institute of Technology in 2003 and has regional centers in Africa, Europe, Latin America & the Caribbean, the Middle East & North Africa, North America, South Asia, and Southeast Asia.
 
-```{=latex}
-\mainmatter
-\setcounter{page}{1}
-```
 
 <!--chapter:end:index.Rmd-->
 
@@ -71,7 +67,7 @@ The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center wo
 *Iqbal Dhaliwal (J-PAL)*  
 *Anja Sautmann (World Bank)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shawn Cole,, and Iqbal Dhaliwal, and Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## The Potential of Administrative Data for Research and Policymaking
 
@@ -81,7 +77,7 @@ Yet it is also our experience that this type of research is in many cases conduc
 
 At the same time, there are a wide variety of data sets already in existence, such as census records, banking data, employment information, or GPS records, which could dramatically reduce the cost and complexity of policy-relevant research -- including randomized control trials -- and speed up the formation of an evidence base for policymaking. Administrative data, sometimes referred to as *organic data* [@groves2011] because they are generated as part of normal business processes, often contain comprehensive, objective data about large populations of interest. Decision-makers at firms and in government are already using such data to better understand problems and issues of populations of interest, and based on such evidence-based analytics, new policies are implemented or new questions are defined.
 
-Beyond these uses, carefully designed systematic research with administrative data, often partnering academic researchers with firms and governments, may carry out analyses, conduct experiments, and develop and field supplemental surveys to test specific mechanisms or hypotheses. This type of innovative research could dramatically expand the types of insights gained from the data. An increasing fraction of published papers in economics uses administrative data (see Figure \@ref(fig:introchetty), @chetty2012). However, researcher access to administrative data sets remains difficult and idiosyncratic [@card2010]. This Handbook is motivated by our view that easier access and an increased use of administrative data sets by researchers could dramatically improve the quantity and quality of available evidence on social programs and policies.
+Beyond these uses, carefully designed systematic research with administrative data, often partnering academic researchers with firms and governments, may carry out analyses, conduct experiments, and develop and field supplemental surveys to test specific mechanisms or hypotheses. This type of innovative research could dramatically expand the types of insights gained from the data. An increasing fraction of published papers in economics uses administrative data [see Figure \@ref(fig:introchetty), @chetty2012]. However, researcher access to administrative data sets remains difficult and idiosyncratic [@card2010]. This Handbook is motivated by our view that easier access and an increased use of administrative data sets by researchers could dramatically improve the quantity and quality of available evidence on social programs and policies.
 
 <div class="figure">
 <img src="figures/introchetty-1.png" alt="Time Trends in the Use of Administrative Data for Empirical Research. Source: Chetty (2012). Used by permission."  />
@@ -292,7 +288,7 @@ In all these cases, there are significant economies of scale, scope, and duratio
 Our case studies span data from the public and the private sector and many different data-hosting organizations from governments and international institutions to academic research centers. However, not by coincidence, most of our case studies describe data access mechanisms that in one way or another harness benefits from specialization, bundling, or scale economies.
 
 <div class="figure">
-<img src="./assets/intro/introfigure1web.png" alt="Diversity of data or data providers and diversity of users"  />
+<img src="./assets/intro/introfigure1web.png" alt="Diversity of data or data providers and diversity of users" width="770" />
 <p class="caption">(\#fig:introfig1)Diversity of data or data providers and diversity of users</p>
 </div>
 
@@ -354,10 +350,11 @@ The existing literature also provides high-level guidance on numerous topics, in
 
 <!--chapter:end:01_intro.Rmd-->
 
+```{=latex}
+\mainmatter
+\setcounter{page}{1}
+```
 # (PART) Special Topics {-} 
-
-
-\putbib
 
 
 
@@ -367,7 +364,7 @@ The existing literature also provides high-level guidance on numerous topics, in
 
 *Jim Shen (J-PAL)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Jim Shen and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Jim Shen, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Introduction
 
@@ -387,7 +384,7 @@ There are a variety of security threats, each with different levels of likelihoo
 
 The archetypical threat to any computer system is the active, unauthorized access by adversarial actors (commonly referred to as hackers). There are two main mechanisms in which this occurs. Adversarial actors can exploit technical vulnerabilities in the data access mechanism, such as improperly secured computer systems and networks. Threat actors can also utilize [social engineering](https://csrc.nist.gov/glossary/term/social_engineering), which is the use of deception to manipulate individuals to reveal credentials to unauthorized users.^[It is called [phishing](https://csrc.nist.gov/glossary/term/phishing) when an e-mail or website is used to deceive an individual.] There are many possible incentives for adversarial actors to compromise data: exploiting specific data (targeted attacks), inflicting financial or reputational harm (targeting organizations), seeking financial or reputational gain (attacks of opportunity), or attacking for its own sake (functionally random targeting). One cannot assume that any particular set of data is not of interest for adversarial actors merely due to the contents of the data or the organization that holds the data; many types of stolen electronic data have direct monetary value, and the attack itself can be the objective when adversaries are motivated by ideological reasons [@ablon2018].
 
-\BeginKnitrBlock{bbox}<div class="bbox">One example of a data breach due to adversarial actors exploiting technical vulnerabilities is the Equifax data breach of 2017.^[https://epic.org/privacy/data-breach/equifax/] Equifax neglected to apply security patches on their servers, leading to adversarial actors compromising Equifax computer systems and the private information of over 147 million people ^[estimates vary; this is the count provided by the [FTC](https://www.ftc.gov/enforcement/cases-proceedings/refunds/equifax-data-breach-settlement)].</div>\EndKnitrBlock{bbox}
+\BeginKnitrBlock{bbox}<div class="bbox">One example of a data breach due to adversarial actors exploiting technical vulnerabilities is the Equifax data breach of 2017.^[https://epic.org/privacy/data-breach/equifax/] Equifax neglected to apply security patches on their servers, leading to adversarial actors compromising Equifax computer systems and the private information of over 147 million people ^[Estimates vary; this is the count provided by the [FTC](https://www.ftc.gov/enforcement/cases-proceedings/refunds/equifax-data-breach-settlement)].</div>\EndKnitrBlock{bbox}
 
 A related security threat is an unintentional breach where data are left unsecured by authorized users. In this scenario, the data are breached not by any deliberate attempt by adversarial actors to gain access but by behavior of authorized users that leaves data exposed, such as the loss of a device that contains or can access data. These breaches can still lead to adversarial actors acquiring confidential data. Collectively, deliberate attacks by adversarial actors and unintentional breaches can both be categorized as unauthorized access.
 
@@ -539,7 +536,7 @@ Actual implementations of data access mechanisms have many degrees of freedom in
 - The level of **access security** refers to the overall physical security arrangements for the environment and access computers from which researchers can access the data.
 - The **range of analysis methods available** to researchers refers to any restrictions on the types of statistical analysis that researchers can perform on the data. 
 
-For each aspect, a data access mechanism is classified into three categories. These are weakly aligned with how restrictive it may be on the researcher, or conversely, how much control the data provider exerts; these range from high to low, but the mapping is not always exact. However, in all cases, there are distinct variants, which are described in the sections below. For convenience, a simple visualization has been defined that maps the level of restrictions to colors, allowing a visual comparison of multiple access mechanisms. The more restrictive category of each aspect is colored **<span style='color: #e0f3db;'>green</span>**, the middle category in **<span style='color: #a8ddb5;'>light blue</span>**, and the least restrictive in **<span style='color: #43a2ca;'>dark blue</span>**. 
+For each aspect, a data access mechanism is classified into three categories. These are weakly aligned with how restrictive it may be on the researcher, or conversely, how much control the data provider exerts; these range from high to low, but the mapping is not always exact. However, in all cases, there are distinct variants, which are described in the sections below. For convenience, a simple visualization has been defined that maps the level of restrictions to colors (with the most restrictive category of each aspect being the lightest while the least restrictive is the darkest), allowing a visual comparison of multiple access mechanisms.
 
 Note that "control" is deliberately not framed as guaranteeing greater security. The level of security of any data access mechanism is dependent on a large number of factors of which the technological features are merely one component. Proper implementation and maintenance of the technical infrastructure, compliance with restrictions outlined in the DUA, the training of users and staff, and other factors all contribute to the actual security of a data access mechanism.
 
@@ -828,7 +825,7 @@ The RTRA system is maintained by Statistics Canada, a major national statistical
 
 <img src="figures/spnplot-1.png" style="float:left; padding:10px" />
 
-The SafePod Network in the United Kingdom makes de-identified administrative data from several UK administrative data providers available for researchers. A SafePod is a prefabricated room with a single [thin client][thin clients] with remote access. Analysis computers and data are located with the data provider, accessible through secure VPN connections [@universityofbristol]. Each data provider decides about the agency level that researchers have over analysis computers and restrictions on analysis methods. For instance, at the Office for National Statistics, researchers have medium agency over the analysis computers and no restrictions on analysis methods [@officefornationalstatistics]. The unique aspect of the SafePod is the security of the access locations. SafePods are a minimalistic yet robust implementation of a medium security location (an access-controlled space with CCTV monitoring) that can exist within low security environments such as university libraries.
+The SafePod Network in the United Kingdom makes de-identified administrative data from several UK administrative data providers available for researchers. A SafePod is a prefabricated room with a single [thin client][thin clients] with remote access. Analysis computers and data are located with the data provider, accessible through secure VPN connections [@universityofbristol]. Each data provider decides about the agency level that researchers have over analysis computers and restrictions on analysis methods. For instance, at the Office for National Statistics, researchers have medium agency over the analysis computers and no restrictions on analysis methods [@officefornationalstatistics2020]. The unique aspect of the SafePod is the security of the access locations. SafePods are a minimalistic yet robust implementation of a medium security location (an access-controlled space with CCTV monitoring) that can exist within low security environments such as university libraries.
 
 SafePods are relatively cheap, requiring only a suitable location to place a prefabricated room and can use existing staff members to manage access to the SafePod. While the SafePod is still a physical location that requires installation and ongoing staff and maintenance, it is an example of innovation for more access locations to provide protection against the various security threats at a lower cost than a traditional full-scale research data center.
 
@@ -1208,9 +1205,6 @@ This collection contains DUAs for domestic and international government administ
 This index, a collection of standards, guides, and templates, is searchable by geographic categories including city, county, state, or federal and domain categories such as education, health, housing, human services, justice, or workforce.
 
 
-\putbib
-
-
 
 <!--chapter:end:03_01_dua_appendix.Rmd-->
 
@@ -1278,7 +1272,7 @@ In addition to the internal organization or agency-based IRB, organizations and 
 
 Independent IRBs also may be an option for a data provider who would like to submit research projects for ethical oversight when there is no federal requirement to do so. This chapter is not focused on independent or central IRBs but for more information about +central_IRBs| and institutional IRBs see @wandile2018.
 
-At the center of the ethics review process is the +Belmont_Report| [@unitedstates1978], which summarizes the ethical principles and guidelines IRBs use when reviewing research involving human subjects. Three core principles are identified:
+At the center of the ethics review process is the +Belmont_Report| [@belmont1979], which summarizes the ethical principles and guidelines IRBs use when reviewing research involving human subjects. Three core principles are identified:
 
 1. *Respect for persons* allows individuals to be self-directed and make informed, voluntary decisions about whether they wish to participate in research and is the fundamental ethical rationale for the consent process and the elements of the consent document.
 2. *Beneficence* assesses the risks and benefits of participating in research, recognizing the obligation of the researcher to minimize risks while maximizing the benefits of participation.
@@ -1473,7 +1467,6 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 [Data-Only Protocol Template](.\appendix\irb_appendix.pdf)
 
-\putbib
 
 
 
@@ -1483,7 +1476,7 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 *Ian M. Schmutte (University of Georgia)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Ian M. Schmutte and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Ian M. Schmutte, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 The purpose of this handbook is to provide guidance on how to enable broader but ethical and legal access to data. Within the "Five Safes" framework [@desai2016], data providers need to create "safe data" that can be provided to trusted "safe users", within "[safe settings](#security)", subject to legal and [contractual safeguards](#dua). Related, but distinct, is the question of how to create "safe outputs" from researchers' findings, before those findings finally make their way into the public through, say, policy briefs or the academic literature. The processes used to create "safe data" and "safe outputs" - manipulations that render data less sensitive and therefore more appropriate for public release - are generally referred to as +statistical_disclosure_limitation| (SDL).^[Other terms sometimes used are "anonymization" or "de-identification," but as this chapter will show, de-identification is a particular method of SDL, and anonymization is a goal, never fully achieved, rather than a method.] In this chapter, we will describe methods traditionally used within the field of SDL, pointing at methods as well as metrics to assess the resultant statistical quality and sensitivity of the data. Newer methods, generally referred to as "formal privacy methods," are described in a separate [chapter](#diffpriv). 
 
@@ -1843,7 +1836,7 @@ The views expressed in this paper are those of the authors and not those of the 
 *Micah Altman (Massachusetts Institute of Technology)*  
 *Kobbi Nissim (Georgetown University)*  
 *Salil Vadhan (Harvard University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alexandra Wood,, and Micah Altman, and Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alexandra Wood, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 *Forthcoming*
 
@@ -1860,7 +1853,6 @@ This chapter is intended as a practical resource for government agencies and res
 # (PART) Case Studies {-} 
 
 
-\putbib
 
 
 
@@ -1870,7 +1862,7 @@ This chapter is intended as a practical resource for government agencies and res
 
 *Dana Müller (Institute for Employment Research)*  
 *Phillip vom Berge (Institute for Employment Research)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dana Müller and Phillip vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dana Müller, and Phillip vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -2075,7 +2067,7 @@ The main innovation behind +JoSuA| is that it is no longer necessary to perform 
 Although influenced by expansion of +data_access_points|, the decision to switch from a model where every job submission was manually reviewed to the +JoSuA| model was made separately. The steadily increasing number of projects meant that more time had to be spent on +SDC|, and much of the workload fell on preliminary output that was not yet meant for publication. The IU-mode of JoSuA allows for more flexibility and increased speed in project development for users while freeing up resources and maintaining full control over the inputs and exported outputs. Today, about 80 to 90 percent of submissions for +remote_execution| are in IU-mode (see Figure \@ref(fig:iabfig1)).
 
 <div class="figure">
-<img src="figures/iabfig1-1.png" alt="Number of jobs via JoSuA"  />
+<img src="./figures/iabfigure1.png" alt="Number of jobs via JoSuA" width="2100" />
 <p class="caption">(\#fig:iabfig1)Number of jobs via JoSuA</p>
 </div>
 
@@ -2651,7 +2643,6 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 <img src="./assets/olda/appendixb.png" width="100%" />
 
-\putbib
 
 
 
@@ -2661,7 +2652,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 *Donna Curtis Maillet (University of New Brunswick)*  
 *James Ted McDonald (University of New Brunswick)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Donna Curtis Maillet and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Donna Curtis Maillet, and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary {#nbirdt-summ}
 
@@ -2695,7 +2686,7 @@ It is instructive to highlight one dimension of these research collaborations th
 
 In recognition of the increasing depth of the collaboration between NB-IRDT and GNB, the parties entered into a memorandum of understanding in 2018 that committed both parties to achieving the long-term sustainability of NB-IRDT, to the transfer of all research-relevant data that GNB collected to NB-IRDT, and to recognizing NB-IRDT as a researcher of choice for GNB.
 
-## Making Data Usable for Research (#nbirdt-making)
+## Making Data Usable for Research {#nbirdt-making}
 
 As is often the case with administrative data, the development of curated, documented databases ready for use by researchers is a resource intensive process. Information systems of most provincial data custodians in NB are designed around funding for services, and extraction of data for purposes other than regular reporting and monitoring is rarely straightforward. Even when the transfer of a data set to NB-IRDT is a high priority for the disclosing agency and when all regulatory and legal questions about transfer of the data have been resolved, the agency may lack the human resources to dedicate to data preparation. And while much work on data documentation, cleaning, and validation can be conducted by dedicated personnel at NB-IRDT once files are received, significant work must still be undertaken at the disclosing agency. Furthermore, it may be that only the largest agencies have the necessary data and programming expertise to undertake this work in-house. Thus, in most cases without externally funded resources the pace of data transfer would be extremely slow. There have been a few notable exceptions, the most notable being the +Discharge_Abstract_Database| (DAD) of in-patient hospital stays. The DAD was an exception because hospital inpatient systems report systematically to the Department of Health in a standard form for subsequent disclosure to the +Canadian_Institute_for_Health_Information| (CIHI). CIHI then returns a curated data set back to the disclosing province.
 
@@ -2707,7 +2698,7 @@ Since NB-IRDT does not receive Medicare numbers and so is unable to do its own d
 
 With the NB-IRDT data platform established and the ongoing addition of data sets, resources are now being dedicated to the development of metadata best practices. Six initiatives have been implemented. First, an experienced +data_analyst| has been assigned the role of +data_manager|. to ensure the integration of metadata conventions and standards. Second, data documenting the transfer, receipt, and addition of all data sets to the NB-IRDT platform are systematically recorded, which facilitates necessary processes for the curation, updating, retention, and auditing of data sets. Third, all data sets transferred to the NB-IRDT are assigned a point person from the data team. It is their responsibility to develop a data set +codebook|[^nbirdt6] for publication on the Institute public website. Functioning as data dictionaries, +codebooks| describe the general content of the data set and date ranges. They also list the data variables available including definitions and format information. They do not, however, contain frequencies. Whenever possible codebooks are developed in partnership with original data set business owners, although existing documentation from the business owner is often quite limited or nonexistent. To assist in this development, original data owners must provide the name and contact information of a data steward for consultation on the specific data set. Codebooks include a description of the data set, a complete listing of variables, and their descriptors and related codes. A fourth initiative is the development of data set +concept_dictionaries|. Currently only available to staff and to approved users in consultation, these tools guide researchers in the selection of the appropriate data sets and variables when seeking to derive a particular variable. For example, these tools outline and explain retention (whether citizen retention, university retention, etc.), the appropriate data sets, variables, and suggested algorithms for derivation. In the near future, concept dictionaries will be made publicly available through the NB-IRDT website. Code banks are a fifth initiative under development for access and use within the secure facilities. +Code_banks| provide a point of reference for data sets on known variable concerns, suggested algorithms, and syntax solutions. While all data staff and approved users may contribute to code banks, the NB-IRDT data manager and the +senior_data_analyst| (who serves as the +database_administrator|) oversee the systematic development and monitoring of content. For example, they ensure solutions are made available in the various statistical programming languages supported by the platform. Finally, NB-IRDT is developing metadata best practices through both informal and formal consultation. Through networking with key staff located at other Canadian research data centers and by participating in national workshops, NB-IRDT has identified areas of metadata development requiring immediate attention and is developing a roadmap for the strategic implementation of an ongoing data management program.
 
-## Legal and Institutional Framework (#nbirdt-framework)
+## Legal and Institutional Framework {#nbirdt-framework}
 
 ### Institutional Setup {#nbirdt-institutionalsetup}
 
@@ -2768,11 +2759,11 @@ For data sets already at NB-IRDT, the typical processing time from receipt of th
 
 ### Safe People {#nbirdt-safepeople}
 
-All potential users of the NB-IRDT and staff members regardless of their roles (e.g., mangers, support staff, +data_analyst|, etc.) are required to follow a set of administrative safeguards in keeping with legislative requirements. These include evidence of a criminal record check completed within twelve months of the data access application and a signed confidentiality agreement indicating their commitment to adhere to NB-IRDT policies, privacy principles, and best practices.[^nbirdt15] Individual users and staff must also participate in a one-hour administrative data privacy training session and an additional data security and results vetting request session to remind users of their obligations. Training sessions are offered twice monthly through an online platform and content is revised in keeping with legislation and privacy best practices. The principal investigator for each project is also required to provide a current curriculum vitae and sign a +data_access_agreement| with the University. This agreement attests to their responsibility for their actions and those of their research team members in relation to data access and use while in an open project relationship with NB-IRDT.[^nbirdt16] Penalties for violating NB-IRDT policies will vary depending on the nature and frequency of the action but can include warnings and temporary or permanent suspension of data access. More severe violations would be the purview of the University of New Brunswick Office of Research Services.[^nbirdt17] Additionally, all staff and approved users must attend annual privacy training sessions to review the material covered, as part of the project approval process, as a mitigating measure against potential privacy breach or incidents.
+All potential users of the NB-IRDT and staff members regardless of their roles (e.g., managers, support staff, +data_analyst|, etc.) are required to follow a set of administrative safeguards in keeping with legislative requirements. These include evidence of a criminal record check completed within twelve months of the data access application and a signed confidentiality agreement indicating their commitment to adhere to NB-IRDT policies, privacy principles, and best practices.[^nbirdt15] Individual users and staff must also participate in a one-hour administrative data privacy training session and an additional data security and results vetting request session to remind users of their obligations. Training sessions are offered twice monthly through an online platform and content is revised in keeping with legislation and privacy best practices. The principal investigator for each project is also required to provide a current curriculum vitae and sign a +data_access_agreement| with the University. This agreement attests to their responsibility for their actions and those of their research team members in relation to data access and use while in an open project relationship with NB-IRDT.[^nbirdt16] Penalties for violating NB-IRDT policies will vary depending on the nature and frequency of the action but can include warnings and temporary or permanent suspension of data access. More severe violations would be the purview of the University of New Brunswick Office of Research Services.[^nbirdt17] Additionally, all staff and approved users must attend annual privacy training sessions to review the material covered, as part of the project approval process, as a mitigating measure against potential privacy breach or incidents.
 
 A unique strength of the New Brunswick legislation is its lack of requirement for data access applicants to hold an academic affiliation. In lieu, it is the role of the review processes to determine whether access adheres to permitted research purposes. The lack of a specific academic affiliation requirement applied in tandem with the obligatory safeguards embedded in the NB-IRDT data access application process means that opportunities for research work extend beyond traditional academic boarders. This permits access to users from government, non-profits, and private sectors.
 
-### Safe Settings (#nbirdt-safesettings)
+### Safe Settings {#nbirdt-safesettings}
 
 Currently, users must access their project files on site in one of three secure facilities (a central and two satellite sites) in NB and access is gained through the assignment of both a dedicated entry card and unique PIN. Inside the secure facility, several additional physical and technical safeguards are in place. Approved users and staff may only access data sets within specific project folders. Each user has their own unique username and password, and a separate log-in and password is required for each project such that a user cannot access two +project_data_sets| at the same time. All workstation ports are disabled except for USB ports for a mouse and keyboard that can only accept these devices. Within the central location, workstations operate on a closed network and there is no connection to external networks (i.e., there is no internet or wireless capabilities). Project work or data cannot be saved to the local workstations and can only be saved to the local server. Security software runs in the evening and every weekend to ensure no data or files are saved to local hard drives or desktops. Users in the satellite sites use thin clients and at no time are users working on local workstations. All sites are alarmed and locked with deadbolts after working hours. Project data set access at the two satellite sites is through a zero-client model by which the satellite locations are connected to the central server by dedicated secure fiber-optic cable. Thus, the network is air gapped with respect to the wider internet. The zero-client framework for the satellites was implemented mainly for confidentiality reasons so that NB-IRDT data files remain on the secure servers in Fredericton. Zero-client analysis can also offer significant computational advantages and NB-IRDT is in the process of planning for eventual migration of the Fredericton workstations to the same zero-client environment. Approved users may access the facility during regular business hours of 9:00 a.m. to 5:00 p.m. while staff are permitted limited after-hours access based on job requirement.
 
@@ -2913,7 +2904,7 @@ Audits of data sets accessed and data project activity are a requirement of data
 *Josh Lerner (Harvard Business School)*  
 *Leslie Jeng (Private Capital Research Institute)*  
 *Therese Juneau (Private Capital Research Institute)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Josh Lerner,, and Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Josh Lerner, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -3312,7 +3303,6 @@ Table: (\#tab:pcritablea3) Portfolio Companies by Location: Companies by Region,
 - Guaranteed Returns  
 - Restrictions  
 
-\putbib
 
 
 
@@ -3322,7 +3312,7 @@ Table: (\#tab:pcritablea3) Portfolio Companies by Location: Companies by Region,
 
 *Laura Feeney (J-PAL North America)*  
 *Amy Finkelstein (Massachusetts Institute of Technology)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Laura Feeney and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Laura Feeney, and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -3536,7 +3526,7 @@ We are grateful to a research grant from the Laura and John Arnold Foundation fo
 
 [^ahc1]: At the time of the study's design, the mandate was to be implemented in January 2018. Implementation was later delayed until January 2020 with penalties for noncompliance to be implemented in January 2021 [@hentel2019; @centersformedicaremedicaidservices2018].
 
-[^ahc2]: The HIPAA Privacy Rule (45 Code of Federal Regulations (CFR) Part 160 and Subparts A and E of Part 164, accessed at <https://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title45/45cfr160_main_02.tpl> on 06-23-2020.) provides regulation for the use, storage, and sharing of medical records and other protected health information. It holds health care providers, health insurance providers, researchers, and others accountable for safeguarding certain types of health information in the United States. Compliance requirements differ based on the party, such as individuals, researchers, or health care providers or insurers; the purpose of the data usage; and on stipulations or structure of data use agreements. The US Department of Health & Human Services provides a detailed [guide](https://www.hhs.gov/hipaa/for-professionals/special-topics/research/index.html) [see @u.s.departmentofhealthhumanservices2018a] to the requirements associated with research and identifiable health data, how the HIPAA Privacy Rule applies to research, and a [guide](https://www.hhs.gov/hipaa/index.html) [see @u.s.departmentofhealthhumanservices] to understanding HIPAA for all types of users.
+[^ahc2]: The HIPAA Privacy Rule (45 Code of Federal Regulations (CFR) Part 160 and Subparts A and E of Part 164, accessed at <https://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title45/45cfr160_main_02.tpl> on 06-23-2020.) provides regulation for the use, storage, and sharing of medical records and other protected health information. It holds health care providers, health insurance providers, researchers, and others accountable for safeguarding certain types of health information in the United States. Compliance requirements differ based on the party, such as individuals, researchers, or health care providers or insurers; the purpose of the data usage; and on stipulations or structure of data use agreements. The US Department of Health & Human Services provides a detailed [guide](https://www.hhs.gov/hipaa/for-professionals/special-topics/research/index.html) [see @u.s.departmentofhealthhumanservices2018a] to the requirements associated with research and identifiable health data, how the HIPAA Privacy Rule applies to research, and a [guide](https://www.hhs.gov/hipaa/index.html) [see @us_department_of_health__human_services_health_nodate] to understanding HIPAA for all types of users.
 
 [^ahc3]: The US Federal Policy for the Protection of Human Subjects or the "Common Rule", located in [45 CFR Part 46](https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/index.html), provides regulatory guidance for research involving human subjects and governs institutional review boards (IRBs), which approve research [@officeforhumanresearchprotections2018a].
 
@@ -3583,9 +3573,6 @@ The following is from the NDA:
 "Aurora acknowledges that MIT is receiving Confidential Information in anticipation of its faculty preparing written scholarly work ("Scholarly Work"). In the event MIT personnel seek to publish a Scholarly Work, Aurora will have a thirty (30) day period to review the Scholarly Work for any disclosure of Confidential Information. Aurora shall, within the thirty (30) day period, give MIT notice identifying specifically any Confidential Information it believes would be disclosed in the Scholarly Work. If Aurora does not provide timely notice, it will be deemed to have waived any objection to disclosure of Confidential Information."
 
 
-\putbib
-
-
 
 <!--chapter:end:14_01_ahc_appendix.Rmd-->
 
@@ -3597,7 +3584,7 @@ The following is from the NDA:
 *Norma Ming (San Francisco Unified School District)*  
 *Michelle Reininger (University of Colorado at Boulder)*  
 *Eric Bettinger (Stanford University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Moonhawk Kim,, and Jim Shen, and Laura Wentworth, and Norma Ming, and Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -3916,7 +3903,6 @@ Norma Ming has worked as Supervisor of Research in SFUSD's RPA division since Se
 
 [Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](.\appendix\sfusd_appendix_b.pdf)
 
-\putbib
 
 
 
@@ -3928,7 +3914,7 @@ Norma Ming has worked as Supervisor of Research in SFUSD's RPA division since Se
 *Kelsey Jack (University of California, Santa Barbara)*  
 *Derek Strong (University of Southern California)*  
 *Brendan Maughan-Brown (J-PAL Africa)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hugh Cole,, and Kelsey Jack, and Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hugh Cole, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -4410,9 +4396,6 @@ Coverage          time for which data are     intervals when data were
 -------------------------------------------------------------------------
 
 
-\putbib
-
-
 
 <!--chapter:end:16_01_cct_appendix.Rmd-->
 
@@ -4420,7 +4403,7 @@ Coverage          time for which data are     intervals when data were
 
 *Arianna Legovini (World Bank)*  
 *Maria Ruth Jones (World Bank)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Arianna Legovini and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Arianna Legovini, and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary 
 
@@ -4696,7 +4679,7 @@ Since 2018, +DIME| has required that all working papers pass a +computational_re
 *Era Dabla-Norris (International Monetary Fund)*  
 *Federico J. Díez (International Monetary Fund)*  
 *Romain Duval (International Monetary Fund)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Era Dabla-Norris,, and Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Era Dabla-Norris, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -4863,7 +4846,7 @@ The intensity and frequency with which administrative data are used at the IMF d
 *Rema Hanna (Harvard Kennedy School)*  
 *Sudarno Sumarto (SMERU and TNP2K)*  
 *Putu Poppy Widyasari (J-PAL Southeast Asia)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Vivi Alatas,, and Farah Amalia, and Abhijit Banerjee, and Benjamin A. Olken, and Rema Hanna, and Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Vivi Alatas, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
