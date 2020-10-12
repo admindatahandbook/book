@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -ev
-LATEX=xelatex
+LATEX=pdflatex
 FILE=test_book
 
 cd $(dirname $0)
@@ -18,13 +18,20 @@ fi
 Rscript programs/build_pdf.R > _R.log 2>&1
 
 # post-processing
-# For some reason, these appear in the tex files
-sed -i 's/NULL//' _main.tex
-sed -i 's/\\chapter\*{(PART) /\\part*{/' _main.tex
-sed -i 's/\\chapter\*{(APPENDIX) /\\part*{/' _main.tex
+# For some reason, these appear in the tex files when running as latex_fragment
+#sed -i 's/NULL//' _main.tex
+#sed -i 's/\\chapter\*{(PART) /\\part*{/' _main.tex
+#sed -i 's/\\chapter\*{(APPENDIX) /\\part*{/' _main.tex
 #sed -i 's/^\\chapter{/\putbib\n\\chapter{/' _main.tex 
-sed -i 's/\\addcontentsline{toc}{chapter}{(PART) /\\partline{/' _main.tex
-sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
+#sed -i 's/\\addcontentsline{toc}{chapter}{(PART) /\\partline{/' _main.tex
+#sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
+# fix bad reference translations
+#sed -i -E 's/@ref\(fig(.+)\)/\\ref{fig\1}/g' _main.tex 
+
+# These are still needed
+
+sed -i 's/\\part{/\\partline{/' _main.tex
+#sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
 
 # now compile it
 
