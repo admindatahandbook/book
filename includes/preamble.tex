@@ -12,20 +12,18 @@
 
 \excludecomment{invisible}
 % for now - must be included later
-\excludecomment{bbox}
+%\excludecomment{bbox}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\newcommand{\boxwidth}{1\linewidth}
+\tcbset{width=\boxwidth}
+\newenvironment{bbox}{\begin{figure}[t]\begin{tcolorbox}}{\end{tcolorbox}\captionsetup{labelformat=empty}\end{figure}}
 
 % workaround
 \newcommand{\partline}[1]{\cftaddtitleline{toc}{part}{#1}{}}
 
 % addtional packages for the book
-%\usepackage{chapterbib}
-\usepackage{ragged2e}
 
-\usepackage{comment}
-
-\excludecomment{invisible}
-% for now - must be included later
-\excludecomment{bbox}
 
 \usepackage{multirow}
 \usepackage{wrapfig}
