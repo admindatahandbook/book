@@ -1,3 +1,5 @@
+# (PART) Case Studies {-} 
+
 # Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers {#iab}
 
 ```{r, echo=FALSE, results='asis'}
