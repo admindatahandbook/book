@@ -85,7 +85,7 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
       geom_text(aes(label=paste(metrics,": ",rank, sep="")),
                 color="black",
                 position = position_stack(vjust=0.5),
-                size=3) +
+                size=3.5) +
       coord_flip() +
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
             panel.background = element_blank())
@@ -93,6 +93,57 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
    if ( display ) {
       g
    }
+}
+
+# Table 1
+
+securityt1data<-read.csv("./assets/security/securitytable1.csv")
+
+securitytable1<-function() {
+kable(securityt1data, col.names=NULL) %>%
+   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   kable_styling(font_size=14)
+}
+
+# Table 2
+
+securityt2data<-read.csv("./assets/security/securitytable2.csv")
+
+securitytable2<-function() {
+kable(securityt2data, col.names=NULL) %>%
+   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   kable_styling(font_size=14)
+}
+
+# Table 3
+
+securityt3data<-read.csv("./assets/security/securitytable3.csv")
+
+securitytable3<-function() {
+kable(securityt3data, col.names=NULL) %>%
+   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   kable_styling(font_size=14)
+}
+
+# Table 4
+
+securityt4data<-read.csv("./assets/security/securitytable4.csv")
+
+securitytable4<-function() {
+kable(securityt4data, col.names=NULL) %>%
+   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   kable_styling(font_size=14)
+}
+
+
+# Table 5
+
+securityt5data<-read.csv("./assets/security/securitytable5.csv")
+
+securitytable5<-function() {
+kable(securityt5data, col.names=NULL) %>%
+   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   kable_styling(font_size=14)
 }
 
 # Summary Table

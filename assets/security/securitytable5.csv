@@ -1,0 +1,4 @@
+restrictions,example
+Highly Restricted,**Example:** The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to employ a set of approved SAS commands. There are further limits on the number of variables and observations that can be included in analysis.
+Limited Restrictions,**Example:** An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on-site and JoSuA systems in which certain Stata commands are censored by the system and are unavailable to researchers but broadly allows for most econometric techniques.
+Unrestricted,"**Example:** [OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their DUA, to ensure safe outputs."
