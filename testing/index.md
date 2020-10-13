@@ -356,10 +356,6 @@ The existing literature also provides high-level guidance on numerous topics, in
 ```
 # (PART) Special Topics {-} 
 
-
-
-<!--chapter:end:01_zz_part_specialtopics.Rmd-->
-
 # Physically Protecting Sensitive Data {#security}
 
 *Jim Shen (Abdul Latif Jameel Poverty Action Lab)*  
@@ -1791,12 +1787,6 @@ This chapter is intended as a practical resource for government agencies and res
 <!--chapter:end:06_diffpriv.Rmd-->
 
 # (PART) Case Studies {-} 
-
-
-
-
-
-<!--chapter:end:09_zz_part_case_studies.Rmd-->
 
 # Institute for Employment Research, Germany: Access to Administrative Labor Market Data for International Researchers {#iab}
 
@@ -4989,9 +4979,6 @@ We thank the many J-PAL SEA staff members who contributed to the projects discus
 <!--chapter:end:19_00_indonesia.Rmd-->
 
 # (APPENDIX) Appendix {-} 
-
-
-<!--chapter:end:90_zz_part_appendix.Rmd-->
 
 # Evolution of the Handbook and Contributing {- #contributing}
 
