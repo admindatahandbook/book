@@ -1,3 +1,9 @@
+```{=latex}
+\mainmatter
+\setcounter{page}{1}
+```
+# (PART) Special Topics {-} 
+
 # Physically Protecting Sensitive Data {#security}
 
 ```{r, echo=FALSE, results='asis'}
