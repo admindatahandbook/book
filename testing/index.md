@@ -28,17 +28,17 @@ This is placeholder text for the welcome page in the PDF versio only.
 
 # About the Editors {- #about}
 
-
 **[Shawn Cole](https://www.hbs.edu/faculty/Pages/profile.aspx?facId=340064)** is the John G McLean Professor of Business Administration at Harvard Business School. Shawn is a Co-Chair of J-PAL's Innovations in Data and Experiments for Action Initiative (IDEA). His research examines agriculture, corporate finance, banking, and consumer finance in developing countries. He has conducted randomized evaluations in education, financial literacy, agricultural risk management, and ICT for agriculture. He received a Ph.D. in economics from the Massachusetts Institute of Technology in 2005, where he was an NSF and Javits Fellow, and an A.B. in Economics and German Literature from Cornell University.
 
 
-**[Iqbal Dhaliwal](https://www.povertyactionlab.org/person/dhaliwal)** is the Global Executive Director of J-PAL and co-chair of IDEA. He works with the Board of Directors to develop J-PAL’s strategic vision, with leadership of the seven regional offices to coordinate J-PAL’s worldwide research, policy outreach, capacity building, and operations, and with funding partners to secure resources for J-PAL worldwide. He has setup many partnerships for J-PAL with data providers and implementing partners. He is a co-PI on a very large randomized evaluation in India that used both survey data and large admin datasets to help a state government reduce health care absenteeism. Iqbal has a deep appreciation of the concerns and constraints of data providers in governments as he began his career as a member of the Indian Administrative Service (IAS) formulating policy and implementing programs across many assignments. Later as a Director in an economic consulting firm in Chicago, he analyzed numerous very large data sets to provide critical insights to private sector clients in manufacturing, health, banking and automotive sectors. He has a BA in economics from the University of Delhi, an MA in economics from the Delhi School of Economics, and an MPA in international development from Princeton University.
+**[Iqbal Dhaliwal](https://www.povertyactionlab.org/person/dhaliwal)** is the Global Executive Director of J-PAL and co-chair of IDEA. Based at MIT, he works with the Board of Directors to develop J-PAL’s strategic vision, with leadership of the seven regional offices to coordinate J-PAL’s worldwide research, policy outreach, capacity building, and operations, and with funding partners to secure resources for J-PAL worldwide. He has setup many partnerships for J-PAL with data providers and implementing partners. He is a co-PI on a very large randomized evaluation in India that used both survey data and large admin datasets to help a state government reduce health care absenteeism. Iqbal has a deep appreciation of the concerns and constraints of data providers in governments as he began his career as a member of the Indian Administrative Service (IAS) formulating policy and implementing programs across many assignments. Later as a Director in an economic consulting firm in Chicago, he analyzed numerous very large data sets to provide critical insights to private sector clients in manufacturing, health, banking and automotive sectors. He has a BA in economics from the University of Delhi, an MA in economics from the Delhi School of Economics, and an MPA in international development from Princeton University.
 
 
 **[Anja Sautmann](https://www.worldbank.org/en/about/people/a/anja-sautmann)** is a Research Economist in the World Bank's Development Research Group (Human Development Team). She is interested in how households and individuals make decisions, from healthcare for children to daily consumption to marriage, and how incentives and individual behavior shape optimal policy design. Before joining the World Bank, Anja was an Assistant Professor at Brown University (2010-2017) and the Director of Research, Education, and Training at the Abdul Latif Jameel Poverty Action Lab at MIT (2017-2020) and Director of IDEA. She received her Ph.D. in Economics from New York University and her diploma in Economics from Ludwig Maximilians Universität in Munich, Germany. She is an affiliate of the CESifo research network.
 
 
 **[Lars Vilhuber](https://lars.vilhuber.com/)** is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market. He also has extensive experience in the application of privacy-preserving publication and access to restricted data. He is chair of the scientific committee of the French restricted-access system [CASD](https://casd.eu), member of the governing board of the Canadian Research Data Centre Network ([CRDCN](https://crdcn.org)), and incoming chair of the  American Statistical Association‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home). Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
+
 
 **About J-PAL**
 
@@ -64,7 +64,7 @@ The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center wo
 # Introduction {#intro}
 
 *Shawn Cole (Harvard Business School)*  
-*Iqbal Dhaliwal (J-PAL)*  
+*Iqbal Dhaliwal (Abdul Latif Jameel Poverty Action Lab)*  
 *Anja Sautmann (World Bank)*  
 *Lars Vilhuber (Cornell University)*  
 <div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
@@ -362,7 +362,7 @@ The existing literature also provides high-level guidance on numerous topics, in
 
 # Physically Protecting Sensitive Data {#security}
 
-*Jim Shen (J-PAL)*  
+*Jim Shen (Abdul Latif Jameel Poverty Action Lab)*  
 *Lars Vilhuber (Cornell University)*  
 <div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Jim Shen, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
@@ -3519,7 +3519,7 @@ The following is from the NDA:
 # The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes {#sfusd}
 
 *Moonhawk Kim (University of California, Berkeley)*  
-*Jim Shen (J-PAL)*  
+*Jim Shen (Abdul Latif Jameel Poverty Action Lab)*  
 *Laura Wentworth (California Education Partners)*  
 *Norma Ming (San Francisco Unified School District)*  
 *Michelle Reininger (University of Colorado at Boulder)*  
