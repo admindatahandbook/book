@@ -3,11 +3,11 @@
 #     for the Physical Security dimensions.
 
 # Aspect Names
-aspect.names <- c(   "Researcher Agency Over Analysis Computer",
-                     "Location of Data and Analysis Computer",
-                     "Location of Access Computer",
+aspect.names <- c(   "Researcher Agency",
+                     "Data Location",
+                     "Access Location",
                      "Access Security",
-                     "Range of Analysis Methods Available")
+                     "Analysis Methods")
 
 # Colors
 pal <- c(
