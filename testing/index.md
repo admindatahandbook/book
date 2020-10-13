@@ -406,11 +406,11 @@ All computer systems should follow the basic computer security mechanisms. While
 
 #### Physical Media
 
-Physical media is any device used to store data: hard drives, solid-state drives, and removable media. Removable media include devices such as USB drives, DVDs, and external hard drives. These are typically used in the transfer of data between parties, such as from a data provider to a researcher. They are often disallowed on secure access or analysis systems. On-site storage may be in the form of directly attached physical media or network drives.
+Physical media is any device used to store data: hard drives, solid-state drives, and removable media. Removable media include devices such as USB drives, DVDs, and external hard drives. Removable media are typically used in the transfer of data between parties, such as from a data provider to a researcher. They are often disallowed on secure access or analysis systems. On-site storage may be in the form of directly attached physical media or network drives.
 
 #### Cloud Service
 
-The use of cloud storage services^[As of 2020, Amazon Web Services, Box, Dropbox, Google Drive, and Microsoft OneDrive are all vendors of cloud storage services.]. Mechanisms similar to cloud storage can also be implemented by data providers or intermediaries by using open-source software such as [Nextcloud](https://nextcloud.com) and is becoming more common, in particular in combination with cloud computing. Utilizing cloud storage services may place the data under the control of a third party, which may be prohibited depending on the data sharing agreement or relevant legal constraints. Files may be encrypted on cloud storage services.
+The use of cloud storage services^[As of 2020, Amazon Web Services, Box, Dropbox, Google Drive, and Microsoft OneDrive are all vendors of cloud storage services.] can provide storage solutions that also serve as transfer mechanisms. Mechanisms similar to cloud storage can be implemented by data providers or intermediaries by using open-source software such as [Nextcloud](https://nextcloud.com) and is becoming more common, in particular in combination with cloud computing. Utilizing cloud storage services may place the data under the control of a third party, which may be prohibited depending on the data sharing agreement or relevant legal constraints. Files may be encrypted on cloud storage services.
 
 #### Reliability as a Criterion
 
@@ -556,25 +556,19 @@ A **medium agency** setting may allow researchers some choice of software or lim
 
 In the **high researcher agency** settings, researchers have few restrictions on how the analysis computer can be configured. They may have administrative privileges to the analysis computer and few, if any, restrictions on the software that can be installed. The researcher may own and physically control the analysis computer or may be granted administrative privileges to a computer that is owned by the data provider or third party. Data providers may still mandate technical solutions such as the use of monitoring, operating system patch management software, or anti-virus software.
 
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;">  </th>
-   <th style="text-align:left;"> Example </th>
-  </tr>
- </thead>
+<table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Low Agency </td>
-   <td style="text-align:left;"> In the [Statistics Canada Real Time Remote Access (RTRA)] system, researchers can only use SAS and cannot directly view the data with no exceptions allowed. </td>
+   <td style="text-align:left;"> **Example:** In the [Statistics Canada Real Time Remote Access (RTRA)] system, researchers can only use SAS and cannot directly view the data with no exceptions allowed. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Medium Agency </td>
-   <td style="text-align:left;"> The [Federal Statistical Research Data Centers (FSRDC)] network has a specific set of software on their secure computing network that is made available to researchers. Additional software can be requested, which must be approved by program managers and security analysts. </td>
+   <td style="text-align:left;"> **Example:** The [Federal Statistical Research Data Centers (FSRDC)] network has a specific set of software on their secure computing network that is made available to researchers. Additional software can be requested, which must be approved by program managers and security analysts. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> High Agency </td>
-   <td style="text-align:left;"> In the [National Center for Education Statistics (NCES) restricted-use data license], the researcher must set up a secure data room in accordance with NCES requirements. However, researchers provide and retain full administrative control over the analysis computer and can utilize any software. </td>
+   <td style="text-align:left;"> **Example:** In the [National Center for Education Statistics (NCES) restricted-use data license], the researcher must set up a secure data room in accordance with NCES requirements. However, researchers provide and retain full administrative control over the analysis computer and can utilize any software. </td>
   </tr>
 </tbody>
 </table>
@@ -593,35 +587,22 @@ In some cases, the distinction between these two categories becomes blurred. A d
  
 Finally, individual **researchers** can act as the data custodian. This is still quite frequently used, in particular when no previous data access existed. For the researcher, acting as the data custodian enables more flexibility for accessing the data without traveling or remote access systems. Most of the cost of maintaining IT infrastructure and security fall onto the researcher, subject to other conditions in the overall data access plan; in addition, researchers assume the risk and liability associated with housing data. Security provisions include keeping analysis computers offline with no external network connections or other provisions. The enforcement of the DUA becomes a key mechanism for preventing the misuse of the data. Researcher agency over the analysis computer may also be limited, despite the researcher having physical control of the analysis computer. For instance, some data providers (often commercial companies) provide researchers with fully encrypted and remotely managed laptops. While the laptop and data are located with the researcher, the researcher has only low agency over the analysis computer.
 
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;">  </th>
-   <th style="text-align:left;"> Example </th>
-  </tr>
- </thead>
+<table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Data Provider </td>
-   <td style="text-align:left;"> The [Institute for Employment Research (RDC-IAB)] (on-site access) house all highly confidential RDC-IAB data on their own servers, which are accessed remotely by researchers from various locations. </td>
+   <td style="text-align:left;"> **Example:** The [Institute for Employment Research (RDC-IAB)] (on-site access) house all highly confidential RDC-IAB data on their own servers, which are accessed remotely by researchers from various locations. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Third Party </td>
-   <td style="text-align:left;"> The [Private Capital Research Institute (PCRI)] serves as a trusted third party for its data providers (private capital firms) and in turn contracts with a third party (National Opinion Research Center, NORC) to maintain the analysis computers and data access mechanism. </td>
+   <td style="text-align:left;"> **Example:** The [Private Capital Research Institute (PCRI)] serves as a trusted third party for its data providers (private capital firms) and in turn contracts with a third party (National Opinion Research Center, NORC) to maintain the analysis computers and data access mechanism. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:left;"> The Aurora Health Care and MIT data exchange has the data and analysis computer located with the researcher. Researchers must store the data in accordance with security requirements outlined in their DUA. </td>
+   <td style="text-align:left;"> **Example:** The Aurora Health Care and MIT data exchange has the data and analysis computer located with the researcher. Researchers must store the data in accordance with security requirements outlined in their DUA. </td>
   </tr>
 </tbody>
 </table>
-
-<!-- |Data Location|Example| -->
-<!-- |-----|------------------------| -->
-<!-- |<span style='color: #e0f3db;'>**Data Provider**</span>|The [Institute for Employment Research (RDC-IAB)] (on-site access) house all highly confidential RDC-IAB data on their own servers, which are accessed remotely by researchers from various locations.| -->
-<!-- |<span style='color: #a8ddb5;'>**Third Party**</span>|The [Private Capital Research Institute (PCRI)] serves as a trusted third party for its data providers (private capital firms) and in turn contracts with a third party (National Opinion Research Center, NORC) to maintain the analysis computers and data access mechanism.| -->
-<!-- |<span style='color: #43a2ca;'>**Researcher**</span>|The Aurora Health Care and MIT data exchange has the data and analysis computer located with the researcher. Researchers must store the data in accordance with security requirements outlined in their DUA.| -->
-
 In all cases where the data provider relinquishes the data custodial role, data are transferred. While secure data transfer mechanisms exist, this is an additional risk within the overall framework; as described earlier, the cost is typically low to null.
 
 For data providers, transferring control of the data and analysis computers to a third party or directly to researchers might be desirable when support for many researchers is a burden for the regular business of the data provider. By transferring the data to another party, a data provider may no longer be responsible for the cost of providing computational infrastructure for [data storage][Storage of Data] and analysis. However, the data provider may see some additional costs for enforcing access restrictions, such as needing to conduct site visits once physical custody of the data has been transferred. Data providers will rely on the enforcement of DUAs when giving others custody of data.
@@ -636,34 +617,22 @@ Data providers can choose a **third-party** access provider. Note that the third
 
 Finally, access computers can be located with the **researcher**. Trivially, locating the analysis computer with the researcher makes the access computer co-incidental. However, there are numerous cases where the access computer is with the researcher while the analysis computer is not. Examples include any web-based access, most [remote execution] systems, and many [remote desktop] systems: researchers use their own computers to access the portal while all computation occurs elsewhere. In almost all cases, locating access computers with researchers allows them to work from a location of their choice, though in some cases this may be restricted to a designated university office.
 
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;">  </th>
-   <th style="text-align:left;"> Example </th>
-  </tr>
- </thead>
+<table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Data Custodian </td>
-   <td style="text-align:left;"> The [New Brunswick Institute for Research, Data and Training (NB-IRDT)] is an example of locating access computers with the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers. </td>
+   <td style="text-align:left;"> **Example:** The [New Brunswick Institute for Research, Data and Training (NB-IRDT)] is an example of locating access computers with the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Third Party </td>
-   <td style="text-align:left;"> The [SafePod Network (SPN)] in the United Kingdom is an example of locating access computers with a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network [@universityofbristol]. </td>
+   <td style="text-align:left;"> **Example:** The [SafePod Network (SPN)] in the United Kingdom is an example of locating access computers with a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network [@universityofbristol]. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:left;"> The [RDC-IAB][Institute for Employment Research (RDC-IAB)] Job Submission Application (JoSuA) system is a web interface that researchers can use from their own computers to submit analysis files to the IAB-RDC for execution on IAB systems. </td>
+   <td style="text-align:left;"> **Example:** The [RDC-IAB][Institute for Employment Research (RDC-IAB)] Job Submission Application (JoSuA) system is a web interface that researchers can use from their own computers to submit analysis files to the IAB-RDC for execution on IAB systems. </td>
   </tr>
 </tbody>
 </table>
-
-<!-- |Access Location|Example| -->
-<!-- |-----|------------------------| -->
-<!-- |<span style='color: #e0f3db;'>**Data Provider**</span>|The [New Brunswick Institute for Research, Data and Training (NB-IRDT)] is an example of locating access computers with the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers.| -->
-<!-- |<span style='color: #a8ddb5;'>**Third Party**</span>|The [SafePod Network (SPN)] in the United Kingdom is an example of locating access computers with a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network [@universityofbristol].| -->
-<!-- |<span style='color: #43a2ca;'>**Researcher**</span>|The [RDC-IAB][Institute for Employment Research (RDC-IAB)] Job Submission Application (JoSuA) system is a web interface that researchers can use from their own computers to submit analysis files to the IAB-RDC for execution on IAB systems.| -->
 
 In general, the closer access computers are located to the data provider, the higher the security arrangements that apply. However, the two aspects are not perfectly correlated. In particular, access computers located with researchers can have very different security arrangements.
 
@@ -683,34 +652,22 @@ A **low security access location** has few or no access controls. Simple restric
 
 In addition to the locational security described above, the **type of access computer** can also range from high security to low security. Highly secure access computers (which do not contain data) may still include fully encrypted operating systems, the use of [VPNs][virtual private networks], [remote desktop] software, [secure network protocols], and [encryption] or requiring [biometric authentication] of the access computer. This can take the form of dedicated thin clients. Low security access computers are typically allowed for remote submission or web portal-type access, where any computer, in any location, is allowed.
 
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;">  </th>
-   <th style="text-align:left;"> Example </th>
-  </tr>
- </thead>
+<table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> High Security </td>
-   <td style="text-align:left;"> The [FSRDC][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations [@unitedstatescensusbureaua]. While these secure rooms are located at partner organizations (universities, research centers, Federal Reserve Banks), the rooms themselves are under the control of the US Census Bureau and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus or to a partner organization) to use the thin clients to access analysis computers located within the secure computing center of the Census Bureau [@unitedstatescensusbureaua]. </td>
+   <td style="text-align:left;"> **Example:** The [FSRDC][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations [@unitedstatescensusbureaua]. While these secure rooms are located at partner organizations (universities, research centers, Federal Reserve Banks), the rooms themselves are under the control of the US Census Bureau and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus or to a partner organization) to use the thin clients to access analysis computers located within the secure computing center of the Census Bureau [@unitedstatescensusbureaua]. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Medium Security </td>
-   <td style="text-align:left;"> Data distributed under the [NCES restricted-use data license][National Center for Education Statistics (NCES) Restricted-Use Data License] must be kept in a locked room with access restricted only to licensed researchers, and the security arrangements are subject to random audits by NCES. </td>
+   <td style="text-align:left;"> **Example:** Data distributed under the [NCES restricted-use data license][National Center for Education Statistics (NCES) Restricted-Use Data License] must be kept in a locked room with access restricted only to licensed researchers, and the security arrangements are subject to random audits by NCES. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:left;"> The Stanford-SFUSD Partnership uses low security access locations. While the data are stored on secured servers at Stanford, researchers can access the data from anywhere as long as they take reasonable and appropriate efforts to keep the data secure from unauthorized access as specified in their DUA. </td>
+   <td style="text-align:left;"> **Example:** The Stanford-SFUSD Partnership uses low security access locations. While the data are stored on secured servers at Stanford, researchers can access the data from anywhere as long as they take reasonable and appropriate efforts to keep the data secure from unauthorized access as specified in their DUA. </td>
   </tr>
 </tbody>
 </table>
-
-<!-- |Access Security|Example| -->
-<!-- |-----|------------------------| -->
-<!-- |<span style='color: #e0f3db;'>**High Security**</span>|The [FSRDC][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations [@unitedstatescensusbureaua]. While these secure rooms are located at partner organizations (universities, research centers, Federal Reserve Banks), the rooms themselves are under the control of the US Census Bureau and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus or to a partner organization) to use the thin clients to access analysis computers located within the secure computing center of the Census Bureau [@unitedstatescensusbureaua].| -->
-<!-- |<span style='color: #a8ddb5;'>**Medium Security**</span>|Data distributed under the [NCES restricted-use data license][National Center for Education Statistics (NCES) Restricted-Use Data License] must be kept in a locked room with access restricted only to licensed researchers, and the security arrangements are subject to random audits by NCES.| -->
-<!-- |<span style='color: #43a2ca;'>**Low Security**</span>|The Stanford-SFUSD Partnership uses low security access locations. While the data are stored on secured servers at Stanford, researchers can access the data from anywhere as long as they take reasonable and appropriate efforts to keep the data secure from unauthorized access as specified in their DUA.| -->
 
 This section combines the type of access and location into one aspect, since the ultimate convenience to researchers arises from a combination of the two security measures. For instance, a data provider might provide researchers with a dedicated secure laptop, which can only be used to remotely access the analysis computers and nothing else. While there may be no location restrictions imposed on the researcher, the researcher is unlikely to carry two laptops around, and this would be considered to be a de-facto **medium** security solution.
 
@@ -730,34 +687,22 @@ When **limited restrictions** are imposed, some methods might be prevented, even
 
 Analysis methods may be **highly restricted**. Restrictions can include limiting the methods available to researchers to a whitelisted set of commands or, in more extreme examples, limit researchers to the use of tabulator software that can only provide conditional tables. Most researchers will perceive this to impose strong limitations on their ability to conduct research as usual, but such methods are sometimes used to reach a wide range of users while allowing for more relaxed conditions on the rest of the Five Safes framework.
 
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;">  </th>
-   <th style="text-align:left;"> Example </th>
-  </tr>
- </thead>
+<table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Highly Restricted </td>
-   <td style="text-align:left;"> The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to employ a set of approved SAS commands. There are further limits on the number of variables and observations that can be included in analysis. </td>
+   <td style="text-align:left;"> **Example:** The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to employ a set of approved SAS commands. There are further limits on the number of variables and observations that can be included in analysis. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Limited Restrictions </td>
-   <td style="text-align:left;"> An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on-site and JoSuA systems in which certain Stata commands are censored by the system and are unavailable to researchers but broadly allows for most econometric techniques. </td>
+   <td style="text-align:left;"> **Example:** An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on-site and JoSuA systems in which certain Stata commands are censored by the system and are unavailable to researchers but broadly allows for most econometric techniques. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> Unrestricted </td>
-   <td style="text-align:left;"> [OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their DUA, to ensure safe outputs. </td>
+   <td style="text-align:left;"> **Example:** [OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their DUA, to ensure safe outputs. </td>
   </tr>
 </tbody>
 </table>
-
-<!-- |Access Security|Example| -->
-<!-- |-----|------------------------| -->
-<!-- |<span style='color: #e0f3db;'>**Highly Restricted**</span>|The [Statistics Canada Real Time Remote Access][Statistics Canada Real Time Remote Access (RTRA)] system only allows users to employ a set of approved SAS commands. There are further limits on the number of variables and observations that can be included in analysis.| -->
-<!-- |<span style='color: #a8ddb5;'>**Medium Restrictions **</span>|An example of limited restrictions on analysis methods is the [RDC-IAB][Institute for Employment Research (RDC-IAB)] on-site and JoSuA systems in which certain Stata commands are censored by the system and are unavailable to researchers but broadly allows for most econometric techniques.| -->
-<!-- |<span style='color: #43a2ca;'>**Unrestricted**</span>|[OLDA][Ohio Longitudinal Data Archive (OLDA)] is an example of unrestricted analysis methods, placing no limitations on the methods that researchers can use. OLDA relies on disclosure review, as mandated in their DUA, to ensure safe outputs.| -->
 
 ## Specific Data Access Mechanisms Along the Five Aspects 
 
