@@ -18,9 +18,7 @@ always_allow_html: true
 
 <img src="./assets/images/webcover.png" width="770" />
 
-```{=html}
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. Readers can also obtain the Handbook for free as an ebook or a printable PDF, or can purchase a printed copy, from the [Handbook's home page](https://admindatahandbook.mit.edu/).
-```
 
 ```{=latex}
 This is placeholder text for the welcome page in the PDF versio only.
