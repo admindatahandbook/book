@@ -1,2 +1,8 @@
 
 `r if (knitr::is_latex_output()) {cat("# References {-}")}`
+
+
+```{block, type='invisible'}
+Workaround for hiding end of book references for HTML
+<div id="refs"></div>
+```
