@@ -350,10 +350,6 @@ The existing literature also provides high-level guidance on numerous topics, in
 
 <!--chapter:end:01_intro.Rmd-->
 
-```{=latex}
-\mainmatter
-\setcounter{page}{1}
-```
 # (PART) Special Topics {-} 
 
 # Physically Protecting Sensitive Data {#security}
