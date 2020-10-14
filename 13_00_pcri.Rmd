@@ -77,21 +77,31 @@ PCRI's first goal is to gather data directly from the private capital firms. In 
 
 Gathering information directly from private capital firms has its own limitations. Even if every active group chose to participate, there would still be some groups that have gone out of business and no longer keep their records or would be difficult to contact. In addition, as the PCRI began collecting data from individual private capital firms, one of the major concerns raised was that it would take too long for the PCRI to get a database large enough to disguise the data to preserve anonymity. The PCRI thus realized the importance of quickly building a large foundation for the database. As a result, the Institute is complementing the data that is gathered from the private capital firms with data from commercial sources, even if it is not always of the same quality as that provided directly by the general partners.
 
-The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in [@jeng2015], which is available on the PCRI's website.
+The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in @jeng2015, which is available on the PCRI's website.
 
-```{r pcritable1,echo=FALSE}
+```{r pcritable1,echo=FALSE,results='asis'}
 #pcritable1()
+if ( knitr::is_html_output() ) {
 pcritable1.csv %>%
    kable(format.args = list(big.mark = ","),
          caption="Number of distinct private capital firms provided by source of information") %>%
-   kable_styling(font_size=12,full_width = F)  %>%
+   kable_styling(full_width = F)  %>%
     row_spec(nrow(pcritable1.csv),bold=T) %>%
-    footnote(general="As of 2015. Source: @jeng2015.")
+    footnote(general="As of 2015. Source: @jeng2015.",footnote_as_chunk = T)
+}
+
+if ( knitr::is_latex_output() ) {
+cat("\\input{./assets/pcri/pcritable1.tex}")
+}
 ```
 
-
-```{r pcrifigure1, echo=FALSE, out.width='100%', fig.cap='Overlap of private capital firms in PCRI database by source of information'}
+```{r pcrifigure1, echo=FALSE, out.width='90%', fig.cap='Overlap of private capital firms in PCRI database by source of information',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigure1web.png')
+```
+```{r pcrifigure1-tex,echo=FALSE,results='asis'}
+if ( knitr::is_latex_output() ) {
+cat("\\input{./assets/pcri/pcrifigure1.tex}")
+}
 ```
 
 ### Processing of Data Received from Data Vendors or Primary Sources (LPs or GPs)
@@ -100,11 +110,16 @@ The process of combining and cleaning the various data sources is an arduous tas
 
 The PCRI databases include data for over 17,000 private capital firms, 33,000 private capital funds, and 110,000 portfolio companies covering a time span from the early 1970s to 2018. The portfolio companies are geographically diverse with over 50 percent outside the United States, including 32 percent in Europe and 10 percent in Asia [@jeng2015]. The PCRI database contains eight different data tables: company, deal, exit, fund, fund performance, fund quarterly cash flow, general partner (GP), and investment. See Appendix A for more information on the database. Figure \@ref(fig:pcrifigure2) below provides details on the tables, including the variables in each data table and the relationship between the tables. For more information on the PCRI databases, please see the data user manual available on the [PCRI website](http://privatecapitalresearchinstitute.org/images/news/pcri_manual_2\_4.pdf).
 
-```{r pcrifigure2, echo=FALSE, out.width='100%', fig.cap='Table relationship diagram'}
+```{r pcrifigure2, echo=FALSE, out.width='100%', fig.cap='Table relationship diagram of PCRI database',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigure2web.png')
 ```
+```{r pcrifigure2-tex,echo=FALSE,results='asis'}
+if ( knitr::is_latex_output() ) {
+cat("\\input{./assets/pcri/pcrifigure2.tex}")
+}
+```
 
-The PCRI, has developed an +internal_data_processing_system| that is used as a training guide for new research associates. The PCRI database is a relational database. When new data are received from either a commercial vendor or a private capital firm, the new data are separated into variables and put in a consistent format to be read in by Stata. Various rudimentary tabl­es are created that correspond to tables in the PCRI database (e.g., investment, exit, GP, fund). For each data item in a table, the PCRI then identifies a key that is a unique identifier specific to a data provider. This key is then mapped to a unique identifier for each unique observation within that table (the source ID). This process, whereby the key of the data provider is mapped to a source ID, is referred to as +local_aliasing|. These newly created source IDs are then mapped to a unique identifier within the larger PCRI database (the ID). This process is called +global_aliasing|. The +global_aliasing_file| contains the unique identifier-name-source link.
+The PCRI has developed an internal data processing system that is used as a training guide for new research associates. The PCRI database is a relational database. When new data are received from either a commercial vendor or a private capital firm, the new data are separated into variables and put in a consistent format to be read in by Stata. Various rudimentary tabl­es are created that correspond to tables in the PCRI database (e.g., investment, exit, GP, fund). For each data item in a table, the PCRI then identifies a key that is a unique identifier specific to a data provider. This key is then mapped to a unique identifier for each unique observation within that table (the source ID). This process, whereby the key of the data provider is mapped to a source ID, is referred to as +local_aliasing|. These newly created source IDs are then mapped to a unique identifier within the larger PCRI database (the ID). This process is called +global_aliasing|. The +global_aliasing_file| contains the unique identifier-name-source link.
 
 Once this step is complete, all variables are processed in Stata to match existing codes in the PCRI database. For instance, country names are standardized to match the PCRI standard names in the supplemental tables (e.g., *Fr* would be converted to "France").
 
@@ -131,16 +146,21 @@ Based on consultation with academics interested in +CoIs| and colleagues at the 
 
 As seen in Table \@ref(tab:pcritable2) below, the vast majority (82 percent) of companies in the database are registered in Delaware, which has been the focus of most of our efforts. To obtain documents for corporations registered in Delaware, order forms must be filled out and submitted online. Delaware charges US\$10 for the first page of a document and US\$2 for each additional page. On average, one document costs around US\$30 dollars, but sometimes a single document could cost up to hundreds of dollars. On average, the total cost to obtain all the documents for one company is approximately US\$125. In the case of Delaware, a hard copy of a +CoI| arrives within several weeks of submitting a request.
 
-|State|Percentage|
-|:------------------------:|:------------------------:|
-| Delaware | 82.0% |
-| California | 10.0% |
-| Georgia | 1.0% |
-| Washington | 1.0%|
-| Texas | 0.7% |
-| Colorado | 0.7% |
-| Other States | 4.6% |
-Table: (\#tab:pcritable2) Breakdown of state of incorporation of the 622 venture-backed portfolio companies
+
+```{r pcritable2,echo=FALSE,results='asis'}
+if ( knitr::is_html_output() ) {
+pcritable2.csv %>%
+   kable(format.args = list(big.mark = ","),
+         caption="Breakdown of state of incorporation of the 622 venture-backed portfolio companies") %>%
+   kable_styling(full_width = F)  %>%
+    row_spec(nrow(pcritable2.csv),bold=T) 
+}
+
+if ( knitr::is_latex_output() ) {
+cat("\\input{./assets/pcri/pcritable2.tex}")
+}
+```
+
 
 Other states, such as New York, accept orders by mail. In the case of New York, a form must be filled out for each request. The cost is US\$5 for each plain copy of a document. Processing takes ten to twelve business days, not including shipping, and the copies are sent thereafter. For an unusually large order, arrangements can be made in advance, but the work is still performed on a first-come, first-serve basis. For other states, the +CoIs| are usually available online for no cost. Thus, the PCRI can access the business entity database for those states (e.g., California and Massachusetts) and download copies of the documents.
 
@@ -158,11 +178,14 @@ The PCRI is an independent non-profit organization, which seeks to provide a gre
 
 ### Legal Context for Data Use
 
-One of the biggest challenges faced in the data collection effort was creating a standardized +licensing_agreement| for all data sources, in particular for the private capital firms. By working closely with the PCRI's lawyers at Debevoise & Plimpton and a few prominent private capital firms, a standardized licensing agreement was developed. The agreement not only allowed the PCRI to obtain, use, and administer highly confidential data but also alleviated the major concerns (i.e., confidentiality and data security) of the private capital firms. The authors highlight some of the chief features of the Private Equity Sponsor Data Agreement (see Appendix B for the draft agreement). First, the data licensing agreement grants the PCRI a royalty-free, non-transferable license. Second, the PCRI is permitted to receive, store, reproduce, and combine the data. Third, since the PCRI is a project run by academics and for academics, the PCRI database is to be used exclusively for academic research rather than for any commercial purpose. In accordance with the licensing agreement, the PCRI carefully reviews research_proposals and monitors output files to ensure that data are being used appropriately. Additionally, as a primary objective of the PCRI is to promote unbiased, academic research, the licensing agreement mandates that the +data_sponsors| would not be able to limit the areas of academic research. However, under the licensing agreement, data sponsors can obtain a preview of working papers and are also given the option to be acknowledged for their contribution to the PCRI research effort. Lastly, the licensing agreement allows either party to terminate the agreement.
+One of the biggest challenges faced in the data collection effort was creating a standardized +licensing_agreement| for all data sources, in particular for the private capital firms. By working closely with the PCRI's lawyers at Debevoise & Plimpton and a few prominent private capital firms, a standardized licensing agreement was developed. The agreement not only allowed the PCRI to obtain, use, and administer highly confidential data but also alleviated the major concerns (i.e., confidentiality and data security) of the private capital firms. The authors highlight some of the chief features of the Private Equity Sponsor  
+`r if ( knitr::is_html_output() ) {knitr::raw_html("Data Agreement (see Appendix B for the draft agreement).")}` 
+`r if ( knitr::is_latex_output() ) {knitr::raw_latex("Data Agreement.\\footnote{A sample agreement can be found in the Online Appendix.}")}` 
+First, the data licensing agreement grants the PCRI a royalty-free, non-transferable license. Second, the PCRI is permitted to receive, store, reproduce, and combine the data. Third, since the PCRI is a project run by academics and for academics, the PCRI database is to be used exclusively for academic research rather than for any commercial purpose. In accordance with the licensing agreement, the PCRI carefully reviews research_proposals and monitors output files to ensure that data are being used appropriately. Additionally, as a primary objective of the PCRI is to promote unbiased, academic research, the licensing agreement mandates that the +data_sponsors| would not be able to limit the areas of academic research. However, under the licensing agreement, data sponsors can obtain a preview of working papers and are also given the option to be acknowledged for their contribution to the PCRI research effort. Lastly, the licensing agreement allows either party to terminate the agreement.
 
 In cases where data disclosure harms from data sponsors, liability issues were a major source of discussion in the creation of this +licensing_agreement|. Given the limited resources of the PCRI, the licensing agreement puts a cap on PCRI's liability at US\$1,000, which only applies in cases not resulting from gross negligence, strict liability, fraud, misconduct, or misrepresentation on the part of PCRI. In such cases, there would be no liability cap. Also, the PCRI agrees not to bring any claims against any of the +data_sponsors|.
 
-While the PCRI has been successful with private equity groups, venture capital organizations have been much more resistant to sharing information. Thus, with a grant from the Alfred P. Sloan Foundation, the PCRI is taking an alternative approach to obtain information for researchers to understand venture capital activity. As mentioned previously in the "Motivation and Background" section, the Institute has been developing a compilation (and an associated taxonomy) of +CoIs| over the past two years. Extremely detailed information on venture capital transactions is available in CoIs, which are typically compiled by regulators in the state of the firms' incorporation. These corporate filings include important details on deal structure (i.e., the capital structure and key terms) as well as important valuation information. While this information is publicly available, the costs to obtain these documents are prohibitively expensive. For example, in some locations, a request for these documents must be made in person, and US\$1.00 to US\$2.00 is charged per page. As a parallel process, the PCRI is working to create a data set containing the twenty to thirty (see Appendix C for a sample list of variables) most critical variables contained in these documents.
+While the PCRI has been successful with private equity groups, venture capital organizations have been much more resistant to sharing information. Thus, with a grant from the Alfred P. Sloan Foundation, the PCRI is taking an alternative approach to obtain information for researchers to understand venture capital activity. As mentioned previously in the "Motivation and Background" section, the Institute has been developing a compilation (and an associated taxonomy) of +CoIs| over the past two years. Extremely detailed information on venture capital transactions is available in CoIs, which are typically compiled by regulators in the state of the firms' incorporation. These corporate filings include important details on deal structure (i.e., the capital structure and key terms) as well as important valuation information. While this information is publicly available, the costs to obtain these documents are prohibitively expensive. For example, in some locations, a request for these documents must be made in person, and US\$1.00 to US\$2.00 is charged per page. As a parallel process, the PCRI is working to create a data set containing the twenty to thirty `r if ( knitr::is_html_output() ) {knitr::raw_html("(see Appendix C for a sample list of variables)")}`  most critical variables contained in these documents.
 
 ### Collaboration with the Census Bureau
 
