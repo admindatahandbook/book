@@ -10,7 +10,11 @@ pcritable1.csv <- read_delim("./assets/pcri/pcri-vendors.csv",
 pcritable2.csv <- read_delim("./assets/pcri/pcri-by-state.csv", 
                                ";", escape_double = FALSE, trim_ws = TRUE)
 pcritablea1.csv <- read_delim("./assets/pcri/pcri-tablea1.csv", 
-                               ";", escape_double = FALSE, trim_ws = TRUE)
+                              ";", escape_double = FALSE, trim_ws = TRUE)
+pcritablea2.csv <- read_delim("./assets/pcri/pcri-tablea2.csv", 
+                              ";", escape_double = FALSE, trim_ws = TRUE)
+pcritablea3.csv <- read_delim("./assets/pcri/pcri-tablea3.csv", 
+                              ";", escape_double = FALSE, trim_ws = TRUE)
 
 
 
