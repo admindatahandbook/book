@@ -3,6 +3,8 @@
 set -ev
 LATEX=pdflatex
 FILE=test_book
+OUTFILE=handbook_color_$(date +%F).pdf
+OUTFILEBW=handbook_bw_$(date +%F).pdf
 
 cd $(dirname $0)
 
@@ -61,6 +63,8 @@ $LATEX ${FILE}.tex > _tex.log 2>&1
 if [ -f ${FILE}.pdf ]
 then
   echo "Success."
-  mv ${FILE}.pdf handbook_$(date +%F).pdf
+  mv ${FILE}.pdf ${OUTFILE}
+  # convert to greyscale
+  programs/pdf_to_grayscale.sh -i ${OUTFILE} -o ${OUTFILEBW}
 fi
 
