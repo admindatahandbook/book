@@ -2,15 +2,16 @@
 
 ```{r, echo=FALSE, results='asis'}
 printauthor("pcri")
+source("./programs/_plot_pcri.R")
 ```
 
 ## Summary
 
 The Private Capital Research Institute (PCRI) is a non-profit corporation that seeks to understand the fundamental economics of private capital.[^pcri2] A wide variety of forms of private capital are examined, including angel investors, venture capital and private equity organizations, and public providers of private capital (e.g., sovereign wealth funds).
 
-The PCRI grew out of a multi-year research initiative sponsored by the World Economic Forum that studied the economic impact of private equity [@gurung2008].[^pcri3] The PCRI received initial support from the Ewing Marion Kauffman Foundation and continues to be funded through grants and strategic relationships.
+The PCRI grew out of a multi-year research initiative sponsored by the World Economic Forum that studied the economic impact of private equity.[^pcri3] The PCRI received initial support from the Ewing Marion Kauffman Foundation and continues to be funded through grants and strategic relationships.
 
-The principal activities of the PCRI are (a) build data sets related to private capital that can be made available to researchers for analysis (See Appendix A for the PCRI database summary information), (b) build up a community of scholars and sponsor independent academic research on the nature and effects of private capital, and (c) disseminate the findings of this research to policymakers and the public at large to foster deeper understanding of the role that private capital plays in the economy and society.
+The principal activities of the PCRI are (a) build data sets related to private capital that can be made available to researchers for analysis[^pcri3b], (b) build up a community of scholars and sponsor independent academic research on the nature and effects of private capital, and (c) disseminate the findings of this research to policymakers and the public at large to foster deeper understanding of the role that private capital plays in the economy and society.
 
 The PCRI collects data from commercial data vendors as well as the private equity firms themselves. In addition, the PCRI collects data from primary sources, such as publicly available filings. One of the more recent projects is the gathering of public filings called +Certificates_of_Incorporation| (CoIs) from states of incorporation.
 
@@ -28,7 +29,7 @@ This growth has, in turn, raised questions about the consequences of these inves
 
 Although the global economy and individual investors are increasingly dependent on private capital, much remains poorly understood about these investments. A salient aspect of private capital is that it is indeed private. Traditionally, the general partners (GPs) who manage these funds have not disclosed much information to the United States Securities and Exchange Commission, other regulators, or even to their own investors (limited partners, or LPs). A shortage of reliable industry data leads to an unappealing setting where industry advocates make sweeping claims about the benefits and critics make broad charges on very shaky empirical foundations [@kaplan2017].
 
-This lack of transparency has led to two important barriers to private capital research. First, there have been barriers to entry: it has been difficult for academic researchers, graduate students and junior faculty, to get access to these records. Second, much of the research has been undertaken using commercial databases (most notably, Thomson Reuters, which has a licensing program, and Burgiss, which has made its data available to the [Private Equity Research Consortium](http://uncipc.org/index.php/initiativecat/private-equity/) based at the University of North Carolina at Chapel Hill) or else using data provided to researchers directly by limited and general partners on a one-off basis (e.g., @gompers1997).
+This lack of transparency has led to two important barriers to private capital research. First, there have been barriers to entry: it has been difficult for academic researchers, graduate students and junior faculty, to get access to these records. Second, much of the research has been undertaken using commercial databases (most notably, Thomson Reuters, which has a licensing program, and Burgiss, which has made its data available to the [Private Equity Research Consortium](http://uncipc.org/index.php/initiativecat/private-equity/) based at the University of North Carolina at Chapel Hill) or else using data provided to researchers directly by limited and general partners on a one-off basis [e.g., @gompers1997].
 
 It is typically difficult to compare any but the basic facts about the various commercial databases, as these databases draw from different sources, some of which may be proprietary.[^pcri1] As a result, there are contradictory findings on a number of important topics, such as the risk-adjusted performance of private equity and the extent of persistence of performance of funds: the differences in results appear to be at least in part a function of the differences between databases. On the former topic, see @korteweg2019; on the latter, see @braun2017, @harris2014, and @korteweg2015. These issues are akin to the more general issues of access to private data raised by the American Economic Association's Committee on Economic Statistics.[^pcri5]
 
@@ -78,15 +79,15 @@ Gathering information directly from private capital firms has its own limitation
 
 The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in [@jeng2015], which is available on the PCRI's website.
 
-
-|Vendor|Number of Distinct private Capital Firms|
-|:------------------------:|:------------------------:|
-|EMPEA|2,964|
-|NYPPEX|6,100|
-|Thomson Reuters|11,491|
-|Unquote|5,291|
-|**PCRI Unique**|**17,633**|
-Table: (\#tab:pcritable1) Number of distinct private capital firms provided by source of information[^pcri9]
+```{r pcritable1,echo=FALSE}
+#pcritable1()
+pcritable1.csv %>%
+   kable(format.args = list(big.mark = ","),
+         caption="Number of distinct private capital firms provided by source of information") %>%
+   kable_styling(font_size=12,full_width = F)  %>%
+    row_spec(nrow(pcritable1.csv),bold=T) %>%
+    footnote(general="As of 2015. Source: @jeng2015.")
+```
 
 
 ```{r pcrifigure1, echo=FALSE, out.width='100%', fig.cap='Overlap of private capital firms in PCRI database by source of information'}
@@ -273,21 +274,23 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 [^pcri2]: The PCRI is a non-profit corporation devoted exclusively for charitable purposes within the meaning of Section 501 (c)(3) of the Internal Revenue Code of 1986 as amended.
 
-[^pcri3]: This work was collected in Anuradha Gurung and Josh Lerner, editors, [@gurung2008].
+[^pcri3]: This work was collected in Anuradha Gurung and Josh Lerner, editors [-@gurung2008].
+
+[^pcri3b]: See  Appendix A for summary information on the PCRI database.
 
 [^pcri4]: See Section 3. Among other things, this ECB Guidance states that "Underwriting of transactions presenting high levels of leverage ... should remain exceptional ... and trigger a referral to the highest level of credit committee or similar decision-making level."
 
-[^pcri5]: The American Economic Association's [March 2020 report](https://www.aeaweb.org/content/file?id=11794) illustrates some of these points.
+[^pcri5]: The American Economic Association's Committee on Economic Statistics issued a report in March 2020 illustrating some of these points [@aeaces2020].
 
-[^pcri6]: In 2013, the Private Equity Growth Capital Council [@privateequitygrowthcapitalcouncil2013] reported that 2,800 private equity firms were headquartered in the US investing in buyout, growth equity, infrastructure, and energy funds. Over the same time period, the PCRI database has recorded 1,600 US private capital firms that solely invest in buyouts. In addition, the National Venture Capital Association reported 874 US venture capital firms were in existence in 2013 with 1,331 VC funds and US\$192.9 billion under management. By comparison, for 2013, the PCRI database has 2,082 US venture capital firms seeking investments. Some of the differences between the PCRI database and the reports can be explained by different firm-type classifications (for example, it is challenging to distinguish growth equity firms, which are often classified as venture capital), as well as the fact that the PCRI is missing firm type for about 30 percent of the data [@jeng2015].
+[^pcri6]: The Private Equity Growth Capital Council [-@privateequitygrowthcapitalcouncil2013] reported that 2,800 private equity firms were headquartered in the US investing in buyout, growth equity, infrastructure, and energy funds. Over the same time period, the PCRI database has recorded 1,600 US private capital firms that solely invest in buyouts. In addition, the National Venture Capital Association reported 874 US venture capital firms were in existence in 2013 with 1,331 VC funds and US\$192.9 billion under management. By comparison, for 2013, the PCRI database has 2,082 US venture capital firms seeking investments. Some of the differences between the PCRI database and the reports can be explained by different firm-type classifications (for example, it is challenging to distinguish growth equity firms, which are often classified as venture capital), as well as the fact that the PCRI is missing firm type for about 30 percent of the data [@jeng2015].
 
 [^pcri7]: For research reports, see <https://sites.tufts.edu/digitalplanet/>, accessed on 06-21-2020.
 
-[^pcri8]: PCRI focuses on the four original sources: EMPEA, Alternatives, Refinitiv, and Unquote. Start-up Nation Central and Venture Intelligence were added later and represent a small fraction of the total database.
+[^pcri8]: PCRI focuses on the four original sources: EMPEA, Alternatives, Refinitiv, and Unquote. Start-up Nation Central and Venture Intelligence were added later and represent a small fraction of the total database. 
 
-[^pcri9]: As of 2015. [@jeng2015]
 
-[^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190. [@jeng2015]
+
+[^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190 [@jeng2015].
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
@@ -297,6 +300,7 @@ This is a workaround for citations in footnotes, please ignore.
 @maats2011
 @kaplan2017
 @gurung2008
+@aeaces2020
 ```
 
 \putbib
