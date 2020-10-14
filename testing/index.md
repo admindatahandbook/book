@@ -5648,16 +5648,9 @@ Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
 
 <!--chapter:end:98_00_licenses.Rmd-->
 
+# References {-}
 
-
-
-
-<div class="invisible">
-Workaround for hiding end of book references for HTML
-<div id="refs">
-
-</div>
-</div>
+<!--  -->
 
 <!--chapter:end:99_00_references.Rmd-->
 
