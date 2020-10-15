@@ -83,7 +83,7 @@ function toggleCitation() {
     citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
   } else {
     x.style.display = "none";
-    button.innerHTML = "Cite this chapter";
+    button.innerHTML = "Show citation to this chapter";
   }
 } 
 
@@ -284,6 +284,7 @@ function toggleCitation() {
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
 <li class="chapter">Individual chapters ©️ by their authors.</li>
@@ -312,7 +313,7 @@ function toggleCitation() {
 <em>Lars Vilhuber (Cornell University)</em><br />
 
 <div id="citationLink">
-<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a>
 </div>
 <div id="myCitation" style="display: none;">
 Ian M. Schmutte, and Lars Vilhuber. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
@@ -330,7 +331,7 @@ Ian M. Schmutte, and Lars Vilhuber. 2020. “<span id="chapTitle">Title</span>.�
 <p>The key concepts are privacy and confidentiality. Privacy can be viewed, in this context, as the right to restrict others’ access to personal information, whether through query or through observation <span class="citation">(Hirshleifer <a href="#ref-hirshleifer_privacy_1980" role="doc-biblioref">1980</a>)</span>. Confidentiality pertains to data that have already been collected and describes the principle that the data should not be used in ways that could harm the persons that provided their information.</p>
 
 <div class="bbox">
-For example, Ann, who is asked to participate in a study about health behaviors, has a <em>privacy</em> right to refuse to answer a question about smoking. If she does answer the question, it would breach <em>confidentiality</em> if her response was then used by an insurance company to adjust her premiums <span class="citation">(Duncan, Jabine, and Wolf <a href="#ref-duncan_private_1993" role="doc-biblioref">1993</a>)</span>.
+For example, Ann, who is asked to participate in a study about health behaviors, has a <em>privacy</em> right to refuse to answer a question about smoking. If she does answer the question, it would breach <em>confidentiality</em> if her response was then used by an insurance company to adjust her premiums <span class="citation">(Duncan, Jabine, and de Wolf <a href="#ref-duncan_private_1993" role="doc-biblioref">1993</a>)</span>.
 </div>
 
 <p><span class="citation">Harris-Kojetin et al. (<a href="#ref-harris-kojetin_statistical_2005" role="doc-biblioref">2005</a>)</span> define disclosure as the “inappropriate attribution of information to a data subject, whether an individual or an organization” <span class="citation">(Harris-Kojetin et al. <a href="#ref-harris-kojetin_statistical_2005" role="doc-biblioref">2005</a>, 4)</span>. They proceed to describe three different types of disclosure. An <em>identity disclosure</em> is one where it is possible to learn that a particular record or data item belongs to a particular participant (individual or organization). An <em>attribute disclosure</em> happens if publication of the data reveals an attribute of a participant. Note that an <em>identity disclosure</em> necessarily entails <em>attribute disclosure</em>, but the reverse is not the case.</p>
@@ -903,7 +904,7 @@ No
 <p>Abowd, John, and Ian M. Schmutte. 2015. “Economic Analysis and Statistical Disclosure Limitation.” <em>Brookings Papers on Economic Activity</em>, 221–67. <a href="https://doi.org/10.1353/eca.2016.0004">https://doi.org/10.1353/eca.2016.0004</a>.</p>
 </div>
 <div id="ref-black_6_2020">
-<p>Black, Kate, Gretchen A. Ramos, and Giovanni Biscardi. 2020. “6 Months Until Brazil’s LGPD Takes Effect – Are You Ready?” <em>The National Law Review</em>, March. <a href="https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready">https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready</a>.</p>
+<p>Black, Kate, Gretchen A. Ramos, and Giovanni Biscardi. 2020. “6 Months Until Brazil’s LGPD Takes Effect Are You Ready?” <em>The National Law Review</em>, March. <a href="https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready">https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready</a>.</p>
 </div>
 <div id="ref-burkhauser_estimating_2011">
 <p>Burkhauser, Richard V., Shuaizhang Feng, Stephen P. Jenkins, and Jeff Larrimore. 2011. “Estimating Trends in US Income Inequality Using the Current Population Survey: The Importance of Controlling for Censoring.” <em>The Journal of Economic Inequality</em> 9 (3): 393–415. <a href="https://doi.org/10.1007/s10888-010-9131-6">https://doi.org/10.1007/s10888-010-9131-6</a>.</p>
@@ -927,13 +928,13 @@ No
 <p>Dalenius, Tore. 1977. “Towards a Methodology for Statistical Disclosure Control.” <em>Statistik Tidskrift</em> 15: 429–44.</p>
 </div>
 <div id="ref-department_of_health_and_human_services_methods_2012">
-<p>Department of Health and Human Services. 2012. “Methods for de-Identification of PHI.” <em>HHS.gov</em>, September. <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html">https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html</a>.</p>
+<p>Department of Health and Human Services. 2012. “Methods for de-Identification of PHI.” Text. <em>HHS.gov</em>, September. <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html">https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html</a>.</p>
 </div>
 <div id="ref-desai2016">
 <p>Desai, Tanvi, Felix Ritchie, and Richard Welpton. 2016. “Five Safes: Designing Data Access for Research.” University of the West of England. <a href="https://uwe-repository.worktribe.com/output/914745">https://uwe-repository.worktribe.com/output/914745</a>.</p>
 </div>
 <div id="ref-de_wolf_-argus_2018">
-<p>De Wolf, Peter-Paul. 2018. “Τ-ARGUS.” [software]. <a href="http://research.cbs.nl/casc/tau.htm">http://research.cbs.nl/casc/tau.htm</a>.</p>
+<p>De Wolf, Peter-Paul. 2018. “<span class="math inline">\(\tau\)</span>-ARGUS.” [Software]. <a href="http://research.cbs.nl/casc/tau.htm">http://research.cbs.nl/casc/tau.htm</a>.</p>
 </div>
 <div id="ref-drechsler_synthetic_2011">
 <p>Drechsler, Jörg. 2011. <em>Synthetic Datasets for Statistical Disclosure Control: Theory and Implementation</em>. Lecture Notes in Statistics. New York: Springer-Verlag. <a href="https://doi.org/10.1007/978-1-4614-0326-5">https://doi.org/10.1007/978-1-4614-0326-5</a>.</p>
@@ -963,7 +964,7 @@ No
 <p>Fellegi, I. P. 1972. “On the Question of Statistical Confidentiality.” <em>Journal of the American Statistical Association</em> 67 (337): 7–18. <a href="https://doi.org/10.2307/2284695">https://doi.org/10.2307/2284695</a>.</p>
 </div>
 <div id="ref-garfinkel_-identification_2015">
-<p>Garfinkel, Simson. 2015. “De-Identification of Personal Information.” Internal Report 8053. National Institute of Standards; Technology. <a href="https://doi.org/10.6028/nist.ir.8053">https://doi.org/10.6028/nist.ir.8053</a>.</p>
+<p>Garfinkel, Simson. 2015. “De-Identification of Personal Information.” Internal Report 8053. National Institute of Standards and Technology. <a href="https://doi.org/10.6028/nist.ir.8053">https://doi.org/10.6028/nist.ir.8053</a>.</p>
 </div>
 <div id="ref-goroff_balancing_2015">
 <p>Goroff, D. L. 2015. “Balancing Privacy Versus Accuracy in Research Protocols.” <em>Science</em> 347 (6221): 479–80. <a href="https://doi.org/10.1126/science.aaa3483">https://doi.org/10.1126/science.aaa3483</a>.</p>
@@ -987,7 +988,7 @@ No
 <p>Hsu, Justin, Marco Gaboardi, Andreas Haeberlen, Sanjeev Khanna, Arjun Narayan, Benjamin C. Pierce, and Aaron Roth. 2014. “Differential Privacy: An Economic Method for Choosing Epsilon.” <em>2014 IEEE 27th Computer Security Foundations Symposium</em>, July, 398–410. <a href="https://doi.org/10.1109/CSF.2014.35">https://doi.org/10.1109/CSF.2014.35</a>.</p>
 </div>
 <div id="ref-hundepool_-argus_2018">
-<p>Hundepool, Anco, and Ramya Ramaswamy. 2018. “Μ-ARGUS.” [software]. <a href="http://research.cbs.nl/casc/mu.htm">http://research.cbs.nl/casc/mu.htm</a>.</p>
+<p>Hundepool, Anco, and Ramya Ramaswamy. 2018. “<span class="math inline">\(\mu\)</span>-ARGUS.” [Software]. <a href="http://research.cbs.nl/casc/mu.htm">http://research.cbs.nl/casc/mu.htm</a>.</p>
 </div>
 <div id="ref-hundepool_argus_1998">
 <p>Hundepool, Anco, and Leon Willenborg. 1998. “ARGUS, Software Packages for Statistical Disclosure Control.” In <em>COMPSTAT</em>, edited by Roger Payne and Peter Green, 341–45. Heidelberg: Physica-Verlag HD. <a href="https://doi.org/10.1007/978-3-662-01131-7_45">https://doi.org/10.1007/978-3-662-01131-7_45</a>.</p>
@@ -996,13 +997,13 @@ No
 <p>ICPSR. 2020. “Disclosure Risk Worksheet.” Document 156095. University of Michigan. <a href="http://hdl.handle.net/2027.42/156095">http://hdl.handle.net/2027.42/156095</a>.</p>
 </div>
 <div id="ref-innovations_for_poverty_action_povertyactionpii_detection_2020">
-<p>Innovations for Poverty Action. 2020. “PovertyAction/PII_detection.” <a href="https://github.com/PovertyAction/PII_detection">https://github.com/PovertyAction/PII_detection</a>.</p>
+<p>Innovations for Poverty Action. 2020. “PovertyAction/PII_detection.” Innovations for Poverty Action. <a href="https://github.com/PovertyAction/PII_detection">https://github.com/PovertyAction/PII_detection</a>.</p>
 </div>
 <div id="ref-j-pal_j-palpii-scan_2020">
-<p>J-PAL. 2020a. “J-PAL/PII-Scan.” <a href="https://github.com/J-PAL/PII-Scan">https://github.com/J-PAL/PII-Scan</a>.</p>
+<p>J-PAL. 2020a. “J-PAL/PII-Scan.” The Abdul Latif Jameel Poverty Action Lab. <a href="https://github.com/J-PAL/PII-Scan">https://github.com/J-PAL/PII-Scan</a>.</p>
 </div>
 <div id="ref-j-pal_j-palstata_pii_scan_2020">
-<p>J-PAL. 2020b. “J-PAL/Stata_PII_scan.” <a href="https://github.com/J-PAL/stata_PII_scan">https://github.com/J-PAL/stata_PII_scan</a>.</p>
+<p>J-PAL. 2020b. “J-PAL/Stata_PII_scan.” The Abdul Latif Jameel Poverty Action Lab. <a href="https://github.com/J-PAL/stata_PII_scan">https://github.com/J-PAL/stata_PII_scan</a>.</p>
 </div>
 <div id="ref-kennickell_multiple_1998">
 <p>Kennickell, A B. 1998. “Multiple Imputation in the Survey of Consumer Finances.” In <em>Proceedings of the Section on Survey Research</em>. <a href="https://www.federalreserve.%20gov/econresdata/scf/files/impute98.pdf">https://www.federalreserve. gov/econresdata/scf/files/impute98.pdf</a>.</p>
@@ -1083,7 +1084,7 @@ No
 <p>U.S. Department of Health &amp; Human Services. n.d. “Health Information Privacy.” Accessed June 23, 2020. <a href="https://www.hhs.gov/hipaa/index.html">https://www.hhs.gov/hipaa/index.html</a>.</p>
 </div>
 <div id="ref-woo_global_2009">
-<p>Woo, M., J. P. Reiter, A. Oganian, and A. F. Karr. 2009. “Global Measures of Data Utility for Microdata Masked for Disclosure Limitation.” <em>Privacy and Confidentiality</em> 1 (1): 111–24. <a href="http://repository.cmu.edu/cgi/viewcontent.cgi?article=1006&amp;context=jpc">http://repository.cmu.edu/cgi/viewcontent.cgi?article=1006&amp;context=jpc</a>.</p>
+<p>Woo, M., J. P. Reiter, A. Oganian, and A. F. Karr. 2009. “Global Measures of Data Utility for Microdata Masked for Disclosure Limitation.” <em>Privacy and Confidentiality</em> 1 (1): 111–24. <a href="http://repository.cmu.edu/cgi/viewcontent.cgi?article=1006\&amp;context=jpc">http://repository.cmu.edu/cgi/viewcontent.cgi?article=1006\&amp;context=jpc</a>.</p>
 </div>
 <div id="ref-world_bank_dime_nodate">
 <p>World Bank. n.d. “DIME Wiki: De-Identification.” Accessed August 8, 2020. <a href="https://dimewiki.worldbank.org/wiki/De-identification">https://dimewiki.worldbank.org/wiki/De-identification</a>.</p>

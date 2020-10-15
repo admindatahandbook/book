@@ -83,7 +83,7 @@ function toggleCitation() {
     citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
   } else {
     x.style.display = "none";
-    button.innerHTML = "Cite this chapter";
+    button.innerHTML = "Show citation to this chapter";
   }
 } 
 
@@ -284,6 +284,7 @@ function toggleCitation() {
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
 <li class="chapter">Individual chapters ©️ by their authors.</li>
@@ -314,7 +315,7 @@ function toggleCitation() {
 <em>Lars Vilhuber (Cornell University)</em><br />
 
 <div id="citationLink">
-<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a>
 </div>
 <div id="myCitation" style="display: none;">
 Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
@@ -640,10 +641,9 @@ Figure 1.2: Diversity of data or data providers and diversity of users
 <p>The existing literature also provides high-level guidance on numerous topics, including the following: methods to transparently select and authorize access applications at scale and to evaluate whether researchers are trustworthy (for a new approach, see <span class="citation">Levenstein, Tyler, and Davidson Bleckman (<a href="#ref-levenstein2018" role="doc-biblioref">2018</a>)</span>); data use agreements that fit within the broader legal framework <span class="citation">(some limited guidance provided by Kanous and Brock <a href="#ref-kanous2015" role="doc-biblioref">2015</a>; Kuchinke et al. <a href="#ref-kuchinke2016" role="doc-biblioref">2016</a>; Alter and Gonzalez <a href="#ref-alter2018" role="doc-biblioref">2018</a>)</span>; access modalities such as providing a secure computing infrastructure with local or remote access <span class="citation">(Weinberg et al. <a href="#ref-weinberg2007" role="doc-biblioref">2007</a>; Vilhuber <a href="#ref-vilhuber2013" role="doc-biblioref">2013</a>, <a href="#ref-vilhuber2017" role="doc-biblioref">2017</a>)</span>; tools to apply statistical disclosure limitation to the output of analysis conducted using the organization’s data <span class="citation">(F. Liu <a href="#ref-liu2020" role="doc-biblioref">2020</a><a href="#ref-liu2020" role="doc-biblioref">a</a>; Dupriez and Boyko <a href="#ref-dupriez2010" role="doc-biblioref">2010</a><a href="#ref-dupriez2010" role="doc-biblioref">a</a>; G. T. Duncan, Elliot, and Salazar-González <a href="#ref-duncan2011" role="doc-biblioref">2011</a><a href="#ref-duncan2011" role="doc-biblioref">a</a>)</span>; complementary data publication mechanisms such as public-use or scientific-use data <span class="citation">(Bujnowska <a href="#ref-bujnowska2019" role="doc-biblioref">2019</a>)</span>; and how to publish information on and access modalities for confidential data <span class="citation">(John M. Abowd, Vilhuber, and Block <a href="#ref-abowd2012" role="doc-biblioref">2012</a>)</span>.</p>
 <div class="invisible">
 <p>
-This is a workaround for citations in footnotes, please ignore. <span class="citation"><span class="citation">Australian Bureau of Statistics (<a href="#ref-australianbureauofstatistics2017" role="doc-biblioref">2017</a>)</span></span> <span class="citation"><span class="citation">Statistics Canada (<a href="#ref-statisticscanada2018" role="doc-biblioref">2018</a><a href="#ref-statisticscanada2018" role="doc-biblioref">b</a>)</span></span> <span class="citation"><span class="citation">BC Ministry of Citizens Services (<a href="#ref-bcministryofcitizensservices" role="doc-biblioref">n.d.</a>)</span></span> <span class="citation"><span class="citation">Altman et al. (<a href="#ref-altman2015" role="doc-biblioref">2015</a>)</span></span>
+This is a workaround for citations in footnotes, please ignore. <span class="citation"><span class="citation">Australian Bureau of Statistics (<a href="#ref-australianbureauofstatistics2017" role="doc-biblioref">2017</a>)</span></span> <span class="citation"><span class="citation">Statistics Canada (<a href="#ref-statisticscanada2018" role="doc-biblioref">2018</a><a href="#ref-statisticscanada2018" role="doc-biblioref">a</a>)</span></span> <span class="citation"><span class="citation">BC Ministry of Citizens Services (<a href="#ref-bcministryofcitizensservices" role="doc-biblioref">n.d.</a>)</span></span> <span class="citation"><span class="citation">Altman et al. (<a href="#ref-altman2015" role="doc-biblioref">2015</a>)</span></span>
 </p>
 </div>
-
 
 
 </div>
@@ -666,13 +666,13 @@ This is a workaround for citations in footnotes, please ignore. <span class="cit
 <p>Altman, Micah, Alexandra Wood, David O’Brien, Salil Vadhan, and Urs Gasser. 2015. “Towards a Modern Approach to Privacy-Aware Government Data Releases.” <em>Berkeley Technology and Law Journal</em> 1967. <a href="https://doi.org/10.2139/ssrn.2779266">https://doi.org/10.2139/ssrn.2779266</a>.</p>
 </div>
 <div id="ref-australianbureauofstatistics2017">
-<p>Australian Bureau of Statistics. 2017. “Managing the Risk of Disclosure: The Five Safes Framework.” Report 1160.0. <a href="https://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1160.0Main%20Features4Aug%202017">https://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1160.0Main%20Features4Aug%202017</a>.</p>
+<p>Australian Bureau of Statistics. 2017. “Managing the Risk of Disclosure: The Five Safes Framework.” Report 1160.0. c=AU; o=Commonwealth of Australia; ou=Australian Bureau of Statistics. <a href="https://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1160.0Main\%20Features4Aug\%202017">https://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1160.0Main\%20Features4Aug\%202017</a>.</p>
 </div>
 <div id="ref-bcministryofcitizensservices">
-<p>BC Ministry of Citizens Services. n.d. “Privacy, Security and the Five Safes Model.” Accessed September 1, 2020. <a href="https://www2.gov.bc.ca/gov/content/data/about-data-management/data-innovation-program/privacy-security">https://www2.gov.bc.ca/gov/content/data/about-data-management/data-innovation-program/privacy-security</a>.</p>
+<p>BC Ministry of Citizens Services. n.d. “Privacy, Security and the Five Safes Model.” Province of British Columbia. Accessed September 1, 2020. <a href="https://www2.gov.bc.ca/gov/content/data/about-data-management/data-innovation-program/privacy-security">https://www2.gov.bc.ca/gov/content/data/about-data-management/data-innovation-program/privacy-security</a>.</p>
 </div>
 <div id="ref-bujnowska2019">
-<p>Bujnowska, Aleksandra. 2019. “Access to European Statistical System Microdata.” In <em>Data-Driven Policy Impact Evaluation: How Access to Microdata Is Transforming Policy Design</em>, edited by Nuno Crato and Paolo Paruolo, 87–99. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-78461-8\_6">https://doi.org/10.1007/978-3-319-78461-8\_6</a>.</p>
+<p>Bujnowska, Aleksandra. 2019. “Access to European Statistical System Microdata.” In <em>Data-Driven Policy Impact Evaluation: How Access to Microdata Is Transforming Policy Design</em>, edited by Nuno Crato and Paolo Paruolo, 87–99. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-78461-8\\_6">https://doi.org/10.1007/978-3-319-78461-8\\_6</a>.</p>
 </div>
 <div id="ref-card2010">
 <p>Card, David E., Raj Chetty, Martin S. Feldstein, and Emmanuel Saez. 2011. “Expanding Access to Administrative Data for Research in the United States.” Report January. American Economic Association. <a href="https://www.aeaweb.org/content/file?id=1319">https://www.aeaweb.org/content/file?id=1319</a>.</p>
@@ -714,10 +714,10 @@ This is a workaround for citations in footnotes, please ignore. <span class="cit
 <p>OECD. 2014. “Expert Group for International Collaboration on Microdata Access: Final Report.” <a href="http://www.oecd.org/sdd/microdata-access-final-report-OECD-2014.pdf">http://www.oecd.org/sdd/microdata-access-final-report-OECD-2014.pdf</a>.</p>
 </div>
 <div id="ref-reuter2010">
-<p>Reuter, Wolf Heinrich, and Jean-Marc Museux. 2010. “Establishing an Infrastructure for Remote Access to Microdata at Eurostat.” In <em>Privacy in Statistical Databases</em>, 249–57. Springer Berlin Heidelberg. <a href="https://doi.org/10.1007/978-3-642-15838-4\_22">https://doi.org/10.1007/978-3-642-15838-4\_22</a>.</p>
+<p>Reuter, Wolf Heinrich, and Jean-Marc Museux. 2010. “Establishing an Infrastructure for Remote Access to Microdata at Eurostat.” In <em>Privacy in Statistical Databases</em>, 249–57. Springer Berlin Heidelberg. <a href="https://doi.org/10.1007/978-3-642-15838-4\\_22">https://doi.org/10.1007/978-3-642-15838-4\\_22</a>.</p>
 </div>
 <div id="ref-statisticscanada2018">
-<p>Statistics Canada. 2018b. “Information on Statistics Canada Privacy Framework.” <a href="https://sencanada.ca/content/sen/committee/421/BANC/Briefs/BANC_SS-1_REF_StatisticsCanada_e.pdf">https://sencanada.ca/content/sen/committee/421/BANC/Briefs/BANC_SS-1_REF_StatisticsCanada_e.pdf</a>.</p>
+<p>Statistics Canada. 2018a. “Real Time Remote Access - System Limitations.” <a href="https://www.statcan.gc.ca/eng/rtra/limitation">https://www.statcan.gc.ca/eng/rtra/limitation</a>.</p>
 </div>
 <div id="ref-unitednations2014">
 <p>United Nations. 2014. “Fundamental Principles of Official Statistics.” A/RES/68/261. <a href="https://unstats.un.org/unsd/dnss/gp/fundprinciples.aspx">https://unstats.un.org/unsd/dnss/gp/fundprinciples.aspx</a>.</p>
@@ -736,7 +736,7 @@ This is a workaround for citations in footnotes, please ignore. <span class="cit
 <hr />
 <ol start="1">
 <li id="fn1"><p>Notable examples in which privacy is only minimally protected includes information about the employees of the United States federal government or property tax records in many US counties.<a href="intro.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>The Five Safes framework is broadly and internationally used as a guiding principle by national statistical agencies <span class="citation">(Australian Bureau of Statistics <a href="#ref-australianbureauofstatistics2017" role="doc-biblioref">2017</a>; Statistics Canada <a href="#ref-statisticscanada2018" role="doc-biblioref">2018</a><a href="#ref-statisticscanada2018" role="doc-biblioref">b</a>)</span> and provinces and individual agencies (see e.g., Province of British Columbia, <span class="citation">BC Ministry of Citizens Services (<a href="#ref-bcministryofcitizensservices" role="doc-biblioref">n.d.</a>)</span>). <span class="citation">Altman et al. (<a href="#ref-altman2015" role="doc-biblioref">2015</a>)</span> suggest an alternative framing.<a href="intro.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>The Five Safes framework is broadly and internationally used as a guiding principle by national statistical agencies <span class="citation">(Australian Bureau of Statistics <a href="#ref-australianbureauofstatistics2017" role="doc-biblioref">2017</a>; Statistics Canada <a href="#ref-statisticscanada2018" role="doc-biblioref">2018</a><a href="#ref-statisticscanada2018" role="doc-biblioref">a</a>)</span> and provinces and individual agencies (see e.g., Province of British Columbia, <span class="citation">BC Ministry of Citizens Services (<a href="#ref-bcministryofcitizensservices" role="doc-biblioref">n.d.</a>)</span>). <span class="citation">Altman et al. (<a href="#ref-altman2015" role="doc-biblioref">2015</a>)</span> suggest an alternative framing.<a href="intro.html#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

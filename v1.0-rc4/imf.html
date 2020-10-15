@@ -83,7 +83,7 @@ function toggleCitation() {
     citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
   } else {
     x.style.display = "none";
-    button.innerHTML = "Cite this chapter";
+    button.innerHTML = "Show citation to this chapter";
   }
 } 
 
@@ -284,6 +284,7 @@ function toggleCitation() {
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
 <li class="chapter">Individual chapters ©️ by their authors.</li>
@@ -313,7 +314,7 @@ function toggleCitation() {
 <em>Romain Duval (International Monetary Fund)</em><br />
 
 <div id="citationLink">
-<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a>
 </div>
 <div id="myCitation" style="display: none;">
 Era Dabla-Norris, Federico J. Díez, and Romain Duval. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
@@ -434,7 +435,7 @@ This is a workaround for citations in footnotes, please ignore. <span class="cit
 <p>Holtsmark, B., and F. Misch. 2020. “Learning from the Global Leader: An Analysis of Electric Car Subsidies in Norway.”</p>
 </div>
 <div id="ref-hutton2017">
-<p>Hutton, Eric. 2017. “The Revenue Administration—Gap Analysis Program: Model and Methodology for Value-Added Tax Gap Estimation.” Technical Notes and Manuals 17/04. International Monetary Fund. <a href="https://www.imf.org/en/Publications/TNM/Issues/2017/04/07/The-Revenue-AdministrationGap-Analysis-Program-Model-and-Methodology-for-Value-Added-Tax-Gap-44715">https://www.imf.org/en/Publications/TNM/Issues/2017/04/07/The-Revenue-AdministrationGap-Analysis-Program-Model-and-Methodology-for-Value-Added-Tax-Gap-44715</a>.</p>
+<p>Hutton, Eric. 2017. <em>The Revenue AdministrationGap Analysis Program: Model and Methodology for Value-Added Tax Gap Estimation</em>. Technical Notes and Manuals. International Monetary Fund. <a href="https://www.imf.org/en/Publications/TNM/Issues/2017/04/07/The-Revenue-AdministrationGap-Analysis-Program-Model-and-Methodology-for-Value-Added-Tax-Gap-44715">https://www.imf.org/en/Publications/TNM/Issues/2017/04/07/The-Revenue-AdministrationGap-Analysis-Program-Model-and-Methodology-for-Value-Added-Tax-Gap-44715</a>.</p>
 </div>
 <div id="ref-rivas2018">
 <p>Rivas, Lisbeth, and Joe Crowley. 2018. “Using Administrative Data to Enhance Policymaking in Developing Countries: Tax Data and the National Accounts.” Working Paper 18/175. International Monetary Fund. <a href="https://www.imf.org/en/Publications/WP/Issues/2018/08/02/Using-Administrative-Data-to-Enhance-Policymaking-in-Developing-Countries-Tax-Data-and-the-46054">https://www.imf.org/en/Publications/WP/Issues/2018/08/02/Using-Administrative-Data-to-Enhance-Policymaking-in-Developing-Countries-Tax-Data-and-the-46054</a>.</p>

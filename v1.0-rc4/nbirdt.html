@@ -83,7 +83,7 @@ function toggleCitation() {
     citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
   } else {
     x.style.display = "none";
-    button.innerHTML = "Cite this chapter";
+    button.innerHTML = "Show citation to this chapter";
   }
 } 
 
@@ -284,6 +284,7 @@ function toggleCitation() {
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
 <li class="chapter">Individual chapters ©️ by their authors.</li>
@@ -312,7 +313,7 @@ function toggleCitation() {
 <em>James Ted McDonald (University of New Brunswick)</em><br />
 
 <div id="citationLink">
-<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a>
 </div>
 <div id="myCitation" style="display: none;">
 Donna Curtis Maillet, and James Ted McDonald. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
@@ -363,7 +364,7 @@ Donna Curtis Maillet, and James Ted McDonald. 2020. “<span id="chapTitle">Titl
 Figure 9.1: Data transfer to NB-IRDT
 </p>
 </div>
-<p>These principles were made operational through several legal agreements and legislative changes. First, changes were made in 2012 to the PHIPAA <span class="citation">(Government of New Brunswick <a href="#ref-governmentofnewbrunswick2009" role="doc-biblioref">2009</a>)</span>, NB’s provincial legislation covering appropriate use of an individual’s personal health information, which allowed for the creation of a provincial research data center and defined such an entity as a data custodian. Foundational legal agreements between UNB and the Department of Health (acting as a signatory on behalf of the province) established NB-IRDT as a research data center and defined rights, responsibilities, and reporting requirements, including an originating agreement and an operational agreement both signed in 2013 (the text of which are confidential). The concept of a provincial research data center did not previously exist and so was defined through this legislation as a facility that could provide secure data access to third parties for research purposes. Following that there were other changes to PHIPAA and to the Medical Services Payment Act, commonly known as the Medicare Act <span class="citation">(Government of New Brunswick <a href="#ref-governmentofnewbrunswick2017" role="doc-biblioref">2017</a><a href="#ref-governmentofnewbrunswick2017" role="doc-biblioref">b</a>)</span>, to allow the Medicare number to be used for data matching purposes in 2015. The next major legislative change was entitled An Act Respecting Research <span class="citation">(Government of New Brunswick <a href="#ref-governmentofnewbrunswick2017a" role="doc-biblioref">2017</a><a href="#ref-governmentofnewbrunswick2017a" role="doc-biblioref">a</a>)</span>. that was proclaimed into law in May 2017. The act defined a clear legal authority for prepared personal information to be transferred to NB-IRDT from many provincial government departments and public bodies by simultaneously modifying numerous other pieces of legislation. Just as importantly, the act also defined the authority for the Department of Health to receive identifying personal information from other agencies but only for the purpose of data matching for disclosure to a research data center.<a href="#fn84" class="footnote-ref" id="fnref84"><sup>84</sup></a> Where the Medicare number was not available in the disclosed data, the Department of Health would use probabilistic matching methods. This was followed by a second Act Respecting Research that was proclaimed in June 2019 and addressed some legislative gaps in the first act.<a href="#fn85" class="footnote-ref" id="fnref85"><sup>85</sup></a> It is worth noting that this pathway to current practice was not predetermined but rather evolved incrementally as successive obstacles and problems arose and were resolved. Similarly, at the time that the concept of a research data center was defined, there was no template for what would be required to establish and operate one and this, too, evolved over time. What was consistent throughout the time period was a commitment to achieving the vision of a research data center as a facility to make available for research linkable data from multiple government departments and public bodies.</p>
+<p>These principles were made operational through several legal agreements and legislative changes. First, changes were made in 2012 to the PHIPAA <span class="citation">(Government of New Brunswick <a href="#ref-governmentofnewbrunswick2009" role="doc-biblioref">2009</a>)</span>, NB’s provincial legislation covering appropriate use of an individual’s personal health information, which allowed for the creation of a provincial research data center and defined such an entity as a data custodian. Foundational legal agreements between UNB and the Department of Health (acting as a signatory on behalf of the province) established NB-IRDT as a research data center and defined rights, responsibilities, and reporting requirements, including an originating agreement and an operational agreement both signed in 2013 (the text of which are confidential). The concept of a provincial research data center did not previously exist and so was defined through this legislation as a facility that could provide secure data access to third parties for research purposes. Following that there were other changes to PHIPAA and to the Medical Services Payment Act, commonly known as the Medicare Act <span class="citation">(Government of New Brunswick <a href="#ref-governmentofnewbrunswick2017" role="doc-biblioref">2017</a><a href="#ref-governmentofnewbrunswick2017" role="doc-biblioref">a</a>)</span>, to allow the Medicare number to be used for data matching purposes in 2015. The next major legislative change was entitled An Act Respecting Research <span class="citation">(Government of New Brunswick <a href="#ref-governmentofnewbrunswick2017a" role="doc-biblioref">2017</a><a href="#ref-governmentofnewbrunswick2017a" role="doc-biblioref">b</a>)</span>. that was proclaimed into law in May 2017. The act defined a clear legal authority for prepared personal information to be transferred to NB-IRDT from many provincial government departments and public bodies by simultaneously modifying numerous other pieces of legislation. Just as importantly, the act also defined the authority for the Department of Health to receive identifying personal information from other agencies but only for the purpose of data matching for disclosure to a research data center.<a href="#fn84" class="footnote-ref" id="fnref84"><sup>84</sup></a> Where the Medicare number was not available in the disclosed data, the Department of Health would use probabilistic matching methods. This was followed by a second Act Respecting Research that was proclaimed in June 2019 and addressed some legislative gaps in the first act.<a href="#fn85" class="footnote-ref" id="fnref85"><sup>85</sup></a> It is worth noting that this pathway to current practice was not predetermined but rather evolved incrementally as successive obstacles and problems arose and were resolved. Similarly, at the time that the concept of a research data center was defined, there was no template for what would be required to establish and operate one and this, too, evolved over time. What was consistent throughout the time period was a commitment to achieving the vision of a research data center as a facility to make available for research linkable data from multiple government departments and public bodies.</p>
 </div>
 <div id="nbirdt-legaluse" class="section level3">
 <h3><span class="header-section-number">9.4.2</span> Legal Context for Data Use</h3>
@@ -490,10 +491,10 @@ This is a workaround for citations in footnotes, please ignore. <span class="cit
 <div id="ref-governmentofnewbrunswick2009">
 <p>Government of New Brunswick. 2009. “Personal Health Information Privacy and Access Act, SNB 2009, c P-7.05.” <a href="http://canlii.ca/t/54c8h">http://canlii.ca/t/54c8h</a>.</p>
 </div>
-<div id="ref-governmentofnewbrunswick2017a">
+<div id="ref-governmentofnewbrunswick2017">
 <p>Government of New Brunswick. 2017a. “An Act Respecting Research, SNB 2017, c 29.” <a href="http://canlii.ca/t/53944">http://canlii.ca/t/53944</a>.</p>
 </div>
-<div id="ref-governmentofnewbrunswick2017">
+<div id="ref-governmentofnewbrunswick2017a">
 <p>Government of New Brunswick. 2017b. “Medical Services Payment Act, RSNB 1973, c M-7.” <a href="http://canlii.ca/t/53p70">http://canlii.ca/t/53p70</a>.</p>
 </div>
 <div id="ref-hertzman2012">

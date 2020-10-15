@@ -38,11 +38,6 @@ This is placeholder text for the welcome page in the PDF versio only.
 **[Lars Vilhuber](https://lars.vilhuber.com/)** is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market. He also has extensive experience in the application of privacy-preserving publication and access to restricted data. He is chair of the scientific committee of the French restricted-access system [CASD](https://casd.eu), member of the governing board of the Canadian Research Data Centre Network ([CRDCN](https://crdcn.org)), and incoming chair of the  American Statistical Association‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home). Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
 
 
-**About J-PAL**
-
-The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center working to reduce poverty by ensuring that policy is informed by scientific evidence. Anchored by a network of more than 225 affiliated professors at universities around the world, J-PAL draws on results from randomized impact evaluations to answer critical questions in the fight against poverty. We build partnerships with governments, NGOs, donors, and others to share this knowledge, scale up effective programs, and advance evidence-informed decision-making. J-PAL was launched at the Massachusetts Institute of Technology in 2003 and has regional centers in Africa, Europe, Latin America & the Caribbean, the Middle East & North Africa, North America, South Asia, and Southeast Asia.
-
-
 <!--chapter:end:index.Rmd-->
 
 # Foreword {- #foreword}
@@ -50,7 +45,7 @@ The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center wo
 *Forthcoming*
 
 *Daniel Goroff (Alfred P. Sloan Foundation)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Daniel Goroff. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Daniel Goroff. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 
 \putbib
@@ -59,13 +54,20 @@ The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center wo
 
 <!--chapter:end:00_foreword.Rmd-->
 
+```{=latex}
+\mainmatter
+\setcounter{page}{1}
+```
+
+<!--chapter:end:00_zz_start_frontmatter.Rmd-->
+
 # Introduction {#intro}
 
 *Shawn Cole (Harvard Business School)*  
 *Iqbal Dhaliwal (Abdul Latif Jameel Poverty Action Lab)*  
 *Anja Sautmann (World Bank)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## The Potential of Administrative Data for Research and Policymaking
 
@@ -348,17 +350,13 @@ The existing literature also provides high-level guidance on numerous topics, in
 
 <!--chapter:end:01_intro.Rmd-->
 
-```{=latex}
-\mainmatter
-\setcounter{page}{1}
-```
 # (PART) Special Topics {-} 
 
 # Physically Protecting Sensitive Data {#security}
 
 *Jim Shen (Abdul Latif Jameel Poverty Action Lab)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Jim Shen, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Jim Shen, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Introduction
 
@@ -938,7 +936,7 @@ A final related point is that the enforcement of the terms of the +DUA| is an im
 # Model Data Use Agreements: A Practical Guide {#dua}
 
 *Amy O'Hara (Georgetown University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Amy O'Hara. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Amy O'Hara. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 What are data use agreements? Data use agreements (DUA)---also referred to as data sharing agreements or data use licenses---are documents that describe what data are being shared, for what purpose, for how long, and any access restrictions or security protocols that must be followed by the recipient of the data. Other contracts, such as non-disclosure agreements, may be used to guarantee confidentiality over sensitive discussions, information, and data.
 
@@ -1150,7 +1148,7 @@ This index, a collection of standards, guides, and templates, is searchable by g
 # Collaborating with the Institutional Review Board (IRB) {#irb}
 
 *Kathleen Murphy (Northwestern University (ret.))*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Kathleen Murphy. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Kathleen Murphy. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Introduction
 
@@ -1415,7 +1413,7 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 *Ian M. Schmutte (University of Georgia)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Ian M. Schmutte, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Ian M. Schmutte, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 The purpose of this Handbook is to provide guidance on how to enable broader but ethical and legal access to data. Within the Five Safes framework [@desai2016], data providers need to create *safe data* that can be provided to trusted *safe people* for use within *[safe settings](#security)*, subject to legal and [contractual safeguards](#dua).  Related, but distinct, is the question of how to create *safe outputs* from researchers' findings before those findings finally make their way into the public through, for example, policy briefs or the academic literature. The processes used to create safe data and safe outputs (manipulations that render data less sensitive and therefore more appropriate for public release) are generally referred to as +statistical_disclosure_limitation| (SDL).^[Other terms sometimes used are "anonymization" or "de-identification," but as this chapter will show, de-identification is a particular method of SDL, and anonymization is a goal, never fully achieved, rather than a method.] This chapter will describe techniques traditionally used within the field of SDL, pointing at methods as well as metrics to assess the resultant statistical quality and sensitivity of the data. Newer approaches, generally referred to as *formal privacy methods*, are described in a separate  [chapter](#diffpriv). 
 
@@ -1770,7 +1768,7 @@ The views expressed in this paper are those of the authors and not those of the 
 *Micah Altman (Massachusetts Institute of Technology)*  
 *Kobbi Nissim (Georgetown University)*  
 *Salil Vadhan (Harvard University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alexandra Wood, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alexandra Wood, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 *Forthcoming*
 
@@ -1790,7 +1788,7 @@ This chapter is intended as a practical resource for government agencies and res
 
 *Dana Müller (Institute for Employment Research)*  
 *Phillip vom Berge (Institute for Employment Research)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dana Müller, and Phillip vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dana Müller, and Phillip vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -2215,7 +2213,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 # Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community {#olda}
 
 *Joshua D. Hawley (Ohio State University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Joshua D. Hawley. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Joshua D. Hawley. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -2580,7 +2578,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 *Donna Curtis Maillet (University of New Brunswick)*  
 *James Ted McDonald (University of New Brunswick)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Donna Curtis Maillet, and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Donna Curtis Maillet, and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary {#nbirdt-summ}
 
@@ -2832,15 +2830,15 @@ Audits of data sets accessed and data project activity are a requirement of data
 *Josh Lerner (Harvard Business School)*  
 *Leslie Jeng (Private Capital Research Institute)*  
 *Therese Juneau (Private Capital Research Institute)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Josh Lerner, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Josh Lerner, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
 The Private Capital Research Institute (PCRI) is a non-profit corporation that seeks to understand the fundamental economics of private capital.[^pcri2] A wide variety of forms of private capital are examined, including angel investors, venture capital and private equity organizations, and public providers of private capital (e.g., sovereign wealth funds).
 
-The PCRI grew out of a multi-year research initiative sponsored by the World Economic Forum that studied the economic impact of private equity [@gurung2008].[^pcri3] The PCRI received initial support from the Ewing Marion Kauffman Foundation and continues to be funded through grants and strategic relationships.
+The PCRI grew out of a multi-year research initiative sponsored by the World Economic Forum that studied the economic impact of private equity.[^pcri3] The PCRI received initial support from the Ewing Marion Kauffman Foundation and continues to be funded through grants and strategic relationships.
 
-The principal activities of the PCRI are (a) build data sets related to private capital that can be made available to researchers for analysis (See Appendix A for the PCRI database summary information), (b) build up a community of scholars and sponsor independent academic research on the nature and effects of private capital, and (c) disseminate the findings of this research to policymakers and the public at large to foster deeper understanding of the role that private capital plays in the economy and society.
+The principal activities of the PCRI are (a) build data sets related to private capital that can be made available to researchers for analysis[^pcri3b], (b) build up a community of scholars and sponsor independent academic research on the nature and effects of private capital, and (c) disseminate the findings of this research to policymakers and the public at large to foster deeper understanding of the role that private capital plays in the economy and society.
 
 The PCRI collects data from commercial data vendors as well as the private equity firms themselves. In addition, the PCRI collects data from primary sources, such as publicly available filings. One of the more recent projects is the gathering of public filings called +Certificates_of_Incorporation| (CoIs) from states of incorporation.
 
@@ -2858,7 +2856,7 @@ This growth has, in turn, raised questions about the consequences of these inves
 
 Although the global economy and individual investors are increasingly dependent on private capital, much remains poorly understood about these investments. A salient aspect of private capital is that it is indeed private. Traditionally, the general partners (GPs) who manage these funds have not disclosed much information to the United States Securities and Exchange Commission, other regulators, or even to their own investors (limited partners, or LPs). A shortage of reliable industry data leads to an unappealing setting where industry advocates make sweeping claims about the benefits and critics make broad charges on very shaky empirical foundations [@kaplan2017].
 
-This lack of transparency has led to two important barriers to private capital research. First, there have been barriers to entry: it has been difficult for academic researchers, graduate students and junior faculty, to get access to these records. Second, much of the research has been undertaken using commercial databases (most notably, Thomson Reuters, which has a licensing program, and Burgiss, which has made its data available to the [Private Equity Research Consortium](http://uncipc.org/index.php/initiativecat/private-equity/) based at the University of North Carolina at Chapel Hill) or else using data provided to researchers directly by limited and general partners on a one-off basis (e.g., @gompers1997).
+This lack of transparency has led to two important barriers to private capital research. First, there have been barriers to entry: it has been difficult for academic researchers, graduate students and junior faculty, to get access to these records. Second, much of the research has been undertaken using commercial databases (most notably, Thomson Reuters, which has a licensing program, and Burgiss, which has made its data available to the [Private Equity Research Consortium](http://uncipc.org/index.php/initiativecat/private-equity/) based at the University of North Carolina at Chapel Hill) or else using data provided to researchers directly by limited and general partners on a one-off basis [e.g., @gompers1997].
 
 It is typically difficult to compare any but the basic facts about the various commercial databases, as these databases draw from different sources, some of which may be proprietary.[^pcri1] As a result, there are contradictory findings on a number of important topics, such as the risk-adjusted performance of private equity and the extent of persistence of performance of funds: the differences in results appear to be at least in part a function of the differences between databases. On the former topic, see @korteweg2019; on the latter, see @braun2017, @harris2014, and @korteweg2015. These issues are akin to the more general issues of access to private data raised by the American Economic Association's Committee on Economic Statistics.[^pcri5]
 
@@ -2906,23 +2904,47 @@ PCRI's first goal is to gather data directly from the private capital firms. In 
 
 Gathering information directly from private capital firms has its own limitations. Even if every active group chose to participate, there would still be some groups that have gone out of business and no longer keep their records or would be difficult to contact. In addition, as the PCRI began collecting data from individual private capital firms, one of the major concerns raised was that it would take too long for the PCRI to get a database large enough to disguise the data to preserve anonymity. The PCRI thus realized the importance of quickly building a large foundation for the database. As a result, the Institute is complementing the data that is gathered from the private capital firms with data from commercial sources, even if it is not always of the same quality as that provided directly by the general partners.
 
-The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in [@jeng2015], which is available on the PCRI's website.
+The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in @jeng2015, which is available on the PCRI's website.
 
-
-|Vendor|Number of Distinct private Capital Firms|
-|:------------------------:|:------------------------:|
-|EMPEA|2,964|
-|NYPPEX|6,100|
-|Thomson Reuters|11,491|
-|Unquote|5,291|
-|**PCRI Unique**|**17,633**|
-Table: (\#tab:pcritable1) Number of distinct private capital firms provided by source of information[^pcri9]
-
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(\#tab:pcritable1)Number of distinct private capital firms provided by source of information</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Vendor </th>
+   <th style="text-align:right;"> Number of Distinct private Capital Firms </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> EMPEA </td>
+   <td style="text-align:right;"> 2,964 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> NYPPEX </td>
+   <td style="text-align:right;"> 6,100 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Thomson Reuters </td>
+   <td style="text-align:right;"> 11,491 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Unquote </td>
+   <td style="text-align:right;"> 5,291 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> PCRI Unique </td>
+   <td style="text-align:right;font-weight: bold;"> 17,633 </td>
+  </tr>
+</tbody>
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span> <sup></sup> As of 2015. Source: @jeng2015.</td></tr></tfoot>
+</table>
 
 <div class="figure">
-<img src="./assets/pcri/pcrifigure1web.png" alt="Overlap of private capital firms in PCRI database by source of information" width="100%" />
+<img src="./assets/pcri/pcrifigure1web.png" alt="Overlap of private capital firms in PCRI database by source of information" width="90%" />
 <p class="caption">(\#fig:pcrifigure1)Overlap of private capital firms in PCRI database by source of information</p>
 </div>
+
 
 ### Processing of Data Received from Data Vendors or Primary Sources (LPs or GPs)
 
@@ -2931,11 +2953,12 @@ The process of combining and cleaning the various data sources is an arduous tas
 The PCRI databases include data for over 17,000 private capital firms, 33,000 private capital funds, and 110,000 portfolio companies covering a time span from the early 1970s to 2018. The portfolio companies are geographically diverse with over 50 percent outside the United States, including 32 percent in Europe and 10 percent in Asia [@jeng2015]. The PCRI database contains eight different data tables: company, deal, exit, fund, fund performance, fund quarterly cash flow, general partner (GP), and investment. See Appendix A for more information on the database. Figure \@ref(fig:pcrifigure2) below provides details on the tables, including the variables in each data table and the relationship between the tables. For more information on the PCRI databases, please see the data user manual available on the [PCRI website](http://privatecapitalresearchinstitute.org/images/news/pcri_manual_2\_4.pdf).
 
 <div class="figure">
-<img src="./assets/pcri/pcrifigure2web.png" alt="Table relationship diagram" width="100%" />
-<p class="caption">(\#fig:pcrifigure2)Table relationship diagram</p>
+<img src="./assets/pcri/pcrifigure2web.png" alt="Table relationship diagram of PCRI database" width="100%" />
+<p class="caption">(\#fig:pcrifigure2)Table relationship diagram of PCRI database</p>
 </div>
 
-The PCRI, has developed an +internal_data_processing_system| that is used as a training guide for new research associates. The PCRI database is a relational database. When new data are received from either a commercial vendor or a private capital firm, the new data are separated into variables and put in a consistent format to be read in by Stata. Various rudimentary tabl­es are created that correspond to tables in the PCRI database (e.g., investment, exit, GP, fund). For each data item in a table, the PCRI then identifies a key that is a unique identifier specific to a data provider. This key is then mapped to a unique identifier for each unique observation within that table (the source ID). This process, whereby the key of the data provider is mapped to a source ID, is referred to as +local_aliasing|. These newly created source IDs are then mapped to a unique identifier within the larger PCRI database (the ID). This process is called +global_aliasing|. The +global_aliasing_file| contains the unique identifier-name-source link.
+
+The PCRI has developed an internal data processing system that is used as a training guide for new research associates. The PCRI database is a relational database. When new data are received from either a commercial vendor or a private capital firm, the new data are separated into variables and put in a consistent format to be read in by Stata. Various rudimentary tabl­es are created that correspond to tables in the PCRI database (e.g., investment, exit, GP, fund). For each data item in a table, the PCRI then identifies a key that is a unique identifier specific to a data provider. This key is then mapped to a unique identifier for each unique observation within that table (the source ID). This process, whereby the key of the data provider is mapped to a source ID, is referred to as +local_aliasing|. These newly created source IDs are then mapped to a unique identifier within the larger PCRI database (the ID). This process is called +global_aliasing|. The +global_aliasing_file| contains the unique identifier-name-source link.
 
 Once this step is complete, all variables are processed in Stata to match existing codes in the PCRI database. For instance, country names are standardized to match the PCRI standard names in the supplemental tables (e.g., *Fr* would be converted to "France").
 
@@ -2962,16 +2985,47 @@ Based on consultation with academics interested in +CoIs| and colleagues at the 
 
 As seen in Table \@ref(tab:pcritable2) below, the vast majority (82 percent) of companies in the database are registered in Delaware, which has been the focus of most of our efforts. To obtain documents for corporations registered in Delaware, order forms must be filled out and submitted online. Delaware charges US\$10 for the first page of a document and US\$2 for each additional page. On average, one document costs around US\$30 dollars, but sometimes a single document could cost up to hundreds of dollars. On average, the total cost to obtain all the documents for one company is approximately US\$125. In the case of Delaware, a hard copy of a +CoI| arrives within several weeks of submitting a request.
 
-|State|Percentage|
-|:------------------------:|:------------------------:|
-| Delaware | 82.0% |
-| California | 10.0% |
-| Georgia | 1.0% |
-| Washington | 1.0%|
-| Texas | 0.7% |
-| Colorado | 0.7% |
-| Other States | 4.6% |
-Table: (\#tab:pcritable2) Breakdown of state of incorporation of the 622 venture-backed portfolio companies
+
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(\#tab:pcritable2)Breakdown of state of incorporation of the 622 venture-backed portfolio companies</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> State </th>
+   <th style="text-align:right;"> Percentage </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Delaware </td>
+   <td style="text-align:right;"> 82.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> California </td>
+   <td style="text-align:right;"> 10.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia </td>
+   <td style="text-align:right;"> 1.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Washington </td>
+   <td style="text-align:right;"> 1.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Texas </td>
+   <td style="text-align:right;"> 0.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Colorado </td>
+   <td style="text-align:right;"> 0.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Other States </td>
+   <td style="text-align:right;font-weight: bold;"> 4.6 </td>
+  </tr>
+</tbody>
+</table>
+
 
 Other states, such as New York, accept orders by mail. In the case of New York, a form must be filled out for each request. The cost is US\$5 for each plain copy of a document. Processing takes ten to twelve business days, not including shipping, and the copies are sent thereafter. For an unusually large order, arrangements can be made in advance, but the work is still performed on a first-come, first-serve basis. For other states, the +CoIs| are usually available online for no cost. Thus, the PCRI can access the business entity database for those states (e.g., California and Massachusetts) and download copies of the documents.
 
@@ -2989,11 +3043,22 @@ The PCRI is an independent non-profit organization, which seeks to provide a gre
 
 ### Legal Context for Data Use
 
-One of the biggest challenges faced in the data collection effort was creating a standardized +licensing_agreement| for all data sources, in particular for the private capital firms. By working closely with the PCRI's lawyers at Debevoise & Plimpton and a few prominent private capital firms, a standardized licensing agreement was developed. The agreement not only allowed the PCRI to obtain, use, and administer highly confidential data but also alleviated the major concerns (i.e., confidentiality and data security) of the private capital firms. The authors highlight some of the chief features of the Private Equity Sponsor Data Agreement (see Appendix B for the draft agreement). First, the data licensing agreement grants the PCRI a royalty-free, non-transferable license. Second, the PCRI is permitted to receive, store, reproduce, and combine the data. Third, since the PCRI is a project run by academics and for academics, the PCRI database is to be used exclusively for academic research rather than for any commercial purpose. In accordance with the licensing agreement, the PCRI carefully reviews research_proposals and monitors output files to ensure that data are being used appropriately. Additionally, as a primary objective of the PCRI is to promote unbiased, academic research, the licensing agreement mandates that the +data_sponsors| would not be able to limit the areas of academic research. However, under the licensing agreement, data sponsors can obtain a preview of working papers and are also given the option to be acknowledged for their contribution to the PCRI research effort. Lastly, the licensing agreement allows either party to terminate the agreement.
+One of the biggest challenges faced in the data collection effort was creating a standardized +licensing_agreement| for all data sources, in particular for the private capital firms. By working closely with the PCRI's lawyers at Debevoise & Plimpton and a few prominent private capital firms, a standardized licensing agreement was developed. The agreement not only allowed the PCRI to obtain, use, and administer highly confidential data but also alleviated the major concerns (i.e., confidentiality and data security) of the private capital firms. The authors highlight some of the chief features of the Private Equity Sponsor  
+
+```{=html}
+Data Agreement (see Appendix B for the draft agreement).
+```
+ 
+ 
+First, the data licensing agreement grants the PCRI a royalty-free, non-transferable license. Second, the PCRI is permitted to receive, store, reproduce, and combine the data. Third, since the PCRI is a project run by academics and for academics, the PCRI database is to be used exclusively for academic research rather than for any commercial purpose. In accordance with the licensing agreement, the PCRI carefully reviews research_proposals and monitors output files to ensure that data are being used appropriately. Additionally, as a primary objective of the PCRI is to promote unbiased, academic research, the licensing agreement mandates that the +data_sponsors| would not be able to limit the areas of academic research. However, under the licensing agreement, data sponsors can obtain a preview of working papers and are also given the option to be acknowledged for their contribution to the PCRI research effort. Lastly, the licensing agreement allows either party to terminate the agreement.
 
 In cases where data disclosure harms from data sponsors, liability issues were a major source of discussion in the creation of this +licensing_agreement|. Given the limited resources of the PCRI, the licensing agreement puts a cap on PCRI's liability at US\$1,000, which only applies in cases not resulting from gross negligence, strict liability, fraud, misconduct, or misrepresentation on the part of PCRI. In such cases, there would be no liability cap. Also, the PCRI agrees not to bring any claims against any of the +data_sponsors|.
 
-While the PCRI has been successful with private equity groups, venture capital organizations have been much more resistant to sharing information. Thus, with a grant from the Alfred P. Sloan Foundation, the PCRI is taking an alternative approach to obtain information for researchers to understand venture capital activity. As mentioned previously in the "Motivation and Background" section, the Institute has been developing a compilation (and an associated taxonomy) of +CoIs| over the past two years. Extremely detailed information on venture capital transactions is available in CoIs, which are typically compiled by regulators in the state of the firms' incorporation. These corporate filings include important details on deal structure (i.e., the capital structure and key terms) as well as important valuation information. While this information is publicly available, the costs to obtain these documents are prohibitively expensive. For example, in some locations, a request for these documents must be made in person, and US\$1.00 to US\$2.00 is charged per page. As a parallel process, the PCRI is working to create a data set containing the twenty to thirty (see Appendix C for a sample list of variables) most critical variables contained in these documents.
+While the PCRI has been successful with private equity groups, venture capital organizations have been much more resistant to sharing information. Thus, with a grant from the Alfred P. Sloan Foundation, the PCRI is taking an alternative approach to obtain information for researchers to understand venture capital activity. As mentioned previously in the "Motivation and Background" section, the Institute has been developing a compilation (and an associated taxonomy) of +CoIs| over the past two years. Extremely detailed information on venture capital transactions is available in CoIs, which are typically compiled by regulators in the state of the firms' incorporation. These corporate filings include important details on deal structure (i.e., the capital structure and key terms) as well as important valuation information. While this information is publicly available, the costs to obtain these documents are prohibitively expensive. For example, in some locations, a request for these documents must be made in person, and US\$1.00 to US\$2.00 is charged per page. As a parallel process, the PCRI is working to create a data set containing the twenty to thirty 
+```{=html}
+(see Appendix C for a sample list of variables)
+```
+  most critical variables contained in these documents.
 
 ### Collaboration with the Census Bureau
 
@@ -3105,24 +3170,26 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 [^pcri2]: The PCRI is a non-profit corporation devoted exclusively for charitable purposes within the meaning of Section 501 (c)(3) of the Internal Revenue Code of 1986 as amended.
 
-[^pcri3]: This work was collected in Anuradha Gurung and Josh Lerner, editors, [@gurung2008].
+[^pcri3]: This work was collected in Anuradha Gurung and Josh Lerner, editors [-@gurung2008].
+
+[^pcri3b]: See  Appendix A for summary information on the PCRI database.
 
 [^pcri4]: See Section 3. Among other things, this ECB Guidance states that "Underwriting of transactions presenting high levels of leverage ... should remain exceptional ... and trigger a referral to the highest level of credit committee or similar decision-making level."
 
-[^pcri5]: The American Economic Association's [March 2020 report](https://www.aeaweb.org/content/file?id=11794) illustrates some of these points.
+[^pcri5]: The American Economic Association's Committee on Economic Statistics issued a report in March 2020 illustrating some of these points [@aeaces2020].
 
-[^pcri6]: In 2013, the Private Equity Growth Capital Council [@privateequitygrowthcapitalcouncil2013] reported that 2,800 private equity firms were headquartered in the US investing in buyout, growth equity, infrastructure, and energy funds. Over the same time period, the PCRI database has recorded 1,600 US private capital firms that solely invest in buyouts. In addition, the National Venture Capital Association reported 874 US venture capital firms were in existence in 2013 with 1,331 VC funds and US\$192.9 billion under management. By comparison, for 2013, the PCRI database has 2,082 US venture capital firms seeking investments. Some of the differences between the PCRI database and the reports can be explained by different firm-type classifications (for example, it is challenging to distinguish growth equity firms, which are often classified as venture capital), as well as the fact that the PCRI is missing firm type for about 30 percent of the data [@jeng2015].
+[^pcri6]: The Private Equity Growth Capital Council [-@privateequitygrowthcapitalcouncil2013] reported that 2,800 private equity firms were headquartered in the US investing in buyout, growth equity, infrastructure, and energy funds. Over the same time period, the PCRI database has recorded 1,600 US private capital firms that solely invest in buyouts. In addition, the National Venture Capital Association reported 874 US venture capital firms were in existence in 2013 with 1,331 VC funds and US\$192.9 billion under management. By comparison, for 2013, the PCRI database has 2,082 US venture capital firms seeking investments. Some of the differences between the PCRI database and the reports can be explained by different firm-type classifications (for example, it is challenging to distinguish growth equity firms, which are often classified as venture capital), as well as the fact that the PCRI is missing firm type for about 30 percent of the data [@jeng2015].
 
 [^pcri7]: For research reports, see <https://sites.tufts.edu/digitalplanet/>, accessed on 06-21-2020.
 
-[^pcri8]: PCRI focuses on the four original sources: EMPEA, Alternatives, Refinitiv, and Unquote. Start-up Nation Central and Venture Intelligence were added later and represent a small fraction of the total database.
+[^pcri8]: PCRI focuses on the four original sources: EMPEA, Alternatives, Refinitiv, and Unquote. Start-up Nation Central and Venture Intelligence were added later and represent a small fraction of the total database. 
 
-[^pcri9]: As of 2015. [@jeng2015]
 
-[^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190. [@jeng2015]
+
+[^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190 [@jeng2015].
 
 <div class="invisible">
-<p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@privateequitygrowthcapitalcouncil2013</span> <span class="citation">@jeng2015</span> <span class="citation">@brown2015</span> <span class="citation">@maats2011</span> <span class="citation">@kaplan2017</span> <span class="citation">@gurung2008</span></p>
+<p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@privateequitygrowthcapitalcouncil2013</span> <span class="citation">@jeng2015</span> <span class="citation">@brown2015</span> <span class="citation">@maats2011</span> <span class="citation">@kaplan2017</span> <span class="citation">@gurung2008</span> <span class="citation">@aeaces2020</span></p>
 </div>
 
 \putbib
@@ -3131,69 +3198,291 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 <!--chapter:end:13_00_pcri.Rmd-->
 
+
 ## Appendix  {-}
 
 ### Appendix A {-}
 
 #### Summary Information of the PCRI Private Capital Database {-}
 
-This is a summary overview of the data collected on private capital firms, funds, and portfolio companies. In particular, the PCRI focuses on buyouts, growth equity, and venture capital investing. These charts are from [@jeng2015].
+The following tables and figures, from @jeng2015, provide a summary overview of the data collected on private capital firms, funds, and portfolio companies. In particular, the PCRI focuses on buyouts, growth equity, and venture capital investing.
 
 <div class="figure">
 <img src="./assets/pcri/pcrifigurea1web.png" alt="Number of Private Capital Firms by Year Founded" width="100%" />
 <p class="caption">(\#fig:pcrifigurea1)Number of Private Capital Firms by Year Founded</p>
 </div>
 
-|Regions|1980-1989|1990-1999|2000-2009|2010-2015|Total|
-|:---------------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| Africa | 0.3% | 1.3% | 1.7% | 1.0% | 1.3% |
-| Asia | 9.0% | 10.4% | 18.2% | 27.6% | 15.3% |
-| Eurasia | 0.0% | 0.6% | 1.0% | 2.3% | 0.9% |
-| Europe | 22.0% | 24.5% | 27.1% | 22.0% | 25.2% |
-| Middle East | 1.0% | 2.4% | 2.7% | 1.9% | 2.3% |
-| Multi Geography | 0.1% | 0.0% | 0.2% | 0.2% | 0.1% |
-| North America | 4.1% | 5.6% | 5.5% | 4.6% | 5.2% |
-| Oceania | 1.2% | 2.2% | 1.9% | 0.9% | 1.8% |
-| South America |0.5% | 1.1% | 1.7% | 1.7% | 1.4% |
-| United States | 62.9% | 51.8% | 40.1% | 37.9% | 46.5% |
-Table: (\#tab:pcritablea1) Private Capital Firms by Location of Company Headquarters Split by Year Founded
 
-|Fund Type|1980-1989|1990-1999|2000-2009|2010-2015|Total|
-|:---------------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| Buyout | 19.0% | 26.0% | 27.3% | 26.4% | 26.1% |
-| Growth Equity | 0.9% | 0.7% | 1.9% | 8.5% | 2.3% |
-| Other | 21.5% | 9.4% | 14.2% | 11.9% | 13.4% |
-| Second | 0.1% | 0.4% | 0.3% | 0.2% | 0.3% |
-| VC | 58.6% | 63.6% | 56.3% | 53.0% | 57.9% |
-Table: (\#tab:pcritablea2) Breakdown of Funds by Investment Type Split by Vintage Year
+
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(\#tab:pcritablea1)Private Capital Firms by Location of Company Headquarters and Year Founded</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Regions </th>
+   <th style="text-align:left;"> 1980-1989 </th>
+   <th style="text-align:left;"> 1990-1999 </th>
+   <th style="text-align:left;"> 2000-2009 </th>
+   <th style="text-align:left;"> 2010-2015 </th>
+   <th style="text-align:left;"> Total </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Africa </td>
+   <td style="text-align:left;"> 0.3% </td>
+   <td style="text-align:left;"> 1.3% </td>
+   <td style="text-align:left;"> 1.7% </td>
+   <td style="text-align:left;"> 1.0% </td>
+   <td style="text-align:left;"> 1.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Asia </td>
+   <td style="text-align:left;"> 9.0% </td>
+   <td style="text-align:left;"> 10.4% </td>
+   <td style="text-align:left;"> 18.2% </td>
+   <td style="text-align:left;"> 27.6% </td>
+   <td style="text-align:left;"> 15.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Eurasia </td>
+   <td style="text-align:left;"> 0.0% </td>
+   <td style="text-align:left;"> 0.6% </td>
+   <td style="text-align:left;"> 1.0% </td>
+   <td style="text-align:left;"> 2.3% </td>
+   <td style="text-align:left;"> 0.9% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Europe </td>
+   <td style="text-align:left;"> 22.0% </td>
+   <td style="text-align:left;"> 24.5% </td>
+   <td style="text-align:left;"> 27.1% </td>
+   <td style="text-align:left;"> 22.0% </td>
+   <td style="text-align:left;"> 25.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Middle East </td>
+   <td style="text-align:left;"> 1.0% </td>
+   <td style="text-align:left;"> 2.4% </td>
+   <td style="text-align:left;"> 2.7% </td>
+   <td style="text-align:left;"> 1.9% </td>
+   <td style="text-align:left;"> 2.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Multi Geography </td>
+   <td style="text-align:left;"> 0.1% </td>
+   <td style="text-align:left;"> 0.0% </td>
+   <td style="text-align:left;"> 0.2% </td>
+   <td style="text-align:left;"> 0.2% </td>
+   <td style="text-align:left;"> 0.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> North America </td>
+   <td style="text-align:left;"> 4.1% </td>
+   <td style="text-align:left;"> 5.6% </td>
+   <td style="text-align:left;"> 5.5% </td>
+   <td style="text-align:left;"> 4.6% </td>
+   <td style="text-align:left;"> 5.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Oceania </td>
+   <td style="text-align:left;"> 1.2% </td>
+   <td style="text-align:left;"> 2.2% </td>
+   <td style="text-align:left;"> 1.9% </td>
+   <td style="text-align:left;"> 0.9% </td>
+   <td style="text-align:left;"> 1.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> South America </td>
+   <td style="text-align:left;"> 0.5% </td>
+   <td style="text-align:left;"> 1.1% </td>
+   <td style="text-align:left;"> 1.7% </td>
+   <td style="text-align:left;"> 1.7% </td>
+   <td style="text-align:left;"> 1.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> United States </td>
+   <td style="text-align:left;"> 62.9% </td>
+   <td style="text-align:left;"> 51.8% </td>
+   <td style="text-align:left;"> 40.1% </td>
+   <td style="text-align:left;"> 37.9% </td>
+   <td style="text-align:left;"> 46.5% </td>
+  </tr>
+</tbody>
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
+</table>
+
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(\#tab:pcritablea2)Funds by Investment Type and Vintage Year</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Fund Type </th>
+   <th style="text-align:left;"> 1980-1989 </th>
+   <th style="text-align:left;"> 1990-1999 </th>
+   <th style="text-align:left;"> 2000-2009 </th>
+   <th style="text-align:left;"> 2010-2015 </th>
+   <th style="text-align:left;"> Total </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Buyout </td>
+   <td style="text-align:left;"> 19.0% </td>
+   <td style="text-align:left;"> 26.0% </td>
+   <td style="text-align:left;"> 27.3% </td>
+   <td style="text-align:left;"> 26.4% </td>
+   <td style="text-align:left;"> 26.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Growth Equity </td>
+   <td style="text-align:left;"> 0.9% </td>
+   <td style="text-align:left;"> 0.7% </td>
+   <td style="text-align:left;"> 1.9% </td>
+   <td style="text-align:left;"> 8.5% </td>
+   <td style="text-align:left;"> 2.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Other </td>
+   <td style="text-align:left;"> 21.5% </td>
+   <td style="text-align:left;"> 9.4% </td>
+   <td style="text-align:left;"> 14.2% </td>
+   <td style="text-align:left;"> 11.9% </td>
+   <td style="text-align:left;"> 13.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Second </td>
+   <td style="text-align:left;"> 0.1% </td>
+   <td style="text-align:left;"> 0.4% </td>
+   <td style="text-align:left;"> 0.3% </td>
+   <td style="text-align:left;"> 0.2% </td>
+   <td style="text-align:left;"> 0.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> VC </td>
+   <td style="text-align:left;"> 58.6% </td>
+   <td style="text-align:left;"> 63.6% </td>
+   <td style="text-align:left;"> 56.3% </td>
+   <td style="text-align:left;"> 53.0% </td>
+   <td style="text-align:left;"> 57.9% </td>
+  </tr>
+</tbody>
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
+</table>
+
 
 <div class="figure">
-<img src="./assets/pcri/pcrifigurea2web.png" alt="Fund Breakdown by Region (%)" width="100%" />
-<p class="caption">(\#fig:pcrifigurea2)Fund Breakdown by Region (%)</p>
+<img src="./assets/pcri/pcrifigurea2web.png" alt="Funds by Region (%)" width="100%" />
+<p class="caption">(\#fig:pcrifigurea2)Funds by Region (%)</p>
 </div>
+
+
 
 <div class="figure">
-<img src="./assets/pcri/pcrifigurea3web.png" alt="Fund Breakdown by Industry (%)" width="100%" />
-<p class="caption">(\#fig:pcrifigurea3)Fund Breakdown by Industry (%)</p>
+<img src="./assets/pcri/pcrifigurea3web.png" alt="Funds by Industry (%)" width="100%" />
+<p class="caption">(\#fig:pcrifigurea3)Funds by Industry (%)</p>
 </div>
 
-|Regions|1980-1989|1990-1999|2000-2009|2010-2015|
-|:---------------:|:---------:|:---------:|:---------:|:---------:|
-| Africa | 0.6% | 0.6% | 0.5% | 0.1% |
-| Asia | 11.5% | 13.5% | 14.9% | 10.3% |
-| Eurasia | 0.1% | 0.5% | 0.5% | 2.2% |
-| Europe | 31,2% | 25.8% | 30.3% | 32.5% |
-| Middle East | 0.9% | 1.4% | 1.8% | 1.9% |
-| Multi Geography | 0.0% | 0.0% | 0.0% | 0.0% |
-| North America | 7.3% | 4.9% | 3.7% | 2.8% |
-| Oceania | 2.5% | 1.5% | 1.2% | 0.6% |
-| South America |0.7% | 0.8% | 0.7% | 0.6% |
-| United States | 45.2% | 51.1% | 46.4% | 49.0% |
-Table: (\#tab:pcritablea3) Portfolio Companies by Location: Companies by Region, Split by Year Founded
+
+
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(\#tab:pcritablea3)Portfolio Companies by Region and Year Founded</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Regions </th>
+   <th style="text-align:left;"> 1980-1989 </th>
+   <th style="text-align:left;"> 1990-1999 </th>
+   <th style="text-align:left;"> 2000-2009 </th>
+   <th style="text-align:left;"> 2010-2015 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Africa </td>
+   <td style="text-align:left;"> 0.6% </td>
+   <td style="text-align:left;"> 0.6% </td>
+   <td style="text-align:left;"> 0.5% </td>
+   <td style="text-align:left;"> 0.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Asia </td>
+   <td style="text-align:left;"> 11.5% </td>
+   <td style="text-align:left;"> 13.5% </td>
+   <td style="text-align:left;"> 14.9% </td>
+   <td style="text-align:left;"> 10.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Eurasia </td>
+   <td style="text-align:left;"> 0.1% </td>
+   <td style="text-align:left;"> 0.5% </td>
+   <td style="text-align:left;"> 0.5% </td>
+   <td style="text-align:left;"> 2.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Europe </td>
+   <td style="text-align:left;"> 31.2% </td>
+   <td style="text-align:left;"> 25.8% </td>
+   <td style="text-align:left;"> 30.3% </td>
+   <td style="text-align:left;"> 32.5% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Middle East </td>
+   <td style="text-align:left;"> 0.9% </td>
+   <td style="text-align:left;"> 1.4% </td>
+   <td style="text-align:left;"> 1.8% </td>
+   <td style="text-align:left;"> 1.9% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Multi Geography </td>
+   <td style="text-align:left;"> 0.0% </td>
+   <td style="text-align:left;"> 0.0% </td>
+   <td style="text-align:left;"> 0.0% </td>
+   <td style="text-align:left;"> 0.0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> North America </td>
+   <td style="text-align:left;"> 7.3% </td>
+   <td style="text-align:left;"> 4.9% </td>
+   <td style="text-align:left;"> 3.7% </td>
+   <td style="text-align:left;"> 2.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Oceania </td>
+   <td style="text-align:left;"> 2.5% </td>
+   <td style="text-align:left;"> 1.5% </td>
+   <td style="text-align:left;"> 1.2% </td>
+   <td style="text-align:left;"> 0.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> South America </td>
+   <td style="text-align:left;"> 0.7% </td>
+   <td style="text-align:left;"> 0.8% </td>
+   <td style="text-align:left;"> 0.7% </td>
+   <td style="text-align:left;"> 0.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> United States </td>
+   <td style="text-align:left;"> 45.2% </td>
+   <td style="text-align:left;"> 51.1% </td>
+   <td style="text-align:left;"> 46.4% </td>
+   <td style="text-align:left;"> 49.0% </td>
+  </tr>
+</tbody>
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
+</table>
+
+
+
+
+
+
 
 ### Appendix B {-}
 
-[Sample Data Sponsor Agreement](.\appendix\pcri_appendix_b.pdf)
+[Sample Data Sponsor Agreement](./assets/appendix/pcri_appendix_b.pdf)
+
+
 
 ### Appendix C {-}
 
@@ -3240,7 +3529,7 @@ Table: (\#tab:pcritablea3) Portfolio Companies by Location: Companies by Region,
 
 *Laura Feeney (J-PAL North America)*  
 *Amy Finkelstein (Massachusetts Institute of Technology)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Laura Feeney, and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Laura Feeney, and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -3512,7 +3801,7 @@ The following is from the NDA:
 *Norma Ming (San Francisco Unified School District)*  
 *Michelle Reininger (University of Colorado at Boulder)*  
 *Eric Bettinger (Stanford University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -3842,7 +4131,7 @@ Beyond merely ensuring the safety and efficiency of this data infrastructure, th
 *Kelsey Jack (University of California, Santa Barbara)*  
 *Derek Strong (University of Southern California)*  
 *Brendan Maughan-Brown (J-PAL Africa)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hugh Cole, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hugh Cole, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -4331,7 +4620,7 @@ Coverage          time for which data are     intervals when data were
 
 *Arianna Legovini (World Bank)*  
 *Maria Ruth Jones (World Bank)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Arianna Legovini, and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Arianna Legovini, and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary 
 
@@ -4607,7 +4896,7 @@ Since 2018, +DIME| has required that all working papers pass a +computational_re
 *Era Dabla-Norris (International Monetary Fund)*  
 *Federico J. Díez (International Monetary Fund)*  
 *Romain Duval (International Monetary Fund)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Era Dabla-Norris, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Era Dabla-Norris, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -4774,7 +5063,7 @@ The intensity and frequency with which administrative data are used at the IMF d
 *Rema Hanna (Harvard Kennedy School)*  
 *Sudarno Sumarto (SMERU and TNP2K)*  
 *Putu Poppy Widyasari (J-PAL Southeast Asia)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Vivi Alatas, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Vivi Alatas, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
 
@@ -5359,8 +5648,9 @@ Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
 
 <!--chapter:end:98_00_licenses.Rmd-->
 
+# References {-}
 
-
+<!--  -->
 
 <!--chapter:end:99_00_references.Rmd-->
 

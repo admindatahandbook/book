@@ -83,7 +83,7 @@ function toggleCitation() {
     citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
   } else {
     x.style.display = "none";
-    button.innerHTML = "Cite this chapter";
+    button.innerHTML = "Show citation to this chapter";
   }
 } 
 
@@ -284,6 +284,7 @@ function toggleCitation() {
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
 <li class="chapter">Individual chapters ©️ by their authors.</li>
@@ -312,7 +313,7 @@ function toggleCitation() {
 <em>Phillip vom Berge (Institute for Employment Research)</em><br />
 
 <div id="citationLink">
-<a href="#" onclick="toggleCitation()"><span id="citationButton"> Cite this chapter. </span> </a>
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a>
 </div>
 <div id="myCitation" style="display: none;">
 Dana Müller, and Phillip vom Berge. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.
@@ -586,7 +587,7 @@ Figure 7.1: Number of jobs via JoSuA
 <h2><span class="header-section-number">7.7</span> Sustainability and Continued Success</h2>
 <div id="outreach" class="section level3">
 <h3><span class="header-section-number">7.7.1</span> Outreach</h3>
-<p>The RDC-IAB uses different channels to inform interested researchers about the data products and data access possibilities. Most importantly, extensive information is available online at the RDC-IAB <a href="https://fdz.iab.de/en.aspx">website</a>.<a href="#fn62" class="footnote-ref" id="fnref62"><sup>62</sup></a> Additionally, the RDC-IAB newsletter keeps data users updated on news, such as new data sets or data updates. A continuous user survey helps to identifying any problems with the flow of information to the data users and adjustments can be made to the website. RDC-IAB staff presents data and data access options at conferences, workshops, and seminars. Users, RDC-IAB staff, and IAB colleagues also present their research at national and international research conferences and publish in journals in various disciplines. These conference engagements often lead to questions or data requests from other researchers. International collaborations with high-ranking scholars boosted the interest in RDC-IAB data considerably <span class="citation">(Card, Heining, and Kline <a href="#ref-card2015" role="doc-biblioref">2015</a>; Schmieder, Wachter, and Bender <a href="#ref-schmieder2016" role="doc-biblioref">2016</a>)</span>. The extension of data access points in Germany and abroad also exemplified the importance of word of mouth advertising. Quite often, users report their experiences with RDC-IAB data to their colleagues, leading to small clusters of researchers from the same institution working with the data.</p>
+<p>The RDC-IAB uses different channels to inform interested researchers about the data products and data access possibilities. Most importantly, extensive information is available online at the RDC-IAB <a href="https://fdz.iab.de/en.aspx">website</a>.<a href="#fn62" class="footnote-ref" id="fnref62"><sup>62</sup></a> Additionally, the RDC-IAB newsletter keeps data users updated on news, such as new data sets or data updates. A continuous user survey helps to identifying any problems with the flow of information to the data users and adjustments can be made to the website. RDC-IAB staff presents data and data access options at conferences, workshops, and seminars. Users, RDC-IAB staff, and IAB colleagues also present their research at national and international research conferences and publish in journals in various disciplines. These conference engagements often lead to questions or data requests from other researchers. International collaborations with high-ranking scholars boosted the interest in RDC-IAB data considerably <span class="citation">(Card, Heining, and Kline <a href="#ref-card2015" role="doc-biblioref">2015</a>; Schmieder, von Wachter, and Bender <a href="#ref-schmieder2016" role="doc-biblioref">2016</a>)</span>. The extension of data access points in Germany and abroad also exemplified the importance of word of mouth advertising. Quite often, users report their experiences with RDC-IAB data to their colleagues, leading to small clusters of researchers from the same institution working with the data.</p>
 <p>RDC-IAB is a partner in IDAN. IDAN is a collaboration between six RDCs from France, Germany, the Netherlands, and the UK with the aim to enable working remotely with data from each partner at all partnering data access points, thus facilitating access and enabling cross-country comparisons. This allows parallel (but separate) analysis for different countries. Appending data sets from different countries into a common database is legally forbidden and technically prevented. The <em>Centre d’accès sécurisé aux données</em> (CASD) in France and the RDC-IAB, for instance, have already prepared documentation to make researchers more aware of the possibilities for cross-country comparisons <span class="citation">(Laible et al. <a href="#ref-laible2020" role="doc-biblioref">2020</a>)</span>. A joint conference in 2019 promoted the exchange between researchers, data providers, and stakeholders from different ministries in both countries and demonstrated the importance of access to administrative data and surveys.<a href="#fn63" class="footnote-ref" id="fnref63"><sup>63</sup></a></p>
 </div>
 <div id="revenue" class="section level3">
@@ -670,7 +671,7 @@ Grey literature (e.g., working papers, technical reports)
 </tr>
 </tbody>
 </table>
-<p>Apart from these general statistics, RDC-IAB also gathers user feedback to learn what the users think about service quality, data documentation, data access modes, and additional user needs. At first, this was done using irregular user surveys <span class="citation">(Wolter and Berge <a href="#ref-wolter2018" role="doc-biblioref">2018</a>)</span>, but currently two regular online user surveys are conducted. One survey focuses on service quality during the application phase. This survey is conducted shortly after the signing of the DUA by the requesting institution. It is addressed to the researchers using the data, since they are usually more deeply involved in the application process than the representative providing the signature. The second survey covers user experiences after completed projects.</p>
+<p>Apart from these general statistics, RDC-IAB also gathers user feedback to learn what the users think about service quality, data documentation, data access modes, and additional user needs. At first, this was done using irregular user surveys <span class="citation">(Wolter and vom Berge <a href="#ref-wolter2018" role="doc-biblioref">2018</a>)</span>, but currently two regular online user surveys are conducted. One survey focuses on service quality during the application phase. This survey is conducted shortly after the signing of the DUA by the requesting institution. It is addressed to the researchers using the data, since they are usually more deeply involved in the application process than the representative providing the signature. The second survey covers user experiences after completed projects.</p>
 <p>In general, user ratings are very good. For example, Figure <a href="iab.html#fig:iabfig4">7.4</a> shows the ratings of data documentation and personal data advice. More than 90 percent of the survey respondent are satisfied (very good and good) with the data documentation. While 40 percent of all participants did not use personal data advice, nearly all others are satisfied. User suggestions, ideas, and critiques are essential to improve data access further to the extent possible given available resources.</p>
 <div class="figure"><span id="fig:iabfig4"></span>
 <img src="figures/iabfig4-1.png" alt="User satisfaction with RDC-IAB services (options bad and very bad have not been chosen by respondents)"  />
@@ -719,7 +720,7 @@ This is a workaround for citations in footnotes, please ignore. <span class="cit
 <p>Card, David, Jörg Heining, and Patrick Kline. 2015. “CHK Effects.” FDZ Methodenreport 06/2015 (en). <a href="http://doku.iab.de/fdz/reporte/2015/MR_06-15_EN.pdf">http://doku.iab.de/fdz/reporte/2015/MR_06-15_EN.pdf</a>.</p>
 </div>
 <div id="ref-germandataforum">
-<p>German Data Forum. n.d. “Research Data Centers: Data Access for Science and Research – the "Research Data Centre" Success Story.” Accessed June 15, 2020. <a href="https://www.ratswd.de/en/data-infrastructure/rdc">https://www.ratswd.de/en/data-infrastructure/rdc</a>.</p>
+<p>German Data Forum. n.d. “Research Data Centers: Data Access for Science and Research the "Research Data Centre" Success Story.” Accessed June 15, 2020. <a href="https://www.ratswd.de/en/data-infrastructure/rdc">https://www.ratswd.de/en/data-infrastructure/rdc</a>.</p>
 </div>
 <div id="ref-heining2012">
 <p>Heining, Jörg, and Stefan Bender. 2012. “Technical and Organisational Measures for Remote Access to the Micro Data of the Research Data Centre of the Federal Employment Agency.” FDZ Methodenreport 08/2012 (en). <a href="http://doku.iab.de/fdz/reporte/2012/MR_08-12_EN.pdf">http://doku.iab.de/fdz/reporte/2012/MR_08-12_EN.pdf</a>.</p>
@@ -743,10 +744,10 @@ This is a workaround for citations in footnotes, please ignore. <span class="cit
 <p>Lücke, Christine. 2018. “When Protection Puts You in Jeopardy. How Removing Small-Business Clauses Affects Employment Duration.” <em>Labour</em> 32 (4): 213–36. <a href="https://doi.org/10.1111/labr.12124">https://doi.org/10.1111/labr.12124</a>.</p>
 </div>
 <div id="ref-mindestlohnkommission2016">
-<p>Mindestlohnkommission. 2016a. “Erster Bericht Zu Den Auswirkungen Des Gesetzlichen Mindestlohns. Bericht Der Mindestlohnkommission an Die Bundesregierung Nach § 9 Abs. 4 Mindestlohngesetz.” Berlin: Mindestlohnkommission. <a href="https://www.mindestlohn-kommission.de/DE/Bericht/pdf/Bericht2016.pdf?__blob=publicationFile&amp;v=4">https://www.mindestlohn-kommission.de/DE/Bericht/pdf/Bericht2016.pdf?__blob=publicationFile&amp;v=4</a>.</p>
+<p>Mindestlohnkommission. 2016a. “Erster Bericht Zu Den Auswirkungen Des Gesetzlichen Mindestlohns. Bericht Der Mindestlohnkommission an Die Bundesregierung Nach 9 Abs. 4 Mindestlohngesetz.” Berlin: Mindestlohnkommission. <a href="https://www.mindestlohn-kommission.de/DE/Bericht/pdf/Bericht2016.pdf?__blob=publicationFile\&amp;v=4">https://www.mindestlohn-kommission.de/DE/Bericht/pdf/Bericht2016.pdf?__blob=publicationFile\&amp;v=4</a>.</p>
 </div>
 <div id="ref-mindestlohnkommission2016a">
-<p>Mindestlohnkommission. 2016b. “Zweiter Bericht Zu Den Auswirkungen Des Gesetzlichen Mindestlohns. Bericht Der Mindestlohnkommission an Die Bundesregierung Nach \S 9 Abs. 4 Mindestlohngesetz.” Berlin: Mindestlohnkommission. <a href="https://www.mindestlohn-kommission.de/DE/Bericht/pdf/Bericht2018.pdf?__blob=publicationFile&amp;v=6">https://www.mindestlohn-kommission.de/DE/Bericht/pdf/Bericht2018.pdf?__blob=publicationFile&amp;v=6</a>.</p>
+<p>Mindestlohnkommission. 2016b. “Zweiter Bericht Zu Den Auswirkungen Des Gesetzlichen Mindestlohns. Bericht Der Mindestlohnkommission an Die Bundesregierung Nach \S 9 Abs. 4 Mindestlohngesetz.” Berlin: Mindestlohnkommission. <a href="https://www.mindestlohn-kommission.de/DE/Bericht/pdf/Bericht2018.pdf?__blob=publicationFile\&amp;v=6">https://www.mindestlohn-kommission.de/DE/Bericht/pdf/Bericht2018.pdf?__blob=publicationFile\&amp;v=6</a>.</p>
 </div>
 <div id="ref-muller2019">
 <p>Müller, Dana, and Joachim Möller. 2019. “Giving the International Scientific Community Access to German Labor Market Data: A Success Story.” In <em>Data-Driven Policy Impact Evaluation: How Access to Microdata Is Transforming Policy Design</em>, edited by Nuno Crato and Paolo Paruolo, 101–17. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-78461-8_7">https://doi.org/10.1007/978-3-319-78461-8_7</a>.</p>
