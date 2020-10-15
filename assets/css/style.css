@@ -59,7 +59,9 @@ pre code {
 
 /* used to add invisible data elements */
 
-.invisible {
+
+
+.invisible, #invisible {
   display: none;
 }
 

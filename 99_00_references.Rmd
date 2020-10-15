@@ -1,3 +1,2 @@
-# References {-}
+### References {- #invisible}
 
-<!-- `r if (knitr::is_latex_output()) {cat("# References {-}")}` -->
