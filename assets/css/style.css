@@ -65,8 +65,8 @@ pre code {
   display: none;
 }
 
-.nobullet li {
-  list-style-type: none;
+.indentforeword {
+    margin-left: 1em;
 }
 
 
