@@ -1,8 +1,10 @@
 #!/bin/sh
 
 set -ev
-LATEX=xelatex
+LATEX=pdflatex
 FILE=test_book
+OUTFILE=handbook_color_$(date +%F).pdf
+OUTFILEBW=handbook_bw_$(date +%F).pdf
 
 cd $(dirname $0)
 
@@ -18,13 +20,27 @@ fi
 Rscript programs/build_pdf.R > _R.log 2>&1
 
 # post-processing
-# For some reason, these appear in the tex files
-sed -i 's/NULL//' _main.tex
-sed -i 's/\\chapter\*{(PART) /\\part*{/' _main.tex
-sed -i 's/\\chapter\*{(APPENDIX) /\\part*{/' _main.tex
+# For some reason, these appear in the tex files when running as latex_fragment
+#sed -i 's/NULL//' _main.tex
+#sed -i 's/\\chapter\*{(PART) /\\part*{/' _main.tex
+#sed -i 's/\\chapter\*{(APPENDIX) /\\part*{/' _main.tex
 #sed -i 's/^\\chapter{/\putbib\n\\chapter{/' _main.tex 
-sed -i 's/\\addcontentsline{toc}{chapter}{(PART) /\\partline{/' _main.tex
-sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
+#sed -i 's/\\addcontentsline{toc}{chapter}{(PART) /\\partline{/' _main.tex
+#sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
+# fix bad reference translations
+#sed -i -E 's/@ref\(fig(.+)\)/\\ref{fig\1}/g' _main.tex 
+
+# These are still needed
+
+sed -i 's/\\part{/\\partline{/' _main.tex
+#sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
+
+# Fix the index terms
+# Needs "index_term_mapping.csv"
+
+mv _main.tex _main_pre_index.tex
+
+python3 map_index.py -i _main_pre_index.tex -o _main.tex
 
 # now compile it
 
@@ -47,6 +63,8 @@ $LATEX ${FILE}.tex > _tex.log 2>&1
 if [ -f ${FILE}.pdf ]
 then
   echo "Success."
-  mv ${FILE}.pdf handbook_$(date +%F).pdf
+  mv ${FILE}.pdf ${OUTFILE}
+  # convert to greyscale
+  programs/pdf_to_grayscale.sh -i ${OUTFILE} -o ${OUTFILEBW}
 fi
 

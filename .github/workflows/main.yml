@@ -14,7 +14,7 @@ jobs:
         run: "chmod +x ./_build.sh"
       # Runs a set of commands using the runners shell
       - name: Run docker for R 
-        uses: docker://atusy/atusydown
+        uses: docker://larsvilhuber/ideahandbook:latest
         with:
           args: "/github/workspace/_build.sh"
           

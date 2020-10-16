@@ -31,7 +31,7 @@ In addition to the internal organization or agency-based IRB, organizations and 
 
 Independent IRBs also may be an option for a data provider who would like to submit research projects for ethical oversight when there is no federal requirement to do so. This chapter is not focused on independent or central IRBs but for more information about +central_IRBs| and institutional IRBs see @wandile2018.
 
-At the center of the ethics review process is the +Belmont_Report| [@unitedstates1978], which summarizes the ethical principles and guidelines IRBs use when reviewing research involving human subjects. Three core principles are identified:
+At the center of the ethics review process is the +Belmont_Report| [@belmont1979], which summarizes the ethical principles and guidelines IRBs use when reviewing research involving human subjects. Three core principles are identified:
 
 1. *Respect for persons* allows individuals to be self-directed and make informed, voluntary decisions about whether they wish to participate in research and is the fundamental ethical rationale for the consent process and the elements of the consent document.
 2. *Beneficence* assesses the risks and benefits of participating in research, recognizing the obligation of the researcher to minimize risks while maximizing the benefits of participation.

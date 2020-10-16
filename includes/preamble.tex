@@ -1,7 +1,10 @@
 % addtional packages for the book
-%\usepackage{chapterbib}
+%
+
+%-------------- making an index ------------------------
 \usepackage{imakeidx}
 \makeindex
+
 \usepackage{setspace}
 \usepackage{ragged2e}
 
@@ -9,7 +12,106 @@
 
 \excludecomment{invisible}
 % for now - must be included later
-\excludecomment{bbox}
+%\excludecomment{bbox}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\newcommand{\boxwidth}{1\linewidth}
+\tcbset{width=\boxwidth}
+\newenvironment{bbox}{\begin{figure}[t]\begin{tcolorbox}}{\end{tcolorbox}\captionsetup{labelformat=empty}\end{figure}}
 
 % workaround
 \newcommand{\partline}[1]{\cftaddtitleline{toc}{part}{#1}{}}
+
+% addtional packages for the book
+
+
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+%\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{placeins} % for FloatBarrier
+
+%
+% Workaround
+%
+\newcommand{\BeginKnitrBlock}[1]{}
+\newcommand{\EndKnitrBlock}[1]{}
+
+%
+% Bibliography-related
+% 
+
+%%%%% bib
+\usepackage[]{natbib}
+\setcitestyle{round}
+
+\usepackage[sectionbib,globalcitecopy]{bibunits}
+
+
+\setlength{\bibsep}{0.0pt}
+\setlength{\bibhang}{6pt}
+
+\renewcommand{\bibpreamble}{\footnotesize} 
+%\renewcommand{\bibname}{References in Chapter \thechapter}
+
+%
+%  automatically add \putbib at end of each chapter
+
+%\ifx\putbib\undefined\else
+%    \let\oldchapter\chapter
+%    \renewcommand{\chapter}{%
+%    \putbib
+%    \oldchapter
+%  }
+%\fi
+
+
+% 
+% Change name of bibliography
+
+\renewcommand{\bibname}{References}
+
+%
+% Chapter author tables
+%
+\newenvironment{authorlist}{\renewcommand{\arraystretch}{0.6}\begin{tabular}{l}}{\end{tabular}}
+
+%
+% Handle Unicode in a few cases
+%
+\DeclareUnicodeCharacter{03C4}{$\tau$}
+\DeclareUnicodeCharacter{03BC}{$\mu$}
+
+%
+%  Override figure width
+%
+\setkeys{Gin}{width=0.9\textwidth}
+
+%
+% crop marks - do we need these?
+%
+%\usepackage[cam,letter,center]{crop}
+
+% PARAMETERS
+% Figure 1 in PCRI
+\newcommand{\widthpcria}{0.6\textwidth}
+% Figure 2 in PCRI
+\newcommand{\widthpcrib}{1\textwidth}
+% Figure A1 in PCRI
+\newcommand{\widthpcriaa}{1\textwidth}
+% Figure A2 in PCRI
+\newcommand{\widthpcriab}{1\textwidth}
+% Figure A3 in PCRI
+\newcommand{\widthpcriac}{1\textwidth}
+
+
+
+
+
