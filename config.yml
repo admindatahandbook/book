@@ -101,13 +101,13 @@ default:
       inst: World Bank
     iqbaldhaliwal:
       name: Iqbal Dhaliwal
-      inst: Abdul Latif Jameel Poverty Action Lab
+      inst: J-PAL, Massachusetts Institute of Technology
     jimshen:
       name: Jim Shen
-      inst: Abdul Latif Jameel Poverty Action Lab
+      inst: J-PAL, Massachusetts Institute of Technology
     laurafeeney:
       name: Laura Feeney
-      inst: J-PAL North America
+      inst: J-PAL North America, Massachusetts Institute of Technology
     amyfinkelstein:
       name: Amy Finkelstein
       inst: Massachusetts Institute of Technology
@@ -116,7 +116,7 @@ default:
       inst: Asa Kreativita
     farahamalia:
       name: Farah Amalia
-      inst: J-PAL Southeast Asia
+      inst: J-PAL Southeast Asia, University of Indonesia
     abhijitbanerjee:
       name: Abhijit Banerjee
       inst: Massachusetts Institute of Technology
@@ -131,7 +131,7 @@ default:
       inst: SMERU and TNP2K
     putupoppywidyasari:
       name: Putu Poppy Widyasari
-      inst: J-PAL Southeast Asia
+      inst: J-PAL Southeast Asia, University of Indonesia
     ariannalegovini:
       name: Arianna Legovini
       inst: World Bank
@@ -149,7 +149,7 @@ default:
       inst: University of Southern California
     brendanmaughanbrown:
       name: Brendan Maughan-Brown
-      inst: J-PAL Africa
+      inst: J-PAL Africa, University of Cape Town
     moonhawkkim:
       name: Moonhawk Kim
       inst: University of California, Berkeley
