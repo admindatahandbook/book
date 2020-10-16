@@ -63,6 +63,10 @@ pre code {
   display: none;
 }
 
+.nobullet li {
+  list-style-type: none;
+}
+
 
 /* used for citations */
 #myCitation {
