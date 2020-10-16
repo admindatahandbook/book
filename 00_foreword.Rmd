@@ -16,7 +16,7 @@ I argue that this Handbook suggests a better metaphor---at least implicitly. The
 
 The challenge is that, as a goal to nudge toward, repurposing administrative data for use by researchers has been neither easy nor social. The Handbook chapters that follow present many examples of how the process can be made less burdensome for individuals and more beneficial for society. One way of appreciating the value of such advice is to consider the potential costs incurred without it:
 
-```{block, type='indentforeword'}
+```{block2, type='indentforeword'}
 **Fixed Costs**
 
 Some holders of administrative data charge researchers for access. Even data that are supposed to be public by law, like the federal tax returns of charitable organizations, may only be available in bulk for a fee. Voter rolls and company registers must be purchased in certain states but are free to download in others.
