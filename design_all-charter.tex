@@ -1,20 +1,14 @@
 \documentclass[11pt]{book}
 \usepackage[utf8]{inputenc}
-\usepackage{adjustbox}
-\usepackage{ltablex}
-\usepackage{rotating}
 
 
-%captioning
-\usepackage[format=hang,justification=raggedright,  font={small,singlespacing}, labelfont={small,sf,bf}]{caption}
 %Spacing
 \usepackage{setspace}
 \setstretch{1.15}
 
-
 % Font:
 \renewcommand{\rmdefault}{bch}
-\renewcommand{\sfdefault}{phv}
+\renewcommand{\sfdefault}{bch}
 
 
 % page margins 
@@ -25,49 +19,45 @@
 %\usepackage{enumitem}
 % tables
 \usepackage{booktabs}
-\usepackage{array}
-
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
-\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+% use one of those if needed for referencing figures etc.
+%\usepackage{varioref}
+%\usepackage{hyperref}
+%\usepackage{cleveref}
 
 % headers and footers
 \usepackage{fancyhdr}
 \usepackage{emptypage} % removes headers and footers from empty pages
-
-%%%% Section and chapter titles
+% Section and chapter titles
 \usepackage{titling}
 
-%%%%%Headings and chapter titles
+%Headings and chapter titles
 \usepackage{titlesec}
 %Make "Chapter 1" all caps
 \renewcommand{\chaptername}{CHAPTER}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{includes/preamble-extra.tex} % used for non-pandoc compile only
-
 \input{includes/preamble.tex}
+\input{includes/preamble-extra.tex} % used for non-pandoc compile only
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\setuphead[chapter][align={flushleft, nothyphenated, verytolerant}]
-
-%%%%%Format chapter titles on chapter title pages
+%Format chapter titles on chapter title pages
 \titleformat{\chapter}[display]
   {\Large\sffamily}{\chaptertitlename\ \thechapter}{20pt}{\Huge\bfseries}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
-%%%%%Set heading styles
+%Set heading styles
 \titleformat*{\section}{\LARGE\sffamily\bfseries\parindent0pt}
 \titleformat*{\subsection}{\Large\sffamily\bfseries}
 \titleformat*{\subsubsection}{\large\sffamily\bfseries}
 %\renewcommand{\maketitlehooka}{\rmfamily}
 
 
-%%%%%% Setting headers and footers 
+%% Setting headers and footers 
 % use after geometry to get right size
 \pagestyle{fancy}
 \fancyhf{}% Clear header/footer
-
 %Headers:
 \makeatletter
 \fancyhead[RO]{\sffamily \scriptsize Using Administrative Data for Research and Evidence-Based Policy}
@@ -75,6 +65,7 @@
 \fancyhead[LE]{\sffamily \scriptsize \if@mainmatter CHAPTER \thechapter\fi}
 \makeatother
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
 
 %Footers: 
 \makeatletter
@@ -86,14 +77,13 @@
 \fancyfoot[LO,CE]{}
 \fancyfoot[CO,RE]{}
 \renewcommand{\headrulewidth}{0.0pt}
-
 %Make chapter title pages have the same page numbers as the rest:
 \fancypagestyle{plain}{% % <-- this is new
   \fancyhf{} 
   \fancyfoot[LE,RO]{\small \thepage} % same placement as with page style "fancy"
   \renewcommand{\headrulewidth}{0pt}}
 
-%%%%%% Title page:
+%% Title page:
 % Formatting the title of the book to flush left
 %\pretitle{ \begin{flushleft}\LARGE\sffamily  }
 %\posttitle{ \par \end{flushleft} \vskip 2em}
@@ -112,7 +102,7 @@
 }
 \postauthor{}
 
-%%%%%Title here
+%Title here
 % Title page
 \pretitle{ \begin{flushleft}\LARGE\sffamily  }
 
@@ -120,10 +110,11 @@
 \posttitle{ \par \end{flushleft} \vskip 2em} 
 
 \author{\sffamily \Large \authorthing}
+
 \date{ }
 
 
-%%%%% Chapter titles with authors in ToC and chapter 
+% Chapter titles with authors in ToC and chapter 
 \makeatletter
 
 \newcommand{\chapterauthor}[1]{\authortoc{#1}\printchapterauthor{#1}}
@@ -147,13 +138,14 @@
 \setlength{\parskip}{.2cm plus 1mm minus 1mm}
 
 
-%%%%% TOC
+% TOC
 \usepackage{tocloft}
 \renewcommand{\cfttoctitlefont}{\sffamily\huge\bfseries}
 \renewcommand{\cftchapfont}{\rmfamily \bfseries}
 \renewcommand{\cftchappagefont}{\normalfont \small}
 %\renewcommand{\cftchapdotsep}{\cftdotsep} 
 %\renewcommand{\cftpartleader}{\cftdotfill{}} % for parts
+
 
 %this keeps the toc from adding extra stuff (subsections)
 \setcounter{tocdepth}{0}
@@ -165,6 +157,8 @@
   \fi}
 
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document start
 \begin{document}
@@ -174,16 +168,16 @@
 \defaultbibliography{packages.bib,ideahandbook.bib}
 
 \frontmatter
-\pagenumbering{roman}
-
-\newpage\null\thispagestyle{empty} 
+\newpage\null\thispagestyle{empty}
 \newpage
+
+\pagenumbering{roman}
 
  % Title page rendering
 \maketitle
 
-\newpage\null\thispagestyle{empty}
-\newpage
+\newpage\null\thispagestyle{empty}\newpage
+
 
 % TOC
 \tableofcontents 
@@ -192,8 +186,8 @@
 \newpage
 \pagestyle{fancy}
 
-\cleardoublepage
 
+\cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{About the Editors}
 
@@ -268,7 +262,7 @@ and incoming chair of the American Statistical Association`s
 Confidentiality}. Lars has an undergraduate degree in Economics from
 Universität Bonn and a Ph.D.~in Economics from Université de Montréal.
 
-\section*{About J-PAL}\label{about-j-pal} %take out
+\section*{About J-PAL}\label{about-j-pal}
 \phantomsection
 \addcontentsline{toc}{chapter}{About J-PAL}
 
@@ -307,18 +301,13 @@ North Africa, North America, South Asia, and Southeast Asia.
 
 \chapter[Increasing Access to Administrative Data: Why and How?]{Increasing Access to \\ Administrative Data: \\ Why and How?}
 
-\authortoc{Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber}
-\printchapterauthor
-{    \begin{tabular}{l}
-    Shawn Cole, Harvard Business School \\
-    Iqbal Dhaliwal, Abdul Latif Jameel Poverty Action Lab \\ 
-    Anja Sautmann, World Bank \\
-    Lars Vilhuber, Cornell University
-\end{tabular}
-}
+\chapterauthor{Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber}
 \hrulefill
 
+\section{Summary}
 
+If there's an executive summary it would be here.
+\newpage
 \section{The Potential of Administrative Data for Research and Policymaking}
 
 Over the course of our careers, we, the editors of this Handbook, have been witness to extraordinary changes in economics and economic research. One of them has been the rise of research in applied microeconomics and development economics that focuses on working closely with policymaking bodies and creating an evidence base for better social programming. Two key factors have contributed to this trend: increased availability of new data sources, and the rapid growth in the use of experiments (randomized control trials or randomized evaluations) in the social sciences. These developments have enabled many new avenues of research, such as how behavioral factors affect optimal policy design, how to credibly evaluate long-run effects of landmark social programs, or how to make changes to these programs informed by a better understanding of the levers of impact. In the process, they have dramatically improved the quality and breadth of evidence used to inform policy.
@@ -327,87 +316,10 @@ Yet it is also our experience that this type of research is in many cases conduc
 
 At the same time, there are a wide variety of data sets already in existence, such as census records, banking data, employment information, or GPS records, which could dramatically reduce the cost and complexity of policy-relevant research – including randomized control trials – and speed up the formation of an evidence base for policymaking. Administrative data, sometimes referred to as organic data (Groves 2011) because they are generated as part of normal business processes, often contain comprehensive, objective data about large populations of interest. Decision-makers at firms and in government are already using such data to better understand problems and issues of populations of interest, and based on such evidence-based analytics, new policies are implemented or new questions are defined.
 
-\begin{figure}[t!]
-\caption{Time Trends in the Use of Administrative Data for Empirical
-Research. Source: Chetty (2012). Used by permission.}
-\centering
-\includegraphics{figures/introchetty-1.pdf}
-\rule{1\textwidth}{0.3pt} 
-\end{figure}
-
-
-\begin{figure}[t!]
-
-\centering
-\includegraphics{figures/introchetty-1.pdf}
-\caption{Time Trends in the Use of Administrative Data for Empirical
-Research. Source: Chetty (2012). Used by permission.}
-\rule{1\textwidth}{0.3pt} 
-\end{figure}
-
 Beyond these uses, carefully designed systematic research with administrative data, often partnering academic researchers with firms and governments, may carry out analyses, conduct experiments, and develop and field supplemental surveys to test specific mechanisms or hypotheses. This type of innovative research could dramatically expand the types of insights gained from the data. An increasing fraction of published papers in economics uses administrative data (see Figure 1.1, Chetty (2012)). However, researcher access to administrative data sets remains difficult and idiosyncratic (Card et al. 2010). This Handbook is motivated by our view that easier access and an increased use of administrative data sets by researchers could dramatically improve the quantity and quality of available evidence on social programs and policies.
-\begin{figure}[t!]
-\centering
-\includegraphics{figures/introchetty-1.pdf}
-\caption{Time Trends in the Use of Administrative Data for Empirical
-Research. Source: Chetty (2012). Used by permission.}
-\end{figure}
-Beyond these uses, carefully designed systematic research with administrative data, often partnering academic researchers with firms and governments, may carry out analyses, conduct experiments, and develop and field supplemental surveys to test specific mechanisms or hypotheses. This type of innovative research could dramatically expand the types of insights gained from the data. An increasing fraction of published papers in economics uses administrative data (see Figure 1.1, Chetty (2012)). However, researcher access to administrative data sets remains difficult and idiosyncratic (Card et al. 2010). This Handbook is motivated by our view that easier access and an increased use of administrative data sets by researchers could dramatically improve the quantity and quality of available evidence on social programs and policies.
-
 
 \newpage
-\section{Table example}
-\begin{sidewaystable}
-%\makebox[\textwidth][c]{
-\fontsize{7.5}{10}\selectfont
-\begin{tabular}[t]{>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{8em}>{\raggedright\arraybackslash}p{20em}>{\raggedright\arraybackslash}p{24em}}
-\toprule
-Case Study & Type of Data Provider & Data Intermediary/Data Holder & Highlight\\
-\midrule
-Aurora Health Care (AHC, ch.\ 11) & Private company & Data is transferred directly to researchers at MIT and J-PAL & Researcher team helped a private firm think through data protection and cleaning to enable a randomized control trial measuring sensitive health outcomes.\\
-City of Cape Town (CCT, ch.\ 13) & City government & Researchers access a server owned by the City to download data & A new data policy led to a productive cooperation between the City and academic researchers to create systematic data access.\\
-Development Impact Evaluation, World Bank Group (DIME, ch.\ 14) & Variety of public and private partners & Data is transferred directly to researchers at DIME & DIME's development economists and analysts apply their research expertise and best practices in partnerships with many different administrative data providers.\\
-Institute for Employment Research (RDC-IAB, ch.\ 7) & National government agency & RDC-IAB and research data centers at universities provide access to computers that hold the data & A clear legal mandate allows RDC-IAB to distribute German labor market data through a network of remote access points  at national and international research institutions.\\
-International Monetary Fund (IMF, ch.\ 15) & Variety of international government partners & Data is held by national governments or transferred directly to researchers at the IMF & As part of its mandate, the IMF helps governments overhaul their tax systems and conduct research on the tax data.\\
-\addlinespace
-Government of Indonesia (GoI, ch.\ 16) & National government & Data is held by government agencies and transferred directly to researchers & A long-term research partnership enabled multiple nationally representative experiments to improve the targeting of social programs.\\
-New Brunswick Institute for Data, Research, and Training (NB-IRDT, ch.\ 9) & Provincial government social protection agencies & Research center at  U.\ of New Brunswick (public) holds and provides data for download to affiliated faculty & A relatively new partnership that has seen rapid expansion in the data that it makes available to researchers, with specific legal mandates for data access and sharing,\\
-Ohio Longitudinal Data Archive (OLDA, ch.\ 8) & State agencies & Research center at Ohio State U.\ (public) holds and provides access to the data to approved users & A long-running and successful administrative data partnership that started in 2007. In the last 5 years, 28 published studies have used data accessed through OLDA.\\
-Private Capital Research Institute (PCRI, ch.\ 10) & Private firms and publicly available data & An independent, faculty-led non-profit (PCRI) assembles the data and stores it at a research center/data archive (NORC at the University of Chicago) & Meticulous data cleaning work and relationship building in an industry that tends to be secretive, as well as sophisticated data protection policies, led to the creation of a comprehensive database on private capital.\\
-Stanford-San Francisco Unified School District Partnership (SSFUSD, ch.\ 12) & School district & Research center at a private university (CEPA at Stanford University) holds and provides data for download by affiliated faculty & A well-established, mature partnership with streamlined application and review processes that hosts comprehensive data on students, teachers, and schools, and supports data access for multiple projects each year.\\
-\bottomrule
-\end{tabular}
-%}
-\caption{\label{tab:introtable1}List of case studies in this Handbook in alphabetical order. Acronym used and chapter number in brackets.}
-
-\end{sidewaystable}
-
-\begin{table}
-%\makebox[\textwidth][c]{
-\fontsize{10}{10}\selectfont
-\begin{tabular}[t]{>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{8em}>{\raggedright\arraybackslash}p{20em}>{\raggedright\arraybackslash}p{24em}}
-\toprule
-Case Study & Type of Data Provider & Data Intermediary/Data Holder & Highlight\\
-\midrule
-Aurora Health Care (AHC, ch.\ 11) & Private company & Data is transferred directly to researchers at MIT and J-PAL & Researcher team helped a private firm think through data protection and cleaning to enable a randomized control trial measuring sensitive health outcomes.\\
-City of Cape Town (CCT, ch.\ 13) & City government & Researchers access a server owned by the City to download data & A new data policy led to a productive cooperation between the City and academic researchers to create systematic data access.\\
-Development Impact Evaluation, World Bank Group (DIME, ch.\ 14) & Variety of public and private partners & Data is transferred directly to researchers at DIME & DIME's development economists and analysts apply their research expertise and best practices in partnerships with many different administrative data providers.\\
-Institute for Employment Research (RDC-IAB, ch.\ 7) & National government agency & RDC-IAB and research data centers at universities provide access to computers that hold the data & A clear legal mandate allows RDC-IAB to distribute German labor market data through a network of remote access points  at national and international research institutions.\\
-International Monetary Fund (IMF, ch.\ 15) & Variety of international government partners & Data is held by national governments or transferred directly to researchers at the IMF & As part of its mandate, the IMF helps governments overhaul their tax systems and conduct research on the tax data.\\
-\addlinespace
-Government of Indonesia (GoI, ch.\ 16) & National government & Data is held by government agencies and transferred directly to researchers & A long-term research partnership enabled multiple nationally representative experiments to improve the targeting of social programs.\\
-New Brunswick Institute for Data, Research, and Training (NB-IRDT, ch.\ 9) & Provincial government social protection agencies & Research center at  U.\ of New Brunswick (public) holds and provides data for download to affiliated faculty & A relatively new partnership that has seen rapid expansion in the data that it makes available to researchers, with specific legal mandates for data access and sharing,\\
-Ohio Longitudinal Data Archive (OLDA, ch.\ 8) & State agencies & Research center at Ohio State U.\ (public) holds and provides access to the data to approved users & A long-running and successful administrative data partnership that started in 2007. In the last 5 years, 28 published studies have used data accessed through OLDA.\\
-Private Capital Research Institute (PCRI, ch.\ 10) & Private firms and publicly available data & An independent, faculty-led non-profit (PCRI) assembles the data and stores it at a research center/data archive (NORC at the University of Chicago) & Meticulous data cleaning work and relationship building in an industry that tends to be secretive, as well as sophisticated data protection policies, led to the creation of a comprehensive database on private capital.\\
-Stanford-San Francisco Unified School District Partnership (SSFUSD, ch.\ 12) & School district & Research center at a private university (CEPA at Stanford University) holds and provides data for download by affiliated faculty & A well-established, mature partnership with streamlined application and review processes that hosts comprehensive data on students, teachers, and schools, and supports data access for multiple projects each year.\\
-\bottomrule
-\end{tabular}
-%}
-\caption{\label{tab:introtable1}List of case studies in this Handbook in alphabetical order. Acronym used and chapter number in brackets.}
-
-\end{table}
-
-
+\section{more}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{part-special-topics}{%
