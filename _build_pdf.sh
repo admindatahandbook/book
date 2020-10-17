@@ -6,6 +6,13 @@ FILE=test_book
 OUTFILE=handbook_color_$(date +%F).pdf
 OUTFILEBW=handbook_bw_$(date +%F).pdf
 
+if [ -z $1 ]
+then
+   skip=no
+else
+   skip=yes
+fi
+
 cd $(dirname $0)
 
 # set up the environment
@@ -17,7 +24,11 @@ then
   rm -f _main.Rmd
 fi 
 # build the handbook
-Rscript programs/build_pdf.R > _R.log 2>&1
+
+if [ "$skip" == "no" ]
+then
+   Rscript programs/build_pdf.R > _R.log 2>&1
+fi
 
 # post-processing
 # For some reason, these appear in the tex files when running as latex_fragment
