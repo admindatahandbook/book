@@ -1,71 +1,100 @@
-\documentclass[11pt]{book}
+\documentclass[11pt, twoside]{book}
 \usepackage[utf8]{inputenc}
+\usepackage{adjustbox}
+\usepackage{ltablex}
+\usepackage{rotating}
 
 
+%captioning
+\usepackage[format=hang,justification=raggedright,  font={small,singlespacing}, labelfont={small,sf,bf}]{caption}
 %Spacing
 \usepackage{setspace}
 \setstretch{1.15}
 
+
 % Font:
 \renewcommand{\rmdefault}{bch}
-\renewcommand{\sfdefault}{bch}
+\renewcommand{\sfdefault}{phv}
+\makeatletter 
+\newcommand\semiHuge{\@setfontsize\semiHuge{22.72}{27.38}}
+\makeatother
 
 
-% page margins 
-\usepackage[paperheight=9in,paperwidth=7in,top=1in,bottom=1in,right=1in,left=1in]{geometry}
+% page margins, including .125in bleed on the 3 non-binding sides 
+\usepackage[paperheight=9.25in,paperwidth=7.125in,top=.875in,bottom=.875in,inner=.75in,outer=.875in]{geometry}
 %\usepackage[cam,letter,center]{crop}
+
 
 % lists:
 %\usepackage{enumitem}
 % tables
 \usepackage{booktabs}
-% use one of those if needed for referencing figures etc.
-%\usepackage{varioref}
-%\usepackage{hyperref}
-%\usepackage{cleveref}
+\usepackage{array}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 
 % headers and footers
 \usepackage{fancyhdr}
 \usepackage{emptypage} % removes headers and footers from empty pages
-% Section and chapter titles
-\usepackage{titling}
 
-%Headings and chapter titles
+
+%%%%%Headings and chapter titles
 \usepackage{titlesec}
+\usepackage{titling}
 %Make "Chapter 1" all caps
 \renewcommand{\chaptername}{CHAPTER}
+
+%%%% Section and chapter titles
+%Format chapter titles on chapter title pages
+\titleformat{\chapter}[display]
+  {\Large\sffamily}{\chaptertitlename\ \thechapter}{14pt}{\semiHuge\bfseries}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+%Set heading styles
+\titleformat*{\section}{\Large\sffamily\bfseries\parindent0pt}
+\titleformat*{\subsection}{\large\sffamily\bfseries}
+\titleformat*{\subsubsection}{\normalsize\sffamily\bfseries}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{includes/preamble.tex}
 \input{includes/preamble-extra.tex} % used for non-pandoc compile only
 
+%%%%% bib
+\setlength{\bibsep}{0.0pt}
+\setlength{\bibhang}{6pt}
+
+\renewcommand{\bibpreamble}{\footnotesize} 
+\renewcommand{\bibname}{References in Chapter \thechapter}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\setuphead[chapter][align={flushleft, nothyphenated, verytolerant}]
-%Format chapter titles on chapter title pages
+
+%%%%%Format chapter titles on chapter title pages
 \titleformat{\chapter}[display]
   {\Large\sffamily}{\chaptertitlename\ \thechapter}{20pt}{\Huge\bfseries}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
-%Set heading styles
+%%%%%Set heading styles
 \titleformat*{\section}{\LARGE\sffamily\bfseries\parindent0pt}
 \titleformat*{\subsection}{\Large\sffamily\bfseries}
 \titleformat*{\subsubsection}{\large\sffamily\bfseries}
+\titleformat*{\part}{\LARGE\sffamily\bfseries}
 %\renewcommand{\maketitlehooka}{\rmfamily}
 
 
-%% Setting headers and footers 
+%%%%%% Setting headers and footers 
 % use after geometry to get right size
 \pagestyle{fancy}
 \fancyhf{}% Clear header/footer
+
 %Headers:
 \makeatletter
-\fancyhead[RO]{\sffamily \scriptsize Using Administrative Data for Research and Evidence-Based Policy}
+\fancyhead[RO]{\sffamily \itshape \scriptsize Using Administrative Data for Research and Evidence-Based Policy}
 \fancyhead[LO]{ }
 \fancyhead[LE]{\sffamily \scriptsize \if@mainmatter CHAPTER \thechapter\fi}
 \makeatother
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-
 
 %Footers: 
 \makeatletter
@@ -77,32 +106,34 @@
 \fancyfoot[LO,CE]{}
 \fancyfoot[CO,RE]{}
 \renewcommand{\headrulewidth}{0.0pt}
+
 %Make chapter title pages have the same page numbers as the rest:
 \fancypagestyle{plain}{% % <-- this is new
   \fancyhf{} 
   \fancyfoot[LE,RO]{\small \thepage} % same placement as with page style "fancy"
   \renewcommand{\headrulewidth}{0pt}}
 
-%% Title page:
+%%%%%% Title page:
 % Formatting the title of the book to flush left
 %\pretitle{ \begin{flushleft}\LARGE\sffamily  }
 %\posttitle{ \par \end{flushleft} \vskip 2em}
 
 % Formatting the author list
-
+\usepackage{changepage}
 \preauthor{ }
 \DeclareRobustCommand{\authorthing}
 {\begin{flushleft}\Large
+\begin{adjustwidth}{-.16cm}{}
     \begin{tabular}{l}
     %\setlength{\tabcolsep}{1pt}
     Shawn Cole \\ Iqbal Dhaliwal \\ Anja Sautmann \\ Lars Vilhuber 
 \end{tabular}
-
+\end{adjustwidth}
 \end{flushleft}
 }
 \postauthor{}
 
-%Title here
+%%%%%Title here
 % Title page
 \pretitle{ \begin{flushleft}\LARGE\sffamily  }
 
@@ -110,21 +141,23 @@
 \posttitle{ \par \end{flushleft} \vskip 2em} 
 
 \author{\sffamily \Large \authorthing}
-
 \date{ }
 
 
-% Chapter titles with authors in ToC and chapter 
+%%%%% Chapter titles with authors in ToC and chapter 
 \makeatletter
 
 \newcommand{\chapterauthor}[1]{\authortoc{#1}\printchapterauthor{#1}}
 
 \newcommand{\printchapterauthor}[1]{%
-    {\parindent0pt\vspace*{-35pt}%
-    \linespread{2}\large\sffamily #1%
+    \begin{adjustwidth}{-.12cm}{}
+    {\parindent-0.0cm\vspace*{-35pt}%
+    \linespread{1.5}\large\sffamily #1%
     \par\nobreak\vspace*{35pt}}
     \@afterheading%
+    \end{adjustwidth}
 }
+
 \newcommand{\authortoc}[1]{%
     \addtocontents{toc}{\vskip-10pt}%
     \addtocontents{toc}{%
@@ -138,14 +171,13 @@
 \setlength{\parskip}{.2cm plus 1mm minus 1mm}
 
 
-% TOC
+%%%%% TOC
 \usepackage{tocloft}
 \renewcommand{\cfttoctitlefont}{\sffamily\huge\bfseries}
-\renewcommand{\cftchapfont}{\rmfamily \bfseries}
+\renewcommand{\cftchapfont}{\sffamily \bfseries}
 \renewcommand{\cftchappagefont}{\normalfont \small}
 %\renewcommand{\cftchapdotsep}{\cftdotsep} 
 %\renewcommand{\cftpartleader}{\cftdotfill{}} % for parts
-
 
 %this keeps the toc from adding extra stuff (subsections)
 \setcounter{tocdepth}{0}
@@ -157,8 +189,6 @@
   \fi}
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document start
 \begin{document}
@@ -168,115 +198,34 @@
 \defaultbibliography{packages.bib,ideahandbook.bib}
 
 \frontmatter
+\pagenumbering{roman}
+
+
+%2 blank pages to start book
+\newpage\null\thispagestyle{empty} 
+\newpage
 \newpage\null\thispagestyle{empty}
 \newpage
 
-\pagenumbering{roman}
+%Half title page
+\newpage\vspace*{0.75in}{\sffamily \large HANDBOOK ON \medskip \\ \medskip \LARGE \textbf{Using Administrative Data for Research \\ and Evidence-based Policy}}\thispagestyle{empty}
 
- % Title page rendering
+% Title page rendering
 \maketitle
+%\newpage
 
-\newpage\null\thispagestyle{empty}\newpage
+%Copyright page
+\newpage\thispagestyle{empty}
+\include{copyright}
+\newpage
 
 
 % TOC
 \tableofcontents 
-
-
 \newpage
 \pagestyle{fancy}
-
-
 \cleardoublepage
-\phantomsection
-\addcontentsline{toc}{chapter}{About the Editors}
-
-\section*{About the Editors}\label{about-the-editors}
-
-\subsection*{Shawn Cole}\label{shawn-cole}
-
-\href{https://www.hbs.edu/faculty/Pages/profile.aspx?facId=340064}{Shawn
-Cole} is the John G McLean Professor of Business Administration at
-Harvard Business School. Shawn is a Co-Chair of J-PAL's Innovations in
-Data and Experiments for Action Initiative (IDEA). His research examines
-agriculture, corporate finance, banking, and consumer finance in
-developing countries. He has conducted randomized evaluations in
-education, financial literacy, agricultural risk management, and ICT for
-agriculture. He received a Ph.D.~in economics from the Massachusetts
-Institute of Technology in 2005, where he was an NSF and Javits Fellow,
-and an A.B. in Economics and German Literature from Cornell University.
-
-\subsection*{Iqbal Dhaliwal}\label{iqbal-dhaliwal}
-
-\href{https://www.povertyactionlab.org/person/dhaliwal}{Iqbal Dhaliwal}
-is the Global Executive Director of J-PAL and co-chair of IDEA. He works
-with the Board of Directors to develop J-PAL's strategic vision, with
-leadership of the seven regional offices to coordinate J-PAL's worldwide
-research, policy outreach, capacity building, and operations, and with
-funding partners to secure resources for J-PAL worldwide. He has setup
-many partnerships for J-PAL with data providers and implementing
-partners. He is a co-PI on a very large randomized evaluation in India
-that used both survey data and large admin datasets to help a state
-government reduce health care absenteeism. Iqbal has a deep appreciation
-of the concerns and constraints of data providers in governments as he
-began his career as a member of the Indian Administrative Service (IAS)
-formulating policy and implementing programs across many assignments.
-Later as a Director in an economic consulting firm in Chicago, he
-analyzed numerous very large data sets to provide critical insights to
-private sector clients in manufacturing, health, banking and automotive
-sectors. He has a BA in economics from the University of Delhi, an MA in
-economics from the Delhi School of Economics, and an MPA in
-international development from Princeton University.
-
-\subsection*{Anja Sautmann}\label{anja-sautmann}
-
-\href{https://www.worldbank.org/en/about/people/a/anja-sautmann}{Anja
-Sautmann} is a Research Economist in the World Bank's Development
-Research Group (Human Development Team). She is interested in how
-households and individuals make decisions, from healthcare for children
-to daily consumption to marriage, and how incentives and individual
-behavior shape optimal policy design. Before joining the World Bank,
-Anja was an Assistant Professor at Brown University (2010-2017) and the
-Director of Research, Education, and Training at the Abdul Latif Jameel
-Poverty Action Lab at MIT (2017-2020) and Director of IDEA. She received
-her Ph.D.~in Economics from New York University and her diploma in
-Economics from Ludwig Maximilians Universität in Munich, Germany. She is
-an affiliate of the CESifo research network.
-
-\hypertarget{lars-vilhuber}{%
-\subsection*{Lars Vilhuber}\label{lars-vilhuber}}
-\addcontentsline{toc}{subsection}{Lars Vilhuber}
-
-\href{https://www.vilhuber.com/lars/}{Lars Vilhuber} is the Executive
-Director of the Labor Dynamics Institute at Cornell University, and a
-faculty member in Cornell University's Economics Department. He is also
-the American Economic Association's Data Editor. Lars is a Co-Chair of
-IDEA. His research interests relate to the dynamics of the labor market.
-He also has extensive experience in the application of
-privacy-preserving publication and access to restricted data. He is
-chair of the scientific committee of the French restricted-access system
-\href{https://casd.eu}{CASD}, member of the governing board of the
-Canadian Research Data Centre Network (\href{https://crdcn.org}{CRDCN}),
-and incoming chair of the American Statistical Association`s
-\href{https://community.amstat.org/cpc/home}{Committee on Privacy and
-Confidentiality}. Lars has an undergraduate degree in Economics from
-Universität Bonn and a Ph.D.~in Economics from Université de Montréal.
-
-\section*{About J-PAL}\label{about-j-pal}
-\phantomsection
-\addcontentsline{toc}{chapter}{About J-PAL}
-
-The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research
-center working to reduce poverty by ensuring that policy is informed by
-scientific evidence. Anchored by a network of more than 225 affiliated
-professors at universities around the world, J-PAL draws on results from
-randomized impact evaluations to answer critical questions in the fight
-against poverty. We build partnerships with governments, NGOs, donors,
-and others to share this knowledge, scale up effective programs, and
-advance evidence-informed decision-making. J-PAL was launched at the
-Massachusetts Institute of Technology in 2003 and has regional centers
-in Africa, Europe, Latin America \& the Caribbean, the Middle East \&
-North Africa, North America, South Asia, and Southeast Asia.
+\include{about-editors}
 
 
 % Foreword
@@ -299,36 +248,19 @@ North Africa, North America, South Asia, and Southeast Asia.
 %\include{Introduction.tex}
 %\include{Chapter1.tex}
 
-\chapter[Increasing Access to Administrative Data: Why and How?]{Increasing Access to \\ Administrative Data: \\ Why and How?}
+\include{ch1-test}
 
-\chapterauthor{Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber}
-\hrulefill
-
-\section{Summary}
-
-If there's an executive summary it would be here.
-\newpage
-\section{The Potential of Administrative Data for Research and Policymaking}
-
-Over the course of our careers, we, the editors of this Handbook, have been witness to extraordinary changes in economics and economic research. One of them has been the rise of research in applied microeconomics and development economics that focuses on working closely with policymaking bodies and creating an evidence base for better social programming. Two key factors have contributed to this trend: increased availability of new data sources, and the rapid growth in the use of experiments (randomized control trials or randomized evaluations) in the social sciences. These developments have enabled many new avenues of research, such as how behavioral factors affect optimal policy design, how to credibly evaluate long-run effects of landmark social programs, or how to make changes to these programs informed by a better understanding of the levers of impact. In the process, they have dramatically improved the quality and breadth of evidence used to inform policy.
-
-Yet it is also our experience that this type of research is in many cases conducted by carrying out complex, time-consuming, and costly original data collection: for example, the large-scale surveys that accompany many randomized control trials typically consume a large share of the financial and staff resources devoted to the research project overall. A lack of relevant, reliable, and comprehensive data that researchers can access has been a limiting factor for new studies and consequently the spread of evidence-informed policy.
-
-At the same time, there are a wide variety of data sets already in existence, such as census records, banking data, employment information, or GPS records, which could dramatically reduce the cost and complexity of policy-relevant research – including randomized control trials – and speed up the formation of an evidence base for policymaking. Administrative data, sometimes referred to as organic data (Groves 2011) because they are generated as part of normal business processes, often contain comprehensive, objective data about large populations of interest. Decision-makers at firms and in government are already using such data to better understand problems and issues of populations of interest, and based on such evidence-based analytics, new policies are implemented or new questions are defined.
-
-Beyond these uses, carefully designed systematic research with administrative data, often partnering academic researchers with firms and governments, may carry out analyses, conduct experiments, and develop and field supplemental surveys to test specific mechanisms or hypotheses. This type of innovative research could dramatically expand the types of insights gained from the data. An increasing fraction of published papers in economics uses administrative data (see Figure 1.1, Chetty (2012)). However, researcher access to administrative data sets remains difficult and idiosyncratic (Card et al. 2010). This Handbook is motivated by our view that easier access and an increased use of administrative data sets by researchers could dramatically improve the quantity and quality of available evidence on social programs and policies.
-
-\newpage
-\section{more}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{part-special-topics}{%
-\part*{Special Topics}\label{part-special-topics}}
+\part*{\sffamily Special Topics}\label{part-special-topics}}
 
 %\partline{Special Topics}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include{incl_physical_security}
+
+\include{acknowledgements}
 
 \bibliography{packages.bib,ideahandbook.bib}
 
