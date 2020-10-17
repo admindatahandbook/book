@@ -3,16 +3,22 @@
 \frontmatter
 \pagenumbering{roman}
 
+%2 blank pages to start book
+\newpage\null\thispagestyle{empty} 
+\newpage
 \newpage\null\thispagestyle{empty}
 \newpage
 
-% Evan suggests keeping frontmatter with arabic numbering
-%\pagenumbering{arabic}
+%Half title page
+\newpage\vspace*{0.75in}{\sffamily \large HANDBOOK ON \medskip \\ \medskip \LARGE \textbf{Using Administrative Data for Research \\ and Evidence-based Policy}}\thispagestyle{empty}
 
- % Title page rendering
+% Title page rendering
 \maketitle
+%\newpage
 
-\newpage\null\thispagestyle{empty}
+%Copyright page
+\newpage\thispagestyle{empty}
+\input{includes/copyright}
 \newpage
 
 
@@ -27,7 +33,6 @@
 \pagestyle{fancy}
 
 \cleardoublepage
-\phantomsection
 
 %\pagenumbering{arabic} % wonder if we want to have the pre-amble parts in roman numbering and only the chapters in arabic?
 %\mainmatter
