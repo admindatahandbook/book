@@ -140,9 +140,12 @@ Table \@ref(tab:overviewtable) shows how the various methods can be combined, dr
 #library(readODS)
 overview <- head(sapply(read_ods("./assets/discavoid/summary_methods.ods"),as.character),12)
 overview[is.na(overview)] <- " "
+if ( knitr::is_html_output() ) {
+  library(DT)
 kable(overview, caption = "Summary of SDL Methods", format = "html") %>% 
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size=12) %>%
   scroll_box(width = "100%")
+}
 ```
 ## Metrics
 

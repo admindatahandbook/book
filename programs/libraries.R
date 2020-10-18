@@ -11,7 +11,7 @@ pkgTest <- function(x)
 	if (!require(x,character.only = TRUE))
 	{
 		print(paste0("Package ",x," not found - installing"))
-		install.packages(x,repos = 'https://cloud.r-project.org/')
+		install.packages(x)
 		if(!require(x,character.only = TRUE)) stop("Package not found")
 	}
 	return("OK")
@@ -21,6 +21,10 @@ global.libraries <- c("here","knitr","bookdown","tufte","dplyr","tidyr","config"
 "rprojroot","readr","memisc","forcats","kableExtra","RColorBrewer","pander","readODS","stringr", "remotes") #"ggpubr"
 
 results <- sapply(as.list(global.libraries), pkgTest)
+
+# tables that should not be loaded immediately
+
+unload.libraries <- c("")
 
 
 remotes::install_github("coolbutuseless/ggpattern")
