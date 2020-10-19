@@ -2,7 +2,7 @@
 
 set -ev
 LATEX=pdflatex
-FILE=test_book
+FILE=test_evan
 OUTFILE=handbook_color_$(date +%F).pdf
 OUTFILEBW=handbook_bw_$(date +%F).pdf
 
