@@ -80,24 +80,19 @@ knitr::include_graphics('./assets/cct/cctfigure1web.png')
 
 The process of identifying potential technical solutions for data streamlining has followed best practices by (1) perceiving and identifying various barriers to data access and use [@connelly2016; @goerge2018; @lane2008; @petrila2018; @abraham2019], (2) assessing new tools and approaches for secure and remote access to data [@lane2008; @culhane2018; @foster2018], and (3) understanding diverse user needs [@lane2018; @abraham2019].
 
-Other important considerations and activities have revolved around the following:
+Other important considerations and activities have revolved around the following areas listed in Table \@ref(tab:ccttable1). In all of these tasks and in implementation, investments in human capital with respect to data skills of CCT staff as well as network-building internally and externally are perceived as crucial to success.
 
-- Technical solutions
-    a. Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions
-    b. Integrating said platform with CCT data systems
-- Data infrastructure
-    a. Development of metadata standards
-    b. Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.
-- IT architecture
-    a. Addressing tensions between existing and newer approaches and technology stacks
-    b. Ensuring that legacy systems do not create barriers to effective data sharing
-- Governance
-    a. Process improvement evaluations
-    b. Processes for integrating data use agreements with the data sharing platform
-- Data privacy
-    - The evolution of CCT's understanding and application of applicable data laws and data ethics considerations must keep pace with CCT's increasingly open data environment
+```{r, ccttable1, echo=F,results='asis'}
+ccttable1data<-read.csv("./assets/cct/ccttable1.csv")
 
-In all of these tasks and in implementation, investments in human capital with respect to data skills of CCT staff as well as network-building internally and externally are perceived as crucial to success.
+if ( knitr::is_html_output() ) {
+kable(ccttable1data, caption="Areas of consideration and associated activities", col.names=NULL) %>%
+    collapse_rows(columns = 1:1, valign = "top")
+}
+if ( knitr::is_latex_output() ) {
+cat("\\input{./assets/cct/ccttable1.tex}")
+}
+```
 
 ### Metadata
 

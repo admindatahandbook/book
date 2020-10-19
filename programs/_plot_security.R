@@ -100,9 +100,17 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
 securityt1data<-read.csv("./assets/security/securitytable1.csv")
 
 securitytable1<-function() {
-kable(securityt1data, col.names=NULL) %>%
-   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   kable_styling(font_size=14)
+   if (knitr::is_html_output()) {
+      kable(securityt1data, col.names=c("Agency","Example")) %>%
+         column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         kable_styling(font_size=14)
+   }
+   else {
+      kable(securityt1data, col.names=c("Agency","Example")) %>%
+         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(2, width="33em") %>%
+         kable_styling(font_size=10)        
+   }
 }
 
 # Table 2
@@ -110,9 +118,17 @@ kable(securityt1data, col.names=NULL) %>%
 securityt2data<-read.csv("./assets/security/securitytable2.csv")
 
 securitytable2<-function() {
-kable(securityt2data, col.names=NULL) %>%
-   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   kable_styling(font_size=14)
+   if (knitr::is_html_output()) {   
+      kable(securityt2data, col.names=NULL) %>%
+         column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         kable_styling(font_size=14)
+   }
+   else {
+      kable(securityt2data, col.names=NULL) %>%
+         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(2, width="33em") %>%
+         kable_styling(font_size=10)       
+   }
 }
 
 # Table 3
@@ -120,9 +136,17 @@ kable(securityt2data, col.names=NULL) %>%
 securityt3data<-read.csv("./assets/security/securitytable3.csv")
 
 securitytable3<-function() {
-kable(securityt3data, col.names=NULL) %>%
-   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   kable_styling(font_size=14)
+   if (knitr::is_html_output()) {
+      kable(securityt3data, col.names=c("Location","Example")) %>%
+         column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         kable_styling(font_size=14)
+}
+   else {
+      kable(securityt3data, col.names=c("Location","Example")) %>%
+         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(2, width="33em") %>%
+         kable_styling(font_size=10)      
+   }
 }
 
 # Table 4
@@ -130,78 +154,75 @@ kable(securityt3data, col.names=NULL) %>%
 securityt4data<-read.csv("./assets/security/securitytable4.csv")
 
 securitytable4<-function() {
-kable(securityt4data, col.names=NULL) %>%
-   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   kable_styling(font_size=14)
+   if (knitr::is_html_output()) {
+      kable(securityt4data, col.names=c("Security","Example")) %>%
+         column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         kable_styling(font_size=14)
 }
-
+   else {
+      kable(securityt4data, col.names=c("Security","Example")) %>%
+         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(2, width="33em") %>%
+         kable_styling(font_size=10)    
+   }
+}
 
 # Table 5
 
 securityt5data<-read.csv("./assets/security/securitytable5.csv")
+securityt5latexdata<-read.csv("./assets/security/securitytable5latex.csv")
 
 securitytable5<-function() {
-kable(securityt5data, col.names=NULL) %>%
-   column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   kable_styling(font_size=14)
+   if (knitr::is_html_output()) {
+      kable(securityt5data, col.names=c("Restrictions","Example")) %>%
+         column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         kable_styling(font_size=14)
+   }
+   else {
+      kable(securityt5latexdata, col.names=c("Restrictions","Example")) %>%
+         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(2, width="33em") %>%
+         kable_styling(font_size=10)
+   }
 }
+
 
 # Summary Table
 
 summarymechs <- read.csv("./assets/security/mechanisms.csv")
-plotallmechs<-function() {
-   summarymechs %>%
-   kable(escape=F, "html", align="cccccc",
-         col.names = c("Data Access Mechanism","Researcher Agency Over Analysis Computer",
-                       "Location of Data and Analysis Computer",
-                       "Location of Access Computer",
-                       "Access Security",
-                       "Range of Analysis Methods Available")) %>%
-   kable_styling(font_size=12) %>%
-   column_spec(1, width="10em") %>%
-   column_spec(2, width="17em", background=(ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Low",config$colors$aspect_low,ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Medium",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   column_spec(3, width="17em", background=(ifelse(summarymechs$location[1:nrow(summarymechs)]=="Data Provider",config$colors$aspect_low,ifelse(summarymechs$location[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   column_spec(4, width="17em", background=(ifelse(summarymechs$access[1:nrow(summarymechs)]=="Data Custodian",config$colors$aspect_low,ifelse(summarymechs$access[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   column_spec(5, width="17em", background=(ifelse(summarymechs$sec[1:nrow(summarymechs)]=="High Security",config$colors$aspect_low,ifelse(summarymechs$sec[1:nrow(summarymechs)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   column_spec(6, width="17em", background=(ifelse(summarymechs$range[1:nrow(summarymechs)]=="Highly Restricted",config$colors$aspect_low,ifelse(summarymechs$range[1:nrow(summarymechs)]=="Limited",config$colors$aspect_med,config$colors$aspect_high))))
+summarytable<-function() {
+   
+   if (knitr::is_html_output()) {
+      summarymechs %>%
+         kable(escape=F, align="cccccc",
+               col.names = c("Data Access Mechanism","Researcher Agency Over Analysis Computer",
+                             "Location of Data and Analysis Computer",
+                             "Location of Access Computer",
+                             "Access Security",
+                             "Range of Analysis Methods Available")) %>%
+         kable_styling(font_size=12) %>%
+         column_spec(1, width="10em") %>%
+         column_spec(2, width="17em", background=(ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Low",config$colors$aspect_low,ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Medium",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(3, width="17em", background=(ifelse(summarymechs$location[1:nrow(summarymechs)]=="Data Provider",config$colors$aspect_low,ifelse(summarymechs$location[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(4, width="17em", background=(ifelse(summarymechs$access[1:nrow(summarymechs)]=="Data Custodian",config$colors$aspect_low,ifelse(summarymechs$access[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(5, width="17em", background=(ifelse(summarymechs$sec[1:nrow(summarymechs)]=="High Security",config$colors$aspect_low,ifelse(summarymechs$sec[1:nrow(summarymechs)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(6, width="17em", background=(ifelse(summarymechs$range[1:nrow(summarymechs)]=="Highly Restricted",config$colors$aspect_low,ifelse(summarymechs$range[1:nrow(summarymechs)]=="Limited",config$colors$aspect_med,config$colors$aspect_high))))
+   }
+   else { 
+      summarymechs %>%
+         kable(escape=F, align="cccccc",
+               col.names = c("Data Access Mechanism","Researcher Agency Over Analysis Computer",
+                             "Location of Data and Analysis Computer",
+                             "Location of Access Computer",
+                             "Access Security",
+                             "Range of Analysis Methods Available")) %>%
+         kable_styling(font_size=10) %>%
+         column_spec(1, width="5em") %>%
+         column_spec(2, width="6em", background=(ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Low",config$colors$aspect_low,ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Medium",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(3, width="6em", background=(ifelse(summarymechs$location[1:nrow(summarymechs)]=="Data Provider",config$colors$aspect_low,ifelse(summarymechs$location[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(4, width="6em", background=(ifelse(summarymechs$access[1:nrow(summarymechs)]=="Data Custodian",config$colors$aspect_low,ifelse(summarymechs$access[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(5, width="6em", background=(ifelse(summarymechs$sec[1:nrow(summarymechs)]=="High Security",config$colors$aspect_low,ifelse(summarymechs$sec[1:nrow(summarymechs)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+         column_spec(6, width="6em", background=(ifelse(summarymechs$range[1:nrow(summarymechs)]=="Highly Restricted",config$colors$aspect_low,ifelse(summarymechs$range[1:nrow(summarymechs)]=="Limited",config$colors$aspect_med,config$colors$aspect_high))))
+   }
 }
 
-
-# Commented this out to see if removing ggpubr will improve build speed
-# # Summary Table Function
-# plotallmechs<-function(){
-# summarymechs <- read.csv("./assets/security/mechanisms.csv")
-# 
-# # Create a ggtextable
-# allmechs <- ggtexttable(summarymechs, rows = NULL, theme = ttheme("classic"),
-#                         cols=c("Name",
-#                                "Researcher\nAgency\nOver\nAnalysis\nComputer",
-#                                "  Location  \nof Data and\nAnalysis\nComputer",
-#                                "  Location  \nof Access\nComputer",
-#                                "   Access   \nSecurity",
-#                                " Range of \nAnalysis\nMethods\nAvailable"))
-# 
-# # Specify colors for significant p-values
-# 
-# # Coloring the table conditionnally using `ggpubr::table_cell_bg()`
-# 
-# list = c("agency", "location","access","sec","range")
-# 
-# for (i in list) {
-#   summarymechs <- summarymechs %>% 
-#     mutate(
-#       fill = ifelse(summarymechs[, i] == 1, config$colors$aspect_low, ifelse(summarymechs[, i] == 2, config$colors$aspect_med, config$colors$aspect_high)),
-#       color="black"
-#     )
-#   for(j in 1:nrow(summarymechs)){
-#     row = j+1
-#     column = which(colnames(summarymechs) == i)
-#     allmechs <- table_cell_bg(
-#       allmechs, row = row, column = column,
-#       fill = summarymechs$fill[j], color = summarymechs$color[j]
-#     )
-#   }
-# }
-# 
-# print(allmechs)
-# }
