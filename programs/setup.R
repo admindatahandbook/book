@@ -7,6 +7,38 @@
 #  DO NOT LIST ANY LIBRARIES HERE - SEE LIBRARIES.R
 #
 
+# from https://www.r-bloggers.com/identifying-the-os-from-r/
+get_os <- function(){
+  sysinf <- Sys.info()
+  if (!is.null(sysinf)){
+    os <- sysinf['sysname']
+    if (os == 'Darwin')
+      os <- "osx"
+  } else { ## mystery machine
+    os <- .Platform$OS.type
+    if (grepl("^darwin", R.version$os))
+      os <- "osx"
+    if (grepl("linux-gnu", R.version$os))
+      os <- "linux"
+  }
+  tolower(os)
+}
+
+# Use the Rstudio Package manager
+
+#
+if ( get_os() == "linux" ) {
+   options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/__linux__/focal/318"))
+} else {
+  if ( get_os() == "macosx") {
+    options(repos = c(REPO_NAME = "https://cran.rstudio.com/"))
+  } else {
+   options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/318"))
+  }
+} 
+
+
+
 
 #
 # Define paths here for later
