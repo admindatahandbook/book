@@ -1479,15 +1479,21 @@ A clear and precise sense of what constitutes an unauthorized disclosure is a pr
 
 The key concepts are privacy and confidentiality. Privacy can be viewed, in this context, as the right to restrict others' access to personal information, whether through query or through observation  [@hirshleifer_privacy_1980]. +Confidentiality| pertains to data that have already been collected and describes the principle that the data should not be used in ways that could harm the persons that provided their information.
 
-\BeginKnitrBlock{bbox}<div class="bbox">For example, Ann, who is asked to participate in a study about health behaviors, has a *privacy* right to refuse to answer a question about smoking. If she does answer the question, it would breach *confidentiality* if her response was then used by an insurance company to adjust her premiums [@duncan_private_1993].</div>\EndKnitrBlock{bbox}
+<div class="bboxfix">
+<p>For example, Ann, who is asked to participate in a study about health behaviors, has a <em>privacy</em> right to refuse to answer a question about smoking. If she does answer the question, it would breach <em>confidentiality</em> if her response was then used by an insurance company to adjust her premiums <span class="citation">[@duncan_private_1993]</span>.</p>
+</div>
 
 @harris-kojetin_statistical_2005 define +disclosure| as the "inappropriate attribution of information to a data subject, whether an individual or an organization" [@harris-kojetin_statistical_2005, p. 4]. They proceed to describe three different types of disclosure. An *+identity_disclosure|* is one where it is possible to learn that a particular record or data item belongs to a particular participant (individual or organization). An *+attribute_disclosure|* happens if publication of the data reveals an attribute of a participant. Note that an *identity disclosure* necessarily entails *attribute disclosure*, but the reverse is not the case.
 
-\BeginKnitrBlock{bbox}<div class="bbox">In the hypothetical health study, if Ann responds that she is a smoker, an *identity disclosure* would mean someone can determine which record is hers and therefore can also learn that she is a smoker---an *attribute disclosure*. However, an attribute disclosure could also occur if someone knows that Ann was in the study, they know that Ann lives in a particular zip code, and the data reveal that all participants from that zip code are also smokers. Her full record was not revealed, but confidentiality was breached all the same.</div>\EndKnitrBlock{bbox}
+<div class="bboxfix">
+<p>In the hypothetical health study, if Ann responds that she is a smoker, an <em>identity disclosure</em> would mean someone can determine which record is hers and therefore can also learn that she is a smoker—an <em>attribute disclosure</em>. However, an attribute disclosure could also occur if someone knows that Ann was in the study, they know that Ann lives in a particular zip code, and the data reveal that all participants from that zip code are also smokers. Her full record was not revealed, but confidentiality was breached all the same.</p>
+</div>
 
 With these concepts in mind, it is necessary to ask whether it is sufficient to prevent blatant all-or-nothing identity or attribute disclosures: usually not, as it may be possible to learn a sensitive attribute with high, but not total, certainty. This is called an *+inferential_disclosure|* [@dalenius_towards_1977; @duncan_disclosure-limited_1986]. 
 
-\BeginKnitrBlock{bbox}<div class="bbox">Suppose Ann's health insurer knows that Ann is in the data and that she lives in a particular zip code. If the data have 100 records from that zip code and 99 are smokers, then the insurer has learned Ann's smoking status with imperfect but high precision.</div>\EndKnitrBlock{bbox}
+<div class="bboxfix">
+<p>Suppose Ann’s health insurer knows that Ann is in the data and that she lives in a particular zip code. If the data have 100 records from that zip code and 99 are smokers, then the insurer has learned Ann’s smoking status with imperfect but high precision.</p>
+</div>
 
 In addition to deciding what kinds of disclosure can be tolerated and to what extent, in many cases it may also be meaningful to decide which characteristics are and are not sensitive. Smoking behavior may nowadays be regarded as sensitive, but depending on the context, gender might not be. In the case of business data, total sales volume or total payroll are highly sensitive trade secrets. Generally, the county in which the business is located or the industry in which the business operates might not be sensitive, but consider a survey of self-employed business people: the location of the business might be the home address, which might be considered highly sensitive. These decisions on what is sensitive affect the implementation of a privacy protection system.^[There is a large and robust literature in economics on the value of privacy. For an overview of ideas in this literature, we recommend @varian_economic_2002 and @acquisti_economics_2016.]
 
@@ -1509,7 +1515,7 @@ More generally, the inclusion of edits to the data done in service of disclosure
 
 With these goals in mind, following @abowd_economic_2015, this chapter distinguishes between *ignorable* and *non-ignorable* SDL systems. Briefly, SDL is *ignorable* for a particular analysis if the analysis can be performed on the modified data, $\tilde{D}$, as though it were the true data. In a non-ignorable analysis, the result differs in some material way when $\tilde{D}$ is substituted for $D$. When the SDL method is *known*, then it may be possible for the researcher to perform an *SDL-aware* analysis that corrects for non-ignorability. However, SDL methods are generally not ignorable except in certain specific applications.
 
-The chapter briefly outlines several of the methods most commonly used within national statistical offices. For interested readers, @harris-kojetin_statistical_2005 describe how SDL systems are implemented in the US statistical system,^[As of the writing of this chapter in August 2020, WP22 is being revised and updated, but has not yet been published.] while @dupriez_dissemination_2010 offers a more multinational perspective.
+The chapter briefly outlines several of the methods most commonly used within national statistical offices. For interested readers, @harris-kojetin_statistical_2005^[As of the writing of this chapter in August 2020, WP22 is being revised and updated, but has not yet been published.] describe how SDL systems are implemented in the US statistical system, while @dupriez_dissemination_2010 offers a more multinational perspective.
 
 ### De-Identification
 
@@ -1541,7 +1547,9 @@ Data suppression is clearly non-ignorable, and it is quite difficult to correct 
 
 Suppression can also be applied to model-based statistics. For instance, after having run a regression, coefficients that correspond to cells with fewer than *n* cases may be suppressed. This most often occurs when using dichotomous variables (dummy variables), which represent conditional means for particular subgroups.
 
-\BeginKnitrBlock{bbox}<div class="bbox">In a regression, a researcher includes a set of dummies for interacting occupation and location. When cross-tabulating occupation and location, many cells have less than five observations contributing to the coefficient. The data provider requires that these be suppressed.</div>\EndKnitrBlock{bbox}
+<div class="bboxfix">
+<p>In a regression, a researcher includes a set of dummies for interacting occupation and location. When cross-tabulating occupation and location, many cells have less than five observations contributing to the coefficient. The data provider requires that these be suppressed.</p>
+</div>
 
 ### Coarsening
 
@@ -1555,7 +1563,9 @@ Whether coarsening is ignorable or not depends on the analysis to be performed. 
 
 The premise behind the technique of *+swapping|* is similar to suppression. Again, each record is assigned a level of disclosure risk. Then any high-risk record is matched to a less risky record on a set of key variables, and all of the other non-key attributes are swapped. The result is a data set that preserves the distribution among all the key variables used for matching. If the original purpose of the data was to publish cross-tabulations of the matching variables, swapping can produce microdata that are consistent with those tabulations. This approach is more commonly used in censuses and surveys of people or households and rarely used with establishment data.
 
-\BeginKnitrBlock{bbox}<div class="bbox">For example, consider the hypothetical health study again, and now suppose the known factors are Ann's zip code, gender, race, ethnicity, age, smoking behavior, and the size of her household. Ann's record might be classified as high risk if, for example, she has a very large household relative to the rest of the other respondents who are also from her zip code. If the data are used to publish summaries of smoking behavior by age, race, and gender, then Ann's record would be matched to another record with the same age, race, gender, and smoking behavior, and the values of the household size and zip code attributes would be swapped.</div>\EndKnitrBlock{bbox}
+<div class="bboxfix">
+<p>For example, consider the hypothetical health study again, and now suppose the known factors are Ann’s zip code, gender, race, ethnicity, age, smoking behavior, and the size of her household. Ann’s record might be classified as high risk if, for example, she has a very large household relative to the rest of the other respondents who are also from her zip code. If the data are used to publish summaries of smoking behavior by age, race, and gender, then Ann’s record would be matched to another record with the same age, race, gender, and smoking behavior, and the values of the household size and zip code attributes would be swapped.</p>
+</div>
 
 Swapping is ignorable for analyses that only depend on the matching variables, since the relationships among them will be preserved. However, swapping distorts relationships among the other variables and between the matching variables and the other variables. In the example above, the swapping would be non-ignorable in the context of a study of how smoking behavior varies across zip codes. In general, statistical agencies are not willing to publish detailed information about how swapping is implemented since that information could be used to reverse-engineer some of the swaps, undoing the protection. Hence, SDL-aware analysis may not be possible and inference validity negatively affected.
 
@@ -1744,6 +1754,7 @@ Table \@ref(tab:overviewtable) shows how the various methods can be combined, dr
   </tr>
 </tbody>
 </table></div>
+
 ## Metrics
 
 <!-- How do you measure risk, and the reduction in risk achieved by applying above methods? Mention uniqueness criteria, k-anonymity, l-diversity, matching metrics, etc. -->
