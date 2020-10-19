@@ -6,15 +6,19 @@
 # Will install all necessary libraries
 #
 
-pkgTest <- function(x)
+pkgTest <- function(x,try=FALSE)
 {
-	if (!require(x,character.only = TRUE))
-	{
-		print(paste0("Package ",x," not found - installing"))
-		install.packages(x)
-		if(!require(x,character.only = TRUE)) stop("Package not found")
-	}
-	return("OK")
+        if (!require(x,character.only = TRUE))
+        {
+                print(paste0("Package ",x," not found - installing"))
+				install.packages(x,dep=TRUE)
+                if(!require(x,character.only = TRUE)) stop("Package not found")
+        }
+  if ( try ) {
+    print(paste0("Unloading ",x))
+    detach(paste0("package:",x), unload = TRUE, character.only = TRUE)
+  }
+  return("OK")
 }
 
 global.libraries <- c("here","knitr","bookdown","tufte","dplyr","tidyr","config","ggplot2",
@@ -22,26 +26,11 @@ global.libraries <- c("here","knitr","bookdown","tufte","dplyr","tidyr","config"
 
 results <- sapply(as.list(global.libraries), pkgTest)
 
-# tables that should not be loaded immediately
+# libraries that will be unloaded. Note that they will be need to be expliclity loaded in the chunk they are used.
+unload.libraries <- c("DT")
 
-unload.libraries <- c("")
-
-
-remotes::install_github("coolbutuseless/ggpattern")
+results <- sapply(as.list(unload.libraries), pkgTest, try=TRUE)
 
 
-#args = commandArgs(trailingOnly=TRUE)
-#
-#if (length(args)>0) {
-#  if ( args[1] == "ubuntu" ) {
-#    system("apt-get update")
-#    system("apt-get upgrade")
-#    system("apt-get install -y libxml2-dev")
-#    system("apt-get install -y pandoc-citeproc")
-#    system("apt-get install -y r-cran-rprojroot r-cran-tidyverse")
-#    system("apt-get install -y r-cran-here r-cran-bookdown")
-#    system("apt-get install -y r-cran-tufte r-cran-config r-cran-memisc")
-#    system("apt-get install -y r-cran-forcats")
-#    system("apt-get install -y r-cran-kableExtra ")
-#  }
-#}
+remotes::install_github("coolbutuseless/ggpattern",upgrade="never")
+
