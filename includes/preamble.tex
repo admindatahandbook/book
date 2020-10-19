@@ -19,6 +19,8 @@
 \tcbset{width=\boxwidth}
 \newenvironment{bbox}{\begin{figure}[t]\begin{tcolorbox}}{\end{tcolorbox}\captionsetup{labelformat=empty}\end{figure}}
 
+\newenvironment{indentforeword}{\setlength{\parindent}{15pt}}{}
+
 % workaround
 \newcommand{\partline}[1]{\cftaddtitleline{toc}{part}{#1}{}}
 
@@ -81,13 +83,24 @@
 %
 % Chapter author tables
 %
-\newenvironment{authorlist}{\renewcommand{\arraystretch}{0.6}\begin{tabular}{l}}{\end{tabular}}
+\newenvironment{authorlist}{\renewcommand{\arraystretch}{1}\begin{tabular}{l}}{\end{tabular}}
 
 %
 % Handle Unicode in a few cases
 %
 \DeclareUnicodeCharacter{03C4}{$\tau$}
 \DeclareUnicodeCharacter{03BC}{$\mu$}
+\DeclareUnicodeCharacter{03B5}{$\epsilon$}
+
+% 
+% This handles the euro
+%
+% WARNING: this might affect other font choices!
+%
+\usepackage{textcomp}
+\usepackage{eurosym}
+\let\texteuro\euro
+\DeclareUnicodeCharacter{020AC}{\euro}
 
 %
 %  Override figure width

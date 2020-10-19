@@ -79,7 +79,8 @@
 \titleformat*{\section}{\LARGE\sffamily\bfseries\parindent0pt}
 \titleformat*{\subsection}{\Large\sffamily\bfseries}
 \titleformat*{\subsubsection}{\large\sffamily\bfseries}
-\titleformat*{\part}{\LARGE\sffamily\bfseries}
+%\titleformat*{\part}{\LARGE\sffamily\bfseries}
+
 %\renewcommand{\maketitlehooka}{\rmfamily}
 
 
@@ -135,7 +136,7 @@
 
 %%%%%Title here
 % Title page
-\pretitle{ \begin{flushleft}\LARGE\sffamily  }
+\pretitle{ \begin{flushleft}\LARGE\sffamily}
 
 \title{ \Large \uppercase{Handbook on} \\\Huge\bfseries {Using Administrative Data \\ for Research and \\ Evidence-based Policy}}
 \posttitle{ \par \end{flushleft} \vskip 2em} 
@@ -190,6 +191,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document start
 \begin{document}
 
@@ -197,71 +199,15 @@
 \defaultbibliographystyle{aea-mod}
 \defaultbibliography{packages.bib,ideahandbook.bib}
 
-\frontmatter
-\pagenumbering{roman}
+
+\input{includes/frontmatter.tex}
 
 
-%2 blank pages to start book
-\newpage\null\thispagestyle{empty} 
-\newpage
-\newpage\null\thispagestyle{empty}
-\newpage
-
-%Half title page
-\newpage\vspace*{0.75in}{\sffamily \large HANDBOOK ON \medskip \\ \medskip \LARGE \textbf{Using Administrative Data for Research \\ and Evidence-based Policy}}\thispagestyle{empty}
-
-% Title page rendering
-\maketitle
-%\newpage
-
-%Copyright page
-\newpage\thispagestyle{empty}
-\include{copyright}
-\newpage
-
-
-% TOC
-\tableofcontents 
-\newpage
-\pagestyle{fancy}
-\cleardoublepage
-\include{about-editors}
-
-
-% Foreword
-
-% \hypertarget{about}{%
-%\chapter*{About Us}\label{about}}
-%\addcontentsline{toc}{chapter}{About Us}
-
-
-
-\mainmatter
-\setcounter{page}{1}
-
-% Part 1
-
-
-% Testing chapters
-% this will eventually be replace by files for each chapter
-
-%\include{Introduction.tex}
-%\include{Chapter1.tex}
-
-\include{ch1-test}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\hypertarget{part-special-topics}{%
-\part*{\sffamily Special Topics}\label{part-special-topics}}
-
-%\partline{Special Topics}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\include{incl_physical_security}
-
-\include{acknowledgements}
+\include{_main}
 
 \bibliography{packages.bib,ideahandbook.bib}
+
+\addcontentsline{toc}{chapter}{Index}
+\printindex
 
 \end{document}
