@@ -19,6 +19,8 @@
 \tcbset{width=\boxwidth}
 \newenvironment{bbox}{\begin{figure}[t]\begin{tcolorbox}}{\end{tcolorbox}\captionsetup{labelformat=empty}\end{figure}}
 
+\newenvironment{indentforeword}{\setlength{\parindent}{15pt}}{}
+
 % workaround
 \newcommand{\partline}[1]{\cftaddtitleline{toc}{part}{#1}{}}
 
@@ -88,6 +90,17 @@
 %
 \DeclareUnicodeCharacter{03C4}{$\tau$}
 \DeclareUnicodeCharacter{03BC}{$\mu$}
+\DeclareUnicodeCharacter{03B5}{$\epsilon$}
+
+% 
+% This handles the euro
+%
+% WARNING: this might affect other font choices!
+%
+\usepackage{textcomp}
+\usepackage{eurosym}
+\let\texteuro\euro
+\DeclareUnicodeCharacter{020AC}{\euro}
 
 %
 %  Override figure width

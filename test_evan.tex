@@ -79,7 +79,8 @@
 \titleformat*{\section}{\LARGE\sffamily\bfseries\parindent0pt}
 \titleformat*{\subsection}{\Large\sffamily\bfseries}
 \titleformat*{\subsubsection}{\large\sffamily\bfseries}
-\titleformat*{\part}{\LARGE\sffamily\bfseries}
+%\titleformat*{\part}{\LARGE\sffamily\bfseries}
+
 %\renewcommand{\maketitlehooka}{\rmfamily}
 
 
@@ -190,6 +191,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document start
 \begin{document}
 
@@ -199,7 +201,6 @@
 
 \frontmatter
 \pagenumbering{roman}
-
 
 %2 blank pages to start book
 \newpage\null\thispagestyle{empty} 
@@ -227,40 +228,14 @@
 \cleardoublepage
 \include{about-editors}
 
-
-% Foreword
-
-% \hypertarget{about}{%
-%\chapter*{About Us}\label{about}}
-%\addcontentsline{toc}{chapter}{About Us}
-
-
+%Foreward goes here!
 
 \mainmatter
 \setcounter{page}{1}
 
-% Part 1
+\input{includes/frontmatter.tex}
 
-
-% Testing chapters
-% this will eventually be replace by files for each chapter
-
-%\include{Introduction.tex}
-%\include{Chapter1.tex}
-
-\include{ch1-test}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\hypertarget{part-special-topics}{%
-\part*{\sffamily Special Topics}\label{part-special-topics}}
-
-%\partline{Special Topics}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\include{incl_physical_security}
-
-\include{acknowledgements}
+\include{_main}
 
 \bibliography{packages.bib,ideahandbook.bib}
 

@@ -1,2 +1,7 @@
-### References {- #invisible}
+```{r refs,echo=F,results='asis'}
+if ( knitr::is_html_output() ) {
+cat("### References {- #invisible}")
+}
+```
+
 
