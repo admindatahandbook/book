@@ -137,14 +137,14 @@ Synthetic data have been used in the Federal Reserve Board's Survey of Consumer 
 Table \@ref(tab:overviewtable) shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources.
 
 ```{r overviewtable, echo=FALSE}
-#library(readODS)
-overview <- head(sapply(read_ods("./assets/discavoid/summary_methods.ods"),as.character),12)
+overview <- head(read_ods("./assets/discavoid/summary_methods.ods"),12)
 overview[is.na(overview)] <- " "
 if ( knitr::is_html_output() ) {
-  library(DT)
-kable(overview, caption = "Summary of SDL Methods", format = "html") %>% 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size=12) %>%
+kable(overview, caption = "Summary of SDL Methods") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   scroll_box(width = "100%")
+} else {
+  kable(overview, caption = "Summary of SDL Methods") 
 }
 ```
 ## Metrics
