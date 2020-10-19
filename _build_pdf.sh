@@ -6,6 +6,13 @@ FILE=test_book
 OUTFILE=handbook_color_$(date +%F).pdf
 OUTFILEBW=handbook_bw_$(date +%F).pdf
 
+if [ -z $1 ]
+then
+   skip=no
+else
+   skip=yes
+fi
+
 cd $(dirname $0)
 
 # set up the environment
@@ -17,23 +24,14 @@ then
   rm -f _main.Rmd
 fi 
 # build the handbook
-Rscript programs/build_pdf.R > _R.log 2>&1
 
-# post-processing
-# For some reason, these appear in the tex files when running as latex_fragment
-#sed -i 's/NULL//' _main.tex
-#sed -i 's/\\chapter\*{(PART) /\\part*{/' _main.tex
-#sed -i 's/\\chapter\*{(APPENDIX) /\\part*{/' _main.tex
-#sed -i 's/^\\chapter{/\putbib\n\\chapter{/' _main.tex 
-#sed -i 's/\\addcontentsline{toc}{chapter}{(PART) /\\partline{/' _main.tex
-#sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
-# fix bad reference translations
-#sed -i -E 's/@ref\(fig(.+)\)/\\ref{fig\1}/g' _main.tex 
+if [ "$skip" == "no" ]
+then
+   Rscript programs/build_pdf.R > _R.log 2>&1
 
 # These are still needed
 
 sed -i 's/\\part{/\\partline{/' _main.tex
-#sed -i 's/\\addcontentsline{toc}{chapter}{(APPENDIX) /\\partline{/' _main.tex
 
 # Fix the index terms
 # Needs "index_term_mapping.csv"
@@ -41,6 +39,9 @@ sed -i 's/\\part{/\\partline{/' _main.tex
 mv _main.tex _main_pre_index.tex
 
 python3 map_index.py -i _main_pre_index.tex -o _main.tex
+
+fi 
+# end of skip setup
 
 # now compile it
 

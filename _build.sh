@@ -4,6 +4,8 @@ set -ev
 
 cd $(dirname $0)
 
+[ -f _main.Rmd ] && rm -f _main.Rmd
+
 # set up the environment
 Rscript programs/bootstrap.R
 
