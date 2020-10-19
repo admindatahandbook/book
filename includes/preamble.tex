@@ -19,6 +19,8 @@
 \tcbset{width=\boxwidth}
 \newenvironment{bbox}{\begin{figure}[t]\begin{tcolorbox}}{\end{tcolorbox}\captionsetup{labelformat=empty}\end{figure}}
 
+\newenvironment{bboxfix}{\begin{tcolorbox}}{\end{tcolorbox}}
+
 \newenvironment{indentforeword}{\setlength{\parindent}{15pt}}{}
 
 % workaround
@@ -39,6 +41,13 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 \usepackage{placeins} % for FloatBarrier
+
+% 
+% for tables
+%
+
+\usepackage{csvsimple}
+\usepackage{tabulary}
 
 %
 % Workaround
