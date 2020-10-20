@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-10-19"
+date: "2020-10-20"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -292,7 +292,7 @@ To showcase such solutions, we have selected an array of case studies that have 
    <td style="text-align:right;width: 5em; "> 12 </td>
    <td style="text-align:left;width: 10em; "> School district </td>
    <td style="text-align:left;width: 20em; "> Research center at a private university (CEPA at Stanford University) holds and provides data for download by affiliated faculty </td>
-   <td style="text-align:left;width: 30em; "> A well-established, mature partnership with streamlined application and review processes that hosts comprehensive data on students, teachers, and schools, and supports data access for multiple projects each year. </td>
+   <td style="text-align:left;width: 30em; "> A well-established and mature partnership with streamlined application and review processes that hosts comprehensive data on students, teachers, and schools, and supports data access for multiple projects each year. </td>
   </tr>
 </tbody>
 </table>
@@ -593,6 +593,12 @@ A **medium agency** setting may allow researchers some choice of software or lim
 In the **high researcher agency** settings, researchers have few restrictions on how the analysis computer can be configured. They may have administrative privileges to the analysis computer and few, if any, restrictions on the software that can be installed. The researcher may own and physically control the analysis computer or may be granted administrative privileges to a computer that is owned by the data provider or third party. Data providers may still mandate technical solutions such as the use of monitoring, operating system patch management software, or anti-virus software.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Agency </th>
+   <th style="text-align:left;"> Example </th>
+  </tr>
+ </thead>
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Low Agency </td>
@@ -654,6 +660,12 @@ Data providers can choose a **third-party** access provider. Note that the third
 Finally, access computers can be located with the **researcher**. Trivially, locating the analysis computer with the researcher makes the access computer co-incidental. However, there are numerous cases where the access computer is with the researcher while the analysis computer is not. Examples include any web-based access, most [remote execution] systems, and many [remote desktop] systems: researchers use their own computers to access the portal while all computation occurs elsewhere. In almost all cases, locating access computers with researchers allows them to work from a location of their choice, though in some cases this may be restricted to a designated university office.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Location </th>
+   <th style="text-align:left;"> Example </th>
+  </tr>
+ </thead>
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Data Custodian </td>
@@ -689,6 +701,12 @@ A **low security access location** has few or no access controls. Simple restric
 In addition to the locational security described above, the **type of access computer** can also range from high security to low security. Highly secure access computers (which do not contain data) may still include fully encrypted operating systems, the use of [VPNs][virtual private networks], [remote desktop] software, [secure network protocols], and [encryption] or requiring [biometric authentication] of the access computer. This can take the form of dedicated thin clients. Low security access computers are typically allowed for remote submission or web portal-type access, where any computer, in any location, is allowed.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Security </th>
+   <th style="text-align:left;"> Example </th>
+  </tr>
+ </thead>
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> High Security </td>
@@ -724,6 +742,12 @@ When **limited restrictions** are imposed, some methods might be prevented, even
 Analysis methods may be **highly restricted**. Restrictions can include limiting the methods available to researchers to a whitelisted set of commands or, in more extreme examples, limit researchers to the use of tabulator software that can only provide conditional tables. Most researchers will perceive this to impose strong limitations on their ability to conduct research as usual, but such methods are sometimes used to reach a wide range of users while allowing for more relaxed conditions on the rest of the Five Safes framework.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Restrictions </th>
+   <th style="text-align:left;"> Example </th>
+  </tr>
+ </thead>
 <tbody>
   <tr>
    <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Highly Restricted </td>
@@ -820,7 +844,7 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 ### Summary of Examples
 
-The following table provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
+Table \@ref{tab:summarytable} provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
 
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
  <thead>
@@ -1918,7 +1942,7 @@ Table \@ref(tab:iabtable1) provides a selective overview of research data availa
   <tr grouplength="3"><td colspan="2" style="border-bottom: 1px solid;"><strong>Establishment History Panel (BHP)</strong></td></tr>
 <tr>
    <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Population / Sample Size </td>
-   <td style="text-align:left;"> Repeated cross-sectional dataset (640,000-1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999), and thereof a 50percent random sample </td>
+   <td style="text-align:left;"> Repeated cross-sectional dataset (640,000-1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999), and thereof a 50 percent random sample </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Time Period covered and frequency </td>
@@ -2471,13 +2495,34 @@ As states built the technical systems to document state data, the federal govern
 
 Through a study of the employment outcomes of individuals enrolled in welfare, researchers have also learned (in recent years) that state rules vary in how they interpret data access to the Supplemental Nutrition Assistance Program (SNAP) and the Temporary Assistance for Needy Families (TANF). In some states, such as Illinois or Texas, these data are shared with researchers, while in Ohio both federal programs' data are largely off-limits to the research community.
 
-|Law or Administrative Regulation|Document|
-|------------------------|------------------------|
-|Family Educational Rights and Privacy Act|Audit and Evaluation Rules [@privacytechnicalassistancecenter2017]|
-|Workforce Innovation and Opportunity Act (Final rule)|<https://www.doleta.gov/wioa/about/final-rules/>|
-|Joint Guidance on Data Matching to Facilitate WIOA Performance Reporting and Evaluation|<https://www2.ed.gov/policy/gen/guid/fpco/pdf/final-ferpa-tegl-report.pdf>|
-|Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014|<https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf>|
-Table: (\#tab:oldatable3) Important Legal Documents to Review for the Research Community
+
+<table>
+<caption>(\#tab:oldatable3)Important Legal Documents to Review for the Research Community</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Law or Administrative Regulation </th>
+   <th style="text-align:left;"> Document </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Family Educational Rights and Privacy Act </td>
+   <td style="text-align:left;"> Audit and Evaluation Rules [@privacytechnicalassistancecenter2017] </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Workforce Innovation and Opportunity Act (Final rule) </td>
+   <td style="text-align:left;"> https://www.doleta.gov/wioa/about/final-rules/ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Joint Guidance on Data Matching to Facilitate WIOA Performance Reporting and Evaluation </td>
+   <td style="text-align:left;"> https://www2.ed.gov/policy/gen/guid/fpco/pdf/final-ferpa-tegl-report.pdf </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014 </td>
+   <td style="text-align:left;"> https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf </td>
+  </tr>
+</tbody>
+</table>
 
 #### Formal Governance Process {-}
 
@@ -4265,24 +4310,49 @@ As discussed earlier in this chapter, a collaboration was developed between CCT 
 
 The process of identifying potential technical solutions for data streamlining has followed best practices by (1) perceiving and identifying various barriers to data access and use [@connelly2016; @goerge2018; @lane2008; @petrila2018; @abraham2019], (2) assessing new tools and approaches for secure and remote access to data [@lane2008; @culhane2018; @foster2018], and (3) understanding diverse user needs [@lane2018; @abraham2019].
 
-Other important considerations and activities have revolved around the following:
+Other important considerations and activities have revolved around the following areas listed in Table \@ref(tab:ccttable1). In all of these tasks and in implementation, investments in human capital with respect to data skills of CCT staff as well as network-building internally and externally are perceived as crucial to success.
 
-- Technical solutions
-    a. Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions
-    b. Integrating said platform with CCT data systems
-- Data infrastructure
-    a. Development of metadata standards
-    b. Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.
-- IT architecture
-    a. Addressing tensions between existing and newer approaches and technology stacks
-    b. Ensuring that legacy systems do not create barriers to effective data sharing
-- Governance
-    a. Process improvement evaluations
-    b. Processes for integrating data use agreements with the data sharing platform
-- Data privacy
-    - The evolution of CCT's understanding and application of applicable data laws and data ethics considerations must keep pace with CCT's increasingly open data environment
-
-In all of these tasks and in implementation, investments in human capital with respect to data skills of CCT staff as well as network-building internally and externally are perceived as crucial to success.
+<table>
+<caption>(\#tab:ccttable1)Areas of consideration and associated activities</caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;vertical-align: top !important;" rowspan="2"> Technical solutions </td>
+   <td style="text-align:left;"> Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> Integrating said platform with CCT data systems </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;vertical-align: top !important;" rowspan="2"> Data infrastructure </td>
+   <td style="text-align:left;"> Development of metadata standards </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;vertical-align: top !important;" rowspan="2"> IT architecture </td>
+   <td style="text-align:left;"> Addressing tensions between existing and newer approaches and technology stacks </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> Ensuring that legacy systems do not create barriers to effective data sharing </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;vertical-align: top !important;" rowspan="2"> Governance </td>
+   <td style="text-align:left;"> Process improvement evaluations </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> Processes for integrating data use agreements with the data sharing platform </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Data privacy </td>
+   <td style="text-align:left;"> The evolution of CCT's understanding and application of applicable data laws and data ethics considerations must keep pace with CCT's increasingly open data environment </td>
+  </tr>
+</tbody>
+</table>
 
 ### Metadata
 

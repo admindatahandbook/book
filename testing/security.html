@@ -24,7 +24,7 @@
 <meta name="author" content="Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber" />
 
 
-<meta name="date" content="2020-10-19" />
+<meta name="date" content="2020-10-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -481,6 +481,16 @@ The Facebook–Cambridge Analytica scandal<a href="#fn7" class="footnote-ref" id
 <p>A <strong>medium agency</strong> setting may allow researchers some choice of software or limited system configuration. For instance, researchers may be able to install or request the installation of supplemental packages for pre-approved software (R, Stata) but may not be able to change system parameters such as which network to use. Typically, data providers (or data intermediaries) have direct administrative control of such computers.</p>
 <p>In the <strong>high researcher agency</strong> settings, researchers have few restrictions on how the analysis computer can be configured. They may have administrative privileges to the analysis computer and few, if any, restrictions on the software that can be installed. The researcher may own and physically control the analysis computer or may be granted administrative privileges to a computer that is owned by the data provider or third party. Data providers may still mandate technical solutions such as the use of monitoring, operating system patch management software, or anti-virus software.</p>
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Agency
+</th>
+<th style="text-align:left;">
+Example
+</th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;">
@@ -554,6 +564,16 @@ Researcher
 <p>Data providers can choose a <strong>third-party</strong> access provider. Note that the third-party access provider need not be a data custodian. Researchers may still have to travel to a separate location. The key role played by third-party access providers is control over physical access to the access computers. In some cases, third-party access providers may also have the technical capability to maintain sophisticated network connections that are beyond the scope of individual researchers, such as <a href="security.html#virtual-private-networks">VPN</a> setups with dedicated encrypted endpoints. In other cases, it may simply be a way for multiple researchers to share the cost of using a mandated technical solution.<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a></p>
 <p>Finally, access computers can be located with the <strong>researcher</strong>. Trivially, locating the analysis computer with the researcher makes the access computer co-incidental. However, there are numerous cases where the access computer is with the researcher while the analysis computer is not. Examples include any web-based access, most <a href="security.html#remote-execution">remote execution</a> systems, and many <a href="security.html#remote-desktop">remote desktop</a> systems: researchers use their own computers to access the portal while all computation occurs elsewhere. In almost all cases, locating access computers with researchers allows them to work from a location of their choice, though in some cases this may be restricted to a designated university office.</p>
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Location
+</th>
+<th style="text-align:left;">
+Example
+</th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;">
@@ -593,6 +613,16 @@ Researcher
 <p>A <strong>low security access location</strong> has few or no access controls. Simple restrictions might include broad geo-restrictions (campus-only) or procedures to follow. Data providers may mandate storing the access computer in a locked room or the use of <a href="security.html#ip-address-restrictions">IP address restrictions</a>. When no access restrictions are imposed, researchers are free to use access computers from any location.</p>
 <p>In addition to the locational security described above, the <strong>type of access computer</strong> can also range from high security to low security. Highly secure access computers (which do not contain data) may still include fully encrypted operating systems, the use of <a href="security.html#virtual-private-networks">VPNs</a>, <a href="security.html#remote-desktop">remote desktop</a> software, <a href="security.html#secure-network-protocols">secure network protocols</a>, and <a href="security.html#encryption">encryption</a> or requiring <a href="security.html#biometric-authentication">biometric authentication</a> of the access computer. This can take the form of dedicated thin clients. Low security access computers are typically allowed for remote submission or web portal-type access, where any computer, in any location, is allowed.</p>
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Security
+</th>
+<th style="text-align:left;">
+Example
+</th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;">
@@ -633,6 +663,16 @@ Low Security
 <p>When <strong>limited restrictions</strong> are imposed, some methods might be prevented, even if the software is available, by censoring elements of those software programs. In particular, the ability to inspect individual records may be limited.</p>
 <p>Analysis methods may be <strong>highly restricted</strong>. Restrictions can include limiting the methods available to researchers to a whitelisted set of commands or, in more extreme examples, limit researchers to the use of tabulator software that can only provide conditional tables. Most researchers will perceive this to impose strong limitations on their ability to conduct research as usual, but such methods are sometimes used to reach a wide range of users while allowing for more relaxed conditions on the rest of the Five Safes framework.</p>
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Restrictions
+</th>
+<th style="text-align:left;">
+Example
+</th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;">
@@ -720,7 +760,7 @@ Unrestricted
 </div>
 <div id="summary-of-examples" class="section level3">
 <h3><span class="header-section-number">2.6.8</span> Summary of Examples</h3>
-<p>The following table provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.</p>
+<p>Table @ref{tab:summarytable} provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.</p>
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
