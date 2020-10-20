@@ -1,3 +1,7 @@
+```{=latex}
+\pdfbookmark[part]{Foreword and Introduction}{fintro}
+```
+
 # Foreword {- #foreword}
 
 This is an important Handbook, compiled by an important institution, on an important topic. The Alfred P. Sloan Foundation is therefore a particularly proud sponsor of the Innovations in Data and Experiments for Action Initiative (IDEA) of the Abdul Latif Jameel Poverty Action Lab (J-PAL), which has taken on this endeavor, and of work on administrative data generally.

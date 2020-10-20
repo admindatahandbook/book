@@ -23,10 +23,16 @@
 
 
 % TOC
+\pdfbookmark[part]{Front matter}{frontmatter}
+\pdfbookmark[section]{\contentsname}{toc}
 \tableofcontents 
+
+% the following should be commented out in the final version
 \newpage
+\pdfbookmark[section]{\listtablename}{lot}
 \listoftables
 \newpage
+\pdfbookmark[section]{\listfigurename}{lof}
 \listoffigures
 
 \newpage
