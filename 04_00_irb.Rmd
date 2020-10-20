@@ -24,7 +24,12 @@ An IRB or ethics review process may be part of an academic institution; a medica
 IRB membership and the organization and function of an IRB is defined in the regulations 45 CFR 46: [107](https://www.law.cornell.edu/cfr/text/45/46.107), [108](https://www.law.cornell.edu/cfr/text/45/46.108). An IRB will consist of a minimum of five members of diverse backgrounds and expertise, including scientists and non-scientists, in order to provide complete and adequate review of human research. In IRBs with a large volume of projects, +minimal_risk| research activity is generally reviewed by full-time employed IRB office staff who are also board members and qualified to review. Greater than minimal risk studies must always be reviewed at a convened meeting referred to as Full Board review.
 
 ```{r irbtable1, echo=FALSE}
-irbtable1()
+if ( knitr::is_html_output() ) {
+  irbtable1()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/security/irbtable1.tex}")
+}
 ```
 
 In addition to the internal organization or agency-based IRB, organizations and independent researchers that do not have their own IRB can contract with +independent_IRBs| which can be both commercial or non-profit. Independent IRBs also can serve in the role as a +central_IRB| where multiple (academic or clinical) institutions are conducting the same research and either want to contract with an independent IRB or are required by regulation to rely on one IRB for oversight of the whole project. The reliance agreement process, where one IRB agrees to rely on another IRB for oversight, can be with a +commercial_IRB| or with an IRB that is, for example, located in an academic institution where that IRB has agreed to serve as the IRB of record for a multisite project. For the regulatory guidance on the reliance process see [45 CFR 46.114](https://www.law.cornell.edu/cfr/text/45/46.114).

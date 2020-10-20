@@ -204,7 +204,12 @@ A **medium agency** setting may allow researchers some choice of software or lim
 In the **high researcher agency** settings, researchers have few restrictions on how the analysis computer can be configured. They may have administrative privileges to the analysis computer and few, if any, restrictions on the software that can be installed. The researcher may own and physically control the analysis computer or may be granted administrative privileges to a computer that is owned by the data provider or third party. Data providers may still mandate technical solutions such as the use of monitoring, operating system patch management software, or anti-virus software.
 
 ```{r, securitytable1, echo=F}
-securitytable1()
+if ( knitr::is_html_output() ) {
+  securitytable1()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/security/securitytable1.tex}")
+}
 ```
 
 The advantage of low researcher agency is the reduced likelihood of inadvertent or intentional unauthorized use of data. The cost of low or medium agency is varied. Restrictions on software may increase training expenditures for researchers. Restrictions on physical attributes of the analysis computers may increase the expense of providing more storage or limit computationally intensive analyses, slowing down research. A low researcher agency agreement shifts most of the burden of maintaining the analysis computer onto the data provider. Thus the increased security of low agency is gained through slower research and higher costs for the data provider.
@@ -222,7 +227,12 @@ In some cases, the distinction between these two categories becomes blurred. A d
 Finally, individual **researchers** can act as the data custodian. This is still quite frequently used, in particular when no previous data access existed. For the researcher, acting as the data custodian enables more flexibility for accessing the data without traveling or remote access systems. Most of the cost of maintaining IT infrastructure and security fall onto the researcher, subject to other conditions in the overall data access plan; in addition, researchers assume the risk and liability associated with housing data. Security provisions include keeping analysis computers offline with no external network connections or other provisions. The enforcement of the DUA becomes a key mechanism for preventing the misuse of the data. Researcher agency over the analysis computer may also be limited, despite the researcher having physical control of the analysis computer. For instance, some data providers (often commercial companies) provide researchers with fully encrypted and remotely managed laptops. While the laptop and data are located with the researcher, the researcher has only low agency over the analysis computer.
 
 ```{r, securitytable2, echo=F}
-securitytable2()
+if ( knitr::is_html_output() ) {
+  securitytable2()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/security/securitytable2.tex}")
+}
 ```
 In all cases where the data provider relinquishes the data custodial role, data are transferred. While secure data transfer mechanisms exist, this is an additional risk within the overall framework; as described earlier, the cost is typically low to null.
 
@@ -239,7 +249,12 @@ Data providers can choose a **third-party** access provider. Note that the third
 Finally, access computers can be located with the **researcher**. Trivially, locating the analysis computer with the researcher makes the access computer co-incidental. However, there are numerous cases where the access computer is with the researcher while the analysis computer is not. Examples include any web-based access, most [remote execution] systems, and many [remote desktop] systems: researchers use their own computers to access the portal while all computation occurs elsewhere. In almost all cases, locating access computers with researchers allows them to work from a location of their choice, though in some cases this may be restricted to a designated university office.
 
 ```{r, securitytable3, echo=F}
-securitytable3()
+if ( knitr::is_html_output() ) {
+  securitytable3()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/security/securitytable3.tex}")
+}
 ```
 
 In general, the closer access computers are located to the data provider, the higher the security arrangements that apply. However, the two aspects are not perfectly correlated. In particular, access computers located with researchers can have very different security arrangements.
@@ -261,7 +276,12 @@ A **low security access location** has few or no access controls. Simple restric
 In addition to the locational security described above, the **type of access computer** can also range from high security to low security. Highly secure access computers (which do not contain data) may still include fully encrypted operating systems, the use of [VPNs][virtual private networks], [remote desktop] software, [secure network protocols], and [encryption] or requiring [biometric authentication] of the access computer. This can take the form of dedicated thin clients. Low security access computers are typically allowed for remote submission or web portal-type access, where any computer, in any location, is allowed.
 
 ```{r, securitytable4, echo=F}
-securitytable4()
+if ( knitr::is_html_output() ) {
+  securitytable4()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/security/securitytable4.tex}")
+}
 ```
 
 This section combines the type of access and location into one aspect, since the ultimate convenience to researchers arises from a combination of the two security measures. For instance, a data provider might provide researchers with a dedicated secure laptop, which can only be used to remotely access the analysis computers and nothing else. While there may be no location restrictions imposed on the researcher, the researcher is unlikely to carry two laptops around, and this would be considered to be a de-facto **medium** security solution.
@@ -283,7 +303,12 @@ When **limited restrictions** are imposed, some methods might be prevented, even
 Analysis methods may be **highly restricted**. Restrictions can include limiting the methods available to researchers to a whitelisted set of commands or, in more extreme examples, limit researchers to the use of tabulator software that can only provide conditional tables. Most researchers will perceive this to impose strong limitations on their ability to conduct research as usual, but such methods are sometimes used to reach a wide range of users while allowing for more relaxed conditions on the rest of the Five Safes framework.
 
 ```{r, securitytable5, echo=F}
-securitytable5()
+if ( knitr::is_html_output() ) {
+  securitytable5()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/security/securitytable5.tex}")
+}
 ```
 
 ## Specific Data Access Mechanisms Along the Five Aspects 
@@ -386,10 +411,10 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 ### Summary of Examples
 
-The following table provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
+Table \@ref{tab:summarytable} provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
 
-```{r, summarytable, echo=F, fig.cap="Summary of Access Mechanisms Along the Five Aspects"}
-plotallmechs()
+```{r, summarytable, echo=F, fig.cap="Summary of Access Mechanisms Along the Five Aspects",results='asis'}
+plotallmechs(is_html_output())
 ```
 
 ## Guidance for Data Providers and Researchers

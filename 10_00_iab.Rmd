@@ -61,8 +61,9 @@ Based on a reform in 2004, which exempted small firms from dismissal protection,
 
 Table \@ref(tab:iabtable1) provides a selective overview of research data available at +RDC-IAB| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in [@muller2019; @muller2020]. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).
 
-```{r iabtable1, tidy=FALSE, echo=F}
-iabtable1(iabt1data)
+```{r iabtable1, tidy=FALSE, echo=F,results='asis'}
+# the function does it all
+  iabtable1()
 ```
 
 ## Making Data Usable for Research
@@ -262,7 +263,12 @@ iabfigure3
 Additional statistics are also submitted to the annual activity report for all +RDC|s in Germany published by the +RatSWD| [germandataforum2019]. Table \@ref(tab:iabtable2) shows all publications with +RDC-IAB| data in 2018, including publications from +IAB| staff. There were 60 published papers in scientific journals in 2018, 45 of these in peer-reviewed journals. Additionally, 44 papers were published as working papers or reports and RDC-IAB data were used and cited in 41 books. As mentioned above, these numbers underestimate the true number of relevant publications in 2018.
 
 ```{r iabtable2, tidy=FALSE, echo=F}
-iabtable2()
+  if ( knitr::is_html_output() ) {
+    iabtable2()
+  }
+  if ( knitr::is_latex_output() ) {
+    cat("\\input{./assets/iab/iabtable2.tex}")
+  }
 ```
 
 Apart from these general statistics, +RDC-IAB| also gathers user feedback to learn what the users think about service quality, data documentation, data access modes, and additional user needs. At first, this was done using irregular user surveys [@wolter2018], but currently two regular online user surveys are conducted. One survey focuses on service quality during the application phase. This survey is conducted shortly after the signing of the +DUA| by the requesting institution. It is addressed to the researchers using the data, since they are usually more deeply involved in the application process than the representative providing the signature. The second survey covers user experiences after completed projects.

@@ -73,8 +73,13 @@ In 2019, the data holdings came from the following state agencies:
 
 Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in Table \@ref(tab:oldatable1).
 
-```{r oldatable1, echo=FALSE}
-oldatable1()
+```{r oldatable1, echo=FALSE,results='asis'}
+if ( knitr::is_html_output() ) {
+  oldatable1()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/olda/oldatable1.tex}")
+}
 ```
 
 The uses of the data resources can be separated into three distinct areas: research use, government use, and training use. Initially, there are some similarities across the data uses. These three data users all make use of the OLDA for both analytical and evaluative reasons. For example, researchers most often wish to make use of the data for explicit analysis of the outcomes of Ohio programs, such as the impact of higher education on employment.
@@ -101,8 +106,13 @@ The following case study provides an example of research use under the OLDA. One
 
 The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the +Unemployment_Insurance_Wage_Records| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^olda7]
 
-```{r oldatable2, echo=FALSE}
-oldatable2()
+```{r oldatable2, echo=FALSE,results='asis'}
+if ( knitr::is_html_output() ) {
+  oldatable2()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/olda/oldatable2.tex}")
+}
 ```
 
 #### Government Use {-}
@@ -145,13 +155,16 @@ As states built the technical systems to document state data, the federal govern
 
 Through a study of the employment outcomes of individuals enrolled in welfare, researchers have also learned (in recent years) that state rules vary in how they interpret data access to the Supplemental Nutrition Assistance Program (SNAP) and the Temporary Assistance for Needy Families (TANF). In some states, such as Illinois or Texas, these data are shared with researchers, while in Ohio both federal programs' data are largely off-limits to the research community.
 
-|Law or Administrative Regulation|Document|
-|------------------------|------------------------|
-|Family Educational Rights and Privacy Act|Audit and Evaluation Rules [@privacytechnicalassistancecenter2017]|
-|Workforce Innovation and Opportunity Act (Final rule)|<https://www.doleta.gov/wioa/about/final-rules/>|
-|Joint Guidance on Data Matching to Facilitate WIOA Performance Reporting and Evaluation|<https://www2.ed.gov/policy/gen/guid/fpco/pdf/final-ferpa-tegl-report.pdf>|
-|Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014|<https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf>|
-Table: (\#tab:oldatable3) Important Legal Documents to Review for the Research Community
+
+```{r, oldatable3, echo=F,results='asis'}
+oldat3data<-read.csv("./assets/olda/oldatable3.csv")
+if ( knitr::is_html_output() ) {
+  kable(oldat3data,caption="Important Legal Documents to Review for the Research Community",col.names=c("Law or Administrative Regulation","Document")) 
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/olda/oldatable3.tex}")
+}
+```
 
 #### Formal Governance Process {-}
 
