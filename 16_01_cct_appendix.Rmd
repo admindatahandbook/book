@@ -89,11 +89,11 @@ Policy decisions are a function of the decision-making environment and the poten
 
 ### Appendix C {-}
 
-#### Core metadata elements for municipal datasets (June 2020) {-}
+<!-- #### Core Metadata Elements for Municipal Datasets (June 2020) {-} -->
 
 These are the metadata elements that are required by general data users in establishing what data exists, how it can be accessed, and potential uses of the data. These are the minimum requirements for adding a dataset to the municipal data catalog.
 
-```{r, echo=F}
+```{r, echo=F,results="asis"}
 cctapptabdata<- data.frame(
   element = c("Unique ID",
               "Dataset Name",
@@ -146,16 +146,19 @@ cctapptabdata<- data.frame(
             "",
             "Entire city or subareas; Should also indicate the lowest spatial unit at which the data can be presented/analyzed",
             "Specific dates or intervals when data were recorded; Earliest and latest dates for which data were recorded"))
-  
-  
-  cctappendixtable<-function(){
-  pander::pander(cctapptabdata,
-                 split.cells = c(15,25,25),
-                 justify = 'left',
-                 col.names=c("Element Name","Description","Notes"))
-  }
- 
-   cctappendixtable()
+
+  #   pander::pander(cctapptabdata,
+  #                split.cells = c(15,25,25),
+  #                justify = 'left',
+  #                col.names=c("Element Name","Description","Notes"))
+
+if ( knitr::is_html_output() ) {
+   kable(cctapptabdata,booktabs=T,caption="Core Metadata Elements for Municipal Datasets (June 2020)",col.names=c("Element Name","Description","Notes")) %>%
+      column_spec(1,width="12em")
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/cct/cctappendixtable.tex}")
+}
 ```
 
 

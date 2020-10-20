@@ -1,16 +1,30 @@
+% 
+% \begin{table}
+% %\footnotesize
+% \caption{\label{tab:ccttable1}Areas of consideration and associated activities}
+% \centering
+% \begin{tabular}{p{10em}p{25em}}
+% 	\toprule
+% 	Task&Consideration\\
+% 	\midrule
+% 		\csvreader[late after line=\\]{./assets/cct/ccttable1.csv}{}%
+% 		{\csvcoli & \csvcolii }%
+% 	\bottomrule
+% 	\end{tabular}
+% 	%	
+% \end{table}
 
 \begin{table}
-%\footnotesize
-\caption{\label{tab:ccttable1}Areas of consideration and associated activities}
-\centering
-\begin{tabular}{p{10em}p{25em}}
-	\toprule
-	Task&Consideration\\
-	\midrule
-		\csvreader[late after line=\\]{./assets/cct/ccttable1.csv}{}%
-		{\csvcoli & \csvcolii }%
-	\bottomrule
-	\end{tabular}
-	%	
-\end{table}
 
+\caption{\label{tab:}Areas of consideration and associated activities}
+\centering
+\begin{tabular}[t]{ll}
+\toprule
+Technical solutions & <li>Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions</li><li>Integrating said platform with CCT data systems</li>\\
+Data infrastructure & <li>Development of metadata standards</li><li>Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.</li>\\
+IT architecture & <li>Addressing tensions between existing and newer approaches and technology stacks</li><li>Ensuring that legacy systems do not create barriers to effective data sharing</li>\\
+Governance & <li>Process improvement evaluations</li><li>Processes for integrating data use agreements with the data sharing platform</li>\\
+Data privacy & The evolution of CCT's understanding and application of applicable data laws and data ethics considerations must keep pace with CCT's increasingly open data environment\\
+\bottomrule
+\end{tabular}
+\end{table}

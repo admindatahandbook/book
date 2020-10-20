@@ -86,8 +86,7 @@ Other important considerations and activities have revolved around the following
 ccttable1data<-read.csv("./assets/cct/ccttable1.csv")
 
 if ( knitr::is_html_output() ) {
-kable(ccttable1data, caption="Areas of consideration and associated activities", col.names=NULL) %>%
-    collapse_rows(columns = 1:1, valign = "top")
+kable(ccttable1data, format="html", escape=F, booktabs=T, caption="Areas of consideration and associated activities", col.names=NULL)
 }
 if ( knitr::is_latex_output() ) {
     outfile <- "./assets/cct/ccttable1.tex"

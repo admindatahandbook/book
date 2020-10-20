@@ -18,14 +18,17 @@ irbt1data <- data.frame(
           "All studies involving prisoners and certain research with vulnerable populations regardless of risk such as children, fetuses, and neonates. Projects can only be disapproved at a convened meeting"))
 
 irbtable1<-function(){
-  pander::pander(irbt1data,
-                 keep.line.breaks = TRUE,
-                 style = 'grid',
-                 justify = 'left',
-                 split.cells = c(10,15,15,20),
-                 col.names = c("Review Type",
-                               "Regulatory Authority",
-                               "Risk",
-                               "Description"),
-                 caption = '(\\#tab:irbtable1) Categories of review conducted by an IRB.')
+  
+  kable(irbt1data,format="latex",col.names = c("Review Type","Regulatory Authority","Risk","Description"),caption="Categories of review conducted by an IRB.")
+  
+  # pander::pander(irbt1data,
+  #                keep.line.breaks = TRUE,
+  #                style = 'grid',
+  #                justify = 'left',
+  #                split.cells = c(10,15,15,20),
+  #                col.names = c("Review Type",
+  #                              "Regulatory Authority",
+  #                              "Risk",
+  #                              "Description"),
+  #                caption = '(\\#tab:irbtable1) Categories of review conducted by an IRB.')
 }

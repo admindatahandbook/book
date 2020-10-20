@@ -82,6 +82,9 @@ if ( knitr::is_latex_output() ) {
 }
 ```
 
+format="latex" booktab="T"
+tabulary Y/wide pacakge
+
 The uses of the data resources can be separated into three distinct areas: research use, government use, and training use. Initially, there are some similarities across the data uses. These three data users all make use of the OLDA for both analytical and evaluative reasons. For example, researchers most often wish to make use of the data for explicit analysis of the outcomes of Ohio programs, such as the impact of higher education on employment.
 
 #### Research Use {-}
@@ -159,7 +162,7 @@ Through a study of the employment outcomes of individuals enrolled in welfare, r
 ```{r, oldatable3, echo=F,results='asis'}
 oldat3data<-read.csv("./assets/olda/oldatable3.csv")
 if ( knitr::is_html_output() ) {
-  kable(oldat3data,caption="Important Legal Documents to Review for the Research Community",col.names=c("Law or Administrative Regulation","Document")) 
+  kable(oldat3data,caption="Important legal documents to review for the research community",col.names=c("Law or Administrative Regulation","Document")) 
 }
 if ( knitr::is_latex_output() ) {
   cat("\\input{./assets/olda/oldatable3.tex}")
@@ -270,7 +273,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 [^olda7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
 
-[^olda8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)
+<!-- [^olda8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup) -->
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
