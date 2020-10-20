@@ -61,13 +61,9 @@ Based on a reform in 2004, which exempted small firms from dismissal protection,
 
 Table \@ref(tab:iabtable1) provides a selective overview of research data available at +RDC-IAB| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in [@muller2019; @muller2020]. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).
 
-```{r iabtable1, tidy=FALSE, echo=F}
-  if (is_html_output()) {
-    iabtable1()
-  }
-  if ( knitr::is_latex_output() ) {
-    cat("\\input{./assets/iab/iabtable1.tex}")
-  }
+```{r iabtable1, tidy=FALSE, echo=F,results='asis'}
+# the function does it all
+  iabtable1()
 ```
 
 ## Making Data Usable for Research

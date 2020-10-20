@@ -121,6 +121,8 @@ iabtable1 <- function(){
       footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).")
     
   } else {
+    outfile <- "./assets/iab/iabtable1.tex"
+    if ( ! file.exists(outfile) ) {
     iabt1latexdata <- data.frame(lapply(iabt1data, function(x) {gsub("<br>", "\n", x)}), stringsAsFactors = F)
     
     inMinipage <- function(x, width) 
@@ -143,6 +145,10 @@ iabtable1 <- function(){
       pack_rows("Establishment History Panel (BHP)",4,6) %>%
       pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
       footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the RDC website: https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx.", threeparttable=T)
+    } else {
+    # write to latex to include the file
+    cat(paste0("\\input{",outfile,"}"))
+    }
   }
 }
 
