@@ -1,0 +1,16 @@
+
+\begin{table}
+%\footnotesize
+\caption{\label{tab:ccttable1}Areas of consideration and associated activities}
+\centering
+\begin{tabular}{p{10em}p{25em}}
+	\toprule
+	Task&Consideration\\
+	\midrule
+		\csvreader[late after line=\\]{./assets/cct/ccttable1.csv}{}%
+		{\csvcoli & \csvcolii }%
+	\bottomrule
+	\end{tabular}
+	%	
+\end{table}
+

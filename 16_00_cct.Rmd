@@ -90,7 +90,8 @@ kable(ccttable1data, caption="Areas of consideration and associated activities",
     collapse_rows(columns = 1:1, valign = "top")
 }
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/cct/ccttable1.tex}")
+    outfile <- "./assets/cct/ccttable1.tex"
+    cat(paste0("\\input{",outfile,"}"))
 }
 ```
 
