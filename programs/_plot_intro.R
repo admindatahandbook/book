@@ -1,7 +1,7 @@
 # Author: Jim Shen
 # Description: This will generate various plots for the intro chapter.
 
-introt1data<-read.csv("./assets/intro/introtable1.csv")
+introt1data<-read.csv("./assets/intro/introtable1.csv",sep=";")
 
 introtable1<-function(){
   knitr::kable(introt1data, booktabs = TRUE,

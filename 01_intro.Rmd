@@ -105,8 +105,14 @@ The general guidance provided in the thematic chapters addresses these needs onl
 
 To showcase such solutions, we have selected an array of case studies that have implemented robust, innovative, and sustainable data access mechanisms and processes. [Table \@ref(tab:introtable1)](https://drive.google.com/file/d/11QOJs0fXgLJp9W74SpWCti2_glpmonHC/view?usp=sharing) gives an overview of all the case study chapters. We asked the authors to describe their data protection solutions using the Five Safes framework [@desai2016] as an organizing principle.[^introduction2] Each of the *safes* describes one aspect in which an access model reduces the risk of unauthorized release of personal information.
 
-```{r introtable1, tidy=FALSE, echo=F}
-introtable1()
+```{r introtable1, tidy=FALSE, echo=F,results='asis'}
+if ( knitr::is_html_output() ) {
+    introtable1()
+}
+if ( knitr::is_latex_output() ) {
+  cat("\\input{./assets/intro/introtable1.tex}")
+}
+
 ```
 
 *Safe projects* describes how the data provider goes about assessing projects for appropriateness. In order to ensure data protections that are commensurate with the risk involved, and more generally to ensure ethical conduct of the research, safe projects may include, for example, a requirement of ethics (IRB) review but also a policy-focused review by data provider staff.
