@@ -11,6 +11,18 @@
 \usepackage{setspace}
 \setstretch{1.15}
 
+% bookmarks in PDF and title
+\usepackage{hyperref}
+\usepackage{bookmark}
+\hypersetup{
+  pdftitle={Handbook on Using Administrative Data for Research and Evidence-based Policy},
+  pdfauthor={Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber},
+  pdfborder={0 0 0},
+  breaklinks=true,
+  hidelinks=true,
+  bookmarksopen=false,
+  pagebackref=true}
+\urlstyle{same}  % don't use monospace font for urls
 
 % Font:
 \renewcommand{\rmdefault}{bch}
@@ -46,6 +58,8 @@
 \renewcommand{\chaptername}{CHAPTER}
 
 %%%% Section and chapter titles
+%\titleformat*{\part}{\LARGE\sffamily\bfseries}
+%\renewcommand{\part}{\sffamily}
 %Format chapter titles on chapter title pages
 \titleformat{\chapter}[display]
   {\Large\sffamily}{\chaptertitlename\ \thechapter}{14pt}{\semiHuge\bfseries}
