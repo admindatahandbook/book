@@ -40,6 +40,16 @@ This is the online version of the Handbook on Using Administrative Data for Rese
 
 <!--chapter:end:00_about-authors.Rmd-->
 
+# Acknowledgements {- #handbook_acknowledgements}
+
+The editors of the Handbook would like to thank the Alfred P. Sloan Foundation for providing financial support that made this work possible. We would also like to express our thanks to all the authors who contributed to the Handbook and provided invaluable feedback and workshopping, as well as [Steven Glazerman](https://www.poverty-action.org/people/steven-glazerman), [Jennifer Sturdy](https://www.bitss.org/people/jennifer-sturdy/), and [Torsten Walter](https://nyuad.nyu.edu/en/academics/divisions/social-science/faculty/torsten-bernd-norbert-figueiredo-walter.html) for insightful comments and review.
+
+We thank [Jim Shen](https://www.povertyactionlab.org/person/shen) for his work managing the Innovations in Data and Experiments for Action Initiative (IDEA) and the creation of the Handbook, while also coauthoring two chapters in this book, [Evan Williams](https://www.povertyactionlab.org/person/williams) for creating or co-creating many of the accompanying materials for the Handbook, such as the webinar series, and providing invaluable assistance from organizing the chapter review process to proof-reading, [Sam Friedlander](https://www.povertyactionlab.org/person/friedlander) for staffing IDEA early on, and the many J-PAL staff members who provided additional feedback on the various components of this Handbook.
+
+[Elizabeth Bond](https://www.povertyactionlab.org/person/bond) designed the Handbook cover and other associated materials and Theresa Lewis provided copy editing for the Handbook. We appreciate their attention to detail and hard work that helped turn 16 distinct chapters into a cohesive whole. Additional thanks go to [Aparna Krishnan](https://www.povertyactionlab.org/person/krishnan) (Project Director, J-PAL South Asia) and [Claudia Macías](https://www.povertyactionlab.org/person/macias) (Associate Director of Policy, Training and Research, J-PAL Latin America & the Caribbean) for their continuing support of IDEA.
+
+<!--chapter:end:00_acknowledgements.Rmd-->
+
 ```{=latex}
 \pdfbookmark[part]{Foreword and Introduction}{fintro}
 ```
@@ -107,7 +117,7 @@ Alfred P. Sloan Foundation
 \setcounter{page}{1}
 ```
 
-<!--chapter:end:00_zz_start_frontmatter.Rmd-->
+<!--chapter:end:00_zz_start_mainmatter.Rmd-->
 
 # Introduction {#intro}
 
@@ -5394,6 +5404,7 @@ The first draft of the questionnaire from the inter-ministerial meeting is then 
 
 <!--chapter:end:19_01_indonesia_appendix.Rmd-->
 
+
 # (APPENDIX) Appendix {-} 
 
 # Evolution of the Handbook and Contributing {- #contributing}
@@ -5747,18 +5758,6 @@ The views expressed in this paper are those of the authors and not those of any 
 
 
 
-<!--chapter:end:96_00_contributing.Rmd-->
-
-# Acknowledgements {- #handbook_acknowledgements}
-
-The editors of the Handbook would like to thank the Alfred P. Sloan Foundation for providing financial support that made this work possible. We would also like to express our thanks to all the authors who contributed to the Handbook and provided invaluable feedback and workshopping, as well as [Steven Glazerman](https://www.poverty-action.org/people/steven-glazerman), [Jennifer Sturdy](https://www.bitss.org/people/jennifer-sturdy/), and [Torsten Walter](https://nyuad.nyu.edu/en/academics/divisions/social-science/faculty/torsten-bernd-norbert-figueiredo-walter.html) for insightful comments and review.
-
-We thank [Jim Shen](https://www.povertyactionlab.org/person/shen) for his work managing the Innovations in Data and Experiments for Action Initiative (IDEA) and the creation of the Handbook, while also coauthoring two chapters in this book, [Evan Williams](https://www.povertyactionlab.org/person/williams) for creating or co-creating many of the accompanying materials for the Handbook, such as the webinar series, and providing invaluable assistance from organizing the chapter review process to proof-reading, [Sam Friedlander](https://www.povertyactionlab.org/person/friedlander) for staffing IDEA early on, and the many J-PAL staff members who provided additional feedback on the various components of this Handbook.
-
-[Elizabeth Bond](https://www.povertyactionlab.org/person/bond) designed the Handbook cover and other associated materials and Theresa Lewis provided copy editing for the Handbook. We appreciate their attention to detail and hard work that helped turn 16 distinct chapters into a cohesive whole. Additional thanks go to [Aparna Krishnan](https://www.povertyactionlab.org/person/krishnan) (Project Director, J-PAL South Asia) and [Claudia Macías](https://www.povertyactionlab.org/person/macias) (Associate Director of Policy, Training and Research, J-PAL Latin America & the Caribbean) for their continuing support of IDEA.
-
-<!--chapter:end:97_00_handbook_acknowledgements.Rmd-->
-
 # Third-party Licenses {-}
 
 ## Fontawesome {-}
@@ -5774,9 +5773,6 @@ Words mentioned in this book that are known to be trademarks, whether
 registered or unregistered, have been capitalised or use initial
 capitals. Terms identified as trademarks include Cisco®, Microsoft®,
 Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
-
-<!--chapter:end:98_00_licenses.Rmd-->
-
 ### References {- #invisible}
 
 
