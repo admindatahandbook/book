@@ -39,4 +39,3 @@ jobs:
            user_email: 'lars.vilhuber@cornell.edu'
            publish_branch: test_pdf 
            keep_files: true
-           force_orphan: true
