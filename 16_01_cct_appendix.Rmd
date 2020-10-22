@@ -1,3 +1,7 @@
+```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}
+cat("\\FloatBarrier\\newpage")
+```
+
 ## Appendix {-}
 
 ### Appendix A {-}
@@ -93,7 +97,7 @@ Policy decisions are a function of the decision-making environment and the poten
 
 These are the metadata elements that are required by general data users in establishing what data exists, how it can be accessed, and potential uses of the data. These are the minimum requirements for adding a dataset to the municipal data catalog.
 
-```{r, echo=F,results="asis"}
+```{r cctapptabdata, echo=F,results="asis"}
 cctapptabdata<- data.frame(
   element = c("Unique ID",
               "Dataset Name",

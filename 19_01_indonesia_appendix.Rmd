@@ -1,3 +1,8 @@
+```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}
+cat("\\FloatBarrier\\newpage")
+```
+
+
 ## Appendix {- #indonesia-appendix}
 
 ### Appendix A {- #indonesia-appendixa}
