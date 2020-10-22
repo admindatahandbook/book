@@ -1,4 +1,7 @@
 ```{r contrib,child="./96_00_contributing.md",eval=knitr::is_html_output()}
+```
 
 ```{r licenses,child="./98_00_licenses.md",eval=knitr::is_html_output()}
+```
+
 

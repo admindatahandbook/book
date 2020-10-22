@@ -7,7 +7,7 @@ cat("\\FloatBarrier\\newpage")
 ### Appendix A {-}
 
 ```{r,eval=knitr::is_html_output(),echo=FALSE,results='asis'}
-[Sample Text for Agreement Components](.\appendix\dua_appendix.pdf)
+cat("[Sample Text for Agreement Components](.\\appendix\\dua_appendix.pdf)")
 ```
 
 ```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}

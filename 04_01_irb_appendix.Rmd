@@ -4,7 +4,7 @@ cat("\\FloatBarrier\\newpage")
 ## Appendix {-}
 
 ```{r,eval=knitr::is_html_output(),echo=FALSE,results='asis'}
-[Data-Only Protocol Template](.\appendix\irb_appendix.pdf)
+cat("[Data-Only Protocol Template](.\\appendix\\irb_appendix.pdf)")
 ```
 
 ```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}
