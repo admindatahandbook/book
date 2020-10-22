@@ -1,0 +1,42 @@
+name: Create PDF
+on: 
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Your name'
+        # Default value if no value is explicitly provided
+        default: 'Github'
+        # Input has to be provided for the workflow to run
+        required: true
+
+
+jobs:
+  create-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      - name: Make executable
+        run: "chmod +x ./_build_pdf.sh"
+      # Runs a set of commands using the runners shell
+      - name: Run docker for R 
+        uses: docker://larsvilhuber/ideahandbook_pdf:latest
+        with:
+          args: "/github/workspace/_build_pdf.sh"
+          
+          
+      # send it to test-pdf
+      # We use a personal token to allow for posting despite branch controls - see https://github.com/peaceiris/actions-gh-pages for parameters
+      # We also use a *beta* feature to post to a particular destination_dir. 
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.7.0-8
+        with:
+           github_token: ${{ secrets.PUBLISH_TOKEN_LARS }}
+           publish_dir: _pdf
+           user_name: 'Github Action Bot'
+           user_email: 'lars.vilhuber@cornell.edu'
+           publish_branch: test_pdf 
+           keep_files: true
+           force_orphan: true
