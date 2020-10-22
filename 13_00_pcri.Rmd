@@ -84,7 +84,7 @@ The commercial sources include the Emerging Markets Private Equity Association (
 if ( knitr::is_html_output() ) {
 pcritable1.csv %>%
    kable(format.args = list(big.mark = ","),
-         caption="Number of distinct private capital firms provided by source of information") %>%
+         caption="Number of Distinct Private Capital Firms Provided by Source of Information") %>%
    kable_styling(full_width = F)  %>%
     row_spec(nrow(pcritable1.csv),bold=T) %>%
     footnote(general="As of 2015. Source: @jeng2015.",footnote_as_chunk = T)
@@ -151,7 +151,7 @@ As seen in Table \@ref(tab:pcritable2) below, the vast majority (82 percent) of 
 if ( knitr::is_html_output() ) {
 pcritable2.csv %>%
    kable(format.args = list(big.mark = ","),
-         caption="Breakdown of state of incorporation of the 622 venture-backed portfolio companies") %>%
+         caption="Breakdown of State of Incorporation of the 622 Venture-Backed Portfolio Companies") %>%
    kable_styling(full_width = F)  %>%
     row_spec(nrow(pcritable2.csv),bold=T) 
 }

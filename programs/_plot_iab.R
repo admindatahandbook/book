@@ -111,7 +111,7 @@ iabt1latexdata <- data.frame(
 iabtable1 <- function(){
   if (is_html_output()) {
     iabt1data %>%
-      kable("html", escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
+      kable("html", escape = F, caption="Selected RDC-IAB Data", col.names = NULL, booktabs=T) %>%
       kable_styling(full_width = F, font_size=12) %>%
       column_spec(1, width="10em") %>%
       #column_spec(2, width="25em") %>%
@@ -158,6 +158,6 @@ iabt2data<-read.csv("./assets/iab/table2.csv")
 
 iabtable2<-function(){
   knitr::kable(iabt2data, booktabs = TRUE,
-               caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding bachelor and master theses)") %>%
+               caption = "Number of Publications in 2018, Including all Publications with RDC-IAB Data (Excluding Bachelor and Master Theses)") %>%
     kable_styling(full_width = F, font_size=12)
 }

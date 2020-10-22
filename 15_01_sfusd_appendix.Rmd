@@ -1,4 +1,17 @@
+```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}
+cat("\\FloatBarrier\\newpage")
+```
+
 ## Appendix {-}
+
+
+```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}
+cat("\\begin{quote}")
+cat("\\itshape\n")
+cat(paste0("Links to the following agreements can be found in the Online Appendix at \\url{",config$base_url,"/",config$print_link,"/sfusd.html#appendix}.\n"))
+cat("\\end{quote}")
+```
+
 
 ### Appendix A {- #sfusd-appendixa}
 

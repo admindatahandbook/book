@@ -1,6 +1,17 @@
+```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}
+cat("\\FloatBarrier\\newpage")
+```
+
 ## Appendix {-}
 
 ### Appendix A: Resources and Dashboards {-}
+
+```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}
+cat("\\begin{quote}")
+cat("\\itshape\n")
+cat(paste0("Links to these online resources can be found in the Online Appendix at \\url{",config$base_url,"/",config$print_link,"/olda.html#appendix}.\n"))
+cat("\\end{quote}")
+```
 
 #### Resources {-}
 
