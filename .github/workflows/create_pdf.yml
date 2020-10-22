@@ -24,7 +24,7 @@ jobs:
       - name: Run docker for R 
         uses: docker://larsvilhuber/ideahandbook_pdf:latest
         with:
-          args: "/github/workspace/_build_pdf.sh"
+          args: "/github/workspace/_build_pdf.sh publish"
           
           
       # send it to test-pdf
