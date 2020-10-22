@@ -1172,15 +1172,22 @@ No matter the size of the project or the volume of data needed, all parties shou
 
 <!--chapter:end:03_00_dua.Rmd-->
 
+
+
 ## Appendix {-}
 
 ### Appendix A {-}
 
 [Sample Text for Agreement Components](.\appendix\dua_appendix.pdf)
 
+
+
 ### Appendix B {-}
 
 #### Toolkits and Guides {-}
+
+
+
 
 **[California Accountable Communities for Health Data-Sharing Toolkit](https://cachi.org/uploads/resources/ACH-Data-Sharing-Toolkit-December-2016.pdf)**  
 This toolkit is produced by the University of California Berkeley Center for Healthcare Organizational and Innovation Research and sponsored by the California Health and Human Services Agency and University of California Berkeley, School of Public Health. This report summarizes seven parameters for data sharing, Purpose/Aim, Relationship/Buy-in, Funding, Governance and Privacy, Data and Data-sharing, Technical Infrastructure, and Analytic Infrastructure while observing that parties will have varying levels of maturity and expertise across these categories.
@@ -1250,42 +1257,37 @@ An IRB or ethics review process may be part of an academic institution; a medica
 
 IRB membership and the organization and function of an IRB is defined in the regulations 45 CFR 46: [107](https://www.law.cornell.edu/cfr/text/45/46.107), [108](https://www.law.cornell.edu/cfr/text/45/46.108). An IRB will consist of a minimum of five members of diverse backgrounds and expertise, including scientists and non-scientists, in order to provide complete and adequate review of human research. In IRBs with a large volume of projects, +minimal_risk| research activity is generally reviewed by full-time employed IRB office staff who are also board members and qualified to review. Greater than minimal risk studies must always be reviewed at a convened meeting referred to as Full Board review.
 
-
-+------------+----------------+-----------------+----------------------+
-| Review     | Regulatory     | Risk            | Description          |
-| Type       | Authority      |                 |                      |
-+============+================+=================+======================+
-| Exempt     | Ethical        | Minimal risk    | Briefer application  |
-|            | principles of  | (often          | and typically        |
-|            | Belmont        | anonymous or    | reviewed in the IRB  |
-|            | (respect for   | deidentified    | office               |
-|            | persons,       | data)           |                      |
-|            | beneficence,   |                 |                      |
-|            | and justice)   |                 |                      |
-+------------+----------------+-----------------+----------------------+
-| Expedited  | Belmont and 45 | Minimal risk    | Reviewed in the      |
-|            | CFR 46.111     | (identifiable,  | office by one or     |
-|            |                | personal or     | more IRB members. If |
-|            |                | sensitive       | expedited reviewer   |
-|            |                | information)    | does not approve,    |
-|            |                |                 | the study may go to  |
-|            |                |                 | the full board       |
-+------------+----------------+-----------------+----------------------+
-| Full Board | Belmont and 45 | Greater than    | All studies          |
-|            | CFR 46.111     | minimal risk    | involving prisoners  |
-|            |                | (could include  | and certain research |
-|            |                | minimal risk    | with vulnerable      |
-|            |                | research that   | populations          |
-|            |                | does not fit in | regardless of risk   |
-|            |                | exempt or       | such as children,    |
-|            |                | expedited       | fetuses, and         |
-|            |                | review          | neonates. Projects   |
-|            |                | categories)     | can only be          |
-|            |                |                 | disapproved at a     |
-|            |                |                 | convened meeting     |
-+------------+----------------+-----------------+----------------------+
-
-Table: (\#tab:irbtable1) Categories of review conducted by an IRB.
+<table>
+<caption>(\#tab:irbtable1)Categories of Review Conducted by an IRB</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Review Type </th>
+   <th style="text-align:left;"> Regulatory Authority </th>
+   <th style="text-align:left;"> Risk </th>
+   <th style="text-align:left;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Exempt </td>
+   <td style="text-align:left;"> Ethical principles of Belmont (respect for persons, beneficence, and justice) </td>
+   <td style="text-align:left;"> Minimal risk (often anonymous or deidentified data) </td>
+   <td style="text-align:left;"> Briefer application and typically reviewed in the IRB office </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Expedited </td>
+   <td style="text-align:left;"> Belmont and 45 CFR 46.111 </td>
+   <td style="text-align:left;"> Minimal risk (identifiable, personal or sensitive information) </td>
+   <td style="text-align:left;"> Reviewed in the office by one or more IRB members. If expedited reviewer does not approve, the study may go to the full board </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Full Board </td>
+   <td style="text-align:left;"> Belmont and 45 CFR 46.111 </td>
+   <td style="text-align:left;"> Greater than minimal risk (could include minimal risk research that does not fit in exempt or expedited review categories) </td>
+   <td style="text-align:left;"> All studies involving prisoners and certain research with vulnerable populations regardless of risk such as children, fetuses, and neonates. Projects can only be disapproved at a convened meeting </td>
+  </tr>
+</tbody>
+</table>
 
 In addition to the internal organization or agency-based IRB, organizations and independent researchers that do not have their own IRB can contract with +independent_IRBs| which can be both commercial or non-profit. Independent IRBs also can serve in the role as a +central_IRB| where multiple (academic or clinical) institutions are conducting the same research and either want to contract with an independent IRB or are required by regulation to rely on one IRB for oversight of the whole project. The reliance agreement process, where one IRB agrees to rely on another IRB for oversight, can be with a +commercial_IRB| or with an IRB that is, for example, located in an academic institution where that IRB has agreed to serve as the IRB of record for a multisite project. For the regulatory guidance on the reliance process see [45 CFR 46.114](https://www.law.cornell.edu/cfr/text/45/46.114).
 
@@ -1482,9 +1484,12 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 <!--chapter:end:04_00_irb.Rmd-->
 
+
 ## Appendix {-}
 
 [Data-Only Protocol Template](.\appendix\irb_appendix.pdf)
+
+
 
 
 
@@ -1938,7 +1943,7 @@ Based on a reform in 2004, which exempted small firms from dismissal protection,
 Table \@ref(tab:iabtable1) provides a selective overview of research data available at +RDC-IAB| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in [@muller2019; @muller2020]. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).
 
 <table class="table" style="font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">(\#tab:iabtable1)Selected RDC-IAB data</caption>
+<caption style="font-size: initial !important;">(\#tab:iabtable1)Selected RDC-IAB Data</caption>
 <tbody>
   <tr grouplength="3"><td colspan="2" style="border-bottom: 1px solid;"><strong>Sample of Integrated Labour Market Biographies (SIAB)</strong></td></tr>
 <tr>
@@ -2188,7 +2193,7 @@ Since the implementation of the additional +data_access_points|, the proportion 
 Additional statistics are also submitted to the annual activity report for all +RDC|s in Germany published by the +RatSWD| [germandataforum2019]. Table \@ref(tab:iabtable2) shows all publications with +RDC-IAB| data in 2018, including publications from +IAB| staff. There were 60 published papers in scientific journals in 2018, 45 of these in peer-reviewed journals. Additionally, 44 papers were published as working papers or reports and RDC-IAB data were used and cited in 41 books. As mentioned above, these numbers underestimate the true number of relevant publications in 2018.
 
 <table class="table" style="font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">(\#tab:iabtable2)Number of publications in 2018, including all publications with RDC-IAB data (excluding bachelor and master theses)</caption>
+<caption style="font-size: initial !important;">(\#tab:iabtable2)Number of Publications in 2018, Including all Publications with RDC-IAB Data (Excluding Bachelor and Master Theses)</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Publications </th>
@@ -2376,52 +2381,57 @@ In 2019, the data holdings came from the following state agencies:
 
 Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in Table \@ref(tab:oldatable1).
 
-
-+---------------+----------------------------+--------------+--------------+
-| Agency        | Datasets^[The full list of | Years        | Records      |
-|               | data files is maintained   | Available    |              |
-|               | on the Ohio Longitudinal   |              |              |
-|               | Data Archive website and   |              |              |
-|               | changes over time. This is |              |              |
-|               | a selected list of core    |              |              |
-|               | data holdings.]            |              |              |
-+===============+============================+==============+==============+
-| Ohio          | * Unemployment Insurance   | From 1995 to | 130 million  |
-| Department    | Wage Data                  | present      | wage records |
-| of Job and    | * Quarterly Census on      | (varies      |              |
-| Family        | Wages and Employment       | based on     |              |
-| Services      | * Job Seeker Information   | files)       |              |
-|               | * Workforce Investment Act |              |              |
-|               | Standardized Record Data   |              |              |
-|               | * Unemployment Insurance   |              |              |
-|               | Claimant Data              |              |              |
-+---------------+----------------------------+--------------+--------------+
-| Ohio          | * Higher Education         | From 1999 to | 2 million    |
-| Department    | Information (Student,      | present      | unique       |
-| of Higher     | Course, and Faculty)       | (varies      | students in  |
-| Education     | * Ohio Technical Centers   | based on     | higher       |
-|               | * Adult Basic and Literacy | files)       | education    |
-|               | Education                  |              |              |
-+---------------+----------------------------+--------------+--------------+
-| Ohio          | Education Management       | From 2001 to | 1.8 million  |
-| Department    | Information System         | present      | unique       |
-| of            |                            | (varies      | students in  |
-| Education     |                            | based on     | K12          |
-|               |                            | table)       | education    |
-+---------------+----------------------------+--------------+--------------+
-| Ohio          | Ohio Housing Tenant Files  | From 2014 to | 200,000      |
-| Housing       |                            | present      | unique       |
-| Finance       |                            |              | individuals  |
-| Agency        |                            |              |              |
-+---------------+----------------------------+--------------+--------------+
-| Opportunities | Vocational Rehabilitation  | From 2011 to | 100,000      |
-| for           |                            | present      | unique       |
-| Ohioans       |                            |              | individuals  |
-| with          |                            |              |              |
-| Disabilities  |                            |              |              |
-+---------------+----------------------------+--------------+--------------+
-
-Table: (\#tab:oldatable1) Specific files maintained at the Ohio State University
+<table>
+<caption>(\#tab:oldatable1)Specific Files Maintained at the Ohio State University</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Agency </th>
+   <th style="text-align:left;"> Datasets </th>
+   <th style="text-align:left;"> Years Available </th>
+   <th style="text-align:left;"> Records </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Ohio Department of Job and Family Services </td>
+   <td style="text-align:left;"> <li>Unemployment Insurance Wage Data</li>
+<li>Quarterly Census on Wages and Employment</li>
+<li>Job Seeker Information</li>
+<li>Workforce Investment Act Standardized Record Data</li>
+<li>Unemployment Insurance Claimant Data</li> </td>
+   <td style="text-align:left;"> From 1995 to present (varies based on files) </td>
+   <td style="text-align:left;"> 130 million wage records </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ohio Department of Higher Education </td>
+   <td style="text-align:left;"> <li>Higher Education Information (Student, Course, and Faculty)</li>
+<li>Ohio Technical Centers</li>
+<li>Adult Basic and Literacy Education</li> </td>
+   <td style="text-align:left;"> From 1999 to present (varies based on files) </td>
+   <td style="text-align:left;"> 2 million unique students in higher education </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ohio Department of Education </td>
+   <td style="text-align:left;"> Education Management Information System </td>
+   <td style="text-align:left;"> From 2001 to present (varies based on table) </td>
+   <td style="text-align:left;"> 1.8 million unique students in K12 education </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ohio Housing Finance Agency </td>
+   <td style="text-align:left;"> Ohio Housing Tenant Files </td>
+   <td style="text-align:left;"> From 2014 to present </td>
+   <td style="text-align:left;"> 200,000 unique individuals </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Opportunities for Ohioans with Disabilities </td>
+   <td style="text-align:left;"> Vocational Rehabilitation </td>
+   <td style="text-align:left;"> From 2011 to present </td>
+   <td style="text-align:left;"> 100,000 unique individuals </td>
+  </tr>
+</tbody>
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span> <sup></sup> The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings</td></tr></tfoot>
+</table>
 
 The uses of the data resources can be separated into three distinct areas: research use, government use, and training use. Initially, there are some similarities across the data uses. These three data users all make use of the OLDA for both analytical and evaluative reasons. For example, researchers most often wish to make use of the data for explicit analysis of the outcomes of Ohio programs, such as the impact of higher education on employment.
 
@@ -2447,27 +2457,31 @@ The following case study provides an example of research use under the OLDA. One
 
 The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the +Unemployment_Insurance_Wage_Records| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^olda7]
 
-
-+----------------------+-----------------------------------------------------+
-| Type of Study        | Example Project Title                               |
-+======================+=====================================================+
-| Program evaluations  | * Wage Pathway Evaluation                           |
-|                      | Study [@hawley2019]                                 |
-|                      | * Ohio TechNet TAACCC                               |
-|                      | Grant Evaluation                                    |
-|                      | [@newgrowthgrouptheohioeducationresearchcenter2018] |
-|                      | * GEAR UP                                           |
-|                      | Evaluation[^olda8]                                  |
-+----------------------+-----------------------------------------------------+
-| Descriptive and      | * College Credit Plus                               |
-| multivariate studies | [@harlow2018]                                       |
-|                      | * Academic Momentum and                             |
-|                      | Undergraduate Student                               |
-|                      | Attrition                                           |
-|                      | [@kondratjeva2017]                                  |
-+----------------------+-----------------------------------------------------+
-
-Table: (\#tab:oldatable2) Example approved studies using the Ohio Longitudinal Data
+<table>
+<caption>(\#tab:oldatable2)Example Approved Studies Using the Ohio Longitudinal Data</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Type of Study </th>
+   <th style="text-align:left;"> Example Project Title </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Program evaluations </td>
+   <td style="text-align:left;"> <li>Wage Pathway Evaluation Study [@hawley2019]</li>
+<li>Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]</li>
+<li>GEAR UP Evaluation<sup>1</sup>
+</li> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Descriptive and multivariate studies </td>
+   <td style="text-align:left;"> <li>College Credit Plus [@harlow2018]</li>
+<li>Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]</li> </td>
+  </tr>
+</tbody>
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<sup>1</sup> This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)</td></tr></tfoot>
+</table>
 
 #### Government Use {-}
 
@@ -2511,7 +2525,7 @@ Through a study of the employment outcomes of individuals enrolled in welfare, r
 
 
 <table>
-<caption>(\#tab:oldatable3)Important Legal Documents to Review for the Research Community</caption>
+<caption>(\#tab:oldatable3)Important legal documents to review for the research community</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Law or Administrative Regulation </th>
@@ -2642,7 +2656,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 [^olda7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
 
-[^olda8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)
+<!-- [^olda8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup) -->
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@hosseinichimeh2017</span> <span class="citation">@hawley2017a</span></p>
@@ -2655,9 +2669,13 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 <!--chapter:end:11_00_olda.Rmd-->
 
+
+
 ## Appendix {-}
 
 ### Appendix A: Resources and Dashboards {-}
+
+
 
 #### Resources {-}
 
@@ -3021,7 +3039,7 @@ Gathering information directly from private capital firms has its own limitation
 The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in @jeng2015, which is available on the PCRI's website.
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>(\#tab:pcritable1)Number of distinct private capital firms provided by source of information</caption>
+<caption>(\#tab:pcritable1)Number of Distinct Private Capital Firms Provided by Source of Information</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Vendor </th>
@@ -3101,7 +3119,7 @@ As seen in Table \@ref(tab:pcritable2) below, the vast majority (82 percent) of 
 
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>(\#tab:pcritable2)Breakdown of state of incorporation of the 622 venture-backed portfolio companies</caption>
+<caption>(\#tab:pcritable2)Breakdown of State of Incorporation of the 622 Venture-Backed Portfolio Companies</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> State </th>
@@ -3311,6 +3329,7 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 
 <!--chapter:end:13_00_pcri.Rmd-->
+
 
 
 ## Appendix  {-}
@@ -3883,6 +3902,8 @@ We are grateful to a research grant from the Laura and John Arnold Foundation fo
 
 <!--chapter:end:14_00_ahc.Rmd-->
 
+
+
 ## Appendix {-}
 
 The following are excerpts from Sub-Award or Non-Disclosure Agreements
@@ -3891,17 +3912,17 @@ The following are excerpts from Sub-Award or Non-Disclosure Agreements
 
 The following clause was included in the sub-award agreement between Aurora Health Care (the Sub-awardee) and MIT permitting the publication of a data set upon completion of the study
 
-"Notwithstanding the foregoing, a subset of the Subawardee Confidential Information will be made public according to the terms set forth in this section ("Public Data Set") and will not be treated as Subawardee Confidential Information once made public. The Public Data Set will not include patient, encounter, and financial level data elements. It will only include provider level data elements and may include aggregate patient and financial information. The exact nature of the Public Data Set will be determined at the end of the Research as it may depend on the findings. The Public Data Set is anticipated to be a provider-level data set with physician characteristics including provider type (MD, DO, NP, PA), specialty, age bins and average patient characteristics, along with outcomes including the number of scans that would trigger the best practice alert (BPA) being evaluated in this Research, the number of high cost scan orders, the number of scan orders with a score of 1-3, the number of scans with a score of 4-6 and the number of low cost scans. The outcomes will be measured over various timeframes such as 0-1 month, 0-3 months, 0-6 months, 0-9 months, and 0-12 months. The Public Data Set may be made available on the OSF and DataVerse websites and may be available to the public indefinitely. The exact list of data elements and aggregate data to be made public will be agreed upon by both Parties in year 3 of the Research and prior to the Public Data Set being made public."
+> "Notwithstanding the foregoing, a subset of the Subawardee Confidential Information will be made public according to the terms set forth in this section ("Public Data Set") and will not be treated as Subawardee Confidential Information once made public. The Public Data Set will not include patient, encounter, and financial level data elements. It will only include provider level data elements and may include aggregate patient and financial information. The exact nature of the Public Data Set will be determined at the end of the Research as it may depend on the findings. The Public Data Set is anticipated to be a provider-level data set with physician characteristics including provider type (MD, DO, NP, PA), specialty, age bins and average patient characteristics, along with outcomes including the number of scans that would trigger the best practice alert (BPA) being evaluated in this Research, the number of high cost scan orders, the number of scan orders with a score of 1-3, the number of scans with a score of 4-6 and the number of low cost scans. The outcomes will be measured over various timeframes such as 0-1 month, 0-3 months, 0-6 months, 0-9 months, and 0-12 months. The Public Data Set may be made available on the OSF and DataVerse websites and may be available to the public indefinitely. The exact list of data elements and aggregate data to be made public will be agreed upon by both Parties in year 3 of the Research and prior to the Public Data Set being made public."
 
 ### Publishing {-}
 
 The following is from the sub-award agreement:
 
-"If and to the extent that each Party has contributed to the results of the Research, the two Parties may work together in good faith to publish the results jointly, as appropriate. The foregoing notwithstanding, both MIT and Subawardee shall have the right to publish the results of the Research arising from such portion of the Research performed solely by such Party, along with any background information about the Research that is necessary to be included in any publication of results or necessary for other scholars to verify such results. Prior to publication of Research performed solely by one Party, the publishing Party must provide the other Party with at least thirty (30) calendar days advance notice for the non-publishing Party to review the manuscript in order to identify patentable subject matter or the inadvertent disclosure of Subawardee Confidential Information."
+> "If and to the extent that each Party has contributed to the results of the Research, the two Parties may work together in good faith to publish the results jointly, as appropriate. The foregoing notwithstanding, both MIT and Subawardee shall have the right to publish the results of the Research arising from such portion of the Research performed solely by such Party, along with any background information about the Research that is necessary to be included in any publication of results or necessary for other scholars to verify such results. Prior to publication of Research performed solely by one Party, the publishing Party must provide the other Party with at least thirty (30) calendar days advance notice for the non-publishing Party to review the manuscript in order to identify patentable subject matter or the inadvertent disclosure of Subawardee Confidential Information."
 
-The following is from the NDA:
+The following is from the +NDA|:
 
-"Aurora acknowledges that MIT is receiving Confidential Information in anticipation of its faculty preparing written scholarly work ("Scholarly Work"). In the event MIT personnel seek to publish a Scholarly Work, Aurora will have a thirty (30) day period to review the Scholarly Work for any disclosure of Confidential Information. Aurora shall, within the thirty (30) day period, give MIT notice identifying specifically any Confidential Information it believes would be disclosed in the Scholarly Work. If Aurora does not provide timely notice, it will be deemed to have waived any objection to disclosure of Confidential Information."
+> "Aurora acknowledges that MIT is receiving Confidential Information in anticipation of its faculty preparing written scholarly work ("Scholarly Work"). In the event MIT personnel seek to publish a Scholarly Work, Aurora will have a thirty (30) day period to review the Scholarly Work for any disclosure of Confidential Information. Aurora shall, within the thirty (30) day period, give MIT notice identifying specifically any Confidential Information it believes would be disclosed in the Scholarly Work. If Aurora does not provide timely notice, it will be deemed to have waived any objection to disclosure of Confidential Information."
 
 
 
@@ -4224,7 +4245,13 @@ Beyond merely ensuring the safety and efficiency of this data infrastructure, th
 
 <!--chapter:end:15_00_sfusd.Rmd-->
 
+
+
 ## Appendix {-}
+
+
+
+
 
 ### Appendix A {- #sfusd-appendixa}
 
@@ -4327,39 +4354,23 @@ The process of identifying potential technical solutions for data streamlining h
 Other important considerations and activities have revolved around the following areas listed in Table \@ref(tab:ccttable1). In all of these tasks and in implementation, investments in human capital with respect to data skills of CCT staff as well as network-building internally and externally are perceived as crucial to success.
 
 <table>
-<caption>(\#tab:ccttable1)Areas of consideration and associated activities</caption>
+<caption>(\#tab:ccttable1)Areas of Consideration and Associated Activities</caption>
 <tbody>
   <tr>
-   <td style="text-align:left;vertical-align: top !important;" rowspan="2"> Technical solutions </td>
-   <td style="text-align:left;"> Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions </td>
+   <td style="text-align:left;"> Technical solutions </td>
+   <td style="text-align:left;"> <li>Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions</li><li>Integrating said platform with CCT data systems</li> </td>
   </tr>
   <tr>
-   
-   <td style="text-align:left;"> Integrating said platform with CCT data systems </td>
+   <td style="text-align:left;"> Data infrastructure </td>
+   <td style="text-align:left;"> <li>Development of metadata standards</li><li>Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.</li> </td>
   </tr>
   <tr>
-   <td style="text-align:left;vertical-align: top !important;" rowspan="2"> Data infrastructure </td>
-   <td style="text-align:left;"> Development of metadata standards </td>
+   <td style="text-align:left;"> IT architecture </td>
+   <td style="text-align:left;"> <li>Addressing tensions between existing and newer approaches and technology stacks</li><li>Ensuring that legacy systems do not create barriers to effective data sharing</li> </td>
   </tr>
   <tr>
-   
-   <td style="text-align:left;"> Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns. </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;vertical-align: top !important;" rowspan="2"> IT architecture </td>
-   <td style="text-align:left;"> Addressing tensions between existing and newer approaches and technology stacks </td>
-  </tr>
-  <tr>
-   
-   <td style="text-align:left;"> Ensuring that legacy systems do not create barriers to effective data sharing </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;vertical-align: top !important;" rowspan="2"> Governance </td>
-   <td style="text-align:left;"> Process improvement evaluations </td>
-  </tr>
-  <tr>
-   
-   <td style="text-align:left;"> Processes for integrating data use agreements with the data sharing platform </td>
+   <td style="text-align:left;"> Governance </td>
+   <td style="text-align:left;"> <li>Process improvement evaluations</li><li>Processes for integrating data use agreements with the data sharing platform</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Data privacy </td>
@@ -4549,6 +4560,8 @@ The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, C
 
 <!--chapter:end:16_00_cct.Rmd-->
 
+
+
 ## Appendix {-}
 
 ### Appendix A {-}
@@ -4640,116 +4653,107 @@ Policy decisions are a function of the decision-making environment and the poten
 
 ### Appendix C {-}
 
-#### Core metadata elements for municipal datasets (June 2020) {-}
+<!-- #### Core Metadata Elements for Municipal Datasets (June 2020) {-} -->
 
 These are the metadata elements that are required by general data users in establishing what data exists, how it can be accessed, and potential uses of the data. These are the minimum requirements for adding a dataset to the municipal data catalog.
 
-
--------------------------------------------------------------------------
-Element Name      Description                 Notes                      
------------------ --------------------------- ---------------------------
-Unique ID         Unique ID for dataset                                  
-
-Dataset Name      A name given to the         Should be short but        
-                  dataset                     adequately reflect to      
-                                              what the content of the    
-                                              dataset relates            
-
-Dataset           A summary of the dataset,   Should include             
-Description       including contents and      purpose/usage of the       
-                  usage by CCT                dataset and how the data   
-                                              is sourced/acquired        
-
-Dataset Quality   Subjective assessment of    Should indicate specific   
-                  dataset quality             gaps or concerns           
-
-Update            Frequency with which the    Historical (not updated),  
-Frequency         data are updated in the     Event Based                
-                  dataset. Helps researcher                              
-                  understand how often the                               
-                  content is likely to be                                
-                  changed and whether it                                 
-                  might be dependent upon a                              
-                  regular event, such as an                              
-                  annual budgetary process                               
-
-Data Access       Classification of the       Open Public, Internal      
-Rights            dataset in terms of         Open, Internal             
-                  access                      Restricted, Secret         
-
-Restricted        To be completed if the      Personal Information,      
-Reason            dataset is classified as    Security                   
-                  Restricted; Indicates the                              
-                  reason for restricting                                 
-                  access                                                 
-
-Data Format       Provides an indication of   Examples include: CSV,     
-                  the interoperable           Relational DB, Excel,      
-                  structure of the data as    Word, PDF, Text, MP4,      
-                  reflected by the primary    MPEG                       
-                  file format in which the                               
-                  system exports data                                    
-
-Data Steward      Indicates the individual    Should be a person who     
-                  who assumes business        has sufficient authority   
-                  accountability for the      to authorize decisions in  
-                  dataset in relation to      relation to the            
-                  aspects such as access,     management of, and access  
-                  quality, integrity, and     to, the dataset; if the    
-                  completeness                dataset is sourced from    
-                                              an external organization,  
-                                              the data steward should    
-                                              be from the department     
-                                              primarily responsible for  
-                                              obtaining the data on      
-                                              behalf of CCT              
-
-DS/TR Branch      Indicates the                                          
-                  organizational unit                                    
-                  (branch) of the data                                   
-                  steward                                                
-
-DS/TR             Indicates the                                          
-Department        organizational unit                                    
-                  (department) of the data                               
-                  steward                                                
-
-DS/TR             Indicates the                                          
-Directorate       organizational unit                                    
-                  (directorate) of the data                              
-                  steward                                                
-
-Data Contact      Indicates the official                                 
-                  who works most closely                                 
-                  with, and can best                                     
-                  provide additional                                     
-                  information about, the                                 
-                  data and metadata                                      
-
-Data Custodian    Indicates the official                                 
-                  who is responsible for                                 
-                  the technical management                               
-                  of the data (e.g., the                                 
-                  hosting and serving of                                 
-                  the data)                                              
-
-Host System ID    Unique ID of the                                       
-                  application in which the                               
-                  data are stored                                        
-                  (primary/source system)                                
-
-Spatial           Indicates areas for which   Entire city or subareas;   
-Coverage          data are recorded           Should also indicate the   
-                                              lowest spatial unit at     
-                                              which the data can be      
-                                              presented/analyzed         
-
-Temporal          Indicates the range of      Specific dates or          
-Coverage          time for which data are     intervals when data were   
-                  recorded                    recorded; Earliest and     
-                                              latest dates for which     
-                                              data were recorded         
--------------------------------------------------------------------------
+<table>
+<caption>(\#tab:cctapptabdata)Core Metadata Elements for Municipal Datasets (June 2020)</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Element Name </th>
+   <th style="text-align:left;"> Description </th>
+   <th style="text-align:left;"> Notes </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Unique ID </td>
+   <td style="text-align:left;"> Unique ID for dataset </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Dataset Name </td>
+   <td style="text-align:left;"> A name given to the dataset </td>
+   <td style="text-align:left;"> Should be short but adequately reflect to what the content of the dataset relates </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Dataset Description </td>
+   <td style="text-align:left;"> A summary of the dataset, including contents and usage by CCT </td>
+   <td style="text-align:left;"> Should include purpose/usage of the dataset and how the data is sourced/acquired </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Dataset Quality </td>
+   <td style="text-align:left;"> Subjective assessment of dataset quality </td>
+   <td style="text-align:left;"> Should indicate specific gaps or concerns </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Update Frequency </td>
+   <td style="text-align:left;"> Frequency with which the data are updated in the dataset. Helps researcher understand how often the content is likely to be changed and whether it might be dependent upon a regular event, such as an annual budgetary process </td>
+   <td style="text-align:left;"> Historical (not updated), Event Based </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Data Access Rights </td>
+   <td style="text-align:left;"> Classification of the dataset in terms of access </td>
+   <td style="text-align:left;"> Open Public, Internal Open, Internal Restricted, Secret </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Restricted Reason </td>
+   <td style="text-align:left;"> To be completed if the dataset is classified as Restricted; Indicates the reason for restricting access </td>
+   <td style="text-align:left;"> Personal Information, Security </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Data Format </td>
+   <td style="text-align:left;"> Provides an indication of the interoperable structure of the data as reflected by the primary file format in which the system exports data </td>
+   <td style="text-align:left;"> Examples include: CSV, Relational DB, Excel, Word, PDF, Text, MP4, MPEG </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Data Steward </td>
+   <td style="text-align:left;"> Indicates the individual who assumes business accountability for the dataset in relation to aspects such as access, quality, integrity, and completeness </td>
+   <td style="text-align:left;"> Should be a person who has sufficient authority to authorize decisions in relation to the management of, and access to, the dataset; if the dataset is sourced from an external organization, the data steward should be from the department primarily responsible for obtaining the data on behalf of CCT </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> DS/TR Branch </td>
+   <td style="text-align:left;"> Indicates the organizational unit (branch) of the data steward </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> DS/TR Department </td>
+   <td style="text-align:left;"> Indicates the organizational unit (department) of the data steward </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> DS/TR Directorate </td>
+   <td style="text-align:left;"> Indicates the organizational unit (directorate) of the data steward </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Data Contact </td>
+   <td style="text-align:left;"> Indicates the official who works most closely with, and can best provide additional information about, the data and metadata </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Data Custodian </td>
+   <td style="text-align:left;"> Indicates the official who is responsible for the technical management of the data (e.g., the hosting and serving of the data) </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Host System ID </td>
+   <td style="text-align:left;"> Unique ID of the application in which the data are stored (primary/source system) </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Spatial Coverage </td>
+   <td style="text-align:left;"> Indicates areas for which data are recorded </td>
+   <td style="text-align:left;"> Entire city or subareas; Should also indicate the lowest spatial unit at which the data can be presented/analyzed </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 12em; "> Temporal Coverage </td>
+   <td style="text-align:left;"> Indicates the range of time for which data are recorded </td>
+   <td style="text-align:left;"> Specific dates or intervals when data were recorded; Earliest and latest dates for which data were recorded </td>
+  </tr>
+</tbody>
+</table>
 
 
 
@@ -5372,6 +5376,9 @@ We thank the many J-PAL SEA staff members who contributed to the projects discus
 
 <!--chapter:end:19_00_indonesia.Rmd-->
 
+
+
+
 ## Appendix {- #indonesia-appendix}
 
 ### Appendix A {- #indonesia-appendixa}
@@ -5758,6 +5765,7 @@ The views expressed in this paper are those of the authors and not those of any 
 
 
 
+
 # Third-party Licenses {-}
 
 ## Fontawesome {-}
@@ -5773,6 +5781,11 @@ Words mentioned in this book that are known to be trademarks, whether
 registered or unregistered, have been capitalised or use initial
 capitals. Terms identified as trademarks include Cisco®, Microsoft®,
 Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
+
+
+
+<!--chapter:end:95_online_only_backmatter.Rmd-->
+
 ### References {- #invisible}
 
 
