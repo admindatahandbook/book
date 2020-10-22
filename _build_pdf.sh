@@ -1,16 +1,28 @@
-#!/bin/sh
+#!/bin/bash
 
 set -ev
 LATEX=pdflatex
 FILE=test_evan
 OUTFILE=handbook_color_$(date +%F).pdf
 OUTFILEBW=handbook_bw_$(date +%F).pdf
+OUTDIR=_pdf
+
+skip=no
+publish=no
 
 if [ -z $1 ]
 then
    skip=no
+   publish=no
 else
-   skip=yes
+   case $1 in 
+     skip|s)
+      skip=yes
+      ;;
+    publish|p)
+      publish=yes
+      ;;
+    esac
 fi
 
 cd $(dirname $0)
@@ -69,3 +81,9 @@ then
   programs/pdf_to_grayscale.sh -i ${OUTFILE} -o ${OUTFILEBW}
 fi
 
+if [ "$publish" == "yes" ]
+then
+  [ -d $OUTDIR ] || mkdir $OUTDIR
+  cp $OUTFILE $OUTDIR/
+  cp $OUTFILEBW $OUTDIR/
+fi
