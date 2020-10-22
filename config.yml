@@ -3,7 +3,8 @@ default:
   title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
   editors: "Cole, Dhaliwal, Sautmann, and Vilhuber"
   last_update: !expr Sys.Date()
-  first_publish_date: "September 2020"
+  print_link: "latest"
+  first_publish_date: "November 2020"
   colors:
     aspect_low: "#e0f3db"  #low flexibility, light green, formerly "#33a02c"
     aspect_med: "#a8ddb5" #med flexibility, dark green blue, formerly "#a6cee3"
