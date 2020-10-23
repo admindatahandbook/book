@@ -68,6 +68,4 @@ Daniel L. Goroff
 Vice President and Program Director  
 Alfred P. Sloan Foundation
 
-\putbib
-
 
