@@ -86,7 +86,7 @@ for file in $cpfiles
 do
   cp $file $builddir/$file
 done
-
+cat .gitignore | grep -v '_main\*' > $builddir/.gitignore
 
 
 
