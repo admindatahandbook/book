@@ -52,7 +52,16 @@ Importantly, this is very sensitive data, as it includes the names and addresses
 
 ```{r indonesiafigure1, echo=FALSE, out.width='100%', fig.cap='Sample Raskin cards. The names in these sample cards are fictitious and for demonstration purposes only. '}
 # Removed [@banerjee2018] from caption, does not work in Rmd/LaTeX
+if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/indonesia/indonesiafigure1web.png')
+}
+if ( knitr::is_latex_output() ) {
+    if ( ! file.exists('./figures/indonesiafigure1.png')) {
+    file.copy('./assets/indonesia/indonesiafigure1.png','./figures/indonesiafigure1.png')
+  }
+  knitr::include_graphics('./figures/indonesiafigure1.png')
+}
+
 ```
 
 Note: the names in these sample cards are fictitious and for demonstration purposes only.
@@ -68,7 +77,16 @@ While the research team worked with the GoI on the overall +evaluation| of the r
 In 2016, working with the GoI, the research team identified 216 districts where the BPNT reform had already happened or was in progress. The team then randomized the districts into two experimental groups. In one group, the districts are asked to exert extra effort to try to meet the agent coverage requirements. In the second group, districts were told that one of the two coverage guidelines was no longer required. The banks tasked with recruiting private BPNT agents and district officials learned of each district's treatment status through the normal processes for sharing programs and policies with stakeholders: letters from the government, a series of explanatory meetings, and phone calls to reinforce the treatment.
 
 ```{r indonesiafigure2, echo=FALSE, out.width='100%', fig.cap='State-owned banks recruit private retailers to serve as BPNT agents and outfit them with equipment to process BPNT e-voucher transactions and some time to provide other basic banking services. These recruited agents then appear in bank administrative data.'}
+if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/indonesia/indonesiafigure2web.png')
+}
+if ( knitr::is_latex_output() ) {
+    if ( ! file.exists('./figures/indonesiafigure2.png')) {
+    file.copy('./assets/indonesia/indonesiafigure2.png','./figures/indonesiafigure2.png')
+  }
+  knitr::include_graphics('./figures/indonesiafigure2.png')
+}
+
 ```
 
 As part of the design, the researchers had to monitor the experiment and understand whether the number of BPNT agents actually changed as a result of treatment activities (e.g., letters, meetings), and whether villages met the GoI-issued requirements.

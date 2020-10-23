@@ -75,7 +75,15 @@ These data use examples highlight challenges and potential associated with the h
 As discussed earlier in this chapter, a collaboration was developed between CCT and researchers at J-PAL and UCSB to help CCT identify, develop, and implement sustainable solutions for streamlining the sharing process both internally and with external researchers. Figure \@ref(fig:cctfigure1) depicts the high-level +data_sharing_process| that CCT is working toward.[^cct9]
 
 ```{r cctfigure1, echo=FALSE, out.width='100%', fig.cap='Data sharing process'}
+if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/cct/cctfigure1web.png')
+}
+if ( knitr::is_latex_output() ) {
+    if ( ! file.exists('./figures/cctfigure1.png')) {
+    file.copy('./assets/cct/cctfigure1.png','./figures/cctfigure1.png')
+  }
+  knitr::include_graphics('./figures/cctfigure1.png')
+}
 ```
 
 The process of identifying potential technical solutions for data streamlining has followed best practices by (1) perceiving and identifying various barriers to data access and use [@connelly2016; @goerge2018; @lane2008; @petrila2018; @abraham2019], (2) assessing new tools and approaches for secure and remote access to data [@lane2008; @culhane2018; @foster2018], and (3) understanding diverse user needs [@lane2018; @abraham2019].
