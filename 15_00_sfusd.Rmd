@@ -53,7 +53,15 @@ In school districts, as in other large organizations, data serve multiple purpos
 These distinctions are important because the types of activities require different data and their interpretations of data are varied (illustrated in Figure \@ref(fig:sfusdfigure1)). +Operational_data| describe the current state at a specific point in time and undergo frequent updating to accurately reflect changing conditions, while +analytical_data| must capture consistent and comparable snapshots of the operational data. Staff rely on operational data in real time to provide services and to report out accountability metrics at specified times of year. For example, students may switch into and out of an ethnic studies course, shift from one section to another, or even change schools while maintaining enrollment in ethnic studies. Operational data need to reflect these changes in real time for schools and teachers to accurately maintain records of students' course-taking and provide service. By contrast, analytical data need to freeze the operational data to facilitate replicable and reproducible research and evaluation studies. Students who took ethnic studies in a school year need to be defined by some criteria, such as students who were enrolled by a specific date and those who remained enrolled for a minimum percentage of the school year.
 
 ```{r sfusdfigure1, echo=FALSE, out.width='100%', fig.cap='Relationships between purposes of data use, study types, and the data systems that support them'}
+if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/sfusd/sfusdfigure1web.png')
+}
+if ( knitr::is_latex_output() ) {
+    if ( ! file.exists('./figures/sfusdfigure1.png')) {
+    file.copy('./assets/sfusd/sfusdfigure1.png','./figures/sfusdfigure1.png')
+  }
+  knitr::include_graphics('./figures/sfusdfigure1.png')
+}
 ```
 
 Ultimately, the differentiation between +operational_data| and +analytical_data| is important for the usability of data, not only in terms of researchers accessing data but also regarding whether the data can be used to generate reliable and meaningful evidence for district decision-making.[^sfusd2] Thus, any data-sharing arrangement must closely manage the process of generating analytical data from operational data to ensure high-quality data throughout.

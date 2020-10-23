@@ -15,7 +15,10 @@ knitr::include_graphics('./assets/pcri/pcrifigurea1web.png')
 ```
 ```{r pcrifigurea1-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
-cat("\\input{./figures/pcrifigurea1.tex}")
+      if ( ! file.exists('./figures/pcrifigurea1.png')) {
+            file.copy('./assets/pcri/pcrifigurea1.png','./figures/pcrifigurea1.png')
+            }
+      cat("\\input{./figures/pcrifigurea1.tex}")
 }
 ```
 
@@ -54,7 +57,10 @@ knitr::include_graphics('./assets/pcri/pcrifigurea2web.png')
 ```
 ```{r pcrifigurea2-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
-cat("\\input{./figures/pcrifigurea2.tex}")
+      if ( ! file.exists('./figures/pcrifigurea2.png')) {
+            file.copy('./assets/pcri/pcrifigurea2.png','./figures/pcrifigurea2.png')
+            }
+      cat("\\input{./figures/pcrifigurea2.tex}")
 }
 ```
 
@@ -65,7 +71,10 @@ knitr::include_graphics('./assets/pcri/pcrifigurea3web.png')
 
 ```{r pcrifigurea3-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
-cat("\\input{./figures/pcrifigurea3.tex}")
+      if ( ! file.exists('./figures/pcrifigurea3.png')) {
+            file.copy('./assets/pcri/pcrifigurea3.png','./figures/pcrifigurea3.png')
+            }
+      cat("\\input{./figures/pcrifigurea3.tex}")
 }
 ```
 
