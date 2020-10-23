@@ -6,8 +6,10 @@ publish_branch=from_book
 publish_repo=https://github.com/admindatahandbook/book-latex.git
 publish_repo=git@github.com:admindatahandbook/book-latex.git
 
-[ -d .git ] && exit 2
-git init 
+if [ ! -d .git ] 
+then
+    git init 
+fi
 git add *
 git add .gitignore 
 git remote add origin $publish_repo
