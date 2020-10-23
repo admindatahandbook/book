@@ -8,7 +8,7 @@ library(RColorBrewer)
 
 # Figure 1
 iabf1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
-pdfdpi=pdfdpi
+pdfdpi=600
 
 iabf1data$Date <- factor(iabf1data$Date,levels = c("Aug 19", "Sep 19", "Oct 19", "Nov 19", "Dec 19", "Jan 20"))
 

@@ -66,10 +66,11 @@ figuredest=figures
 
 cpdirs="figures tables includes"
 cpext="tex bib bst"
-cpfiles="_build_pdf.sh"
+cpfiles="_build_pdf.sh programs/pdf_to_grayscale.sh"
 
 [ -d $builddir ] && rm -rf $builddir
 mkdir $builddir
+mkdir $builddir/programs
 
 for dir in $cpdirs
 do
