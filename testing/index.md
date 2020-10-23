@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-10-22"
+date: "2020-10-23"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
