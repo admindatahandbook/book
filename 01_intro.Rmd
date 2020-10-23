@@ -154,7 +154,10 @@ if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/intro/introfigure1web.png')
 } 
 if ( knitr::is_latex_output() ) {
-knitr::include_graphics('./assets/intro/introfigure1.png')
+  if ( ! file.exists('./figures/intro/introfigure1.png')) {
+    file.copy('./assets/intro/introfigure1.png','./figures/introfigure1.png')
+  }
+  knitr::include_graphics('./figures/introfigure1.png')
 } 
 
 ```

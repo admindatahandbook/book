@@ -9,11 +9,13 @@ OUTDIR=_pdf
 
 skip=no
 publish=no
+debug=no
 
 if [ -z $1 ]
 then
    skip=no
    publish=no
+   debug=no
 else
    case $1 in 
      skip|s)
@@ -21,6 +23,10 @@ else
       ;;
     publish|p)
       publish=yes
+      debug=yes
+      ;;
+    debug|d)
+      debug=yes
       ;;
     esac
 fi
@@ -42,8 +48,8 @@ then
   fi 
   # build the handbook
    echo "::: Running R"
-   [ "$publish" == "yes" ] && Rscript programs/build_pdf.R 
-   [ "$publish" == "no"  ] && Rscript programs/build_pdf.R > _R.log 2>&1
+   [ "$debug" == "yes" ] && Rscript programs/build_pdf.R 
+   [ "$debug" == "no"  ] && Rscript programs/build_pdf.R > _R.log 2>&1
 
 # These are still needed
 echo "::: Running fixes"
@@ -62,7 +68,8 @@ fi
 
 # now compile it
 echo "::: Running latex"
-$LATEX ${FILE}.tex > _tex.log 2>&1
+[ "$debug" == "no"  ] && $LATEX ${FILE}.tex > _tex.log 2>&1
+[ "$debug" == "yes" ] && $LATEX ${FILE}.tex 
 #bibtex ${FILE}     > _bib.log 2>&1 || echo "Completed bibtex with an error"
 [ -f _bib.log ] && rm _bib.log
 for arg in 21 22 23 24
@@ -76,8 +83,8 @@ done
 makeindex ${FILE}
 $LATEX ${FILE}.tex > _tex.log 2>&1
 $LATEX ${FILE}.tex > _tex.log 2>&1
-[ "$publish" == "no"  ] && $LATEX ${FILE}.tex > _tex.log 2>&1
-[ "$publish" == "yes" ] && $LATEX ${FILE}.tex 
+[ "$debug" == "no"  ] && $LATEX ${FILE}.tex > _tex.log 2>&1
+[ "$debug" == "yes" ] && $LATEX ${FILE}.tex 
 
 if [ -f ${FILE}.pdf ]
 then

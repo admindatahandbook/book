@@ -15,7 +15,7 @@ knitr::include_graphics('./assets/pcri/pcrifigurea1web.png')
 ```
 ```{r pcrifigurea1-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcrifigurea1.tex}")
+cat("\\input{./figures/pcrifigurea1.tex}")
 }
 ```
 
@@ -54,7 +54,7 @@ knitr::include_graphics('./assets/pcri/pcrifigurea2web.png')
 ```
 ```{r pcrifigurea2-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcrifigurea2.tex}")
+cat("\\input{./figures/pcrifigurea2.tex}")
 }
 ```
 
@@ -65,7 +65,7 @@ knitr::include_graphics('./assets/pcri/pcrifigurea3web.png')
 
 ```{r pcrifigurea3-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcrifigurea3.tex}")
+cat("\\input{./figures/pcrifigurea3.tex}")
 }
 ```
 
