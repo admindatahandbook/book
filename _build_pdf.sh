@@ -27,6 +27,8 @@ fi
 
 cd $(dirname $0)
 
+[ -f $FILE.pdf ] && rm -f $FILE.pdf
+
 # set up the environment
 Rscript programs/bootstrap.R
 
@@ -39,10 +41,12 @@ fi
 
 if [ "$skip" == "no" ]
 then
-   Rscript programs/build_pdf.R > _R.log 2>&1
+   echo "::: Running R"
+   [ "$publish" == "yes" ] && Rscript programs/build_pdf.R 
+   [ "$publish" == "no"  ] && Rscript programs/build_pdf.R > _R.log 2>&1
 
 # These are still needed
-
+echo "::: Running fixes"
 sed -i 's/\\part{/\\partline{/' _main.tex
 
 # Fix the index terms
@@ -50,13 +54,14 @@ sed -i 's/\\part{/\\partline{/' _main.tex
 
 mv _main.tex _main_pre_index.tex
 
+echo "::: Processing indexing"
 python3 map_index.py -i _main_pre_index.tex -o _main.tex
 
 fi 
 # end of skip setup
 
 # now compile it
-
+echo "::: Running latex"
 $LATEX ${FILE}.tex > _tex.log 2>&1
 #bibtex ${FILE}     > _bib.log 2>&1 || echo "Completed bibtex with an error"
 [ -f _bib.log ] && rm _bib.log
@@ -71,18 +76,25 @@ done
 makeindex ${FILE}
 $LATEX ${FILE}.tex > _tex.log 2>&1
 $LATEX ${FILE}.tex > _tex.log 2>&1
-$LATEX ${FILE}.tex > _tex.log 2>&1
+[ "$publish" == "no"  ] && $LATEX ${FILE}.tex > _tex.log 2>&1
+[ "$publish" == "yes" ] && $LATEX ${FILE}.tex 
 
 if [ -f ${FILE}.pdf ]
 then
   echo "Success."
+  echo "::: Renaming file"
   mv ${FILE}.pdf ${OUTFILE}
   # convert to greyscale
+  echo "::: Converting to grayscale"
   programs/pdf_to_grayscale.sh -i ${OUTFILE} -o ${OUTFILEBW}
+else
+  echo "Failure to create PDF"
+  exit 2
 fi
 
 if [ "$publish" == "yes" ]
 then
+  echo "::: Creating publication folder $OUTDIR"
   [ -d $OUTDIR ] || mkdir $OUTDIR
   cp $OUTFILE $OUTDIR/
   cp $OUTFILEBW $OUTDIR/
