@@ -19,9 +19,8 @@
   pdfauthor={Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber},
   pdfborder={0 0 0},
   breaklinks=true,
-  hidelinks=true,
-  bookmarksopen=false,
-  pagebackref=true}
+  hidelinks,
+  bookmarksopen=false}
 \urlstyle{same}  % don't use monospace font for urls
 
 % Font:
@@ -211,27 +210,32 @@
 \defaultbibliographystyle{aea-mod}
 \defaultbibliography{packages.bib,ideahandbook.bib}
 
+%% contains TOC, LOT, LOF, and copyright stuff
+\input{includes/frontmatter}
 
-\input{1_master/include-text/frontmatter}
+% When compiling the whole thing from the master, uncomment this
+\input{_main.tex}
 
-\input{1_master/include-text/about}
-\input{1_master/include-text/acknowledgements}
-\input{1_master/include-text/foreword}
+% when compiling individual pieces, uncomment these, as needed
 
-\mainmatter
-\setcounter{page}{1}
+%\input{include-text/1_about}
+%\input{include-text/2_acknowledgements}
+%\input{include-text/3_foreword}
+%
+%\mainmatter
+%\setcounter{page}{1}
+%
+%\input{include-text/1_introduction}
+%
+%\hypertarget{part-special-topics}{%
+%\partline{Special Topics}\label{part-special-topics}}
+%
+%\input{include-text/2_security}
+%\input{include-text/3_dua}
 
-\input{1_master/include-text/1_introduction}
 
-\hypertarget{part-special-topics}{%
-\partline{Special Topics}\label{part-special-topics}}
-
-\input{1_master/include-text/2_security}
-\input{1_master/include-text/3_dua}
-
-
-%\include{_main}
-
+% Leave these lines here
+%
 \bibliography{packages.bib,ideahandbook.bib}
 
 \addcontentsline{toc}{chapter}{Index}

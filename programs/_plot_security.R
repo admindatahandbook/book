@@ -220,7 +220,7 @@ plotallmechs<-function(html=TRUE) {
           floating=FALSE,
           file = outfile)
       }
-      cat("\\input{./tables/security/summarytable.tex}")
+      cat("\\input{./tables/security/securitysummarytable.tex}")
    }
 }
 
