@@ -28,19 +28,19 @@ fi
 cd $(dirname $0)
 
 [ -f $FILE.pdf ] && rm -f $FILE.pdf
-
-# set up the environment
-Rscript programs/bootstrap.R
-
-if [ -f _main.Rmd ]
-then
-  echo "Removing old file"
-  rm -f _main.Rmd
-fi 
-# build the handbook
+[ -f programs/build_pdf.R ] || skip=yes
 
 if [ "$skip" == "no" ]
 then
+   # set up the environment
+   Rscript programs/bootstrap.R
+
+  if [ -f _main.Rmd ]
+  then
+    echo "Removing old file"
+    rm -f _main.Rmd
+  fi 
+  # build the handbook
    echo "::: Running R"
    [ "$publish" == "yes" ] && Rscript programs/build_pdf.R 
    [ "$publish" == "no"  ] && Rscript programs/build_pdf.R > _R.log 2>&1

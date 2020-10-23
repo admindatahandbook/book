@@ -4,6 +4,7 @@
 _publish.R
 _book
 _bookdown_files
+_latex
 data
 rsconnect
 *.utf8.md

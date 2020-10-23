@@ -60,7 +60,32 @@ esac
 
 # now we are through
 
+builddir=_latex
 tabledest=tables
 figuredest=figures
 
-rmext="Rproj json yml md Rmd"
+cpdirs="figures tables includes"
+cpext="tex bib bst"
+cpfiles="_build_pdf.sh"
+
+[ -d $builddir ] && rm -rf $builddir
+mkdir $builddir
+
+for dir in $cpdirs
+do
+  cp -a $dir $builddir/
+done
+
+for ext in $cpext
+do 
+  cp *.${ext} $builddir/
+done
+
+for file in $cpfiles
+do
+  cp $file $builddir/$file
+done
+
+
+
+
