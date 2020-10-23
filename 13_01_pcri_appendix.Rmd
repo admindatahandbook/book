@@ -30,7 +30,7 @@ pcritablea1.csv %>%
 }
 
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcritablea1.tex}")
+cat("\\input{./tables/pcri/pcritablea1.tex}")
 }
 ```
 
@@ -44,7 +44,7 @@ pcritablea2.csv %>%
 }
 
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcritablea2.tex}")
+cat("\\input{./tables/pcri/pcritablea2.tex}")
 }
 ```
 
@@ -79,7 +79,7 @@ pcritablea3.csv %>%
 }
 
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcritablea3.tex}")
+cat("\\input{./tables/pcri/pcritablea3.tex}")
 }
 ```
 

@@ -161,7 +161,7 @@ if ( knitr::is_html_output() ) {
       column_spec(1,width="12em")
 }
 if ( knitr::is_latex_output() ) {
-  cat("\\input{./assets/cct/cctappendixtable.tex}")
+  cat("\\input{./tables/cct/cctappendixtable.tex}")
 }
 ```
 

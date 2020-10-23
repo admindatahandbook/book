@@ -91,7 +91,7 @@ pcritable1.csv %>%
 }
 
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcritable1.tex}")
+cat("\\input{./tables/pcri/pcritable1.tex}")
 }
 ```
 
@@ -157,7 +157,7 @@ pcritable2.csv %>%
 }
 
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcritable2.tex}")
+cat("\\input{./tables/pcri/pcritable2.tex}")
 }
 ```
 

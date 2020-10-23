@@ -145,7 +145,7 @@ kable(discavoidtable, caption = "Summary of SDL Methods") %>%
   scroll_box(width = "100%")
 } 
 if ( knitr::is_latex_output() ) {
-  cat("\\input{./assets/discavoid/discavoidtable1.tex}")
+  cat("\\input{./tables/discavoid/discavoidtable1.tex}")
 }
 ```
 

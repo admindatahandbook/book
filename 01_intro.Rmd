@@ -110,7 +110,7 @@ if ( knitr::is_html_output() ) {
     introtable1()
 }
 if ( knitr::is_latex_output() ) {
-  cat("\\input{./assets/intro/introtable1.tex}")
+  cat("\\input{./tables/intro/introtable1.tex}")
 }
 
 ```

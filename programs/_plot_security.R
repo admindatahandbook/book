@@ -2,6 +2,8 @@
 # Description: This will generate various plots
 #     for the Physical Security dimensions.
 
+abbrev <- "security"
+
 # Aspect Names
 aspect.names <- c(   "Researcher Agency",
                      "Data Location",
@@ -62,7 +64,7 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
    databar$metrics <- factor(databar$metrics,levels = aspect.names)
    # database entry
    name.str <- deparse(substitute(name))
-   figure.name = paste0("display_",name.str,".png")
+   figure.name = paste0(abbrev,"_","display_",name.str,".png")
    db.figures <- file.path(datadir,"figures0502.Rds")
    new <- data.frame(name.str,description,figure.name)
    if ( file.exists(db.figures)) {
@@ -209,7 +211,7 @@ plotallmechs<-function(html=TRUE) {
    } else {
       x <- xtable(summarymechs, type="latex")
       align(x) <- rep("L",ncol(summarymechs)+1)
-      outfile <- "./assets/security/summarymech.tex"
+      outfile <- "./tables/security/summarymech.tex"
       if ( !file.exists(outfile) ) {
       print(x,
           include.rownames=FALSE,
@@ -218,7 +220,7 @@ plotallmechs<-function(html=TRUE) {
           floating=FALSE,
           file = outfile)
       }
-      cat("\\input{./assets/security/summarytable.tex}")
+      cat("\\input{./tables/security/summarytable.tex}")
    }
 }
 

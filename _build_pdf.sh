@@ -55,7 +55,7 @@ sed -i 's/\\part{/\\partline{/' _main.tex
 mv _main.tex _main_pre_index.tex
 
 echo "::: Processing indexing"
-python3 map_index.py -i _main_pre_index.tex -o _main.tex
+python3 programs/map_index.py -i _main_pre_index.tex -o _main.tex
 
 fi 
 # end of skip setup

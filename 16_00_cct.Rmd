@@ -83,13 +83,17 @@ The process of identifying potential technical solutions for data streamlining h
 Other important considerations and activities have revolved around the following areas listed in Table \@ref(tab:ccttable1). In all of these tasks and in implementation, investments in human capital with respect to data skills of CCT staff as well as network-building internally and externally are perceived as crucial to success.
 
 ```{r, ccttable1, echo=F,results='asis'}
-ccttable1data<-read.csv("./assets/cct/ccttable1.csv")
+infile <- "./assets/cct/ccttable1.csv"
+ccttable1data<-read.csv(infile)
 
 if ( knitr::is_html_output() ) {
 kable(ccttable1data, format="html", escape=F, booktabs=T, caption="Areas of Consideration and Associated Activities", col.names=NULL)
 }
 if ( knitr::is_latex_output() ) {
-    outfile <- "./assets/cct/ccttable1.tex"
+    # the Tex file reads in the CSV, but we don't want to overwrite any changes made manually
+    outfile <- "./tables/cct/ccttable1.tex"
+    outcsv  <- gsub("assets","tables",infile)
+    if ( ! file.exists(outcsv) ) { file.copy(infile,outcsv) }
     cat(paste0("\\input{",outfile,"}"))
 }
 ```

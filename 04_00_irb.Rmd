@@ -28,7 +28,7 @@ if ( knitr::is_html_output() ) {
   irbtable1()
 }
 if ( knitr::is_latex_output() ) {
-  cat("\\input{./assets/irb/irbtable1.tex}")
+  cat("\\input{./tables/irb/irbtable1.tex}")
 }
 ```
 

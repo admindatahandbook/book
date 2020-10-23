@@ -267,7 +267,7 @@ Additional statistics are also submitted to the annual activity report for all +
     iabtable2()
   }
   if ( knitr::is_latex_output() ) {
-    cat("\\input{./assets/iab/iabtable2.tex}")
+    cat("\\input{./tables/iab/iabtable2.tex}")
   }
 ```
 
