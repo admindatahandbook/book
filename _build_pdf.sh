@@ -2,18 +2,20 @@
 
 set -ev
 LATEX=pdflatex
-FILE=test_evan
+FILE=0_master
 OUTFILE=handbook_color_$(date +%F).pdf
 OUTFILEBW=handbook_bw_$(date +%F).pdf
 OUTDIR=_pdf
 
 skip=no
 publish=no
+debug=no
 
 if [ -z $1 ]
 then
    skip=no
    publish=no
+   debug=no
 else
    case $1 in 
      skip|s)
@@ -21,6 +23,10 @@ else
       ;;
     publish|p)
       publish=yes
+      debug=yes
+      ;;
+    debug|d)
+      debug=yes
       ;;
     esac
 fi
@@ -28,22 +34,22 @@ fi
 cd $(dirname $0)
 
 [ -f $FILE.pdf ] && rm -f $FILE.pdf
-
-# set up the environment
-Rscript programs/bootstrap.R
-
-if [ -f _main.Rmd ]
-then
-  echo "Removing old file"
-  rm -f _main.Rmd
-fi 
-# build the handbook
+[ -f programs/build_pdf.R ] || skip=yes
 
 if [ "$skip" == "no" ]
 then
+   # set up the environment
+   Rscript programs/bootstrap.R
+
+  if [ -f _main.Rmd ]
+  then
+    echo "Removing old file"
+    rm -f _main.Rmd
+  fi 
+  # build the handbook
    echo "::: Running R"
-   [ "$publish" == "yes" ] && Rscript programs/build_pdf.R 
-   [ "$publish" == "no"  ] && Rscript programs/build_pdf.R > _R.log 2>&1
+   [ "$debug" == "yes" ] && Rscript programs/build_pdf.R 
+   [ "$debug" == "no"  ] && Rscript programs/build_pdf.R > _R.log 2>&1
 
 # These are still needed
 echo "::: Running fixes"
@@ -55,14 +61,15 @@ sed -i 's/\\part{/\\partline{/' _main.tex
 mv _main.tex _main_pre_index.tex
 
 echo "::: Processing indexing"
-python3 map_index.py -i _main_pre_index.tex -o _main.tex
+python3 programs/map_index.py -i _main_pre_index.tex -o _main.tex
 
 fi 
 # end of skip setup
 
 # now compile it
 echo "::: Running latex"
-$LATEX ${FILE}.tex > _tex.log 2>&1
+[ "$debug" == "no"  ] && $LATEX ${FILE}.tex > _tex.log 2>&1
+[ "$debug" == "yes" ] && $LATEX ${FILE}.tex 
 #bibtex ${FILE}     > _bib.log 2>&1 || echo "Completed bibtex with an error"
 [ -f _bib.log ] && rm _bib.log
 for arg in 21 22 23 24
@@ -76,8 +83,8 @@ done
 makeindex ${FILE}
 $LATEX ${FILE}.tex > _tex.log 2>&1
 $LATEX ${FILE}.tex > _tex.log 2>&1
-[ "$publish" == "no"  ] && $LATEX ${FILE}.tex > _tex.log 2>&1
-[ "$publish" == "yes" ] && $LATEX ${FILE}.tex 
+[ "$debug" == "no"  ] && $LATEX ${FILE}.tex > _tex.log 2>&1
+[ "$debug" == "yes" ] && $LATEX ${FILE}.tex 
 
 if [ -f ${FILE}.pdf ]
 then

@@ -65,7 +65,10 @@ if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/nbirdt/nbirdtfigure1web.png')
 }
 if ( knitr::is_latex_output() ) {
-knitr::include_graphics('./assets/nbirdt/nbirdtfigure1.png')
+    if ( ! file.exists('./figures/nbirdtfigure1.png')) {
+    file.copy('./assets/nbirdt/nbirdtfigure1.png','./figures/nbirdtfigure1.png')
+  }
+  knitr::include_graphics('./figures/nbirdtfigure1.png')
 }
 
 ```
@@ -83,7 +86,10 @@ if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/nbirdt/nbirdtfigure2web.png')
 }
 if ( knitr::is_latex_output() ) {
-knitr::include_graphics('./assets/nbirdt/nbirdtfigure2.png')
+if ( ! file.exists('./figures/nbirdtfigure2.png')) {
+    file.copy('./assets/nbirdt/nbirdtfigure2.png','./figures/nbirdtfigure2.png')
+  }
+  knitr::include_graphics('./figures/nbirdtfigure2.png')
 }
 ```
 
@@ -116,7 +122,10 @@ if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/nbirdt/nbirdtfigure3web.png')
 }
 if ( knitr::is_latex_output() ) {
-knitr::include_graphics('./assets/nbirdt/nbirdtfigure3.png')
+if ( ! file.exists('./figures/nbirdtfigure3.png')) {
+    file.copy('./assets/nbirdt/nbirdtfigure3.png','./figures/nbirdtfigure3.png')
+  }
+  knitr::include_graphics('./figures/nbirdtfigure3.png')
 }
 ```
 

@@ -78,7 +78,7 @@ if ( knitr::is_html_output() ) {
   oldatable1()
 }
 if ( knitr::is_latex_output() ) {
-  cat("\\input{./assets/olda/oldatable1.tex}")
+  cat("\\input{./tables/olda/oldatable1.tex}")
 }
 ```
 
@@ -111,7 +111,7 @@ if ( knitr::is_html_output() ) {
   oldatable2()
 }
 if ( knitr::is_latex_output() ) {
-  cat("\\input{./assets/olda/oldatable2.tex}")
+  cat("\\input{./tables/olda/oldatable2.tex}")
 }
 ```
 
@@ -162,7 +162,7 @@ if ( knitr::is_html_output() ) {
   kable(oldat3data,caption="Important legal documents to review for the research community",col.names=c("Law or Administrative Regulation","Document")) 
 }
 if ( knitr::is_latex_output() ) {
-  cat("\\input{./assets/olda/oldatable3.tex}")
+  cat("\\input{./tables/olda/oldatable3.tex}")
 }
 ```
 

@@ -262,12 +262,12 @@ iabfigure3
 
 Additional statistics are also submitted to the annual activity report for all +RDC|s in Germany published by the +RatSWD| [germandataforum2019]. Table \@ref(tab:iabtable2) shows all publications with +RDC-IAB| data in 2018, including publications from +IAB| staff. There were 60 published papers in scientific journals in 2018, 45 of these in peer-reviewed journals. Additionally, 44 papers were published as working papers or reports and RDC-IAB data were used and cited in 41 books. As mentioned above, these numbers underestimate the true number of relevant publications in 2018.
 
-```{r iabtable2, tidy=FALSE, echo=F}
+```{r iabtable2, tidy=FALSE, echo=F,results='asis'}
   if ( knitr::is_html_output() ) {
     iabtable2()
   }
   if ( knitr::is_latex_output() ) {
-    cat("\\input{./assets/iab/iabtable2.tex}")
+    cat("\\input{./tables/iab/iabtable2.tex}")
   }
 ```
 

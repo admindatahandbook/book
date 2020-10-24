@@ -91,7 +91,7 @@ pcritable1.csv %>%
 }
 
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcritable1.tex}")
+cat("\\input{./tables/pcri/pcritable1.tex}")
 }
 ```
 
@@ -100,7 +100,10 @@ knitr::include_graphics('./assets/pcri/pcrifigure1web.png')
 ```
 ```{r pcrifigure1-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcrifigure1.tex}")
+      if ( ! file.exists('./figures/pcrifigure1.png')) {
+            file.copy('./assets/pcri/pcrifigure1.png','./figures/pcrifigure1.png')
+            }
+      cat("\\input{./figures/pcrifigure1.tex}")
 }
 ```
 
@@ -115,7 +118,10 @@ knitr::include_graphics('./assets/pcri/pcrifigure2web.png')
 ```
 ```{r pcrifigure2-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcrifigure2.tex}")
+      if ( ! file.exists('./figures/pcrifigure2.png')) {
+            file.copy('./assets/pcri/pcrifigure2.png','./figures/pcrifigure2.png')
+            }
+      cat("\\input{./figures/pcrifigure2.tex}")
 }
 ```
 
@@ -157,7 +163,7 @@ pcritable2.csv %>%
 }
 
 if ( knitr::is_latex_output() ) {
-cat("\\input{./assets/pcri/pcritable2.tex}")
+cat("\\input{./tables/pcri/pcritable2.tex}")
 }
 ```
 

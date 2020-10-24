@@ -8,6 +8,7 @@ library(RColorBrewer)
 
 # Figure 1
 iabf1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
+pdfdpi=600
 
 iabf1data$Date <- factor(iabf1data$Date,levels = c("Aug 19", "Sep 19", "Oct 19", "Nov 19", "Dec 19", "Jan 20"))
 
@@ -19,8 +20,11 @@ iabfigure1 <- ggplot(iabf1data, aes(fill=Mode, y=Count, x=Date)) +
         axis.title.y=element_blank(),
         legend.title=element_blank(),
         legend.position="bottom")
-ggsave("./figures/iabfigure1.pdf",iabfigure1,dpi=600)
 ggsave("./figures/iabfigure1.png",iabfigure1,dpi=300)
+pdffile <- "./figures/iabfigure1.pdf"
+if ( ! file.exists(pdffile) ) {
+  ggsave(pdffile,iabfigure1,dpi=pdfdpi)
+}
 
 # Figure 2
 iabf2data <- read.csv("./assets/iab/figure2.csv")  # read csv file 

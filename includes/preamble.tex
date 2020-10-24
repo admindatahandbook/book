@@ -23,8 +23,6 @@
 
 \newenvironment{indentforeword}{\setlength{\parindent}{15pt}}{}
 
-% workaround
-\newcommand{\partline}[1]{\cftaddtitleline{toc}{part}{\sffamily #1}{}\part*{\sffamily #1}\pdfbookmark[part]{#1}{#1}}
 
 % addtional packages for the book
 
@@ -137,3 +135,34 @@
 
 
 
+%
+% to prevent hyphenation in certain sections
+% Wrap this around chapter titles
+% with \begin{nohyphens}
+% \chapter{...}
+% \end{nohyphens}
+
+% https://tex.stackexchange.com/questions/91307/temporarily-suppress-hyphenation
+\makeatletter
+\@ifpackageloaded{babel}
+  {\newenvironment{nohyphens}
+     {\par\sloppy\exhyphenpenalty=\@M
+      \@ifundefined{l@nohyphenation}
+        {\language=\@cclv}
+        {\hyphenrules{nohyphenation}}%
+     }
+     {\par
+      \@ifundefined{l@nohyphenation}
+        {}
+        {\endhyphenrules}%
+     }
+  }
+  {\newenvironment{nohyphens}
+     {\par\sloppy\exhyphenpenalty=\@M
+      \@ifundefined{l@nohyphenation}
+        {\language=\@cclv}
+        {\language=\l@nohyphenation}%
+     }
+     {\par}
+  }
+\makeatother
