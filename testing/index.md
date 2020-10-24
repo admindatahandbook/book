@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-10-23"
+date: "2020-10-24"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -107,8 +107,6 @@ Building these nodes, whether they are called Administrative Data Research Facil
 Daniel L. Goroff  
 Vice President and Program Director  
 Alfred P. Sloan Foundation
-
-\putbib
 
 
 
@@ -786,7 +784,7 @@ This section evaluates several data access mechanisms along the five aspects. So
 
 ### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
-<img src="figures/nbirdtplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securitynbirdtplot-1.png" style="float:left; padding:10px" />
 
 The [NB-IRDT](#nbirdt) serves as a third-party data custodian for the Province of New Brunswick, Canada to make de-identified personnel and health data available to researchers. The data and analysis computers are located at the central NB-IRDT facility, and researchers may travel there or to satellite NB-IRDT data centers to access the data via [thin clients] in [secure rooms] from which mobile devices and outside materials are banned. Thus NB-IRDT serves as a non-researcher data custodian as well as a third-party access provider to provincial data with high security. Researchers have medium agency over the analysis computers: access to common statistical programs is provided and researchers can request other software packages. The NB-IRDT allows researchers unrestricted analysis methods, relying on manual disclosure control to ensure safe outputs.
 
@@ -794,17 +792,17 @@ The NB-IRDT requires over two dozen staff^[[https://www.unb.ca/nbirdt/about/team
 
 ### Institute for Employment Research (RDC-IAB)
 
-<img src="figures/iabrdcplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securityiabrdcplot-1.png" style="float:left; padding:10px" />
 
 The [RDC-IAB](#iab) is an entity within the German Federal Employment Agency, separate from the administrative databases. It thus acts as an internal third party for the Employment Agency. The RDC-IAB uses three different access models, each with unique implementation. Notably, more sensitive data are subject to greater protections while maintaining usability for researchers.
 
 The most restrictive access method is RDC-IAB on-site access, which makes de-identified individual data available to researchers. The RDC-IAB maintains the data and analysis computers. Researchers have low agency over the analysis computers, being restricted to approved statistical software; other user-provided software is not allowed, and third-party packages for authorized software must be approved and installed by RDC-IAB staff. Access computers ([thin clients] and secure workstations) are located at the RDC-IAB headquarters and guest RDCs at various trusted institutions around the world, which then act as third-party access providers. The access locations are subject to high security with physical monitoring of researchers and room access controls.
 
-<img src="figures/iabjosuaplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securityiabjosuaplot-1.png" style="float:left; padding:10px" />
 
 The JoSuA remote execution system allows researchers to utilize the same microdata, though they cannot view the data directly. Researchers are limited to viewing the de-identified output from their analysis, and there are some restrictions on Stata commands. In return, controls around access computers and locations are relaxed: Researchers utilize their own computers to use the JoSuA interface, and there are no restrictions on access locations. The data and analysis computer remains located with the RDC-IAB, and researchers are subject to the same limitations on their agency over analysis computers and available analysis methods.
 
-<img src="figures/iabsufplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securityiabsufplot-1.png" style="float:left; padding:10px" />
 
 The RDC-IAB also makes data products (scientific use files) available for direct download by researchers using a [secure download platform][secure network protocols], which are further anonymized variants of the microdata available in the other two access methods. The researcher's institution acts as the data custodian by hosting the data and the analysis computer, with the researcher's institution having high agency over the analysis computer. The access computers and access location are also at the researcher's institution. The RDC-IAB DUA for downloading the scientific use files requires a medium security access location: The building and room are required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission with simple key locks. Also note that scientific use data can only be accessed by European research institutions.
 
@@ -812,7 +810,7 @@ The RDC-IAB has a staff of over two dozen people^[[https://www.iab.de/839/sectio
 
 ### Ohio Longitudinal Data Archive (OLDA)
 
-<img src="figures/oldaplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securityoldaplot-1.png" style="float:left; padding:10px" />
 
 [OLDA](#olda) is a third-party data custodian that provides de-identified, individual-level data to researchers on behalf of the state of Ohio. The data are initially located at OLDA before ultimately being transferred to researchers' analysis computers via an [SFTP server][secure network protocols]. The researchers have full agency over the analysis computer, which also serves as the access computer. The computer must be physically located in the researcher's university office, and the [IP address][IP address restrictions] must be registered with OLDA. There are no specific requirements imposed on the researcher's office (low security). Researchers have unrestricted analysis methods available to them.
 
@@ -820,7 +818,7 @@ Approximately a dozen full-time staff maintain the data access mechanism. OLDA r
 
 #### Private Capital Research Institute (PCRI)
 
-<img src="figures/pcriplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securitypcriplot-1.png" style="float:left; padding:10px" />
 
 The [PCRI](#pcri) data access mechanism provides researchers access to highly sensitive business information about private capital firms. Organizationally, PCRI serves as a third-party data custodian, but in turn uses the National Opinion Research Center (NORC) and in some cases the FSRDC system as a third-party location for the data and analysis computers. Researchers have low agency over the analysis computers: users are restricted to the Stata on the NORC servers (see FSRDC for restrictions there). Researchers can only use [thin clients] that are provided to them by NORC. There are no formal restrictions on the location of the access computers, although researchers are required to use their best efforts to prevent unauthorized access. PCRI and NORC implement limited restrictions on the analysis methods available within Stata, prohibiting certain commands and sample sizes.
 
@@ -828,7 +826,7 @@ PCRI itself has three full -time and six part-time staff to make the data usable
 
 ### Federal Statistical Research Data Centers (FSRDC)
 
-<img src="figures/fsrdcplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securityfsrdcplot-1.png" style="float:left; padding:10px" />
 
 The United States Federal Statistical Research Data Centers (FSRDC) network hosts data from multiple federal statistical agencies partners, serving as third-party data curator and access provider. The data and analysis computers are hosted at the Census Bureau's computer center, which is separate from operational systems. Researchers have medium agency over these computers; users are restricted to authorized software but have the ability to request approval for additional programs. Analysis methods are unrestricted. Access computers are [thin clients] located in [secure rooms] built by, and located on, the campuses of partner institutions; however, the secure rooms remain under the control of, and are considered part of, the Census Bureau. Thus, while the system seems to have third-party access providers, it is in fact a model where the Census Bureau acts as its own access provider [@unitedstatescensusbureaua]. Nevertheless, FSRDC serves as an interesting hybrid model.
 
@@ -836,7 +834,7 @@ Each of the currently 29 RDC locations has at least one full-time staff member, 
 
 ### Statistics Canada Real Time Remote Access (RTRA)
 
-<img src="figures/rtraplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securityrtraplot-1.png" style="float:left; padding:10px" />
 
 The RTRA system provides access to several Statistics Canada data sets. The data and analysis computers remain with Statistics Canada. Researchers have low agency over the analysis computers and are restricted to using SAS. Access computers are not restricted: researchers can use any computer to submit jobs. Analysis methods are heavily restricted: users are limited to specific commands within SAS, restricted numbers of procedure calls per day, class variables, and other controls on the SAS environment [@statisticscanada2018a].
 
@@ -844,7 +842,7 @@ The RTRA system is maintained by Statistics Canada, a major national statistical
 
 ### SafePod Network (SPN)
 
-<img src="figures/spnplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securityspnplot-1.png" style="float:left; padding:10px" />
 
 The SafePod Network in the United Kingdom makes de-identified administrative data from several UK administrative data providers available for researchers. A SafePod is a prefabricated room with a single [thin client][thin clients] with remote access. Analysis computers and data are located with the data provider, accessible through secure VPN connections [@universityofbristol]. Each data provider decides about the agency level that researchers have over analysis computers and restrictions on analysis methods. For instance, at the Office for National Statistics, researchers have medium agency over the analysis computers and no restrictions on analysis methods [@officefornationalstatistics2020]. The unique aspect of the SafePod is the security of the access locations. SafePods are a minimalistic yet robust implementation of a medium security location (an access-controlled space with CCTV monitoring) that can exist within low security environments such as university libraries.
 
@@ -852,7 +850,7 @@ SafePods are relatively cheap, requiring only a suitable location to place a pre
 
 ### National Center for Education Statistics (NCES) Restricted-Use Data License
 
-<img src="figures/ncesplot-1.png" style="float:left; padding:10px" />
+<img src="figures/securityncesplot-1.png" style="float:left; padding:10px" />
 
 The NCES, a part of the United States Department of Education, allows researchers to apply for a restricted-use data license for de-identified, individual-level data on education. Under the terms of the license, the researchers serve as data custodians and receive the data on an [encrypted CD][physical media] from NCES. Analysis and access computers are co-incidental, located with the researcher, and subject to certain security configuration requirements for computer and [storage of data] Researchers have high agency over the analysis computer and are not restricted in the choice of analysis methods. NCES mandates a medium level of security for the access location, requiring that the location must be a locked room with access restricted to authorized users but without additional specifications for security. The security arrangements must be approved by NCES prior to the receipt of restricted-use data and are subject to unannounced inspections [@nationalcenterforeducationstatistics2019].
 
@@ -860,7 +858,7 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 ### Summary of Examples
 
-Table \@ref{tab:summarytable} provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
+Table \@ref{tab:securitysummarytable} provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
 
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
  <thead>
@@ -1860,7 +1858,7 @@ The views expressed in this paper are those of the authors and not those of the 
 
 
 
-<!--chapter:end:05_discavoid.Rmd-->
+<!--chapter:end:05_00_discavoid.Rmd-->
 
 # Designing Access with Differential Privacy {#diffpriv}
 
@@ -2702,8 +2700,6 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 ### Appendix B: Case Study Images (Workforce Success Measures) {-}
 
 <img src="./assets/olda/appendixb.png" width="100%" />
-
-
 
 
 <!--chapter:end:11_01_olda_appendix.Rmd-->
