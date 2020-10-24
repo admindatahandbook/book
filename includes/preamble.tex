@@ -68,6 +68,8 @@
 \setlength{\bibhang}{6pt}
 
 \renewcommand{\bibpreamble}{\footnotesize} 
+\let\oldputbib\putbib
+\renewcommand{\putbib}{\FloatBarrier\clearpage\oldputbib}
 %\renewcommand{\bibname}{References in Chapter \thechapter}
 
 %
