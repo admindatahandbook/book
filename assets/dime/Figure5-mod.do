@@ -14,5 +14,5 @@ twoway ///
   text(0.4  2.5  "Overall", color("168 221 181"))  ///
   legend(off)
   /// legend(on nobox region(style(none))  order(1 "Funded" 2 "Overall") bplacement(se) ring(0) cols(1) ) 
-graph export "Figure5-mod.eps", as(eps) name("Graph") preview(off) replace
+graph export "Figure5-mod.pdf", as(pdf) name("Graph") replace
 graph export "Figure5-mod.png", name("Graph") width(1000) replace

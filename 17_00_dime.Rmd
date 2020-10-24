@@ -188,10 +188,10 @@ if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/dime/Figure5-mod.png')
 }
 if ( knitr::is_latex_output() ) {
-    if ( ! file.exists('./figures/Figure5-mod.eps')) {
-    file.copy('./assets/dime/Figure5-mod.eps','./figures/Figure5-mod.eps')
+    if ( ! file.exists('./figures/dimeFigure5-mod.pdf')) {
+    file.copy('./assets/dime/Figure5-mod.pdf','./figures/dimeFigure5-mod.pdf')
   }
-  knitr::include_graphics('./figures/Figure5-mod.eps')
+  knitr::include_graphics('./figures/dimeFigure5-mod.pdf')
 }
 
 ```
