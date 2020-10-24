@@ -10,7 +10,7 @@ if [ ! -d .git ]
 then
     git init 
 fi
-rm _main_pre_index.tex
+[ -f _main_pre_index.tex ] && rm _main_pre_index.tex
 git add *
 git add .gitignore 
 #git remote add origin $publish_repo

@@ -3,7 +3,7 @@
 publish_branch=from_book
 publish_repo=https://github.com/admindatahandbook/book-latex.git
 publish_repo=git@github.com:admindatahandbook/book-latex.git
-
+infile=_main.tex
 
 fail=yes
 push=no
@@ -36,7 +36,7 @@ case $baserepo in
     admindatahandbook/book.git)
     case $branch in 
         master)
-        fail=yes
+        fail=no
         ;;
         *)
         fail=no
@@ -47,6 +47,10 @@ case $baserepo in
     fail=no
     ;;
 esac
+
+# check for file
+
+[[ -f $infile ]] || die "$infile not found"
 
 if [[ "$fail" == "yes" ]]
 then   
@@ -106,6 +110,8 @@ do
 done
 cat .gitignore | grep -v '_main\*' > $builddir/.gitignore
 
+# populate the chapters
+_process/split_main.sh
 
 if [ "$push" == "yes" ]
 then
