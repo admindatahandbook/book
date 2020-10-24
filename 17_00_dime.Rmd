@@ -185,13 +185,13 @@ To evaluate technical merit, all proposed +i2i| projects go through a double-bli
 
 ```{r dimefigure5, echo=FALSE, out.width='100%', fig.cap='Distribution of technical ratings of impact evaluation proposals'}
 if ( knitr::is_html_output() ) {
-knitr::include_graphics('./assets/dime/dimefigure5web.png')
+knitr::include_graphics('./assets/dime/Figure5-mod.png')
 }
 if ( knitr::is_latex_output() ) {
-    if ( ! file.exists('./figures/dimefigure5.png')) {
-    file.copy('./assets/dime/dimefigure5.png','./figures/dimefigure5.png')
+    if ( ! file.exists('./figures/Figure5-mod.eps')) {
+    file.copy('./assets/dime/Figure5-mod.eps','./figures/Figure5-mod.eps')
   }
-  knitr::include_graphics('./figures/dimefigure5.png')
+  knitr::include_graphics('./figures/Figure5-mod.eps')
 }
 
 ```
