@@ -1,9 +1,19 @@
 #!/bin/bash
 
+publish_branch=from_book
+publish_repo=https://github.com/admindatahandbook/book-latex.git
+publish_repo=git@github.com:admindatahandbook/book-latex.git
+
+
 fail=yes
+push=no
 if [[ "$1" == "force" ]]
 then
    fail=no
+fi
+if [[ "$1" == "push" ]]
+then
+   push=yes
 fi
 
 # check for repo don't run this in master
@@ -68,8 +78,16 @@ cpdirs="figures tables includes"
 cpext="tex bib bst"
 cpfiles="_build_pdf.sh programs/pdf_to_grayscale.sh"
 
+# random cleanup
+echo "Removing these files from the change log - you will have to add them manually"
+git restore figures/iabfig*pdf
+git restore figures/introchetty*pdf
+
 [ -d $builddir ] && rm -rf $builddir
-mkdir $builddir
+
+git clone --depth=1 $publish_repo $builddir
+(cd $builddir; git rm -rf *;cd ..)
+#mkdir $builddir
 mkdir $builddir/programs
 
 for dir in $cpdirs
@@ -89,4 +107,9 @@ done
 cat .gitignore | grep -v '_main\*' > $builddir/.gitignore
 
 
-
+if [ "$push" == "yes" ]
+then
+ echo "now push stuff"
+ cd $builddir
+ ../_process/push_repo_latex.sh
+fi
