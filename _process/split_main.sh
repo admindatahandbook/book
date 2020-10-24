@@ -4,6 +4,7 @@
 infile=_main.tex
 builddir=_latex
 outdir=$builddir/chapters
+ctrlfile=$builddir/chapters.tex
 
 [ -d $outdir ] || mkdir -p $outdir
 
@@ -38,6 +39,7 @@ case $? in
    0)
     echo "::: Split OK" 
     cat _joins
+    awk ' {print $6 } ' _split | sed 's+_latex/++' | awk ' { print "\\input{" $1 "}" } ' > $ctrlfile
     ;;
    *)
     echo "Problem. Check files for differences"
