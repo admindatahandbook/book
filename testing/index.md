@@ -4912,7 +4912,7 @@ To assess policy relevance, proposed +i2i| projects are scored by World Bank ope
 To evaluate technical merit, all proposed +i2i| projects go through a double-blind review by external academics. Final decisions are made by a technical committee comprised of experienced research economists from the World Bank. The review process is a meaningful mechanism for selecting appropriate projects and cuts off a substantial portion of the distribution. This is demonstrated in Figure \@ref(fig:dimefigure5) (technical ratings are given on a scale of 0 to 3 with 3 being highest quality). From the first seven open calls, just over 50 percent of proposals were accepted as i2i projects.
 
 <div class="figure">
-<img src="./assets/dime/dimefigure5web.png" alt="Distribution of technical ratings of impact evaluation proposals" width="100%" />
+<img src="./assets/dime/Figure5-mod.png" alt="Distribution of technical ratings of impact evaluation proposals" width="100%" />
 <p class="caption">(\#fig:dimefigure5)Distribution of technical ratings of impact evaluation proposals</p>
 </div>
 
