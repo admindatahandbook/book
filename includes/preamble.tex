@@ -114,7 +114,13 @@
 %
 %  Override figure width
 %
-\setkeys{Gin}{width=0.9\textwidth}
+\newcommand{\ourfigurewidth}{0.8\textwidth}
+\setkeys{Gin}{\ourfigurewidth}
+
+% 
+% Default tablewidth for tables that require it
+% i.e., using tabulary
+\newcommand{\ourtablewidth}{1.0\textwidth}
 
 %
 % crop marks - do we need these?
@@ -125,13 +131,13 @@
 % Figure 1 in PCRI
 \newcommand{\widthpcria}{0.6\textwidth}
 % Figure 2 in PCRI
-\newcommand{\widthpcrib}{1\textwidth}
+\newcommand{\widthpcrib}{\ourfigurewidth}
 % Figure A1 in PCRI
-\newcommand{\widthpcriaa}{1\textwidth}
+\newcommand{\widthpcriaa}{\ourfigurewidth}
 % Figure A2 in PCRI
-\newcommand{\widthpcriab}{1\textwidth}
+\newcommand{\widthpcriab}{\ourfigurewidth}
 % Figure A3 in PCRI
-\newcommand{\widthpcriac}{1\textwidth}
+\newcommand{\widthpcriac}{\ourfigurewidth}
 
 
 
