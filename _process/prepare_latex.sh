@@ -115,8 +115,8 @@ cat .gitignore | grep -v '_main\*' > $builddir/.gitignore
 _process/split_main.sh
 
 # Update the file 0_master.tex
-sed -i.bak '/== CHAPTERS ==/r'<(cat chapters.tex) 0_master.tex
-sed -i 's/\\input{_main.tex}/%\\input{_main.tex}/' 0_master.tex
+sed -i.bak '/== CHAPTERS ==/r'<(cat $builddir/chapters.tex) $builddir/0_master.tex
+sed -i 's/\\input{_main.tex}/%\\input{_main.tex}/' $builddir/0_master.tex
 
 if [ "$push" == "yes" ]
 then
