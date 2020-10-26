@@ -170,7 +170,8 @@ default:
       name: Dana Müller
       inst: Institute for Employment Research
     philippvomberge:
-      name: Phillip vom Berge
+      name: Philipp vom Berge
+      lastname: vom Berge
       inst: Institute for Employment Research
     eradablanorris:
       name: Era Dabla-Norris
@@ -189,6 +190,7 @@ default:
       inst: Northwestern University (ret.)
     donnacurtismailet:
       name: Donna Curtis Maillet
+      lastname: Curtis Maillet
       inst: University of New Brunswick
     jamestedmcdonald:
       name: James Ted McDonald
@@ -221,5 +223,5 @@ default:
       name: Salil Vadhan
       inst: Harvard University
     danielgoroff:
-      name: Daniel Goroff
+      name: Daniel L. Goroff
       inst: Alfred P. Sloan Foundation

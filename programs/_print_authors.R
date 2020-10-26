@@ -31,6 +31,14 @@ printauthor<-function(chapter,debug=FALSE){
     author <- authorlist[i]
     authorinfo <- eval(parse(text=paste0("config$contributor$",author)))
     name <- authorinfo$name
+    # number of tokens in name
+    nnames <- length(strsplit(name," ")[[1]])
+    # get lastname from config or from name
+    lastname <- authorinfo$lastname
+    if ( is.null(lastname) ) { lastname = strsplit(name," ")[[1]][nnames]}
+    # get firstname by blanking lastname
+    firstname <- trimws(gsub(lastname,"",name))
+    # got all names!
     inst <- authorinfo$inst
     nameinst=paste0(name," (",inst,")")
     if ( debug ) { print(paste0("nameinst=",nameinst)) }
@@ -49,31 +57,45 @@ printauthor<-function(chapter,debug=FALSE){
      # collect names for citation
   if ( i == 1 ) {
       authors.and <- name
+      authors.cmos <- paste0(lastname,", ",firstname)
+      authors.sup <- ""
     }
   if ( debug ) { print(authors.and)}
 
-  if ( length(authorlist) > 1 & i>1 ) {
+  if ( length(authorlist) > 2 & i>1 ) {
       if (debug) { print("authorlist>2 not i=1, adding comma")}
-      authors.and <- paste0(authors.and,",")
+      authors.sup <- paste0(authors.sup,",")
     }
-  if ( debug ) { print(authors.and)}
+  if ( debug ) { print(authors.sup)}
 
   if ( length(authorlist) > 1 & i == length(authorlist) ) {
       if (debug) { print("authorlist>1 and i at end, adding and")}
-      authors.and <- paste0(authors.and," and")
+      authors.sup <- paste0(authors.sup," and")
     }
-  if ( debug ) { print(authors.and)}
+  if ( debug ) { print(authors.sup)}
 
   if ( i <= length(authorlist) & i > 1 ) {
       if (debug) { print("print name")}
-      authors.and <- paste(authors.and,name)
+      authors.sup <- paste(authors.sup,name)
     }
-  if ( debug ) { print(authors.and)}
-    # create the comma version
-    if (debug) { print("Create the comma version")}
-    authors.comma <- str_replace(authors.and," and "," ")
-    if (debug) { print(authors.comma)}
   } 
+  # construct final cmos and and version
+  if (length(authorlist) == 2 ) { authors.cmos <- paste0(authors.cmos,", ",authors.sup) }
+  if (length(authorlist) >  2 ) { authors.cmos <- paste0(authors.cmos,authors.sup) }
+  authors.and  <- paste0(authors.and,authors.sup)
+
+  if ( debug ) { print(authors.sup)}
+    # create the comma version
+  if (debug) { print("Create the comma version")}
+  if ( length(authorlist) == 1 ) authors.comma <- authors.and
+  if ( length(authorlist) == 2 ) authors.comma <- str_replace(authors.and," and ",", ")
+  if ( length(authorlist) > 2  ) authors.comma <- str_replace(authors.and," and "," ")
+  if (debug) { 
+    print("finished")
+    print(authors.comma)
+    print(authors.cmos)
+    print(authors.and)}
+
 # end of length(authorlist)
 
   # The publication is read from the config file. We might also read the DOI from there.
@@ -84,14 +106,14 @@ printauthor<-function(chapter,debug=FALSE){
   if (knitr::is_html_output()) {
     cat(readLines("./includes/citation-block-link.html"))
     cat('<div id="myCitation" style="display: none;">')
-    cat(paste0(authors.and,". ",pubdate[2],". ","\"<span id=\"chapTitle\">Title</span>.\" In: "))
+    cat(paste0(authors.cmos,". ",pubdate[2],". ","\"<span id=\"chapTitle\">Title</span>.\" In: "))
     cat(paste0(config$editors," (eds), *",config$title,"*. Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>."))
     cat('</div>')
   }
 
   if (my_is_latex_output(debug)) {
     # finishing up the latex version
-    cat(paste0("\\end{authorlist}}\n"))
+    cat(paste0("\\end{authorlist}}\\authorfootnote{",authors.cmos,"}{",authors.and,"}{",chapter,"}\n"))
     cat(paste0("\\authortoc{",authors.comma,"}\n"))
     cat("\\hrulefill\n")
 

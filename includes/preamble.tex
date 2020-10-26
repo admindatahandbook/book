@@ -72,16 +72,7 @@
 \renewcommand{\putbib}{\FloatBarrier\clearpage\oldputbib}
 %\renewcommand{\bibname}{References in Chapter \thechapter}
 
-%
-%  automatically add \putbib at end of each chapter
 
-%\ifx\putbib\undefined\else
-%    \let\oldchapter\chapter
-%    \renewcommand{\chapter}{%
-%    \putbib
-%    \oldchapter
-%  }
-%\fi
 
 
 % 
@@ -167,4 +158,24 @@
      }
      {\par}
   }
+\makeatother
+
+%
+% Function to create titlefootnote based on the short tag
+% Requires: nameref
+\usepackage{nameref}
+\makeatletter
+\newcommand{\authorfootnote}[3]{%
+% 1: authors (in cmos notation)
+% 2: authors (in and notation)
+% 3: the chapter reference
+  \begingroup
+  \def\@makefntext##1{\noindent ##1}%
+  \renewcommand{\thefootnote}{}%
+  \footnote{Copyright \copyright ~ #2. \newline 
+  Cite as: #1. ``\nameref{#3}.'' In: \bookcitation{}}%
+  \addtocounter{footnote}{-1}%
+  \addtocounter{Hfootnote}{-1}%
+  \endgroup
+}
 \makeatother
