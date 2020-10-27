@@ -122,5 +122,6 @@ if [ "$push" == "yes" ]
 then
  echo "now push stuff"
  cd $builddir
+ rm 0_master.tex.bak
  ../_process/push_repo_latex.sh
 fi
