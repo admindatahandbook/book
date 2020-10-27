@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-10-26"
+date: "2020-10-27"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -4269,7 +4269,7 @@ Beyond merely ensuring the safety and efficiency of this data infrastructure, th
 *Hugh Cole (City of Cape Town)*  
 *Kelsey Jack (University of California, Santa Barbara)*  
 *Derek Strong (University of Southern California)*  
-*Brendan Maughan-Brown (J-PAL Africa, University of Cape Town)*  
+*Brendan Maughan-Brown (University of Cape Town)*  
 <div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Hugh, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
 
 ## Summary
@@ -4535,7 +4535,7 @@ Hugh Cole has been director of Policy and Strategy at the City of Cape Town sinc
 
 [Derek Strong](https://drkrynstrng.gitlab.io/) is currently a Research Computing Associate with the Center for Advanced Research Computing at the University of Southern California. Prior to this, he worked with Kelsey Jack at UC Santa Barbara and with the City of Cape Town to identify and implement solutions for streamlining municipal data sharing with researchers. His interests include research computing, open science, and meta-research.
 
-Brendan Maughan-Brown is the Research Advisor at J-PAL Africa and is leading the development of J-PAL Africa's IDEA Lab. He also serves as a Chief Research Officer at the Southern Africa Labour and Development Research Unit, University of Cape Town where he conducts public health research with a focus on HIV.
+[Brendan Maughan-Brown](https://sites.google.com/site/bmaughanbrown/) is an interdisciplinary social scientist with expertise on: the uptake of HIV-prevention and treatment services; behavioural economics; and the social and behavioural determinants of HIV risk. He is a Chief Research Officer at the Southern Africa Labour and Development Research Unit, University of Cape Town.
 
 ## Acknowledgements {-}
 
