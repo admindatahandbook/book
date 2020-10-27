@@ -1,65 +1,311 @@
 Text,Index
-data sharing agreements,data sharing agreement
-unemployment insurance wage record,Unemployment Insurance Wage Records
-weakly anonymized,weakly anonymous
-survey,survey data
-surveys,survey data
-statistical disclosure control,statistical disclosure limitation
-SSHRC,Social Sciences and Humanities Research Council
-SGB,Sozialgesetzbuch
-German Social Code,Sozialgesetzbuch
-SFTP,secure file transfer protocol
-SIAB,Sample of Integrated Labour Market Biographies
-SUF,Scientific Use File
-RIPPA,Right to Information and Protection of Privacy Act
-RDC-IAB,Research Data Center at the Institute for Employment Research
-RDC-in-RDC,Research-Data-Center in Research-Data-Center
-research data centers,Research Data Center
-RDC,Research Data Center
-randomized evaluations,randomized evaluation
-Pseudonymization,pseudonymization
-Project data sets,project data set
-project data sets,project data set
-PII,personally identifiable information
-operational data,Operational data
-OLDA,Ohio Longitudinal Data Archive
-on-site,On-site
-NDA,non-disclosure agreements
-NSERC,Natural Sciences and Engineering Research Council of Canada
-NORC,National Opinion Research Center
-nHR,not human research
-OHRP,Office for Human Research Protections
-licensing agreements,licensing agreement
-limited data sets,limited data set
-Minimal risk,minimal risk
-JoSuA,Job Submission Application
-IDAN,International Data Access Network
-IP,intellectual property
-IEB,Integrated Employment Biographies
-ISR,Institute for Social Research
-IAB,Institute for Employment Research
-Institutional Review Board,Institutional review board
-institutional review board,Institutional review board
-Institutional Review Boards,Institutional review board
-IRB,Institutional review board
-privacy board,Institutional review board!privacy board
-ethics board,Institutional review board!ethics board
-institutional review board,Institutional review board
-Informed consent,informed consent
-input noise infusion,statistical disclosure limitation!input noise infusion
-output noise infusion,statistical disclosure limitation!output noise infusion
-HR,human research
-Human research,human research
-global aliasing file,global aliasing
-GDPR,General Data Protection Regulation
-General Data Protection Regulations,General Data Protection Regulation
-GRLC,German Record Linkage Center
-FERPA,Family Educational Rights and Privacy Act
-EMR,electronic medical records
+Act Respecting Research,Act Respecting Research
+Belmont Report,Belmont Report
+Biometric authentication,biometric authentication
+Bundesdatenschutzgesetz,Bundesdatenschutzgesetz
+Federal Data Protection Act,Bundesdatenschutzgesetz
+Bundesministerium für Arbeit und Soziales,Bundesministerium für Arbeit und Soziales
+Federal Ministry of Labour and Social Affairs,Bundesministerium für Arbeit und Soziales
+California Consumer Privacy Act,California Consumer Privacy Act
+Canada Foundation for Innovation,Canada Foundation for Innovation
+CFI,Canada Foundation for Innovation
+Canadian Institute for Health Information,Canadian Institute for Health Information
+CIHR,Canadian Institute for Health Information
+exempt,categories of review!exempt research
+Census Bureau,Census Bureau
+Centre d'accès sécurisé aux données,Centre d'accès sécurisé aux données
+CASD,Centre d'accès sécurisé aux données
+Certificates of Incorporation,certificates of incorporation
+CoI,certificates of incorporation
+CoIs,certificates of incorporation
+Data Coordinating Committee,City of Cape Town!Data Coordinating Committee
+data sharing platform,City of Cape Town!data sharing platform
+data sharing process,City of Cape Town!data sharing process
+metadata standards,City of Cape Town!metadata standards
+CFR,Code of Federal Regulations
+Code of Federal Regulations,Code of Federal Regulations
+45 CFR 46,Code of Federal Regulations!45 CFR 46
+Common Rule,Code of Federal Regulations!45 CFR 46 Part A (Common Rule)
+45 CFR 46.111,Code of Federal Regulations!45 CFR 46.111
+Confidentiality,confidentiality
+data access point,data access point
+data access points,data access point
+Data and Evidence for Justice Reform,Data and Evidence for Justice Reform
+DE JURE,Data and Evidence for Justice Reform
+DE JURE,Data and Evidence for Justice Reform
+at rest,data at rest
+data at rest,data at rest
+data custodian,data custodian
+Data Documentation Initiative,Data Documentation Initiative
+codebook,data documentation!codebook
+codebooks,data documentation!codebook
+concept dictionaries,data documentation!concept dictionaries
+data in transit,data in transit
+in transit,data in transit
+data in use,data in use
+data intermediary,data intermediary
+data management plan,data management plan
+data provider,data provider
+data providers,data provider
+data requestor,data requestor
+data use agreement,data use agreement
+data use agreements,data use agreement
+data use agreements,data use agreement
+DUA,data use agreement
+DUAs,data use agreement
+data access agreement,data use agreement!data access agreement
+data license agreement,data use agreement!data license agreement
+data license agreements,data use agreement!data license agreements
+data sharing agreements,data use agreement!data sharing agreement
+data transfer agreements,data use agreement!data transfer agreement
+memoranda of understanding,data use agreement!memoranda of understanding
+de-facto anonymized,de-facto anonymized
 De-facto anonymized,de-facto anonymized
 de-facto anonymous,de-facto anonymized
-De-identified data,de-identified data
 de-identified,de-identified data
-DUA,data use agreement
-data use agreements,data use agreement
-CFR,Code of Federal Regulations
+de-identified data,de-identified data
+De-identified data,de-identified data
+DDP,Development Data Partnership
+Development Data Partnership,Development Data Partnership
+Development Impact Evaluation,Development Impact Evaluation
+DIME,Development Impact Evaluation
+DIME's,Development Impact Evaluation
+DIME Analytics,Development Impact Evaluation!DIME Analytics
+i2i,Development Impact Evaluation!i2i
+ieProcure,Development Impact Evaluation!ieProcure
+measurement framework,Development Impact Evaluation!measurement framework
+Nairobi road safety,Development Impact Evaluation!Nairobi road safety
+Dublin Core,Dublin Core
+e-government,E-government
+electronic medical records,Electronic medical record
+EMR,Electronic medical record
+EMRs,Electronic medical record
+EMR,Electronic medical records
+Engagement,engagement
+engagement,engagement
+equivalent protections,equivalent protections
+Family Educational Rights and Privacy Act,Family Educational Rights and Privacy Act
+FERPA,Family Educational Rights and Privacy Act
+BA,Federal Employment Agency
+Federal Employment Agency,Federal Employment Agency
+Federal Ministry of Labour and Social Affairs,Federal Ministry of Labour and Social Affairs
+GDPR,General Data Protection Regulation
+General Data Protection Regulation,General Data Protection Regulation
+General Data Protection Regulations,General Data Protection Regulation
+anonymous data,General Data Protection Regulation!anonymous data
+German Data Forum,German Data Forum
+RatSWD,German Data Forum
+BMBF,German Federal Ministry of Education and Research
+German Federal Ministry of Education and Research,German Federal Ministry of Education and Research
+German Record Linkage Center,German Record Linkage Center
+GRLC,German Record Linkage Center
+German Research Foundation,German Research Foundation
+global aliasing file,global aliasing
+global aliasing file,global aliasing
+national sample survey,Government of Indonesia!national sample survey
+health insurance,health insurance
+Health Insurance Portability and Accountability Act,Health Insurance Portability and Accountability Act
+HIPAA,Health Insurance Portability and Accountability Act
+covered entities,Health Insurance Portability and Accountability Act!covered entities
+Privacy Rule,Health Insurance Portability and Accountability Act!Privacy Rule
+protected health information,Health Insurance Portability and Accountability Act!protected health information
+Safe Harbor,Health Insurance Portability and Accountability Act!Safe Harbor
+HR,human research
+human research,human research
+Human research,human research
+human subjects,human subjects
+impact evaluation,impact evaluation
+Impact evaluation,impact evaluation
+BPNT,Indonesia!Bantuan Pangan Non-Tunai
+informed consent,informed consent
+Informed consent,informed consent
+IAB,Institute for Employment Research
+Institute for Employment Research,Institute for Employment Research
+Data without Boundaries,Institute for Employment Research!Data without Boundaries
+Establishment History Panel,Institute for Employment Research!Establishment History Panel
+guest RDC,Institute for Employment Research!Guest RDC
+linked employer-employee data,Institute for Employment Research!linked employer-employee data
+on-site,Institute for Employment Research!on-site access
+On-site,Institute for Employment Research!on-site access
+RDC-IAB,Institute for Employment Research!Research Data Center at the Institute for Employment Research
+RDC-IAB,Institute for Employment Research!Research Data Center at the Institute for Employment Research
+RDC-in-RDC,Institute for Employment Research!Research-Data-Center in Research-Data-Center
+Research-Data-Center in Research-Data-Center,Institute for Employment Research!Research-Data-Center in Research-Data-Center
+Sample of Integrated Labour Market Biographies,Institute for Employment Research!Sample of Integrated Labour Market Biographies
+SIAB,Institute for Employment Research!Sample of Integrated Labour Market Biographies
+Scientific Use files,Institute for Employment Research!Scientific Use files
+Institute for Social Research,Institute for Social Research
+ISR,Institute for Social Research
+Institutional Review Board,institutional review board
+institutional review board,institutional review board
+institutional review board,institutional review board
+Institutional Review Boards,institutional review board
+IRB,institutional review board
+central IRB,institutional review board!central IRB
+central IRBs,institutional review board!central IRB
+commercial IRB,institutional review board!commericial IRB
+criteria for IRB review,institutional review board!criteria for review
+ethics board,institutional review board!ethics board
+independent IRBs,institutional review board!independent IRB
+privacy board,institutional review board!privacy board
+IEB,Integrated Employment Biographies
+Integrated Employment Biographies,Integrated Employment Biographies
+IP,intellectual property
+IDAN,International Data Access Network
+International Data Access Network,International Data Access Network
+articles of agreement,International Monetary Fund!articles of agreement
+build capacity,International Monetary Fund!capacity building
+Building capacity,International Monetary Fund!capacity building
+capacity building,International Monetary Fund!capacity building
+capacity development,International Monetary Fund!capacity building
+surveillance,International Monetary Fund!surveillance
+Job Submission Application,Job Submission Application
+JoSuA,Job Submission Application
+KePSIE,Kenya Patient Safety Impact Evaluation
+KePSIE,Kenya Patient Safety Impact Evaluation
+Kullback-Leibler,Kullback-Leibler divergence
+Lei Geral de Proteção de Dados,Lei Geral de Proteção de Dados
+Leibniz Institute for Educational Trajectories,Leibniz Institute for Educational Trajectories
+licensing agreement,licensing agreement
+licensing agreements,licensing agreement
+limited data set,limited data set
+limited data sets,limited data set
+Maritime SPOR SUPPORT Unit,Maritime SPOR SUPPORT Unit
+MSSU,Maritime SPOR SUPPORT Unit
+Medical Services Payment Act,Medical Services Payment Act
+Medicare Act,Medicare Act
+minimal risk,minimal risk
+Minimal risk,minimal risk
+National Educational Panel Study,National Educational Panel Study
+National Opinion Research Center,National Opinion Research Center
+NORC,National Opinion Research Center
+Natural Sciences and Engineering Research Council of Canada,Natural Sciences and Engineering Research Council of Canada
+NSERC,Natural Sciences and Engineering Research Council of Canada
+Code banks,"New Brunswick Institute for Research, Data and Training!code bank"
+code banks,"New Brunswick Institute for Research, Data and Training!code bank"
+Discharge Abstract Database,"New Brunswick Institute for Research, Data and Training!Discharge Abstract Database"
+institute director,"New Brunswick Institute for Research, Data and Training!institute director"
+project coordinator,"New Brunswick Institute for Research, Data and Training!project coordinator"
+project data set,"New Brunswick Institute for Research, Data and Training!project data set"
+Project data sets,"New Brunswick Institute for Research, Data and Training!project data set"
+project data sets,"New Brunswick Institute for Research, Data and Training!project data set"
+NDA,non-disclosure agreements
+non-disclosure agreements,non-disclosure agreements
+nHR,not human research
+not human research,not human research
+Office for Human Research Protections,Office for Human Research Protections
+OHRP,Office for Human Research Protections
+Office of Sponsored Research,Office of Sponsored Research
+Ohio Longitudinal Data Archive,Ohio Longitudinal Data Archive
+OLDA,Ohio Longitudinal Data Archive
+on-site,on-site
+operational data,operational data
+Personal Health Information Privacy and Access Act,Personal Health Information Privacy and Access Act
+PHIPAA,Personal Health Information Privacy and Access Act
+personally identifiable information,personally identifiable information
+PII,personally identifiable information
+identifiable private information,personally identifiable information!identifiable private information
+Physical access cards,physical access cards
+physical data enclave,physical data enclave
+privacy board,privacy board
+Privacy by Design,Privacy by Design
+individual authorization,Privacy Rule!individual authorization
+data sponsor,Private Capital Research Institute!data sponsor
+data sponsors,Private Capital Research Institute!data sponsor
+internal data processing system,Private Capital Research Institute!internal data processing system
+research proposal,Private Capital Research Institute!research proposal
+research proposals,Private Capital Research Institute!research proposal
+Program targeting,program targeting
+Project data sets,project data set
+project data sets,project data set
+Protection of Personal Information Act,Protection of Personal Information Act
+proxy-means test,proxy-means test
+pseudonymization,pseudonymization
+Pseudonymization,pseudonymization
+Quality Teacher and Education Act,Quality Teacher and Education Act
+quasi-identifiers,quasi-identifiers
+experimentally evaluate,randomized evaluation
+randomized evaluation,randomized evaluation
+randomized evaluations,randomized evaluation
+field experiments,randomized evaluation!field experiment
+Raskin,Raskin
+remote execution,remote execution
+Reproducibility,reproducibility
+computational reproducibility,reproducible research!computational reproducibility
+non-exempt,research classification!non-exempt research
+RDC,research data center
+research data center,research data center
+research data centers,research data center
+Research Data Center at the Institute for Employment Research,Research Data Center at the Institute for Employment Research
+Research-practice partnerships,research-practice partnerships
+research-practice partnerships,research-practice partnerships
+RPP,research-practice partnerships
+RA-GAP,Revenue Administration's Gap Analysis Program
+revenue gap,revenue gap
+Right to Information and Protection of Privacy Act,Right to Information and Protection of Privacy Act
+RIPPA,Right to Information and Protection of Privacy Act
+SAS,SAS
+SFTP,secure file transfer protocol
+Secure rooms,Secure rooms
+social protection programs,social protection programs
+Social Sciences and Humanities Research Council,Social Sciences and Humanities Research Council
+SSHRC,Social Sciences and Humanities Research Council
+German Social Code,Sozialgesetzbuch
+SGB,Sozialgesetzbuch
+secure file transfer protocol,SSH File Transfer Protocol
+SFTP,SSH File Transfer Protocol
+SSH File Transfer Protocol,SSH File Transfer Protocol
+data analyst,staffing!data analyst
+data analysts,staffing!data analyst
+data manager,staffing!data manager
+database administrator,staffing!database administrator
+director,staffing!director
+research associate,staffing!research associate
+senior data analyst,staffing!senior data analyst
+Stanford-SFUSD Partnership,Stanford-SFUSD Partnership
+accountability,Stanford-SFUSD Partnership!accountability
+analytical data,Stanford-SFUSD Partnership!analytical data
+analytical studies,Stanford-SFUSD Partnership!analytical studies
+Center for Education Policy Analysis,Stanford-SFUSD Partnership!Center for Education Policy Analysis
+CEPA,Stanford-SFUSD Partnership!Center for Education Policy Analysis
+data warehouse,Stanford-SFUSD Partnership!Data warehouse
+Early Education Department,Stanford-SFUSD Partnership!Early Education Department
+Ed-Fi,Stanford-SFUSD Partnership!Ed-Fi
+employee information system,Stanford-SFUSD Partnership!Employee information system
+English learners,Stanford-SFUSD Partnership!English learners
+enumerative studies,Stanford-SFUSD Partnership!enumerative studies
+ethnic studies,Stanford-SFUSD Partnership!Ethnic studies
+homelessness data,Stanford-SFUSD Partnership!Homelessness data
+improvement,Stanford-SFUSD Partnership!Improvement
+operational data,Stanford-SFUSD Partnership!operational data
+Operational data,Stanford-SFUSD Partnership!operational data
+Partnership director,Stanford-SFUSD Partnership!Partnership director
+RPA tables,Stanford-SFUSD Partnership!RPA tables
+student information system,Stanford-SFUSD Partnership!student information system
+supervisor of analytics,Stanford-SFUSD Partnership!supervisor of analytics
+supervisor of research and evaluation,Stanford-SFUSD Partnership!supervisor of research and evaluation
+Stata,Stata
+SDC,statistical disclosure control
+statistical disclosure control,statistical disclosure control
+statistical disclosure control,statistical disclosure limitation
+input noise infusion,statistical disclosure limitation!input noise infusion
+output noise infusion,statistical disclosure limitation!output noise infusion
+Statistics Act,Statistics Act
+SPOR,Strategy for Patient-Oriented Research
+survey,survey data
+survey data,survey data
+surveys,survey data
+unemployment insurance wage record,Unemployment Insurance Wage Records
+virtual data enclave,virtual data enclave
+weakly anonymous,weakly anonymous
+weakly anonymized,weakly anonymous
+systems administrator,"New Brunswick Institute for Research, Data and Training!systems administrator"
+technical assistance,International Monetary Fund!technical assistance
+"Thin clients,",thin clients
+Tri-Council,Tri-Council
+UDB,Government of Indonesia!Unified Database
+Unified Database,Government of Indonesia!Unified Database
+University Policy on Research Involving Humans,"New Brunswick Institute for Research, Data and Training!University Policy on Research Involving Humans"
+virtual private networks,virtual private network
+VPN,virtual private network
+Workforce Data Quality Initiative,Workforce Data Quality Initiative
