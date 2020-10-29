@@ -89,7 +89,8 @@ git restore figures/introchetty*pdf
 
 [ -d $builddir ] && rm -rf $builddir
 
-git clone --depth=1 $publish_repo $builddir
+#git clone --depth=1 $publish_repo $builddir
+git clone --depth 1 $publish_repo $builddir --branch $publish_branch
 (cd $builddir; git rm -rf *;cd ..)
 #mkdir $builddir
 mkdir $builddir/programs
