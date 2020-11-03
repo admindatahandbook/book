@@ -95,7 +95,7 @@ cat("\\input{./tables/pcri/pcritable1.tex}")
 }
 ```
 
-```{r pcrifigure1, echo=FALSE, out.width='90%', fig.cap='Overlap of private capital firms in PCRI database by source of information',eval=knitr::is_html_output() }
+```{r pcrifigure1, echo=FALSE,  fig.align = 'center', fig.cap='Overlap of private capital firms in PCRI database by source of information',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigure1web.png')
 ```
 ```{r pcrifigure1-tex,echo=FALSE,results='asis'}
