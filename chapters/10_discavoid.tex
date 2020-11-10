@@ -1,0 +1,247 @@
+\hypertarget{discavoid}{%
+\chapter{Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods}\label{discavoid}}
+
+\printchapterauthor{%
+\begin{authorlist}
+  Ian M. Schmutte (University of Georgia)  \\
+  Lars Vilhuber (Cornell University)  \\
+\end{authorlist}}\authorfootnote{Schmutte, Ian M.,  and Lars Vilhuber}{Ian M. Schmutte and Lars Vilhuber}{discavoid}
+\authortoc{Ian M. Schmutte, Lars Vilhuber}
+\hrulefill
+
+The purpose of this Handbook is to provide guidance on how to enable broader but ethical and legal access to data. Within the Five Safes framework \citep{desai2016}, data providers need to create \emph{safe data} that can be provided to trusted \emph{safe people} for use within \emph{\protect\hyperlink{security}{safe settings}}, subject to legal and \protect\hyperlink{dua}{contractual safeguards}. Related, but distinct, is the question of how to create \emph{safe outputs} from researchers' findings before those findings finally make their way into the public through, for example, policy briefs or the academic literature. The processes used to create safe data and safe outputs (manipulations that render data less sensitive and therefore more appropriate for public release) are generally referred to as statistical disclosure limitation\index{statistical disclosure limitation} (SDL).\footnote{Other terms sometimes used are ``anonymization'' or ``de-identification,'' but as this chapter will show, de-identification is a particular method of SDL, and anonymization is a goal, never fully achieved, rather than a method.} This chapter will describe techniques traditionally used within the field of SDL, pointing at methods as well as metrics to assess the resultant statistical quality and sensitivity of the data. Newer approaches, generally referred to as \emph{formal privacy methods}, are described in a separate \protect\hyperlink{diffpriv}{chapter}.
+
+At their core, SDL methods prevent outsiders from learning too much about any one record in the data \citep{dalenius_towards_1977} by deliberately and judiciously adding distortions. Ideally, these distortions maintain the validity of the data for statistical analysis but strongly reduce the ability to isolate records and infer precise information about individual people, firms, or cases. In general, it is necessary to sacrifice validity in order to prevent disclosure \citep{goroff_balancing_2015, abowd_economic_2015}. It is therefore important for data custodians to bear this trade-off in mind when deciding whether and how to use SDL.
+
+One key challenge for implementing privacy systems lies in choosing the amount or type of privacy to provide. Answering this question requires some way to understand the individual and social value of privacy. \citet{abowd_economic_2019} discuss the question of optimal privacy protection (see also \citet{hsu_differential_2014} in the specific context of differential privacy). For an illustration, see \citet{spencer_effects_2015}, who use a calibration exercise to study the costs (measured in misallocated congressional seats) of reduced accuracy in population census data.
+
+Part of the social value of privacy arises from its relationship to scientific integrity. While the law of information recovery suggests that improved privacy must come at the cost of increased error in published statistics, these effects might be mitigated through two distinct channels. First, people may be more truthful in surveys if they believe their data are not at risk \citep{couper_risk_2008}. Second, work in computer science and statistics \citep{dwork_generalization_2015, dwork_fienberg_2018, cummings_adaptive_2016} suggests a somewhat surprising benefit of differential privacy: protection against overfitting.
+
+There are three factors that a data custodian should bear in mind when deciding whether and how to implement an SDL system in support of making data accessible. First, it is necessary to clarify the specific privacy requirements based on the nature of the underlying data, institutional and policy criteria, and ethical considerations. In addition, the custodian, perhaps in consultation with users, should clarify what sorts of analyses the data will support. Finally, SDL is often part of a broader system to protect sensitive data that can also involve access restrictions and other technical barriers. The broader system may allow for less stringent SDL techniques when providing data to researchers in secure environments than would be possible if data were to be released as unrestricted public use data.\footnote{The \protect\hyperlink{iab}{chapter on the RDC-IAB} provides a good illustration of how various SDL methods are combined with different access methods to provide multiple combinations of analytic validity and risk of disclosure.} This implies that the chapter will not provide a recommendation for a ``best'' method, since no such globally optimal method exists in isolation.
+
+Rather, this chapter provides an overview of the concepts and more widely used methods of SDL. Relative to other primers that cover similar material, this text focuses more closely on the advantages and disadvantages of various methods from the perspective of data users. This chapter can serve as a reference that data providers and data users can employ to discuss which forms of SDL are appropriate and will satisfy the needs of both parties. In particular, there is a focus on how common SDL tools affect different types of statistical analysis as well as the kind of confidentiality protections these tools support, drawing heavily on \citet{abowd_economic_2015}. SDL is a broad topic with a vast literature, starting with \citet{fellegi_question_1972}. Naturally, this brief summary is not a replacement for the textbook treatment of SDL in \citet{duncan_statistical_2011}. Finally, SDL methods must be implemented and deployed, and the chapter provides pointers to existing off-the-rack tools in a variety of platforms (Python, R, and Stata). Readers might also consult other summaries and guides, such as \citet{dupriez_dissemination_2010}, \citet{world_bank_dime_nodate}, \citet{kopper_j-pal_2020}, and \citet{liu_statistical_2020}.
+
+\hypertarget{purpose-of-statistical-disclosure-limitation-methods-definitions-and-context}{%
+\section{Purpose of Statistical Disclosure Limitation Methods: Definitions and Context}\label{purpose-of-statistical-disclosure-limitation-methods-definitions-and-context}}
+
+A clear and precise sense of what constitutes an unauthorized disclosure is a prerequisite to implementing SDL. Are all data items equally sensitive? How much more should one be able to learn about certain classes of people, firms, villages, etc.? Note that even when trusted researchers (\emph{safe people}) can be sworn to secrecy, the ultimate goal is to publish using information gleaned from the data, and the final audience can never be considered trusted.\footnote{In the United States, 62\% of individuals are aware (and possibly resigned) that government and private companies collect data on them, and seem to believe that there is little benefit to them of such collection: 81\% think so when companies do the data collection, and 66\% when the government does so \citep{auxier_americans_2019}.}
+
+The key concepts are privacy and confidentiality. Privacy can be viewed, in this context, as the right to restrict others' access to personal information, whether through query or through observation \citep{hirshleifer_privacy_1980}. Confidentiality\index{Confidentiality} pertains to data that have already been collected and describes the principle that the data should not be used in ways that could harm the persons that provided their information.
+
+\begin{bboxfix}
+For example, Ann, who is asked to participate in a study about health
+behaviors, has a \emph{privacy} right to refuse to answer a question
+about smoking. If she does answer the question, it would breach
+\emph{confidentiality} if her response was then used by an insurance
+company to adjust her premiums \citep{duncan_private_1993}.
+\end{bboxfix}
+
+\citet{harris-kojetin_statistical_2005} define disclosure\index{disclosure} as the ``inappropriate attribution of information to a data subject, whether an individual or an organization'' \citep[p.~4]{harris-kojetin_statistical_2005}. They proceed to describe three different types of disclosure. An \emph{identity disclosure\index{identity disclosure}} is one where it is possible to learn that a particular record or data item belongs to a particular participant (individual or organization). An \emph{attribute disclosure\index{attribute disclosure}} happens if publication of the data reveals an attribute of a participant. Note that an \emph{identity disclosure} necessarily entails \emph{attribute disclosure}, but the reverse is not the case.
+
+\begin{bboxfix}
+In the hypothetical health study, if Ann responds that she is a smoker,
+an \emph{identity disclosure} would mean someone can determine which
+record is hers and therefore can also learn that she is a smoker---an
+\emph{attribute disclosure}. However, an attribute disclosure could also
+occur if someone knows that Ann was in the study, they know that Ann
+lives in a particular zip code, and the data reveal that all
+participants from that zip code are also smokers. Her full record was
+not revealed, but confidentiality was breached all the same.
+\end{bboxfix}
+
+With these concepts in mind, it is necessary to ask whether it is sufficient to prevent blatant all-or-nothing identity or attribute disclosures: usually not, as it may be possible to learn a sensitive attribute with high, but not total, certainty. This is called an \emph{inferential disclosure\index{inferential disclosure}} \citep{dalenius_towards_1977, duncan_disclosure-limited_1986}.
+
+\begin{bboxfix}
+Suppose Ann's health insurer knows that Ann is in the data and that she
+lives in a particular zip code. If the data have 100 records from that
+zip code and 99 are smokers, then the insurer has learned Ann's smoking
+status with imperfect but high precision.
+\end{bboxfix}
+
+In addition to deciding what kinds of disclosure can be tolerated and to what extent, in many cases it may also be meaningful to decide which characteristics are and are not sensitive. Smoking behavior may nowadays be regarded as sensitive, but depending on the context, gender might not be. In the case of business data, total sales volume or total payroll are highly sensitive trade secrets. Generally, the county in which the business is located or the industry in which the business operates might not be sensitive, but consider a survey of self-employed business people: the location of the business might be the home address, which might be considered highly sensitive. These decisions on what is sensitive affect the implementation of a privacy protection system.\footnote{There is a large and robust literature in economics on the value of privacy. For an overview of ideas in this literature, we recommend \citet{varian_economic_2002} and \citet{acquisti_economics_2016}.}
+
+However, additional care must be taken because variables that are not inherently sensitive can still be used to isolate and identify records. Such variables are sometimes referred to as \emph{quasi-identifiers\index{quasi-identifiers}} and they can be exploited for \emph{re-identification\index{re-identification}} attacks. In business data, if the data show that there is only one firm operating in a particular county and sector, then their presence inherently leads to identity disclosure. Many of the traditional approaches to SDL operate in large part by preventing re-identification.\footnote{Thus the occasional reference to methods as \emph{de-identification\index{de-identification}} or \emph{anonymization\index{anonymization}}, though these terms can sometimes be misleading in regard to what they can actually achieve.} \citet{garfinkel_-identification_2015} discusses techniques for de-identifying data and the many ways in which modern computing tools and a data-rich environment may render effective de-identification impossible, reinforcing the growing need for formal privacy models like differential privacy.
+
+SDL methods may be required for legal and ethical reasons. Institutional review boards\index{Institutional review boards} (IRBs) require that individual's well-being be protected (see the \protect\hyperlink{irb}{chapter on IRBs}). Legal mandates may intersect with ethical concerns, or prescribe certain (minimal) criteria. Thus, the US Health Insurance Portability and Accountability Act\index{Health Insurance Portability and Accountability Act} of 1996 (HIPAA) \citep{us_department_of_health__human_services_health_nodate} has precise definitions of variables that need to be removed in order to comply with the law's mandate of de-identification \citep{department_of_health_and_human_services_methods_2012}. The European Union General Data Protection Regulation\index{General Data Protection Regulation} (GDPR) came into effect in 2018 and has defined both the way researchers can access data and the requirements for disclosure limitation \citep{cohen_towards_2020, greene_adjusting_2019, molnar-gabor_germany_2018}. Similar laws are emerging around the world and will define both minimal requirements and limits of SDL and other access controls. The California Consumer Privacy Act\index{California Consumer Privacy Act} (CCPA) \citep{marini_comparing_2018} and the Brazilian Lei Geral de Proteção de Dados\index{Lei Geral de Proteção de Dados} (LGPD) \citep{black_6_2020} came into effect in 2020, and India is currently considering such a law \citep{panakal_indias_2019}.
+
+Finally, note that there is a parallel concept of non-statistical disclosure limitation\index{non-statistical disclosure limitation} that is a complementary part of secure data dissemination. This applies to the metadata---like codebooks, data descriptions, and other summary information---that can leak potentially sensitive information. For example, data documentation might reveal that only certain geographic areas were included in a particular collection, information that could be used as an element in a re-identification attack. While typically not considered quantitative disclosure avoidance, some of the same concepts described here can apply to such metadata as well. For instance, removing mention of the collection area from the documentation is akin to \protect\hyperlink{suppression}{suppression}, while only revealing broad regions of data collection is akin to \protect\hyperlink{coarsening}{coarsening}.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+There are many different SDL methods, and the decision of which to use depends on what needs to be protected, how their use will affect approved analyses, and their technical properties. At a high level, think of an SDL system as a mechanism that takes the raw confidential data, \(D\), as inputs and produces a modified data set, \(\tilde{D}\). The researcher then conducts their analysis with the modified \(\tilde{D}\). Ideally, the researcher can do their analysis as planned, but the risk of disclosure in \(\tilde{D}\) is reduced.
+
+Researchers generally need to consider all of the design features that went into producing the data used for an analysis. Most already do so in the context of surveys where design measures are incorporated into the analysis---often directly in software packages. Some of these adjustments may already take into account various SDL techniques. Traditional survey design adjustments can consider \protect\hyperlink{sampling}{sampling}. Some forms of \protect\hyperlink{coarsening}{coarsening} may already be amenable to adjustment using various clustering techniques \citep{moulton_random_1986,cameron_practitioners_2015}.
+
+More generally, the inclusion of edits to the data done in service of disclosure limitation is less well supported by, and less well integrated in, standard research methods. \citet{abowd_economic_2015} argue that the analyses of SDL-laden data are inherently compromised because the details of the SDL protections cannot be disclosed. If the details cannot be disclosed, the consequences for inference are unknowable and, as they show, may be substantial. Regression models\index{Regression models}, regression discontinuity\index{regression discontinuity} designs, and instrumental variables models are generally affected when SDL is present. The exact nature of any bias or inconsistency will depend on whether SDL was applied to explanatory variables, dependent variables, instruments, or all of the above. Furthermore, it is not always the case that SDL induces an attenuating bias.
+
+With these goals in mind, following \citet{abowd_economic_2015}, this chapter distinguishes between \emph{ignorable} and \emph{non-ignorable} SDL systems. Briefly, SDL is \emph{ignorable} for a particular analysis if the analysis can be performed on the modified data, \(\tilde{D}\), as though it were the true data. In a non-ignorable analysis, the result differs in some material way when \(\tilde{D}\) is substituted for \(D\). When the SDL method is \emph{known}, then it may be possible for the researcher to perform an \emph{SDL-aware} analysis that corrects for non-ignorability. However, SDL methods are generally not ignorable except in certain specific applications.
+
+The chapter briefly outlines several of the methods most commonly used within national statistical offices. For interested readers, \citet{harris-kojetin_statistical_2005}\footnote{As of the writing of this chapter in August 2020, WP22 is being revised and updated, but has not yet been published.} describe how SDL systems are implemented in the US statistical system, while \citet{dupriez_dissemination_2010} offers a more multinational perspective.
+
+\hypertarget{de-identification}{%
+\subsection{De-Identification}\label{de-identification}}
+
+In general, it is good practice to remove any variables from the data that are not needed for data processing or analysis and that could be considered direct identifiers\index{direct identifiers}. This is often referred to as de-identification\index{de-identification}. What constitutes ``direct identifiers'' may differ on the context, but generally comprises any variable that might directly link to confidential information: names, account or identifier numbers, and sometimes exact birth dates or exact geo-identifiers.\footnote{See guidance in \citet{world_bank_dime_nodate} and \citet{kopper_j-pal_2020}.} HIPAA\index{HIPAA} defines sixteen identifiers that must be removed in order to comply with the law. It may be necessary to preserve identifiers through parts of the data processing or analysis if they are key variables needed for record linking. In field experiments\index{field experiments}, the identities of treatment and control units may need to be merged with an administrative data set. It is also sometimes necessary to use direct identifiers to link records between surveys and administrative data, or precise geographic coordinates may be needed to compute distances as part of the analysis. If possible, the data provider should facilitate record linking\index{record linking} while the data are secure and before they are shared with the research team.
+
+\hypertarget{suppression}{%
+\subsection{Suppression}\label{suppression}}
+
+Suppression\index{Suppression} is perhaps the most common form of SDL and one of the oldest \citep{fellegi_question_1972}. In their most basic form, suppression rules work as follows:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Model the sensitivity of a particular data item, table cell, or observation (disclosure risk).
+\item
+  Do not allow the release of data items that have excessive disclosure risk (primary suppression).
+\item
+  Do not allow the release of other data from which the sensitive item can be calculated (complementary suppression).
+\end{enumerate}
+
+Suppression rules can be applied to microdata: the sensitive observations are removed from the microdata, or to tabular data, where the relevant cells are suppressed.
+
+In the case of business microdata, a firm that is unique in its county and industry might be flagged as having high disclosure risk and eliminated from the data. Another less damaging possibility is that just the sensitive attributes are suppressed, so a researcher would still know that there was a firm operating in that industry and location but not the other attributes. For tabular data, the principle is the same. Continuing with the business application, suppose there is one large firm and several smaller competitors in a given industry and location. If the cell is published, it might be possible for its local competitors to learn the receipts of the dominant firm to a high degree of precision.
+
+Cell suppression\index{Cell suppression} rules based on this sort of reasoning are called \emph{p}-percent rules, where \emph{p} describes the precision with which the largest firm's information can be learned. A conservative estimate of this occurs when the largest firm's value is \emph{(1-p)\%} of the cell's value.
+
+A variant of this rule takes into account prior precision \emph{q} (the ``pq percent rule\index{pq percent rule}''). Another rule is known as the \emph{n,k} rule: a cell is suppressed if \emph{n} or fewer entities contribute \emph{k} percent or more of the cell's value. These rules are frequently applied to statistics produced by national statistical agencies \citep{harris-kojetin_statistical_2005}. Simpler rules based entirely on cell counts are also encountered, for instance, in the Health and Retirement Study \citep{health_and_retirement_study_disclosure_nodate}. Tables produced using HRS confidential geo-coded data are only allowed to display values when the cell contains three or more records (five for marginal cells).
+
+If a cell in a contingency table is suppressed based on any one of these rules, it's original value could be backed out by using the information in the table margins and the understanding that table cells need to sum up to their margins. Some data providers therefore require that additional cells are suppressed to ensure this sort of reverse engineering is not possible. Figuring out how to choose these \emph{complementary suppressions\index{complementary suppressions}} in an efficient manner is a non-trivial challenge.
+
+In general, cell suppression is not an ignorable form of SDL. It remains popular because it is easy to explain and does not affect the un-suppressed cells.
+
+Data suppression is clearly non-ignorable, and it is quite difficult to correct for suppression in an SDL-aware analysis.\footnote{One approach is to replace suppressed cells with imputed values, and then treat the data as multiply-imputed.} The features of the data that lead to suppression are often related to the underlying phenomenon of interest. \citet{chetty_practical_2019} provide a clear illustration. They publish neighborhood-level summaries of intergenerational mobility based on tax records linked to Census data. The underlying microdata are highly sensitive, and to protect privacy the researchers used a variant of a differentially privacy model. Chetty and Friedman show that if they had instead used a cell suppression rule, the published data would be misleading with respect to the relationship between neighborhood poverty and teen pregnancy, because both variables are associated with neighborhood population. Hence, the missingness induced by cell suppression is not ignorable.
+
+Suppression can also be applied to model-based statistics. For instance, after having run a regression, coefficients that correspond to cells with fewer than \emph{n} cases may be suppressed. This most often occurs when using dichotomous variables (dummy variables), which represent conditional means for particular subgroups.
+
+\begin{bboxfix}
+In a regression, a researcher includes a set of dummies for interacting
+occupation and location. When cross-tabulating occupation and location,
+many cells have less than five observations contributing to the
+coefficient. The data provider requires that these be suppressed.
+\end{bboxfix}
+
+\hypertarget{coarsening}{%
+\subsection{Coarsening}\label{coarsening}}
+
+Coarsening\index{Coarsening} takes detailed attributes that can serve as quasi-identifiers and collapses them into a smaller number of categories. Computer scientists call this \emph{generalizing\index{generalizing}}, and it is also sometimes referred to as \emph{masking\index{masking}}. Coarsening can be applied to quasi-identifiers to prevent re-identification or to attributes to prevent accurate attribute inference. When applied to quasi-identifiers, the concern is that an outsider could use detailed quasi-identifiers to single-out a particular record and learn to whom it belonged. By coarsening quasi-identifiers, the set of matching records is increased, raising uncertainty about any re-identified individual's true identity. In principle, all variables can serve as quasi-identifiers, and the concept of \emph{k-anonymity\index{k-anonymity}} introduced by \citet{sweeney_achieving_2002} is a useful framework for thinking about how to implement coarsening and other microdata SDL. K-anonymity is discussed in the section on \protect\hyperlink{disclosure-risk}{disclosure risk}.
+
+Coarsening is common in microdata releases. Generally, it may make sense to consider coarsening variables with heavy tails (earnings, payroll), residuals (truncate range, suppress labels of range). In public-use microdata from the American Community Survey, geographic areas are coarsened until all such areas represent at least 100,000 individuals \citep{us_census_bureau_finalpublic_2011}. In many data sources, characteristics like age and income, are reported in bins even when the raw data are more detailed. Topcoding is a common type of coarsening in which variables, such as~incomes above a certain threshold, are replaced with some topcoded value (e.g., US\$200,000 in the Current Population Survey). When releasing model-based estimates, rounding (another form of coarsening) can satisfy statistical best practice (not releasing numbers beyond their statistical precision) as well as disclosure avoidance principles by preventing inferences that could be too precise about specific records in the data.
+
+Whether coarsening is ignorable or not depends on the analysis to be performed. Consider the case in which incomes are topcoded above the 95th percentile. This form of SDL is ignorable with respect to estimating the 90th percentile of the income distribution (and all other quantiles below the 95th). However, coarsening age is not ignorable if the goal is to conduct an analysis of behavior of individuals around some age or date-of-birth cutoff. Coarsening rules should therefore bear in mind the intended analysis for the data and may be usefully paired with restricted-access protocols that allow trusted researchers access to the more detailed data. See \citet{burkhauser_estimating_2011} for an example of the impact of topcoding on estimates of earnings inequality.
+
+\hypertarget{swapping}{%
+\subsection{Swapping}\label{swapping}}
+
+The premise behind the technique of \emph{swapping\index{swapping}} is similar to suppression. Again, each record is assigned a level of disclosure risk. Then any high-risk record is matched to a less risky record on a set of key variables, and all of the other non-key attributes are swapped. The result is a data set that preserves the distribution among all the key variables used for matching. If the original purpose of the data was to publish cross-tabulations of the matching variables, swapping can produce microdata that are consistent with those tabulations. This approach is more commonly used in censuses and surveys of people or households and rarely used with establishment data.
+
+Swapping is ignorable for analyses that only depend on the matching variables, since the relationships among them will be preserved. However, swapping distorts relationships among the other variables and between the matching variables and the other variables. In the example above, the swapping would be non-ignorable in the context of a study of how smoking behavior varies across zip codes. In general, statistical agencies are not willing to publish detailed information about how swapping is implemented since that information could be used to reverse-engineer some of the swaps, undoing the protection. Hence, SDL-aware analysis may not be possible and inference validity negatively affected.
+
+
+\begin{bboxfix}
+For example, consider the hypothetical health study again, and now
+suppose the known factors are Ann's zip code, gender, race, ethnicity,
+age, smoking behavior, and the size of her household. Ann's record might
+be classified as high risk if, for example, she has a very large
+household relative to the rest of the other respondents who are also
+from her zip code. If the data are used to publish summaries of smoking
+behavior by age, race, and gender, then Ann's record would be matched to
+another record with the same age, race, gender, and smoking behavior,
+and the values of the household size and zip code attributes would be
+swapped.
+\end{bboxfix}
+
+
+\hypertarget{sampling}{%
+\subsection{Sampling}\label{sampling}}
+
+Sampling\index{Sampling} is the original SDL technique. Rather than the full confidential microdata, publishing a sample inherently limits the certainty with which attackers can re-identify records. While sampling can provide a formal privacy guarantee, in modern, detailed surveys, sampling will not in general prevent re-identification. In combination with other tools, like coarsening, sampling may be particularly appealing because, while it is non-ignorable, researchers can adjust their analysis for the sampling using familiar methods. Sampling is often used in conjunction with other methods, including with formally private methods, to amplify the protection provided.
+
+\hypertarget{noise-infusion}{%
+\subsection{Noise Infusion}\label{noise-infusion}}
+
+Noise infusion\index{Noise infusion} can refer to an array of related methods, all of which involve distorting data with randomly distributed noise. There is a key distinction between methods where the microdata are infused with noise (input noise infusion\index{statistical disclosure limitation!input noise infusion}), versus methods where noise is added to functions or aggregates of the data before publication (output noise infusion\index{statistical disclosure limitation!output noise infusion}).
+
+Noise infusion was developed as a substitute for cell suppression as an approach to protecting tabular summaries of business data. Originally proposed by \citet{evans_using_1998}, the basic approach assigns each microdata unit (a business establishment) a multiplicative noise factor drawn from a symmetric distribution (e.g., centered on one) and multiplies sensitive (or all) characteristics by that factor. Tabular summaries can then be made from the distorted characteristics. As cell sizes increase, the distortions applied to each unit average out. Thus, while small cells may be quite distorted and thus protected, large cells usually have little distortion. Most cells no longer need to be suppressed. These approaches are used in the US Census Bureau's Quarterly Workforce Indicators \citep{abowd_lehd_2009,abowd_dynamically_2012} and County Business Patterns with a truncated distribution. When the noise distribution is unbounded, for instance Gaussian, noise infusion may be differentially private (see the \protect\hyperlink{diffpriv}{chapter on differential privacy}).
+
+Noise infusion has the advantage that it mostly eliminates the need to suppress sensitive records or cells, allowing more information to be revealed from the confidential data while maintaining certain confidentiality protections. Noise infusion also generally preserves the means and covariances among variables. However, it will always inflate estimated variances and can lead to bias in estimates of statistical models and in particular regression coefficients. Hence, noise infusion is generally not ignorable. If the details of the noise distribution can be made available to researchers, then it is possible to correct analysis for noise infusion. However, information about the noise distribution can also help an attacker reverse engineer the protections.
+
+\hypertarget{synthetic-data-and-multiple-imputation}{%
+\subsection{Synthetic Data and Multiple Imputation}\label{synthetic-data-and-multiple-imputation}}
+
+Synthetic data\index{Synthetic data} generation and multiple imputation\index{multiple imputation} are closely related. In fact, one particular variant of synthetic data as SDL (partially synthetic data) is also known as ``suppress and impute'' \citep{little_statistical_1993}. Sensitive values for some or all records are replaced by (multiple) imputations. More generally, fully synthetic data \citep{rubin_discussion_1993} replaces all values with draws from a posterior predictive distribution, estimated given the confidential data. For an overview, see \citet{raghunathan_multiple_2003}, \citet{little_statistical_2004}, and \citet{drechsler_synthetic_2011}.
+
+Synthetic data have been used in the Federal Reserve Board's Survey of Consumer Finances to protect sensitive income values \citep{kennickell_multiple_1998}, and in the US Census Bureau's American Community Survey microdata to protect data from group quarters such as prisons and university residences \citep{hawala_disclosure_2009}. The US Census Bureau's LODES data, included in the \href{https://onthemap.ces.census.gov/}{OnTheMap} application, uses synthetic household data \citep{machanavajjhala_privacy_2008}. Synthetic data can be used in conjunction with validation servers: researchers use the synthetic data to create complex model-based estimation and then submit their analysis to a remote server with access to the confidential data for validation of the results. Such a mechanism has been used by the US Census Bureau in collaboration with Cornell University for confidential business microdata \citep{kinney_towards_2011} and for survey data combined with administrative data \citep{abowd_final_2006}. The term is sometimes used as well for test data for remote submission systems, which typically makes no claims as to the validity; it is simply constructed to replicate the data schema of the confidential data to test statistical code.
+
+\hypertarget{examples-of-sdl-methods}{%
+\subsection{Examples of SDL Methods}\label{examples-of-sdl-methods}}
+
+Table \ref{tab:overviewtable} shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources.
+
+\input{./tables/discavoid/discavoidtable1.tex}
+
+\hypertarget{metrics}{%
+\section{Metrics}\label{metrics}}
+
+The design of an SDL system depends on determinations about what constitutes an acceptable level of disclosure risk, balanced with the proposed uses of the data. There are many different ways to describe and measure disclosure risk. A commonality these systems share is the ability to determine the uniqueness of a record, or combination of attributes in the data, that then intuitively predicts the ease with which a record could be distinguished to re-identify the respondent (perhaps aided by a linked data set). Likewise, there are many different ways to assess whether the released data are suitable, or fit, for their intended use. These quality measures are often based on how closely the released data match the true data on certain statistical summaries, and it will be important for researchers and data custodians to agree on what are the most relevant summaries.
+
+\hypertarget{disclosure-risk}{%
+\subsection{Disclosure Risk}\label{disclosure-risk}}
+
+Early definitions of disclosure risk\index{disclosure risk} were based on rules and guidelines derived from institutional knowledge, assessment of summary measures, and re-identification experiments \citep{harris-kojetin_statistical_2005}. Statisticians have subsequently developed more formal models to measure risk of re-identification for specific types of publication and with particular threat models\index{threat models}. For instance, \citet{shlomo_assessing_2010} model re-identification risk in survey microdata when an attacker is matching on certain categorical variables.
+
+Recently, computer scientists and statisticians have introduced more general concepts of disclosure risk and data privacy. Latanya Sweeney proposed the concept of \(k\)-anonymity \citep{sweeney_achieving_2002} which defines disclosure risk in terms of the number of records that share the same combination of attributes. If a single record is uniquely identified by some combination of attributes, disclosure risk is high. Sweeney says that a data set can be called \(k\)-anonymous if for all feasible combinations of attributes, at least \(k\) records have that combination. Intuitively, increases in \(k\) reduce the risk that observations can be singled out by linking other data sets that contain the same attributes. The concept of \(k\)-anonymity can provide some guidance when thinking about how to implement the SDL systems described above. For example, if records are uniquely identified by age, race, and gender, then one might collapse age into brackets until there are at least \(k>1\) records for each such combination.
+
+However, \(k\)-anonymity does not protect against attribute disclosure. If all \(k\) observations with the same combination of attributes also share the same sensitive attribute, for example, smoking behavior, then the published data do not fully prevent disclosure of smoking behavior. Recognizing this, \citet{machanavajjhala_l-diversity_2007} introduce the concept of \(\ell\)-diversity. The idea is that whenever a group of records are identical on some set of variables, there must be a certain amount of heterogeneity in important sensitive traits. If a certain group of records matches on a set of quasi-identifiers and also all share the same smoking status, then to achieve \(\ell\)-diversity, one might alter the reported smoking behavior of some fraction (\(\ell\)) of the records---a form of noise infusion.
+
+\hypertarget{data-quality}{%
+\subsection{Data Quality}\label{data-quality}}
+
+When the released data or output are tabular (histograms, cross-tabulations) or are a limited set of population or model parameters (means, coefficients), a set of distance-based metrics (so-called ``\(\ell_p\) distance'' metrics) can be used to compare the quality of the perturbed data. Note that this is a specific metric, as it is limited to those statistics taken into account---the data quality may be very poor in non-measured attributes! For \(p=1\), the \(\ell_1\) distance is the sum of absolute differences between the confidential and perturbed data. For \(p = 2\), the \(\ell_2\) distance is the sum of squared differences between the two data sets (normalized by \(n\) the number of observations, it is the Mean Squared Error, MSE).
+
+In settings where it is important to measure data quality over an entire distribution, the Kullback-Leibler\index{Kullback-Leibler} (KL) divergence measure can also be used. The KL-divergence is related to the concept of entropy from information theory and, loosely, measures the amount of surprise associated with seeing an observation drawn from one distribution when one expected them to come from another distribution. Other metrics are based on propensity scores\index{propensity scores} \citep{woo_global_2009, snoke_general_2018}. More specific measures will often compare specific analysis output, a task that is quite difficult to conduct in general. \citet{reiter_verification_2009} propose to summarize the difference between regression coefficients when analyses can be run on both confidential and protected data in the context of verification servers\index{verification servers}.
+
+\hypertarget{tools}{%
+\section{Tools}\label{tools}}
+
+For data providers faced with the need to start providing safe data for use by external researchers, a growing number of software packages are available that implement the methods described in this chapter. The Inter-university Consortium for Political and Social Research (ICPSR) has a checklist that may be of use in early development of an SDL system \citep{icpsr_disclosure_2020}. The listing of tools below is incomplete but will provide practitioners with a place to start. A fully developed SDL system will have unique requirements and may require custom programming. Nevertheless, many tools are useful across a wide range of applications.
+
+Statistics Netherlands maintains the ARGUS software for SDL \citep{hundepool_argus_1998}, including τ-ARGUS to protect tabular data \citep{de_wolf_-argus_2018}, and μ-ARGUS for protecting microdata \citep{hundepool_-argus_2018}. The software appears to be widely used in statistical agencies in Europe. An open-source R package, \texttt{sdcMicro}, implements a full suite of tools needed to apply SDL, from computation of risk measures, including \(k\)-anonymity and \(\ell\)-diversity, to implementation of SDL methods and the computation of data quality measures \citetext{\citealp[ ]{templ_statistical_2015}; \citealp{templ_sdcmicro_2020}}.
+
+Simpler tools, focusing on removing direct identifiers, can be found at J-PAL for Stata (\href{https://github.com/J-PAL/stata_PII_scan}{stata\_PII\_scan}) and R (\href{https://github.com/J-PAL/PII-Scan}{PII-scan}), and at Innovations for Poverty Action (IPA) for Python or Windows (\href{https://github.com/PovertyAction/PII_detection}{PII\_detection}) \citep{j-pal_j-palstata_pii_scan_2020, j-pal_j-palpii-scan_2020, innovations_for_poverty_action_povertyactionpii_detection_2020}.
+
+A number of R packages facilitate generation of synthetic data. \citet{raab_practical_2016} and \citet{nowok_synthpop_2016} provide \texttt{synthpop}, a flexible and up-to-date package with methods for generating synthetic microdata. The R package \texttt{simPop} \citet{templ_simpop_2019} can also generate synthetic populations from aggregate data, which can be useful for testing SDL systems on non-sensitive data. In some cases, one might also consider using general-purpose software for multiple imputation for data synthesis.\footnote{See ``\href{https://stats.idre.ucla.edu/stata/seminars/mi_in_stata_pt1_new/}{Multiple imputation in Stata}'' or the \texttt{mice} package in R \citep{buuren_mice_2011}.}
+
+Many of the methods described in this chapter are technical and require statistical and programming expertise. If that expertise is not already available among staff, some institutions provide guidance to researchers who wish to apply SDL techniques.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+There is now a greater demand for all kinds of data. More than ever before, scholars and analysts have the tools to use data to better understand the economy and society and to inform policy. Alongside these advances, data custodians find themselves under pressure to make databases available to outsiders. However, the pressure to make data available is not always accompanied by the resources, tools, or expertise needed to do so safely.
+
+The same advances driving these new demands have a darker side. Computing power together with the availability of detailed outside data make it easier than ever for attackers to exploit improperly protected data. Therefore, when making data available for research, agency stewards must take great care to also protect the subjects in the data. This chapter provides an overview of techniques traditionally used to modify the data to achieve that goal. There is a legitimate concern that some of the methods discussed here cannot protect against all possible attacks made possible with modern computing power. Those concerns animate the discussion of formal methods that yield provable privacy guarantees elsewhere in this Handbook.
+
+\hypertarget{about-the-authors-1}{%
+\section*{About the Authors}\label{about-the-authors-1}}
+\addcontentsline{toc}{section}{About the Authors}
+
+\href{http://ianschmutte.org/}{Ian M. Schmutte} is Associate Professor in the Department of Economics at the University of Georgia. Schmutte is currently working with the US Census Bureau on new methods for protecting confidential data. His research has appeared in the \emph{American Economic Review}, \emph{Journal of Labor Economics}, \emph{Journal of Human Resources}, \emph{Journal of Business \& Economic Statistics}, and the \emph{Brookings Papers on Economic Activity}.
+
+\href{https://lars.vilhuber.com/}{Lars Vilhuber} is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University's Economics Department. He is also the American Economic Association's Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market. He also has extensive experience in the application of privacy-preserving publication and access to restricted data. He is chair of the scientific committee of the French restricted-access system \href{https://casd.eu}{CASD}, member of the governing board of the Canadian Research Data Centre Network (\href{https://crdcn.org}{CRDCN}), and incoming chair of the American Statistical Association`s \href{https://community.amstat.org/cpc/home}{Committee on Privacy and Confidentiality}. Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D.~in Economics from Université de Montréal.
+
+\hypertarget{acknowledgements}{%
+\section*{Acknowledgements}\label{acknowledgements}}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+This chapter draws on \citet{abowd_introductory_2019} and the INFO7470 class at Cornell University \citep{abowd_session_2016}. We gratefully acknowledge the support of Alfred P.~\href{https://sloan.org/grant-detail/6845}{Sloan Foundation Grant G-2015-13903} and \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848}{National Science Foundation (NSF) Grant SES-1131848} for the earlier work.
+
+\hypertarget{disclaimer}{%
+\section*{Disclaimer}\label{disclaimer}}
+\addcontentsline{toc}{section}{Disclaimer}
+
+The views expressed in this paper are those of the authors and not those of the US Census Bureau or other sponsors.
+
+\putbib
+
