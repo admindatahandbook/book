@@ -1,7 +1,5 @@
 \documentclass[11pt, twoside]{book}
 \usepackage[utf8]{inputenc}
-\usepackage{adjustbox}
-\usepackage{ltablex}
 \usepackage{rotating}
 
 
@@ -32,18 +30,30 @@
 
 
 % page margins, including .125in bleed on the 3 non-binding sides 
-\usepackage[paperheight=9.25in,paperwidth=7.125in,top=.875in,bottom=.875in,inner=.75in,outer=.875in]{geometry}
-%\usepackage[cam,letter,center]{crop}
+%For 9.21x6.14 size:
+\usepackage{geometry}
+\geometry{paperheight=9.46in,paperwidth=6.265in,top=0.875in,bottom=0.875in,inner=.75in,outer=.875in}
 
+%Lists: spacing and indents
+\usepackage{enumitem}
+\setlist{itemsep=0pt, topsep=0pt, \parskip, leftmargin=0.25in}
+\setlist[itemize]{parsep=0pt}
+\setlist[enumerate]{parsep=0pt}
 
-% lists:
-%\usepackage{enumitem}
-% tables
+% Tables
+\usepackage{adjustbox}
+\usepackage{multirow}
+%\usepackage{ltablex}
+\usepackage{rotating}
 \usepackage{booktabs}
 \usepackage{array}
-
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
-\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}} %column with fixed width and top left alignment
+\newcolumntype{M}[1]{>{\raggedright\arraybackslash}m{#1}}
+%column with fixed width and center left alignment
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X} %column with adjustable width and top left alignment
+\renewcommand{\arraystretch}{1.8} % space between table rows
 
 % headers and footers
 \usepackage{fancyhdr}
@@ -57,43 +67,23 @@
 \renewcommand{\chaptername}{CHAPTER}
 
 %%%% Section and chapter titles
-%\titleformat*{\part}{\LARGE\sffamily\bfseries}
-%\renewcommand{\part}{\sffamily}
 %Format chapter titles on chapter title pages
 \titleformat{\chapter}[display]
-  {\Large\sffamily}{\chaptertitlename\ \thechapter}{14pt}{\semiHuge\bfseries}
+  {\Large\sffamily}{\chaptertitlename\ \thechapter}{14pt}{\semiHuge\bfseries\raggedright}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
 %Set heading styles
 \titleformat*{\section}{\Large\sffamily\bfseries\parindent0pt}
 \titleformat*{\subsection}{\large\sffamily\bfseries}
 \titleformat*{\subsubsection}{\normalsize\sffamily\bfseries}
+%Part headings in SF font
+\newcommand{\partline}[1]{\cftaddtitleline{toc}{part}{\sffamily #1}{}\part*{\sffamily #1}\pdfbookmark[part]{#1}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\input{includes/preamble-extra.tex} % used for non-pandoc compile only
-\input{includes/preamble.tex}
+\input{includes/preamble.tex} %contains settings for bibliography and tables
 
-%%%%% bib
-\setlength{\bibsep}{0.0pt}
-\setlength{\bibhang}{6pt}
-
-\renewcommand{\bibpreamble}{\footnotesize} 
-\renewcommand{\bibname}{References in Chapter \thechapter}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\setuphead[chapter][align={flushleft, nothyphenated, verytolerant}]
-
-%%%%%Format chapter titles on chapter title pages
-\titleformat{\chapter}[display]
-  {\Large\sffamily}{\chaptertitlename\ \thechapter}{20pt}{\Huge\bfseries}
-\titlespacing*{\chapter}{0pt}{0pt}{40pt}
-%%%%%Set heading styles
-\titleformat*{\section}{\LARGE\sffamily\bfseries\parindent0pt}
-\titleformat*{\subsection}{\Large\sffamily\bfseries}
-\titleformat*{\subsubsection}{\large\sffamily\bfseries}
-%Part headings in SF
-\newcommand{\partline}[1]{\cftaddtitleline{toc}{part}{\sffamily #1}{}\part*{\sffamily #1}\pdfbookmark[part]{#1}{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%% Setting headers and footers 
 % use after geometry to get right size
@@ -126,29 +116,32 @@
   \renewcommand{\headrulewidth}{0pt}}
 
 %%%%%% Title page:
-% Formatting the title of the book to flush left
-%\pretitle{ \begin{flushleft}\LARGE\sffamily  }
-%\posttitle{ \par \end{flushleft} \vskip 2em}
-
 % Formatting the author list
 \usepackage{changepage}
 \preauthor{ }
 \DeclareRobustCommand{\authorthing}
-{\begin{flushleft}\Large
-\begin{adjustwidth}{-.16cm}{}
-    \begin{tabular}{l}
-    %\setlength{\tabcolsep}{1pt}
-    Shawn Cole \\ Iqbal Dhaliwal \\ Anja Sautmann \\ Lars Vilhuber 
-\end{tabular}
+{\begin{adjustwidth}{0cm}{}
+    Shawn Cole \\ Iqbal Dhaliwal \\ Anja Sautmann \\ Lars Vilhuber
 \end{adjustwidth}
-\end{flushleft}
-}
 \postauthor{}
+}
+% % Formatting the author list
+% \usepackage{changepage}
+% \preauthor{ }
+% \DeclareRobustCommand{\authorthing}
+% {\begin{flushleft}\Large
+% \begin{adjustwidth}{-.16cm}{}
+%     \begin{tabular}{l}
+%     %\setlength{\tabcolsep}{1pt}
+%     Shawn Cole \\ Iqbal Dhaliwal \\ Anja Sautmann \\ Lars Vilhuber 
+% \end{tabular}
+% \end{adjustwidth}
+% \end{flushleft}
+% }
+% \postauthor{}
 
-%%%%%Title here
-% Title page
+% Title
 \pretitle{ \begin{flushleft}\LARGE\sffamily}
-
 \title{ \Large \uppercase{Handbook on} \\\Huge\bfseries {Using Administrative Data \\ for Research and \\ Evidence-based Policy}}
 \posttitle{ \par \end{flushleft} \vskip 2em} 
 
@@ -188,8 +181,6 @@
 \renewcommand{\cfttoctitlefont}{\sffamily\huge\bfseries}
 \renewcommand{\cftchapfont}{\sffamily \bfseries}
 \renewcommand{\cftchappagefont}{\normalfont \small}
-%\renewcommand{\cftchapdotsep}{\cftdotsep} 
-%\renewcommand{\cftpartleader}{\cftdotfill{}} % for parts
 
 %this keeps the toc from adding extra stuff (subsections)
 \setcounter{tocdepth}{0}
@@ -214,10 +205,32 @@
 \input{includes/frontmatter}
 
 % When compiling the whole thing from the master, uncomment this
-\input{_main.tex}
+%\input{_main.tex}
 
 % when compiling individual pieces, uncomment these, as needed
 % == CHAPTERS ==
+\input{chapters/01_about.tex}
+\input{chapters/02_handbook_acknowledgements.tex}
+\input{chapters/03_foreword.tex}
+\input{chapters/04_mainmatter.tex}
+\input{chapters/05_intro.tex}
+\input{chapters/06_part-special-topics.tex}
+\input{chapters/07_security.tex}
+\input{chapters/08_dua.tex}
+\input{chapters/09_irb.tex}
+\input{chapters/10_discavoid.tex}
+\input{chapters/11_diffpriv.tex}
+\input{chapters/12_part-case-studies.tex}
+\input{chapters/13_iab.tex}
+\input{chapters/14_olda.tex}
+\input{chapters/15_nbirdt.tex}
+\input{chapters/16_pcri.tex}
+\input{chapters/17_ahc.tex}
+\input{chapters/18_sfusd.tex}
+\input{chapters/19_cct.tex}
+\input{chapters/20_dime.tex}
+\input{chapters/21_imf.tex}
+\input{chapters/22_indonesia.tex}
 
 
 
@@ -225,7 +238,7 @@
 %
 \bibliography{packages.bib,ideahandbook.bib}
 
-%\addcontentsline{toc}{chapter}{Index}
+\addcontentsline{toc}{chapter}{Index}
 \printindex
 
 \end{document}

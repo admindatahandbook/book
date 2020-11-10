@@ -1,0 +1,28 @@
+% Creates a table with a lot of text and uneven columns.
+% see oldatable1 for output.
+%*************************
+
+\begin{table}[t] % top alignment
+\caption{\label{tab:xx}This is the table caption.} \vspace{-2pt}  
+%vspace reduces the distance between caption and table a little.
+% standard table text size:
+%\small
+%smaller text size:
+%\footnotesize % use this if possible
+\fontsize{9}{10}\selectfont % this will compress the text a bit to make big tables more readable.
+%\fontsize{9}{9}\selectfont %compresses text even more. use only in exceptional circumstances.
+%\renewcommand{\arraystretch}{1.4} % use values less than 1.8 to reduce table length by reducing space between rows. do not use less than 1.2.
+\begin{tabularx}{1\textwidth}{YP{3.7cm}YY} %this specifies 4 columns with top left aligned text. Y columns are "self-sizing". P{xx} columns take the size in {}. Use M{x} for vertically centered text. 
+\toprule %use to start table
+xx & xx & xx  & xx\\
+\midrule % middle of the table line
+xx & xx & xx & xx\\
+xx & xx & xx & xx\\
+
+\bottomrule % bottom of the table line
+\end{tabularx}
+\vspace{1pt}
+ %sets notes off the table
+  
+{\footnotesize \textit{Notes:} These are the table notes.}
+\end{table}
