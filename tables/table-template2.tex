@@ -1,0 +1,28 @@
+% Creates a table with few columns and a list on the right, a "header" on the left.
+%*************************
+% See oldatable2 for an example.
+\begin{table}[t] % top alignment
+\caption{\label{tab:xx}This is the table caption.} \vspace{-2pt}  %vspace reduces the distance between caption and table a little.
+% standard table text size:
+\small
+%smaller text size:
+%\footnotesize % use this if possible
+%\fontsize{9}{10}\selectfont % this will compress the text a bit to make big tables more readable.
+\begin{tabularx}{1\textwidth}{P{.25\textwidth}Y} % here the top alignment of P is  ignored - multirow needs own alignment and sizing command
+    \toprule
+    Header 1 & Header 2\\
+    \midrule %span 3 rows, 
+     \\multirow[t]{3}{.25\textwidth}{Some long text here on first list w footnote\textsuperscript{1}} &    
+     List entry on right \citep{hawley2019} \\ %the multirow command allows text in the first column to go over several rows on the right.
+       & Other list entry on right  \\
+        & Third list entry on right \\\midrule
+     \multirow[t]{2}{.25\textwidth}{Some more long text here to describe second list} &    
+     List entry on right \\ 
+       & Other list entry on right  \\
+        & Third list entry on right \\
+    \bottomrule
+\end{tabularx}
+\vspace{1pt}
+
+{\footnotesize \textsuperscript{1}This adds a footnote somewhere in the table.}
+\end{table}

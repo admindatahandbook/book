@@ -1,13 +1,13 @@
 Example,In this Handbook,Removal of direct identifiers,Removal of quasi-identifiers,Suppression,Coarsening,Swapping,Sampling,Noise infusion,Synthetic Data
-IAB on-site access,Yes,Yes,No,Some variables,"Yes (birth date, residence, industry)",No,Yes,No,No
+IAB on-site access,Yes,Yes,No,Some variables,Some,No,Yes,No,No
 IAB Scientific Use Files,Yes,Yes,Yes,More variables,More,No,Yes,No,No
-OLDA,Yes,Yes,Some,Some case-specific suppressions,Yes (birth date),No,No,No,No
-NBIRDT,Yes,Yes, ,Substantial (only retention of necessary variables),"Yes (e.g. postal codes, dates)",No,No,No,No
-PCRI,Yes,Yes, ,No, ,No,No,No,No
-Aurora public-use file,Yes,(per HIPAA),Some,Substantial (only retention of necessary variables),"Yes (age bins, average characteristics)",No,No,No,No
-Stanford-SFUSD,Yes,Not always,(per FERPA),Substantial (only retention of approved variables),No,No,No,No,No
-Cape Town,Yes,When possible, , ,Sometimes (aggregation), ,No,No, 
-DIME/World Bank,Yes,"Encouraged internally, required for public posting","Yes, for public posting", , , , ,Being considered, 
-Survey of Consumer Finances,No,Yes, ,Some case-specific suppressions,Yes,No,Yes,No,Yes
-American Community Survey,No,Yes, ,No,Yes,Yes,Yes,No,Some
-Quarterly Workforce Indicators,No,Yes,No,Some case-specific suppressions,Yes (aggregate data),No,No,Yes,No
+OLDA,Yes,Yes,Some,Some case-specific suppressions,Dates,No,No,No,No
+NBIRDT,Yes,Yes,--- ,Substantial \newline (only retention of necessary variables),Some,No,No,No,No
+PCRI,Yes,Yes, ---,No, ---,No,No,No,No
+Aurora public-use file,Yes,(per HIPAA),Some,Substantial \newline (only retention of necessary variables),Some,No,No,No,No
+Stanford-SFUSD,Yes,Not always,(per FERPA),Substantial \newline(only retention of approved variables),No,No,No,No,No
+Cape Town,Yes,When possible, ---,--- ,Some, ---,No,No, ---
+DIME/World Bank,Yes,Yes,Yes,--- ,--- , ---, ---,Being considered, ---
+Survey of Consumer Finances,No,Yes,--- ,Some case-specific suppressions,Yes,No,Yes,No,Yes
+American Community Survey,No,Yes, ---,No,Yes,Yes,Yes,No,Some
+Quarterly Workforce Indicators,No,Yes,No,Some case-specific suppressions,Yes,No,No,Yes,No
