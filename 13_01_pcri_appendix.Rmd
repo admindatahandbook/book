@@ -10,7 +10,7 @@ cat("\\FloatBarrier\\newpage")
 
 The following tables and figures, from @jeng2015, provide a summary overview of the data collected on private capital firms, funds, and portfolio companies. In particular, the PCRI focuses on buyouts, growth equity, and venture capital investing.
 
-```{r pcrifigurea1, echo=FALSE, out.width='100%', fig.cap='Number of Private Capital Firms by Year Founded',eval=knitr::is_html_output() }
+```{r pcrifigurea1, echo=FALSE, fig.align = 'center', fig.cap='Number of Private Capital Firms by Year Founded',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigurea1web.png')
 ```
 ```{r pcrifigurea1-tex,echo=FALSE,results='asis'}
@@ -52,7 +52,7 @@ cat("\\input{./tables/pcri/pcritablea2.tex}")
 ```
 
 
-```{r pcrifigurea2, echo=FALSE, out.width='100%',fig.cap='Funds by Region (%)',eval=knitr::is_html_output() }
+```{r pcrifigurea2, echo=FALSE, fig.align = 'center', fig.cap='Funds by Region (N = 25,238)',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigurea2web.png')
 ```
 ```{r pcrifigurea2-tex,echo=FALSE,results='asis'}
@@ -65,7 +65,7 @@ if ( knitr::is_latex_output() ) {
 ```
 
 
-```{r pcrifigurea3, echo=FALSE, out.width='100%', fig.cap='Funds by Industry (%)',eval=knitr::is_html_output() }
+```{r pcrifigurea3, echo=FALSE, out.width='100%', fig.align = 'center', fig.cap='Funds by Industry (N = 12,333)',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigurea3web.png')
 ```
 
