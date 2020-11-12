@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-11-05"
+date: "2020-11-12"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -3070,8 +3070,8 @@ The commercial sources include the Emerging Markets Private Equity Association (
 <span style="font-style: italic;">Note: </span> <sup></sup> As of 2015. Source: @jeng2015.</td></tr></tfoot>
 </table>
 
-<div class="figure">
-<img src="./assets/pcri/pcrifigure1web.png" alt="Overlap of private capital firms in PCRI database by source of information" width="90%" />
+<div class="figure" style="text-align: center">
+<img src="./assets/pcri/pcrifigure1web.png" alt="Overlap of private capital firms in PCRI database by source of information" width="511" />
 <p class="caption">(\#fig:pcrifigure1)Overlap of private capital firms in PCRI database by source of information</p>
 </div>
 
@@ -3338,8 +3338,8 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 The following tables and figures, from @jeng2015, provide a summary overview of the data collected on private capital firms, funds, and portfolio companies. In particular, the PCRI focuses on buyouts, growth equity, and venture capital investing.
 
-<div class="figure">
-<img src="./assets/pcri/pcrifigurea1web.png" alt="Number of Private Capital Firms by Year Founded" width="100%" />
+<div class="figure" style="text-align: center">
+<img src="./assets/pcri/pcrifigurea1web.png" alt="Number of Private Capital Firms by Year Founded" width="770" />
 <p class="caption">(\#fig:pcrifigurea1)Number of Private Capital Firms by Year Founded</p>
 </div>
 
@@ -3502,16 +3502,16 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
 </table>
 
 
-<div class="figure">
-<img src="./assets/pcri/pcrifigurea2web.png" alt="Funds by Region (%)" width="100%" />
-<p class="caption">(\#fig:pcrifigurea2)Funds by Region (%)</p>
+<div class="figure" style="text-align: center">
+<img src="./assets/pcri/pcrifigurea2web.png" alt="Funds by Region (N = 25,238)" width="567" />
+<p class="caption">(\#fig:pcrifigurea2)Funds by Region (N = 25,238)</p>
 </div>
 
 
 
-<div class="figure">
-<img src="./assets/pcri/pcrifigurea3web.png" alt="Funds by Industry (%)" width="100%" />
-<p class="caption">(\#fig:pcrifigurea3)Funds by Industry (%)</p>
+<div class="figure" style="text-align: center">
+<img src="./assets/pcri/pcrifigurea3web.png" alt="Funds by Industry (N = 12,333)" width="100%" />
+<p class="caption">(\#fig:pcrifigurea3)Funds by Industry (N = 12,333)</p>
 </div>
 
 
