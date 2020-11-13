@@ -122,7 +122,7 @@ iabtable1 <- function(){
       pack_rows("Sample of Integrated Labour Market Biographies (SIAB)",1,3) %>%
       pack_rows("Establishment History Panel (BHP)",4,6) %>%
       pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
-      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).")
+      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).", footnote_as_chunk = T)
     
   } else {
     outfile <- "./assets/iab/iabtable1.tex"
