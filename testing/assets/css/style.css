@@ -45,6 +45,12 @@ pre code {
   font-size: 45px;
 }
 
+/* used for forewor*/
+.indentforeword {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 /* used for boxes within text */
 
 .bbox {
@@ -59,16 +65,9 @@ pre code {
 
 /* used to add invisible data elements */
 
-
-
 .invisible, #invisible {
   display: none;
 }
-
-.indentforeword {
-    margin-left: 1em;
-}
-
 
 /* used for citations */
 #myCitation {
