@@ -3,7 +3,7 @@
 
 # infile <- "./assets/intro/introtable1.csv"
 # introt1data<-read.csv(infile,sep=";")
-# pdfdpi=600
+pdfdpi=600
 # 
 # # copy it for LaTeX if necessary
 #     outcsv  <- gsub("assets","tables",infile)
@@ -91,7 +91,7 @@ intrograph1 <- ggplot(chetty2,aes(Year,adminpct,color=Journal)) +
 ggsave("./figures/intrograph1.png",intrograph1,dpi=300)
 pdffile <- "./figures/intrograph1.pdf"
 if ( ! file.exists(pdffile) ) {
-  ggsave(pdffile,iabfigure1,dpi=pdfdpi)
+  ggsave(pdffile,intrograph1,dpi=pdfdpi)
 }
 
 

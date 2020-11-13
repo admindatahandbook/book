@@ -21,13 +21,13 @@ An increasing fraction of academic studies conducted in high-income countries an
 #intrograph1
 #knitr::include_graphics('./figures/intrograph1web.png')
 if ( knitr::is_html_output() ) {
-knitr::include_graphics('./assets/intro/intrograph1web.png')
+knitr::include_graphics('./assets/intro/Chetty-graph-web.png')
 } 
 if ( knitr::is_latex_output() ) {
-  if ( ! file.exists('./figures/intro/intrograph1.png')) {
-    file.copy('./assets/intro/intrograph1.png','./figures/intrograph1.png')
+  if ( ! file.exists('./figures/Chetty-graph.png')) {
+    file.copy('./assets/intro/Chetty-graph.png','./figures/Chetty-graph.png')
   }
-  knitr::include_graphics('./figures/intrograph1.png')
+  knitr::include_graphics('./figures/Chetty-graph.png')
 } 
 ```
 
