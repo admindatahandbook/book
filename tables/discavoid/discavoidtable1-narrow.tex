@@ -1,0 +1,16 @@
+
+\begin{table}
+\tiny\renewcommand{\arraystretch}{0.75}
+\caption{\label{tab:overviewtable}Summary of SDL Methods}
+\centering
+\begin{tabulary}{\ourtablewidth}{P{5em}LLLLLLLLL}
+	\toprule
+	Example & In this Handbook & Removal of direct identifiers & Removal of quasi-identifiers & Suppression & Coarsening & Swapping & Sampling & Noise infusion & Synthetic Data\\
+	\midrule
+		\csvreader[late after line=\\]{./tables/discavoid/discavoid_table1.csv}{}%
+		{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv &\csvcolv &\csvcolvi &\csvcolvii &\csvcolviii &\csvcolix &\csvcolx \\}%
+	\bottomrule
+	\end{tabulary}
+	%	\csvautobooktabular{./tables/discavoid/discavoid_table1.csv}
+\end{table}
+

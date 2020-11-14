@@ -3,7 +3,7 @@
 
 %-------------- making an index ------------------------
 \usepackage{imakeidx}
-\makeindex[intoc]
+\makeindex
 
 \usepackage{setspace}
 \usepackage{ragged2e}
@@ -27,26 +27,24 @@
 % addtional packages for the book
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 
-\usepackage{longtable}
-\usepackage{multirow}
+%\usepackage{longtable}
 \usepackage{wrapfig}
 \usepackage{float}
 \usepackage{colortbl}
 \usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
+%\usepackage{tabu}
+% \usepackage{threeparttable}
+% \usepackage{threeparttablex}
 %\usepackage[normalem]{ulem}
-\usepackage{makecell}
+%\usepackage{makecell}
 \usepackage{xcolor}
 \usepackage{placeins} % for FloatBarrier
 
 % 
 % for tables
 %
-
 \usepackage{csvsimple}
-\usepackage{tabulary}
+%\usepackage{tabulary}
 
 %
 % Workaround
@@ -59,7 +57,7 @@
 % 
 
 %%%%% bib
-\usepackage[]{natbib}
+\usepackage{natbib}
 \setcitestyle{round}
 
 \usepackage[sectionbib,globalcitecopy]{bibunits}
@@ -71,15 +69,10 @@
 \renewcommand{\bibpreamble}{\footnotesize} 
 \let\oldputbib\putbib
 \renewcommand{\putbib}{\FloatBarrier\clearpage\oldputbib}
-%\renewcommand{\bibname}{References in Chapter \thechapter}
-
-
-
-
-% 
+ 
 % Change name of bibliography
+\renewcommand{\bibname}{References in Chapter \thechapter}
 
-\renewcommand{\bibname}{References}
 
 %
 % Chapter author tables
@@ -123,7 +116,7 @@
 
 % set default figure placement to htbp
 \makeatletter
-\def\fps@figure{htbp}
+\def\fps@figure{t}
 \makeatother
 
 
@@ -214,6 +207,5 @@
 %
 % this is needed for BeginKnitrBlock
 %
-\let\BeginKnitrBlock\begin
-\let\EndKnitrBlock\end
-
+%\let\BeginKnitrBlock\begin
+%\let\EndKnitrBlock\end
