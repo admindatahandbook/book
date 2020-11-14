@@ -1,6 +1,6 @@
 \documentclass[11pt, twoside]{book}
 \usepackage[utf8]{inputenc}
-\usepackage{rotating}
+% \usepackage{rotating}
 
 
 %captioning
@@ -35,10 +35,10 @@
 \geometry{paperheight=9.46in,paperwidth=6.265in,top=0.875in,bottom=0.875in,inner=.75in,outer=.875in}
 
 %Lists: spacing and indents
-\usepackage{enumitem}
-\setlist{itemsep=0pt, topsep=0pt, \parskip, leftmargin=0.25in}
-\setlist[itemize]{parsep=0pt}
-\setlist[enumerate]{parsep=0pt}
+% \usepackage{enumitem}
+% \setlist{itemsep=0pt, topsep=0pt, \parskip, leftmargin=0.25in}
+% \setlist[itemize]{parsep=0pt}
+% \setlist[enumerate]{parsep=0pt}
 
 % Tables
 \usepackage{adjustbox}
@@ -175,6 +175,11 @@
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{.2cm plus 1mm minus 1mm}
 
+%Lists and items: relies on enumitem, sets paragraph indents and spacing
+\usepackage{enumitem}
+\setlist{itemsep=0pt, topsep=0pt, leftmargin=0.25in}
+\setlist[itemize]{parsep=0pt}
+\setlist[enumerate]{parsep=0pt}
 
 %%%%% TOC
 \usepackage{tocloft}
