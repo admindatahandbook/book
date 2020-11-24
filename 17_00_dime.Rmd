@@ -26,7 +26,7 @@ The experience in +DIME| shows that the issue of *access* to administrative data
 
 In no small part, DIME engagements seek to build administrative data systems that create research-quality data. Data integration increases value for research and policymaking and helps sustain longer-term efforts for data generation. While in the past, +impact_evaluations| relied heavily on baseline and follow-up surveys, today's data sets include spatially integrated data at various frequencies that are increasingly tailored to support a process of adaptive research and policymaking. As a result, the use of administrative data has increased in recent years, as shown in Figure \@ref(fig:dimefigure1), from about 15 percent of impact evaluations to more than 35 percent. And whereas administrative data in the past could be used mainly for A/B testing, integrated data sets can be used to assess biases in coverage and to evaluate policy impact.
 
-```{r dimefigure1, echo=FALSE, out.width='100%', fig.cap='Use of administrative data at DIME'}
+```{r dimefigure1, echo=FALSE, out.width='100%', fig.cap='DIME impact evaluations using administrative data: analysis of impact evaluations that collected administrative data by evaluation start year'}
 if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/dime/dimefigure1web.png')
 }
@@ -134,7 +134,7 @@ In addition to the standardized training program, +DIME_Analytics| offers regula
 
 By investing in +DIME_Analytics|, +DIME| aims to improve both its own portfolio and the quality of development research more broadly. All the resources developed by DIME Analytics are shared publicly through the [DIME Wiki](https://dimewiki.worldbank.org/), [Development Research in Practice: The DIME Analytics Data Handbook](https://worldbank.github.io/dime-data-handbook/), and the annual [Manage Successful Impact Evaluations course](https://www.worldbank.org/en/events/2019/06/10/manage-successful-impact-evaluations). There are few other development research institutions that develop and publicly share research protocols and trainings. DIME adheres to this unusual standard of transparency so that the practices are continuously improved through public scrutiny and feedback and so that high-quality research tools and practices are globally available and accessible. There is significant demand for such public goods: Figure \@ref(fig:dimefigure4) shows the global reach of the DIME Wiki, which has attracted more than 128,000 global users since it was established in 2018.
 
-```{r dimefigure4, echo=FALSE, out.width='100%', fig.cap='Global DIME Wiki usership'}
+```{r dimefigure4, echo=FALSE, out.width='100%', fig.cap='Global DIME Wiki usership: most active cities (outside D.C. area)'}
 if ( knitr::is_html_output() ) {
 knitr::include_graphics('./assets/dime/dimefigure4web.png')
 }
@@ -185,7 +185,7 @@ To evaluate technical merit, all proposed +i2i| projects go through a double-bli
 
 ```{r dimefigure5, echo=FALSE, out.width='100%', fig.cap='Distribution of technical ratings of impact evaluation proposals'}
 if ( knitr::is_html_output() ) {
-knitr::include_graphics('./assets/dime/Figure5-mod.png')
+knitr::include_graphics('./assets/dime/dimefigure5web.png')
 }
 if ( knitr::is_latex_output() ) {
     if ( ! file.exists('./figures/dimeFigure5-mod.pdf')) {
