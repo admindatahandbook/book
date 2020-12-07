@@ -161,5 +161,6 @@ discavoidtable1<-function(){
                     "Sampl-\ning",
                     "Noise Infus-\nion",
                     "Synth-\netic Data")) %>%
-  kable_styling(full_width = F)
+  kable_styling(full_width = F) %>%
+    footnote(general="![](./assets/discavoid/yesweb.png) = Yes, ![](./assets/discavoid/partialweb.png) = Partially, ![](./assets/discavoid/noweb.png) = No, --- = No Info", footnote_as_chunk = T)
 }
