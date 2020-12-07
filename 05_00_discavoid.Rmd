@@ -101,7 +101,7 @@ In a regression, a researcher includes a set of dummies for interacting occupati
 
 +Coarsening| takes detailed attributes that can serve as quasi-identifiers and collapses them into a smaller number of categories. Computer scientists call this *+generalizing|*, and it is also sometimes referred to as *+masking|*. Coarsening can be applied to quasi-identifiers to prevent re-identification or to attributes to prevent accurate attribute inference. When applied to quasi-identifiers, the concern is that an outsider could use detailed quasi-identifiers to single-out a particular record and learn to whom it belonged. By coarsening quasi-identifiers, the set of matching records is increased, raising uncertainty about any re-identified individual's true identity. In principle, all variables can serve as quasi-identifiers, and the concept of *+k-anonymity|* introduced by @sweeney_achieving_2002 is a useful framework for thinking about how to implement coarsening and other microdata SDL. K-anonymity is discussed in the section on [disclosure risk][disclosure risk].
 
-Coarsening is common in microdata releases. Generally, it may make sense to consider coarsening variables with heavy tails (earnings, payroll), residuals (truncate range, suppress labels of range). In public-use microdata from the American Community Survey, geographic areas are coarsened until all such areas represent at least 100,000 individuals [@us_census_bureau_finalpublic_2011]. In many data sources, characteristics like age and income, are reported in bins even when the raw data are more detailed. Topcoding is a common type of coarsening in which variables, such as incomes above a certain threshold, are replaced with some topcoded value (e.g., US\$200,000 in the Current Population Survey). When releasing model-based estimates, rounding (another form of coarsening) can satisfy statistical best practice (not releasing numbers beyond their statistical precision) as well as disclosure avoidance principles by preventing inferences that could be too precise about specific records in the data.
+Coarsening is common in microdata releases. Generally, it may make sense to consider coarsening variables with heavy tails (earnings, payroll), residuals (truncate range, suppress labels of range). In public-use microdata from the American Community Survey, geographic areas are coarsened until all such areas represent at least 100,000 individuals [@us_census_bureau_finalpublic_2011]. In many data sources, characteristics like age and income, are reported in bins even when the raw data are more detailed. Topcoding is a common type of coarsening in which variables, such as incomes above a certain threshold, are replaced with some topcoded value (e.g., US\$200,000 in the Current Population Survey). When releasing model-based estimates, rounding (another form of coarsening) can satisfy statistical best practice (not releasing numbers beyond their statistical precision) as well as disclosure avoidance principles by preventing inferences that could be too precise about specific records in the data.
 
 Whether coarsening is ignorable or not depends on the analysis to be performed. Consider the case in which incomes are topcoded above the 95th percentile. This form of SDL is ignorable with respect to estimating the 90th percentile of the income distribution (and all other quantiles below the 95th). However, coarsening age is not ignorable if the goal is to conduct an analysis of behavior of individuals around some age or date-of-birth cutoff. Coarsening rules should therefore bear in mind the intended analysis for the data and may be usefully paired with restricted-access protocols that allow trusted researchers access to the more detailed data. See @burkhauser_estimating_2011 for an example of the impact of topcoding on estimates of earnings inequality.
 
@@ -138,12 +138,10 @@ Synthetic data have been used in the Federal Reserve Board's Survey of Consumer 
 Table \@ref(tab:overviewtable) shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources.
 
 ```{r overviewtable, echo=FALSE,results='asis'}
-# discavoidtable is readin above
+# discavoidtable is read in above
 if ( knitr::is_html_output() ) {
-kable(discavoidtable, caption = "Summary of SDL Methods") %>% 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  scroll_box(width = "100%")
-} 
+discavoidtable1()
+}
 if ( knitr::is_latex_output() ) {
   cat("\\input{./tables/discavoid/discavoidtable1.tex}")
 }
@@ -158,8 +156,6 @@ The design of an SDL system depends on determinations about what constitutes an 
 ### Disclosure Risk
 
 Early definitions of +disclosure_risk| were based on rules and guidelines derived from institutional knowledge, assessment of summary measures, and re-identification experiments [@harris-kojetin_statistical_2005]. Statisticians have subsequently developed more formal models to measure risk of re-identification for specific types of publication and with particular +threat_models|. For instance, @shlomo_assessing_2010 model re-identification risk in survey microdata when an attacker is matching on certain categorical variables.
-
-
 
 Recently, computer scientists and statisticians have introduced more general concepts of disclosure risk and data privacy. Latanya Sweeney proposed the concept of $k$-anonymity [@sweeney_achieving_2002] which defines disclosure risk in terms of the number of records that share the same combination of attributes. If a single record is uniquely identified by some combination of attributes, disclosure risk is high. Sweeney says that a data set can be called $k$-anonymous if for all feasible combinations of attributes, at least $k$ records have that combination. Intuitively, increases in $k$ reduce the risk that observations can be singled out by linking other data sets that contain the same attributes. The concept of $k$-anonymity can provide some guidance when thinking about how to implement the SDL systems described above. For example, if records are uniquely identified by age, race, and gender, then one might collapse age into brackets until there are at least $k>1$ records for each such combination.
 
