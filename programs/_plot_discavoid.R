@@ -151,7 +151,7 @@ for(i in column) {
 
 
 discavoidtable1<-function(){
-  knitr::kable(discavoidt1data, booktabs=T, escape=F, caption="Summary of SDL Methods",
+  knitr::kable(discavoidt1data, booktabs=T, escape=F, caption="Summary of SDL methods",
       col.names = c("","In this \nHand-\nbook",
                     "Remov-\nal of \nDirect \nIdenti-\nfiers",
                     "Remov-\nal of \nQuasi-\nIdenti-\nfiers",
