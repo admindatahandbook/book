@@ -1,11 +1,11 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-11-30"
+date: "2020-12-09"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [packages.bib,ideahandbook.bib,assets/discavoid/discavoid.bib,manual.bib] #Sloan-JPAL.bib
+bibliography: [packages.bib,ideahandbook.bib,manual.bib] #Sloan-JPAL.bib assets/discavoid/discavoid.bib
 csl: chicago-mod.csl
 link-citations: yes
 github-repo: admindatahandbook/book
@@ -210,7 +210,7 @@ The thematic chapters of the Handbook provide guidance on four topics: how to al
 
 [Chapter 2](#security) discusses the hardware and software necessary to provide secure access to data, covering topics such as data encryption, user authorization through security tokens, biometric identification, and secure-room setups. Along with standard safety measures such as password protection, physical security shields the data primarily from unauthorized access, be it malicious hacking or inadvertent looks taken at someone else's screen. Data providers can stipulate or provide the necessary hardware and software in order to keep data secure.
 
-Analytical techniques to protect data deter or prevent unauthorized use. A range of such statistical disclosure limitation methods are described in [chapter 5](#discavoid). The chapter covers techniques to avoid inadvertent identification of individuals, either from the data directly or from summaries, analyses, or visualizations. SDL provides methods to "blur" the data so that individual observations may be obfuscated, but aggregates or analyses (such as averages, counts, or model-based parameters) remain within certain bounds and can be used for meaningful analysis and comparison. Traditional SDL methods are already widely in use, and the chapter describes methods that allow data custodians to assess how much to modify the data to achieve sufficient protection and how much subsequent analyses might be affected. A relatively new approach to this question is differential privacy, described in [chapter 6](#diffpriv). Differentially private methods provide strong promises to prevent outside parties from learning whether any individual is in the data, regardless of the background information available to others. In this it differs from traditional methods, which typically protect against specific, rather than general, methods of breaching privacy. Differentially private methods are being used more and more for releases of tabular data, for instance by the US Census Bureau [@machanavajjhala2008], Google [@erlingsson2014], Apple [@differentialprivacyteam2017], SafeGraph [@safegraph2020], but can also be challenging to implement. [Chapter 6](#diffpriv) provides an overview and details on the advantages and challenges of implementing differential privacy.
+Analytical techniques to protect data deter or prevent unauthorized use. A range of such statistical disclosure limitation methods are described in [chapter 5](#discavoid). The chapter covers techniques to avoid inadvertent identification of individuals, either from the data directly or from summaries, analyses, or visualizations. SDL provides methods to "blur" the data so that individual observations may be obfuscated, but aggregates or analyses (such as averages, counts, or model-based parameters) remain within certain bounds and can be used for meaningful analysis and comparison. Traditional SDL methods are already widely in use, and the chapter describes methods that allow data custodians to assess how much to modify the data to achieve sufficient protection and how much subsequent analyses might be affected. A relatively new approach to this question is differential privacy, described in [chapter 6](#diffpriv). Differentially private methods provide strong promises to prevent outside parties from learning whether any individual is in the data, regardless of the background information available to others. In this it differs from traditional methods, which typically protect against specific, rather than general, methods of breaching privacy. Differentially private methods are being used more and more for releases of tabular data, for instance by the US Census Bureau [@machanavajjhala_privacy_2008], Google [@erlingsson2014], Apple [@differentialprivacyteam2017], SafeGraph [@safegraph2020], but can also be challenging to implement. [Chapter 6](#diffpriv) provides an overview and details on the advantages and challenges of implementing differential privacy.
 
 The chapters on data use agreements and institutional review boards ([chapter 3](#irb) by Kathleen Murphy and [chapter 4](#dua) by Amy O'Hara, respectively) broadly fall under legal protections. Legal protections primarily serve to regulate the use of the data by authorized users.
 
@@ -1620,7 +1620,7 @@ Suppression can also be applied to model-based statistics. For instance, after h
 
 +Coarsening| takes detailed attributes that can serve as quasi-identifiers and collapses them into a smaller number of categories. Computer scientists call this *+generalizing|*, and it is also sometimes referred to as *+masking|*. Coarsening can be applied to quasi-identifiers to prevent re-identification or to attributes to prevent accurate attribute inference. When applied to quasi-identifiers, the concern is that an outsider could use detailed quasi-identifiers to single-out a particular record and learn to whom it belonged. By coarsening quasi-identifiers, the set of matching records is increased, raising uncertainty about any re-identified individual's true identity. In principle, all variables can serve as quasi-identifiers, and the concept of *+k-anonymity|* introduced by @sweeney_achieving_2002 is a useful framework for thinking about how to implement coarsening and other microdata SDL. K-anonymity is discussed in the section on [disclosure risk][disclosure risk].
 
-Coarsening is common in microdata releases. Generally, it may make sense to consider coarsening variables with heavy tails (earnings, payroll), residuals (truncate range, suppress labels of range). In public-use microdata from the American Community Survey, geographic areas are coarsened until all such areas represent at least 100,000 individuals [@us_census_bureau_finalpublic_2011]. In many data sources, characteristics like age and income, are reported in bins even when the raw data are more detailed. Topcoding is a common type of coarsening in which variables, such as incomes above a certain threshold, are replaced with some topcoded value (e.g., US\$200,000 in the Current Population Survey). When releasing model-based estimates, rounding (another form of coarsening) can satisfy statistical best practice (not releasing numbers beyond their statistical precision) as well as disclosure avoidance principles by preventing inferences that could be too precise about specific records in the data.
+Coarsening is common in microdata releases. Generally, it may make sense to consider coarsening variables with heavy tails (earnings, payroll), residuals (truncate range, suppress labels of range). In public-use microdata from the American Community Survey, geographic areas are coarsened until all such areas represent at least 100,000 individuals [@us_census_bureau_finalpublic_2011]. In many data sources, characteristics like age and income, are reported in bins even when the raw data are more detailed. Topcoding is a common type of coarsening in which variables, such as incomes above a certain threshold, are replaced with some topcoded value (e.g., US\$200,000 in the Current Population Survey). When releasing model-based estimates, rounding (another form of coarsening) can satisfy statistical best practice (not releasing numbers beyond their statistical precision) as well as disclosure avoidance principles by preventing inferences that could be too precise about specific records in the data.
 
 Whether coarsening is ignorable or not depends on the analysis to be performed. Consider the case in which incomes are topcoded above the 95th percentile. This form of SDL is ignorable with respect to estimating the 90th percentile of the income distribution (and all other quantiles below the 95th). However, coarsening age is not ignorable if the goal is to conduct an analysis of behavior of individuals around some age or date-of-birth cutoff. Coarsening rules should therefore bear in mind the intended analysis for the data and may be usefully paired with restricted-access protocols that allow trusted researchers access to the more detailed data. See @burkhauser_estimating_2011 for an example of the impact of topcoding on estimates of earnings inequality.
 
@@ -1656,169 +1656,188 @@ Synthetic data have been used in the Federal Reserve Board's Survey of Consumer 
 
 Table \@ref(tab:overviewtable) shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources.
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
-<caption>(\#tab:overviewtable)Summary of SDL Methods</caption>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(\#tab:overviewtable)Summary of SDL methods</caption>
  <thead>
   <tr>
-   <th style="text-align:left;"> Example </th>
-   <th style="text-align:left;"> In this Handbook </th>
-   <th style="text-align:left;"> Removal of direct identifiers </th>
-   <th style="text-align:left;"> Removal of quasi-identifiers </th>
-   <th style="text-align:left;"> Suppression </th>
-   <th style="text-align:left;"> Coarsening </th>
-   <th style="text-align:left;"> Swapping </th>
-   <th style="text-align:left;"> Sampling </th>
-   <th style="text-align:left;"> Noise infusion </th>
-   <th style="text-align:left;"> Synthetic Data </th>
+   <th style="text-align:left;">  </th>
+   <th style="text-align:left;"> In this 
+Hand-
+book </th>
+   <th style="text-align:left;"> Remov-
+al of 
+Direct 
+Identi-
+fiers </th>
+   <th style="text-align:left;"> Remov-
+al of 
+Quasi-
+Identi-
+fiers </th>
+   <th style="text-align:left;"> Supp-
+ress-
+ion </th>
+   <th style="text-align:left;"> Coars-
+ening </th>
+   <th style="text-align:left;"> Swapp-
+ing </th>
+   <th style="text-align:left;"> Sampl-
+ing </th>
+   <th style="text-align:left;"> Noise Infus-
+ion </th>
+   <th style="text-align:left;"> Synth-
+etic Data </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> IAB on-site access </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Some variables </td>
-   <td style="text-align:left;"> Yes (birth date, residence, industry) </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> IAB On-Site Access </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> IAB Scientific Use Files </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> More variables </td>
-   <td style="text-align:left;"> More </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> OLDA </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Some </td>
-   <td style="text-align:left;"> Some case-specific suppressions </td>
-   <td style="text-align:left;"> Yes (birth date) </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/partialweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> NBIRDT </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> Substantial (only retention of necessary variables) </td>
-   <td style="text-align:left;"> Yes (e.g. postal codes, dates) </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> NB-IRDT </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> PCRI </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Aurora public-use file </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> (per HIPAA) </td>
-   <td style="text-align:left;"> Some </td>
-   <td style="text-align:left;"> Substantial (only retention of necessary variables) </td>
-   <td style="text-align:left;"> Yes (age bins, average characteristics) </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> Aurora Public-Use File </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/partialweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Stanford-SFUSD </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Not always </td>
-   <td style="text-align:left;"> (per FERPA) </td>
-   <td style="text-align:left;"> Substantial (only retention of approved variables) </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/partialweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Cape Town </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> When possible </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> Sometimes (aggregation) </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> City of Cape Town </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/partialweb.png) </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> --- </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> DIME/World Bank </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Encouraged internally, required for public posting </td>
-   <td style="text-align:left;"> Yes, for public posting </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> Being considered </td>
-   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> DIME (World Bank) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/partialweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> --- </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Survey of Consumer Finances </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> Some case-specific suppressions </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> American Community Survey </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Some </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> --- </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/partialweb.png) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Quarterly Workforce Indicators </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Some case-specific suppressions </td>
-   <td style="text-align:left;"> Yes (aggregate data) </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/yesweb.png) </td>
+   <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
 </tbody>
-</table></div>
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span> <sup></sup> ![](./assets/discavoid/yesweb.png) = Yes, ![](./assets/discavoid/partialweb.png) = Partially, ![](./assets/discavoid/noweb.png) = No, --- = No Info</td></tr></tfoot>
+</table>
 
 ## Metrics
 
@@ -1829,8 +1848,6 @@ The design of an SDL system depends on determinations about what constitutes an 
 ### Disclosure Risk
 
 Early definitions of +disclosure_risk| were based on rules and guidelines derived from institutional knowledge, assessment of summary measures, and re-identification experiments [@harris-kojetin_statistical_2005]. Statisticians have subsequently developed more formal models to measure risk of re-identification for specific types of publication and with particular +threat_models|. For instance, @shlomo_assessing_2010 model re-identification risk in survey microdata when an attacker is matching on certain categorical variables.
-
-
 
 Recently, computer scientists and statisticians have introduced more general concepts of disclosure risk and data privacy. Latanya Sweeney proposed the concept of $k$-anonymity [@sweeney_achieving_2002] which defines disclosure risk in terms of the number of records that share the same combination of attributes. If a single record is uniquely identified by some combination of attributes, disclosure risk is high. Sweeney says that a data set can be called $k$-anonymous if for all feasible combinations of attributes, at least $k$ records have that combination. Intuitively, increases in $k$ reduce the risk that observations can be singled out by linking other data sets that contain the same attributes. The concept of $k$-anonymity can provide some guidance when thinking about how to implement the SDL systems described above. For example, if records are uniquely identified by age, race, and gender, then one might collapse age into brackets until there are at least $k>1$ records for each such combination.
 

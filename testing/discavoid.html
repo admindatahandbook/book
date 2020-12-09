@@ -24,7 +24,7 @@
 <meta name="author" content="Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber" />
 
 
-<meta name="date" content="2020-11-30" />
+<meta name="date" content="2020-12-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -388,7 +388,7 @@ In a regression, a researcher includes a set of dummies for interacting occupati
 <div id="coarsening" class="section level3">
 <h3><span class="header-section-number">5.2.3</span> Coarsening</h3>
 <p>Coarsening takes detailed attributes that can serve as quasi-identifiers and collapses them into a smaller number of categories. Computer scientists call this <em>generalizing</em>, and it is also sometimes referred to as <em>masking</em>. Coarsening can be applied to quasi-identifiers to prevent re-identification or to attributes to prevent accurate attribute inference. When applied to quasi-identifiers, the concern is that an outsider could use detailed quasi-identifiers to single-out a particular record and learn to whom it belonged. By coarsening quasi-identifiers, the set of matching records is increased, raising uncertainty about any re-identified individual’s true identity. In principle, all variables can serve as quasi-identifiers, and the concept of <em>k-anonymity</em> introduced by <span class="citation">Sweeney (<a href="#ref-sweeney_achieving_2002" role="doc-biblioref">2002</a>)</span> is a useful framework for thinking about how to implement coarsening and other microdata SDL. K-anonymity is discussed in the section on <a href="discavoid.html#disclosure-risk">disclosure risk</a>.</p>
-<p>Coarsening is common in microdata releases. Generally, it may make sense to consider coarsening variables with heavy tails (earnings, payroll), residuals (truncate range, suppress labels of range). In public-use microdata from the American Community Survey, geographic areas are coarsened until all such areas represent at least 100,000 individuals <span class="citation">(U.S. Census Bureau <a href="#ref-us_census_bureau_finalpublic_2011" role="doc-biblioref">2011</a>)</span>. In many data sources, characteristics like age and income, are reported in bins even when the raw data are more detailed. Topcoding is a common type of coarsening in which variables, such as incomes above a certain threshold, are replaced with some topcoded value (e.g., US$200,000 in the Current Population Survey). When releasing model-based estimates, rounding (another form of coarsening) can satisfy statistical best practice (not releasing numbers beyond their statistical precision) as well as disclosure avoidance principles by preventing inferences that could be too precise about specific records in the data.</p>
+<p>Coarsening is common in microdata releases. Generally, it may make sense to consider coarsening variables with heavy tails (earnings, payroll), residuals (truncate range, suppress labels of range). In public-use microdata from the American Community Survey, geographic areas are coarsened until all such areas represent at least 100,000 individuals <span class="citation">(U.S. Census Bureau <a href="#ref-us_census_bureau_finalpublic_2011" role="doc-biblioref">2011</a>)</span>. In many data sources, characteristics like age and income, are reported in bins even when the raw data are more detailed. Topcoding is a common type of coarsening in which variables, such as incomes above a certain threshold, are replaced with some topcoded value (e.g., US$200,000 in the Current Population Survey). When releasing model-based estimates, rounding (another form of coarsening) can satisfy statistical best practice (not releasing numbers beyond their statistical precision) as well as disclosure avoidance principles by preventing inferences that could be too precise about specific records in the data.</p>
 <p>Whether coarsening is ignorable or not depends on the analysis to be performed. Consider the case in which incomes are topcoded above the 95th percentile. This form of SDL is ignorable with respect to estimating the 90th percentile of the income distribution (and all other quantiles below the 95th). However, coarsening age is not ignorable if the goal is to conduct an analysis of behavior of individuals around some age or date-of-birth cutoff. Coarsening rules should therefore bear in mind the intended analysis for the data and may be usefully paired with restricted-access protocols that allow trusted researchers access to the more detailed data. See <span class="citation">Burkhauser et al. (<a href="#ref-burkhauser_estimating_2011" role="doc-biblioref">2011</a>)</span> for an example of the impact of topcoding on estimates of earnings inequality.</p>
 </div>
 <div id="swapping" class="section level3">
@@ -408,87 +408,102 @@ For example, consider the hypothetical health study again, and now suppose the k
 <div id="noise-infusion" class="section level3">
 <h3><span class="header-section-number">5.2.6</span> Noise Infusion</h3>
 <p>Noise infusion can refer to an array of related methods, all of which involve distorting data with randomly distributed noise. There is a key distinction between methods where the microdata are infused with noise (input noise infusion), versus methods where noise is added to functions or aggregates of the data before publication (output noise infusion).</p>
-<p>Noise infusion was developed as a substitute for cell suppression as an approach to protecting tabular summaries of business data. Originally proposed by <span class="citation">Evans, Zayatz, and Slanta (<a href="#ref-evans_using_1998" role="doc-biblioref">1998</a>)</span>, the basic approach assigns each microdata unit (a business establishment) a multiplicative noise factor drawn from a symmetric distribution (e.g., centered on one) and multiplies sensitive (or all) characteristics by that factor. Tabular summaries can then be made from the distorted characteristics. As cell sizes increase, the distortions applied to each unit average out. Thus, while small cells may be quite distorted and thus protected, large cells usually have little distortion. Most cells no longer need to be suppressed. These approaches are used in the US Census Bureau’s Quarterly Workforce Indicators <span class="citation">(Abowd et al. <a href="#ref-abowd_lehd_2009" role="doc-biblioref">2009</a> ; John M Abowd et al. <a href="#ref-abowd_dynamically_2012" role="doc-biblioref">2012</a>)</span> and County Business Patterns with a truncated distribution. When the noise distribution is unbounded, for instance Gaussian, noise infusion may be differentially private (see the <a href="diffpriv.html#diffpriv">chapter on differential privacy</a>).</p>
+<p>Noise infusion was developed as a substitute for cell suppression as an approach to protecting tabular summaries of business data. Originally proposed by <span class="citation">Evans, Zayatz, and Slanta (<a href="#ref-evans_using_1998" role="doc-biblioref">1998</a>)</span>, the basic approach assigns each microdata unit (a business establishment) a multiplicative noise factor drawn from a symmetric distribution (e.g., centered on one) and multiplies sensitive (or all) characteristics by that factor. Tabular summaries can then be made from the distorted characteristics. As cell sizes increase, the distortions applied to each unit average out. Thus, while small cells may be quite distorted and thus protected, large cells usually have little distortion. Most cells no longer need to be suppressed. These approaches are used in the US Census Bureau’s Quarterly Workforce Indicators <span class="citation">(Abowd et al. <a href="#ref-abowd_lehd_2009" role="doc-biblioref">2009</a> ; Abowd, Gittings, et al. <a href="#ref-abowd_dynamically_2012" role="doc-biblioref">2012</a>)</span> and County Business Patterns with a truncated distribution. When the noise distribution is unbounded, for instance Gaussian, noise infusion may be differentially private (see the <a href="diffpriv.html#diffpriv">chapter on differential privacy</a>).</p>
 <p>Noise infusion has the advantage that it mostly eliminates the need to suppress sensitive records or cells, allowing more information to be revealed from the confidential data while maintaining certain confidentiality protections. Noise infusion also generally preserves the means and covariances among variables. However, it will always inflate estimated variances and can lead to bias in estimates of statistical models and in particular regression coefficients. Hence, noise infusion is generally not ignorable. If the details of the noise distribution can be made available to researchers, then it is possible to correct analysis for noise infusion. However, information about the noise distribution can also help an attacker reverse engineer the protections.</p>
 </div>
 <div id="synthetic-data-and-multiple-imputation" class="section level3">
 <h3><span class="header-section-number">5.2.7</span> Synthetic Data and Multiple Imputation</h3>
 <p>Synthetic data generation and multiple imputation are closely related. In fact, one particular variant of synthetic data as SDL (partially synthetic data) is also known as “suppress and impute” <span class="citation">(Little <a href="#ref-little_statistical_1993" role="doc-biblioref">1993</a>)</span>. Sensitive values for some or all records are replaced by (multiple) imputations. More generally, fully synthetic data <span class="citation">(Rubin <a href="#ref-rubin_discussion_1993" role="doc-biblioref">1993</a>)</span> replaces all values with draws from a posterior predictive distribution, estimated given the confidential data. For an overview, see <span class="citation">Raghunathan, Reiter, and Rubin (<a href="#ref-raghunathan_multiple_2003" role="doc-biblioref">2003</a>)</span>, <span class="citation">Little, Liu, and Raghunathan (<a href="#ref-little_statistical_2004" role="doc-biblioref">2004</a>)</span>, and <span class="citation">Drechsler (<a href="#ref-drechsler_synthetic_2011" role="doc-biblioref">2011</a>)</span>.</p>
-<p>Synthetic data have been used in the Federal Reserve Board’s Survey of Consumer Finances to protect sensitive income values <span class="citation">(Kennickell <a href="#ref-kennickell_multiple_1998" role="doc-biblioref">1998</a>)</span>, and in the US Census Bureau’s American Community Survey microdata to protect data from group quarters such as prisons and university residences <span class="citation">(Hawala and Rodriguez <a href="#ref-hawala_disclosure_2009" role="doc-biblioref">2009</a>)</span>. The US Census Bureau’s LODES data, included in the <a href="https://onthemap.ces.census.gov/">OnTheMap</a> application, uses synthetic household data <span class="citation">(A. Machanavajjhala et al. <a href="#ref-machanavajjhala_privacy_2008" role="doc-biblioref">2008</a><a href="#ref-machanavajjhala_privacy_2008" role="doc-biblioref">b</a>)</span>. Synthetic data can be used in conjunction with validation servers: researchers use the synthetic data to create complex model-based estimation and then submit their analysis to a remote server with access to the confidential data for validation of the results. Such a mechanism has been used by the US Census Bureau in collaboration with Cornell University for confidential business microdata<span class="citation">(Kinney et al. <a href="#ref-kinney_towards_2011" role="doc-biblioref">2011</a>)</span> and for survey data combined with administrative data <span class="citation">(Abowd, Stinson, and Benedetto <a href="#ref-abowd_final_2006" role="doc-biblioref">2006</a>)</span>. The term is sometimes used as well for test data for remote submission systems, which typically makes no claims as to the validity; it is simply constructed to replicate the data schema of the confidential data to test statistical code.</p>
+<p>Synthetic data have been used in the Federal Reserve Board’s Survey of Consumer Finances to protect sensitive income values <span class="citation">(Kennickell <a href="#ref-kennickell_multiple_1998" role="doc-biblioref">1998</a>)</span>, and in the US Census Bureau’s American Community Survey microdata to protect data from group quarters such as prisons and university residences <span class="citation">(Hawala and Rodriguez <a href="#ref-hawala_disclosure_2009" role="doc-biblioref">2009</a>)</span>. The US Census Bureau’s LODES data, included in the <a href="https://onthemap.ces.census.gov/">OnTheMap</a> application, uses synthetic household data <span class="citation">(Machanavajjhala et al. <a href="#ref-machanavajjhala_privacy_2008" role="doc-biblioref">2008</a>)</span>. Synthetic data can be used in conjunction with validation servers: researchers use the synthetic data to create complex model-based estimation and then submit their analysis to a remote server with access to the confidential data for validation of the results. Such a mechanism has been used by the US Census Bureau in collaboration with Cornell University for confidential business microdata<span class="citation">(Kinney et al. <a href="#ref-kinney_towards_2011" role="doc-biblioref">2011</a>)</span> and for survey data combined with administrative data <span class="citation">(Abowd, Stinson, and Benedetto <a href="#ref-abowd_final_2006" role="doc-biblioref">2006</a>)</span>. The term is sometimes used as well for test data for remote submission systems, which typically makes no claims as to the validity; it is simply constructed to replicate the data schema of the confidential data to test statistical code.</p>
 </div>
 <div id="examples-of-sdl-methods" class="section level3">
 <h3><span class="header-section-number">5.2.8</span> Examples of SDL Methods</h3>
 <p>Table <a href="discavoid.html#tab:overviewtable">5.1</a> shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources.</p>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
-<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:overviewtable">Table 5.1: </span>Summary of SDL Methods
+<span id="tab:overviewtable">Table 5.1: </span>Summary of SDL methods
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
-Example
 </th>
 <th style="text-align:left;">
-In this Handbook
+In this
+Hand-
+book
 </th>
 <th style="text-align:left;">
-Removal of direct identifiers
+Remov-
+al of
+Direct
+Identi-
+fiers
 </th>
 <th style="text-align:left;">
-Removal of quasi-identifiers
+Remov-
+al of
+Quasi-
+Identi-
+fiers
 </th>
 <th style="text-align:left;">
-Suppression
+Supp-
+ress-
+ion
 </th>
 <th style="text-align:left;">
-Coarsening
+Coars-
+ening
 </th>
 <th style="text-align:left;">
-Swapping
+Swapp-
+ing
 </th>
 <th style="text-align:left;">
-Sampling
+Sampl-
+ing
 </th>
 <th style="text-align:left;">
-Noise infusion
+Noise Infus-
+ion
 </th>
 <th style="text-align:left;">
-Synthetic Data
+Synth-
+etic Data
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-IAB on-site access
+IAB On-Site Access
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Some variables
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes (birth date, residence, industry)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 </tr>
 <tr>
@@ -496,31 +511,31 @@ No
 IAB Scientific Use Files
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-More variables
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-More
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 </tr>
 <tr>
@@ -528,62 +543,63 @@ No
 OLDA
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Some
+<img src="assets/discavoid/partialweb.png" />
 </td>
 <td style="text-align:left;">
-Some case-specific suppressions
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes (birth date)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-NBIRDT
+NB-IRDT
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
+—
 </td>
 <td style="text-align:left;">
-Substantial (only retention of necessary variables)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes (e.g. postal codes, dates)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 </tr>
 <tr>
@@ -591,61 +607,63 @@ No
 PCRI
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
+—
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
+—
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Aurora public-use file
+Aurora Public-Use File
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-(per HIPAA)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Some
+<img src="assets/discavoid/partialweb.png" />
 </td>
 <td style="text-align:left;">
-Substantial (only retention of necessary variables)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes (age bins, average characteristics)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 </tr>
 <tr>
@@ -653,86 +671,95 @@ No
 Stanford-SFUSD
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Not always
+<img src="assets/discavoid/partialweb.png" />
 </td>
 <td style="text-align:left;">
-(per FERPA)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Substantial (only retention of approved variables)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Cape Town
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-When possible
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-Sometimes (aggregation)
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
+<img src="assets/discavoid/noweb.png" />
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-DIME/World Bank
+City of Cape Town
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Encouraged internally, required for public posting
+<img src="assets/discavoid/partialweb.png" />
 </td>
 <td style="text-align:left;">
-Yes, for public posting
+—
 </td>
 <td style="text-align:left;">
+—
 </td>
 <td style="text-align:left;">
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
+—
 </td>
 <td style="text-align:left;">
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Being considered
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
+—
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DIME (World Bank)
+</td>
+<td style="text-align:left;">
+<img src="assets/discavoid/yesweb.png" />
+</td>
+<td style="text-align:left;">
+<img src="assets/discavoid/partialweb.png" />
+</td>
+<td style="text-align:left;">
+<img src="assets/discavoid/yesweb.png" />
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+<img src="assets/discavoid/noweb.png" />
+</td>
+<td style="text-align:left;">
+—
 </td>
 </tr>
 <tr>
@@ -740,30 +767,31 @@ Being considered
 Survey of Consumer Finances
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
+—
 </td>
 <td style="text-align:left;">
-Some case-specific suppressions
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 </tr>
 <tr>
@@ -771,30 +799,31 @@ Yes
 American Community Survey
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
+—
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Some
+<img src="assets/discavoid/partialweb.png" />
 </td>
 </tr>
 <tr>
@@ -802,36 +831,42 @@ Some
 Quarterly Workforce Indicators
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Some case-specific suppressions
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-Yes (aggregate data)
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 <td style="text-align:left;">
-Yes
+<img src="assets/discavoid/yesweb.png" />
 </td>
 <td style="text-align:left;">
-No
+<img src="assets/discavoid/noweb.png" />
 </td>
 </tr>
 </tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span> <sup></sup> <img src="assets/discavoid/yesweb.png" /> = Yes, <img src="assets/discavoid/partialweb.png" /> = Partially, <img src="assets/discavoid/noweb.png" /> = No, — = No Info
+</td>
+</tr>
+</tfoot>
 </table>
-</div>
 </div>
 </div>
 <div id="metrics" class="section level2">
@@ -870,7 +905,7 @@ No
 </div>
 <div id="acknowledgements" class="section level2 unnumbered">
 <h2>Acknowledgements</h2>
-<p>This chapter draws on <span class="citation">John M. Abowd et al. (<a href="#ref-abowd_introductory_2019" role="doc-biblioref">2019</a>)</span> and the INFO7470 class at Cornell University <span class="citation">(Abowd and Vilhuber <a href="#ref-abowd_session_2016" role="doc-biblioref">2016</a>)</span>. We gratefully acknowledge the support of Alfred P. <a href="https://sloan.org/grant-detail/6845">Sloan Foundation Grant G-2015-13903</a> and <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848">National Science Foundation (NSF) Grant SES-1131848</a> for the earlier work.</p>
+<p>This chapter draws on <span class="citation">Abowd, Schmutte, et al. (<a href="#ref-abowd_introductory_2019" role="doc-biblioref">2019</a>)</span> and the INFO7470 class at Cornell University <span class="citation">(Abowd and Vilhuber <a href="#ref-abowd_session_2016" role="doc-biblioref">2016</a>)</span>. We gratefully acknowledge the support of Alfred P. <a href="https://sloan.org/grant-detail/6845">Sloan Foundation Grant G-2015-13903</a> and <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848">National Science Foundation (NSF) Grant SES-1131848</a> for the earlier work.</p>
 </div>
 <div id="disclaimer" class="section level2 unnumbered">
 <h2>Disclaimer</h2>
@@ -881,26 +916,26 @@ No
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
-<div id="ref-abowd_lehd_2009">
-<p>Abowd, J M, B E Stephens, L Vilhuber, F Andersson, K L McKinney, M Roemer, and S D Woodcock. 2009. “The LEHD Infrastructure Files and the Creation of the Quarterly Workforce Indicators.” In <em>Producer Dynamics: New Evidence from Micro Data</em>, edited by T. Dunne and J B Jensen and M J Roberts. University of Chicago Press. <a href="https://www.nber.org/chapters/c0485">https://www.nber.org/chapters/c0485</a>.</p>
-</div>
 <div id="ref-abowd_dynamically_2012">
-<p>Abowd, John M, R Kaj Gittings, Kevin L McKinney, Bryce Stephens, Lars Vilhuber, and Simon D Woodcock. 2012. “Dynamically Consistent Noise Infusion and Partially Synthetic Data as Confidentiality Protection Measures for Related Time Series.” 12-13. U.S. Census Bureau, Center for Economic Studies. <a href="https://doi.org/10.2139/ssrn.2159800">https://doi.org/10.2139/ssrn.2159800</a>.</p>
+<p>Abowd, John M., R. Kaj Gittings, Kevin L. McKinney, Bryce Stephens, Lars Vilhuber, and Simon D. Woodcock. 2012. “Dynamically Consistent Noise Infusion and Partially Synthetic Data as Confidentiality Protection Measures for Related Time Series.” 12-13. U.S. Census Bureau, Center for Economic Studies. <a href="https://doi.org/10.2139/ssrn.2159800">https://doi.org/10.2139/ssrn.2159800</a>.</p>
+</div>
+<div id="ref-abowd_economic_2015">
+<p>Abowd, John M., and Ian M. Schmutte. 2015. “Economic Analysis and Statistical Disclosure Limitation.” <em>Brookings Papers on Economic Activity</em>, 221–67. <a href="https://doi.org/10.1353/eca.2016.0004">https://doi.org/10.1353/eca.2016.0004</a>.</p>
+</div>
+<div id="ref-abowd_economic_2019">
+<p>Abowd, John M., and Ian M. Schmutte. 2019. “An Economic Analysis of Privacy Protection and Statistical Accuracy as Social Choices.” <em>American Economic Review</em> 109 (1): 171–202. <a href="https://doi.org/10.1257/aer.20170627">https://doi.org/10.1257/aer.20170627</a>.</p>
 </div>
 <div id="ref-abowd_introductory_2019">
-<p>Abowd, John M., Ian Schmutte, William Sexton, and Lars Vilhuber. 2019. “Introductory Readings in Formal Privacy for Economists.” Document 2662639. Labor Dynamics Institute, Cornell University. <a href="https://doi.org/10.5281/zenodo.2662639">https://doi.org/10.5281/zenodo.2662639</a>.</p>
+<p>Abowd, John M., Ian M. Schmutte, William Sexton, and Lars Vilhuber. 2019. “Introductory Readings in Formal Privacy for Economists.” Document 2662639. Labor Dynamics Institute, Cornell University. <a href="https://doi.org/10.5281/zenodo.2662639">https://doi.org/10.5281/zenodo.2662639</a>.</p>
+</div>
+<div id="ref-abowd_lehd_2009">
+<p>Abowd, John M., Bryce E. Stephens, Lars Vilhuber, Fredrik Andersson, Kevin L McKinney, Marc Roemer, and Simon Woodcok. 2009. “The LEHD Infrastructure Files and the Creation of the Quarterly Workforce Indicators.” In <em>Producer Dynamics: New Evidence from Micro Data</em>, edited by Timothy Dunne, J Bradford Jensen, and Mark J. Roberts. University of Chicago Press. <a href="https://www.nber.org/chapters/c0485">https://www.nber.org/chapters/c0485</a>.</p>
 </div>
 <div id="ref-abowd_final_2006">
-<p>Abowd, John M, Martha Stinson, and Gary Benedetto. 2006. “Final Report to the Social Security Administration on the SIPP/SSA/IRS Public Use File Project.” 1813/43929. U.S. Census Bureau. <a href="http://hdl.handle.net/1813/43929">http://hdl.handle.net/1813/43929</a>.</p>
+<p>Abowd, John M., Martha Stinson, and Gary Benedetto. 2006. “Final Report to the Social Security Administration on the SIPP/SSA/IRS Public Use File Project.” 1813/43929. U.S. Census Bureau. <a href="http://hdl.handle.net/1813/43929">http://hdl.handle.net/1813/43929</a>.</p>
 </div>
 <div id="ref-abowd_session_2016">
 <p>Abowd, John M., and Lars Vilhuber. 2016. “Session 12: Statistical Tools: Methods of Confidentiality Protection.” Presentation 45060. Labor Dynamics Institute, Cornell University. <a href="https://hdl.handle.net/1813/45060">https://hdl.handle.net/1813/45060</a>.</p>
-</div>
-<div id="ref-abowd_economic_2019">
-<p>Abowd, John, and Ian Schmutte. 2019. “An Economic Analysis of Privacy Protection and Statistical Accuracy as Social Choices.” <em>American Economic Review</em> 109 (1): 171–202. <a href="https://doi.org/10.1257/aer.20170627">https://doi.org/10.1257/aer.20170627</a>.</p>
-</div>
-<div id="ref-abowd_economic_2015">
-<p>Abowd, John, and Ian M. Schmutte. 2015. “Economic Analysis and Statistical Disclosure Limitation.” <em>Brookings Papers on Economic Activity</em>, 221–67. <a href="https://doi.org/10.1353/eca.2016.0004">https://doi.org/10.1353/eca.2016.0004</a>.</p>
 </div>
 <div id="ref-black_6_2020">
 <p>Black, Kate, Gretchen A. Ramos, and Giovanni Biscardi. 2020. “6 Months Until Brazil’s LGPD Takes Effect – Are You Ready?” <em>The National Law Review</em>, March. <a href="https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready">https://www.natlawreview.com/article/6-months-until-brazil-s-lgpd-takes-effect-are-you-ready</a>.</p>
@@ -918,7 +953,7 @@ No
 <p>Cohen, Aloni, and Kobbi Nissim. 2020. “Towards Formalizing the GDPR’s Notion of Singling Out.” <em>Proceedings of the National Academy of Sciences of the United States of America</em> 117 (15): 8344–52. <a href="https://doi.org/10.1073/pnas.1914598117">https://doi.org/10.1073/pnas.1914598117</a>.</p>
 </div>
 <div id="ref-couper_risk_2008">
-<p>Couper, Mick P, Eleanor Singer, Frederick G Conrad, and Robert M Groves. 2008. “Risk of Disclosure, Perceptions of Risk, and Concerns About Privacy and Confidentiality as Factors in Survey Participation.” <em>Journal of Official Statistics</em> 24 (2): 255. <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/risk-of-disclosure-perceptions-of-risk-and-concerns-about-privacy-and-confidentiality-as-factors-in-survey-participation.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/risk-of-disclosure-perceptions-of-risk-and-concerns-about-privacy-and-confidentiality-as-factors-in-survey-participation.pdf</a>.</p>
+<p>Couper, Mick P., Eleanor Singer, Frederick G. Conrad, and Robert M. Groves. 2008. “Risk of Disclosure, Perceptions of Risk, and Concerns About Privacy and Confidentiality as Factors in Survey Participation.” <em>Journal of Official Statistics</em> 24 (2): 255. <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/risk-of-disclosure-perceptions-of-risk-and-concerns-about-privacy-and-confidentiality-as-factors-in-survey-participation.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/risk-of-disclosure-perceptions-of-risk-and-concerns-about-privacy-and-confidentiality-as-factors-in-survey-participation.pdf</a>.</p>
 </div>
 <div id="ref-cummings_adaptive_2016">
 <p>Cummings, Rachel, Katrina Ligett, Kobbi Nissim, Aaron Roth, and Zhiwei Steven Wu. 2016. “Adaptive Learning with Robust Generalization Guarantees.” <em>CoRR</em> abs/1602.07726. <a href="http://arxiv.org/abs/1602.07726">http://arxiv.org/abs/1602.07726</a>.</p>
@@ -966,7 +1001,7 @@ No
 <p>Garfinkel, Simson. 2015. “De-Identification of Personal Information.” Internal Report 8053. National Institute of Standards; Technology. <a href="https://doi.org/10.6028/nist.ir.8053">https://doi.org/10.6028/nist.ir.8053</a>.</p>
 </div>
 <div id="ref-goroff_balancing_2015">
-<p>Goroff, D. L. 2015. “Balancing Privacy Versus Accuracy in Research Protocols.” <em>Science</em> 347 (6221): 479–80. <a href="https://doi.org/10.1126/science.aaa3483">https://doi.org/10.1126/science.aaa3483</a>.</p>
+<p>Goroff, Daniel L. 2015. “Balancing Privacy Versus Accuracy in Research Protocols.” <em>Science</em> 347 (6221): 479–80. <a href="https://doi.org/10.1126/science.aaa3483">https://doi.org/10.1126/science.aaa3483</a>.</p>
 </div>
 <div id="ref-greene_adjusting_2019">
 <p>Greene, Travis, Galit Shmueli, Soumya Ray, and Jan Fell. 2019. “Adjusting to the GDPR: The Impact on Data Scientists and Behavioral Researchers.” <em>Big Data</em> 7 (3): 140–62. <a href="https://doi.org/10.1089/big.2018.0176">https://doi.org/10.1089/big.2018.0176</a>.</p>
@@ -1005,7 +1040,7 @@ No
 <p>J-PAL. 2020b. “J-PAL/Stata_PII_scan.” <a href="https://github.com/J-PAL/stata_PII_scan">https://github.com/J-PAL/stata_PII_scan</a>.</p>
 </div>
 <div id="ref-kennickell_multiple_1998">
-<p>Kennickell, A B. 1998. “Multiple Imputation in the Survey of Consumer Finances.” In <em>Proceedings of the Section on Survey Research</em>. <a href="https://www.federalreserve.%20gov/econresdata/scf/files/impute98.pdf">https://www.federalreserve. gov/econresdata/scf/files/impute98.pdf</a>.</p>
+<p>Kennickell, Arthur B. 1998. “Multiple Imputation in the Survey of Consumer Finances.” In <em>Proceedings of the Section on Survey Research</em>. <a href="https://www.federalreserve.%20gov/econresdata/scf/files/impute98.pdf">https://www.federalreserve. gov/econresdata/scf/files/impute98.pdf</a>.</p>
 </div>
 <div id="ref-kinney_towards_2011">
 <p>Kinney, Satkartar K., Jerome P. Reiter, Arnold P. Reznek, Javier Miranda, Ron S. Jarmin, and John M. Abowd. 2011. “Towards Unrestricted Public Use Business Microdata: The Synthetic Longitudinal Business Database.” Working Papers 11-04. Center for Economic Studies, U.S. Census Bureau. <a href="https://ideas.repec.org/p/cen/wpaper/11-04.html">https://ideas.repec.org/p/cen/wpaper/11-04.html</a>.</p>
@@ -1017,13 +1052,13 @@ No
 <p>Little, Roderick JA. 1993. “Statistical Analysis of Masked Data.” <em>Journal of Official Statistics</em> 9 (2): 407–26. <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/statistical-analysis-of-masked-data.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/statistical-analysis-of-masked-data.pdf</a>.</p>
 </div>
 <div id="ref-little_statistical_2004">
-<p>Little, Roderick J A, Fang Liu, and Trivellore E Raghunathan. 2004. “Statistical Disclosure Techniques Based on Multiple Imputation.” In <em>Applied Bayesian Modeling and Causal Inference from Incomplete-Data Perspectives</em>, edited by Andrew Gelman and Xiao Li Meng, 141–52. Wiley. <a href="https://doi.org/10.1002/0470090456.ch13">https://doi.org/10.1002/0470090456.ch13</a>.</p>
+<p>Little, Roderick J. A., Fang Liu, and Trivellore E. Raghunathan. 2004. “Statistical Disclosure Techniques Based on Multiple Imputation.” In <em>Applied Bayesian Modeling and Causal Inference from Incomplete-Data Perspectives</em>, edited by Andrew Gelman and Xiao Li Meng, 141–52. Wiley. <a href="https://doi.org/10.1002/0470090456.ch13">https://doi.org/10.1002/0470090456.ch13</a>.</p>
 </div>
 <div id="ref-liu_statistical_2020">
 <p>Liu, Fang. 2020b. “A Statistical Overview on Data Privacy.” <em>arXiv:2007.00765 [Cs, Stat]</em>, July. <a href="http://arxiv.org/abs/2007.00765">http://arxiv.org/abs/2007.00765</a>.</p>
 </div>
 <div id="ref-machanavajjhala_privacy_2008">
-<p>Machanavajjhala, A., D. Kifer, J. Abowd, J. Gehrke, and L. Vilhuber. 2008b. “Privacy: Theory Meets Practice on the Map.” In <em>Proceedings of the 2008 IEEE 24th International Conference on Data Engineering</em>, 277–86. <a href="https://doi.org/10.1109/ICDE.2008.4497436">https://doi.org/10.1109/ICDE.2008.4497436</a>.</p>
+<p>Machanavajjhala, Ashwin, Daniel Kifer, John M. Abowd, Johannes Gehrke, and Lars Vilhuber. 2008. “Privacy: Theory Meets Practice on the Map.” In <em>Proceedings of the 2008 IEEE 24th International Conference on Data Engineering</em>, 277–86. <a href="https://doi.org/10.1109/ICDE.2008.4497436">https://doi.org/10.1109/ICDE.2008.4497436</a>.</p>
 </div>
 <div id="ref-machanavajjhala_l-diversity_2007">
 <p>Machanavajjhala, Ashwin, Daniel Kifer, Johannes Gehrke, and Muthuramakrishnan Venkitasubramaniam. 2007. “L-Diversity: Privacy Beyond K-Anonymity.” <em>ACM Transactions on Knowledge Discovery from Data</em> 1 (1). <a href="https://doi.org/10.1145/1217299.1217302">https://doi.org/10.1145/1217299.1217302</a>.</p>
@@ -1047,10 +1082,10 @@ No
 <p>Raab, Gillian M., Beata Nowok, and Chris Dibben. 2016. “Practical Data Synthesis for Large Samples.” <em>Journal of Privacy and Confidentiality</em> 7 (3): 67–97. <a href="https://doi.org/10.29012/jpc.v7i3.407">https://doi.org/10.29012/jpc.v7i3.407</a>.</p>
 </div>
 <div id="ref-raghunathan_multiple_2003">
-<p>Raghunathan, Trivellore E, Jerry P. Reiter, and Donald B Rubin. 2003. “Multiple Imputation for Statistical Disclosure Limitation.” <em>Journal of Official Statistics</em> 19 (1). <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/multiple-imputation-for-statistical-disclosure-limitation.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/multiple-imputation-for-statistical-disclosure-limitation.pdf</a>.</p>
+<p>Raghunathan, Trivellore E., Jerry P. Reiter, and Donald B Rubin. 2003. “Multiple Imputation for Statistical Disclosure Limitation.” <em>Journal of Official Statistics</em> 19 (1). <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/multiple-imputation-for-statistical-disclosure-limitation.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/multiple-imputation-for-statistical-disclosure-limitation.pdf</a>.</p>
 </div>
 <div id="ref-reiter_verification_2009">
-<p>Reiter, Jerome P, Anna Oganian, and Alan F Karr. 2009. “Verification Servers: Enabling Analysts to Assess the Quality of Inferences from Public Use Data.” <em>Computational Statistics &amp; Data Analysis</em> 53 (4): 1475–82. <a href="https://doi.org/10.1016/j.csda.2008.10.006">https://doi.org/10.1016/j.csda.2008.10.006</a>.</p>
+<p>Reiter, Jerome P., Anna Oganian, and Alan F. Karr. 2009. “Verification Servers: Enabling Analysts to Assess the Quality of Inferences from Public Use Data.” <em>Computational Statistics &amp; Data Analysis</em> 53 (4): 1475–82. <a href="https://doi.org/10.1016/j.csda.2008.10.006">https://doi.org/10.1016/j.csda.2008.10.006</a>.</p>
 </div>
 <div id="ref-rubin_discussion_1993">
 <p>Rubin, Donald B. 1993. “Discussion: Statistical Disclosure Limitation.” <em>Journal of Official Statistics</em> 9 (2): 461–68. <a href="http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/discussion-statistical-disclosure-limitation2.pdf">http://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/discussion-statistical-disclosure-limitation2.pdf</a>.</p>
@@ -1065,7 +1100,7 @@ No
 <p>Spencer, Bruce David, and Zachary H. Seeskin. 2015. “Effects of Census Accuracy on Apportionment of Congress and Allocations of Federal Funds.” <em>JSM Proceedings, Government Statistics Section</em>, 3061–75. <a href="https://www.ipr.northwestern.edu/our-work/working-papers/2015/ipr-wp-15-05.html">https://www.ipr.northwestern.edu/our-work/working-papers/2015/ipr-wp-15-05.html</a>.</p>
 </div>
 <div id="ref-sweeney_achieving_2002">
-<p>Sweeney, L. 2002. “Achieving K-Anonymity Privacy Protection Using Generalization and Suppression.” <em>International Journal on Uncertainty, Fuzziness and Knowledge-Based Systems</em> 10 (5): 571–88. <a href="https://doi.org/10.1142/s021848850200165x">https://doi.org/10.1142/s021848850200165x</a>.</p>
+<p>Sweeney, Latanya. 2002. “Achieving K-Anonymity Privacy Protection Using Generalization and Suppression.” <em>International Journal on Uncertainty, Fuzziness and Knowledge-Based Systems</em> 10 (5): 571–88. <a href="https://doi.org/10.1142/s021848850200165x">https://doi.org/10.1142/s021848850200165x</a>.</p>
 </div>
 <div id="ref-templ_statistical_2015">
 <p>Templ, Matthias, Alexander Kowarik, and Bernhard Meindl. 2015. “Statistical Disclosure Control for Micro-Data Using the R Package sdcMicro.” <em>Journal of Statistical Software</em> 67 (4). <a href="https://doi.org/10.18637/jss.v067.i04">https://doi.org/10.18637/jss.v067.i04</a>.</p>
@@ -1083,7 +1118,7 @@ No
 <p>U.S. Department of Health &amp; Human Services. n.d. “Health Information Privacy.” Accessed June 23, 2020. <a href="https://www.hhs.gov/hipaa/index.html">https://www.hhs.gov/hipaa/index.html</a>.</p>
 </div>
 <div id="ref-woo_global_2009">
-<p>Woo, M., J. P. Reiter, A. Oganian, and A. F. Karr. 2009. “Global Measures of Data Utility for Microdata Masked for Disclosure Limitation.” <em>Privacy and Confidentiality</em> 1 (1): 111–24. <a href="http://repository.cmu.edu/cgi/viewcontent.cgi?article=1006&amp;context=jpc">http://repository.cmu.edu/cgi/viewcontent.cgi?article=1006&amp;context=jpc</a>.</p>
+<p>Woo, Mi-Ja, Jerome P. Reiter, Anna Oganian, and Alan F. Karr. 2009. “Global Measures of Data Utility for Microdata Masked for Disclosure Limitation.” <em>Privacy and Confidentiality</em> 1 (1): 111–24. <a href="https://doi.org/10.29012/jpc.v1i1.568">https://doi.org/10.29012/jpc.v1i1.568</a>.</p>
 </div>
 <div id="ref-world_bank_dime_nodate">
 <p>World Bank. n.d. “DIME Wiki: De-Identification.” Accessed August 8, 2020. <a href="https://dimewiki.worldbank.org/wiki/De-identification">https://dimewiki.worldbank.org/wiki/De-identification</a>.</p>
