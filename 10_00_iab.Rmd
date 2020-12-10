@@ -288,11 +288,11 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab4]: The institute is scientifically independent. Freedom of research and publication is guaranteed. More information can be found on the Institute's [website](https://www.iab.de/en/iab-aktuell.aspx).
 
-[^iab5]: These are the SGB books II, III, and IV as well as the German Data and Transmission Act (*Datenerfassungs- und -übermittlungsverordnung - DEÜV*). For example, article 282 is available in German at <http://www.gesetze-im-internet.de/sgb_3/__282.html> (Accessed on 06-15-2020). The authors are not aware of a complete official translation of all relevant sections.
+[^iab5]: These are the SGB books II, III, and IV as well as the German Data and Transmission Act (*Datenerfassungs- und -übermittlungsverordnung - DEÜV*). For example, article 282 is available in German at <http://www.gesetze-im-internet.de/sgb_3/__282.html> (accessed 2020-06-15). The authors are not aware of a complete official translation of all relevant sections.
 
 [^iab6]: Access to non-anonymized data is regulated by article 75 SGB Book X.
 
-[^iab7]: Available at <https://gdpr-info.eu/> (Accessed on 06-15-2020).
+[^iab7]: Available at <https://gdpr-info.eu/> (accessed 2020-06-15).
 
 [^iab8]: This is not true of the surveys, where participation is voluntary.
 
@@ -300,7 +300,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab10]: The template can be provided to institutions interested in establishing decentralized data access upon request.
 
-[^iab11]: List available at <https://gdpr-info.eu/issues/third-countries/> (Accessed on 06-15-2020).
+[^iab11]: List available at <https://gdpr-info.eu/issues/third-countries/> (accessed 2020-06-15).
 
 [^iab12]: See section [Legal Framework for Granting Data Access](#iab-legal).
 
@@ -320,21 +320,21 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab20]: See section [Safe Settings](#iab-safesettings).
 
-[^iab21]: Accessed on 06-15-2020
+[^iab21]: Accessed 2020-06-15
 
-[^iab22]: Accessed on 06-15-2020
+[^iab22]: Accessed 2020-06-15
 
-[^iab23]: For more information on IDAN, please visit <https://idan.network/> (Accessed on 06-15-2020).
+[^iab23]: For more information on IDAN, please visit <https://idan.network/> (accessed 2020-06-15).
 
 [^iab24]: One example is the data set "Biographical Data of Social Insurance Agencies in Germany (BASiD)" [@hochfellner2012].
 
 [^iab25]: See section [Motivation and Background](#iab-motivation).
 
-[^iab26]: Accessed on 06-15-2020
+[^iab26]: Accessed 2020-06-15
 
 [^iab27]: In Figure \@ref(fig:iabfig2)(a), researchers who work in different projects are counted more than once.
 
-[^accessed06152020]: Accessed on 06-15-2020
+[^accessed06152020]: Accessed 2020-06-15
  
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
