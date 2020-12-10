@@ -225,13 +225,13 @@ Audits of data sets accessed and data project activity are a requirement of data
 
 [^nbirdt2]: Personal correspondence between Ted McDonald and Jean-Marc Dupuis, March 2018.
 
-[^nbirdt3]: See the NB-IRDT [website](https://www.unb.ca/nbirdt/) for more details (accessed 12-10-2020).
+[^nbirdt3]: See the NB-IRDT [website](https://www.unb.ca/nbirdt/) for more details (accessed 2020-12-10).
 
 [^nbirdt4]: NB-IRDT signed a data sharing agreement with the Federal Government's Immigration, Refugees and Citizenship Canada agency (IRCC) who have provided landing records on all permanent residents to Canada not just provincial nominees.
 
 [^nbirdt5]: The role of undertaking all data matching taken by the Department of Health will be discussed in more detail later in the chapter.
 
-[^nbirdt6]: See NB-IRDT website [Data Holdings](https://www.nbirdt.ca/holdings) for examples of available codebooks (accessed 12-10-2020).
+[^nbirdt6]: See NB-IRDT website [Data Holdings](https://www.nbirdt.ca/holdings) for examples of available codebooks (accessed 2020-12-10).
 
 [^nbirdt7]: See section [Safe Projects](#nbirdt-safeproject) for detailed description of this committee.
 
@@ -259,9 +259,9 @@ Audits of data sets accessed and data project activity are a requirement of data
 
 [^nbirdt19]: Vetting rules are not published but are discussed with the research team at project launch as part of the mandatory information sessions for researchers with newly approved projects.
 
-[^nbirdt20]: See NB-IRDT website [Research, Publications](https://www.nbirdt.ca/publications) and [News, Events](https://www.nbirdt.ca/nbirdt-events) for links to previous public events (Accessed 12-10-2020).
+[^nbirdt20]: See NB-IRDT website [Research, Publications](https://www.nbirdt.ca/publications) and [News, Events](https://www.nbirdt.ca/nbirdt-events) for links to previous public events (accessed 2020-12-10).
 
-[^accessdate]: Accessed on 12-10-2020
+[^accessdate]: Accessed 2020-12-10
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
