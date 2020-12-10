@@ -101,6 +101,7 @@ iabt2data<-read.csv("./assets/iab/table2.csv")
 
 iabtable2<-function(){
   knitr::kable(iabt2data, booktabs = TRUE,
-               caption = "Number of publications in 2018, including all publications withRDC-IAB data (excluding Bachelor and Master theses)") %>%
-    kable_styling(full_width = F)
+               caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding Bachelor and Master theses)") %>%
+    kable_styling(full_width = F) %>%
+    add_indent(c(c(2)))
 }

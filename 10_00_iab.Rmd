@@ -15,7 +15,7 @@ The +RDC-IAB|, founded in 2004, is a research department of the +Institute_for_E
 
 Improving access to data for the research community is a joint task. On the national level, the +RDC-IAB| is in regular exchange with other +RDC|s through the national network organized by the +German_Data_Forum| (RatSWD). On the international level, cooperation takes place within the framework of the +International_Data_Access_Network| (IDAN).
 
-The authors of this chapter were not directly involved in the initiation of the +RDC-in-RDC| project and its early implementation. However, they were responsible for its further expansion and sustainability since 2016. With this case study, the authors encourage institutions with confidential administrative data to find similar ways to broaden access for the international research community. Visit the +RDC-IAB| [online](https://fdz.iab.de/en.aspx).[^(Accessed on 06-15-2020)]
+The authors of this chapter were not directly involved in the initiation of the +RDC-in-RDC| project and its early implementation. However, they were responsible for its further expansion and sustainability since 2016. With this case study, the authors encourage institutions with confidential administrative data to find similar ways to broaden access for the international research community. Visit the +RDC-IAB| [online](https://fdz.iab.de/en.aspx).[^accessed06152020]
 
 ## Introduction
 
@@ -59,7 +59,7 @@ Due to the comprehensive coverage of individuals and establishments[^iab3], the 
 
 Based on a reform in 2004, which exempted small firms from dismissal protection, [@lucke2018] examines the risk of leaving an establishment if there is no protection against dismissal. Her results have been published in *Labour* with the title "When protection puts you in jeopardy---How removing small-business clauses affects employment duration." Based on +linked_employer-employee_data| (LIAB, longitudinal model) the author compared employment durations of workers with and without dismissal protection by using survival analysis techniques. Her results indicate that dismissal protection leads to a higher risk of cessation in the first six months and a lower risk afterwards.
 
-Table \@ref(tab:iabtable1) provides a selective overview of research data available at +RDC-IAB| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in [@muller2019; @muller2020]. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).
+Table \@ref(tab:iabtable1) provides a selective overview of research data available at +RDC-IAB| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in [@muller2019; @muller2020]. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).[^accessed06152020]
 
 ```{r iabtable1, tidy=FALSE, echo=F,results='asis'}
 # the function does it all
@@ -76,7 +76,7 @@ These prior data processing steps imply that +RDC-IAB| staff can rely on interme
 
 The +RDC-IAB| provides a variety of standardized data sets for labor market research based on these source data. Additionally, RDC-IAB offers access to various linked data products. These are data where survey and administrative information are linked via a unique identifier or record linkage techniques for consenting respondents. Record linkage is performed by the +German_Record_Linkage_Center| (GRLC) within RDC-IAB. For more details on the preparation of standardized research data products, see the section Safe Data.
 
-The +RDC-IAB| provides detailed metadata for all data products in both German and English. These metadata are based on the available internal data documentation and are tailored to fit the final data product. One important aim is to harmonize variable names and values across all administrative data products. There is a designated data steward for each data product and at least one additional staff member for assistance and double-checking. All data documentation are published as a standardized data report in a report series called [*FDZ-Datenreport*](https://fdz.iab.de/en/FDZ_Publications/FDZ_Publication_Series/FDZ-Datenreporte.aspx). A data report includes an introduction and outline, a description of all administrative data sources, a description of data preparation and sampling procedure, information on data quality and problems, a description of all variables, references, and if necessary, an appendix. Frequency tables, codebooks, and test data are provided in separate files online. These separate files are generated in a standardized way from the final data product using Stata scripts. This way, their preparation can be used as part of the quality control process.
+The +RDC-IAB| provides detailed metadata for all data products in both German and English. These metadata are based on the available internal data documentation and are tailored to fit the final data product. One important aim is to harmonize variable names and values across all administrative data products. There is a designated data steward for each data product and at least one additional staff member for assistance and double-checking. All data documentation are published as a standardized data report in a report series called [*FDZ-Datenreport*](https://fdz.iab.de/en/FDZ_Publications/FDZ_Publication_Series/FDZ-Datenreporte.aspx).[^accesssed06152020] A data report includes an introduction and outline, a description of all administrative data sources, a description of data preparation and sampling procedure, information on data quality and problems, a description of all variables, references, and if necessary, an appendix. Frequency tables, codebooks, and test data are provided in separate files online. These separate files are generated in a standardized way from the final data product using Stata scripts. This way, their preparation can be used as part of the quality control process.
 
 Currently, researchers must search for relevant metadata in different PDF-documents. In 2012, the +RDC-IAB| established a new system to collect all metadata in one single metadata base. It includes an online information system with a search engine for all data products. The underlying data base relies on SQL with a web application that allows entering the metadata easily. The documentation standard is called +Data_Documentation_Initiative|  [@vardigan2008].^[See https://ddialliance.org/ for more details] Although DDI was only a standard for survey data at the beginning of the project, it was adopted for documentation of administrative data with the assistance of DDI experts. It is now possible to import XML-files containing variable names and codebooks that were generated in the data production process. Thus, the metadata base covers all relevant information on the data life cycle, including internal information. The online information system can also be used to create custom data reports including only the information that is relevant for a specific research project. Currently, the data products are gradually being added to the metadata base and the online information system is being tested.
 
@@ -194,7 +194,7 @@ Producing safe data for access outside the +RDC-IAB| safe room is complicated by
 
 Since the +RDC-IAB| only provides standardized data products, it cannot serve more individual project needs like special samples, additional and more detailed variables, or special linkages. While an alternative, fee-based data access mode for social data exists, this mode is not operated by the RDC-IAB and it is only available for German institutions. For international researchers, cooperation with the +IAB| or another German research institution might prove to be the only way to conduct such research projects.
 
-### Safe Outputs {iab-safeoutput}
+### Safe Outputs {#iab-safeoutput}
 
 The way safe output is ensured at the +RDC-IAB| depends on the data access mode for the research project. For +SUF|, the responsibility to ensure safe output rests entirely with the requesting institution and the data users. The institution is mandated to refrain from any action that might compromise the anonymity of the statistical information contained in the data and is required to instruct data users accordingly. Thus, no statistical output that is not sufficiently anonymized is allowed to be published. The institutions can find assistance on what is meant by secure output in +BA| guidelines [@statistikderbundesagenturfurarbeit2018] or ask the RDC-IAB for assistance.
 
@@ -334,11 +334,12 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab27]: In Figure \@ref(fig:iabfig2)(a), researchers who work in different projects are counted more than once.
 
+[^accessed06152020]: Accessed on 06-15-2020
+ 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
 @hochfellner2012
 ```
-
 
 \putbib
 
