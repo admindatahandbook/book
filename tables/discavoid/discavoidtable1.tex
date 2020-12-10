@@ -1,16 +1,58 @@
+% 
+% \begin{sidewaystable}
+% \footnotesize\renewcommand{\arraystretch}{0.75}
+% \caption{\label{tab:overviewtable}Summary of SDL Methods}
+% \centering
+% \begin{tabulary}{\ourtablewidth}{LLLLLLLLLL}
+% 	\toprule
+% 	Example & In this Handbook & Removal of direct identifiers & Removal of quasi-identifiers & Suppression & Coarsening & Swapping & Sampling & Noise infusion & Synthetic Data\\
+% 	\midrule
+% 		\csvreader[late after line=\\]{./tables/discavoid/discavoid_table1.csv}{}%
+% 		{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv &\csvcolv &\csvcolvi &\csvcolvii &\csvcolviii &\csvcolix &\csvcolx \\}%
+% 	\bottomrule
+% 	\end{tabulary}
+% 	%	\csvautobooktabular{./tables/discavoid/discavoid_table1.csv}
+% \end{sidewaystable}
+% 
+% \begin{table}
 
-\begin{sidewaystable}
-\footnotesize\renewcommand{\arraystretch}{0.75}
-\caption{\label{tab:overviewtable}Summary of SDL Methods}
+\caption{\label{tab:}Summary of SDL Methods}
 \centering
-\begin{tabulary}{\ourtablewidth}{LLLLLLLLLL}
-	\toprule
-	Example & In this Handbook & Removal of direct identifiers & Removal of quasi-identifiers & Suppression & Coarsening & Swapping & Sampling & Noise infusion & Synthetic Data\\
-	\midrule
-		\csvreader[late after line=\\]{./tables/discavoid/discavoid_table1.csv}{}%
-		{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv &\csvcolv &\csvcolvi &\csvcolvii &\csvcolviii &\csvcolix &\csvcolx \\}%
-	\bottomrule
-	\end{tabulary}
-	%	\csvautobooktabular{./tables/discavoid/discavoid_table1.csv}
-\end{sidewaystable}
-
+\begin{tabular}[t]{llllllllll}
+\toprule
+ & In this 
+Hand-
+book & Remov-
+al of 
+Direct 
+Identi-
+fiers & Remov-
+al of 
+Quasi-
+Identi-
+fiers & Supp-
+ress-
+ion & Coars-
+ening & Swapp-
+ing & Sampl-
+ing & Noise Infus-
+ion & Synth-
+etic Data\\
+\midrule
+IAB On-Site Access & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png)\\
+IAB Scientific Use Files & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png)\\
+OLDA & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/partialweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png)\\
+NB-IRDT & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & --- & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png)\\
+PCRI & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & --- & ![](./assets/discavoid/noweb.png) & --- & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png)\\
+\addlinespace
+Aurora Public-Use File & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/partialweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png)\\
+Stanford-SFUSD & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/partialweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png)\\
+City of Cape Town & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/partialweb.png) & --- & --- & ![](./assets/discavoid/yesweb.png) & --- & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ---\\
+DIME (World Bank) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/partialweb.png) & ![](./assets/discavoid/yesweb.png) & --- & --- & --- & --- & ![](./assets/discavoid/noweb.png) & ---\\
+Survey of Consumer Finances & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & --- & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png)\\
+\addlinespace
+American Community Survey & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & --- & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/partialweb.png)\\
+Quarterly Workforce Indicators & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/noweb.png) & ![](./assets/discavoid/yesweb.png) & ![](./assets/discavoid/noweb.png)\\
+\bottomrule
+\end{tabular}
+\end{table}
