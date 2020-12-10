@@ -280,15 +280,15 @@ Dana has published several articles in leading social science journals and books
 
 Philipp's main research interest lies at the intersection of labor and regional economics. He has contributed to the emerging scientific literature on minimum wages in Germany and led several policy evaluation projects funded by the German government to accompany the introduction of the national statutory minimum wage. He has also worked on local spillovers, segregation, and policy evaluation using geocoded administrative research data.
 
-[^iab1]: See the later section on [Safe Data](#iab-safedata) for more information.
+[^iab1]: See section [Safe Data](#iab-safedata) for more information.
 
-[^iab2]: The standardizations for data use agreements and anonymization rules will be discussed in more detail in the [Five Safes](#iab-fivesafes) section of this chapter. The standardized contract for guest RDCs can be provided to institutions also interested in establishing similar decentralized data access infrastructure upon request.
+[^iab2]: The standardizations for data use agreements and anonymization rules are discussed in more detail in the [Five Safes](#iab-fivesafes) section of this chapter. The standardized contract for guest RDCs can be provided to institutions also interested in establishing similar decentralized data access infrastructure upon request.
 
 [^iab3]: The term establishment (*Betrieb*) is rather peculiar and needs some explanation. It is defined as a regionally and economically delimited unit in which employees work. An establishment may consist of one or more branch offices and several establishments may belong to one company. The authors decided against using *firm*, *company*, or *enterprise* as a translation as these terms usually mean something different.
 
 [^iab4]: The institute is scientifically independent. Freedom of research and publication is guaranteed. More information can be found on the Institute's [website](https://www.iab.de/en/iab-aktuell.aspx).
 
-[^iab5]: These are the SGB books II, III, and IV as well as the German Data and Transmission Act (*Datenerfassungs- und -übermittlungsverordnung - DEÜV*). For example, article 282 is available in German at <http://www.gesetze-im-internet.de/sgb_3/__282.html>  (Accessed on 06-15-2020). The authors are not aware of a complete official translation of all relevant sections.
+[^iab5]: These are the SGB books II, III, and IV as well as the German Data and Transmission Act (*Datenerfassungs- und -übermittlungsverordnung - DEÜV*). For example, article 282 is available in German at <http://www.gesetze-im-internet.de/sgb_3/__282.html> (Accessed on 06-15-2020). The authors are not aware of a complete official translation of all relevant sections.
 
 [^iab6]: Access to non-anonymized data is regulated by article 75 SGB Book X.
 
@@ -296,7 +296,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab8]: This is not true of the surveys, where participation is voluntary.
 
-[^iab9]: The authors discuss SDC rules at the RDC-IAB in the section on [safe outputs](#iab-safeoutput).
+[^iab9]: The authors discuss SDC rules at the RDC-IAB in section [Safe Outputs](#iab-safeoutput).
 
 [^iab10]: The template can be provided to institutions interested in establishing decentralized data access upon request.
 
@@ -328,7 +328,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab24]: One example is the data set "Biographical Data of Social Insurance Agencies in Germany (BASiD)" [@hochfellner2012].
 
-[^iab25]: Refer to the section [Motivation and Background](#iab-motivation).
+[^iab25]: See section [Motivation and Background](#iab-motivation).
 
 [^iab26]: Accessed on 06-15-2020
 
@@ -342,5 +342,3 @@ This is a workaround for citations in footnotes, please ignore.
 ```
 
 \putbib
-
-
