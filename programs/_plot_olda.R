@@ -51,8 +51,8 @@ oldat1data <- data.frame(
 oldatable1<-function(){
   kable(oldat1data, format="html", booktabs=T, escape=F, 
         col.names = c("Agency", "Datasets", "Years Available", "Records"),
-        caption = "Specific Files Maintained at the Ohio State University") %>%
-    footnote(general="The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings", footnote_as_chunk = T)
+        caption = "Specific files maintained at the Ohio State University.") %>%
+    footnote(general="The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings", footnote_as_chunk = T, general_title = "Notes: ")
 }
 
 # Table 2
@@ -66,6 +66,6 @@ oldat2data <- data.frame(
 oldatable2<-function(){
   kable(oldat2data, format="html", booktabs=T, escape=F,
         col.names = c("Type of Study","Example Project Title"),
-        caption = "Example Approved Studies Using the Ohio Longitudinal Data") %>%
-        footnote(number=c("This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)"))
+        caption = "Examples of approved studies using the Ohio longitudinal data.") %>%
+        footnote(number=c("This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup) (accessed 2020-12-10)"))
   }
