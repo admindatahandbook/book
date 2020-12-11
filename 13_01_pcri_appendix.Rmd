@@ -29,7 +29,7 @@ pcritablea1.csv %>%
    kable(format.args = list(big.mark = ","),
          caption="Private capital firms by location of company headquarters and year founded") %>%
    kable_styling(full_width = F)  %>%
-    footnote(general="Source: @jeng2015.",footnote_as_chunk = T)
+    footnote(general="Source: @jeng2015.",footnote_as_chunk = T, general_title = "Notes: ")
 }
 
 if ( knitr::is_latex_output() ) {
@@ -43,7 +43,7 @@ pcritablea2.csv %>%
    kable(format.args = list(big.mark = ","),
          caption="Funds by investment type and vintage year") %>%
    kable_styling(full_width = F)  %>%
-    footnote(general="Source: @jeng2015.",footnote_as_chunk = T,general_title = "Notes: ")
+    footnote(general="Source: @jeng2015.",footnote_as_chunk = T, general_title = "Notes: ")
 }
 
 if ( knitr::is_latex_output() ) {
@@ -85,7 +85,7 @@ pcritablea3.csv %>%
    kable(format.args = list(big.mark = ","),
          caption="Portfolio companies by region and year founded") %>%
    kable_styling(full_width = F)  %>%
-    footnote(general="Source: @jeng2015.",footnote_as_chunk = T,general_title = "Notes: ")
+    footnote(general="Source: @jeng2015.",footnote_as_chunk = T, general_title = "Notes: ")
 }
 
 if ( knitr::is_latex_output() ) {

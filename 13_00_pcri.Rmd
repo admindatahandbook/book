@@ -87,7 +87,7 @@ pcritable1.csv %>%
          caption="Number of Distinct private capital firms provided by source of information") %>%
    kable_styling(full_width = F)  %>%
     row_spec(nrow(pcritable1.csv),bold=T) %>%
-    footnote(general="As of 2015. Source: @jeng2015.",footnote_as_chunk = T)
+    footnote(general="As of 2015. Source: @jeng2015.",footnote_as_chunk = T, general_title = "Notes: ")
 }
 
 if ( knitr::is_latex_output() ) {
