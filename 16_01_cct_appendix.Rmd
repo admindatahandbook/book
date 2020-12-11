@@ -157,7 +157,7 @@ cctapptabdata<- data.frame(
   #                col.names=c("Element Name","Description","Notes"))
 
 if ( knitr::is_html_output() ) {
-   kable(cctapptabdata,booktabs=T,caption="Core Metadata Elements for Municipal Datasets (June 2020)",col.names=c("Element Name","Description","Notes")) %>%
+   kable(cctapptabdata,booktabs=T,caption="Core metadata elements for municipal datasets (June 2020)",col.names=c("Element Name","Description","Notes")) %>%
       column_spec(1,width="12em")
 }
 if ( knitr::is_latex_output() ) {
