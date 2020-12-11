@@ -2766,7 +2766,7 @@ A fourth principle was that no government department or public body would be com
 
 ### Data Use Examples {#nbirdt-examples}
 
-NB-IRDT represents a transformation in health and social science research infrastructure in NB and as of June 2020 holds more than forty administrative data sets spanning hospitalizations, immigrant arrivals, cancer screening, post-secondary training, long term care facilities, K--12 school report cards, and many other topics. In addition, more than fifty research projects have been initiated, are in progress, or have been completed since 2015, involving academic, clinical health, government, and private sector researchers.[^nbirdt3] Much of the research in the health domain has been undertaken under the auspices of a research collaboration with the Department of Health through the [Canadian Institutes of Health Research (CIHR)](https://cihr-irsc.gc.ca/e/45859.html) [Strategy for Patient-Oriented Research (SPOR)](http://www.spor-maritime-srap.ca/). The +SPOR| Support Unit program, of which the +Maritime_SPOR_SUPPORT_Unit| (MSSU) is a key element, involves equal contributions of federal and provincial funding and is described in detail elsewhere. Projects underway or completed include examinations of the impact of surgical experience on patient outcomes, the effects on health service use of rural hospital closure, and a series of projects on the effects of air quality, living in proximity to green space and blue space, and industrial emissions on different dimensions of health and mortality. Another project underway in 2020 undertakes program evaluation of support services and medical treatment to individuals with Hepatitis C who engage in high-risk behavior. The project will consider cost savings not just in terms of healthcare but also reliance on social assistance and other social programming and interactions with the court and corrections systems.
+NB-IRDT represents a transformation in health and social science research infrastructure in NB and as of June 2020 holds more than forty administrative data sets spanning hospitalizations, immigrant arrivals, cancer screening, post-secondary training, long term care facilities, K--12 school report cards, and many other topics. In addition, more than fifty research projects have been initiated, are in progress, or have been completed since 2015, involving academic, clinical health, government, and private sector researchers.[^nbirdt3] Much of the research in the health domain has been undertaken under the auspices of a research collaboration with the Department of Health through the [Canadian Institutes of Health Research (CIHR)](https://cihr-irsc.gc.ca/e/45859.html)[^accessdate] [Strategy for Patient-Oriented Research (SPOR)](http://www.spor-maritime-srap.ca/).[^accessdate] The +SPOR| Support Unit program, of which the +Maritime_SPOR_SUPPORT_Unit| (MSSU) is a key element, involves equal contributions of federal and provincial funding and is described in detail elsewhere. Projects underway or completed include examinations of the impact of surgical experience on patient outcomes, the effects on health service use of rural hospital closure, and a series of projects on the effects of air quality, living in proximity to green space and blue space, and industrial emissions on different dimensions of health and mortality. Another project underway in 2020 undertakes program evaluation of support services and medical treatment to individuals with Hepatitis C who engage in high-risk behavior. The project will consider cost savings not just in terms of healthcare but also reliance on social assistance and other social programming and interactions with the court and corrections systems.
 
 While the social value of this research and data access is significant, it does not in of itself justify the provincial government's significant investment of time, money, and resources in an environment of fiscal restraint and government cutbacks to services. To ensure that work directly relevant to government's policy priority areas would be undertaken, two core departments entered into multi-year research agreements with NB-IRDT, in addition to the collaboration with the Department of Health through +MSSU|. These agreements specified funding for research and the structure of a governance model that would identify and monitor projects of direct relevance to those departments. It is noteworthy that through partnership with NB-IRDT, particular agencies could gain access to linked data collected by other agencies for research and program evaluation that would not otherwise be accessible. An additional benefit of the research agreements was that internal government resources were mobilized to support on data preparation and transfer, and data so transferred would also be available to the broader research community.
 
@@ -2945,13 +2945,13 @@ Audits of data sets accessed and data project activity are a requirement of data
 
 [^nbirdt2]: Personal correspondence between Ted McDonald and Jean-Marc Dupuis, March 2018.
 
-[^nbirdt3]: See NB-IRDT [website](https://www.unb.ca/nbirdt/) for more details.
+[^nbirdt3]: See the NB-IRDT [website](https://www.unb.ca/nbirdt/) for more details (accessed 2020-12-10).
 
 [^nbirdt4]: NB-IRDT signed a data sharing agreement with the Federal Government's Immigration, Refugees and Citizenship Canada agency (IRCC) who have provided landing records on all permanent residents to Canada not just provincial nominees.
 
 [^nbirdt5]: The role of undertaking all data matching taken by the Department of Health will be discussed in more detail later in the chapter.
 
-[^nbirdt6]: See NB-IRDT website [Data Holdings](https://www.nbirdt.ca/holdings) for examples of available +codebooks|.
+[^nbirdt6]: See NB-IRDT website [Data Holdings](https://www.nbirdt.ca/holdings) for examples of available codebooks (accessed 2020-12-10).
 
 [^nbirdt7]: See section [Safe Projects](#nbirdt-safeproject) for detailed description of this committee.
 
@@ -2979,7 +2979,9 @@ Audits of data sets accessed and data project activity are a requirement of data
 
 [^nbirdt19]: Vetting rules are not published but are discussed with the research team at project launch as part of the mandatory information sessions for researchers with newly approved projects.
 
-[^nbirdt20]: See NB-IRDT website at [Research, Publications](https://www.nbirdt.ca/publications) and [News, Events](https://www.nbirdt.ca/nbirdt-events) for links to previous public events.
+[^nbirdt20]: See NB-IRDT website [Research, Publications](https://www.nbirdt.ca/publications) and [News, Events](https://www.nbirdt.ca/nbirdt-events) for links to previous public events (accessed 2020-12-10).
+
+[^accessdate]: Accessed 2020-12-10
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@governmentofcanada1985</span></p>
