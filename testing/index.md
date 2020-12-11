@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-12-09"
+date: "2020-12-11"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -2344,7 +2344,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 <!--chapter:end:10_00_iab.Rmd-->
 
-# Ohio and the Longitudinal Data Archive: Developing Mutually Beneficial Partnerships Between State Government and the Research Community {#olda}
+# Ohio and the Longitudinal Data Archive: Mutually Beneficial Partnerships Between State Government and Researchers {#olda}
 
 *Joshua D. Hawley (Ohio State University)*  
 <div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hawley, Joshua D.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
@@ -2355,7 +2355,7 @@ The +Ohio_Longitudinal_Data_Archive| (OLDA) is a collaborative arrangement betwe
 
 The OLDA is an example of long-term partnerships between state government and research communities. The data system has increased its holdings to include longitudinal microdata from education, labor, housing, and disability services. Data are made available through a secure platform. The entire system is governed by a memorandum of understanding that is renegotiated every two years.
 
-The initial idea for the data system emerged in 2007 out of a partnership between faculty at the university, which resulted in an MOU giving OSU access to state data.[^olda1] The OLDA is a linked to a college research center, the [Ohio Education Research Center]([www.oerc.osu.edu](http://www.oerc.osu.edu/)) (OERC). The OERC is a policy research and evaluation unit at the Glenn College and conducts contract research with state and local government. The OLDA and OERC are actively used at Ohio State University in teaching education policy, data sciences, and simulation and modeling.[^olda2]
+The initial idea for the data system emerged in 2007 out of a partnership between faculty at the university, which resulted in an MOU giving OSU access to state data.[^olda1] The OLDA is a linked to a college research center, the [Ohio Education Research Center](http://www.oerc.osu.edu) (OERC).[^oldaaccess] The OERC is a policy research and evaluation unit at the Glenn College and conducts contract research with state and local government. The OLDA and OERC are actively used at Ohio State University in teaching education policy, data sciences, and simulation and modeling.[^olda2]
 
 The OLDA is broadly used to conduct research into outcomes of education and training, with additional foci on human services, housing, and health care as need arises. The core data holdings from the wage records and all public education and higher education providers enable researchers to answer critical questions such as (1) what are the employment outcomes of higher education, (2) what kinds of industries are growing or shrinking, and (3) how does employment depend on major or credential?
 
@@ -2395,13 +2395,13 @@ The ad hoc projects built some confidence among the researchers at the universit
 
 The +Workforce_Data_Quality_Initiative| provided funding for the establishment of the OLDA longitudinal data system in Ohio. Ohio's application for first round of the Workforce Data Quality Initiative was submitted in August 2010, leading to six years of direct funding from the USDOL for Ohio to build a state longitudinal data system. That original proposal was a collaborative effort between the Ohio Department of Job and Family Services, the Ohio Board of Regents, and OSU. The proposal declared that the team would "...aid the State of Ohio to incorporate workforce information into longitudinal data systems, to help follow individuals through school, into and through their work life."[^olda4]
 
-This federal funding was dramatically expanded after the State of Ohio hired OSU to build the Ohio Education Research Center as a deliverable for the +Race_to_the_Top| Project in 2012. The Race to the Top proposal was delivered in January 2012 and included a deliverable to expand the +OLDA| to include K12 education data. There were several features of this proposal that dramatically increased research use of the administrative data in Ohio. First, almost all doctoral granting institutions in the State of Ohio were collaborators in the original proposal.[^olda5] Second, Race to the Top required a prodigious number of independent research and evaluation studies that made use of administrative data between 2012 and 2017. The Ohio Education Research Center [website](www.oerc.osu.edu) maintains an archive of research studies conducted under the Race to the Top project.
+This federal funding was dramatically expanded after the State of Ohio hired OSU to build the Ohio Education Research Center as a deliverable for the +Race_to_the_Top| Project in 2012. The Race to the Top proposal was delivered in January 2012 and included a deliverable to expand the +OLDA| to include K12 education data. There were several features of this proposal that dramatically increased research use of the administrative data in Ohio. First, almost all doctoral granting institutions in the State of Ohio were collaborators in the original proposal.[^olda5] Second, Race to the Top required a prodigious number of independent research and evaluation studies that made use of administrative data between 2012 and 2017. The Ohio Education Research Center [website](http://www.oerc.osu.edu) maintains an archive of research studies conducted under the Race to the Top project.
 
 #### Lessons from the Establishment of the OLDA {-}
 
 There are some lessons from this story that are relevant to other states attempting to build integrated data systems. Federal money can be transformative, because it provides scarce resources in moments where radical technical and administrative change is scary. It is natural to think federal financial support is mostly used to pay staff and buy technology. However, the funding can also help convince skeptical senior staff in state government. This research has found, at critical junctures in making arguments to link confidential microdata, that states will often follow the lead of federal agencies. One example of this is states such as Ohio explicitly changed state law to enable them to receive funding under +Race_to_the_Top|. This policy action at the state level was necessary to ensure that school funding was provided under the American Recovery and Reinvestment Act ARRA mechanism.
 
-Because of the budget process in individual states, state government has specific reasons why they support use of administrative data. State and local government offices are often asked to participate in long-term research in collaboration with the federal government. For example, in 2011 the data at the OLDA was used to support a collective evaluation of the Registered Apprenticeship program in multiple states. Another example concerns longitudinal analysis of employment for welfare to work that the Center for Human Resource Research provided in the mid- to late-1990s. [@centerforhumanresourceresearch2001; @reed2012]. In both cases, the primary motivation for the analysis of state administrative data was an external demand from the federal government. Federal requirements for evaluations, particularly in the Department of Labor, are important reference points for legal and program officers in state agencies, as the federal laws (+Code_of_Federal_Regulations| 20 (Section 603)) allow for use of data to evaluate a public program.
+Because of the budget process in individual states, state government has specific reasons why they support use of administrative data. State and local government offices are often asked to participate in long-term research in collaboration with the federal government. For example, in 2011 the data at the OLDA was used to support a collective evaluation of the Registered Apprenticeship program in multiple states. Another example concerns longitudinal analysis of employment for welfare to work that the Center for Human Resource Research provided in the mid- to late-1990s. [@centerforhumanresourceresearch2001; @reed2012]. In both cases, the primary motivation for the analysis of state administrative data was an external demand from the federal government. Federal requirements for evaluations, particularly in the Department of Labor, are important reference points for legal and program officers in state agencies, as the federal laws allow for use of data to evaluate a public program [@codeoffederalregulations2006].
 
 ### Data Use Examples
 
@@ -2418,7 +2418,7 @@ In 2019, the data holdings came from the following state agencies:
 Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in Table \@ref(tab:oldatable1).
 
 <table>
-<caption>(\#tab:oldatable1)Specific Files Maintained at the Ohio State University</caption>
+<caption>(\#tab:oldatable1)Specific files maintained at the Ohio State University.</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Agency </th>
@@ -2466,7 +2466,7 @@ Within each agency, the data resources include the core agency-specific files fo
   </tr>
 </tbody>
 <tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
-<span style="font-style: italic;">Note: </span> <sup></sup> The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings</td></tr></tfoot>
+<span style="font-style: italic;">Notes: </span> <sup></sup> The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings</td></tr></tfoot>
 </table>
 
 The uses of the data resources can be separated into three distinct areas: research use, government use, and training use. Initially, there are some similarities across the data uses. These three data users all make use of the OLDA for both analytical and evaluative reasons. For example, researchers most often wish to make use of the data for explicit analysis of the outcomes of Ohio programs, such as the impact of higher education on employment.
@@ -2494,7 +2494,7 @@ The following case study provides an example of research use under the OLDA. One
 The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the +Unemployment_Insurance_Wage_Records| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^olda7]
 
 <table>
-<caption>(\#tab:oldatable2)Example Approved Studies Using the Ohio Longitudinal Data</caption>
+<caption>(\#tab:oldatable2)Examples of approved studies using the Ohio longitudinal data.</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Type of Study </th>
@@ -2516,7 +2516,7 @@ The registered apprenticeship work conducted in collaboration with the State of 
   </tr>
 </tbody>
 <tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
-<sup>1</sup> This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup)</td></tr></tfoot>
+<sup>1</sup> This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup) (accessed 2020-12-10)</td></tr></tfoot>
 </table>
 
 #### Government Use {-}
@@ -2525,7 +2525,7 @@ The OLDA makes no distinction between research and government use of data from a
 
 *Case Study: Workforce Success Measures* (See Appendix for Example)
 
-Initially completed in 2013, the Workforce Success Measures (WSM) is a dashboard and provides an example of how government uses this data. The Center for Human Resource Research team built the dashboard and maintains it. The tool is available on an OSU [website](https://workforcesuccess.chrr.ohio-state.edu/home). Under the terms of the Workforce Development Strategic Plan that the state provided for the Governor's Office of Workforce Transformation, Ohio is required to provide annual comparative and standardized outcomes for participants in training and education programs funded through a range of federal workforce efforts. The WSM includes information on all of the programs included under the federal Workforce Innovation and Opportunity Act.
+Initially completed in 2013, the Workforce Success Measures (WSM) is a dashboard and provides an example of how government uses this data. The Center for Human Resource Research team built the dashboard and maintains it. The tool is available on an OSU [website](https://workforcesuccess.chrr.ohio-state.edu/home).[^oldaaccess] Under the terms of the Workforce Development Strategic Plan that the state provided for the Governor's Office of Workforce Transformation, Ohio is required to provide annual comparative and standardized outcomes for participants in training and education programs funded through a range of federal workforce efforts. The WSM includes information on all of the programs included under the federal Workforce Innovation and Opportunity Act.
 
 The purpose of the WSM is to give administrators the ability to monitor program performance on key metrics and compare program performance across type of program and geography. The measures used include the number of individuals completing the program, the number of these individuals subsequently employed in Ohio, the median earnings of these individuals, employment stability, college enrollment, and education and training credentials earned. The dashboard is populated with data that is currently reported in administrative records (i.e., existing records collected in the course of routine operations) provided by the Ohio Department of Job and Family Services, the Ohio Department of Higher Education, and Opportunities for Ohioans with Disabilities.
 
@@ -2539,7 +2539,7 @@ Data are also made useable because the research team provides guided support for
 
 ### Metadata
 
-The metadata are published in an open application on the center website. Access is through a guest account or a designated user [account](https://www.chrr.ohio-state.edu/investigator/pages/login). The metadata include all files that have been ingested and documented, up to and including wage record files, K12 education data, and higher education enrollments. Technically, the metadata include all variable names, values, and counts or other summary statistics for variables. It is possible to learn, for example, what is the cohort size of each group of high school graduates over time in Ohio. The metadata also include a sophisticated search feature, allowing identification of variables and types of data, including created variables.
+The metadata are published in an open application on the center website. Access is through a guest account or a designated user [account](https://www.chrr.ohio-state.edu/investigator/pages/login).[^oldaaccess] The metadata include all files that have been ingested and documented, up to and including wage record files, K12 education data, and higher education enrollments. Technically, the metadata include all variable names, values, and counts or other summary statistics for variables. It is possible to learn, for example, what is the cohort size of each group of high school graduates over time in Ohio. The metadata also include a sophisticated search feature, allowing identification of variables and types of data, including created variables.
 
 ## Legal and Institutional Framework
 
@@ -2561,7 +2561,7 @@ Through a study of the employment outcomes of individuals enrolled in welfare, r
 
 
 <table>
-<caption>(\#tab:oldatable3)Important legal documents to review for the research community</caption>
+<caption>(\#tab:oldatable3)Important legal documents to review for the research community.</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Law or Administrative Regulation </th>
@@ -2575,15 +2575,15 @@ Through a study of the employment outcomes of individuals enrolled in welfare, r
   </tr>
   <tr>
    <td style="text-align:left;"> Workforce Innovation and Opportunity Act (Final rule) </td>
-   <td style="text-align:left;"> https://www.doleta.gov/wioa/about/final-rules/ </td>
+   <td style="text-align:left;"> https://www.doleta.gov/wioa/about/final-rules/ (accessed 2020-12-10) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Joint Guidance on Data Matching to Facilitate WIOA Performance Reporting and Evaluation </td>
-   <td style="text-align:left;"> https://www2.ed.gov/policy/gen/guid/fpco/pdf/final-ferpa-tegl-report.pdf </td>
+   <td style="text-align:left;"> https://www2.ed.gov/policy/gen/guid/fpco/pdf/final-ferpa-tegl-report.pdf (accessed 2020-12-10) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Unemployment Insurance and the Workforce Innovation and Opportunity Act of 2014 </td>
-   <td style="text-align:left;"> https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf </td>
+   <td style="text-align:left;"> https://wdr.doleta.gov/directives/attach/UIPL/UIPL_20-15.pdf (accessed 2020-12-10) </td>
   </tr>
 </tbody>
 </table>
@@ -2672,7 +2672,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 *Data sets*. The OLDA maintains data from five different state agencies. The newest one was added in 2017 and the oldest one prior to 1999. Within each agency the number of data sets expands each year as the agencies increase holdings. For example, the Ohio education data began in 2001 and now includes data through 2019. It is updated annually. The LMI workforce data are added every quarter and started in 1995 with the unemployment wage record data. The volume of the data sets is significant, more so because some of the files have over 100,000 variables rather than because of the volume of storage OLDA maintains.
 
-*Projects completed*. Research output includes 28 published studies in the last five years. These include academic articles, working papers, and presentations submitted to the research center. The list is maintained in a [bibliography](https://www.chrr.ohio-state.edu/content/olda_bib/olda_bib.html) and is not inclusive of in-progress work or work that has been submitted to the center but not yet reviewed or finalized.
+*Projects completed*. Research output includes 28 published studies in the last five years. These include academic articles, working papers, and presentations submitted to the research center. The list is maintained in a [bibliography](https://www.chrr.ohio-state.edu/content/olda_bib/olda_bib.html)[^oldaaccess] and is not inclusive of in-progress work or work that has been submitted to the center but not yet reviewed or finalized.
 
 *Dashboards*. The OLDA team works extensively on supporting state and local government in Ohio with dashboards and scorecards. The team has built several that are maintained every year for over five years and some that are more recent. OLDA keeps website hit traffic for these dashboards to examine the location and overall use of the dashboards in the state.
 
@@ -2682,7 +2682,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 [^olda1]: The original research team that wrote the concept paper to the State of Ohio included Randall Olsen (Professor Emeritus of Economics, OSU) and Kathryn Sullivan (Former Director, Battelle Center for Mathematics and Science Education Policy, John Glenn College of Public Affairs, OSU). Sullivan subsequently went on to lead the National Oceanic and Atmospheric Administration (NOAA) under President Obama, and Olsen ran the National Longitudinal Surveys for the Department of Labor (DOL) for over 25 years. At the State of Ohio, the original partnership included the Ohio Departments of Education, Higher Education, and Job and Family Services.
 
-[^olda2]: For an example of simulation work using Ohio data, see our project on infant mortality. [@hosseinichimeh2017]
+[^olda2]: For an example of simulation work using Ohio data, see our project on infant mortality [@hosseinichimeh2017].
 
 [^olda3]: The Ohio Revised Code section on the Education Management Information System describes the system and its legal basis (ORC, Chapter 3301-14).
 
@@ -2692,7 +2692,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 [^olda7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
 
-<!-- [^olda8]: This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup) -->
+[^oldaaccess]: Accessed 2020-12-10
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@hosseinichimeh2017</span> <span class="citation">@hawley2017a</span></p>
@@ -2733,7 +2733,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 [Central Ohio Compact Dashboard](https://compact.chrr.ohio-state.edu/)
 
-### Appendix B: Case Study Images (Workforce Success Measures) {-}
+### Appendix B: Case Study (Workforce Success Measures) {-}
 
 <img src="./assets/olda/appendixb.png" width="100%" />
 
