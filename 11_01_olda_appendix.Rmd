@@ -2,7 +2,7 @@
 cat("\\FloatBarrier\\newpage")
 ```
 
-## Appendix {-}
+## Appendix {- #olda-appendix}
 
 ### Appendix A: Resources and Dashboards {-}
 
