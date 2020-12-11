@@ -33,7 +33,7 @@ cat("\\end{quote}")
 
 [Central Ohio Compact Dashboard](https://compact.chrr.ohio-state.edu/)
 
-### Appendix B: Case Study Images (Workforce Success Measures) {-}
+### Appendix B: Case Study (Workforce Success Measures) {-}
 
 ```{r echo=FALSE, out.width='100%'}
 if ( knitr::is_html_output() ) {
