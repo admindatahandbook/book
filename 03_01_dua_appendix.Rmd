@@ -2,7 +2,7 @@
 cat("\\FloatBarrier\\newpage")
 ```
 
-## Appendix {-}
+## Appendix {- #dua-appendix}
 
 ### Appendix A {-}
 

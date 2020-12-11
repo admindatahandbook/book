@@ -2,7 +2,7 @@
 cat("\\FloatBarrier\\newpage")
 ```
 
-## Appendix {-}
+## Appendix {- #sfusd-appendix}
 
 
 ```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}

@@ -2,7 +2,7 @@
 cat("\\FloatBarrier\\newpage")
 ```
 
-## Appendix  {-}
+## Appendix  {- #pcri-appendix}
 
 ### Appendix A {-}
 
@@ -10,7 +10,7 @@ cat("\\FloatBarrier\\newpage")
 
 The following tables and figures, from @jeng2015, provide a summary overview of the data collected on private capital firms, funds, and portfolio companies. In particular, the PCRI focuses on buyouts, growth equity, and venture capital investing.
 
-```{r pcrifigurea1, echo=FALSE, fig.align = 'center', fig.cap='Number of Private Capital Firms by Year Founded',eval=knitr::is_html_output() }
+```{r pcrifigurea1, echo=FALSE, fig.align = 'center', fig.cap='Number of private capital firms by year founded',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigurea1web.png')
 ```
 ```{r pcrifigurea1-tex,echo=FALSE,results='asis'}
@@ -27,9 +27,9 @@ if ( knitr::is_latex_output() ) {
 if ( knitr::is_html_output() ) {
 pcritablea1.csv %>%
    kable(format.args = list(big.mark = ","),
-         caption="Private Capital Firms by Location of Company Headquarters and Year Founded") %>%
+         caption="Private capital firms by location of company headquarters and year founded") %>%
    kable_styling(full_width = F)  %>%
-    footnote(general="Source: @jeng2015.",footnote_as_chunk = T)
+    footnote(general="Source: @jeng2015.",footnote_as_chunk = T, general_title = "Notes: ")
 }
 
 if ( knitr::is_latex_output() ) {
@@ -41,9 +41,9 @@ cat("\\input{./tables/pcri/pcritablea1.tex}")
 if ( knitr::is_html_output() ) {
 pcritablea2.csv %>%
    kable(format.args = list(big.mark = ","),
-         caption="Funds by Investment Type and Vintage Year") %>%
+         caption="Funds by investment type and vintage year") %>%
    kable_styling(full_width = F)  %>%
-    footnote(general="Source: @jeng2015.",footnote_as_chunk = T)
+    footnote(general="Source: @jeng2015.",footnote_as_chunk = T, general_title = "Notes: ")
 }
 
 if ( knitr::is_latex_output() ) {
@@ -52,9 +52,10 @@ cat("\\input{./tables/pcri/pcritablea2.tex}")
 ```
 
 
-```{r pcrifigurea2, echo=FALSE, fig.align = 'center', fig.cap='Funds by Region (N = 25,238)',eval=knitr::is_html_output() }
+```{r pcrifigurea2, echo=FALSE, fig.align = 'center', fig.cap='Funds by region (N = 25,238)',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigurea2web.png')
 ```
+
 ```{r pcrifigurea2-tex,echo=FALSE,results='asis'}
 if ( knitr::is_latex_output() ) {
       if ( ! file.exists('./figures/pcrifigurea2.png')) {
@@ -65,7 +66,7 @@ if ( knitr::is_latex_output() ) {
 ```
 
 
-```{r pcrifigurea3, echo=FALSE, out.width='100%', fig.align = 'center', fig.cap='Funds by Industry (N = 12,333)',eval=knitr::is_html_output() }
+```{r pcrifigurea3, echo=FALSE, out.width='100%', fig.align = 'center', fig.cap='Funds by industry (N = 12,333)',eval=knitr::is_html_output() }
 knitr::include_graphics('./assets/pcri/pcrifigurea3web.png')
 ```
 
@@ -82,9 +83,9 @@ if ( knitr::is_latex_output() ) {
 if ( knitr::is_html_output() ) {
 pcritablea3.csv %>%
    kable(format.args = list(big.mark = ","),
-         caption="Portfolio Companies by Region and Year Founded") %>%
+         caption="Portfolio companies by region and year founded") %>%
    kable_styling(full_width = F)  %>%
-    footnote(general="Source: @jeng2015.",footnote_as_chunk = T)
+    footnote(general="Source: @jeng2015.",footnote_as_chunk = T, general_title = "Notes: ")
 }
 
 if ( knitr::is_latex_output() ) {
