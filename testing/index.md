@@ -1196,7 +1196,7 @@ No matter the size of the project or the volume of data needed, all parties shou
 
 
 
-## Appendix {-}
+## Appendix {- #dua-appendix}
 
 ### Appendix A {-}
 
@@ -2696,7 +2696,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 
 
-## Appendix {-}
+## Appendix {- #olda-appendix}
 
 ### Appendix A: Resources and Dashboards {-}
 
@@ -3007,13 +3007,13 @@ The PCRI databases are available to all academic researchers with a credible res
 
 The level of interest in alternative investments, and private capital in particular (which encompasses both venture capital (VC) and private equity), has been intense over the past decade. This interest has stemmed from both investors' desires for attractive returns and the policy questions around this rapidly growing asset class.
 
-Returns from the United States publicly traded equities, the mainstays of investment portfolios for individuals and institutions, are projected by many analysts to be substantially weaker going forward, while exceedingly low interest rates suggest limited future returns for bonds [@perianan2020].Many other classes of alternative investments, such as hedge funds and real estate, have struggled in recent years to match market benchmarks. Concurrently, many public pension funds are facing severe shortfalls, and other institutional investors---from university endowments to sovereign wealth funds---are seeking additional funds to fulfill ambitious agendas. As a result, institutions are increasingly looking to private capital investments such as venture capital, buyout, and growth funds. The global private capital pool reached US\$714 billion in 2018, up from US\$324 billion a decade ago [@baincompany2019].
+Returns from the United States publicly traded equities, the mainstays of investment portfolios for individuals and institutions, are projected by many analysts to be substantially weaker going forward, while exceedingly low interest rates suggest limited future returns for bonds [@perianan2020]. Many other classes of alternative investments, such as hedge funds and real estate, have struggled in recent years to match market benchmarks. Concurrently, many public pension funds are facing severe shortfalls, and other institutional investors---from university endowments to sovereign wealth funds---are seeking additional funds to fulfill ambitious agendas. As a result, institutions are increasingly looking to private capital investments such as venture capital, buyout, and growth funds. The global private capital pool reached US\$714 billion in 2018, up from US\$324 billion a decade ago [@baincompany2019].
 
-This growth has, in turn, raised questions about the consequences of these investments for companies, workers, and the economy more generally [@privatecapitalresearchinstitute2017]. In particular, policymakers have enacted and proposed several initiatives in the past decade to address the perceived harms of private equity. For example, the European Union implemented an [Alternative Investment Fund Managers Directive]( https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011L0061&from=EN) to prevent asset stripping from private firms after acquisition by private equity or other financial sponsors (see Chapters IV and V, especially Chapter V, Section 2, Articles 26--30). As another example, the European Central Bank (ECB) [guidance on leveraged transactions](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.leveraged_transactions_guidance_201705.en.pdf) requires stringent internal review of "all types of loan or credit exposures where the borrower is owned by one or more financial sponsors."[^pcri4] Additionally, in 2019 United States Senator Elizabeth Warren introduced the [Stop Wall Street Looting Act]( https://www.warren.senate.gov/imo/media/doc/2019.7.17%20Stop%20Wall%20Street%20Looting%20Act%20Text.pdf ) (see Section 3(13)) to broadly regulate private equity in the United States. Fears about the high indebtedness of buyouts and their potential risk to the stability of the financial system animated United States regulatory guidance of leveraged lending to facilitate buyouts and post-buyout activities of target firms.
+This growth has, in turn, raised questions about the consequences of these investments for companies, workers, and the economy more generally [@privatecapitalresearchinstitute2017]. In particular, policymakers have enacted and proposed several initiatives in the past decade to address the perceived harms of private equity. For example, the European Union implemented an [Alternative Investment Fund Managers Directive]( https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011L0061&from=EN)[^pcriaccessdate] to prevent asset stripping from private firms after acquisition by private equity or other financial sponsors (see Chapters IV and V, especially Chapter V, Section 2, Articles 26--30). As another example, the European Central Bank (ECB) [guidance on leveraged transactions](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.leveraged_transactions_guidance_201705.en.pdf)[^pcriaccessdate] requires stringent internal review of "all types of loan or credit exposures where the borrower is owned by one or more financial sponsors."[^pcri4] Additionally, in 2019 United States Senator Elizabeth Warren introduced the [Stop Wall Street Looting Act]( https://www.warren.senate.gov/imo/media/doc/2019.7.17%20Stop%20Wall%20Street%20Looting%20Act%20Text.pdf )[^pcriaccessdate] (see Section 3(13)) to broadly regulate private equity in the United States. Fears about the high indebtedness of buyouts and their potential risk to the stability of the financial system animated United States regulatory guidance of leveraged lending to facilitate buyouts and post-buyout activities of target firms.
 
 Although the global economy and individual investors are increasingly dependent on private capital, much remains poorly understood about these investments. A salient aspect of private capital is that it is indeed private. Traditionally, the general partners (GPs) who manage these funds have not disclosed much information to the United States Securities and Exchange Commission, other regulators, or even to their own investors (limited partners, or LPs). A shortage of reliable industry data leads to an unappealing setting where industry advocates make sweeping claims about the benefits and critics make broad charges on very shaky empirical foundations [@kaplan2017].
 
-This lack of transparency has led to two important barriers to private capital research. First, there have been barriers to entry: it has been difficult for academic researchers, graduate students and junior faculty, to get access to these records. Second, much of the research has been undertaken using commercial databases (most notably, Thomson Reuters, which has a licensing program, and Burgiss, which has made its data available to the [Private Equity Research Consortium](http://uncipc.org/index.php/initiativecat/private-equity/) based at the University of North Carolina at Chapel Hill) or else using data provided to researchers directly by limited and general partners on a one-off basis [e.g., @gompers1997].
+This lack of transparency has led to two important barriers to private capital research. First, there have been barriers to entry: it has been difficult for academic researchers, graduate students and junior faculty, to get access to these records. Second, much of the research has been undertaken using commercial databases (most notably, Thomson Reuters, which has a licensing program, and Burgiss, which has made its data available to the [Private Equity Research Consortium](http://uncipc.org/index.php/initiativecat/private-equity/)[^pcriaccessdate] based at the University of North Carolina at Chapel Hill) or else using data provided to researchers directly by limited and general partners on a one-off basis [e.g., @gompers1997].
 
 It is typically difficult to compare any but the basic facts about the various commercial databases, as these databases draw from different sources, some of which may be proprietary.[^pcri1] As a result, there are contradictory findings on a number of important topics, such as the risk-adjusted performance of private equity and the extent of persistence of performance of funds: the differences in results appear to be at least in part a function of the differences between databases. On the former topic, see @korteweg2019; on the latter, see @braun2017, @harris2014, and @korteweg2015. These issues are akin to the more general issues of access to private data raised by the American Economic Association's Committee on Economic Statistics.[^pcri5]
 
@@ -3043,7 +3043,7 @@ As mentioned, one of the primary objectives of the PCRI is to promote a better u
 
 - Jun Chen from California Institute of Technology completed his study on the scale, scope, and dynamics of non-VC early-stage financing markets. In particular, in the paper "What role does angel finance play in the early-stage capital market," [-@chen2017] used PCRI data to examine the interaction between the ways in which angel investors complement and substitute for venture capital financing and the broader economic implications on how to promote economic growth and entrepreneurship. In this paper, Chen assembles the first comprehensive data set on angel financing and characterizes its size, scope, and role in the early-stage capital market.
 
-- PCRI data was used in 2017 in the latest research on Smart Societies and [the accompanying *Harvard Business Review* article](https://sites.tufts.edu/digitalplanet/hbr-the-smart-society-of-the-future-doesnt-look-like-science-fiction/) of the Digital Planet initiative at the Fletcher School at Tufts University [@chakrovorti2017].[^pcri7] PCRI data helped form part of a benchmark that would assist policymakers to better identify their country's investment environment. The PCRI data are combined with several measures to provide a more complete view of what is actually happening in terms of investments, especially investments in technology.
+- PCRI data was used in 2017 in the latest research on Smart Societies and [the accompanying *Harvard Business Review* article](https://sites.tufts.edu/digitalplanet/hbr-the-smart-society-of-the-future-doesnt-look-like-science-fiction/)[^pcriaccessdate] of the Digital Planet initiative at the Fletcher School at Tufts University [@chakrovorti2017].[^pcri7] PCRI data helped form part of a benchmark that would assist policymakers to better identify their country's investment environment. The PCRI data are combined with several measures to provide a more complete view of what is actually happening in terms of investments, especially investments in technology.
 
 ## Making Data Useable for Research
 
@@ -3053,18 +3053,18 @@ The PCRI collects information on private capital firms, funds, portfolio compani
 
 PCRI's first goal is to gather data directly from the private capital firms. In the outreach to these firms, the Institute has relied primarily on the relationships of its team members with the individual private capital firms. Thus, the PCRI has had to approach each private capital firm one at a time---a time-consuming endeavor. To date, the Institute has approximately fifty groups that have provided data or are in the process of contracting to do so. It might be questioned why private equity firms would be willing to share data with the PCRI when the commercial databases have often struggled to get data from these institutions. There are several answers:
 
-1. There are constraints that the PCRI places on the use of the data. In particular, the PCRI is designed to be a project run by academics and for academics. The information is used exclusively for academic research rather than for any commercial purpose.
+- There are constraints that the PCRI places on the use of the data. In particular, the PCRI is designed to be a project run by academics and for academics. The information is used exclusively for academic research rather than for any commercial purpose.
 
-2. The research protocol simultaneously allows academics to undertake high-quality research while protecting the confidentiality of the data provided by the private equity firms. The PCRI follows the model employed by the +Census_Bureau| for making information available: academics can undertake detailed cross-tabulated analyses but not download or view individual data entries. Essentially the academics are able to upload queries and download results without "touching" the individual data entries.
+- The research protocol simultaneously allows academics to undertake high-quality research while protecting the confidentiality of the data provided by the private equity firms. The PCRI follows the model employed by the +Census_Bureau| for making information available: academics can undertake detailed cross-tabulated analyses but not download or view individual data entries. Essentially the academics are able to upload queries and download results without "touching" the individual data entries.
 
-3. The private equity industry has been under much scrutiny. In particular, in the aftermath of the financial crisis there has been much greater attention to institutions such as hedge funds and private capital groups that traditionally were exempt from most regulatory oversight in the United States and Europe. As a result of these pressures, industry leaders have increasingly appreciated the need for high-quality independent research.
+- The private equity industry has been under much scrutiny. In particular, in the aftermath of the financial crisis there has been much greater attention to institutions such as hedge funds and private capital groups that traditionally were exempt from most regulatory oversight in the United States and Europe. As a result of these pressures, industry leaders have increasingly appreciated the need for high-quality independent research.
 
 Gathering information directly from private capital firms has its own limitations. Even if every active group chose to participate, there would still be some groups that have gone out of business and no longer keep their records or would be difficult to contact. In addition, as the PCRI began collecting data from individual private capital firms, one of the major concerns raised was that it would take too long for the PCRI to get a database large enough to disguise the data to preserve anonymity. The PCRI thus realized the importance of quickly building a large foundation for the database. As a result, the Institute is complementing the data that is gathered from the private capital firms with data from commercial sources, even if it is not always of the same quality as that provided directly by the general partners.
 
 The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in @jeng2015, which is available on the PCRI's website.
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>(\#tab:pcritable1)Number of Distinct Private Capital Firms Provided by Source of Information</caption>
+<caption>(\#tab:pcritable1)Number of Distinct private capital firms provided by source of information</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Vendor </th>
@@ -3094,7 +3094,7 @@ The commercial sources include the Emerging Markets Private Equity Association (
   </tr>
 </tbody>
 <tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
-<span style="font-style: italic;">Note: </span> <sup></sup> As of 2015. Source: @jeng2015.</td></tr></tfoot>
+<span style="font-style: italic;">Notes: </span> <sup></sup> As of 2015. Source: @jeng2015.</td></tr></tfoot>
 </table>
 
 <div class="figure" style="text-align: center">
@@ -3107,7 +3107,7 @@ The commercial sources include the Emerging Markets Private Equity Association (
 
 The process of combining and cleaning the various data sources is an arduous task. At the PCRI, the research staff consists of one full-time director of research, two full-time research associates, and approximately six part-time undergraduate research assistants. Research associates work to understand, clean, and research the various data sources as well as to make those sources consistent and to develop a file-matching protocol. Part-time undergraduate research assistants help with name matching, researching missing data items, and manually collecting data.
 
-The PCRI databases include data for over 17,000 private capital firms, 33,000 private capital funds, and 110,000 portfolio companies covering a time span from the early 1970s to 2018. The portfolio companies are geographically diverse with over 50 percent outside the United States, including 32 percent in Europe and 10 percent in Asia [@jeng2015]. The PCRI database contains eight different data tables: company, deal, exit, fund, fund performance, fund quarterly cash flow, general partner (GP), and investment. See Appendix A for more information on the database. Figure \@ref(fig:pcrifigure2) below provides details on the tables, including the variables in each data table and the relationship between the tables. For more information on the PCRI databases, please see the data user manual available on the [PCRI website](http://privatecapitalresearchinstitute.org/images/news/pcri_manual_2\_4.pdf).
+The PCRI databases include data for over 17,000 private capital firms, 33,000 private capital funds, and 110,000 portfolio companies covering a time span from the early 1970s to 2018. The portfolio companies are geographically diverse with over 50 percent outside the United States, including 32 percent in Europe and 10 percent in Asia [@jeng2015]. The PCRI database contains eight different data tables: company, deal, exit, fund, fund performance, fund quarterly cash flow, general partner (GP), and investment. See Appendix A for more information on the database. Figure \@ref(fig:pcrifigure2) below provides details on the tables, including the variables in each data table and the relationship between the tables. For more information on the PCRI databases, please see the data user manual available on the [PCRI website](http://privatecapitalresearchinstitute.org/images/news/pcri_manual_2\_4.pdf).[^pcriaccessdate]
 
 <div class="figure">
 <img src="./assets/pcri/pcrifigure2web.png" alt="Table relationship diagram of PCRI database" width="100%" />
@@ -3144,7 +3144,7 @@ As seen in Table \@ref(tab:pcritable2) below, the vast majority (82 percent) of 
 
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>(\#tab:pcritable2)Breakdown of State of Incorporation of the 622 Venture-Backed Portfolio Companies</caption>
+<caption>(\#tab:pcritable2)Breakdown of state of incorporation of the 622 venture-backed portfolio companies</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> State </th>
@@ -3186,17 +3186,17 @@ As seen in Table \@ref(tab:pcritable2) below, the vast majority (82 percent) of 
 
 Other states, such as New York, accept orders by mail. In the case of New York, a form must be filled out for each request. The cost is US\$5 for each plain copy of a document. Processing takes ten to twelve business days, not including shipping, and the copies are sent thereafter. For an unusually large order, arrangements can be made in advance, but the work is still performed on a first-come, first-serve basis. For other states, the +CoIs| are usually available online for no cost. Thus, the PCRI can access the business entity database for those states (e.g., California and Massachusetts) and download copies of the documents.
 
-In most states, the Corporations Division of the Secretary of State\'s office handles business incorporations and related filings. In a handful of states, business registrations are handled by a different state agency. The United States Small Business Administration maintains a list of [state business registrars](https://www.sba.gov/business-guide/launch-your-business/register-your-business\#section-header-6) to help find the appropriate state agency. When the PCRI receives a hard copy of a +CoI|, the file is scanned and loaded to be stored electronically. At this time, Delaware and some other states only provide hard copies of documents, making the CoI acquisition process more laborious.
+In most states, the Corporations Division of the Secretary of State\'s office handles business incorporations and related filings. In a handful of states, business registrations are handled by a different state agency. The United States Small Business Administration maintains a list of [state business registrars](https://www.sba.gov/business-guide/launch-your-business/register-your-business\#section-header-6)[^pcriaccessdate] to help find the appropriate state agency. When the PCRI receives a hard copy of a +CoI|, the file is scanned and loaded to be stored electronically. At this time, Delaware and some other states only provide hard copies of documents, making the CoI acquisition process more laborious.
 
 ### Metadata
 
-Information about metadata is available in a PDF version of the [PCRI Data User Manual](http://privatecapitalresearchinstitute.org/images/news/pcri_manual_2\_4.pdf) on its website for use by its academic researchers. The PCRI has a staff dedicated to maintaining the PCRI databases. The Institute revises the databases annually to account for data updates from the data provider and then places updated researcher-accessible files in a designated folder for users to access. The PCRI data are stored as Stata data files. The manual provides a detailed description of the eight different data tables, specifically company, exit, fund, fund performance, fund quarterly cash flow, GP, investment, and deal tables. This reference also cites the location of the files and the size of each file (i.e., number of rows). Additionally, the manual catalogs the names of the different variables and the definitions contained within each table. Furthermore, the manual indicates whether a data item is a Primary Key or Foreign Key. This distinction provides the link between two tables, facilitating the merging of different data tables. Primary Keys are unique within a table, whereas Foreign Keys are not unique but link to another table. Since the PCRI does not permit users to look at the data, the Institute provides a small, artificial sample of each data table in the manual.
+Information about metadata is available in a PDF version of the [PCRI Data User Manual](http://privatecapitalresearchinstitute.org/images/news/pcri_manual_2\_4.pdf)[^pcriaccessdate] on its website for use by its academic researchers. The PCRI has a staff dedicated to maintaining the PCRI databases. The Institute revises the databases annually to account for data updates from the data provider and then places updated researcher-accessible files in a designated folder for users to access. The PCRI data are stored as Stata data files. The manual provides a detailed description of the eight different data tables, specifically company, exit, fund, fund performance, fund quarterly cash flow, GP, investment, and deal tables. This reference also cites the location of the files and the size of each file (i.e., number of rows). Additionally, the manual catalogs the names of the different variables and the definitions contained within each table. Furthermore, the manual indicates whether a data item is a Primary Key or Foreign Key. This distinction provides the link between two tables, facilitating the merging of different data tables. Primary Keys are unique within a table, whereas Foreign Keys are not unique but link to another table. Since the PCRI does not permit users to look at the data, the Institute provides a small, artificial sample of each data table in the manual.
 
 ## Legal and Institutional Framework
 
 ### Institutional Setup
 
-The PCRI is an independent non-profit organization, which seeks to provide a greater fact-based understanding of private capital's global impact. The PCRI is governed by a Practitioner Advisory Committee, which is comprised of experts in the private capital industry, and an Academic Advisory Committee, consisting of leading researchers in the field. Representing diverse affiliations, these two committees provide guidance on the data collection process and periodically review and provide advice on the administration, finances, and research program of the PCRI. A subcommittee of the Academic Advisory Committee meets to approve +research_proposals| requesting access to the PCRI databases. Projects are approved as long as they have a credible research agenda, are not for commercial purposes, and do not jeopardize the security of the data. The Practitioner Advisory Committee is not able to veto approved projects. A list of members of the [Practitioner Advisory Committee](http://privatecapitalresearchinstitute.org/advisory-committee.php) and [Academic Advisory Committee](http://www.privatecapitalresearchinstitute.org/academic-advisory-board.php) is available on the PCRI website.
+The PCRI is an independent non-profit organization, which seeks to provide a greater fact-based understanding of private capital's global impact. The PCRI is governed by a Practitioner Advisory Committee, which is comprised of experts in the private capital industry, and an Academic Advisory Committee, consisting of leading researchers in the field. Representing diverse affiliations, these two committees provide guidance on the data collection process and periodically review and provide advice on the administration, finances, and research program of the PCRI. A subcommittee of the Academic Advisory Committee meets to approve +research_proposals| requesting access to the PCRI databases. Projects are approved as long as they have a credible research agenda, are not for commercial purposes, and do not jeopardize the security of the data. The Practitioner Advisory Committee is not able to veto approved projects. A list of members of the [Practitioner Advisory Committee](http://privatecapitalresearchinstitute.org/advisory-committee.php)[^pcriaccessdate] and [Academic Advisory Committee](http://www.privatecapitalresearchinstitute.org/academic-advisory-board.php)[^pcriaccessdate] is available on the PCRI website.
 
 ### Legal Context for Data Use
 
@@ -3283,7 +3283,7 @@ As mentioned in the "Collecting Data on the Private Capital Industry" section, o
 
 Going forward, PCRI hopes to make this process more efficient by working with some organizations that are already actively collecting information from general partners. Such organizations include a large custodian bank with whom the PCRI has signed a data sharing agreement and national venture capital associations.
 
-To create more awareness of the PCRI databases and to get more researchers using the databases, a call for +research_proposals| has been posted on the SSRN (Social Science Research Network). In addition, the PCRI has participated in numerous conferences (American Economic Association, the American Library Association, and the National Association for Business Economics) to present the PCRI's mission and talk more about the PCRI databases. Lastly, the PCRI hosts conferences twice a year to bring together industry leaders, academics, and policymakers to discuss relevant topics in the private capital industry. For outreach purposes, summaries of the conferences are released on the [PCRI's website](http://www.privatecapitalresearchinstitute.org/).
+To create more awareness of the PCRI databases and to get more researchers using the databases, a call for +research_proposals| has been posted on the SSRN (Social Science Research Network). In addition, the PCRI has participated in numerous conferences (American Economic Association, the American Library Association, and the National Association for Business Economics) to present the PCRI's mission and talk more about the PCRI databases. Lastly, the PCRI hosts conferences twice a year to bring together industry leaders, academics, and policymakers to discuss relevant topics in the private capital industry. For outreach purposes, summaries of the conferences are released on the [PCRI's website](http://www.privatecapitalresearchinstitute.org/).[^pcriaccessdate]
 
 A recap of some of the more recent dissemination activities is highlighted here:
 
@@ -3337,11 +3337,11 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 [^pcri6]: The Private Equity Growth Capital Council [-@privateequitygrowthcapitalcouncil2013] reported that 2,800 private equity firms were headquartered in the US investing in buyout, growth equity, infrastructure, and energy funds. Over the same time period, the PCRI database has recorded 1,600 US private capital firms that solely invest in buyouts. In addition, the National Venture Capital Association reported 874 US venture capital firms were in existence in 2013 with 1,331 VC funds and US\$192.9 billion under management. By comparison, for 2013, the PCRI database has 2,082 US venture capital firms seeking investments. Some of the differences between the PCRI database and the reports can be explained by different firm-type classifications (for example, it is challenging to distinguish growth equity firms, which are often classified as venture capital), as well as the fact that the PCRI is missing firm type for about 30 percent of the data [@jeng2015].
 
-[^pcri7]: For research reports, see <https://sites.tufts.edu/digitalplanet/>, accessed on 06-21-2020.
+[^pcri7]: For research reports, see <https://sites.tufts.edu/digitalplanet/> (accessed 2020-06-21).
 
 [^pcri8]: PCRI focuses on the four original sources: EMPEA, Alternatives, Refinitiv, and Unquote. Start-up Nation Central and Venture Intelligence were added later and represent a small fraction of the total database. 
 
-
+[^pcriaccessdate]: Accessed 2020-12-11
 
 [^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190 [@jeng2015].
 
@@ -3357,7 +3357,7 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 
 
-## Appendix  {-}
+## Appendix  {- #pcri-appendix}
 
 ### Appendix A {-}
 
@@ -3366,14 +3366,14 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 The following tables and figures, from @jeng2015, provide a summary overview of the data collected on private capital firms, funds, and portfolio companies. In particular, the PCRI focuses on buyouts, growth equity, and venture capital investing.
 
 <div class="figure" style="text-align: center">
-<img src="./assets/pcri/pcrifigurea1web.png" alt="Number of Private Capital Firms by Year Founded" width="770" />
-<p class="caption">(\#fig:pcrifigurea1)Number of Private Capital Firms by Year Founded</p>
+<img src="./assets/pcri/pcrifigurea1web.png" alt="Number of private capital firms by year founded" width="800" />
+<p class="caption">(\#fig:pcrifigurea1)Number of private capital firms by year founded</p>
 </div>
 
 
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>(\#tab:pcritablea1)Private Capital Firms by Location of Company Headquarters and Year Founded</caption>
+<caption>(\#tab:pcritablea1)Private capital firms by location of company headquarters and year founded</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Regions </th>
@@ -3467,11 +3467,11 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
   </tr>
 </tbody>
 <tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
-<span style="font-style: italic;">Note: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
+<span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>(\#tab:pcritablea2)Funds by Investment Type and Vintage Year</caption>
+<caption>(\#tab:pcritablea2)Funds by investment type and vintage year</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Fund Type </th>
@@ -3525,26 +3525,27 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
   </tr>
 </tbody>
 <tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
-<span style="font-style: italic;">Note: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
+<span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
 
 <div class="figure" style="text-align: center">
-<img src="./assets/pcri/pcrifigurea2web.png" alt="Funds by Region (N = 25,238)" width="567" />
-<p class="caption">(\#fig:pcrifigurea2)Funds by Region (N = 25,238)</p>
+<img src="./assets/pcri/pcrifigurea2web.png" alt="Funds by region (N = 25,238)" width="567" />
+<p class="caption">(\#fig:pcrifigurea2)Funds by region (N = 25,238)</p>
 </div>
 
 
 
+
 <div class="figure" style="text-align: center">
-<img src="./assets/pcri/pcrifigurea3web.png" alt="Funds by Industry (N = 12,333)" width="100%" />
-<p class="caption">(\#fig:pcrifigurea3)Funds by Industry (N = 12,333)</p>
+<img src="./assets/pcri/pcrifigurea3web.png" alt="Funds by industry (N = 12,333)" width="100%" />
+<p class="caption">(\#fig:pcrifigurea3)Funds by industry (N = 12,333)</p>
 </div>
 
 
 
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>(\#tab:pcritablea3)Portfolio Companies by Region and Year Founded</caption>
+<caption>(\#tab:pcritablea3)Portfolio companies by region and year founded</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Regions </th>
@@ -3627,7 +3628,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
   </tr>
 </tbody>
 <tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
-<span style="font-style: italic;">Note: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
+<span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
 
@@ -4281,7 +4282,7 @@ Once established, any partnership using shared data will need to *continually im
 
 
 
-## Appendix {-}
+## Appendix {- #sfusd-appendix}
 
 
 
@@ -4596,7 +4597,7 @@ The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, C
 
 
 
-## Appendix {-}
+## Appendix {- #cct-appendix}
 
 ### Appendix A {-}
 
