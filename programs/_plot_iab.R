@@ -1,14 +1,15 @@
 # Author: Jim Shen
-# Description: This will generate various plots
-#     for the IAB chapter.
+# Description: This will generate figures for the IAB chapter.
+# This program no longer runs when the book is compiled. Past
+# testing showed that ggpubr vastly increases the build time 
+# for the book. Run this program separately.
 
 library(ggplot2)
-library(kableExtra)
+library(ggpubr)
 library(RColorBrewer)
 
 # Figure 1
 iabf1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
-pdfdpi=600
 
 iabf1data$Date <- factor(iabf1data$Date,levels = c("Aug 19", "Sep 19", "Oct 19", "Nov 19", "Dec 19", "Jan 20"))
 
@@ -19,38 +20,76 @@ iabfigure1 <- ggplot(iabf1data, aes(fill=Mode, y=Count, x=Date)) +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
-        legend.position="bottom")
-ggsave("./figures/iabfigure1.png",iabfigure1,dpi=300)
-pdffile <- "./figures/iabfigure1.pdf"
-if ( ! file.exists(pdffile) ) {
-  ggsave(pdffile,iabfigure1,dpi=pdfdpi)
-}
+        axis.text.x=element_text(size=9),
+        axis.text.y=element_text(size=9),
+        legend.text=element_text(size=9),
+        legend.key.size=unit(.8,"line"),
+        legend.position="bottom",
+        legend.margin=margin(c(-10,0,0,0)),
+        legend.box.margin=margin(c(5,0,0,0)),
+        plot.margin=grid::unit(c(0,0,0,0), "mm"))
 
-# Figure 2
-iabf2data <- read.csv("./assets/iab/figure2.csv")  # read csv file 
+iabfigure1
+ggsave("./figures/iabfigure1.pdf", width = 4, height = 2.5, units = "in", dpi=600)
+ggsave("./figures/iabfigure1.png", width=6, height=3.75,units="in",dpi=133)
+
+# ggsave("./figures/iabfigure1.png",iabfigure1,dpi=300)
+# pdffile <- "./figures/iabfigure1.pdf"
+# if ( ! file.exists(pdffile) ) {
+#   ggsave(pdffile,iabfigure1,dpi=pdfdpi)
+# }
+
+# Figure 2 - original Figure 2 and Figure 3 combined
+iabf2data <- read.csv("./assets/iab/figure2.csv")  # read csv file
+iabf3data <- read.csv("./assets/iab/figure3.csv")
+iabf3data$Country <- factor(iabf3data$Country,levels = c("Germany","Other Countries","U.S."))
 
 iabfigure2 <- ggplot(iabf2data, aes(fill=Projects, y=Count, x=Year)) + 
   geom_bar(position="dodge", stat="identity") +
-  scale_x_continuous(breaks = iabf2data$Year, labels = as.character(iabf2data$Year)) +
+  scale_x_continuous(breaks = seq(2005,2019, 2)) +
+  # scale_x_discrete(labels = as.character(iabf2data$Year)) +
   scale_fill_brewer(palette = "Paired") +
+  labs(caption="(a)") +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
-        legend.position="bottom")
-
-# Figure 3
-
-iabf3data <- read.csv("./assets/iab/figure3.csv") 
-
-iabf3data$Country <- factor(iabf3data$Country,levels = c( "U.S.", "Other Countries","Germany"))
+        plot.caption = element_text(size=7.5,margin=margin(c(0,0,0,0)),hjust=.5,face="bold"),
+        axis.text.x=element_text(size=7.5,angle = 45, vjust=.7),
+        axis.text.y=element_text(size=7.5),
+        legend.text=element_text(size=7.5),
+        legend.position="bottom",
+        legend.key.size=unit(.8,"line"),
+        legend.margin=margin(c(-10,0,0,0)),
+        legend.box.margin=margin(c(-13,0,0,0)),
+        plot.margin=grid::unit(c(0,0,0,0), "mm"))
 
 iabfigure3 <- ggplot(iabf3data, aes(fill=Country, y=Percentage, x=Year)) + 
   geom_bar(position="stack", stat="identity") +
+  scale_x_continuous(breaks = seq(2012,2019, 1)) +
   scale_fill_brewer(palette = "Paired") +
+  labs(caption="(b)") +
+  guides(fill=guide_legend(nrow=2))+
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
-        legend.position="bottom")
+        plot.caption = element_text(size=7.5,margin=margin(c(0,0,0,0)),hjust=.5,face="bold"),
+        axis.text.x=element_text(size=7.5,angle = 45, vjust=.7),
+        axis.text.y=element_text(size=7.5),
+        legend.text=element_text(size=7.5),
+        legend.position="bottom",
+        legend.direction="vertical",
+        legend.key.size=unit(.8,"line"),
+        legend.margin=margin(c(-10,0,0,0)),
+        legend.box.margin=margin(c(-5,0,0,0)),
+        plot.margin=grid::unit(c(0,0,0,0), "mm"))
+
+iabfigure23<-ggarrange(iabfigure2, iabfigure3, ncol=2, nrow=1, align="hv")
+
+iabfigure23
+
+ggsave("./figures/iabfigure2.pdf", width = 4, height = 2.2, units = "in", dpi=600)
+ggsave("./figures/iabfigure2.png", width = 6, height = 3.3, units = "in", dpi=133)
+
 
 # Figure 4
 
@@ -62,106 +101,22 @@ iabfigure4 <- ggplot(iabf4data, aes(fill=Rating, y=Percentage, x=Type)) +
   coord_flip() +
   geom_bar(position = position_stack(reverse = TRUE), stat="identity") +
   scale_fill_brewer(palette = "Blues") +
+  scale_x_discrete(labels=c("Data\ndocumentation","Personal data\nadvice"))+
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
-        legend.position="bottom")
-
-# Table 1
-
-iabt1data <- data.frame(
-  Items = c("Population / Sample Size","Time Period covered and frequency","Additional information","Population / Sample Size", 
-            "Time Period covered and frequency",
-            "Additional information",
-            "Population / Sample Size", 
-            "Time Period covered and frequency",
-            "Additional information"),
-  Features = c(
-    "2 percent random sample (more than 1.8 million individuals) of the Integrated Employment Biographies, a database which includes records from:<br>- 1975 onwards: employment subject, receipt of benefits in accordance with Social Code Act III<br>- 1999 onwards: Marginal part-time employment<br>- 2000 onwards: participation in an employment or training measure<br>- 2007 onwards: Registered jobseeker",
-    "1975 until 2017 for West Germany, 1992 until 2017 for East Germany, updated every 2nd year by RDC-IAB", 
-    "DOI: [10.5164/IAB.SIAB7517.de.en.v1](https://doi.org/10.5164/IAB.SIAB7517.de.en.v1)",
-    "Repeated cross-sectional dataset (640,000-1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999), and thereof a 50 percent random sample",
-    "1975 until 2018 for West Germany, 1992 until 2018 for East Germany, annual updated by RDC-IAB",
-    "DOI: [10.5164/IAB.BHP7518.de.en.v1](https://doi.org/10.5164/IAB.BHP7518.de.en.v1)",
-    "Worker information from administrative data are linked to the IAB-Establishment Panel, an annual representative survey since 1993 in West Germany and 1996 in East Germany including approx. 16,000 establishments per year<br>
-    Stratified sample of all establishments with at least one employee liable to social security on June 30 of the year before by establishment size, industry, and federal state. There are two versions of LIAB:<br>- LIAB cross-sectional model: all establishment surveys combined with administrative worker data as of June 30 (establishment: 67,407 in total; individuals approx. 12.5 million in total)<br>- LIAB longitudinal model: selection of repeatedly interviewed establishments (2009-2016) combined with longitudinal worker biographies (establishment: 41,777 in total; individuals approx. 1.7 million in total)",
-    "LIAB Cross-sectional model: 1993-2017<br>LIAB longitudinal model: 1975-2017",
-    "DOI: [10.5164/IAB.LIABQM29317.de.en.v1](https://doi.org/10.5164/IAB.LIABQM29317.de.en.v1)<br>[DOI: 10.5164/IAB.LIABLM7517.de.en.v1](https://doi.org/10.5164/IAB.LIABLM7517.de.en.v1)"
-  )
-)
+        axis.text.x=element_text(size=9),
+        axis.text.y=element_text(size=9),
+        legend.text=element_text(size=9),
+        legend.key.size=unit(.8,"line"),
+        legend.position="bottom",
+        legend.margin=margin(c(-10,0,0,0)),
+        legend.box.margin=margin(c(0,0,0,0)),
+        plot.margin=grid::unit(c(0,0,0,0), "mm"))
 
 
-iabt1latexdata <- data.frame(
-  Items = c("Population / Sample Size","Time Period covered and frequency","Additional information","Population / Sample Size", 
-            "Time Period covered and frequency",
-            "Additional information",
-            "Population / Sample Size", 
-            "Time Period covered and frequency",
-            "Additional information"),
-  Features = c(
-    "2 percent random sample (more than 1.8 million individuals) of the Integrated Employment Biographies, a database which includes records from:<br>- 1975 onwards: employment subject, receipt of benefits in accordance with Social Code Act III<br>- 1999 onwards: Marginal part-time employment<br>- 2000 onwards: participation in an employment or training measure<br>- 2007 onwards: Registered jobseeker",
-    "1975 until 2017 for West Germany, 1992 until 2017 for East Germany, updated every 2nd year by RDC-IAB", 
-    "DOI: 10.5164/IAB.SIAB7517.de.en.v1",
-    "Repeated cross-sectional dataset (640,000-1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999), and thereof a 50 percent random sample",
-    "1975 until 2018 for West Germany, 1992 until 2018 for East Germany, annual updated by RDC-IAB",
-    "DOI: 10.5164/IAB.BHP7518.de.en.v1",
-    "Worker information from administrative data are linked to the IAB-Establishment Panel, an annual representative survey since 1993 in West Germany and 1996 in East Germany including approx. 16,000 establishments per year<br>
-    Stratified sample of all establishments with at least one employee liable to social security on June 30 of the year before by establishment size, industry, and federal state. There are two versions of LIAB:<br>- LIAB cross-sectional model: all establishment surveys combined with administrative worker data as of June 30 (establishment: 67,407 in total; individuals approx. 12.5 million in total)<br>- LIAB longitudinal model: selection of repeatedly interviewed establishments (2009-2016) combined with longitudinal worker biographies (establishment: 41,777 in total; individuals approx. 1.7 million in total)",
-    "LIAB Cross-sectional model: 1993-2017<br>LIAB longitudinal model: 1975-2017",
-    "DOI: 10.5164/IAB.LIABQM29317.de.en.v1<br>DOI: 10.5164/IAB.LIABLM7517.de.en.v1"
-  )
-)
+ggsave("./figures/iabfigure3.pdf", width = 4, height = 1.5, units = "in", dpi=600)
+ggsave("./figures/iabfigure3.png", width = 6, height = 2.25, units = "in", dpi=133)
 
-iabtable1 <- function(){
-  if (is_html_output()) {
-    iabt1data %>%
-      kable("html", escape = F, caption="Selected RDC-IAB Data", col.names = NULL, booktabs=T) %>%
-      kable_styling(full_width = F, font_size=12) %>%
-      column_spec(1, width="10em") %>%
-      #column_spec(2, width="25em") %>%
-      pack_rows("Sample of Integrated Labour Market Biographies (SIAB)",1,3) %>%
-      pack_rows("Establishment History Panel (BHP)",4,6) %>%
-      pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
-      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).", footnote_as_chunk = T)
-    
-  } else {
-    outfile <- "./assets/iab/iabtable1.tex"
-    if ( ! file.exists(outfile) ) {
-    iabt1latexdata <- data.frame(lapply(iabt1data, function(x) {gsub("<br>", "\n", x)}), stringsAsFactors = F)
-    
-    inMinipage <- function(x, width) 
-      paste0("\\begin{minipage}[t]{", 
-             width, 
-             "}\\raggedright\\setstretch{0.8}", 
-             x, 
-             "\\end{minipage}")
-    
-    
-    iabt1data[[1]] <- inMinipage(iabt1data[[1]], "2.5cm") 
-    
-    iabt1data %>%  
-      mutate_all(linebreak) %>%
-      kable("latex", escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
-      kable_styling(latex_options="scale_down") %>%
-      column_spec(1, width="10em") %>%
-      column_spec(2, width="25em") %>%
-      pack_rows("Sample of Integrated Labour Market Biographies (SIAB)",1,3) %>%
-      pack_rows("Establishment History Panel (BHP)",4,6) %>%
-      pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
-      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the RDC website: https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx.", threeparttable=T)
-    } else {
-    # write to latex to include the file
-    cat(paste0("\\input{",outfile,"}"))
-    }
-  }
-}
 
-# Table 2
 
-iabt2data<-read.csv("./assets/iab/table2.csv")
-
-iabtable2<-function(){
-  knitr::kable(iabt2data, booktabs = TRUE,
-               caption = "Number of Publications in 2018, Including all Publications with RDC-IAB Data (Excluding Bachelor and Master Theses)") %>%
-    kable_styling(full_width = F, font_size=12)
-}
