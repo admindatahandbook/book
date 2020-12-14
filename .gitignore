@@ -8,7 +8,7 @@ _latex
 data
 rsconnect
 *.utf8.md
-[0-9]*.md
+# [0-9]*.md
 _main*
 _main_pre_index.tex
 assets/contributing/case_study_template.pdf
