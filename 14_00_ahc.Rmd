@@ -232,7 +232,7 @@ We are grateful to a research grant from the Laura and John Arnold Foundation fo
 
 [^ahc9]: For example, the Aurora team gained a strong understanding of how to use the concept of edit distance (a way of quantifying how dissimilar two strings are to one another by counting the minimum number of operations required to transform one string into the other) to match such records.
 
-[^ahcaccesdate]: Accessed 2020-12-11
+[^ahcaccesdate]: Accessed 2020-12-11.
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.

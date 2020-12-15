@@ -320,9 +320,9 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab20]: See section [Safe Settings](#iab-safesettings).
 
-[^iab21]: Accessed 2020-06-15
+[^iab21]: Accessed 2020-06-15.
 
-[^iab22]: Accessed 2020-06-15
+[^iab22]: Accessed 2020-06-15.
 
 [^iab23]: For more information on IDAN, please visit <https://idan.network/> (accessed 2020-06-15).
 
@@ -330,11 +330,11 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab25]: See section [Motivation and Background](#iab-motivation).
 
-[^iab26]: Accessed 2020-06-15
+[^iab26]: Accessed 2020-06-15.
 
 [^iab27]: In Figure \@ref(fig:iabfig2)(a), researchers who work in different projects are counted more than once.
 
-[^accessed06152020]: Accessed 2020-06-15
+[^accessed06152020]: Accessed 2020-06-15.
  
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
