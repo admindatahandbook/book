@@ -282,7 +282,7 @@ The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, C
 
 [^cct11]: See section [Institutional Setup](#cct-institutionalsetup).
 
-[^cctaccessdate]: Accessed 2020-12-11
+[^cctaccessdate]: Accessed 2020-12-11.
 
 
 ```{block, type='invisible'}
