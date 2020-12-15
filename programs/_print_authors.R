@@ -40,14 +40,22 @@ printauthor<-function(chapter,debug=FALSE){
     firstname <- trimws(gsub(lastname,"",name))
     # got all names!
     inst <- authorinfo$inst
+    #justfordanny
+    title <-authorinfo$title
+    if (length(title)==0) {
     nameinst=paste0(name," (",inst,")")
+    }
+    else {
+      nameinst=paste0(name,"  \n",title,"  \n",inst)
+    }
     if ( debug ) { print(paste0("nameinst=",nameinst)) }
     
 
   # output to HTML document
   if (knitr::is_html_output()) {
     cat(paste0("*",nameinst,"*  \n"))
-    }
+  }
+      
 # output to LaTeX document
   if (my_is_latex_output(debug)) {
     if ( debug ) { print("Output of nameinst") }
