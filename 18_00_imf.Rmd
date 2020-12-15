@@ -26,7 +26,7 @@ The systematic use of administrative data, however, is less common in the contex
 
 This section provides concrete examples where Fund staff has used administrative data for policy and +surveillance| work that have broader relevance for the research community, highlighting the procedures followed for securing data access from authorities, the challenges faced by staff, and the outputs from the projects.
 
-#### Marrying research and technical assistance: the case of Peru
+#### Marrying Research and Technical Assistance: the Case of Peru
 
 Peru's electronic invoicing (e-invoicing) tax reform study offers an interesting example of how policy questions raised in the context of IMF's +technical_assistance| activities, and relationships built with country authorities in the process, were leveraged to develop research projects using administrative data. The Peruvian government faced challenges with value-added tax (VAT) compliance as identified by the IMF's Revenue Administration's Gap Analysis Program (+RA-GAP|) Assessment.[^imf4]
 
@@ -44,7 +44,7 @@ It was also clear from the outset that exclusively remote working would not suff
 
 SUNAT found the interaction to be useful for presenting findings to ministerial level decision-makers as well as highlighting the value of the research conducted by the tax administration. Given the success of the first-round engagement, SUNAT was eager to further exploit the value of administrative data for research. The initial +capacity_building| investment by IMF has led to repeated engagements and to the Peruvian tax administration to be more open to outside researchers also utilizing the tax administration's data, using similar data sharing and use protocols as for the IMF team. An ongoing follow-up project uses transaction-level data to examine and quantify spillovers in technology adoption by different types of firms [@holtsmark2020].
 
-#### Enhancing surveillance: The Case of Vietnam
+#### Enhancing Surveillance: The Case of Vietnam
 
 Ongoing projects with the General Statistics Office (GSO) of Vietnam are examples of using administrative data to inform policy in the context of IMF's +surveillance| activities and fostering buy-in from the data provider for continued engagement. Census data and other labor and household surveys are confidential in Vietnam and not easily made accessible to researchers or even IMF staff. The IMF country team on Vietnam wanted to examine corporate vulnerabilities arising from the COVID-19 pandemic, but obtaining access to the firm census data was not straightforward.
 
@@ -112,7 +112,7 @@ In some instances, the same data provider will have different access requirement
 
 ### Safe Outputs
 
-The decision on what outputs are acceptable is mostly at the discretion of the member country. While the existence of most +technical_assistance| missions is public information, whether a country makes its diagnostic public is at its own discretion, even if it does not involve the use of administrative data. Under [IMF policy](https://www.imf.org/external/np/pp/eng/2013/061013.pdf), the recipient of technical assistance makes the decision of whether they would like to make the final advice public. Government agencies and instrumentalities are typically reluctant to make public the state of their government finances, banking system, or health public information. At the same time, the IMF encourages the wider dissemination and publication of technical assistance information.
+The decision on what outputs are acceptable is mostly at the discretion of the member country. While the existence of most +technical_assistance| missions is public information, whether a country makes its diagnostic public is at its own discretion, even if it does not involve the use of administrative data. Under [IMF policy](https://www.imf.org/external/np/pp/eng/2013/061013.pdf),[^imfaccessdate] the recipient of technical assistance makes the decision of whether they would like to make the final advice public. Government agencies and instrumentalities are typically reluctant to make public the state of their government finances, banking system, or health public information. At the same time, the IMF encourages the wider dissemination and publication of technical assistance information.
 
 In many cases, countries require that IMF researchers follow standard statistical disclosure precautions such as mandating a minimum number of observations when countries allow results to be published. Agencies in different countries also have varying levels of familiarity with research and publications, which can require that IMF staff spend additional effort in detailing the different instances of the publication process and preparing the output for their approval. In agencies where the supervisors and data analysts are also familiar with academic research, this process tends to be easier.
 
@@ -128,7 +128,7 @@ The intensity and frequency with which administrative data are used at the IMF d
 
 ## About the Authors {-}
 
-[Era Dabla-Norris](https://www.imf.org/external/np/cv/AuthorCV.aspx?AuthID=299) is the mission chief for Vietnam and division chief at the IMF's Asia-Pacific Department. Previously, she was a division chief at the* IMF's Fiscal Affairs Department.
+[Era Dabla-Norris](https://www.imf.org/external/np/cv/AuthorCV.aspx?AuthID=299) is the mission chief for Vietnam and division chief at the IMF's Asia-Pacific Department. Previously, she was a division chief at the IMF's Fiscal Affairs Department.
 
 [Federico J. Díez](https://www.imf.org/external/np/cv/AuthorCV.aspx?AuthID=311) is an economist at the Structural Reforms Unit of the IMF's Research Department. Previously he was an economist at the Research Department of Federal Reserve Bank of Boston.
 
@@ -149,6 +149,8 @@ The intensity and frequency with which administrative data are used at the IMF d
 [^imf7]: In the United States, Section 11 of the Bretton Woods Agreements Act (public Law 171-79th Congress, 59 Statutes at Large, page 512 et seq., approved July 3, 1945, 22 U.S.C. Section 286h), gives full force and effect to the privileges and immunities of the IMF set out in its articles of agreement.
 
 [^imf8]: There is a key initial and ongoing role here for national statistical agency staff familiar with industry/product coding to ensure that data are accurately classified and routinely reviewed to avoid mismatches and double counting.
+
+[^imfaccessdate]: Accessed 2020-12-14
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
