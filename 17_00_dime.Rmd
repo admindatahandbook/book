@@ -345,7 +345,7 @@ if ( knitr::is_latex_output() ) {
 
 [^dime2]: [Data License Agreement template](https://worldbankgroup.sharepoint.com/teams/ddh/SiteAssets/SitePages/ddh/DataLicenseAgreementTemplate_v4.pdf) (accessed 2020-12-14).
 
-[^dimeaccessdate]: Accessed 2020-12-14
+[^dimeaccessdate]: Accessed 2020-12-14.
 
 \putbib
 
