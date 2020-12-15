@@ -150,7 +150,7 @@ The intensity and frequency with which administrative data are used at the IMF d
 
 [^imf8]: There is a key initial and ongoing role here for national statistical agency staff familiar with industry/product coding to ensure that data are accurately classified and routinely reviewed to avoid mismatches and double counting.
 
-[^imfaccessdate]: Accessed 2020-12-14
+[^imfaccessdate]: Accessed 2020-12-14.
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.

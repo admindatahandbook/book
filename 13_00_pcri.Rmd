@@ -317,7 +317,7 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 [^pcri8]: PCRI focuses on the four original sources: EMPEA, Alternatives, Refinitiv, and Unquote. Start-up Nation Central and Venture Intelligence were added later and represent a small fraction of the total database. 
 
-[^pcriaccessdate]: Accessed 2020-12-11
+[^pcriaccessdate]: Accessed 2020-12-11.
 
 [^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190 [@jeng2015].
 

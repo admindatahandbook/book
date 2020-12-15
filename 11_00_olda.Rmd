@@ -270,7 +270,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 [^olda7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
 
-[^oldaaccess]: Accessed 2020-12-10
+[^oldaaccess]: Accessed 2020-12-10.
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.

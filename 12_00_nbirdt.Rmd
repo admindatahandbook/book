@@ -261,7 +261,7 @@ Audits of data sets accessed and data project activity are a requirement of data
 
 [^nbirdt20]: See NB-IRDT website [Research, Publications](https://www.nbirdt.ca/publications) and [News, Events](https://www.nbirdt.ca/nbirdt-events) for links to previous public events (accessed 2020-12-10).
 
-[^accessdate]: Accessed 2020-12-10
+[^accessdate]: Accessed 2020-12-10.
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
