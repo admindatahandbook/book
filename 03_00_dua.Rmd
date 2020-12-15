@@ -53,7 +53,7 @@ Many administrative agencies are resource constrained, needing to prioritize pro
 Researchers should consider potential benefits, costs, and risks for the data subjects in the planned project and think of how to communicate the project to the data subjects, including an explanation of why their data are needed. The researchers should be prepared to explain what data will be used, whether the data will be linked with other information, and who will have access to the data. They should also be able to explain the project in direct language (free from jargon) for the subjects or their parents or guardians and provide a finite project timeline. This is useful for purposes of establishing an informed consent procedure as well as the conduct of ethical research when consent is not required and for communication with the public (e.g., in contexts where the research informs public policy). The ethical and transparent conduct of research supports future use of the data and establishes trust with the public and data subjects.
 
 ```{block2, type="bbox"}
-Researchers may consider preparing (and data providers may consider requesting) an [engagement matrix](https://fpf.org/wp-content/uploads/2018/09/FPF-AISP_Nothing-to-Hide.pdf)[^duaaccessdate] that maps project steps with different forms of external input to build trust with the data subjects.[^dua5] +Engagement| could involve simply informing subjects about the project, seeking their input, or active collaboration during the project. Communicating with the subjects could include interviews, advisory committees, working groups, town halls, social media discussions, or press releases. Researcher and data provider may also consider a [transparency checklist](http://www.stat.columbia.edu/~gelman/research/published/checklist.pdf)[^duaaccessdate] as part of each project,[^dua6] to add legitimacy to the project and its results when completed. A transparency checklist can accompany publications resulting from the analysis to clarify how the data, code, and other study materials were handled upon project completion.
+Researchers may consider preparing (and data providers may consider requesting) an engagement matrix that maps project steps with different forms of external input to build trust with the data subjects [@futureofprivacyforum2018]. +Engagement| could involve simply informing subjects about the project, seeking their input, or active collaboration during the project. Communicating with the subjects could include interviews, advisory committees, working groups, town halls, social media discussions, or press releases. Researcher and data provider may also consider a [transparency checklist](http://www.stat.columbia.edu/~gelman/research/published/checklist.pdf)[^duaaccessdate] as part of each project,[^dua6] to add legitimacy to the project and its results when completed. A transparency checklist can accompany publications resulting from the analysis to clarify how the data, code, and other study materials were handled upon project completion.
 ```
 
 ### Investigating the Data Sharing History for Data Providers and Researchers
@@ -110,7 +110,7 @@ Guides that provide templates are available from various domains. Appendix A to 
 
 "Data Sharing: Creating Agreements" [@jarquin2012] from the Colorado Clinical and Translational Sciences Institute includes specific questions to help determine which sections should be included in a DUA from a clinical health perspective.
 
-*Legal Issues for IDS Use: Finding a Way Forward* [@petrila2017] is an expert panel report informing state and local governments that want to integrate data. This report explains why politics and relationships matter and walks through the legal considerations for preparing a MOU or Data Use License. The [document](https://1slo241vnt3j2dn45s1y90db-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Legal-Issues.pdf) includes links to a sample agreement made with two states and one county as well as a data license template from a federal agency for health and human services data.
+*Legal Issues for IDS Use: Finding a Way Forward* [@petrila2017] is an expert panel report informing state and local governments that want to integrate data. This report explains why politics and relationships matter and walks through the legal considerations for preparing a MOU or Data Use License. The document includes links to a sample agreement made with two states and one county as well as a data license template from a federal agency for health and human services data.
 
 "Guidelines for Developing Data Sharing Agreements to Use State Administrative Data for Early Care and Education Research" [@shaw2018] includes examples with early childhood research from two states, along with links to checklists and toolkits. This research brief also includes "advice from researchers" sections throughout.
 
@@ -142,7 +142,7 @@ No matter the size of the project or the volume of data needed, all parties shou
 
 [^dua4]: See @yates2018 for a checklist from the data provider's perspective.
 
-[^dua5]: See @futureofprivacyforum2018 toolkit.
+<!-- [^dua5]: See @futureofprivacyforum2018 toolkit. -->
 
 [^dua6]: See @aczel2020 guide and checklist.
 
