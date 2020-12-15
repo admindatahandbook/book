@@ -4,7 +4,7 @@ cat("\\FloatBarrier\\newpage")
 
 ## Appendix {- #dua-appendix}
 
-### Appendix A {-}
+### Appendix A {- #dua-appendixa}
 
 ```{r,eval=knitr::is_html_output(),echo=FALSE,results='asis'}
 cat("[Sample Text for Agreement Components](.\\appendix\\dua_appendix.pdf)")
@@ -14,7 +14,7 @@ cat("[Sample Text for Agreement Components](.\\appendix\\dua_appendix.pdf)")
 cat(paste0("A sample text for agreement components can be found in the Online Appendix at \\url{",config$base_url,"/",config$print_link,"/dua.html#appendix}."))
 ```
 
-### Appendix B {-}
+### Appendix B {- #dua-apendixb}
 
 #### Toolkits and Guides {-}
 
@@ -24,7 +24,7 @@ cat("\\itshape\n")
 cat(paste0("Links to these online resources can be found in the Online Appendix at \\url{",config$base_url,"/",config$print_link,"/dua.html#appendix}.\n"))
 cat("\\end{quote}")
 ```
-
+These toolkits and guides were compiled September 2020.
 
 **[California Accountable Communities for Health Data-Sharing Toolkit](https://cachi.org/uploads/resources/ACH-Data-Sharing-Toolkit-December-2016.pdf)**  
 This toolkit is produced by the University of California Berkeley Center for Healthcare Organizational and Innovation Research and sponsored by the California Health and Human Services Agency and University of California Berkeley, School of Public Health. This report summarizes seven parameters for data sharing, Purpose/Aim, Relationship/Buy-in, Funding, Governance and Privacy, Data and Data-sharing, Technical Infrastructure, and Analytic Infrastructure while observing that parties will have varying levels of maturity and expertise across these categories.
