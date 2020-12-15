@@ -300,7 +300,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab10]: The template can be provided to institutions interested in establishing decentralized data access upon request.
 
-[^iab11]: List available at <https://gdpr-info.eu/issues/third-countries/> (accessed 2020-06-15).
+[^iab11]: https://gdpr-info.eu/issues/third-countries/ (accessed 2020-06-15).
 
 [^iab12]: See section [Legal Framework for Granting Data Access](#iab-legal).
 
@@ -324,7 +324,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab22]: Accessed 2020-06-15.
 
-[^iab23]: For more information on IDAN, please visit <https://idan.network/> (accessed 2020-06-15).
+[^iab23]: For more information on IDAN, please visit https://idan.network/ (accessed 2020-06-15).
 
 [^iab24]: One example is the data set "Biographical Data of Social Insurance Agencies in Germany (BASiD)" [@hochfellner2012].
 
