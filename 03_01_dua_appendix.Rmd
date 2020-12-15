@@ -4,7 +4,7 @@ cat("\\FloatBarrier\\newpage")
 
 ## Appendix {- #dua-appendix}
 
-### Appendix A {-}
+### Appendix A {- #dua-appendixa}
 
 ```{r,eval=knitr::is_html_output(),echo=FALSE,results='asis'}
 cat("[Sample Text for Agreement Components](.\\appendix\\dua_appendix.pdf)")
@@ -14,7 +14,7 @@ cat("[Sample Text for Agreement Components](.\\appendix\\dua_appendix.pdf)")
 cat(paste0("A sample text for agreement components can be found in the Online Appendix at \\url{",config$base_url,"/",config$print_link,"/dua.html#appendix}."))
 ```
 
-### Appendix B {-}
+### Appendix B {- #dua-apendixb}
 
 #### Toolkits and Guides {-}
 

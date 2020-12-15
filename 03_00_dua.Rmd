@@ -53,7 +53,7 @@ Many administrative agencies are resource constrained, needing to prioritize pro
 Researchers should consider potential benefits, costs, and risks for the data subjects in the planned project and think of how to communicate the project to the data subjects, including an explanation of why their data are needed. The researchers should be prepared to explain what data will be used, whether the data will be linked with other information, and who will have access to the data. They should also be able to explain the project in direct language (free from jargon) for the subjects or their parents or guardians and provide a finite project timeline. This is useful for purposes of establishing an informed consent procedure as well as the conduct of ethical research when consent is not required and for communication with the public (e.g., in contexts where the research informs public policy). The ethical and transparent conduct of research supports future use of the data and establishes trust with the public and data subjects.
 
 ```{block2, type="bbox"}
-Researchers may consider preparing (and data providers may consider requesting) an [engagement matrix]([https://fpf.org/wp-content/uploads/2018/09/FPF-AISP_Nothing-to-Hide.pdf])[^dua5] that maps project steps with different forms of external input to build trust with the data subjects. +Engagement| could involve simply informing subjects about the project, seeking their input, or active collaboration during the project. Communicating with the subjects could include interviews, advisory committees, working groups, town halls, social media discussions, or press releases. Researcher and data provider may also consider a [transparency checklist](http://www.stat.columbia.edu/~gelman/research/published/checklist.pdf) as part of each project,[^dua6] to add legitimacy to the project and its results when completed. A transparency checklist can accompany publications resulting from the analysis to clarify how the data, code, and other study materials were handled upon project completion.
+Researchers may consider preparing (and data providers may consider requesting) an [engagement matrix](https://fpf.org/wp-content/uploads/2018/09/FPF-AISP_Nothing-to-Hide.pdf)[^duaaccessdate] that maps project steps with different forms of external input to build trust with the data subjects.[^dua5] +Engagement| could involve simply informing subjects about the project, seeking their input, or active collaboration during the project. Communicating with the subjects could include interviews, advisory committees, working groups, town halls, social media discussions, or press releases. Researcher and data provider may also consider a [transparency checklist](http://www.stat.columbia.edu/~gelman/research/published/checklist.pdf)[^duaaccessdate] as part of each project,[^dua6] to add legitimacy to the project and its results when completed. A transparency checklist can accompany publications resulting from the analysis to clarify how the data, code, and other study materials were handled upon project completion.
 ```
 
 ### Investigating the Data Sharing History for Data Providers and Researchers
@@ -138,7 +138,7 @@ No matter the size of the project or the volume of data needed, all parties shou
 
 [^dua2]: See @goroff2018 for a comprehensive discussion of possible methods.
 
-[^dua3]: See Appendix B for a set of these guides.
+[^dua3]: See [Appendix B]{#dua-appendixb} for a set of these guides.
 
 [^dua4]: See @yates2018 for a checklist from the data provider's perspective.
 
@@ -149,6 +149,8 @@ No matter the size of the project or the volume of data needed, all parties shou
 [^dua7]: Some jurisdictions may require a formal written request or even a Freedom of Information Act request to share the DUAs.
 
 [^dua8]: See @coburn2013 for a discussion of maintaining mutualism in a research partnership.
+
+[^duaaccessdate]: Accessed 2020-12-15.
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
