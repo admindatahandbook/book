@@ -1,7 +1,7 @@
 ```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}
 cat("\\FloatBarrier\\newpage")
 ```
-## Appendix {-}
+## Appendix {- #irb-appendix}
 
 ```{r,eval=knitr::is_html_output(),echo=FALSE,results='asis'}
 cat("[Data-Only Protocol Template](.\\appendix\\irb_appendix.pdf)")
