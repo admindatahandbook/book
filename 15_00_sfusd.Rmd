@@ -315,7 +315,7 @@ Once established, any partnership using shared data will need to *continually im
 
 [^sfusd3]: See @wentworth2017 for a description of the Partnership's survey development.
 
-[^sfusdaccessdate]: Accessed 2020-12-11
+[^sfusdaccessdate]: Accessed 2020-12-11.
 
 ```{block, type='invisible'}
 This is a workaround for citations in footnotes, please ignore.
