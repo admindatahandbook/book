@@ -2309,9 +2309,9 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab20]: See section [Safe Settings](#iab-safesettings).
 
-[^iab21]: Accessed 2020-06-15
+[^iab21]: Accessed 2020-06-15.
 
-[^iab22]: Accessed 2020-06-15
+[^iab22]: Accessed 2020-06-15.
 
 [^iab23]: For more information on IDAN, please visit <https://idan.network/> (accessed 2020-06-15).
 
@@ -2319,11 +2319,11 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab25]: See section [Motivation and Background](#iab-motivation).
 
-[^iab26]: Accessed 2020-06-15
+[^iab26]: Accessed 2020-06-15.
 
 [^iab27]: In Figure \@ref(fig:iabfig2)(a), researchers who work in different projects are counted more than once.
 
-[^accessed06152020]: Accessed 2020-06-15
+[^accessed06152020]: Accessed 2020-06-15.
  
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@hochfellner2012</span></p>
@@ -2681,7 +2681,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 [^olda7]: The author discusses this topic in an op-ed for the Fordham Foundation [@hawley2017a].
 
-[^oldaaccess]: Accessed 2020-12-10
+[^oldaaccess]: Accessed 2020-12-10.
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@hosseinichimeh2017</span> <span class="citation">@hawley2017a</span></p>
@@ -2970,7 +2970,7 @@ Audits of data sets accessed and data project activity are a requirement of data
 
 [^nbirdt20]: See NB-IRDT website [Research, Publications](https://www.nbirdt.ca/publications) and [News, Events](https://www.nbirdt.ca/nbirdt-events) for links to previous public events (accessed 2020-12-10).
 
-[^accessdate]: Accessed 2020-12-10
+[^accessdate]: Accessed 2020-12-10.
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@governmentofcanada1985</span></p>
@@ -3341,7 +3341,7 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 [^pcri8]: PCRI focuses on the four original sources: EMPEA, Alternatives, Refinitiv, and Unquote. Start-up Nation Central and Venture Intelligence were added later and represent a small fraction of the total database. 
 
-[^pcriaccessdate]: Accessed 2020-12-11
+[^pcriaccessdate]: Accessed 2020-12-11.
 
 [^pcri10]: As of 2015. The majority of the overlap in the data is between the Alternatives and the Refinitiv data sets. By not including the Alternatives database in this analysis, the number of unique private capital firms is 16,190 [@jeng2015].
 
@@ -3918,7 +3918,7 @@ We are grateful to a research grant from the Laura and John Arnold Foundation fo
 
 [^ahc9]: For example, the Aurora team gained a strong understanding of how to use the concept of edit distance (a way of quantifying how dissimilar two strings are to one another by counting the minimum number of operations required to transform one string into the other) to match such records.
 
-[^ahcaccesdate]: Accessed 2020-12-11
+[^ahcaccesdate]: Accessed 2020-12-11.
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@pennmedicineinformationsystemsdataanalyticscenter</span> <span class="citation">@hentel2019</span> <span class="citation">@centersformedicaremedicaidservices2018</span> <span class="citation">@officeforhumanresearchprotections2018a</span> <span class="citation">@aurorahealthcareinc.andaffiliates2018</span></p>
@@ -4270,7 +4270,7 @@ Once established, any partnership using shared data will need to *continually im
 
 [^sfusd3]: See @wentworth2017 for a description of the Partnership's survey development.
 
-[^sfusdaccessdate]: Accessed 2020-12-11
+[^sfusdaccessdate]: Accessed 2020-12-11.
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@wentworth2016</span> <span class="citation">@wentworth2017</span></p>
@@ -4909,7 +4909,7 @@ The systematic use of administrative data, however, is less common in the contex
 
 This section provides concrete examples where Fund staff has used administrative data for policy and +surveillance| work that have broader relevance for the research community, highlighting the procedures followed for securing data access from authorities, the challenges faced by staff, and the outputs from the projects.
 
-#### Marrying research and technical assistance: the case of Peru
+#### Marrying Research and Technical Assistance: the Case of Peru
 
 Peru's electronic invoicing (e-invoicing) tax reform study offers an interesting example of how policy questions raised in the context of IMF's +technical_assistance| activities, and relationships built with country authorities in the process, were leveraged to develop research projects using administrative data. The Peruvian government faced challenges with value-added tax (VAT) compliance as identified by the IMF's Revenue Administration's Gap Analysis Program (+RA-GAP|) Assessment.[^imf4]
 
@@ -4927,7 +4927,7 @@ It was also clear from the outset that exclusively remote working would not suff
 
 SUNAT found the interaction to be useful for presenting findings to ministerial level decision-makers as well as highlighting the value of the research conducted by the tax administration. Given the success of the first-round engagement, SUNAT was eager to further exploit the value of administrative data for research. The initial +capacity_building| investment by IMF has led to repeated engagements and to the Peruvian tax administration to be more open to outside researchers also utilizing the tax administration's data, using similar data sharing and use protocols as for the IMF team. An ongoing follow-up project uses transaction-level data to examine and quantify spillovers in technology adoption by different types of firms [@holtsmark2020].
 
-#### Enhancing surveillance: The Case of Vietnam
+#### Enhancing Surveillance: The Case of Vietnam
 
 Ongoing projects with the General Statistics Office (GSO) of Vietnam are examples of using administrative data to inform policy in the context of IMF's +surveillance| activities and fostering buy-in from the data provider for continued engagement. Census data and other labor and household surveys are confidential in Vietnam and not easily made accessible to researchers or even IMF staff. The IMF country team on Vietnam wanted to examine corporate vulnerabilities arising from the COVID-19 pandemic, but obtaining access to the firm census data was not straightforward.
 
@@ -4995,7 +4995,7 @@ In some instances, the same data provider will have different access requirement
 
 ### Safe Outputs
 
-The decision on what outputs are acceptable is mostly at the discretion of the member country. While the existence of most +technical_assistance| missions is public information, whether a country makes its diagnostic public is at its own discretion, even if it does not involve the use of administrative data. Under [IMF policy](https://www.imf.org/external/np/pp/eng/2013/061013.pdf), the recipient of technical assistance makes the decision of whether they would like to make the final advice public. Government agencies and instrumentalities are typically reluctant to make public the state of their government finances, banking system, or health public information. At the same time, the IMF encourages the wider dissemination and publication of technical assistance information.
+The decision on what outputs are acceptable is mostly at the discretion of the member country. While the existence of most +technical_assistance| missions is public information, whether a country makes its diagnostic public is at its own discretion, even if it does not involve the use of administrative data. Under [IMF policy](https://www.imf.org/external/np/pp/eng/2013/061013.pdf),[^imfaccessdate] the recipient of technical assistance makes the decision of whether they would like to make the final advice public. Government agencies and instrumentalities are typically reluctant to make public the state of their government finances, banking system, or health public information. At the same time, the IMF encourages the wider dissemination and publication of technical assistance information.
 
 In many cases, countries require that IMF researchers follow standard statistical disclosure precautions such as mandating a minimum number of observations when countries allow results to be published. Agencies in different countries also have varying levels of familiarity with research and publications, which can require that IMF staff spend additional effort in detailing the different instances of the publication process and preparing the output for their approval. In agencies where the supervisors and data analysts are also familiar with academic research, this process tends to be easier.
 
@@ -5011,7 +5011,7 @@ The intensity and frequency with which administrative data are used at the IMF d
 
 ## About the Authors {-}
 
-[Era Dabla-Norris](https://www.imf.org/external/np/cv/AuthorCV.aspx?AuthID=299) is the mission chief for Vietnam and division chief at the IMF's Asia-Pacific Department. Previously, she was a division chief at the* IMF's Fiscal Affairs Department.
+[Era Dabla-Norris](https://www.imf.org/external/np/cv/AuthorCV.aspx?AuthID=299) is the mission chief for Vietnam and division chief at the IMF's Asia-Pacific Department. Previously, she was a division chief at the IMF's Fiscal Affairs Department.
 
 [Federico J. Díez](https://www.imf.org/external/np/cv/AuthorCV.aspx?AuthID=311) is an economist at the Structural Reforms Unit of the IMF's Research Department. Previously he was an economist at the Research Department of Federal Reserve Bank of Boston.
 
@@ -5032,6 +5032,8 @@ The intensity and frequency with which administrative data are used at the IMF d
 [^imf7]: In the United States, Section 11 of the Bretton Woods Agreements Act (public Law 171-79th Congress, 59 Statutes at Large, page 512 et seq., approved July 3, 1945, 22 U.S.C. Section 286h), gives full force and effect to the privileges and immunities of the IMF set out in its articles of agreement.
 
 [^imf8]: There is a key initial and ongoing role here for national statistical agency staff familiar with industry/product coding to ensure that data are accurately classified and routinely reviewed to avoid mismatches and double counting.
+
+[^imfaccessdate]: Accessed 2020-12-14.
 
 <div class="invisible">
 <p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@holtsmark2020</span> <span class="citation">@hutton2017</span></p>
