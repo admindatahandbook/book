@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-12-11"
+date: "2020-12-15"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -2667,7 +2667,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 ## About the Author {-}
 
-[Joshua Hawley](http://glenn.osu.edu/faculty/glenn-faculty/hawley/) is a professor in the John Glenn College of Public Affairs at the Ohio State University (OSU). He also serves in leadership roles at two research centers of OSU: director of the Ohio Education Research Center at the Glenn College and Associate Director for the Center for Human Resource Research (CHRR). The focus of both centers is state level administrative data. Since approximately 2009 the centers have partnered with the State of Ohio to store Ohio administrative records. The primary project for the Ohio Analytics Partnership is the Ohio Longitudinal Data Archive. Professor Hawley currently serves as the lead faculty for this effort. In addition, he teaches classes in Education and Workforce Development policy and Data Sciences.
+[Joshua D. Hawley](http://glenn.osu.edu/faculty/glenn-faculty/hawley/) is a professor in the John Glenn College of Public Affairs at the Ohio State University (OSU). He also serves in leadership roles at two research centers of OSU: director of the Ohio Education Research Center at the Glenn College and Associate Director for the Center for Human Resource Research (CHRR). The focus of both centers is state level administrative data. Since approximately 2009 the centers have partnered with the State of Ohio to store Ohio administrative records. The primary project for the Ohio Analytics Partnership is the Ohio Longitudinal Data Archive. Professor Hawley currently serves as the lead faculty for this effort. In addition, he teaches classes in Education and Workforce Development policy and Data Sciences.
 
 [^olda1]: The original research team that wrote the concept paper to the State of Ohio included Randall Olsen (Professor Emeritus of Economics, OSU) and Kathryn Sullivan (Former Director, Battelle Center for Mathematics and Science Education Policy, John Glenn College of Public Affairs, OSU). Sullivan subsequently went on to lead the National Oceanic and Atmospheric Administration (NOAA) under President Obama, and Olsen ran the National Longitudinal Surveys for the Department of Labor (DOL) for over 25 years. At the State of Ohio, the original partnership included the Ohio Departments of Education, Higher Education, and Job and Family Services.
 
@@ -4323,7 +4323,7 @@ CCT maintains active research collaborations with numerous partners, which have 
 
 ### Motivation and Background
 
-Municipalities in South Africa play numerous roles: first, providing democratic and accountable government for local communities; second, ensuring service provision to communities in a sustainable manner; third, promoting social and economic development; fourth, encouraging the involvement of communities and community organizations in the matters of local government. The City of Cape Town is no exception. It serves a population of over 4 million people and provides a mix of basic services (electricity, water, sanitation, and refuse removal) and supporting services (transport, housing, safety, emergency services, primary healthcare, environmental health, community development, environmental services, and digital infrastructure) with a [2020 operating budget](http://resource.capetown.gov.za/documentcentre/Documents/Financial%20documents/1920AdjBudget_Ann1_1_OpexAdjSummary_May2020.pdf) of around US$3 billion. Relative to many municipalities around the world, CCT's data systems are well organized and well maintained. For example, all formal commercial and residential properties are registered on cadastral maps and assigned a unique parcel number to which other municipal records, including property taxes, water, electricity and refuse billing, and other services are linked. This has facilitated administrative innovations, such as *consolidated billing*: many businesses and residents receive a single bill for their municipal account, which streamlines the process of collections and accounting. However, these data remain under-utilized for purposes other than administration and operations. Specifically, while capacity for data analytics and research within CCT continues to grow, even internal staff struggle to identify, obtain, and process the necessary data.
+Municipalities in South Africa play numerous roles: first, providing democratic and accountable government for local communities; second, ensuring service provision to communities in a sustainable manner; third, promoting social and economic development; fourth, encouraging the involvement of communities and community organizations in the matters of local government. The City of Cape Town is no exception. It serves a population of over 4 million people and provides a mix of basic services (electricity, water, sanitation, and refuse removal) and supporting services (transport, housing, safety, emergency services, primary healthcare, environmental health, community development, environmental services, and digital infrastructure) with a [2020 operating budget](http://resource.capetown.gov.za/documentcentre/Documents/Financial%20documents/1920AdjBudget_Ann1_1_OpexAdjSummary_May2020.pdf)[^cctaccessdate] of around US$3 billion. Relative to many municipalities around the world, CCT's data systems are well organized and well maintained. For example, all formal commercial and residential properties are registered on cadastral maps and assigned a unique parcel number to which other municipal records, including property taxes, water, electricity and refuse billing, and other services are linked. This has facilitated administrative innovations, such as *consolidated billing*: many businesses and residents receive a single bill for their municipal account, which streamlines the process of collections and accounting. However, these data remain under-utilized for purposes other than administration and operations. Specifically, while capacity for data analytics and research within CCT continues to grow, even internal staff struggle to identify, obtain, and process the necessary data.
 
 Recent crises, including the 2017--18 water crisis ("Day Zero") and the 2020 COVID-19 pandemic, highlight the importance of internal data sharing and analytics. They also revealed challenges. For example, staff in one department may be unaware of the data collected by another department, unsure of how to link data sets across departments, and unfamiliar with the staff members who manage the other data. Parallel challenges arise around research partnerships with external actors whose specific and often one-off data requests impose a time burden on CCT staff; these actors often lack engagement both in developing research questions and sharing results. Historically, the data sharing process for external parties has proceeded on a case-by-case basis. This ad hoc approach is costly for both data providers and researchers, and it often depends on personal relationships. These relationships may unravel if CCT staff change jobs and result in opportunistic collaborations that may miss some of the most high-value opportunities. Additionally, the actual transfer of data is not always secure (e.g., sometimes involving unencrypted flash drives). In spite of these challenges, CCT has engaged in successful research collaborations with external partners on topics including water conservation, municipal tariffs, electricity metering, youth employment, and more.
 
@@ -4363,7 +4363,7 @@ The paper was published in a journal that requires non-confidential data be publ
 
 #### Case 2: Data Use for Planning and Policy During Cape Town's Drought {-}
 
-The recent drought in Cape Town (2015--18) required CCT to engage with both external researchers and with its own data in new ways to support decision-making in a time of crisis. In this case, a crucial step involved sharing and visualizing data on water supply and consumption to keep Cape Town's population informed and spur collective action to conserve water. Specifically, CCT made use of data visualization to keep citizens informed by developing a [*Water Dashboard*](https://coct.co/water-dashboard) that reflected dam storage percentages, weekly dam level changes, and average daily production. Additionally, a city water map known as the Green Dot map depicted household water consumption levels across specified bands of kiloliter usage.[^cct8] This provided a neighborhood lens on water usage and allowed for targeted communication and peer influencing to motivate behavior change (reducing household water consumption).
+The recent drought in Cape Town (2015--18) required CCT to engage with both external researchers and with its own data in new ways to support decision-making in a time of crisis. In this case, a crucial step involved sharing and visualizing data on water supply and consumption to keep Cape Town's population informed and spur collective action to conserve water. Specifically, CCT made use of data visualization to keep citizens informed by developing a [*Water Dashboard*](https://coct.co/water-dashboard)[^cctaccessdate] that reflected dam storage percentages, weekly dam level changes, and average daily production. Additionally, a city water map known as the Green Dot map depicted household water consumption levels across specified bands of kiloliter usage.[^cct8] This provided a neighborhood lens on water usage and allowed for targeted communication and peer influencing to motivate behavior change (reducing household water consumption).
 
 Furthermore, by harnessing and monitoring detailed, high-frequency data, the City was able to increase the efficiency of existing water infrastructure. For example, pressure reducing valves (PRVs) were used to provide data on pressure and flow in order to inform and optimize the operation of the water infrastructure. Through the use of PRVs, demand and leakage within a distribution system was managed more efficiently by reducing pressure in a discrete zone. The installation of PRVs provided valuable data that helped to improve reliability of service delivery, decrease infrastructure damage and water losses, and forecast and budget for repairs. Subsequent advanced analytics using PRV data were, however, limited by the data provisions in the PRV supplier contracts; CCT will seek to avoid this in future contracts.
 
@@ -4373,7 +4373,7 @@ The drought highlighted the complexity and importance of spatially explicit, rea
 
 Many of these same challenges (and some new ones) are emerging in the CCT response to the COVID-19 pandemic. The Social Vulnerability Index (SVI) developed for the Water Disaster Plan has been repurposed to inform planning for quarantine and isolation sites across Cape Town as well as for guiding the humanitarian response. Economic impact modelling is being used to understand the impact on the Cape Town economy and to generate financial scenarios for the City. The City has worked closely with the Western Cape Government Department of Health to secure quality, granular, spatialized Covid-19 case data to inform the response. Epidemiological modelling has been used to inform planning, including logistics modelling for health and fatalities responses. Data sharing across spheres of government and between city departments has been a challenge but one made much easier by investments made in recent years in data capability and systems. The data challenge of the pandemic response is compounded by the deterioration of data quality, requiring the City to access and understand new data sets as the crisis unfolds. For example, in the early stages of the epidemic in Cape Town, the response was guided by COVID-19 case data (positive tests), but as community transmission was established and testing demand exceeded capacity (requiring a focus on testing in-hospital patients and healthcare workers), the focus shifted to using death data to track the pandemic. As systems for managing fatalities came under pressure, data quality and speed degraded. This required CCT staff to understand data systems they had not worked with before and to build data collection systems not reliant on slow or poor-quality official data from other parts of government.
 
-Improved data systems will lower the costs (and increase speed) of leveraging data resources to manage crises in the future. Recognizing this, enhancing knowledge management and data use is one of the goals of the [CCT Resilience Strategy](https://resource.capetown.gov.za/documentcentre/Documents/City%20strategies%2C%20plans%20and%20frameworks/Resilience_Strategy.pdf).
+Improved data systems will lower the costs (and increase speed) of leveraging data resources to manage crises in the future. Recognizing this, enhancing knowledge management and data use is one of the goals of the [CCT Resilience Strategy](https://resource.capetown.gov.za/documentcentre/Documents/City%20strategies%2C%20plans%20and%20frameworks/Resilience_Strategy.pdf).[^cctaccessdate]
 
 These data use examples highlight challenges and potential associated with the historical reality of data use and research in CCT. Throughout the remainder of this chapter the authors contrast historical experiences and practices with the on-going aspirations and initiatives toward a streamlined data sharing process.
 
@@ -4391,7 +4391,7 @@ The process of identifying potential technical solutions for data streamlining h
 Other important considerations and activities have revolved around the following areas listed in Table \@ref(tab:ccttable1). In all of these tasks and in implementation, investments in human capital with respect to data skills of CCT staff as well as network-building internally and externally are perceived as crucial to success.
 
 <table>
-<caption>(\#tab:ccttable1)Areas of Consideration and Associated Activities</caption>
+<caption>(\#tab:ccttable1)Areas of consideration and associated activities</caption>
 <tbody>
   <tr>
    <td style="text-align:left;"> Technical solutions </td>
@@ -4418,7 +4418,7 @@ Other important considerations and activities have revolved around the following
 
 ### Metadata
 
-A major initiative to facilitate data use is the development and implementation of structured +metadata_standards| to be applied to all CCT data. CCT's Data Science team together with the Information and Knowledge Management department have developed standards comprising a minimal required set of [metadata elements](http://osf.io/2a7ev) along with additional, recommended elements. The minimal set of elements is similar to the +Dublin_Core| but with unique considerations for administrative data. The intent of the required minimal set is to minimize the burden on data stewards and to maintain quality metadata. Core fields include a summary of the data set, update frequency, data access rights, reasons for restriction, data format, spatial coverage, temporal coverage, and information about the source and stewardship of the data set.
+A major initiative to facilitate data use is the development and implementation of structured +metadata_standards| to be applied to all CCT data. CCT's Data Science team together with the Information and Knowledge Management department have developed standards comprising a minimal required set of metadata elements along with additional, recommended elements [@strong2020a]. The minimal set of elements is similar to the +Dublin_Core| but with unique considerations for administrative data. The intent of the required minimal set is to minimize the burden on data stewards and to maintain quality metadata. Core fields include a summary of the data set, update frequency, data access rights, reasons for restriction, data format, spatial coverage, temporal coverage, and information about the source and stewardship of the data set.
 
 CCT is investigating the process for making a publicly available catalog of all available CCT data that also contains basic metadata. This catalog could include both public-use and restricted-use data sets with the former providing direct access links and the latter providing information on how to request access to the data. An initial internal data inventory has been created, cataloging over 1,000 distinct data resources. Over 500 unique data resources come out of the SAP system used for revenue management and other administrative purposes. The GIS data system (run on ESRI software) is the second biggest source with nearly 500 unique data resources. Metadata creation and further classification are needed before it can be made public. Once completed, this data catalog will make it easier for researchers both inside and outside of CCT to identify specific data of interest and to include them in research requests: this will reduce the burden on CCT staff when processing requests. Additionally, the tacit knowledge gained by researchers through the experience of working with a particular data set can be codified by contributing back metadata and longer-form documentation. In particular, researchers' assessment of the quality and usability of the data is especially important [@connelly2016].
 
@@ -4434,7 +4434,7 @@ The primary barriers to developing data pipelines include (i) lack of access int
 
 ## Legal and Institutional Framework
 
-### Institutional Setup
+### Institutional Setup {#cct-institutionalsetup}
 
 CCT is both the custodian and provider of administrative data. External researchers submit requests for data that also outline their research aims, and the Research Branch within the Policy and Strategy Department reviews the application. The Research Branch filters requests based on their research priorities and other criteria established in the Research Framework and liaises with relevant departments within the City to assess the availability of data and appropriateness of the request. The volume of requests is considerable: in FY20, CCT received 136 research applications.
 
@@ -4478,7 +4478,7 @@ The negotiation and establishment of bespoke legal agreements to underpin data a
 - *Public sector partners* are public entities who can offer CCT technical support in implementing the City's Data Strategy, such as the National Treasury's CCT Support Programme and the UK Foreign Office-funded Future Cities Programme.
 - *Contracted service providers* are contractors involved in implementing policies, programs, and day-to-day operations. Data sharing goes in both directions with contractors accessing CCT records and sharing data sets resulting from their activities back with CCT.
 
-[CCT's Intellectual Property Policy](https://resource.capetown.gov.za/documentcentre/Documents/Bylaws%20and%20policies/Intellectual_Property_Policy.pdf) provides guidance on Intellectual Property (IP) from publicly funded research and development, which is subject to case-by-case review. For non-commercial research output, CCT does not typically exert any IP ownership. IP of the original and derived data (not including statistical outputs) is retained by CCT, and acknowledgement of data sources is required in any resulting publications or public materials.
+CCT's Intellectual Property Policy provides guidance on Intellectual Property (IP) from publicly funded research and development, which is subject to case-by-case review [@cityofcapetown2019]. For non-commercial research output, CCT does not typically exert any IP ownership. IP of the original and derived data (not including statistical outputs) is retained by CCT, and acknowledgement of data sources is required in any resulting publications or public materials.
 
 ## Protection of Sensitive and Personal Data: The Five Safes Framework
 
@@ -4494,7 +4494,7 @@ The authors assess each of the Five Safes in light of CCT's reworking of the dat
 
 Importance = 5; Cost = 5
 
-In the future, project selection will be based on a formal application that specifies research questions and required data, though historically this has not always occurred. The Research Branch reviews the applications for appropriateness and alignment with the [Research Framework and research priorities](http://osf.io/2a7ev) (see section Institutional setup above). Currently, the review workflow has associated SOPs, though areas of improvement have been identified, especially with respect to integration with the entire data sharing process. For example, the application process could trigger determination of security levels (linked to tags in the metadata) and eventual access restrictions. The application form is being redesigned as a web-based form to make it more accessible to external researchers and to help reduce processing time. Domain experts, analysts, and lawyers may all review applications, and applications are reviewed in the order that they are received. Where necessary, the research application triggers the development of a DUA, as described under the section Legal framework for granting data access (above). In the future, a rule may be added that institutional review board (IRB) approval is needed before access is formally granted to academic researchers: a requirement that benefits from publicly accessible metadata.
+In the future, project selection will be based on a formal application that specifies research questions and required data, though historically this has not always occurred. The Research Branch reviews the applications for appropriateness and alignment with the Research Framework and research priorities [@strong2020b].[^cct11] Currently, the review workflow has associated SOPs, though areas of improvement have been identified, especially with respect to integration with the entire data sharing process. For example, the application process could trigger determination of security levels (linked to tags in the metadata) and eventual access restrictions. The application form is being redesigned as a web-based form to make it more accessible to external researchers and to help reduce processing time. Domain experts, analysts, and lawyers may all review applications, and applications are reviewed in the order that they are received. Where necessary, the research application triggers the development of a DUA, as described under the section Legal framework for granting data access (above). In the future, a rule may be added that institutional review board (IRB) approval is needed before access is formally granted to academic researchers: a requirement that benefits from publicly accessible metadata.
 
 ### Safe People 
 
@@ -4540,7 +4540,7 @@ The Policy and Strategy Department, especially its Research Branch, implements t
 
 In addition, the data platform being developed provides an access point to CCT's data both in terms of metadata as well as secure downloads. A web-based data request form is also in development.
 
-Apart from managerial functions, the Policy and Strategy department and its Research Branch also facilitate and coordinate institutional research partnerships and knowledge networks. These networks include a diverse set of researchers and organizations covering multiple disciplines, geographies, levels of experience, and research interests. CCT collaborates with the [Cape Higher Education Consortium](http://www.chec.ac.za) and has other long-standing research partnerships (e.g., with [Mistra Urban Futures](https://www.mistraurbanfutures.org) and the [African Centre for Cities](https://www.africancentreforcities.net)). CCT is building on this foundation by actively seeking new research partnerships locally and internationally; the City is seeking to establish formal collaborations with universities where there is already evidence of research partnering with multiple researchers at an institution.
+Apart from managerial functions, the Policy and Strategy department and its Research Branch also facilitate and coordinate institutional research partnerships and knowledge networks. These networks include a diverse set of researchers and organizations covering multiple disciplines, geographies, levels of experience, and research interests. CCT collaborates with the [Cape Higher Education Consortium](http://www.chec.ac.za)[^cctaccessdate] and has other long-standing research partnerships (e.g., with [Mistra Urban Futures](https://www.mistraurbanfutures.org)[^cctaccessdate] and the [African Centre for Cities](https://www.africancentreforcities.net)[^cctaccessdate]). CCT is building on this foundation by actively seeking new research partnerships locally and internationally; the City is seeking to establish formal collaborations with universities where there is already evidence of research partnering with multiple researchers at an institution.
 
 ### Revenue
 
@@ -4574,227 +4574,36 @@ Hugh Cole has been director of Policy and Strategy at the City of Cape Town sinc
 
 [Derek Strong](https://drkrynstrng.gitlab.io/) is currently a Research Computing Associate with the Center for Advanced Research Computing at the University of Southern California. Prior to this, he worked with Kelsey Jack at UC Santa Barbara and with the City of Cape Town to identify and implement solutions for streamlining municipal data sharing with researchers. His interests include research computing, open science, and meta-research.
 
-[Brendan Maughan-Brown](https://sites.google.com/site/bmaughanbrown/) is an interdisciplinary social scientist with expertise on: the uptake of HIV-prevention and treatment services; behavioural economics; and the social and behavioural determinants of HIV risk. He is a Chief Research Officer at the Southern Africa Labour and Development Research Unit, University of Cape Town.
+[Brendan Maughan-Brown](https://sites.google.com/site/bmaughanbrown/) is an interdisciplinary social scientist with expertise on: the uptake of HIV-prevention and treatment services; behavioral economics; and the social and behavioral determinants of HIV risk. He is a Chief Research Officer at the Southern Africa Labour and Development Research Unit, University of Cape Town.
 
 ## Acknowledgements {-}
 
-The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, Carol Wright, Joshua Hawley, and the IDEA team at J-PAL for support of the collaboration and for constructive comments on the draft.
+The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, Carol Wright, Joshua D. Hawley, and the IDEA team at J-PAL for support of the collaboration and for constructive comments on the draft.
 
-[^cct6]: A summary of implementation activities associated with the Data Strategy is provided at http://osf.io/2a7ev. The document is not yet publicly available but will be provided at this same location when it becomes available.
+[^cct6]: A summary of implementation activities associated with the Data Strategy is provided at [@strong2020].
 
 [^cct7]: The City's Research Framework outlines a collection of systematic approaches to help the effective and efficient production, flow, and use of information and knowledge in the organization. The framework comprises a research vision, research value chain, and enablers (research principles, objectives, and activities), and includes a high-level CCT Research Agenda that outlines the City's priority research themes. The document is not yet publicly available.
 
-[^cct8]: Though the map has been removed from CCT's website, information on the map is available at http://www.capetown.gov.za/Family%20and%20home/Residential-utility-services/Residential-water-and-sanitation-services/cape-town-water-map
+[^cct8]: Though the map has been removed from CCT's website, information on the map is available at http://www.capetown.gov.za/Family%20and%20home/Residential-utility-services/Residential-water-and-sanitation-services/cape-town-water-map (accessed 2020-12-11).
 
-[^cct9]: Current research request guidelines and a web form can be found at http://www.capetown.gov.za/City-Connect/Access-information/Submit-a-research-request
+[^cct9]: Current research request guidelines and a web form can be found at http://www.capetown.gov.za/City-Connect/Access-information/Submit-a-research-request (accessed 2020-12-11).
 
 [^cct10]: For example, Condition 4, section 15 (3) on the further processing of personal information states: "The further processing of personal information is not incompatible with the purpose of collection if--- ... *(e)* the information is used for historical, statistical or research purposes and the responsible party ensures that the further processing is carried out solely for such purposes and will not be published in an identifiable form."
 
+[^cct11]: See section [Institutional Setup](#cct-institutionalsetup).
+
+[^cctaccessdate]: Accessed 2020-12-11.
+
+
+<div class="invisible">
+<p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@strong2020</span></p>
+</div>
 
 \putbib
 
 
 
 <!--chapter:end:16_00_cct.Rmd-->
-
-
-
-## Appendix {- #cct-appendix}
-
-### Appendix A {-}
-
-#### Summary of Data Strategy Implementation (June 2020) {-}
-
-Below are the guidelines used to conduct implementation of the Data Strategy, as of June 2020. This summary describes the Data Strategy Implementation document which is not publicly available.
-
-#### Data Governance {-}
-
-- Making data searchable and managing data quality improves its usability for evidence-informed decision making.
-- CCT undertook exercises to understand all data sets and metadata held by the City.
-- CCT is developing a data taxonomy of the hierarchical relationships between data sets.
-- CCT is developing a data dictionary of terminology and metrics. The data dictionary will standardize usage across units within CCT and improve efficiency in communication and collaboration on data projects.
-- An institutionalized data governance structure ensures quality data. Empowering data collectors and generators to take ownership of the data and its quality can improve data cleaning. Human efforts can be augmented by advanced analytics that can detect anomalies and surface uncleaned data.
-- CCT also provides standards for data analytics to ensure that the results provided by data analysts can be reproduced and verified.
-- CCT uses open-source software, where possible, to scale analytical efforts in collaboration with service providers and academics, to reduce the time constraints of the procurement process, and to reduce the time from design to institutionalization, implementation, and outcome.
-
-#### Data Culture {-}
-
-- CCT's initiatives build institutional knowledge to flexibly manage data and adjust to changes both internally and externally.
-- A change management plan is being rolled out to create awareness of, and desire for, working with data.
-
-#### Data Capabilities {-}
-
-- CCT invests in human resources to develop and manage open data architectures.
-- Roll-out of training programs will build capacity with data analysts, data scientists, data engineers, data governance experts, data stewards, data custodians, user interface designers, web developers, data collectors, and other staff.
-- Introducing a data literacy program will educate the organization as a whole on understanding and communicating with data.
-- Data engineering efforts will build the necessary data infrastructure that will bring CCT into the big-data world, with a strong technical foundation for future analysis for decision-making.
-- Guidelines on appropriate methods for data gathering and acquisition will be established.
-- Strategizing survey efforts will maximize value from data collection, for example by combining household and health surveys into a single exercise.
-- Open-source software can increase transparency and decrease the barrier to entry for new staff who often face a steep learning curve to understand proprietary and customized software.
-- Sandbox data science and analytics environments are provided to staff, allowing allows them to fail, experiment, and learn.
-- The City of Cape Town has expertise in urban monitoring and policy, but lacks the data engineering capacity to transform a data source into a useful tool for managers and policy makers. The City needs to build capacity within existing staff and employ data professionals to augment internal skills and increase data utilization. Cape Town's proximity to three major universities---the University of Cape Town, Stellenbosch University, and the University of the Western Cape---brings hundreds of skilled professionals to CCT.
-
-### Appendix B {-}
-
-#### Research Branch project review criteria based on Research Framework prioritization (June 2020) {-}
-
-This outline of CCT's Research Branch project review criteria summarizes the document, which is not publicly available. The outline is a resource for CCT's strategy and priorities driving research to inform policy.
-
-CCT research focus areas and questions will be prioritized according to certain criteria, including the following:
-
-#### Research that is linked to the core functions of CCT's Constitutional Mandate {-}
-
-- The foundation of the City's research focus is to inform the City's strategy and policy review cycle(s) and sectoral and departmental strategies and plans.
-- Local government has been entrusted with public funds and resources in order to fulfil a specific mandate, as envisioned by South Africa's democratic founders and documented in the Constitution. Research questions within this mandate are prioritized.
-- It is CCT's responsibility to use its public funds and resources as efficiently and effectively as possible in fulfilling this mandate. Hence, the research in which CCT invests must further this cause.
-- CCT's research interests must not be restricted only to what functions it currently undertakes, given that the context in which local government must fulfil its mandate is ever-changing. Research questions can shape CCT's social, economic, and environmental future, so research that is not directly tied to current policy decisions must also be prioritized.
-- Research plays an important role in ensuring CCT adapts to new trends and environments by informing future decisions and proposals for action.
-- Research topics likely to be of interest to external researchers will be considered. Preference will be given to high-quality doctoral and postdoctoral research.
-
-#### Research that will be utilized to inform current and future decisions {-}
-
-Policy decisions are a function of the decision-making environment and the potential for impact on the wellbeing of Cape Town residents.
-
-##### Decision-making environment {-}
-
-- Research that will inform clear options for decision-makers, providing understanding of complex issues and predicting potential impact of policy decisions, will be prioritized.
-- Research will be a decision-making tool when policy options are unclear and both intended and unintended consequences difficult to predict.
-- Research can assist to identify and monitor new trends and possible risks.
-- Research on key themes can increase CCT's understanding of underlying dynamics on a local issue.
-- CCT will prioritize cutting-edge research on high-value topics of interest.
-
-##### The potential impact of the decision{-}
-
-- Research linked to decisions with a greater potential impact will be prioritized.
-- Impact can be understood as a function of the following elements:
-    a. Budget/Resource implications in both the short- and long-term taking note of the following:
-        - Technical debt: Some policies may have lower capital outlays initially but may require technology or a technical approach that will incur significant maintenance costs over time.
-        - Opportunity cost: When resources are allocated to implement a policy, what other policies are not implemented? What are the potential benefits for CCT residents of the chosen policy and of the policies that are not chosen?
-    b. Risk
-        - The extent of known risks associated with a decision and the impact of these risks on the wellbeing of the residents of Cape Town, as well as on the natural environment.
-        - The potential for unknown risks associated with a decision, whereby unintended consequences stemming from a decision could yield negative impacts.
-    c. Finality
-        - The extent to which a decision can be adjusted over time in accordance with feedback received on its impact.
-        - Policies and decisions that require high capital investment can be difficult to adjust or course-correct. In such cases, generating information and informing decisions with evidence is key.
-
-#### Research to evaluate the impact of past decisions {-}
-
-- Research that evaluates the impact of a policy decision over time is prioritized according to the budget and resource implications of a policy as well as its associated risks.
-- Program and project evaluation are often difficult, particularly when trying to ascertain impact as opposed to outcomes or outputs.
-- Funding and resources may be allocated for intensive impact assessments, beyond the scope of the routine Performance Management activities of CCT.
-
-#### Research that supports the City in experimenting with policy or operational responses to complex problems {-}
-
-- Research enables the City to be agile and innovative in response to increasingly complex problems, and to understand the challenging and rapidly changing context in which the City plans, manages, and operates.
-- The City will approve research that supports new policy or operational alternatives to assist the City in making decisions and informing actions, with the goal of responsive and effective service delivery.
-
-### Appendix C {-}
-
-<!-- #### Core Metadata Elements for Municipal Datasets (June 2020) {-} -->
-
-These are the metadata elements that are required by general data users in establishing what data exists, how it can be accessed, and potential uses of the data. These are the minimum requirements for adding a dataset to the municipal data catalog.
-
-<table>
-<caption>(\#tab:cctapptabdata)Core Metadata Elements for Municipal Datasets (June 2020)</caption>
- <thead>
-  <tr>
-   <th style="text-align:left;"> Element Name </th>
-   <th style="text-align:left;"> Description </th>
-   <th style="text-align:left;"> Notes </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Unique ID </td>
-   <td style="text-align:left;"> Unique ID for dataset </td>
-   <td style="text-align:left;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Dataset Name </td>
-   <td style="text-align:left;"> A name given to the dataset </td>
-   <td style="text-align:left;"> Should be short but adequately reflect to what the content of the dataset relates </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Dataset Description </td>
-   <td style="text-align:left;"> A summary of the dataset, including contents and usage by CCT </td>
-   <td style="text-align:left;"> Should include purpose/usage of the dataset and how the data is sourced/acquired </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Dataset Quality </td>
-   <td style="text-align:left;"> Subjective assessment of dataset quality </td>
-   <td style="text-align:left;"> Should indicate specific gaps or concerns </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Update Frequency </td>
-   <td style="text-align:left;"> Frequency with which the data are updated in the dataset. Helps researcher understand how often the content is likely to be changed and whether it might be dependent upon a regular event, such as an annual budgetary process </td>
-   <td style="text-align:left;"> Historical (not updated), Event Based </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Data Access Rights </td>
-   <td style="text-align:left;"> Classification of the dataset in terms of access </td>
-   <td style="text-align:left;"> Open Public, Internal Open, Internal Restricted, Secret </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Restricted Reason </td>
-   <td style="text-align:left;"> To be completed if the dataset is classified as Restricted; Indicates the reason for restricting access </td>
-   <td style="text-align:left;"> Personal Information, Security </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Data Format </td>
-   <td style="text-align:left;"> Provides an indication of the interoperable structure of the data as reflected by the primary file format in which the system exports data </td>
-   <td style="text-align:left;"> Examples include: CSV, Relational DB, Excel, Word, PDF, Text, MP4, MPEG </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Data Steward </td>
-   <td style="text-align:left;"> Indicates the individual who assumes business accountability for the dataset in relation to aspects such as access, quality, integrity, and completeness </td>
-   <td style="text-align:left;"> Should be a person who has sufficient authority to authorize decisions in relation to the management of, and access to, the dataset; if the dataset is sourced from an external organization, the data steward should be from the department primarily responsible for obtaining the data on behalf of CCT </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> DS/TR Branch </td>
-   <td style="text-align:left;"> Indicates the organizational unit (branch) of the data steward </td>
-   <td style="text-align:left;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> DS/TR Department </td>
-   <td style="text-align:left;"> Indicates the organizational unit (department) of the data steward </td>
-   <td style="text-align:left;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> DS/TR Directorate </td>
-   <td style="text-align:left;"> Indicates the organizational unit (directorate) of the data steward </td>
-   <td style="text-align:left;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Data Contact </td>
-   <td style="text-align:left;"> Indicates the official who works most closely with, and can best provide additional information about, the data and metadata </td>
-   <td style="text-align:left;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Data Custodian </td>
-   <td style="text-align:left;"> Indicates the official who is responsible for the technical management of the data (e.g., the hosting and serving of the data) </td>
-   <td style="text-align:left;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Host System ID </td>
-   <td style="text-align:left;"> Unique ID of the application in which the data are stored (primary/source system) </td>
-   <td style="text-align:left;">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Spatial Coverage </td>
-   <td style="text-align:left;"> Indicates areas for which data are recorded </td>
-   <td style="text-align:left;"> Entire city or subareas; Should also indicate the lowest spatial unit at which the data can be presented/analyzed </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 12em; "> Temporal Coverage </td>
-   <td style="text-align:left;"> Indicates the range of time for which data are recorded </td>
-   <td style="text-align:left;"> Specific dates or intervals when data were recorded; Earliest and latest dates for which data were recorded </td>
-  </tr>
-</tbody>
-</table>
-
-
-
-<!--chapter:end:16_01_cct_appendix.Rmd-->
 
 # Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME) {#dime}
 
