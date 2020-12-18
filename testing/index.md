@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2020-12-16"
+date: "2020-12-18"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -1142,11 +1142,11 @@ Does the agency have a posted process, pre-specified forms, or a template? If no
 
 Guides that provide templates are available from various domains. Appendix A to this chapter provides one template. Other examples are listed below:
 
-"Data Sharing: Creating Agreements" [@jarquin2012] from the Colorado Clinical and Translational Sciences Institute includes specific questions to help determine which sections should be included in a DUA from a clinical health perspective.
+- "Data Sharing: Creating Agreements" [@jarquin2012] from the Colorado Clinical and Translational Sciences Institute includes specific questions to help determine which sections should be included in a DUA from a clinical health perspective.
 
-*Legal Issues for IDS Use: Finding a Way Forward* [@petrila2017] is an expert panel report informing state and local governments that want to integrate data. This report explains why politics and relationships matter and walks through the legal considerations for preparing a MOU or Data Use License. The document includes links to a sample agreement made with two states and one county as well as a data license template from a federal agency for health and human services data.
+- *Legal Issues for IDS Use: Finding a Way Forward* [@petrila2017] is an expert panel report informing state and local governments that want to integrate data. This report explains why politics and relationships matter and walks through the legal considerations for preparing a MOU or Data Use License. The document includes links to a sample agreement made with two states and one county as well as a data license template from a federal agency for health and human services data.
 
-"Guidelines for Developing Data Sharing Agreements to Use State Administrative Data for Early Care and Education Research" [@shaw2018] includes examples with early childhood research from two states, along with links to checklists and toolkits. This research brief also includes "advice from researchers" sections throughout.
+- Guidelines for Developing Data Sharing Agreements to Use State Administrative Data for Early Care and Education Research" [@shaw2018] includes examples with early childhood research from two states, along with links to checklists and toolkits. This research brief also includes "advice from researchers" sections throughout.
 
 ### Signing the Agreement
 
