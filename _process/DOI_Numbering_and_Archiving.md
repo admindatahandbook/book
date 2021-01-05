@@ -15,9 +15,9 @@ DOI are registered for the following items. All numbers are preceded by the (PRE
 
 ## Archiving
 
-We will use the [J-PAL community at DSpace@MIT](https://dspace.mit.edu/handle/1721.1/39118), in a special collection for the Handbook.
+We will use the generic J-PAL archiving. The following entities should be managed:
 
-| Item | Numbering |
+| Item |  |
 |------|-----------|
 | HTML version of the whole handbook | ZIP file of entire handbook               |
 | HTML pages of each chapter         | Single HTML file                          |
@@ -26,5 +26,5 @@ We will use the [J-PAL community at DSpace@MIT](https://dspace.mit.edu/handle/17
 | Ebook  (Kindle version)            | Mobi file                                 |
 | Ebook  (EPUB version)              | EPUB file                                 |
 
-In each case, the DOI will be pointed at the Handle (e.g., `1721.1/xxxx`), and the DOI recorded as an "Other identifier".
+In each case, the DOI will be pointed at the URL.
 
