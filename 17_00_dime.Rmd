@@ -111,7 +111,7 @@ The team is also working on a project that evaluates how justice impacts economi
 
 In South Asia, DIME measures textual slant in the manner in how judges from different castes describe litigants from the same or another caste [@ash2019]. The team also uses gender-based violence prevention reported through mobile applications to assess missing cases. In Eastern Europe, the team studies when judicial decisions can be successfully automated. The +DE_JURE| initiative is exploring how, collectively, these insights can spur e-justice solutions.
 
-## Making Data Usable for Research
+## Making Data Usable for Research {#dime-making-data-usable}
 
 There are many challenges to making administrative data usable, and these challenges are similar across many different contexts in which +DIME| works. Often administrative data are available in hard copy only; data sets are not interoperable due to inconsistent or omitted numeric identifiers; data generation is decentralized and there is no aggregation at the national level; and administrative data coverage is limited or biased. As a result, integrating data requires multiple trips to field offices, coding and digitization, painstaking efforts to merge on available variables, and careful validation with other data sources. Cases from DIME's portfolio illustrate some of these problems:
 
@@ -129,7 +129,7 @@ Even when pilots are demonstrated to be effective, the institutionalization of n
 
 ## Legal and Institutional Framework 
 
-### Institutional Setup
+### Institutional Setup {#dime-institutional-setup}
 
 +DIME| has a global portfolio of 123 active +impact_evaluations|. The portfolio is supported by a team of twenty research economists, twenty other permanent staff, and co-authors from academic institutions. The portfolio generates correspondingly large amounts of data with more than 300 +surveys| completed over the past six years and many projects relying on high-frequency data, satellite data, and administrative data.
 
@@ -260,7 +260,7 @@ The primary mechanism for ensuring safe outputs at +DIME| is rigorous protocols 
 
 ### Preservation and Reproducibility of Researcher-Accessible Files
 
-Version control and transparent workflows are critical to ensuring reproducibility. As discussed in an earlier section, +DIME| has instituted clear workflows to transparently document all modifications to data after initial receipt. DIME has recently established new reproducibility standards and implemented those through a hands-on *reproducibility bootcamp*. These standards include keeping all projects on GitHub or (version control more generally); establishing protocols for project documentation, data storage, and identifiable information management; and establishing protocols for the extent that sensitive data can be shared for replication and reanalysis. While most of these elements are common across types of data, secure storage solutions and access protocols for identifiable data are of greater concern with administrative data because of the size of the data and number of subjects.
+Version control and transparent workflows are critical to ensuring reproducibility. As discussed in section \@ref(dime-institutional-setup), +DIME| has instituted clear workflows to transparently document all modifications to data after initial receipt. DIME has recently established new reproducibility standards and implemented those through a hands-on *reproducibility bootcamp*. These standards include keeping all projects on GitHub or (version control more generally); establishing protocols for project documentation, data storage, and identifiable information management; and establishing protocols for the extent that sensitive data can be shared for replication and reanalysis. While most of these elements are common across types of data, secure storage solutions and access protocols for identifiable data are of greater concern with administrative data because of the size of the data and number of subjects.
 
 Accessibility to a second user and long-term data engagements are potential benefits of administrative data. Documentation is critical to allow for continued usage; tracing and recording the process of gaining data access, developing data sets, and preparing data for research, and recording the relationship histories and the people involved in the project. Since relationships with data providers and individual researchers are often the point of first access, preservation of research projects involves knowing the story behind the data access. At this point, there is not a technical solution to facilitate this documentation, but the hope is to advance on this when infrastructure allows.
 

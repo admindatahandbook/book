@@ -63,7 +63,7 @@ As mentioned, one of the primary objectives of the PCRI is to promote a better u
 
 ## Making Data Useable for Research
 
-### Collecting Data on the Private Capital Industry
+### Collecting Data on the Private Capital Industry {#collecting-pci}
 
 The PCRI collects information on private capital firms, funds, portfolio companies, transaction data, and investment exits. In particular, the Institute focuses on buyouts, growth equity, and venture capital investing. One of the main strengths of the data collection strategy is that it relies on gathering data from multiple sources to mitigate sample selection biases. In the future, the PCRI would like to include more information on angel investments and sovereign wealth funds.
 
@@ -197,7 +197,7 @@ While the PCRI has been successful with private equity groups, venture capital o
 
 Over the past several years, the PCRI has been working with the +Census_Bureau| team regarding ways in which the PCRI data could be integrated with the Longitudinal Business Database (LBD). In the spring of 2016, the PCRI signed a confidentiality agreement that allowed it to tie certain portfolio-company level data to the LBD in a way that would respect the various confidentiality restrictions on the government and PCRI data but greatly increase the usefulness to researchers. The agreement established between the Census Buerau and the PCRI allows for the sharing of specific PCRI data items, which include portfolio company name, location information, and a PCRI source code (PCRI Data). The purpose was to link the data to the Census Bureau Business Register. As of May 2020, one academic is using the Census-PCRI linked data to explore the effect of acquisitions of startups on their newly acquired employees.
 
-### Legal Framework for Granting Data Access
+### Legal Framework for Granting Data Access {#pcri-legal-framework-data-access}
 
 Approved data users interested in using either PCRI data or the coded +CoI| data are required to sign a +data_use_agreement| (DUA) between both the PCRI and its data host, the +NORC|. The contract is standard and has been vetted by a few users, but there is some flexibility for negotiation. If changes are made, they are reviewed extensively by the NORC legal staff and the PCRI. However, very few users have requested any changes. Data users are granted access for a term of one year; at the end of the term they are able to request an extension. Access to the data can be revoked if the NORC deems that any aspect of the DUA is violated. The NORC and PCRI reserve the right to ensure that the PCRI data are used in compliance with the agreement. The output is reviewed to ensure that it preserves the anonymity of the individual observations and that the analyses match the original intent of the +research_proposal|. Additionally, according to the DUA, both the user and the NORC have the right to terminate the DUA without cause at any time. Currently, there is no cost to accessing the PCRI databases, as the fixed fee paid by the PCRI to the NORC accommodates a generous number of users.
 
@@ -217,7 +217,7 @@ Only approved users are granted access to the PCRI databases. The PCRI primarily
 
 ### Safe Settings
 
-The security of the PCRI data is paramount. The Institute's ability to obtain data from the various data vendors and private equity firms rests primarily on the ability to maintain the security and confidentiality of their data. The PCRI has designed a protocol that simultaneously allows academics to undertake high-quality research while protecting the confidentiality of the data provided by the +data_sponsors|. To this end, PCRI's first step was to host the PCRI databases at the +NORC|, which has experience hosting highly sensitive federal (e.g., Medicare) and private sector data (e.g., hedge fund data used by federal investigators as part of the Financial Crisis Inquiry Commission). The PCRI initially explored creating its own platform on its own servers, but it was too costly to construct and maintain. As mentioned in the "Legal Framework for Granting Data Access" section, the PCRI and NORC reserve the right to ensure that the PCRI data are used in compliance with the +DUA| agreement. Thus, privileges to access the data may be revoked if the NORC deems that any aspect of the DUA is violated.
+The security of the PCRI data is paramount. The Institute's ability to obtain data from the various data vendors and private equity firms rests primarily on the ability to maintain the security and confidentiality of their data. The PCRI has designed a protocol that simultaneously allows academics to undertake high-quality research while protecting the confidentiality of the data provided by the +data_sponsors|. To this end, PCRI's first step was to host the PCRI databases at the +NORC|, which has experience hosting highly sensitive federal (e.g., Medicare) and private sector data (e.g., hedge fund data used by federal investigators as part of the Financial Crisis Inquiry Commission). The PCRI initially explored creating its own platform on its own servers, but it was too costly to construct and maintain. As mentioned in section \@ref(pcri-legal-framework-data-access), the PCRI and NORC reserve the right to ensure that the PCRI data are used in compliance with the +DUA| agreement. Thus, privileges to access the data may be revoked if the NORC deems that any aspect of the DUA is violated.
 
 The data are accessed using a secure remote access protocol. Users login through the +NORC| portal, which requires a two-factor authentication: a password and a security token password. The PCRI provides Stata software to the researcher to access the data files. To ensure safety, the PCRI employs a methodology whereby academics can undertake detailed cross-tabulated and regression analyses but not download or view individual data entries. Also, for added security, the Institute disables certain features of Stata (e.g., outsheet, list, and browse commands) that could allow the user to identify companies in the database. The cost of hosting the data at the NORC is around US\$40,000 per year.
 
@@ -255,7 +255,7 @@ The PCRI is not required to delete data from data providers. Upon termination of
 
 ### Outreach
 
-As mentioned in the "Collecting Data on the Private Capital Industry" section, outreach to private equity sponsors is a slow process because each potential data provider is contacted individually. Moreover, these private equity firms are very wary of sharing data and need to have their legal departments review the data provider agreement, necessitating frequent communication between the parties. One benefit of participation that is highlighted to the +data_sponsors| is that they would be able to obtain a preview of working papers and would be invited to attend PCRI conferences featuring the Institute's research.
+As mentioned in section \@ref(collecting-pci), outreach to private equity sponsors is a slow process because each potential data provider is contacted individually. Moreover, these private equity firms are very wary of sharing data and need to have their legal departments review the data provider agreement, necessitating frequent communication between the parties. One benefit of participation that is highlighted to the +data_sponsors| is that they would be able to obtain a preview of working papers and would be invited to attend PCRI conferences featuring the Institute's research.
 
 Going forward, PCRI hopes to make this process more efficient by working with some organizations that are already actively collecting information from general partners. Such organizations include a large custodian bank with whom the PCRI has signed a data sharing agreement and national venture capital associations.
 
@@ -305,7 +305,7 @@ We would like to thank the Kauffman, Sloan, and Smith-Richardson Foundations, as
 
 [^pcri3]: This work was collected in Anuradha Gurung and Josh Lerner, editors [-@gurung2008].
 
-[^pcri3b]: See Appendix A for summary information on the PCRI database.
+[^pcri3b]: See Appendix [A](#pcri-appendixa) for summary information on the PCRI database.
 
 [^pcri4]: See Section 3 of the ECB Guidance, which states that "Syndicating transactions presenting high levels of leverage ... should remain exceptional ... and form part of the credit delegation and risk management escalation framework of the credit institution."
 

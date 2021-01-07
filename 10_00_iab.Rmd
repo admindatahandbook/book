@@ -74,7 +74,7 @@ Before being customized by the +RDC-IAB|, these source data already undergo exte
 
 These prior data processing steps imply that +RDC-IAB| staff can rely on intermediate data sources that already ran through several quality and plausibility checks and are consistently formatted and internally documented. This makes the preparation of final research data products much easier and frees up resources for other downstream tasks. The same is true for surveys conducted by the +IAB| (or partner institutions) that become part of the RDC-IAB data portfolio. An internal guideline specifies the division of responsibilities between the RDC-IAB and the research department conducting the survey, making sure that data quality checks are already performed and documentation (including questionnaires, codebooks, and summary statistics) is complete before the data are submitted. Note that institutions that want to build an +RDC| that also performs initial data preparation and documentation will need additional staffing resources.
 
-The +RDC-IAB| provides a variety of standardized data sets for labor market research based on these source data. Additionally, RDC-IAB offers access to various linked data products. These are data where survey and administrative information are linked via a unique identifier or record linkage techniques for consenting respondents. Record linkage is performed by the +German_Record_Linkage_Center| (GRLC) within RDC-IAB. For more details on the preparation of standardized research data products, see the section Safe Data.
+The +RDC-IAB| provides a variety of standardized data sets for labor market research based on these source data. Additionally, RDC-IAB offers access to various linked data products. These are data where survey and administrative information are linked via a unique identifier or record linkage techniques for consenting respondents. Record linkage is performed by the +German_Record_Linkage_Center| (GRLC) within RDC-IAB. For more details on the preparation of standardized research data products, see section \@ref(iab-safedata).
 
 The +RDC-IAB| provides detailed metadata for all data products in both German and English. These metadata are based on the available internal data documentation and are tailored to fit the final data product. One important aim is to harmonize variable names and values across all administrative data products. There is a designated data steward for each data product and at least one additional staff member for assistance and double-checking. All data documentation are published as a standardized data report in a report series called [*FDZ-Datenreport*](https://fdz.iab.de/en/FDZ_Publications/FDZ_Publication_Series/FDZ-Datenreporte.aspx).[^accessed06152020] A data report includes an introduction and outline, a description of all administrative data sources, a description of data preparation and sampling procedure, information on data quality and problems, a description of all variables, references, and if necessary, an appendix. Frequency tables, codebooks, and test data are provided in separate files online. These separate files are generated in a standardized way from the final data product using Stata scripts. This way, their preparation can be used as part of the quality control process.
 
@@ -95,7 +95,7 @@ The +RDC-IAB| also helps the +BA| and other stakeholders by facilitating access 
 
 Research data provided by the +RDC-IAB| are based on social data and therefore subject to special data privacy protection. Detailed regulations on the collection and processing of social data are provided by German law.[^iab5] Article 282, +SGB|, Book III is especially relevant for the use of research data [@sgb282.3]. It permits the +IAB| to use administrative data available at the +BA| for research purposes and to conduct surveys (subparagraph 5). It also allows and regulates the long-term storage of research data (subparagraph 6). Finally, it states that anonymized research data can be made available to scientific institutions if required for the purpose of labor market and occupational research (subparagraph 7).[^iab6] This effectively restricts access to the scientific community within certain research areas without specifying the occupational background of the data user. Data access for commercial entities is strongly restricted and limited to special cases in which the requesting entity can prove a significant background in scientific research and shows clear intention to publish research results in a way that makes it accessible for the scientific community. Data access for freelance researchers is not possible.
 
-Data use is also embedded in the broader regulatory context of the +Federal_Data_Protection_Act| (*+Bundesdatenschutzgesetz|*, BDSG) and the +GDPR| of the EU. +Pseudonymization| is defined (Article 5, paragraph 5, GDPR) and the requirements for +anonymous_data| are outlined (recital 26, GDPR).[^iab7] Anonymity depends on the means reasonably likely to be used for re-identification, so the +RDC-IAB| takes the context of data access into account while preparing its research data. For example, +weakly_anonymized| data products include more sensitive information, because they are provided in a computing environment where the technical infrastructure restricts the use of additional information. +De-facto_anonymized| data, however, reduce the amount of information more strongly, as data users are only bound by contractual obligations (further details in the section about the five safes framework).
+Data use is also embedded in the broader regulatory context of the +Federal_Data_Protection_Act| (*+Bundesdatenschutzgesetz|*, BDSG) and the +GDPR| of the EU. +Pseudonymization| is defined (Article 5, paragraph 5, GDPR) and the requirements for +anonymous_data| are outlined (recital 26, GDPR).[^iab7] Anonymity depends on the means reasonably likely to be used for re-identification, so the +RDC-IAB| takes the context of data access into account while preparing its research data. For example, +weakly_anonymized| data products include more sensitive information, because they are provided in a computing environment where the technical infrastructure restricts the use of additional information. +De-facto_anonymized| data, however, reduce the amount of information more strongly, as data users are only bound by contractual obligations (further details in section \@ref(iab-fivesafes)).
 
 +RDC-IAB| does not have its own legal experts to ensure compliance with these regulations but is advised by the legal departments and data protection officers of both +IAB| and +BA|. All +RDC-IAB| personnel are employees of a federal agency and are therefore formally committed to their responsibility to protect social data. A violation of these responsibilities can be fined or lead to imprisonment.
 
@@ -109,7 +109,7 @@ Neither the +RDC-IAB| nor the +BA| assert intellectual property rights on the or
 
 In case of a breach of the +DUA|, sanctions can be imposed on both users and institutions, ranging from temporarily blocking the user account to financial and reputational penalties. Fines can reach up to €60,000, and users and entire institutions can be barred from access for up to two years. Information on the breach can also be shared with other RDCs. In case of severe misconduct, additional penal consequences might follow that are not regulated by the DUA but follow from German and/or European law. However, the +RDC-IAB| always tries to maintain a good relationship with the data users that is grounded in the understanding that researchers have no interest to circumvent security barriers and disclose personal data willfully. Most incidents that come to RDC-IABs attention amount to misunderstandings and inattentions with no implications for the security and anonymity of the data. These cases can usually be handled by a brief period of restricted access and cautioning users to be more careful in the future.
 
-The decision to expand data access facilities outside Germany led to several challenges. From a legal perspective, two main issues arose. First, making +on-site| access to +RDC-IAB| data outside of Germany involved a re-evaluation of the different pillars of the portfolio for data security and data anonymity used by the RDC-IAB when working with data products derived from social data. The adjustments necessary for data access outside Germany is discussed in the following section. Second, entering into +DUA|s with foreign institutions not only required overcoming language barriers but also reaching a shared understanding of the legal aspects involved. Legal staff at the institutions requesting data access often had questions regarding details of the contract or the German legal system and there were numerous requests to change the DUA, especially from US institutions. Since the RDC-IAB does not have the resources for a legal team that can handle individual contract negotiations, especially with a steadily increasing number of international users, it was decided to incorporate the lessons learned from the pilot phase of the project into a revised standard DUA template. The revised template is comparable for German and international institutions and available in German and English.[^iab10] It is specifically tailored for data access through RDC-IAB and currently differs from DUAs entered into by other German +RDC|s. DUAs are now required on a non-negotiable basis, and adjustments to the standard template are infrequent and when they are relevant for all future requests. While this decision means that some researchers might be excluded from data access because their institutions decline signing the standard DUA, RDC-IAB's experience is that this is a very rare occurrence.
+The decision to expand data access facilities outside Germany led to several challenges. From a legal perspective, two main issues arose. First, making +on-site| access to +RDC-IAB| data outside of Germany involved a re-evaluation of the different pillars of the portfolio for data security and data anonymity used by the RDC-IAB when working with data products derived from social data. The adjustments necessary for data access outside Germany is discussed section \@ref(iab-fivesafes). Second, entering into +DUA|s with foreign institutions not only required overcoming language barriers but also reaching a shared understanding of the legal aspects involved. Legal staff at the institutions requesting data access often had questions regarding details of the contract or the German legal system and there were numerous requests to change the DUA, especially from US institutions. Since the RDC-IAB does not have the resources for a legal team that can handle individual contract negotiations, especially with a steadily increasing number of international users, it was decided to incorporate the lessons learned from the pilot phase of the project into a revised standard DUA template. The revised template is comparable for German and international institutions and available in German and English.[^iab10] It is specifically tailored for data access through RDC-IAB and currently differs from DUAs entered into by other German +RDC|s. DUAs are now required on a non-negotiable basis, and adjustments to the standard template are infrequent and when they are relevant for all future requests. While this decision means that some researchers might be excluded from data access because their institutions decline signing the standard DUA, RDC-IAB's experience is that this is a very rare occurrence.
 
 One consequence of the standardization of +DUA|s is that sanctions are equal for both German and non-German institutions. While this should not pose a problem for the more common sanctions like temporary blocking of data access, the enforcement of financial penalties outside German jurisdiction are a different matter. Fortunately, the +RDC-IAB| has not yet been confronted with a case of misconduct that would have made such a test necessary.
 
@@ -278,9 +278,9 @@ Dana has published several articles in leading social science journals and books
 
 Philipp's main research interest lies at the intersection of labor and regional economics. He has contributed to the emerging scientific literature on minimum wages in Germany and led several policy evaluation projects funded by the German government to accompany the introduction of the national statutory minimum wage. He has also worked on local spillovers, segregation, and policy evaluation using geocoded administrative research data.
 
-[^iab1]: See section [Safe Data](#iab-safedata) for more information.
+[^iab1]: See section \@ref(iab-safedata) for more information.
 
-[^iab2]: The standardizations for data use agreements and anonymization rules are discussed in more detail in the [Five Safes](#iab-fivesafes) section of this chapter. The standardized contract for guest RDCs can be provided to institutions also interested in establishing similar decentralized data access infrastructure upon request.
+[^iab2]: The standardizations for data use agreements and anonymization rules are discussed in more detail in section \@ref(iab-fivesafes) of this chapter. The standardized contract for guest RDCs can be provided to institutions also interested in establishing similar decentralized data access infrastructure upon request.
 
 [^iab3]: The term establishment (*Betrieb*) is rather peculiar and needs some explanation. It is defined as a regionally and economically delimited unit in which employees work. An establishment may consist of one or more branch offices and several establishments may belong to one company. The authors decided against using *firm*, *company*, or *enterprise* as a translation as these terms usually mean something different.
 
@@ -294,29 +294,29 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab8]: This is not true of the surveys, where participation is voluntary.
 
-[^iab9]: The authors discuss SDC rules at the RDC-IAB in section [Safe Outputs](#iab-safeoutput).
+<!-- [^iab9]: The authors discuss SDC rules at the RDC-IAB in section \@ref(iab-safeoutput). -->
 
 [^iab10]: The template can be provided to institutions interested in establishing decentralized data access upon request.
 
 [^iab11]: https://gdpr-info.eu/issues/third-countries/ (accessed 2020-06-15).
 
-[^iab12]: See section [Legal Framework for Granting Data Access](#iab-legal).
+[^iab12]: See section \@ref(iab-legal).
 
-[^iab13]: More details about the safe room are described in section [Motivation and Background](#iab-motivation).
+[^iab13]: More details about the safe room are described in section \@ref(iab-motivation).
 
-[^iab14]: See section [Safe Data](#iab-safedata).
+[^iab14]: See section \@ref(iab-safedata).
 
-[^iab15]: See section [Making Data Usable for Research](#iab-usable).
+[^iab15]: See section \@ref(iab-usable).
 
 [^iab16]: The source data used by the RDC-IAB are already pseudonymous.
 
-[^iab17]: See section [Making Data Usable for Research](#iab-usable).
+[^iab17]: See section \@ref(iab-usable).
 
-[^iab18]: See sections [Making Data Usable for Research](#iab-usable) and [Safe Settings](#iab-safesettings).
+[^iab18]: See sections \@ref(iab-usable) and \@ref(iab-safesettings).
 
 [^iab19]: The script is based on Perl and was written by a staff member. It runs independently within JoSuA.
 
-[^iab20]: See section [Safe Settings](#iab-safesettings).
+<!-- [^iab20]: See section \@ref(iab-safesettings). -->
 
 [^iab21]: Accessed 2020-06-15.
 
@@ -326,7 +326,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 
 [^iab24]: One example is the data set "Biographical Data of Social Insurance Agencies in Germany (BASiD)" [@hochfellner2012].
 
-[^iab25]: See section [Motivation and Background](#iab-motivation).
+[^iab25]: See section \@ref(iab-motivation).
 
 [^iab26]: Accessed 2020-06-15.
 

@@ -143,7 +143,7 @@ Mobile devices are not permitted inside the secure facilities and approved users
 
 As a final physical safeguard, all textbooks and related print material deemed necessary for project work within the lab as well as physical notes must be vetted through the NB-IRDT +senior_data_analyst|. Approved users and staff must send such documentation to the senior data analyst electronically for vetting and addition to appropriate project folders. Written notes made while in the lab are taken on designated blue paper, may not be removed from the secure facilities, and are securely shredded when no longer needed.
 
-Physical access within the secure facility is governed by staff roles and responsibilities. Approved users are permitted to work using one of the eleven workstations in the main lab of the secure facility. Limited access to a lockable, inner staff-office is available to the NB-IRDT +data_manager|, +systems_administrator|, and as needed the +data_analysts|. The NB-IRDT +senior_data_analyst| is stationed in an adjacent, inner office where the server and media safe are housed. Only the senior data analyst and systems administrators have keys to this room. The server is held in a locked cage and both the server and the safe are bolted to the floor. The safe requires two individuals to be present for opening: one person with a key and one with a passcode.   
+Physical access within the secure facility is governed by staff roles and responsibilities. Approved users are permitted to work using one of the eleven workstations in the main lab of the secure facility. Limited access to a lockable, inner staff-office is available to the NB-IRDT +data_manager|, +systems_administrator|, and as needed the +data_analysts|. The NB-IRDT +senior_data_analyst| is stationed in an adjacent, inner office where the server and media safe are housed. Only the senior data analyst and systems administrators have keys to this room. The server is held in a locked cage and both the server and the safe are bolted to the floor. The safe requires two individuals to be present for opening: one person with a key and one with a passcode.
 
 In the NB-IRDT data lab, researchers have routine access to Stata, R, SAS, ArcGIS, and SPSS and may request other commercial software packages to be installed. Data access fees are based on a standard fee schedule that specifies rates per project and per hour of work, so total project fees vary depending on the scope of work.
 
@@ -151,7 +151,7 @@ In the NB-IRDT data lab, researchers have routine access to Stata, R, SAS, ArcGI
 
 All personal information and personal health information, regardless of format (identifiable or de-identified, i.e., pseudonymous) or stage of the data life cycle, is treated and given an equal level of protection. There are no distinctions or classes of data in the legislation for data that are considered personal information or personal health information. This lack of distinction, with the exception of truly anonymous data (i.e., no possibility of re-identification) that is not covered under the legislation, ensures consistent safeguards are followed and reduces the potential risks of identification, re-identification, inappropriate use, access, or disclosure.[^nbirdt18]
 
-+Project_data_sets| are prepared files that include only those data elements required to undertake the project and those approved for release to the researcher. The Institute ID^[See section on [Making Data Useable for Research](#nbirdt-making) for more details] is replaced by a study number; these numbers are specific to projects so they cannot be used to link multiple data sets. Since the project data set is a single data set that comprises approved data elements from one or more NB-IRDT data set(s) assembled by the +senior_data_analyst| working as the +database_administrator|, the researcher is not required to do any data linkage or merging. In the review stage, the researcher was required to provide a rationale for why each data element would be required for the project. The prepared file will contain only those variables approved for access or derivations from underlying variables whose release would be considered especially sensitive. For example, a full postal code (often sufficient to identify an individual street in urban areas) is rarely required by researchers for their project work. Instead, the prepared data set may have only the first three digits of the postal code but also include derived measures of travel distances. Similarly, derived variables may include duration of stay in hospital but only the month and year of admission to hospital are included.
++Project_data_sets| are prepared files that include only those data elements required to undertake the project and those approved for release to the researcher. The Institute ID^[See section \@ref(nbirdt-making) for more details] is replaced by a study number; these numbers are specific to projects so they cannot be used to link multiple data sets. Since the project data set is a single data set that comprises approved data elements from one or more NB-IRDT data set(s) assembled by the +senior_data_analyst| working as the +database_administrator|, the researcher is not required to do any data linkage or merging. In the review stage, the researcher was required to provide a rationale for why each data element would be required for the project. The prepared file will contain only those variables approved for access or derivations from underlying variables whose release would be considered especially sensitive. For example, a full postal code (often sufficient to identify an individual street in urban areas) is rarely required by researchers for their project work. Instead, the prepared data set may have only the first three digits of the postal code but also include derived measures of travel distances. Similarly, derived variables may include duration of stay in hospital but only the month and year of admission to hospital are included.
 
 ### Safe Outputs {#nbirdt-safeoutput}
 
@@ -233,15 +233,15 @@ Audits of data sets accessed and data project activity are a requirement of data
 
 [^nbirdt6]: See NB-IRDT website [Data Holdings](https://www.nbirdt.ca/holdings) for examples of available codebooks (accessed 2020-12-10).
 
-[^nbirdt7]: See section [Safe Projects](#nbirdt-safeproject) for detailed description of this committee.
+[^nbirdt7]: See section \@ref(nbirdt-safeproject) for detailed description of this committee.
 
 [^nbirdt8]: All Canadian citizens and permanent residents of Canada moving to NB are eligible for NB health insurance after a three-month waiting period. Certain classes of temporary residents are also eligible, including international students and those temporary residents with a work permit issued after completing NB higher education.
 
-[^nbirdt9]: See section [Making Data Usable for Research](#nbirdt-making) for a detailed description of a crosswalk file development.
+[^nbirdt9]: See section \@ref(nbirdt-making) for a detailed description of a crosswalk file development.
 
-[^nbirdt10]: See section [Institutional Setup](#nbirdt-institutionalsetup) for the legislative authority for NB-IRDT to operate.
+[^nbirdt10]: See section \@ref(nbirdt-institutionalsetup) for the legislative authority for NB-IRDT to operate.
 
-[^nbirdt11]: See section [Protection of Sensitive and Personal Data: The Five Safes Framework](#nbirdt-fivesafes) for detailed description of safeguards.
+[^nbirdt11]: See section \@ref(nbirdt-fivesafes) for detailed description of safeguards.
 
 [^nbirdt12]: See NB-IRDT website [Data Privacy and Security](https://www.nbirdt.ca/data-privacy-and-security) for the complete set of policies.
 
@@ -249,7 +249,7 @@ Audits of data sets accessed and data project activity are a requirement of data
 
 [^nbirdt14]: In the interests of expediency, the project application process typically begins prior to a contract or MOU being signed, although data analysis does require such an agreement to be in place.
 
-[^nbirdt15]: See section [Legal Context for Data Use](#nbirdt-legaluse) for legal and policy details.
+[^nbirdt15]: See section \@ref(nbirdt-legaluse) for legal and policy details.
 
 [^nbirdt16]: Though not codified, sufficient criteria may include one or more of the following: successfully completing projects using administrative data, securing competitive research funding, or using administrative data for program evaluation or research as part of regular employment.
 

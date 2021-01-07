@@ -4,7 +4,7 @@ cat("\\FloatBarrier\\newpage")
 
 ## Appendix  {- #pcri-appendix}
 
-### Appendix A {-}
+### Appendix A {- #pcri-appendixa}
 
 #### Summary Information of the PCRI Private Capital Database {-}
 
