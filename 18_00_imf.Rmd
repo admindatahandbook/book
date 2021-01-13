@@ -134,6 +134,10 @@ The intensity and frequency with which administrative data are used at the IMF d
 
 [Romain Duval](https://www.imf.org/external/np/cv/AuthorCV.aspx?AuthID=291) is the Head of the Structural Reforms Unit and an Advisor to the Chief Economist in the IMF Research Department. Previously he was the Division Chief for Regional Studies of the IMF Asia-Pacific Department and, prior to joining the Fund, the Division Chief for Structural Surveillance at the OECD Economics Department.
 
+## Disclaimer {-}
+
+The views expressed in this paper are those of the author(s) and do not necessarily represent the views of the IMF, its Executive Board, or IMF management.
+
 [^imf1]: The Fund has several frameworks in place regarding data. Under Article VIII, Section 5 of its articles of agreement, certain data must be provided to the Fund. Under the Data Standards Initiatives, members voluntarily subscribe to certain standards for data publication. This chapter refers solely to data that are voluntarily provided to the Fund and that fall outside of these other frameworks.
 
 [^imf2]: While the surveillance and policy recommendations are normally conducted annually and for every member country, IMF financing and technical assistance are demand-driven and can only be initiated at the request of country authorities.
