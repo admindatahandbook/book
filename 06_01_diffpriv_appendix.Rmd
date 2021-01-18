@@ -1,0 +1,291 @@
+## Appendix {- #diffpriv-appendix}
+
+### Appendix A: Key Design Choices {- #diffpriv-apendixa}
+
+This section identifies the key *design* choices that critically affect the use of differential privacy. It introduces the trade-offs that should be considered and decisions that must be made when implementing differential privacy. Since many of these choices have broad implications for other information lifecycle activities, such as record management and compliance, these topics are discussed in Appendix [B](#diffpriv-appendixb).
+
+While there is no one-size-fits-all solution and it is impossible to summarize all of the literature related to the foundational research and applications in these areas, this overview is intended to help organizations consider a set of trade-offs and decision points critical to designing a differentially private system. These are decisions that should be made explicitly at the planning stage, as failing to do so will almost undoubtedly lead to challenges later.
+
+#### Trust: Local versus Curator Model, and Alternative Distributed Models {- #sec:trust-local-vs-curator}
+
+Differentially private computations have been designed for a spectrum of trust environments, and an organization implementing differential privacy must decide which is most appropriate for its particular use cases. On one end of the spectrum, the *curator model* (also known as the *centralized model*) of differential privacy assumes the existence of a trusted party. The trusted party collects personal information, produces its outputs by applying differentially private computations, and is trusted to otherwise protect the data from potential adversaries. On the other end of the spectrum, the *local model* of differential privacy is a fully distributed model which assumes no trust, except of individuals in their own computations (i.e., that individuals' computing devices are operating properly, that the security of their devices are not compromised, that the software they run are trustworthy, etc.).
+
+The curator model is the most well-studied and well-understood model for differential privacy, and most of the discussion in this chapter is written with the curator model in mind. The downside of the curator model is the assumed trust: data subjects must trust the curator to keep their data stored securely, inaccessible to adversaries including external hackers as well as insiders within the curator's organization. The curator must also be entrusted to enforce a satisfactory privacy-loss budget for the data and carry out differentially private computations in a correctly implemented and secure manner.
+
+The local model for differential privacy found large-scale adoption by companies like Google [@erlingsson2014], Apple [@apple2017learning], and Microsoft [@ding2017collecting] because of the strong privacy protections the model affords. Each of the individual pieces of personal information collected using a local model is infused with statistical noise that is introduced at the endpoints (i.e., on the data subjects' devices). As a consequence, each subject's privacy is protected (as long as the subject's device operates with the correct software and is not otherwise compromised) even if the aggregating party (e.g., the company analyzing the data) and all other subjects' devices are compromised (e.g., by hacking or by a subpoena). However, the local model comes at a large cost in statistical accuracy. Indeed, in contrast to the curator model, the noise introduced for privacy in the local model is generally larger than the sampling error even as the number $n$ of observations tends to infinity. This effect makes it applicable mostly for analysis over massive data sets, such as the user bases of the aforementioned large technology companies.
+
+Researchers are investigating alternative distributed models for differential privacy that fall in the middle of this spectrum. These approaches aim to provide privacy protections that are qualitatively stronger than the centralized model (in the sense of relying on weaker trust assumptions than that of the centralized model) with improved accuracy compared to the local model. Three such alternatives are computational multiparty differential privacy [@Vadhan_complexity_2017 §9\--10], the hybrid model [@AventKZHL17], and the shuffle model [@PROCHLO; @CheuSUZZ19].
+
+#### Interactive versus Noninteractive Publication Mechanisms {- #sec:interactive-vs-noninteractive}
+
+When deploying differential privacy, one must decide whether to employ a noninteractive mechanism, an interactive mechanism, or a hybrid of the two. This discussion introduces each of these approaches, and Appendix [B](#diffpriv-appendixb) below outlines the advantages and disadvantages of each approach at different stages of the information life cycle.
+
+A *noninteractive mechanism* can be thought of as a data publication system. The data custodian decides what kinds of statistical releases to make on a sensitive data set, computes them in a differentially private manner, and then publishes the results. Common forms of statistical releases from a noninteractive differentially private mechanism include descriptive statistics about the individual variables in the data set (e.g., approximate means, medians, quantiles, histograms), contingency tables (i.e., cross-tabulations), machine learning models, and synthetic microdata.
+
+The alternative is an *interactive mechanism*, which allows data analysts to submit queries (e.g., a particular regression they would like to run) and differentially private answers are provided in response. The interactive mechanism ensures not only that each individual query is answered in a differentially private manner but that accumulated privacy loss is within the desired budget.
+
+Interactive mechanisms have the advantage that the releases are tailored to the interests of the individual data analysts, which may not be known by the data custodian in advance. Indeed, with a noninteractive release (e.g., synthetic microdata generated by a statistical model fit to the data), the analyses that can be subsequently carried out are limited to whatever statistical properties are captured by chosen releases (e.g., one may not be able to fit an entirely different statistical model to the data). On the other hand, deciding on all releases in advance (as in a noninteractive mechanism) provides a greater opportunity to optimize the algorithms producing those releases (and to determine how the privacy-loss budget is allocated among them). Moreover, after a noninteractive release, the sensitive data set can be destroyed or stored in a highly secure and inaccessible manner, whereas fielding interactive queries requires keeping the data set somewhat accessible, and thus opens another attack surface.
+
+To obtain some of the benefits of both models, it is possible to employ a hybrid approach, where some of the privacy-loss budget is used for a noninteractive release, and the remainder is reserved to field interactive queries.
+
+#### Managing the Privacy-Loss Budget and Utility Trade-offs {-}
+
+Many important decisions about sharing data with differential privacy involve how the privacy-loss budget is determined and managed. Even for a single noninteractive release with a precisely defined measure of utility, one must select a point on the privacy--accuracy trade-off curve, which requires balancing societal benefits from releasing more accurate statistics with obligations to maintain the privacy of the data subjects [@abowd_economic_2019].
+
+This balancing can be difficult because privacy and accuracy are generally measured in incomparable units, and translating them both to a common utility measure (like dollars of benefit or harm) typically requires making many contextual and stylized assumptions (as in the insurance premium examples of Section \@ref(#sec:methodology-example-limit-privacy-loss). Thus, a common alternative approach is to separately consider (a) what is the maximum level of privacy loss that is acceptable and (b) what is the minimum level of accuracy to make the released data fit for use, see if there are differentially private algorithms that achieve both, and then make adjustments from there.
+
+This problem becomes even more challenging if there are many data users who will employ the released statistics in varied ways (and thus have different measures of utility). Optimizing a released model or collection of tables for one set of uses may result in reduced utility for other uses. This is one of the major issues facing the US Census Bureau in developing its disclosure avoidance system for the 2020 Decennial Census [@hawes2020]. (See Section \@ref(sec:2020-census) for more discussion.) In the context of an interactive query system (or a hybrid system), this problem manifests itself as how to partition the overall privacy-loss budget among different data analysts (and possibly an initial noninteractive release).
+
+It is important to note that the need to make choices about which uses to prioritize does not arise because of the use of differential privacy. Rather, the attacks mentioned in Section \@ref(sec:motivation-formal-guarantee-protect) indicate that it is impossible to support all statistical uses of data without compromising privacy. Differential privacy merely provides a framework for confronting and managing this trade-off. That said, there are several approaches to make the management of the privacy-loss budget and its trade-off with accuracy less severe:
+
+**Create better differentially private algorithms.** A number of more sophisticated differentially private algorithms automatically detect relationships among different queries and correlate the noise used to answer the queries so that all of them can be answered using less of the privacy-loss budget than if they were treated independently. In theory, these methods can sometimes allow for an exponential increase in the number of queries answered (for a given accuracy and overall privacy-loss budget).
+
+**Ensure secrecy of the sample.** If the individuals in a data set consist of a simple random sample from a larger population (and potential privacy adversaries do not have information about whether a target subject is part of the sample), then one can take advantage of a *privacy amplification* phenomenon, whereby the randomness of sampling process reduces the privacy-loss to each data subject. (See @balle2018privacy for a state-of-the-art analysis of simple random samples and [@bun2020controlling] for an initial investigation of more complex sampling designs.)
+
+**Establish per-analyst budgets.** If different analysts can be trusted to not collude and share the results of their queries with each other (in particular, an adversary cannot pose as multiple non-colluding analysts), then it may be reasonable to give them overlapping portions of the privacy-loss budget. Note that this also requires limiting the extent to which analysts can publish based on the results of their queries. If the analysts are untrusted or unconstrained, then they must share the overall privacy-loss budget.
+
+When managing the privacy-loss budget, one should also consider future needs for privacy and utility. If the data will need to be analyzed in unanticipated ways (or in combination with new data that are not yet available) in the future, then some of the privacy-loss budget should be reserved for those uses. In some cases, privacy considerations may diminish in the future, allowing the privacy-loss budget to be increased over time. For example, the US Census Bureau releases all data collected from the Decennial Census after 72 years [@CensusAvailability].
+
+@Dwork_Kohli_Mulligan_2019 survey a number of practitioners of differential privacy about how the practitioners set and managed their privacy-loss budgets, and the researchers propose the creation of an "Epsilon Registry" to build a communal body of knowledge about these choices.
+
+#### Specifying the Granularity and Measure of Privacy {-}
+
+An organization designing a differentially private implementation should also consider the *granularity* of privacy (i.e., the unit of information to be protected). The concept of differential privacy can be applied to any form of data set as long as one can specify the granularity of privacy.[^diffpriv44] For example, if a data set is a social network graph and one wishes to protect individual members of the network, then the researcher could take the granularity of privacy to be any node and all incident edges, as this represents a single individual's contribution to the graph. In an individual's opt-out scenario, one would consider removing that individual and all of their relationships from the social network. Similarly, in a data set of online purchases, the granularity of privacy could be all transactions that have been carried out by a single user. Additionally, there is no fundamental reason that the granularity of privacy must correspond to individual human beings. For instance, in some contexts, one might wish to protect the privacy of individual households or individual corporations.
+
+Counterintuitively, to correctly apply differential privacy, the underlying data set must sometimes retain information that distinguishes one individual from another. Indeed, if one removed user IDs from the aforementioned example of online purchases, then it may be impossible to ensure a desired level of privacy protection for each individual user; one could protect individual transactions but that would not necessarily yield effective protections for a user involved in many transactions.[^diffpriv45] Similarly, if the data are already aggregated (for example, a collection of counts specifying how many times each item was purchased), one may not be able to characterize a single individual's contribution and properly apply differential privacy.
+
+Another choice is how the privacy loss is measured. While the text has presented the basic concept of *pure* differential privacy, which measures privacy loss by the single parameter $\varepsilon$, there are now several other measures of privacy loss that involve two or more parameters (e.g., approximate differential privacy, concentrated differential privacy, and Rényi differential privacy). These yield relaxations of differential privacy that are motivated by obtaining better privacy--utility trade-offs and/or by having better composition properties. For example,, approximate differential privacy is parameterized by two parameters $\varepsilon$ and $\delta$and can be informally interpreted as <span style="white-space: nowrap;">"$\varepsilon$-differential</span> privacy except with probability $\delta$," and thus affords similar protections as pure <span style="white-space: nowrap;">$\varepsilon$-differential</span> privacy if $\delta$ is taken to be extremely small (e.g., $\delta \leq 1/10^{9}$). Other forms of differential privacy are somewhat more complex to interpret so may require expert guidance in setting the privacy-loss parameters.
+
+#### Estimating and Communicating Statistical Uncertainty {-}
+
+Like all statistical disclosure limitation methods, the perturbations introduced by differential privacy increase the risk that data analysts will draw incorrect conclusions from the released statistics. There are several ways to prevent or mitigate this problem, depending on the statistical sophistication of the data users, the nature of the published statistics, and the techniques supported by the software being used. One possibility is to use differentially private algorithms that quantify uncertainty (e.g., through confidence intervals, standard errors, or $p$-values) along with their point estimates. This is generally easy for simple empirical quantities (e.g., estimating the number of people in the data set with some condition), but it is more challenging (and an active area of research) when estimating population quantities (in which the uncertainty due to privacy needs to be combined with the uncertainty due to the sampling of the data set from the population) or when the estimator itself is more complex (e.g., fitting a regression model).
+
+When generating differentially private synthetic data that will be used for many different purposes, it is also difficult to provide uncertainty estimates for unanticipated uses. For these more challenging scenarios, Monte Carlo simulations on synthetic or public data can be used to gauge accuracy and uncertainty. Publishing the code for the differentially private algorithms allows any data user to carry out such experiments on their own. Publishing the exact algorithms may also allow data users who are sophisticated statisticians to directly account for the differentially private algorithms when performing inference using the published results.
+
+The use cases described in Section @\ref(sec:case-studies) illustrate some of the above approaches: the Opportunity Atlas (Section \@ref(sec:opportunity-atlas)) releases explicit estimates of uncertainty and the 2020 Decennial Census (Section \@ref(sec:2020-census)) releases code and demonstration products to help users evaluate accuracy and uncertainty for the future releases.
+
+### Appendix B: Implications for Compliance and Life Cycle Data Management {- #diffpriv-appendixb}
+
+The design choices involving the use of differentially private analyses, discussed in Appendix [A](#sec:key-choices), potentially have broad implications for data curation, stewardship, management, and preservation, as well as regulatory compliance. For example, choosing a local model design (as described in Appendix [A](#sec:trust-local-vs-curator)) fundamentally affects not only how data are collected. It also fundamentally limits the way the design can be linked with other data, the extent to which the information collected can be reused, and, potentially, the compliance requirements with respect to data storage and retention. This section discusses the implications of the key design across the information life cycle.
+
+This chapter uses the information life cycle model described in @altman2015---which is adapted for the uses of privacy engineering from the more generic model developed by @higgins2008dcc to systematically trace design,---and the implications of the design choices described above for data collection, curation, preservation, reuse, and compliance.
+
+The stages of the information life cycle model are defined generally as follows:
+
+- **Collection** is defined broadly to include acceptance, ingestion, acquisition, or receipt of data.
+
+- **Transformation** of data encompasses a range of alterations, which may be structural or semantic and lossy or lossless. Although transformations such as data cleaning typically occur following collection, a variety of transformations may be combined with, or interleaved with, subsequent stages.
+
+- **Retention** broadly includes any form of non-transient storage by the data controller or a party acting under the controller's direction. Retention requirements are generally coupled with processes for data disposal or destruction for use when retention is completed.
+
+- **Access** describes any transformation, subset, or derivative of the data by a party not acting under the direction of the data controller.
+
+- **Post-Access** refers broadly to operations occurring after information has been released from, or exited, the formal organizational bounds of the information system.
+
+The remainder of this section discusses specific implications of using differential privacy at each stage.
+
+#### Collection {- #sec:collection}
+
+At the collection stage, measurement design,[^diffpriv46] consent, and compliance are particularly affected by the choice of differential privacy trust model, privacy granularity, and computing of the utility considerations.
+
+##### Measurement Design {-}
+
+With respect to measurement, the unit of identification for the chosen granularity of privacy must be collected. For example, if one aims to protect the privacy of individuals, it must be possible to identify when the same individual is being observed multiple times during collection, as applying protection to individual events or observations will not protect individual privacy.
+
+While any approach to disclosure control requires anticipating how data will be used, differential privacy's rigorous approach to tracking privacy loss leaves less room to offer a range of analyses "just in case" they are useful. Thus, one should model in advance what analyses will be offered and how differing levels of precision and accuracy affect utility; then choose sample sizes that will provide both sufficient utility and privacy.
+
+Finally, if the local trust model is used, elements of the research design must be altered in order to achieve useful results: the measurement design may require alteration, only a subset of possible statistics are estimable under that model, computing statistics from measurements made under the local model are more complex, and larger samples will be needed to achieve a target level of accuracy.
+
+##### Consent {-}
+
+Use of differential privacy may affect approaches toward consent. Where the choice of the granularity of privacy is defined as the observed individual, it may be appropriate in some circumstances to allow for access to the data via differential privacy without consent. Further, it may be appropriate in some circumstances to use the local model in order to collect effectively anonymous or de-identified data, which may consequently lead to less reliance on consent mechanisms.[^diffpriv47] The ethical rationale for consent depends both on the learning risks and the potential harm from a data release, as illustrated above in Figure \@ref(fig:dpfig4). For instance, the more sensitive the data the stronger the rationale is for consent as a complementary control.
+
+There is wide variation in regulatory requirements regarding the role of consent; definitions of anonymous, de-identified, or nonpersonal information; and the interactions among these concepts. Differential privacy can arguably substitute for consent when all of the following conditions apply: (1) regulations do not require consent for use of anonymous or de-identified information, (2) broad use of anonymous data without consent is ethically acceptable, and (3) the choices of trust model and granularity of privacy are appropriate, and the privacy-loss budget is sufficiently small (e.g., sufficient for anonymization, see below). Alternatively, additional consent may be required when information is especially sensitive, or when regulations do not exempt anonymous information. Further consent may be desirable when it serves to promote awareness and control of risks that are not derived from inferences on controlled data releases (e.g., risks of data collection, security breaches), or when there are ethical or legal reasons to promote awareness and control of risks to other than the unit of granularity (e.g., society, large groups) and provide control over the purposes for which (possibly anonymous) data may be used. Consent mechanisms for the use of differential privacy should describe that formal privacy protections are provided, specify the uses of the information, and provide access to details regarding the privacy-loss budget and the granularity of privacy adopted.
+
+As discussed, more sensitive data demand greater protection. Moreover, when sensitive attributes are collected, consent is particularly important for both ethical and legal reasons. Because differential privacy supports allocation of the privacy budget across *analyses* and not *measurements or characteristics*, the privacy budget for the entire set of analyses should be calibrated to the most sensitive measurements included in the data. Further, selecting a local trust model can reduce the downstream risks associated with collecting sensitive estimates. However, it is rarely appropriate to rely on differential privacy as the sole protection for sensitive data---and never appropriate when the selected privacy-loss budget is large.
+
+##### Compliance: Identifiability and Anonymization {-}
+
+When privacy regulations establish threshold concepts of anonymization or minimal risk, differential privacy may be used to help satisfy such requirements, as described above in Section \@ref(#sec:regulatory-policy-compliance). These depend critically on using appropriate choices of privacy-loss budget and granularity of privacy. This text argues that differential privacy applied at the granularity of the individual with epsilon set to a small number, such as 0.1 or less, should be considered sufficient protection.[^diffpriv48] A privacy-loss budget of 0.1 may, however, be more restrictive than what is considered sufficient under a specific interpretation of a privacy regulation, or what is deemed appropriate when balanced with utility considerations; making a determination within a particular regulatory domain requires a context-specific analysis.[^diffpriv49]
+
+##### Compliance: Information Security {-}
+
+When deploying differential privacy using the curator model, the curated sensitive data must be protected from unauthorized access. Further, when public facing interactive front-end access mechanisms are deployed to provide DP-protected queries, the back end of that public service typically requires dynamic access to the sensitive database. In contrast, the *local model* of trust can be used to provide effective anonymization on collection, which can reduce information security requirements downstream. Under many legal regimes, anonymized data are not subject to technical restrictions (such as encryption) on storage and transmission or to related restrictions (such as security audits or breach reporting).[^diffpriv50]
+
+#### Transformation {-}
+
+The choice of differential privacy trust model has implications for the ability to perform later transformations, data cleaning, and linking.
+
+##### Data cleaning {-}
+
+A data cleaning procedure that applies a fixed transformation to each individual observation can be performed both in the curator and the local models of differential privacy without affecting the overall privacy-loss budget. Here, a *fixed transformation* means a transformation that is chosen without consulting the sensitive data. For example, this might include replacing missing or invalid values with a default value or a random value chosen from a fixed distribution that does not depend on the sensitive data.
+
+The situation becomes more complicated when the transformation requires a global computation on the data set as a whole. Such cleaning transformations are virtually irrelevant for the local model, as they are complex (or even impossible) to deploy in such a distributed manner. The curator model, however, makes it possible to apply such data cleaning procedures, but privacy-loss from data cleaning operations should ideally be subtracted from the overall privacy-loss budget to maintain the formal differential privacy guarantee. Only a few formally private data cleaning mechanisms are available, such as [@ge2019apex; @krishnan2016privateclean]. In the current practice, the details and diagnostics from cleaning operations are usually not made available to the public and the effects of cleaning on the privacy budget are often ignored.
+
+##### Data linkage {-}
+
+Many times, data users wish to analyze not just a single sensitive data set but carry out an analysis on several linked data sets, some of which may be sensitive and some of which may be public data. If there is a single curator who can be trusted with all of the sensitive data sets to be linked, then differential privacy can be applied to this context in a relatively straightforward manner (in principle).
+
+Specifically, one need only to be able to define the granularity of privacy---namely, what is an individual's contribution to the collection of sensitive data sets. For example, in a collection of relational databases that have a key corresponding to individuals, the granularity of privacy could be defined by all records that involve that individual's key. There are some differential privacy software tools that can be applied directly to multi-relational databases in this way. Others require that the data set be a single table where the granularity of privacy is one record, and thus a multi-relational database would have to be transformed into such a format before applying differential privacy. An example of this single-curator application of differential privacy on linked data is the Opportunity Atlas based on Census and IRS data described in Section \@ref(sec:opportunity-atlas).
+
+On the other hand, if the sensitive data sets are held by different data custodians and cannot be entrusted to any one curator, then carrying out a joint analysis is more challenging. One approach is to issue separate differentially private queries to each data set, but this limits the kinds of analyses that can be performed. Another is to combine differential privacy with secure multiparty computation or trusted execution environments as described in Appendix [A](#sec:interactive-vs-noninteractive).
+
+#### Retention {- #sec:retention}
+
+At the retention stage, compliance, information security, and costs may be affected by the choice of trust and publication models.
+
+##### Compliance {-}
+
+The curator model presents the greatest potential compliance obligation. Because the data are held by the controller in identifiable form, they may be subject to both reporting and correction requirements.
+
+The use of the local model reduces the risk from disclosure of personal data retained by a data controller, hence reducing information security risks and requirements. With respect to compliance, the local model may render data anonymous, as discussed in more detail above in Appendix [B](#sec:collection). This may reduce or even eliminate compliance requirements that apply to the storage and destruction of personal data. However, in some cases, the use of the local model is arguably in tension with requirements to support the right to correct one's personal data retained by a data controller.
+
+##### Information Security and Costs {-}
+
+Because the curator model involves retaining sensitive identifiable data, information security risks are higher, and the costs of compensating information controls increase. Combining the curator model and interactive data publication models creates additional risks and costs because sensitive data must be available to the public interactive query mechanism.[^diffpriv51]
+
+#### Access {- #sec:access}
+
+At the access stage, information security, utility, costs, and compliance are all affected by the full range of choices made when deploying differential privacy, with choices related to trust, publication, and utility having the most impact. Further, because differential privacy always yields results that are statistical estimates and not exact counts, communication of uncertainty is a key part of designing access.
+
+##### Information Security {-}
+
+Security is affected by the trust model and publication choices, similar to what was described at the retention stage. If the curator model is used, then interactive data publication expands the vulnerability surface, as private data must be continuously available to enable a public-facing interactive service. Further interactive data publication increases the risk of a persistent denial-of-service attack against the privacy budget. For example, unless separate budgets are allocated per analyst, one user may exhaust all future queries.
+
+##### Compliance {-}
+
+Compliance with privacy regulations and policies is affected by the trust model and can be complemented with other controls, similar to what was described in Appendix [B](#sec:collection). All of these factors affect the cost profile, but the interactive model is particularly significant because computations must be done centrally, and the system has to be available and accessible for the useful lifetime of the data. Further, as discussed in Appendix [B](#sec:retention), interactive data publication increases the cost of access because all computations and access are mediated by the data controller, compared to noninteractive releases in which each researcher performs computations on a local copy of a static data publication without mediation by the data controller.
+
+##### Utility {-}
+
+The choices of trust model and privacy budget have substantial implications for formal measures of utility. Further, the choice of specific data analyses to be released, and differentially private algorithms deployed, will also substantially affect utility.
+
+##### Communicating Uncertainty {-}
+
+Analyses produced using differential privacy are always uncertain but should be truthful.[^diffpriv52] Differential privacy is designed for statistical estimates and is capable of producing these truthfully.
+
+Often, the contribution of the differential privacy protection to the total error of estimation will not dominate the total error of estimation. Ideally, one should both manage and communicate the total error (including sampling and non-sampling errors) [@biemer2010total] associated with all released information.
+
+Further, when differential privacy is used for static publication of (typically synthetic) microdata, information should be provided about the restrictions that the design imposes on truthful statements. For example, a differentially private synthetic microdata release may be designed to preserve bivariate relationships but not trivariate ones. Therefore, in this case, the release would be incapable of producing truthful statements about the latter, and this limitation should be communicated to the user.
+
+#### Post-Access {-}
+
+At the post-access stage, preservation, replication and verification, utility assessment, and compliance with reporting and disposal requirements are affected by the trust model and publication model.
+
+##### Preservation and records management {-}
+
+Preservation can be thought of as communication with the future. In the context of records management (i.e., the maintenance of authoritative records as evidence for a designated period consistent with policy), preservation is the transmission of authentic, reliable information contained in data to future parties. Replication of content across institutional boundaries and independent auditing are necessary conditions for long-term preservation. The implementation of differential privacy may have the effect of shifting the form of official or authoritative and public outputs from transformed databases to query results. This happens when a data provider makes the decision to adopt an interactive mechanism for data access when it had previously employed a non-interactive mechanism. This shifts the target of preservation and record management and the methods that can be applied.
+
+When interactive approaches are used to repeatedly derive statistical results from private data (using the curator model), the data provider may need to both preserve and manage outputs from the interactive mechanism and replicate the underlying private data (often with additional protections) for future analysis and verification. Further, while it is straightforward to replicate and preserve static data publications, durable access through an interactive service requires continuous maintenance and institutional commitment. The multi-institutional replication necessary for preservation of such privately-held data [@rosenthal2005requirements; @reich2009distributed] may be difficult to achieve because each institution must protect the data, though replications of encrypted versions may mitigate both individual and institutional risks.
+
+In contrast, if only static data publication is used to support authoritative decisions, then preservation of those outputs using standard processes is sufficient. Similarly, if the local model is used for data collection, the sensitivity of the database may be reduced sufficiently so that existing processes for preservation and auditing of content can be used.
+
+##### Replication, Verification, and Reuse {-}
+
+Generally, reproducibility or replicability addresses what parts of published outputs and inferences can be independently produced at a later time for verification, robustness analysis, and re-specification.[^diffpriv53] These goals differ from those of reuse, which is use of the data by other parties for separate purposes or inferences. The trade-offs for reproducibility are similar to those for preservation.
+
+Design choices such as the choice of interactive versus static data collection (e.g., local versus curator model) and publishing (e.g., model server versus synthetic data and other static outputs) have strong implications for reproducibility. Local model data are de-risked so they can be shared for replication. With the local model, data can be redistributed for exact independent analysis (replication), but re-specification will be constrained, and data collected in this form are unlikely to have much utility for reuse. With the curator model and static publication of synthetic data, more replication and reuse are possible, though they are constrained by the structural relationships modeled in the synthetic data generation process. Reuse of results from static data publication is more straightforward than replication, verification, or robustness analysis of a computation gated by an interactive server. However, as long as the underlying private data are preserved, verification is possible---if one trusts the data controller to execute a separate analysis properly and if enough of the privacy budget remains to release the outputs. Differential privacy also has the advantage that the method and parameters are transparent and can be released without endangering privacy.
+
+Interactive results are not designed for reuse. Static data can be reused for arbitrary analysis but may be *useful* only for the types of analyses they were planned to support. Similarly, data collected via a local model of differential privacy may not be useful to reuse for other purposes. In an interactive publication model, private data remains available to reuse in a more exclusive tier.
+
+##### Utility {-}
+
+Achieving an optimal privacy--utility trade-off requires monitoring both use and utility. This is particularly important with interactive data release mechanisms (which are typically used for differential privacy) for which it is possible to evaluate the actual utility loss for each query. Moreover, since each query permanently decreases the remaining privacy budget, it is important to recognize in a timely manner patterns of use that are not, in practice, providing good utility for the amount of privacy loss.
+
+##### Compliance {-}
+
+The choice of differential privacy implementation may also affect downstream compliance requirements. This is because, under many regulatory regimes, only data that are identified carry requirements for disposal, notification, and/or correction. Under these regimes, data collected may not be subject to further compliance requirements.[^diffpriv54]
+
+In contrast, if data are collected under the curator model, disposal of instances (or backup copies made for administrative reasons, copies on systems being retired, etc.) must be managed (e.g., by encrypting the data at rest and using secure erasure methods). In addition, as discussed in Appendix [B](#sec:access), use of the curator model implies that sensitive information is retained by the controller in identifiable form. Consequently, this may subject the controller to requirements for breach reporting, individual access, and individual correction and deletion.
+
+#### Summary of Life Cycle Implications of Design Choices {-}
+
+Table \@ref(tab:diffprivtable3) provides a summary of the implications of design choices at each life cycle stage.
+
+```{r, diffprivtable3, echo=F}
+  diffpriv_t3()
+```
+
+### Appendix C: Additional Resources {- #diffpriv-appendixc}
+
+This section provides a brief survey of software tools and other resources for practitioners considering potential steps towards implementing differential privacy within their organizations.
+
+#### Available Tools for Differentially Private Analysis {-}
+
+The landscape of software tools for differential privacy is rapidly evolving. A few years before this chapter was written, almost all of the publicly available tools were research prototypes, meant as proof-of-concepts but not sufficiently polished or vetted to be used in production. In particular, some had security vulnerabilities that an attacker could exploit to negate the protections of differential privacy [@haeberlen2011differential; @mironov2012significance]. However, in recent years there have been serious efforts from industry and academia to produce usable and deployable differential privacy tools. Below, some of these efforts are listed as a starting point for organizations seeking practical tools for differentially private analysis.
+
+It is important to note several caveats. First, inclusion of a tool or project in this list is not an endorsement, and the ordering is merely alphabetical within each category. Second, the tools are in varying stages of development. Some may be near-production code, while others may still have security vulnerabilities or are only safe to use for noninteractive releases by a trusted data controller (so that an adversary cannot exploit vulnerabilities by interacting with the system). Third, few, if any, of the tools are ready to use off-the-shelf; some expertise in software and data management will be needed to deploy them. Fourth, as when deploying any software, one should (a) check if it is still being actively maintained, (b) ask what kind of vetting and security review the code has undergone, and (c) perform thorough experiments to evaluate how the utility and functionality fit one's needs. Finally, this list will, undoubtedly, soon fall out of date. Caveats notwithstanding, the authors believe this list will provide a good starting point when searching for an appropriate solution.
+
+##### General-Purpose Software Tools and Repositories {-}
+
+The following are some software tools and projects for general-purpose differentially private analysis that are both actively developed and publicly available:
+
+- *Diffprivlib* [@holohan2019diffprivlib]:[^diffpriv55] Developed by IBM, "Diffprivlib is a general-purpose library for experimenting with, [and] investigating and developing applications in, differential privacy."[^diffpriv56] In particular, it allows one to "explore the impact of differential privacy on machine learning accuracy using classification and clustering models."[^diffpriv57] It is designed to be used from Python.
+
+- *Google Differential Privacy Library* [@googleDPlibrary]:[^diffpriv58] Google's differentially privacy library project "contains a set of libraries of ... differentially private algorithms, which can be used to produce aggregate statistics over numeric data sets containing private or sensitive information. The functionality is currently available in C++, Go and Java."[^diffpriv59] This project also contains "an end-to-end differential privacy solution built on Apache Beam and [the] Go differential privacy library," as well as other tools.[^diffpriv60]
+
+- *NIST* *Privacy Engineering Collaboration Space*:[^diffpriv61] The National Institute of Standards and Technology provides "an online venue open to the public where practitioners can discover, share, discuss, and improve upon open source tools, solutions, and processes that support privacy engineering and risk management."[^diffpriv62] In the category of de-identification tools, the space includes a number of repositories for differential privacy software, including the algorithms submitted to NIST's 2018 Differential Privacy Synthetic Data Challenge.
+
+- *OpenDP* [@opendpwhite]:[^diffpriv63] "OpenDP is a community effort to build a trustworthy suite of open-source tools for enabling privacy-protective analysis of sensitive personal data, focused on a library of algorithms for generating differentially private statistical releases. The target use cases for OpenDP are to enable government, industry, and academic institutions to safely and confidently share sensitive data to support scientifically oriented research and exploration in the public interest" [@opendpwhite].
+
+- *OpenMined*:[^diffpriv64] "OpenMined is an open-source community whose goal is to make the world more privacy-preserving by lowering the barrier-to-entry to private AI technologies."[^diffpriv65] OpenMined includes several libraries and platforms for differential privacy, including PyDP,[^diffpriv66] which is a Python wrapper for Google's Differential Privacy Library.
+
+- *Overlook* [@overlook]:[^diffpriv67] This project incorporates differential privacy into Hillview, which is "a cloud-based service for visualizing interactively large datasets."[^diffpriv68]
+
+##### Tools for Developing Custom Differential Privacy Software {-}
+
+The following tools may be useful to researchers and engineers who seek to create customized methods or systems for differentially private analysis:
+
+- *Chorus* [@johnson2020chorus]:[^diffpriv69] Originally designed for deployment at Uber, this is a "programming framework for building scalable differential privacy mechanisms" [@johnson2020chorus], more specifically a "query analysis and rewriting framework to enforce differential privacy for general-purpose SQL queries."[^diffpriv70]
+
+- *Duet* [@near2019duet]:[^diffpriv71] Duet is a tool for writing programs that are automatically verified to be differentially private.
+
+- *Ektelo* [@ZhangMKHMM18]:[^diffpriv72] "Ektelo is a programming framework and system that aids programmers in developing differentially private programs with high utility. Ektelo can be used to author programs for a variety of statistical tasks that involve answering counting queries over a table of arbitrary dimension."[^diffpriv73]
+
+- *Fuzzi* [@zhang2019fuzzi]:[^diffpriv74] Fuzzi is a programming language for writing programs that can be automatically verified to be differentially private.
+
+- *LightDP* [@kifer2017lightdp]:[^diffpriv75] LightDP is a programming language for writing programs that can be automatically verified to be differentially private.
+
+##### Machine Learning Software Tools and Repositories {-}
+
+The following are some software tools and projects for differentially private machine learning (especially deep learning) that are both actively developed and publicly available:
+
+- *Opacus*:[^diffpriv76] From Facebook, Opacus incorporates differential privacy into PyTorch, which is an "open-source machine learning framework that accelerates the path from research prototyping to production deployment."[^diffpriv77] "It supports training with minimal code changes required on the client, has little impact on training performance and allows the client to online track the privacy budget expended at any given moment."[^diffpriv78]
+
+- *PySyft*:[^diffpriv79] From OpenMined, "PySyft is a Python library for secure and private Deep Learning. PySyft decouples private data from model training, using Federated Learning, Differential Privacy, and Encrypted Computation (like Multi-Party Computation (MPC) and Homomorphic Encryption (HE)) within the main Deep Learning frameworks like PyTorch and TensorFlow."[^diffpriv80]
+
+- *TensorFlow Privacy* [@tensorflow]:[^diffpriv81] From Google, this Python library incorporates differential privacy into TensorFlow, an "end-to-end open-source platform for machine learning."[^diffpriv82] The TensorFlow Privacy library "comes with tutorials and analysis tools for computing the privacy guarantees provided."[^diffpriv83]
+
+##### Enterprise Software and Consulting Services {-}
+
+The following are some companies that advertise differentially private solutions:
+
+- *DataFleets*:[^diffpriv84] DataFleets offers software for analytics and business intelligence that incorporates differential privacy, secure multiparty computation, and federated learning along with role-based access control and compliance features.
+
+- *LeapYear*:[^diffpriv85] LeapYear offers a "platform for differentially private reporting, analytics and machine learning."[^diffpriv86]
+
+- *Oasis Labs*:[^diffpriv87] Oasis Labs offers privacy tools integrating differential privacy, secure enclaves, distributed ledgers, smart contracts, and federated learning.
+
+- *Privitar*:[^diffpriv88] Privitar offers software to "de-identify data, minimize risk and achieve regulatory compliance" while performing "advanced analytics, artificial intelligence, and machine learning."[^diffpriv89]
+
+- *SAP*:[^diffpriv90] SAP offers a database management system (SAP HANA) that incorporates differential privacy, other forms of anonymization, and security features such as role management and audit logging.
+
+- *Tumult Labs*:[^diffpriv91] Tumult Labs builds privacy technology enabling "the safe release of de-identified data, statistics, and machine learning models."[^diffpriv92]
+
+#### Further Reading {- #sec:further-reading}
+
+There are many educational resources available for readers who have additional questions after reviewing this chapter. Below is a short list of recommended readings, provided in order from least to most technical. Pointers to more resources can also be found on the following web site: https://www.differentialprivacy.org/ (accessed 2020-12-17).
+
+- Hector Page, Charlie Cabot, and Kobbi Nissim, *Differential Privacy: An Introduction for Statistical Agencies* [@PageONS].
+
+- Alexandra Wood, Micah Altman, Aaron Bembenek, Mark Bun, Marco Gaboardi, James Honaker, Kobbi Nissim, David R. O'Brien, Thomas Steinke, and Salil Vadhan, *Differential Privacy: A Primer for a Non-technical Audience* [@wood_differential_2018].
+
+- Ori Heffetz and Katrina Ligett, *Privacy and Data-Based Research* [@HeffetzLigett].
+
+- Cynthia Dwork, *A Firm Foundation for Private Data Analysis* [@Dwork11].
+
+- Cynthia Dwork and Aaron Roth, *The Algorithmic Foundations of Differential Privacy* [@DworkRoth14].
+
+- Gautam Kamath and Jonathan Ullman. *A Primer on Private Statistics* [@kamath2020primer].
+
+- Salil Vadhan, *The Complexity of Differential Privacy* [@Vadhan_complexity_2017].

@@ -5,11 +5,11 @@
 abbrev <- "security"
 
 # Aspect Names
-aspect.names <- c(   "Researcher Agency",
-                     "Data Location",
-                     "Access Location",
-                     "Access Security",
-                     "Analysis Methods")
+aspect.names <- c("Researcher Agency",
+                  "Data Location",
+                  "Access Location",
+                  "Access Security",
+                  "Analysis Methods")
 
 # Colors
 pal <- c(
@@ -101,8 +101,8 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
    # ggsave(file.path(figures,figure.name),g)
    if ( display ) {
       g
-      ggsave(filename=paste("./assets/security/badge_",name.str,".png",sep=""),g,dpi=600, height = 2.9 , width = 4.25)
-      ggsave(filename=paste("./assets/security/badge_",name.str,"web.png",sep=""),g,dpi=70.6, height = 2.9 , width = 4.25)
+      # ggsave(filename=paste("./assets/security/badge_",name.str,".png",sep=""),g,dpi=600, height = 2.9 , width = 4.25)
+      # ggsave(filename=paste("./assets/security/badge_",name.str,"web.png",sep=""),g,dpi=70.6, height = 2.9 , width = 4.25)
    }
 }
 
@@ -111,17 +111,17 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
 securityt1data<-read.csv("./assets/security/securitytable1.csv")
 
 securitytable1<-function() {
-   if (knitr::is_html_output()) {
+   # if (knitr::is_html_output()) {
       kable(securityt1data, col.names=c("Researcher Agency","Example")) %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
-   }
-   else {
-      kable(securityt1data, "latex", col.names=c("Agency","Example")) %>%
-         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-         column_spec(2, width="33em") %>%
-         kable_styling(font_size=10)        
-   }
+   # }
+   # else {
+   #    kable(securityt1data, "latex", col.names=c("Agency","Example")) %>%
+   #       column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   #       column_spec(2, width="33em") %>%
+   #       kable_styling(font_size=10)        
+   # }
 }
 
 # Table 2
@@ -129,17 +129,17 @@ securitytable1<-function() {
 securityt2data<-read.csv("./assets/security/securitytable2.csv")
 
 securitytable2<-function() {
-   if (knitr::is_html_output()) {   
+   # if (knitr::is_html_output()) {   
       kable(securityt2data, col.names=c("Data Location","Example")) %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
-   }
-   else {
-      kable(securityt2data, col.names=NULL) %>%
-         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-         column_spec(2, width="33em") %>%
-         kable_styling(font_size=10)       
-   }
+   # }
+   # else {
+   #    kable(securityt2data, col.names=NULL) %>%
+   #       column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   #       column_spec(2, width="33em") %>%
+   #       kable_styling(font_size=10)       
+   # }
 }
 
 # Table 3
@@ -147,17 +147,17 @@ securitytable2<-function() {
 securityt3data<-read.csv("./assets/security/securitytable3.csv")
 
 securitytable3<-function() {
-   if (knitr::is_html_output()) {
+   # if (knitr::is_html_output()) {
       kable(securityt3data, col.names=c("Access Location","Example")) %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
-}
-   else {
-      kable(securityt3data, col.names=c("Location","Example")) %>%
-         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-         column_spec(2, width="33em") %>%
-         kable_styling(font_size=10)      
-   }
+# }
+#    else {
+#       kable(securityt3data, col.names=c("Location","Example")) %>%
+#          column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+#          column_spec(2, width="33em") %>%
+#          kable_styling(font_size=10)      
+#    }
 }
 
 # Table 4
@@ -165,36 +165,35 @@ securitytable3<-function() {
 securityt4data<-read.csv("./assets/security/securitytable4.csv")
 
 securitytable4<-function() {
-   if (knitr::is_html_output()) {
+   # if (knitr::is_html_output()) {
       kable(securityt4data, col.names=c("Access Security","Example")) %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
-}
-   else {
-      kable(securityt4data, col.names=c("Security","Example")) %>%
-         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-         column_spec(2, width="33em") %>%
-         kable_styling(font_size=10)    
-   }
+# }
+#    else {
+#       kable(securityt4data, col.names=c("Security","Example")) %>%
+#          column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+#          column_spec(2, width="33em") %>%
+#          kable_styling(font_size=10)    
+#    }
 }
 
 # Table 5
 
 securityt5data<-read.csv("./assets/security/securitytable5.csv")
-securityt5latexdata<-read.csv("./assets/security/securitytable5latex.csv")
 
 securitytable5<-function() {
-   if (knitr::is_html_output()) {
+   # if (knitr::is_html_output()) {
       kable(securityt5data, col.names=c("Analysis Methods","Example")) %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
-   }
-   else {
-      kable(securityt5latexdata, col.names=c("Analysis Methods","Example")) %>%
-         column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-         column_spec(2, width="33em") %>%
-         kable_styling(font_size=10)
-   }
+   # }
+   # else {
+   #    kable(securityt5latexdata, col.names=c("Analysis Methods","Example")) %>%
+   #       column_spec(1, width="7em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+   #       column_spec(2, width="33em") %>%
+   #       kable_styling(font_size=10)
+   # }
 }
 
 
