@@ -1,0 +1,48 @@
+\begin{table}[p]
+\caption{\label{table:casestudies} Design choices in case study implementations of differential privacy.}
+\fontsize{7.5}{8.5}\selectfont
+\begin{tabularx}{1\textwidth}{P{.45in}YYY}
+% \begin{tabular}{|l|l|l|l|l|l|l|l|}
+
+\toprule
+& 2020 Decennial Census & The Opportunity Atlas & Dataverse repositories\\
+\midrule
+Risks \& Sensitivity & \textbf{Sensitivity:} Data subject to stringent statutory protections. Trust in confidentiality critical to collecting sensitive information from respondents.\newline
+\textbf{Risks:} Concerns about composition effects and reconstruction attacks motivated adoption of DP. &
+\textbf{Sensitivity:} Data subject to stringent statutory protections.\newline
+\textbf{Risks:} Prior methods of de-identification and redaction judged not to sufficiently mitigate risk. &
+\textbf{Sensitivity:} General-purpose system designed to support analyses of data of varying degrees of sensitivity.\newline
+\textbf{Risks:} Vary by data source. DP provides stronger mechanism to mitigate risk than pre-deposit redaction and deidenfication. \\
+
+\midrule
+Tiered Access Controls &
+Part of a tiered access system that has historically included custom tabulations service for institutional clients; and Research Data Centers for access by vetted individuals to private data. &
+Original data sources remain available to vetted users through federal Restricted Data Center mechanism. &
+ Part of a tiered access model that also supports access to private data with vetting and restricted license. \\
+\midrule
+Trust \& Publication Models &
+Curator model, based on prior data collection design, with cleaning before DP applied. Focus on non-interactive publication of tables. &
+Curator model applied to previously collected data, with cleaning and linkage (between Census and IRS data) before DP-like methods applied. &
+Curator model, based on previously collected and deposited data. Supports both non-interactive releases of summary statistics and interactive queries. \\
+\midrule
+Budget Allocation &
+Must allocate budget and optimize accuracy for broad range of current and  future  analyses. &
+Budget analysis focused on balancing privacy vs. societal utility, leading to choice of a rather large epsilon. &
+Provides recommended choices of epsilon based on sensitivity of data. Choice to allow per-analyst budgets requires semi-trusted and accountable analysts.\\
+\midrule
+Estimating Uncertainty &
+Adopting DP has made noise addition explicit, whereas data users had previously treated Census tables as if they have no error. &
+Designed to produce uncertainty estimates (taking privacy noise into account) together with quantities of interest, and estimates also calculated in a DP-like manner. &
+Important to expose uncertainty estimates from noise due to privacy, both before and after release.\\
+\midrule
+Granularity &
+Focused both on individuals and households, as appropriate to data measurement design &
+Focused on individuals. &
+Determined by data depositor.\\
+\bottomrule
+
+
+\end{tabularx}
+
+
+\end{table}

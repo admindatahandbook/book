@@ -1,4 +1,0 @@
-location,example
-Data Custodian,"The New Brunswick Institute for Research, Data and Training (NB-IRDT) is an example of locating access computers with the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers."
-Third Party,"The SafePod Network (SPN) in the United Kingdom is an example of locating access computers with a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network [@universityofbristol]."
-Researcher,The RDC-IAB Job Submission Application (JoSuA) system is a web interface that researchers can use from their own computers to submit analysis files to the IAB-RDC for execution on IAB systems.

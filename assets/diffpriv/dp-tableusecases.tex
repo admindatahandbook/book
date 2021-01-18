@@ -1,0 +1,47 @@
+
+\newcommand*{\thead}[1]{\bfseries\hspace*{\fill}{#1}\hspace*{\fill}}
+\begin{center}
+\begin{table}[H]
+\caption{\label{table:dp_usecases} Considerations when deciding whether to use differential privacy for a particular use case.}
+\fontsize{8}{9}\selectfont
+% \begin{tabular}{ p{1.3in} p{1.3in} p{1.3in} }
+\begin{tabularx}{1\textwidth}{YYY}
+\toprule
+Use cases where DP is more likely to be appropriate & Use cases where DP is not appropriate & Use cases where DP is challenging \\
+\midrule
+\begin{itemize}
+\item Informational harm derives from making inferences about individuals or small groups
+\item Intended use is statistical analysis of population or large groups
+\item Sensitivity of information is high
+\item Information and analyses are highly structured
+\item Datasets are large
+\item Types of analyses to be conducted are known in advance
+\item Composition effects are important
+\item Release of (low-dimensional) synthetic data is acceptable or preferred
+\end{itemize}
+&
+\begin{itemize}
+\item Informational harm derives from making inferences about large groups
+\item Intended use is individual inference or individual intervention
+\item Intended control is purpose limitation
+\item Intended control is computation limitation\textsuperscript{1}
+\item Datasets are very small (e.g., less than a few dozen observations)
+\end{itemize}
+&
+\begin{itemize}
+    \item Supporting data linking
+    \item Supporting data cleaning
+    \item Estimating complex statistical models efficiently
+    \item Datasets are small (e.g., dozens to thousands of observations)\textsuperscript{2}
+    \item Differentially private analysis not yet available
+    \item Intended output is high-dimensional synthetic data
+\end{itemize}
+\\
+\bottomrule
+\end{tabularx}
+\vspace{1pt}
+\raggedright
+{\fontsize{8}{9}\selectfont \textsuperscript{1}A control on computation is designed to ``limit the direct operations that can be meaningfully performed on data. Commonly used examples are file-level encryption and interactive analysis systems or model servers. Emerging approaches include secure multiparty computation, functional encryption, homomorphic encryption, and secure public ledgers, eg blockchain technologies.'' \citep{AltmanPracticalApproaches}.\\
+\textsuperscript{2}For a real-world example, see the Opportunity Atlas case study presented in Section~\ref{subsec:opportunity_atlas}.}
+\end{table}
+\end{center}

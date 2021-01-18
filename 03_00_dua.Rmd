@@ -20,11 +20,11 @@ Depending on the data provider, other forms of documentation can be used. Exampl
 What if the data provider does not require any formal documentation? The researcher should write a letter describing the data requested, the planned uses, and a summary of the data management plan. The letter should clearly state the proposed use of the data, redistribution of the data, and methods for data retention or destruction at the project's end. Researcher and data provider should then sign and date the letter. Alternatively, the researcher can simply send the letter and obtain a return receipt.
 ```
 
-### Relating the DUA to the Five Safes Framework
+### Relating the DUA to the Five Safes Framework {#dua-fivesafes}
 
 The Five Safes framework used throughout this handbook is an approach for structuring aspects of data access. The five safes are safe projects, safe people, safe settings, safe data, and safe outputs.[^dua1]
 
-Safe projects have governance measures over project scope and sensitivity with review and approval processes that involve institutional review boards (IRB) or ethics boards. Data providers must determine who are *safe people* through policies, screening, and training, and may require affiliation to an educational or non-profit institution, proof of research competence (e.g., grants received, curriculum vitae), and citizenship or tenure in the relevant country. Safe settings and data involve the researcher's interface and work environment, potentially restricting what an analyst can see, what an analyst can do, the analyst's computing environment, and the analyst's physical location (see also the chapter on [physical security](#security)). Safe data and outputs protect the privacy of data subjects by reducing re-identification risks both during access and after publication. Such protection occurs through statistical disclosure limitation methods such as rounding, aggregating, and suppression (obscuring unique observations in tables, figures, or maps) or formal, mathematical privacy protections (see the chapters on [disclosure avoidance methods](#discavoid) and [differential privacy](#diffpriv)).
+Safe projects have governance measures over project scope and sensitivity with review and approval processes that involve institutional review boards (IRB) or ethics boards. Data providers must determine who are *safe people* through policies, screening, and training, and may require affiliation to an educational or non-profit institution, proof of research competence (e.g., grants received, curriculum vitae), and citizenship or tenure in the relevant country. Safe settings and data involve the researcher's interface and work environment, potentially restricting what an analyst can see, what an analyst can do, the analyst's computing environment, and the analyst's physical location (see chapter \@ref(security)). Safe data and outputs protect the privacy of data subjects by reducing re-identification risks both during access and after publication. Such protection occurs through statistical disclosure limitation methods such as rounding, aggregating, and suppression (obscuring unique observations in tables, figures, or maps) or formal, mathematical privacy protections (see chapters \@ref(discavoid) and \@ref(diffpriv)).
 
 At a high level, a DUA should address all five safes. It should include intended data uses to define the safe project; terms for data access and handling for a safe setting; and terms for output publication and release for safe outputs. DUAs are essential to define acceptable data uses, linkages, and topics of analysis. Agreements may also detail roles and responsibilities for the data provider and researchers (defining safe people) and cover safe data by including a list of data elements and any reporting or disposition requirements. There are many permutations on such restrictions;[^dua2] any requirements as well as penalties for failing to comply with them should be included in the DUA.
 
@@ -68,11 +68,11 @@ Investigating the legal framework helps researchers form realistic expectations 
 
 ### Thinking through the Analysis and Publication Process
 
-Considering the project goals and timeline, the researcher should assess how much time it will take to clean, harmonize, and link data---all necessary steps before conducting analyses or publishing results. Time required for each of these steps can depend on the past experiences of the researcher (or their institution) with a particular type of data. Researchers should allow ample time to prepare data for use after receipt, possibly in collaboration with the data provider. The researcher should also allocate time to prepare findings for release and identify disclosure avoidance techniques to protect against re-identification of the data subjects in project outputs. Data providers should be prepared to review outputs and be familiar with common disclosure avoidance protocols (see chapter on [disclosure avoidance](#discavoid)).
+Considering the project goals and timeline, the researcher should assess how much time it will take to clean, harmonize, and link data---all necessary steps before conducting analyses or publishing results. Time required for each of these steps can depend on the past experiences of the researcher (or their institution) with a particular type of data. Researchers should allow ample time to prepare data for use after receipt, possibly in collaboration with the data provider. The researcher should also allocate time to prepare findings for release and identify disclosure avoidance techniques to protect against re-identification of the data subjects in project outputs. Data providers should be prepared to review outputs and be familiar with common disclosure avoidance protocols (see chapter \@ref(discavoid)).
 
 ### Taking a Broad Interpretation of Data
 
-Data includes information directly from administrative databases on program participants or clients, regardless of the extent to which it is processed, linked, or contains identifiers. But data also refers to metadata about the system, files, and content as well as statistical information that will be published through the project, such as descriptive statistics, coefficients, or visualizations. A sound data use agreement covers all of these. See the concepts of safe data and safe outputs in the previous section on relating the DUA to the five safes framework.
+Data includes information directly from administrative databases on program participants or clients, regardless of the extent to which it is processed, linked, or contains identifiers. But data also refers to metadata about the system, files, and content as well as statistical information that will be published through the project, such as descriptive statistics, coefficients, or visualizations. A sound data use agreement covers all of these. See the concepts of safe data and safe outputs in section \@ref(dua-fivesafes) on relating the DUA to the five safes framework.
 
 ## Negotiating the Data Use Request
 
@@ -96,7 +96,7 @@ A request denial may also come from a key decision-maker who may feel that the r
 
 If data are inaccessible due to a legal barrier, the researcher should find the section of the statute or code that prohibits access and determine whether access would be permitted in the case that the researcher were under contract with the agency or producing an output for that agency. In instances where access would have been permitted, the parties may consider discussing a mutually beneficial contractor relationship between the researcher and data provider. Otherwise, the researcher may determine whether a separate legal interpretation of the statute or regulation would be appropriate or whether the law effectively prohibits access. Even when there are not legal barriers, there may be policy barriers. This happens when a written policy prevents access. The parties should investigate whether a waiver or a policy change are feasible.
 
-When there is no law or written policy blocking access, there still may be cultural barriers. Data providers (or individuals at the data provider) may reject a request because such sharing has never taken place before or was done only in special circumstances. They may also lack the resources to entertain the request: they may have already shared the data with another research team or their own in-house experts are looking into the same or related research topic. The researcher can try to identify why the agency is reluctant and explore the risks that data sharing poses to them. They can discuss with the data provider how controls over the mode of access, users, uses, and outputs may mitigate these risks and how the project can produce benefits for the provider. Negotiating parties can refer to the various sections in this handbook for examples on successful data use agreements, as well as the technical possibilities (see the chapters on [physical security](#security) and [disclosure avoidance](#discavoid)), which might allay fears and uncertainties.
+When there is no law or written policy blocking access, there still may be cultural barriers. Data providers (or individuals at the data provider) may reject a request because such sharing has never taken place before or was done only in special circumstances. They may also lack the resources to entertain the request: they may have already shared the data with another research team or their own in-house experts are looking into the same or related research topic. The researcher can try to identify why the agency is reluctant and explore the risks that data sharing poses to them. They can discuss with the data provider how controls over the mode of access, users, uses, and outputs may mitigate these risks and how the project can produce benefits for the provider. Negotiating parties can refer to the various sections in this handbook for examples on successful data use agreements, as well as the technical possibilities (see chapters \@ref(security) and \@ref(discavoid)), which might allay fears and uncertainties.
 
 ### Trying to Find Mutual Interests
 
@@ -106,12 +106,10 @@ It is helpful to think through the interests of the organization as well as the 
 
 Does the agency have a posted process, pre-specified forms, or a template? If none exists, the researcher should try to get an example of a successful request and be attentive to detail in formulating a new request. Be sure to include processes and requirements of the data provider, such as review requirements.
 
-Guides that provide templates are available from various domains. Appendix A to this chapter provides one template. Other examples are listed below:
+Guides that provide templates are available from various domains. Appendix [A](#dua-appendixa) to this chapter provides one template. Other examples are listed below:
 
 - "Data Sharing: Creating Agreements" [@jarquin2012] from the Colorado Clinical and Translational Sciences Institute includes specific questions to help determine which sections should be included in a DUA from a clinical health perspective.
-
 - *Legal Issues for IDS Use: Finding a Way Forward* [@petrila2017] is an expert panel report informing state and local governments that want to integrate data. This report explains why politics and relationships matter and walks through the legal considerations for preparing a MOU or Data Use License. The document includes links to a sample agreement made with two states and one county as well as a data license template from a federal agency for health and human services data.
-
 - Guidelines for Developing Data Sharing Agreements to Use State Administrative Data for Early Care and Education Research" [@shaw2018] includes examples with early childhood research from two states, along with links to checklists and toolkits. This research brief also includes "advice from researchers" sections throughout.
 
 ### Signing the Agreement
@@ -128,7 +126,7 @@ When using the data, the researcher should remember that this is a contractual a
 
 ## Summary
 
-No matter the size of the project or the volume of data needed, all parties should invest the time in preparing a sound data use agreement. Agreements enable safe projects. The topics covered in this chapter have been put in to practice through all the case studies in this volume. The process is well described in the chapter on the [Stanford-San Francisco Unified School District Partnership](#sfusd). Appendix A provides a sample text for consideration when writing DUAs, and Appendix B lists additional toolkits and guides on the DUA process.
+No matter the size of the project or the volume of data needed, all parties should invest the time in preparing a sound data use agreement. Agreements enable safe projects. The topics covered in this chapter have been put in to practice through all the case studies in this volume. The process is well described in chapter \@ref(sfusd) on the Stanford-San Francisco Unified School District Partnership. Appendix [A](#dua-appendixa) provides a sample text for consideration when writing DUAs, and Appendix [B](#dua-appendixb) lists additional toolkits and guides on the DUA process.
 
 ## About the Author {-}
 
@@ -138,7 +136,7 @@ No matter the size of the project or the volume of data needed, all parties shou
 
 [^dua2]: See @goroff2018 for a comprehensive discussion of possible methods.
 
-[^dua3]: See [Appendix B]{#dua-appendixb} for a set of these guides.
+[^dua3]: See Appendix [B]{#dua-appendixb} for a set of these guides.
 
 [^dua4]: See @yates2018 for a checklist from the data provider's perspective.
 

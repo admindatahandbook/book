@@ -1,0 +1,31 @@
+\begin{table}[H]
+\caption{\label{table:risk} Maximal change between posterior beliefs in Gertrude's opt-out and real-world scenarios. The notation $A(x')$ refers to the application of the analysis $A$ on the dataset $x'$, which does not include Gertrude's information. As this table shows, the use of differential privacy provides a quantitative bound on how much one can learn about an individual from a computation. The entries in the table are calculated using the formula $q=\min(e^{2\varepsilon} q', 100-e^{-2\varepsilon}(100-q'))$, where $q'$ is the posterior belief given $A(x')$ and $q$ is the upper bound on the posterior belief given $A(x)$, both expressed as percentages.}
+\begin{center}
+\fontsize{9}{10}\selectfont
+\begin{tabular}[h]{c|cccccc}
+\toprule
+\multirow{2}{*}{\shortstack[c]{posterior belief \\
+given $A(x')$ \\
+in $\%$ }} & \multicolumn{6}{c}{value of $\varepsilon$} \\
+& 0.01 & 0.05 & 0.1 & 0.2 & 0.5 & 1\\ 
+\midrule
+0	&	0	&	0	&	0	&	0	&	0	&	0	\\
+1	&	1.02	&	1.11	&	1.22	&	1.49	&	2.72	&	7.39	\\
+2	&	2.04	&	2.21	&	2.44	&	2.98	&	5.44	&	14.78	\\
+3	&	3.06	&	3.32	&	3.66	&	4.48	&	8.15	&	22.17	\\
+5	&	5.10	&	5.53	&	6.11	&	7.46	&	13.59	&	36.95	\\
+10	&	10.20	&	11.05	&	12.21	&	14.92	&	27.18	&	73.89	\\
+25	&	25.51	&	27.63	&	30.54	&	37.30	&	67.96	&	89.85	\\
+50	&	50.99	&	54.76	&	59.06	&	66.48	&	81.61	&	93.23	\\
+75	&	75.50	&	77.38	&	79.53	&	83.24	&	90.80	&	96.62	\\
+90	&	90.20	&	90.95	&	91.81	&	93.30	&	96.32	&	98.65	\\
+95	&	95.10	&	95.48	&	95.91	&	96.65	&	98.16	&	99.32	\\
+98	&	98.04	&	98.19	&	98.36	&	98.66	&	99.26	&	99.73	\\
+99	&	99.02	&	99.10	&	99.18	&	99.33	&	99.63	&	99.86	\\
+100	&	100	&	100	&	100	&	100	&	100	&	100	\\
+& \multicolumn{6}{c}{maximum posterior belief given $A(x)$ in $\%$} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\end{table}

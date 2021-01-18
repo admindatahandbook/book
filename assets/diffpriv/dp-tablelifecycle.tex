@@ -1,0 +1,33 @@
+
+\SetEnumitemKey{lifecyclesep}{nosep,leftmargin=0.25cm,before=\RaggedRight\vspace*{-0.8\baselineskip}, after=\vspace*{-\baselineskip}}
+
+\begin{sidewaystable}[p]
+\caption{\label{table:lifecycleimplications} Choices in how differential privacy is applied and implemented have substantial implications for data collection, curation, protection, preservation and reuse.}
+\fontsize{7}{8}\selectfont
+\begin{tabularx}{1\textwidth}{ p{0.55in} YYYYYY}
+%p{0.9in} p{0.9in} p{0.9in} p{0.9in} p{0.9in} p{0.9in}
+%\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+
+\toprule
+& Key~Dimensions & Collection & Transformation & Retention & Access & Post-Access \\
+\midrule
+
+\textit{Trust Model} & \begin{itemize}[lifecyclesep] \item Central curator \item Local collector \end{itemize}& \begin{itemize}[lifecyclesep] \item Consent \item Compliance: Information security \item Measurement design\item Compliance: Anonymization \end{itemize} & \begin{itemize}[lifecyclesep] \item Data cleaning \item Data linking\end{itemize} & \begin{itemize}[lifecyclesep] \item Compliance: Information security \end{itemize} & \begin{itemize}[lifecyclesep] \item Legal requirements \item Range of uses\end{itemize} & \begin{itemize}[lifecyclesep] \item Deaccessioning \& disposal \item Information security \item Legal requirements \item Replicability \& verification \item Preservation\end{itemize}\\ 
+\midrule
+
+\textit{Data Publication Model} & \begin{itemize}[lifecyclesep] \item Interactive \item Static\end{itemize} & \begin{itemize}[lifecyclesep] \item Measurement design\end{itemize} & \begin{itemize}[lifecyclesep] \item Data linking\end{itemize} & \begin{itemize}[lifecyclesep] \item Costs \item Information security \item Legal requirements\end{itemize} & \begin{itemize}[lifecyclesep] \item Costs \item Compliance: Information security \item Range of uses \item Usage tracking\end{itemize} & \begin{itemize}[lifecyclesep] \item Costs \item Compliance: Information security \item Compliance: Reporting and correction \item Replicability \& verification \item Preservation\end{itemize} \\
+\midrule
+
+\textit{Privacy Granularity} & \begin{itemize}[lifecyclesep] \item Unit of protection\end{itemize} & \begin{itemize}[lifecyclesep] \item Consent \item Measurement design\end{itemize} &  &  & \begin{itemize}[lifecyclesep] \item Range of uses\end{itemize} &  \\
+\midrule
+
+\textit{Privacy Budget Allocation} & \begin{itemize}[lifecyclesep] \item Allocation across uses \item Allocation across groups \item Allocation across measures\end{itemize} & \begin{itemize}[lifecyclesep] \item Consent\end{itemize} & \begin{itemize}[lifecyclesep] \item Data cleaning\end{itemize} &  & \begin{itemize}[lifecyclesep] \item Usage tracking\end{itemize} & \begin{itemize}[lifecyclesep] \item User \& use auditing\end{itemize} \\
+\midrule
+
+\textit{Utility Considerations} & \begin{itemize}[lifecyclesep] \item Anticipating uses \item Evaluating utility \item Managing statistical uncertainty\end{itemize} & \begin{itemize}[lifecyclesep] \item Measurement design\end{itemize} & \begin{itemize}[lifecyclesep] \item Data linkage\end{itemize} &  & \begin{itemize}[lifecyclesep] \item Range of uses\end{itemize} & \begin{itemize}[lifecyclesep] \item Utility evaluation\end{itemize} \\
+\bottomrule
+
+\end{tabularx}
+
+\end{sidewaystable}
