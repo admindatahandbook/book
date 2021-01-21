@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2021-01-20"
+date: "2021-01-21"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -1972,7 +1972,7 @@ Moreover, there are privacy attacks beyond record linkage attacks on de-identifi
 
 Further, the researchers showed that the reconstructed records could be completely *reidentified*. They were able to assign personally identifiable information to individual records using commercial databases that were available in 2010 [@AbowdSimonsPresentation]. They concluded that, with this attack, they could putatively reidentify 138 million people, and they confirmed that these reidentifications were accurate for $52$ million people, or 17 percent of the US population [@AbowdSimonsPresentation].
 
-These findings are startling. In 2012, the last time the Census Bureau performed a simulated reidentification attack on census data sets, the reidentification rate was only 0.0038 percent [@ramachandran2012]. The test attack using the data published for the 2010 Decennial Census demonstrates that previous risk assessments underestimated the reidentification risk by a factor of at least 4,500 [@ramachandran2012]. ```</div>\EndKnitrBlock{bbox}
+These findings are startling. In 2012, the last time the Census Bureau performed a simulated reidentification attack on census data sets, the reidentification rate was only 0.0038 percent [@ramachandran2012]. The test attack using the data published for the 2010 Decennial Census demonstrates that previous risk assessments underestimated the reidentification risk by a factor of at least 4,500 [@ramachandran2012]. </div>\EndKnitrBlock{bbox}
 
 The demonstration of a database reconstruction attack on the statistical tables published by the Census Bureau is just the latest in a long line of attacks illustrating the privacy risks associated with releasing and analyzing large volumes of data about individuals. In particular, it is a real-world manifestation of the growing risks from combining and analyzing multiple statistical releases---broadly referred to as risks from *composition* [@GantaKS08; @fluitt2019]. The modern mathematical understanding recognizes that any research output increases disclosure risk.[^diffpriv5] Although some increases in disclosure risk may be small, they accumulate, potentially to the point of a severe privacy breach. Taken together, the outputs may enable an accurate reconstruction of large portions of the data set, as seen in the reconstruction and reidentification of the 2010 Decennial Census database.
 
