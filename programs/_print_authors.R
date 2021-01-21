@@ -86,25 +86,51 @@ printauthor<-function(chapter,debug=FALSE){
       if (debug) { print("print name")}
       authors.sup <- paste(authors.sup,name)
     }
-  } 
+  } # end of length(authorlist)
+
   # construct final cmos and and version
   if (length(authorlist) == 2 ) { authors.cmos <- paste0(authors.cmos,", ",authors.sup) }
   if (length(authorlist) >  2 ) { authors.cmos <- paste0(authors.cmos,authors.sup) }
   authors.and  <- paste0(authors.and,authors.sup)
 
   if ( debug ) { print(authors.sup)}
-    # create the comma version
+
+  # create the comma version
   if (debug) { print("Create the comma version")}
+
   if ( length(authorlist) == 1 ) authors.comma <- authors.and
   if ( length(authorlist) == 2 ) authors.comma <- str_replace(authors.and," and ",", ")
   if ( length(authorlist) > 2  ) authors.comma <- str_replace(authors.and," and "," ")
+ 
+  # handle copyright
+  copyright <- config::get(chapter)$copyright
+  if ( is.null(copyright)) { 
+    copyright <- authors.comma
+  }
+
+  # handle license
+  license.chapter <- config::get(chapter)$license
+  if (is.null(license.chapter)) {
+    license.chapter <- config::get()$license
+  }
+  # address cc licenses
+  license.cc <- ""
+  if ( tolower(substr(license.chapter,1,2)) == "cc") {
+    license.cc <- substr(license.chapter,4,nchar(license.chapter))
+  }
+
+  # debug
   if (debug) { 
     print("finished")
     print(authors.comma)
     print(authors.cmos)
-    print(authors.and)}
+    print(authors.and)
+    print(copyright)
+    print(license.chapter)
+    print(license.cc)
+    }
 
-# end of length(authorlist)
+
 
   # The publication is read from the config file. We might also read the DOI from there.
   pubdate <- config$first_publish_date %>%  str_split_fixed(" ",2) 
@@ -115,7 +141,14 @@ printauthor<-function(chapter,debug=FALSE){
     cat(readLines("./includes/citation-block-link.html"))
     cat('<div id="myCitation" style="display: none;">')
     cat(paste0(authors.cmos,". ",pubdate[2],". ","\"<span id=\"chapTitle\">Title</span>.\" In: "))
-    cat(paste0(config$editors," (eds), *",config$title,"*. Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>."))
+    cat(paste0(config$editors," (eds), *",config$title,"*. Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>.<br />"))
+    cat(paste0("<span class=\"copyright\">©️ ",copyright,". Licensed under "))
+    if ( license.cc != "" ) {
+      cat(paste0("<a href=\"https://creativecommons.org/licenses/",license.cc,"/4.0/\"><img alt=\"",toupper(license.chapter)," logo\" src=\"assets/",license.chapter,".png\" height=\"12px\"/></a>"))
+    } else {
+      cat(paste0(toupper(license.chapter)))
+    }
+    cat(paste0(".</span>"))
     cat('</div>')
   }
 

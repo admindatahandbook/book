@@ -23,9 +23,9 @@ bookdown::gitbook:
       scroll_highlight: yes
       before: null
       after: |
-              <li class="chapter"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber </li>
-              <li class="chapter">Individual chapters ©️ by their authors.</li>
-              <li class="chapter"><a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/> CC-BY-NC</a></li>
+              <li class="copyright"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber</li>
+              <li class="copyright">Individual chapters ©️ by their authors or as noted.</li>
+              <li class="copyright"><a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a></li>
     toolbar:
       position: fixed
 bookdown::pdf_book:

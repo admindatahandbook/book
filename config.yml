@@ -9,6 +9,7 @@ default:
     aspect_low: "#e0f3db"  #low flexibility, light green, formerly "#33a02c"
     aspect_med: "#a8ddb5" #med flexibility, dark green blue, formerly "#a6cee3"
     aspect_high: "#43a2ca" #high flexibility, blue, formerly "#1f78b4"
+  license: cc-by-nc
   foreword:
     authors:
       - danielgoroff
@@ -41,6 +42,7 @@ default:
       - eradablanorris
       - federicojdiez
       - romainduval
+    copyright: International Monetary Fund
   iab:
     authors:
       - danamuller
