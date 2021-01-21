@@ -7,7 +7,7 @@
 #     write_csv(discavoidtable,outcsv)
 # }
 # 
-library(kableExtra)
+#library(kableExtra)
 discavoidt1data<-data.frame(example=c("IAB On-Site Access",
                                       "IAB Scientific Use Files",
                                       "OLDA",

@@ -221,7 +221,7 @@ The security of the PCRI data is paramount. The Institute's ability to obtain da
 
 The data are accessed using a secure remote access protocol. Users login through the +NORC| portal, which requires a two-factor authentication: a password and a security token password. The PCRI provides Stata software to the researcher to access the data files. To ensure safety, the PCRI employs a methodology whereby academics can undertake detailed cross-tabulated and regression analyses but not download or view individual data entries. Also, for added security, the Institute disables certain features of Stata (e.g., outsheet, list, and browse commands) that could allow the user to identify companies in the database. The cost of hosting the data at the NORC is around US\$40,000 per year.
 
-The Census data typically can only be accessed at Federal Statistical Research Data Centers (RDCs). Researchers require approval from both the PCRI and the Census Bureau.
+The Census data typically can only be accessed at Federal Statistical Research Data Centers (FSRDCs). Researchers require approval from both the PCRI and the Census Bureau.
 
 For the +CoI| library, the PCRI has created a searchable database using SmartRoom, a content management platform, for researchers to view, but not download, the documents. The Institute does not charge for the use of this +CoI| library or the ultimate coded database that the Stanford GSB is creating. The cost to use the SmartRoom is about US\$10,000 per annum and varies depending on the number of users. The Institute choses to use this platform not only because of its security features but also its user-friendly interface.
 
