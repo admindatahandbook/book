@@ -21,8 +21,8 @@ pkgTest <- function(x,try=FALSE)
   return("OK")
 }
 
-global.libraries <- c("here","knitr","bookdown","tufte","dplyr","tidyr","config","ggplot2",
-"rprojroot","readr","memisc","forcats","kableExtra","RColorBrewer","pander","readODS","stringr", "remotes","xtable") #"ggpubr"
+global.libraries <- c("here","knitr","bookdown","tufte","config","ggplot2",
+"rprojroot","readr","memisc","forcats","kableExtra","RColorBrewer","remotes","stringr","xtable","tidyr") #"ggpubr","pander","readODS","dplyr",
 
 results <- sapply(as.list(global.libraries), pkgTest)
 
@@ -32,5 +32,5 @@ unload.libraries <- c("DT")
 results <- sapply(as.list(unload.libraries), pkgTest, try=TRUE)
 
 
-remotes::install_github("coolbutuseless/ggpattern",upgrade="never")
+#remotes::install_github("coolbutuseless/ggpattern",upgrade="never")
 
