@@ -15,11 +15,13 @@ Differential privacy technology has passed a preliminary transition from being t
 
 ### Organization of this Chapter
 
+<!-- We place differential privacy in a general framework---introduced by @altman2015 and an alternative to the Five Safes framework [@desai2016] used throughout this Handbook---that involves selecting combinations of statistical, technical, and administrative controls to mitigate risks of harm to individuals resulting from access to data. The framework discusses differential privacy as an approach to employ together with other tools, including consent mechanisms, data use agreements, and secure environments. -->
+
 We place differential privacy in a general framework (introduced by @altman2015 and an alternative to the Five Safes framework [@desai2016] used throughout this Handbook) that involves selecting combinations of controls---statistical, technical, and administrative---to mitigate risks of harm to individuals resulting from access to data. The framework discusses differential privacy as an approach to employ together with other tools, including consent mechanisms, data use agreements, and secure environments.
 
 The chapter is organized as follows: Section \@ref(sec:what-dp-protects) explains the differential privacy guarantee in more detail using stories to illustrate what differential privacy does and does not protect. Section \@ref(sec:aligning) places differential privacy in a general framework of complementary privacy controls and characterizes principles for selecting differential privacy in conjunction with other controls. These principles include calibrating privacy and security controls to the intended uses and privacy risks associated with the data, and anticipating, regulating, monitoring, and reviewing interactions with data across all stages of the lifecycle (including the post-access stages), as risks and methods will evolve over time. Section \@ref(sec:case-studies) presents succinct summaries of several deployment cases. These provide selected concrete examples of data dissemination that illustrate some key design choices and their implications.
 
-More technical discussions of several topics are included in an extensive online appendix. A discussion of different technical approaches to disseminating data with differential privacy can be found in Appendix [A](#diffpriv-appendixa), which also characterizes the key design choices and trade-offs across them. Appendix [B](#diffpriv-appendixb) elaborates on the implications of differential privacy for data collection, use, and dissemination with a special emphasis on how differential privacy affects data collection and data repository practice and policy. Appendix [C](#appendix-c-additional-resources) provides a list of selected tools and resources for implementing differential privacy protections.
+More technical discussions of several topics are included in an extensive online appendix. A discussion of different technical approaches to disseminating data with differential privacy can be found in Appendix [A](#diffpriv-appendixa), which also characterizes the key design choices and trade-offs across them. Appendix [B](#diffpriv-appendixb) elaborates on the implications of differential privacy for data collection, use, and dissemination with a special emphasis on how differential privacy affects data collection and data repository practice and policy. Appendix [C](#diffpriv-appendixc) provides a list of selected tools and resources for implementing differential privacy protections.
 
 Section \@ref(sec:what-dp-protects) is recommended for policymakers as well as for analysts and communications professionals seeking to explain differential privacy to policymakers, data users, and data subjects. Sections \@ref(sec:aligning) and \@ref(sec:case-studies), in combination with Appendix [B](#diffpriv-appendixb), are recommended for organizational directors and principal investigators responsible for identifying where differential privacy is appropriate as part of a project or organization-level data-protection strategy. Appendices [A](#diffpriv-appendixa), [B](#diffpriv-appendixb), and [C](#diffpriv-appendixc) are recommended for those with a technical background aiming to design and deploy differential privacy addressing specific data dissemination requirements.
 
@@ -361,7 +363,7 @@ Differential privacy is a standard that was designed to support statistical anal
 
 ##### What Types of Questions, Queries, or Models Must be Supported? {-}
 
-In theory, with the exception of learning about individuals or small groups, differential privacy could be used to compute any form of answer for any purpose, as it is a constraint on inference, not on purpose or computation [@AltmanPracticalApproaches]. And in practice, as outlined in Section \@ref(sec: what-types-possible), a large number of analyses can be performed with differential privacy guarantees.
+In theory, with the exception of learning about individuals or small groups, differential privacy could be used to compute any form of answer for any purpose, as it is a constraint on inference, not on purpose or computation [@AltmanPracticalApproaches]. And in practice, as outlined in Section \@ref(sec:what-types-possible), a large number of analyses can be performed with differential privacy guarantees.
 
 However, there are some limitations on the current understanding of how to perform certain classes of tasks privately (e.g., the use of differential privacy in analyzing records of textual data is currently limited); how to measure the accuracy or utility of protected results; and how to optimize the privacy versus utility trade-off. Even where algorithms to perform specific calculations are known, robust software that implements these methods may not yet be available. Generally, differentially private tools limit both the *number* and *form* of analyses that are possible. Most differentially private tools that provide interactive access to data by design support a limited range of model specifications or statistical operators. For example, a particular tool may allow one to pose queries that can be expressed in terms of counts on definable subsets of the data set (which allows for contingency tables and hence fitting logistic regression models) but not to run any arbitrary statistical model. Similarly, an analyst can apply any model to a non-interactive, synthetically generated data set, but only a limited range of models will return accurate or useful results. Further, it is generally more difficult to apply differential privacy if the methods used by analysts are qualitative, unstructured, or do not lend themselves to rigorous mathematical definitions. Certain queries, such as estimating the number of individuals with specific attributes, are quite straightforward. However, in-depth data cleaning is difficult to define in a sufficiently formal way to apply differential privacy protections to the process.
 
@@ -519,7 +521,7 @@ Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported b
 
 [^diffpriv13]: Intuitively, preserving more statistical information (e.g., all entries of a high-dimensional variance-covariance matrix) requires spreading the privacy-loss budget more thinly and thus introducing greater noise. There are much more complex methods that can detect and exploit relationships between the statistics to introduce less noise, but those methods can be computationally infeasible on high-dimensional data.
 
-[^diffpriv14]: Figure \@ref(fig:dpfig2) is reproduced from @wood_differential_2018.
+[^diffpriv14]: Figure \@ref(fig:dpfig1) is reproduced from @wood_differential_2018.
 
 [^diffpriv15]: The use of differentially private analysis is *not* equivalent to the traditional use of opting out. On the privacy side, differential privacy does not require an explicit opt-out. In comparison, traditional use of opt-out requires an explicit choice that may cause privacy harms by calling attention to individuals that choose to opt out. On the utility side, there is no general expectation that using differential privacy would yield the same outcomes as adopting the policy of opt-out.
 
@@ -535,13 +537,13 @@ Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported b
 
 [^diffpriv21]: Epsilon is a unitless nonnegative quantity measuring probability log-ratio.
 
-[^diffpriv22]: In general, setting ε involves making a compromise between privacy protection and accuracy. The consideration of both utility and privacy is challenging in practice and, in some of the early implementations of differential privacy, has led to choosing a higher value for ε. As the accuracy of differentially private analyses improves over time, it is likely that lower values of ε will be chosen.
+[^diffpriv22]: In general, setting ε involves making a compromise between privacy protection and accuracy. The consideration of both utility and privacy is challenging in practice and, in some of the early implementations of differential privacy, has led to choosing a higher value for $\varepsilon$. As the accuracy of differentially private analyses improves over time, it is likely that lower values of $\varepsilon$ will be chosen.
 
 [^diffpriv23]: Figures in this example are based on data from @ssa2011.
 
-[^diffpriv24]: The approximate calculation provided in this example only holds for small, using e2⋅ε≈1+2⋅ε. See Table \@ref(tab:diffprivtable1) for an exact formula.
+[^diffpriv24]: The approximate calculation provided in this example only holds for small, using $\varepsilon$, using $e^{2\cdot \varepsilon}\approx 1+2\cdot \varepsilon$. See Table \@ref(tab:diffprivtable1) for an exact formula.
 
-[^diffpriv25]: In general, the guarantee made by differential privacy is that the probabilities differ at most by a factor of e±ε, which is approximately $1±\varepsilon$ when $\varepsilon$ is small.
+[^diffpriv25]: In general, the guarantee made by differential privacy is that the probabilities differ at most by a factor of $e^{\pm\varepsilon}$, which is approximately $1\pm\varepsilon$ when $\varepsilon$ is small.
 
 [^diffpriv26]: The reason that the multiplicative factor is $1+2\cdot \varepsilon \approx e^{2\cdot \varepsilon}$ rather than
 $1+\varepsilon \approx e^\varepsilon$e is that posterior beliefs can be expressed as a ratio of two probabilities, each of which can change by a factor of at most $e^{\varepsilon}$. The factor of 2 was incorrectly omitted in the original paper [@wood_differential_2018] describing this example.
@@ -550,7 +552,7 @@ $1+\varepsilon \approx e^\varepsilon$e is that posterior beliefs can be expresse
 
 [^diffpriv28]: For further discussion see @wood_differential_2018; @altman2015.
 
-[^diffpriv29]: See Section \@ref(#sec:methodology-example-limit-privacy-loss) for further discussion of how ε quantifies privacy risk.
+[^diffpriv29]: See Section \@ref(sec:methodology-example-limit-privacy-loss) for further discussion of how ε quantifies privacy risk.
 
 [^diffpriv30]: The proposal for an Epsilon Registry is intended to be a publicly available bulletin board where firms would disclose information about their deployment of differential privacy. *See* @Dwork_Kohli_Mulligan_2019.
 
