@@ -6,7 +6,7 @@
 
 # Table 1
 
-library(kableExtra)
+#library(kableExtra)
 
 iabt1data <- data.frame(
   Items = c("Population / Sample Size","Time Period covered and frequency","Additional information","Population / Sample Size", 

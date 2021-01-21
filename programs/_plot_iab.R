@@ -4,9 +4,9 @@
 # testing showed that ggpubr vastly increases the build time 
 # for the book. Run this program separately.
 
-library(ggplot2)
-library(ggpubr)
-library(RColorBrewer)
+#library(ggplot2)
+#library(ggpubr)
+#library(RColorBrewer)
 
 # Figure 1
 iabf1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
