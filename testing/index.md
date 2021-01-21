@@ -61,7 +61,7 @@ We thank [Jim Shen](https://www.povertyactionlab.org/person/shen) for his work m
 *Daniel L. Goroff  
 Vice President and Program Director  
 Alfred P. Sloan Foundation*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Goroff, Daniel L.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Goroff, Daniel L.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Daniel L. Goroff. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 This is an important Handbook, compiled by an important institution, on an important topic. The Alfred P. Sloan Foundation is therefore a particularly proud sponsor of the Innovations in Data and Experiments for Action Initiative (IDEA) of the Abdul Latif Jameel Poverty Action Lab (J-PAL), which has taken on this endeavor, and of work on administrative data generally.
 
@@ -141,7 +141,7 @@ Building these nodes, whether they are called Administrative Data Research Facil
 *Iqbal Dhaliwal (J-PAL, Massachusetts Institute of Technology)*  
 *Anja Sautmann (World Bank)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Shawn, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Shawn, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## The Potential of Administrative Data for Research and Policymaking
 
@@ -452,7 +452,7 @@ The existing literature also provides high-level guidance on numerous topics, in
 
 *Jim Shen (J-PAL, Massachusetts Institute of Technology)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shen, Jim,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shen, Jim,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Jim Shen, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Introduction
 
@@ -1067,7 +1067,7 @@ A final related point is that the enforcement of the terms of the +DUA| is an im
 # Model Data Use Agreements: A Practical Guide {#dua}
 
 *Amy O'Hara (Georgetown University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">O'Hara, Amy. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">O'Hara, Amy. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Amy O'Hara. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 What are data use agreements? Data use agreements (DUA)---also referred to as data sharing agreements or data use licenses---are documents that describe what data are being shared, for what purpose, for how long, and any access restrictions or security protocols that must be followed by the recipient of the data. Other contracts, such as non-disclosure agreements, may be used to guarantee confidentiality over sensitive discussions, information, and data.
 
@@ -1286,7 +1286,7 @@ This index, a collection of standards, guides, and templates, is searchable by g
 # Collaborating with the Institutional Review Board (IRB) {#irb}
 
 *Kathleen Murphy (Northwestern University, ret.)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Murphy, Kathleen. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Murphy, Kathleen. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Kathleen Murphy. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Introduction
 
@@ -1551,7 +1551,7 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 *Ian M. Schmutte (University of Georgia)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Schmutte, Ian M.,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Schmutte, Ian M.,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Ian M. Schmutte, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 The purpose of this Handbook is to provide guidance on how to enable broader but ethical and legal access to data. Within the Five Safes framework [@desai2016], data providers need to create *safe data* that can be provided to trusted *safe people* for use within *safe settings* (chapter \@ref(security)), subject to legal and contractual safeguards (chapter \@ref(dua)).  Related, but distinct, is the question of how to create *safe outputs* from researchers' findings before those findings finally make their way into the public through, for example, policy briefs or the academic literature. The processes used to create safe data and safe outputs (manipulations that render data less sensitive and therefore more appropriate for public release) are generally referred to as +statistical_disclosure_limitation| (SDL).^[Other terms sometimes used are "anonymization" or "de-identification," but as this chapter will show, de-identification is a particular method of SDL, and anonymization is a goal, never fully achieved, rather than a method.] This chapter will describe techniques traditionally used within the field of SDL, pointing at methods as well as metrics to assess the resultant statistical quality and sensitivity of the data. Newer approaches, generally referred to as *formal privacy methods*, are described in chapter \@ref(diffpriv). 
 
@@ -1936,7 +1936,7 @@ This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell
 *Micah Altman (Massachusetts Institute of Technology)*  
 *Kobbi Nissim (Georgetown University)*  
 *Salil Vadhan (Harvard University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Wood, Alexandra, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Wood, Alexandra, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Alexandra Wood, Micah Altman, Kobbi Nissim, Salil Vadhan. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Introduction and Overview
 
@@ -3242,7 +3242,7 @@ There are many educational resources available for readers who have additional q
 
 *Dana Müller (Institute for Employment Research)*  
 *Philipp vom Berge (Institute for Employment Research)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Müller, Dana,  and Philipp vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Müller, Dana,  and Philipp vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Dana Müller, Philipp vom Berge. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -3651,7 +3651,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 # Ohio and the Longitudinal Data Archive: Mutually Beneficial Partnerships Between State Government and Researchers {#olda}
 
 *Joshua D. Hawley (Ohio State University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hawley, Joshua D.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hawley, Joshua D.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Joshua D. Hawley. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -4048,7 +4048,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 *Donna Curtis Maillet (University of New Brunswick)*  
 *James Ted McDonald (University of New Brunswick)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Curtis Maillet, Donna,  and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Curtis Maillet, Donna,  and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Donna Curtis Maillet, James Ted McDonald. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary {#nbirdt-summ}
 
@@ -4302,7 +4302,7 @@ Audits of data sets accessed and data project activity are a requirement of data
 *Josh Lerner (Harvard Business School)*  
 *Leslie Jeng (Private Capital Research Institute)*  
 *Therese Juneau (Private Capital Research Institute)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Lerner, Josh, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Lerner, Josh, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Josh Lerner, Leslie Jeng, Therese Juneau. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -5003,7 +5003,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
 
 *Laura Feeney (J-PAL North America, Massachusetts Institute of Technology)*  
 *Amy Finkelstein (Massachusetts Institute of Technology)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Feeney, Laura,  and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Feeney, Laura,  and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Laura Feeney, Amy Finkelstein. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -5275,7 +5275,7 @@ The following is from the +NDA|:
 *Norma Ming (San Francisco Unified School District)*  
 *Michelle Reininger (University of Colorado at Boulder)*  
 *Eric Bettinger (Stanford University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Kim, Moonhawk, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Kim, Moonhawk, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, Eric Bettinger. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -5624,7 +5624,7 @@ Once established, any partnership using shared data will need to *continually im
 *Kelsey Jack (University of California, Santa Barbara)*  
 *Derek Strong (University of Southern California)*  
 *Brendan Maughan-Brown (University of Cape Town)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Hugh, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Hugh, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Hugh Cole, Kelsey Jack, Derek Strong, Brendan Maughan-Brown. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -5924,7 +5924,7 @@ The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, C
 
 *Arianna Legovini (World Bank)*  
 *Maria Ruth Jones (World Bank)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Legovini, Arianna,  and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Legovini, Arianna,  and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Arianna Legovini, Maria Ruth Jones. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary 
 
@@ -6239,7 +6239,7 @@ Currently, DIME is well above the norm in the field. An analysis of 203 economic
 *Era Dabla-Norris (International Monetary Fund)*  
 *Federico J. Díez (International Monetary Fund)*  
 *Romain Duval (International Monetary Fund)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dabla-Norris, Era, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dabla-Norris, Era, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ International Monetary Fund. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -6412,7 +6412,7 @@ The views expressed in this paper are those of the author(s) and do not necessar
 *Rema Hanna (Harvard Kennedy School)*  
 *Sudarno Sumarto (SMERU and TNP2K)*  
 *Putu Poppy Widyasari (J-PAL Southeast Asia, University of Indonesia)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alatas, Vivi, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.</div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alatas, Vivi, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Vivi Alatas, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, Putu Poppy Widyasari. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
