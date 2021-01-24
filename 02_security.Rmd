@@ -326,7 +326,7 @@ The [NB-IRDT](#nbirdt) serves as a third-party data custodian for the Province o
 
 The NB-IRDT requires over two dozen staff^[[https://www.unb.ca/nbirdt/about/team.html](https://www.unb.ca/nbirdt/about/team.html), accessed 2020-10-10.] located with the data custodian, including multiple data analysts, system administrators, and other technical staff to set up and maintain the data access mechanism. For more information, see chapter \@ref(nbirdt).
 
-### Institute for Employment Research (RDC-IAB)
+### Research Data Center at the Institute for Employment Research (RDC-IAB)
 
 ```{r, securityiabrdcplot, echo=FALSE, fig.width=3, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
 #plot_summary("RDC-IAB RDC",iab1,2,1,2,1,2)
