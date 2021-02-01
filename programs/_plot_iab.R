@@ -4,9 +4,9 @@
 # testing showed that ggpubr vastly increases the build time 
 # for the book. Run this program separately.
 
-#library(ggplot2)
-#library(ggpubr)
-#library(RColorBrewer)
+library(ggplot2)
+library(ggpubr)
+library(RColorBrewer)
 
 # Figure 1
 iabf1data <- read.csv("./assets/iab/figure1.csv")  # read csv file 
@@ -24,14 +24,15 @@ iabfigure1 <- ggplot(iabf1data, aes(fill=Mode, y=Count, x=Date)) +
         axis.text.y=element_text(size=9),
         legend.text=element_text(size=9),
         legend.key.size=unit(.8,"line"),
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         legend.position="bottom",
         legend.margin=margin(c(-10,0,0,0)),
         legend.box.margin=margin(c(5,0,0,0)),
         plot.margin=grid::unit(c(0,0,0,0), "mm"))
 
 iabfigure1
-ggsave("./figures/iabfigure1.pdf", width = 4, height = 2.5, units = "in", dpi=600)
-ggsave("./figures/iabfigure1.png", width=6, height=3.75,units="in",dpi=133)
+ggsave("./assets/iab/iabfigure1.png", width = 4, height = 2.5, units = "in", dpi=600)
+ggsave("./assets/iab/iabfigure1web.png", width=6, height=3.75,units="in",dpi=133)
 
 # ggsave("./figures/iabfigure1.png",iabfigure1,dpi=300)
 # pdffile <- "./figures/iabfigure1.pdf"
@@ -47,32 +48,34 @@ iabf3data$Country <- factor(iabf3data$Country,levels = c("Germany","Other Countr
 iabfigure2 <- ggplot(iabf2data, aes(fill=Projects, y=Count, x=Year)) + 
   geom_bar(position="dodge", stat="identity") +
   scale_x_continuous(breaks = seq(2005,2019, 2)) +
-  # scale_x_discrete(labels = as.character(iabf2data$Year)) +
   scale_fill_brewer(palette = "Paired") +
   labs(caption="(a)") +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
         plot.caption = element_text(size=7.5,margin=margin(c(0,0,0,0)),hjust=.5,face="bold"),
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         axis.text.x=element_text(size=7.5,angle = 45, vjust=.7),
         axis.text.y=element_text(size=7.5),
         legend.text=element_text(size=7.5),
         legend.position="bottom",
         legend.key.size=unit(.8,"line"),
         legend.margin=margin(c(-10,0,0,0)),
-        legend.box.margin=margin(c(-13,0,0,0)),
-        plot.margin=grid::unit(c(0,0,0,0), "mm"))
+        legend.box.margin=margin(c(-3,0,0,0)),
+        legend.spacing.x = unit(0.05, 'cm'),
+        plot.margin=grid::unit(c(0,0,0,0), "mm")) +
+  guides(fill=guide_legend(nrow=1))
 
 iabfigure3 <- ggplot(iabf3data, aes(fill=Country, y=Percentage, x=Year)) + 
   geom_bar(position="stack", stat="identity") +
   scale_x_continuous(breaks = seq(2012,2019, 1)) +
-  scale_fill_brewer(palette = "Paired") +
+  scale_fill_brewer(labels = c("Germany", "Other", "U.S."), palette = "Paired") +
   labs(caption="(b)") +
-  guides(fill=guide_legend(nrow=2))+
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
         legend.title=element_blank(),
         plot.caption = element_text(size=7.5,margin=margin(c(0,0,0,0)),hjust=.5,face="bold"),
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),    
         axis.text.x=element_text(size=7.5,angle = 45, vjust=.7),
         axis.text.y=element_text(size=7.5),
         legend.text=element_text(size=7.5),
@@ -80,16 +83,17 @@ iabfigure3 <- ggplot(iabf3data, aes(fill=Country, y=Percentage, x=Year)) +
         legend.direction="vertical",
         legend.key.size=unit(.8,"line"),
         legend.margin=margin(c(-10,0,0,0)),
-        legend.box.margin=margin(c(-5,0,0,0)),
-        plot.margin=grid::unit(c(0,0,0,0), "mm"))
+        legend.box.margin=margin(c(-8,0,0,0)),
+        legend.spacing.x = unit(0.05, 'cm'),
+        plot.margin=grid::unit(c(0,0,0,0), "mm")) + 
+  guides(fill=guide_legend(nrow=1))
 
 iabfigure23<-ggarrange(iabfigure2, iabfigure3, ncol=2, nrow=1, align="hv")
 
 iabfigure23
 
-ggsave("./figures/iabfigure2.pdf", width = 4, height = 2.2, units = "in", dpi=600)
-ggsave("./figures/iabfigure2.png", width = 6, height = 3.3, units = "in", dpi=133)
-
+ggsave("./assets/iab/iabfigure2.png", width = 4, height = 2.5, units = "in", dpi=600)
+ggsave("./assets/iab/iabfigure2web.png", width = 6, height = 3.75, units = "in", dpi=133)
 
 # Figure 4
 
@@ -107,6 +111,7 @@ iabfigure4 <- ggplot(iabf4data, aes(fill=Rating, y=Percentage, x=Type)) +
         legend.title=element_blank(),
         axis.text.x=element_text(size=9),
         axis.text.y=element_text(size=9),
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),    
         legend.text=element_text(size=9),
         legend.key.size=unit(.8,"line"),
         legend.position="bottom",
@@ -115,8 +120,8 @@ iabfigure4 <- ggplot(iabf4data, aes(fill=Rating, y=Percentage, x=Type)) +
         plot.margin=grid::unit(c(0,0,0,0), "mm"))
 
 
-ggsave("./figures/iabfigure3.pdf", width = 4, height = 1.5, units = "in", dpi=600)
-ggsave("./figures/iabfigure3.png", width = 6, height = 2.25, units = "in", dpi=133)
+ggsave("./assets/iab/iabfigure3.png", width = 4, height = 1.5, units = "in", dpi=600)
+ggsave("./assets/iab/iabfigure3web.png", width = 6, height = 2.25, units = "in", dpi=133)
 
 
 

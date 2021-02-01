@@ -157,7 +157,7 @@ The main innovation behind +JoSuA| is that it is no longer necessary to perform 
 Although influenced by expansion of +data_access_points|, the decision to switch from a model where every job submission was manually reviewed to the +JoSuA| model was made separately. The steadily increasing number of projects meant that more time had to be spent on +SDC|, and much of the workload fell on preliminary output that was not yet meant for publication. The IU-mode of JoSuA allows for more flexibility and increased speed in project development for users while freeing up resources and maintaining full control over the inputs and exported outputs. Today, about 80 to 90 percent of submissions for +remote_execution| are in IU-mode (Figure \@ref(fig:iabfig1)).
 
 ```{r iabfig1, fig.cap='Number of jobs via JoSuA', echo=F}
-knitr::include_graphics('./figures/iabfigure1.png')
+knitr::include_graphics('./assets/iab/iabfigure1web.png')
 ```
 
 Some of the data products offered by the +RDC-IAB| can also be downloaded as +SUF| and used within the premises of the requesting institution. Anonymization for these data must be stronger than in the +weakly_anonymous| versions. The research data are stored in the +Stata| file format and can be downloaded from a secure download platform after signing the +DUA|. Details about storage and data use are specified in a data security concept that becomes part of the DUA. In this concept, the requesting institution declares that it will ensure suitable technical and organizational measures when dealing with +de-facto_anonymized| data in compliance with data protection legislation. These measures include not sharing the data, restricting access to authorized personnel, ensuring sufficient security, using secure servers, and protecting hard drives against theft using modern encryption standards and deleting data securely at the end of the project period. Demand for SUF has been decreasing relative to weakly anonymized data products in recent years, partly driven by the improvements in access to both +on-site| and +remote_execution|. Downloading and storing +SUF| outside of Germany is possible as long as the other "safes" are adhered to.
@@ -244,7 +244,7 @@ The +RDC-IAB| generates statistics to inform the +IAB|, the +BA|, the +RatSWD|, 
 As shown in Figure \@ref(fig:iabfig2)(a), the numbers of users and user projects at the RDC-IAB continues to increase every year. In 2019, around 1,500 users worked in more than 700 projects.[^iab27] The average duration of a research project is around three years. Bachelor theses or master theses usually do not take longer than six months.
 
 ```{r iabfig2, fig.cap='Development of the number of users and number of projects at the RDC-IAB, 2005--2019 (left) and contractual partners of the RDC-IAB by country, 2012--2019 (right)', echo=F}
-knitr::include_graphics('./figures/iabfigure2.png')
+knitr::include_graphics('./assets/iab/iabfigure2web.png')
 ```
 
 Since the implementation of the additional +data_access_points|, the proportion of international users is constantly growing. Figure \@ref(fig:iabfig2)(b) shows the percentage share of contractual partners from Germany, the US, and other countries. While in 2012, less than 30 percent of all user projects were from a non-German facility, seven years later the value increased to 40 percent.
@@ -265,7 +265,7 @@ Apart from these general statistics, +RDC-IAB| also gathers user feedback to lea
 In general, user ratings are very good. For example, Figure \@ref(fig:iabfig3) shows the ratings of data documentation and personal data advice. More than 90 percent of the survey respondent are satisfied (very good and good) with the data documentation. While 40 percent of all participants did not use personal data advice, nearly all others are satisfied. User suggestions, ideas, and critiques are essential to improve data access further to the extent possible given available resources.
 
 ```{r iabfig3, fig.cap='User satisfaction with RDC-IAB services, by percentage (options bad and very bad have not been chosen by respondents)', echo=F}
-knitr::include_graphics('./figures/iabfigure3.png')
+knitr::include_graphics('./assets/iab/iabfigure3web.png')
 ```
 
 ## About the Authors {-}

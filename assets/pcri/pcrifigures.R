@@ -74,32 +74,32 @@ p
 
 # Venn Diagram
 
-grid.newpage()
-draw.triple.venn(area1 = 11491, area2 = 2964, area3 = 5291, n12 = 1345, n23 = 519, n13 = 2139, n123 = 447, category = c("Refinitiv", "Unquote", "EMPEA"),
-                 
-                 
-                 # Circles
-                 lwd = 2,
-                 #lty = 'blank',
-                 col=c("#000000", '#000000', '#000000'),
-                 fill = c("#edf8b1",'#7fcdbb','#2c7fb8'),
-                 #fill = c("#a6cee3",'#1f78b4','#b2df8a'),
-                 
-                 # Numbers
-                 cex = 3.2,
-                 fontface = "bold",
-                 fontfamily = "sans",
-                 
-                 # Set names
-                 cat.cex = 3.8,
-                 cat.fontface = "bold",
-                 cat.default.pos = "text",
-                  cat.pos = c(-27, 37, 355),
-                 #cat.dist = c(0.055, 0.055, -0.035),
-                 cat.fontfamily = "sans",
-                 rotation = 1,
-                 rotation.degree=-60)
-              
+# grid.newpage()
+# draw.triple.venn(area1 = 11491, area2 = 2964, area3 = 5291, n12 = 1345, n23 = 519, n13 = 2139, n123 = 447, category = c("Refinitiv", "Unquote", "EMPEA"),
+#                  
+#                  
+#                  # Circles
+#                  lwd = 2,
+#                  #lty = 'blank',
+#                  col=c("#000000", '#000000', '#000000'),
+#                  fill = c("#edf8b1",'#7fcdbb','#2c7fb8'),
+#                  #fill = c("#a6cee3",'#1f78b4','#b2df8a'),
+#                  
+#                  # Numbers
+#                  cex = 3.2,
+#                  fontface = "bold",
+#                  fontfamily = "sans",
+#                  
+#                  # Set names
+#                  cat.cex = 3.8,
+#                  cat.fontface = "bold",
+#                  cat.default.pos = "text",
+#                   cat.pos = c(-27, 37, 355),
+#                  #cat.dist = c(0.055, 0.055, -0.035),
+#                  cat.fontfamily = "sans",
+#                  rotation = 1,
+#                  rotation.degree=-60)
+#               
 
 
 # 
