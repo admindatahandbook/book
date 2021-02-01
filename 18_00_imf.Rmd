@@ -22,7 +22,7 @@ There is growing recognition within the IMF that the systematic use of administr
 
 The systematic use of administrative data, however, is less common in the context of IMF +surveillance| and research than for the Fund's two other main activities. One reason is that the use of micro-administrative data for macroeconomic analysis (and surveillance) has only become a routinely used tool within the last ten years, even in academia. Another reason is that utilizing administrative data is resource-intensive both in terms of the direct financial costs involved and staff time required to access and process the data. Further, even with interest from the Fund, national authorities can be unwilling to share the data for surveillance and research purposes, as the benefits to them are not always clear-cut. In these instances, and lacking any systematic institutional protocols, obtaining data rests on personal efforts by IMF staff to approach and potentially partner with national authorities.[^imf3] Finally, in many instances, legal constraints and confidentiality concerns pose challenges to accessibility. For example, countries often require that IMF staff be physically present to access the data or grant access indirectly through collaboration with a local staffer.
 
-### Data use examples {#imf-data-use-examples}
+### Data Use Examples {#imf-data-use-examples}
 
 This section provides concrete examples where Fund staff has used administrative data for policy and +surveillance| work that have broader relevance for the research community, highlighting the procedures followed for securing data access from authorities, the challenges faced by staff, and the outputs from the projects.
 
