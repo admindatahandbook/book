@@ -100,9 +100,9 @@ plot_summary <- function(description,name,a,b,c,d,e,display=TRUE) {
       coord_flip()
    # ggsave(file.path(figures,figure.name),g)
    if ( display ) {
-      g
-      # ggsave(filename=paste("./assets/security/badge_",name.str,".png",sep=""),g,dpi=600, height = 2.9 , width = 4.25)
-      # ggsave(filename=paste("./assets/security/badge_",name.str,"web.png",sep=""),g,dpi=70.6, height = 2.9 , width = 4.25)
+      #g
+       ggsave(filename=paste("./assets/security/badge_",name.str,".png",sep=""),g,dpi=600, height = 2.9 , width = 4.25)
+       ggsave(filename=paste("./assets/security/badge_",name.str,"web.png",sep=""),g,dpi=70.6, height = 2.9 , width = 4.25)
    }
 }
 
