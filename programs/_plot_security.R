@@ -112,7 +112,7 @@ securityt1data<-read.csv("./assets/security/securitytable1.csv")
 
 securitytable1<-function() {
    # if (knitr::is_html_output()) {
-      kable(securityt1data, col.names=c("Researcher Agency","Example")) %>%
+      kable(securityt1data, col.names=c("Researcher Agency","Example"),caption="Examples of researcher agency over analysis computers") %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Low Agency",config$colors$aspect_low,ifelse(securityt1data$agency[1:nrow(securityt1data)]=="Medium Agency",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
    # }
@@ -130,7 +130,7 @@ securityt2data<-read.csv("./assets/security/securitytable2.csv")
 
 securitytable2<-function() {
    # if (knitr::is_html_output()) {   
-      kable(securityt2data, col.names=c("Data Location","Example")) %>%
+      kable(securityt2data, col.names=c("Data Location","Example"),caption="Examples of analysis computer and data locations") %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt2data$location[1:nrow(securityt2data)]=="Data Provider",config$colors$aspect_low,ifelse(securityt2data$location[1:nrow(securityt2data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
    # }
@@ -148,7 +148,7 @@ securityt3data<-read.csv("./assets/security/securitytable3.csv")
 
 securitytable3<-function() {
    # if (knitr::is_html_output()) {
-      kable(securityt3data, col.names=c("Access Location","Example")) %>%
+      kable(securityt3data, col.names=c("Access Location","Example"),caption="Examples of access computer locations") %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt3data$location[1:nrow(securityt3data)]=="Data Custodian",config$colors$aspect_low,ifelse(securityt3data$location[1:nrow(securityt3data)]=="Third Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
 # }
@@ -166,7 +166,7 @@ securityt4data<-read.csv("./assets/security/securitytable4.csv")
 
 securitytable4<-function() {
    # if (knitr::is_html_output()) {
-      kable(securityt4data, col.names=c("Access Security","Example")) %>%
+      kable(securityt4data, col.names=c("Access Security","Example"),caption="Examples of access location security") %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt4data$security[1:nrow(securityt4data)]=="High Security",config$colors$aspect_low,ifelse(securityt4data$security[1:nrow(securityt4data)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
 # }
@@ -184,7 +184,7 @@ securityt5data<-read.csv("./assets/security/securitytable5.csv")
 
 securitytable5<-function() {
    # if (knitr::is_html_output()) {
-      kable(securityt5data, col.names=c("Analysis Methods","Example")) %>%
+      kable(securityt5data, col.names=c("Analysis Methods","Example"),caption="Examples of range of analysis methods available") %>%
          column_spec(1, width="12em", bold=TRUE, background=(ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Highly Restricted",config$colors$aspect_low,ifelse(securityt5data$restrictions[1:nrow(securityt5data)]=="Limited Restrictions",config$colors$aspect_med,config$colors$aspect_high)))) %>%
          kable_styling(font_size=14)
    # }
@@ -208,7 +208,8 @@ plotallmechs<-function(html=TRUE) {
                        "Location of Data and Analysis Computer",
                        "Location of Access Computer",
                        "Access Security",
-                       "Range of Analysis Methods Available")) %>%
+                       "Range of Analysis Methods Available"),
+         caption = "Summary of Access Mechanisms Along the Five Aspects") %>%
    kable_styling(font_size=12) %>%
    column_spec(1, width="10em") %>%
    column_spec(2, width="17em", background=(ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Low",config$colors$aspect_low,ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Medium",config$colors$aspect_med,config$colors$aspect_high)))) %>%
