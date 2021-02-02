@@ -17,7 +17,7 @@ Differential privacy technology has passed a preliminary transition from being t
 
 We place differential privacy in a general framework---introduced by @altman2015 and an alternative to the Five Safes framework [@desai2016] used throughout this Handbook---that involves selecting combinations of statistical, technical, and administrative controls to mitigate risks of harm to individuals resulting from access to data. The framework discusses differential privacy as an approach to employ together with other tools, including consent mechanisms, data use agreements, and secure environments.
 
-The chapter is organized as follows: Section \@ref(sec:what-dp-protects) explains the differential privacy guarantee in more detail using stories to illustrate what differential privacy does and does not protect. Section \@ref(sec:aligning) places differential privacy in a general framework of complementary privacy controls and characterizes principles for selecting differential privacy in conjunction with other controls. These principles include calibrating privacy and security controls to the intended uses and privacy risks associated with the data, and anticipating, regulating, monitoring, and reviewing interactions with data across all stages of the lifecycle (including the post-access stages), as risks and methods will evolve over time. Section \@ref(sec:case-studies) presents succinct summaries of several deployment cases. These provide selected concrete examples of data dissemination that illustrate some key design choices and their implications.
+The chapter is organized as follows: Section \@ref(sec:what-dp-protects) explains the differential privacy guarantee in more detail using stories to illustrate what differential privacy does and does not protect. Section \@ref(sec:aligning) places differential privacy in a general framework of complementary privacy controls and characterizes principles for selecting differential privacy in conjunction with other controls. These principles include calibrating privacy and security controls to the intended uses and privacy risks associated with the data, and anticipating, regulating, monitoring, and reviewing interactions with data across all stages of the lifecycle (including the post-access stages), as risks and methods will evolve over time. Section \@ref(sec:case-studies) presents succinct summaries of several deployment cases. These provide selected concrete examples of data dissemination that illustrate some key design choices and their implications. Some of the content in this chapter (Sections \@ref(sec:dp-intro)--\@ref(sec:aligning)) is excerpted from, adapted from, or otherwise based, in part, on @wood_differential_2018 and @altman2015.
 
 More technical discussions of several topics are included in an extensive online appendix. A discussion of different technical approaches to disseminating data with differential privacy can be found in Appendix [A](#diffpriv-appendixa), which also characterizes the key design choices and trade-offs across them. Appendix [B](#diffpriv-appendixb) elaborates on the implications of differential privacy for data collection, use, and dissemination with a special emphasis on how differential privacy affects data collection and data repository practice and policy. Appendix [C](#diffpriv-appendixc) provides a list of selected tools and resources for implementing differential privacy protections.
 
@@ -55,11 +55,11 @@ Differential privacy is a strong definition (or, in other words, a standard) of 
 
 With differential privacy, statements about risk are proved mathematically---rather than supported heuristically or empirically. The definition of differential privacy also has a compelling intuitive interpretation: inferring information specific to an individual from the outcome of an analysis preserving differential privacy is impossible, including whether the individual's information was used at all.
 
-#### Differential Privacy is a Standard, not a Single Tool {-}
+#### Differential Privacy Is a Standard, Not a Single Tool {-}
 
 Differential privacy is a standard which many tools for analyzing sensitive personal information have been devised to satisfy. Any analysis meeting the standard provably protects its data against a wide range of *privacy attacks*, i.e., attempts to learn private information specific to individuals from a data release.[^diffpriv8]
 
-#### Differential Privacy is Designed for Analysis of Populations, not Individuals {-}
+#### Differential Privacy Is Designed for Analysis of Populations, Not Individuals {-}
 
 Differentially private analyses can be deployed in settings in which an analyst seeks to learn about a population. For example, when statistical estimates (such as counts, averages, histograms, contingency tables, regression coefficients, and synthetic data) are computed based on personal information, the privacy of the individuals in the data needs to be protected.
 
@@ -81,7 +81,7 @@ To achieve differential privacy, carefully crafted random statistical noise must
 
 The introduction of statistical noise to protect privacy necessarily reduces the accuracy of statistical analyses. As the number $n$ of observations in a data set grows sufficiently large, the loss in accuracy due to differential privacy can become much smaller than other sources of error such as statistical sampling error. However, maintaining high accuracy for studies on small or modest-sized data sets (or modest-sized subsets of large data sets) is a challenge. As a consequence, all results computed using tools for differentially private analysis will be approximate. Conversely, any system that produces exact results without any random modifications cannot meet the differential privacy standard.
 
-#### Preventing Cumulative Privacy Failure Requires a Budget for Privacy Loss, which in Turn Limits Utility {-}
+#### Preventing Cumulative Privacy Failure Requires a Budget for Privacy Loss, Which in Turn Limits Utility {-}
 
 Every computation leaks some information about the individual records used as input regardless of the protection method used. To prevent cumulative privacy failure, the privacy loss that accumulates over multiple computations must be calculated, tracked, and limited. Differential privacy provides explicit, formal methods for defining and managing this cumulative loss, referred to as the *privacy-loss budget*.
 
@@ -319,7 +319,7 @@ It may seem that the publication of the research results enabled a privacy breac
 
 This and similar examples demonstrate that any useful analysis carries a risk of revealing some information about individuals. However, such risks are largely unavoidable. In a world in which data about individuals are collected, analyzed, and published, John cannot expect better privacy protection than is offered by his opt-out scenario, because he has no ability to prevent others from participating in a research study or to prohibit a release of public records. Moreover, the types of information disclosures enabled in John's opt-out scenario often result in individual and societal benefits. For example, the discovery of a causal relationship between red wine consumption and elevated cancer risk can inform John about possible changes he could make in his habits that would likely have positive effects on his health.
 
-## Aligning Risks, Controls, and Uses: Where is the Use of Differential Privacy Appropriate? {#sec:aligning}
+## Aligning Risks, Controls, and Uses: Where Is the Use of Differential Privacy Appropriate? {#sec:aligning}
 
 This section discusses factors to take into account when evaluating whether differential privacy is an appropriate tool to be applied within a specific context, as well as factors in determining whether differential privacy should be deployed alone, in combination with other controls, or as part of a tiered access system. As an overview, Table \@ref(tab:diffprivtable2) provides some of the key factors that weigh in favor of, or against, an appropriate use of differential privacy. For example, use cases involving statistical analysis of a population or large groups and the possibility of significant and lasting informational harms to individuals weigh heavily in favor of the adoption of differential privacy.
 
@@ -335,7 +335,7 @@ diffpriv_t2()
 
 @altman2015 propose a framework for selecting reasonable and appropriate privacy and security measures that are calibrated to the intended uses, threats, harms, and vulnerabilities associated with a specific research activity.[^diffpriv31] For applying this framework in practice, @altman2015 recommend a life-cycle approach to decomposing the factors at each information stage, including the collection, transformation, retention, access and release, and post-access stages. A diagram from @altman2015 illustrating a partial conceptualization of this framework is reproduced in Figure \@ref(fig:dpfig4). The x-axis represents the sensitivity of the information, or the maximum level of expected harm to an individual in the data resulting from uncontrolled use of the data. The y-axis represents the post-transformation identifiability, or the potential for others to learn about individuals based on the inclusion of their information in the data. Examples range from data sets containing direct or indirect identifiers to data shared using expertly applied rigorous disclosure limitation techniques backed by a formal mathematical proof of privacy (e.g., user-level differential privacy with a low value of $\varepsilon$).
 
-```{r dpfig4, echo=F, fig.cap="Calibrating privacy and security controls."}
+```{r dpfig4, echo=F, fig.cap="Calibrating privacy and security controls"}
 knitr::include_graphics('./assets/diffpriv/dp_opendata_web.png')
 ```
 
@@ -373,7 +373,7 @@ Differential privacy provides a quantifiable trade-off between privacy and utili
 
 When operating within the framework of existing tools, one should plan to test that outputs remain useful for the intended purposes. There are many different measures of utility and, even if an algorithm does a good job at trading off between utility and privacy, the utility loss for a particular use case may be quite different than the average loss.
 
-#### What is the Nature and Degree of Informational Risk to be Mitigated?
+#### What Is the Nature and Degree of Informational Risk to be Mitigated?
 
 Another factor to consider when deciding whether to adopt differential privacy is the nature and degree of informational risk to be mitigated. Figure \@ref(fig:dpfig4) illustrates an approach to conceptualizing whether differential privacy is a suitable control to use given different levels of harm associated with uncontrolled use of a particular data set. Some of the relevant questions to consider involve the sensitivity of the information and the potential for risks to accumulate with multiple releases of information about the same individuals or groups of individuals.
 
@@ -487,10 +487,13 @@ Salil Vadhan is the Vicky Joseph Professor of Computer Science and Applied Mathe
 
 Alexandra Wood is a fellow at the Berkman Klein Center for Internet & Society at Harvard University and a senior researcher contributing to the Harvard Privacy Tools Project. Her research explores new and existing regulatory frameworks for data privacy and their relationship to approaches to privacy emerging from other fields. She also contributes to the development of new legal instruments, analytical frameworks, and policy recommendations to better support the sharing and use of research data while preserving privacy, utility, transparency, and accountability. She currently serves as an advisory board member for the Privacy Engineering Section of the International Association of Privacy Professionals and in 2019 she received the Caspar Bowden PET Award for Outstanding Research in Privacy Enhancing Technologies.
 
+## Disclaimer {-}
+
+Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of their funders.
+
 ## Acknowledgements {-}
 
-Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported by the US Census Bureau under cooperative agreement No. CB16ADR0160001. Salil Vadhan was also partially supported by a Simons Investigator Award. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of their funders. Some of the content in this chapter (Sections \@ref(sec:dp-intro)--\@ref(sec:aligning)) is excerpted from, adapted from, or otherwise based, in part, on Alexandra Wood, Micah Altman, Aaron Bembenek, Mark Bun, Marco Gaboardi, James Honaker, Kobbi Nissim, David R. O'Brien, Thomas Steinke, and Salil Vadhan, "Differential Privacy: A Primer for a Non-technical Audience", 21 *Vanderbilt Journal of Entertainment & Technology Law* 209 (2018) *and* Micah Altman, Alexandra Wood, David R. O'Brien, Salil Vadhan, and Urs Gasser, "Towards a Modern Approach to Privacy-Aware Government Data Releases", 30 *Berkeley Technology Law Journal* 1967 (2015). The authors thank their coauthors on those papers, as well as Jean-François Couchot and Jean-Marc Gervais for their inquiries that led us to uncover a mistake in the calculation of Table \@ref(tab:diffprivtable1); Mercè Crosas, Raj Chetty, and John Friedman for their comments on the case studies; Marco Gaboardi and Michael Hay for help with software tools; and Simson Garfinkel, Steven Glazerman, Michel José Reymond, Jayshree Sarathy, Anja Sautmann, Lars Vilhuber, and the members of the Bridging Privacy Definitions Working Group for their review comments on earlier drafts.
-
+Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported by the US Census Bureau under cooperative agreement No. CB16ADR0160001. Salil Vadhan was also partially supported by a Simons Investigator Award. The authors thank their coauthors on those papers, as well as Jean-François Couchot and Jean-Marc Gervais for their inquiries that led us to uncover a mistake in the calculation of Table \@ref(tab:diffprivtable1); Mercè Crosas, Raj Chetty, and John Friedman for their comments on the case studies; Marco Gaboardi and Michael Hay for help with software tools; and Simson Garfinkel, Steven Glazerman, Michel José Reymond, Jayshree Sarathy, Anja Sautmann, Lars Vilhuber, and the members of the Bridging Privacy Definitions Working Group for their review comments on earlier drafts.
 
 
 [^diffpriv1]: For an overview of traditional SDL techniques, see @harris-kojetin_statistical_2005 and chapter \@ref(discavoid) in this Handbook.
