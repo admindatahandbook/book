@@ -3,7 +3,7 @@ IAB RDC <br> (chapter \@ref(iab)),Medium,Data Provider,Third-Party,High Security
 IAB JoSuA <br> (chapter \@ref(iab)),Medium,Third-Party,Researcher,Low Security,Limited
 IAB SUF <br> (chapter \@ref(iab)),High,Researcher,Researcher,Medium Security,Unrestricted
 OLDA <br> (chapter \@ref(olda)),High,Researcher,Researcher,Low Security,Unrestricted
-NB-IRDT <br> (chapter \@ref(nbirdt)),Medium,Third-Party,Data Custodian,High Security,Limited
+NB-IRDT <br> (chapter \@ref(nbirdt)),Medium,Third-Party,Data Custodian,High Security,Unrestricted
 PCRI <br> (chapter \@ref(pcri)),Medium,Data Provider,Researcher,Low Security,Limited
 Aurora <br> (chapter \@ref(ahc)),High,Researcher,Researcher,Low Security,Unrestricted
 Stanford-SFUSD <br> (chapter \@ref(sfusd)),High,Researcher,Researcher,Low Security,Unrestricted

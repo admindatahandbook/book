@@ -269,7 +269,7 @@ A **high security access location** has strong specifications for physical secur
 
 If not already existent at the access location, data custodians or access providers will require expertise from IT and security specialists to assist with defining the specifications and implementation of the features of high security access rooms.
 
-A **medium security access location** has a defined location with access restricted to approved researchers. These can be rooms secured with [keycards][physical access cards], [biometrics][biometric authentication], or a simple lock and key restricted to approved staff. Such restrictions may be designed to prevent a limited set of unauthorized access attempts or to inhibit shoulder surfing Medium security access rooms may incur additional costs for the location administrator, requiring dedicated space and staff to maintain the access location itself, but may also be as simple as a designated locked room at a university research institute.
+A **medium security access location** has a defined location with access restricted to approved researchers. These can be rooms secured with [keycards][physical access cards], [biometrics][biometric authentication], or a simple lock and key restricted to approved staff. Such restrictions may be designed to prevent a limited set of unauthorized access attempts or to inhibit shoulder surfing. Medium security access rooms may incur additional costs for the location administrator, requiring dedicated space and staff to maintain the access location itself, but may also be as simple as a designated locked room at a university research institute.
 
 A **low security access location** has few or no access controls. Simple restrictions might include broad geo-restrictions (campus-only) or procedures to follow. Data providers may mandate storing the access computer in a locked room or the use of [IP address restrictions]. When no access restrictions are imposed, researchers are free to use access computers from any location.
 
@@ -284,7 +284,7 @@ if ( knitr::is_latex_output() ) {
 }
 ```
 
-This section combines the type of access and location into one aspect, since the ultimate convenience to researchers arises from a combination of the two security measures. For instance, a data provider might provide researchers with a dedicated secure laptop, which can only be used to remotely access the analysis computers and nothing else. While there may be no location restrictions imposed on the researcher, the researcher is unlikely to carry two laptops around, and this would be considered to be a de-facto **medium** security solution.
+This section combines the type of access and location into one aspect, since the ultimate convenience to researchers arises from a combination of the two security measures. For instance, a data provider might provide researchers with a dedicated secure laptop, which can only be used to remotely access the analysis computers and nothing else. While there may be no location restrictions imposed on the researcher, the secured computer does not hold any data and this may be considered to be a de-facto **medium** security solution.
 
 The terms of the remote access will be defined in the DUA between the researcher and the data provider. The risks of locating the access computers but not the analysis computers away from the data provider are smaller. Because access computers contain no data, even if encrypted, the risk of inadvertent disclosure (for instance, if stolen) is reduced. Remaining risks include shoulder surfing and credential sharing, which can be mitigated by using third parties to control access. There is substantial convenience for researchers from having the access computer closer to their usual place of work, increasing the speed of research. The growth of networks of research data centers, where access is shared amongst many users while data are mostly remote, is testament to the demand among researchers and the acceptability of the risk for many data providers.
 
@@ -318,7 +318,7 @@ This section evaluates several data access mechanisms along the five aspects. So
 ### New Brunswick Institute for Research, Data and Training (NB-IRDT)
 
 ```{r, securitynbirdtplot, echo=FALSE, fig.width=3, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
-#plot_summary("NB-IRDT",nbirdt,2,2,1,1,2)
+#plot_summary("NB-IRDT",nbirdt,2,2,1,1,3)
 knitr::include_graphics('./assets/security/badge_nbirdtweb.png')
 ```
 
