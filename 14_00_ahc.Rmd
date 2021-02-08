@@ -198,6 +198,10 @@ After the clinical decision support project, two of the key executives at ARI le
 
 Beyond process, the Aurora analysts who worked on data extraction gained insight into the data and techniques for processing data that have improved their efficiency. For example, the best practice alert data used for this project is not commonly analyzed by the health care system; however, the analysts stated that understanding these data has helped them respond to internal requests from the pharmacy information systems group on how to analyze their alert data. As another example, many internal reporting and assessment projects at Aurora require matching data across data systems, and the need for, and complexity of, linking data has increased as the teams must now integrate data from the Advocate systems. The Aurora analyst team has applied their knowledge gained on the CDS project of how to match patient names or other records in a string format to these internal projects.[^ahc9]
 
+```{r, echo=FALSE, results='asis'}
+printsupp("ahc")
+```
+
 ## About the Authors {-}
 
 [Laura Feeney](https://www.povertyactionlab.org/person/feeney) is the Associate Director of Research and Training at J-PAL North America. She provides strategic direction to the research and training team in efforts to support researchers and improve the quality and efficiency of randomized evaluations. She works with researchers, partners, and staff to develop and promote best practices in research, build the capacity of policymakers and research staff, and encourage the use of administrative data for research.

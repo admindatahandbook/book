@@ -126,6 +126,10 @@ Regarding performance, the metrics used vary significantly with the nature of th
 
 The intensity and frequency with which administrative data are used at the IMF depends on whether these are used for +technical_assistance|, lending-related purposes, or for macroeconomic +surveillance| and research. While the use of administrative data usage is common in the first two areas it is much less so in the latter. In the absence of institutional protocols and incentives, the use of such data for research purposes depends on staff initiative in approaching national authorities/data providers. There is an increasing recognition, however, of the benefits of using these kinds of data for Fund's surveillance and research leading to several successful engagements such as the ones described in this chapter. At the same time, the Fund's unique status as an international organization creates opportunities. In particular, in the future, through its bilateral engagement with its 189 member countries, participation in international data initiatives and partnerships with universities and research networks, the IMF has the potential to gradually enhance cross-country comparability, access, and use for (at least some) administrative data produced by national authorities for research purposes.
 
+```{r, echo=FALSE, results='asis'}
+printsupp("imf")
+```
+
 ## About the Authors {-}
 
 [Era Dabla-Norris](https://www.imf.org/external/np/cv/AuthorCV.aspx?AuthID=299) is the mission chief for Vietnam and division chief at the IMF's Asia-Pacific Department. Previously, she was a division chief at the IMF's Fiscal Affairs Department.

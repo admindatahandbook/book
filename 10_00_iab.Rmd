@@ -268,6 +268,10 @@ In general, user ratings are very good. For example, Figure \@ref(fig:iabfig3) s
 knitr::include_graphics('./assets/iab/iabfigure3web.png')
 ```
 
+```{r, echo=FALSE, results='asis'}
+printsupp("iab")
+```
+
 ## About the Authors {-}
 
 [Dana Müller](https://www.iab.de/en/ueberblick/mitarbeiter.aspx/Mitarbeiter/251) is the Head of the Research Data Center (RDC-IAB) of the Federal Employment Agency (BA) at the Institute for Employment Research (IAB) in Nuremberg, Germany. Previously, she was a researcher at the IAB and the Chemnitz University of Technology. In these positions, Dana Müller has worked with survey data, administrative data, and big-data; she has developed a deep knowledge and extensive experience in linkages of social security records, administrative information, and survey data. She has led many initiatives, including the project "Quality of work and economic success" and "Biographical data of selected social insurance in Germany." Both projects were linking different administrative and survey data to advance social science research.
