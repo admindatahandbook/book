@@ -61,14 +61,16 @@ iabtable1 <- function(outputformat){
       pack_rows("Sample of Integrated Labour Market Biographies (SIAB)",1,3) %>%
       pack_rows("Establishment History Panel (BHP)",4,6) %>%
       pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
-      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).", footnote_as_chunk = T, general_title = "Notes: ")
+      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).", footnote_as_chunk = T, general_title = "Notes: ") -> table
+      print(table)
   } 
   if (outputformat == "epub3") {
     iabt1data %>%
       kable("html", escape = F, caption="Selected RDC-IAB Data", col.names = NULL, booktabs=T) %>%
       kable_styling(full_width = F) %>%
       column_spec(1, width="10em") %>%
-      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).", footnote_as_chunk = T, general_title = "Notes: ")
+      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).", footnote_as_chunk = T, general_title = "Notes: ") -> table
+      print(table)
   } 
 }
 
@@ -82,12 +84,14 @@ iabtable2<-function(outputformat){
     knitr::kable(iabt2data, booktabs = TRUE,
                caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding Bachelor and Master theses)") %>%
       kable_styling(full_width = F) %>%
-      add_indent(c(c(2)))
+      add_indent(c(c(2))) -> table
+    print(table)
   }
   if (outputformat == "epub3") {
     knitr::kable(iabt2data, 
                caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding Bachelor and Master theses)") %>%
-      kable_styling(full_width = F)
+      kable_styling(full_width = F) -> table
+    print(table)
   }
   
 }

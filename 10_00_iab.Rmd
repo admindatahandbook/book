@@ -63,7 +63,9 @@ Table \@ref(tab:iabtable1) provides a selective overview of research data availa
 
 ```{r iabtable1, tidy=FALSE, echo=F,results='asis'}
 # the function does it all
-  iabtable1(outputformat)
+message(outputformat)
+iabtable1(outputformat)
+
 ```
 
 ## Making Data Usable for Research {#iab-usable}

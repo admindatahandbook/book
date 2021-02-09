@@ -106,6 +106,8 @@ file.copy(assets.dir, output.dir, recursive=TRUE)
 
 outputformat <- knitr:::pandoc_to()
 
+message(paste0("Outputformat set to =",outputformat))
+
 if ( knitr::is_latex_output() ) {
    knitr::opts_chunk$set(dpi = NA)
 } 
