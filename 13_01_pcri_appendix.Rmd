@@ -98,9 +98,23 @@ cat("\\FloatBarrier\\newpage")
 ```
 
 
+### Appendix B {-}
 
-```{r appendixb,child="./assets/pcri/pcri_appendixb_online.md",eval=knitr::is_html_output()}
+
+```{r,eval=outputformat == "html",echo=FALSE,results='asis'}
+cat("[Sample Data Sponsor Agreement](./assets/appendix/pcri_appendix_b.pdf)")
 ```
 
-```{r appendixc,child="./assets/pcri/pcri_appendixc_list.md",eval=knitr::is_html_output()}
+```{r,eval=outputformat == "epub3",echo=FALSE,results='asis'}
+cat(paste0("[Sample Data Sponsor Agreement](",
+           config$base_url,
+           "/",
+           config$version_link,
+           "/assets/appendix/pcri_appendix_b.pdf)"
+           )
+    )
+```
+
+
+```{r appendixc,child="./assets/pcri/pcri_appendixc_list.md",eval=outputformat == "html"}
 ```

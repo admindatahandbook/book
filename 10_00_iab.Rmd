@@ -63,7 +63,7 @@ Table \@ref(tab:iabtable1) provides a selective overview of research data availa
 
 ```{r iabtable1, tidy=FALSE, echo=F,results='asis'}
 # the function does it all
-  iabtable1()
+  iabtable1(outputformat)
 ```
 
 ## Making Data Usable for Research {#iab-usable}
@@ -253,7 +253,7 @@ Additional statistics are also submitted to the annual activity report for all +
 
 ```{r iabtable2, tidy=FALSE, echo=F,results='asis'}
   if ( knitr::is_html_output() ) {
-    iabtable2()
+    iabtable2(outputformat)
   }
   if ( knitr::is_latex_output() ) {
     cat("\\input{./tables/iab/iabtable2.tex}")

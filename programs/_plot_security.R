@@ -199,25 +199,27 @@ securitytable5<-function() {
 
 # Summary Table
 
-summarymechs <- read.csv("./assets/security/mechanisms.csv")
-plotallmechs<-function(html=TRUE) {
-   if ( html ) {
+plotallmechs<-function(outputformat) {
+   if ( outputformat == "html" ) {
+   summarymechs <- read.csv("./assets/security/mechanisms.csv")
    summarymechs %>%
-   kable(escape=F, "html", align="cccccc",
-         col.names = c("Data Access Mechanism","Researcher Agency Over Analysis Computer",
-                       "Location of Data and Analysis Computer",
-                       "Location of Access Computer",
-                       "Access Security",
-                       "Range of Analysis Methods Available"),
-         caption = "Summary of Access Mechanisms Along the Five Aspects") %>%
-   kable_styling(font_size=12) %>%
-   column_spec(1, width="10em") %>%
-   column_spec(2, width="17em", background=(ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Low",config$colors$aspect_low,ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Medium",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   column_spec(3, width="17em", background=(ifelse(summarymechs$location[1:nrow(summarymechs)]=="Data Provider",config$colors$aspect_low,ifelse(summarymechs$location[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   column_spec(4, width="17em", background=(ifelse(summarymechs$access[1:nrow(summarymechs)]=="Data Custodian",config$colors$aspect_low,ifelse(summarymechs$access[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   column_spec(5, width="17em", background=(ifelse(summarymechs$sec[1:nrow(summarymechs)]=="High Security",config$colors$aspect_low,ifelse(summarymechs$sec[1:nrow(summarymechs)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
-   column_spec(6, width="17em", background=(ifelse(summarymechs$range[1:nrow(summarymechs)]=="Highly Restricted",config$colors$aspect_low,ifelse(summarymechs$range[1:nrow(summarymechs)]=="Limited",config$colors$aspect_med,config$colors$aspect_high))))
-   } else {
+      kable(escape=F, "html", align="cccccc",
+            col.names = c("Data Access Mechanism","Researcher Agency Over Analysis Computer",
+                        "Location of Data and Analysis Computer",
+                        "Location of Access Computer",
+                        "Access Security",
+                        "Range of Analysis Methods Available"),
+            caption = "Summary of Access Mechanisms Along the Five Aspects") %>%
+      kable_styling(font_size=12) %>%
+      column_spec(1, width="10em") %>%
+      column_spec(2, width="17em", background=(ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Low",config$colors$aspect_low,ifelse(summarymechs$agency[1:nrow(summarymechs)]=="Medium",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+      column_spec(3, width="17em", background=(ifelse(summarymechs$location[1:nrow(summarymechs)]=="Data Provider",config$colors$aspect_low,ifelse(summarymechs$location[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+      column_spec(4, width="17em", background=(ifelse(summarymechs$access[1:nrow(summarymechs)]=="Data Custodian",config$colors$aspect_low,ifelse(summarymechs$access[1:nrow(summarymechs)]=="Third-Party",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+      column_spec(5, width="17em", background=(ifelse(summarymechs$sec[1:nrow(summarymechs)]=="High Security",config$colors$aspect_low,ifelse(summarymechs$sec[1:nrow(summarymechs)]=="Medium Security",config$colors$aspect_med,config$colors$aspect_high)))) %>%
+      column_spec(6, width="17em", background=(ifelse(summarymechs$range[1:nrow(summarymechs)]=="Highly Restricted",config$colors$aspect_low,ifelse(summarymechs$range[1:nrow(summarymechs)]=="Limited",config$colors$aspect_med,config$colors$aspect_high))))
+   } 
+   if ( outputformat == "latex" ) {
+      summarymechs <- read.csv("./assets/security/mechanisms.csv")
       x <- xtable(summarymechs, type="latex")
       align(x) <- rep("L",ncol(summarymechs)+1)
       outfile <- "./tables/security/summarymech.tex"
@@ -231,5 +233,17 @@ plotallmechs<-function(html=TRUE) {
       }
       cat("\\input{./tables/security/securitysummarytable.tex}")
    }
+   if ( outputformat == "epub3" ) {
+   summarymechs <- read.csv("./assets/security/mechanisms.csv")
+   summarymechs %>%
+      kable("html", align="cccccc",
+            col.names = c("Data Access Mechanism","Researcher Agency Over Analysis Computer",
+                        "Location of Data and Analysis Computer",
+                        "Location of Access Computer",
+                        "Access Security",
+                        "Range of Analysis Methods Available"),
+            caption = "Summary of Access Mechanisms Along the Five Aspects") 
+   } 
+   
 }
 

@@ -73,36 +73,36 @@ diffpriv_t2<-function() {
 
 diffpriv_t3data<-data.frame(
   model=c("*Trust Model*","*Data Publi-\ncation Model*","*Privacy Granu-\nlarity*","*Privacy Budget Alloca-\ntion*","*Utility Con-\nsidera-\ntions*"),
-  dimensions=c("<li>Central curator</li><li>Local collector</li>",
-               "<li>Static</li><li>Interactive</li>",
-               "<li>Unit of protection</li>",
-               "<li>Allocation across uses</li><li>Allocation across groups</li><li>Allocation across measures</li>",
-               "<li>Anticipating uses</li><li>Evaluating utility</li><li>Managing statistical uncertainty"),
-  collection=c("<li>Consent</li><li>Compliance: Information security</li><li>Measurement design</li><li>Compliance: Anonymization</li>",
-               "<li>Measurement design</li>",
-               "<li>Consent</li><li>Measurement design</li>",
-               "<li>Consent</li>",
-               "<li>Measurement design"),
-  transformation=c("<li>Data cleaning</li><li>Data linking</li>",
-                   "<li>Data linking</li>",
+  dimensions=c("<ul><li>Central curator</li><li>Local collector</li></ul>",
+               "<ul><li>Static</li><li>Interactive</li></ul>",
+               "<ul><li>Unit of protection</li></ul>",
+               "<ul><li>Allocation across uses</li><li>Allocation across groups</li><li>Allocation across measures</li></ul>",
+               "<ul><li>Anticipating uses</li><li>Evaluating utility</li><li>Managing statistical uncertainty</li></ul>"),
+  collection=c("<ul><li>Consent</li><li>Compliance: Information security</li><li>Measurement design</li><li>Compliance: Anonymization</li></ul>",
+               "<ul><li>Measurement design</li></ul>",
+               "<ul><li>Consent</li><li>Measurement design</li></ul>",
+               "<ul><li>Consent</li></ul>",
+               "<ul><li>Measurement design</li></ul>"),
+  transformation=c("<ul><li>Data cleaning</li><li>Data linking</li></ul>",
+                   "<ul><li>Data linking</li></ul>",
                    " ",
-                   "<li>Data cleaning</li>",
-                   "<li>Data linkage</li>"),
-  retention=c("<li>Compliance: Information security</li>",
-              "<li>Costrs</li><li>Information security</li><li>Legal requirements</li>",
+                   "<ul><li>Data cleaning</li></ul>",
+                   "<ul><li>Data linkage</li></ul>"),
+  retention=c("<ul><li>Compliance: Information security</li></ul>",
+              "<ul><li>Costrs</li><li>Information security</li><li>Legal requirements</li></ul>",
               "",
               "",
               ""),
-  access=c("<li>Legal requirements</li><li>Range of uses</li>",
-           "<li>Costs</li><li>Compliance: Information security</li><li>Range of uses</li><li>Usage tracking</li>",
-           "<li>Range of uses</li>",
-           "<li>Usage tracking</li>",
-           "<li>Range of uses</li>"),
-  postaccess=c("<li>Deaccessioning & disposal</li><li>Information security</li><li>Legal requirements</li><li>Replicability & verification</li><li>Preservation</li>",
-               "<li>Costs</li><li>Compliance: Information security</li><li>Compliance: Reporting and correction</li><li>Replicability & verification</li><li>Preservation</li>",
+  access=c("<ul><li>Legal requirements</li><li>Range of uses</li></ul>",
+           "<ul><li>Costs</li><li>Compliance: Information security</li><li>Range of uses</li><li>Usage tracking</li></ul>",
+           "<ul><li>Range of uses</li></ul>",
+           "<ul><li>Usage tracking</li></ul>",
+           "<ul><li>Range of uses</li></ul>"),
+  postaccess=c("<ul><li>Deaccessioning & disposal</li><li>Information security</li><li>Legal requirements</li><li>Replicability & verification</li><li>Preservation</li></ul>",
+               "<ul><li>Costs</li><li>Compliance: Information security</li><li>Compliance: Reporting and correction</li><li>Replicability & verification</li><li>Preservation</li></ul>",
                "",
-               "<li>Use & use auditing</li>",
-               "<li>Utility evaluation</li>")
+               "<ul><li>Use & use auditing</li></ul>",
+               "<ul><li>Utility evaluation</li></ul>")
            
 )
 
@@ -136,23 +136,23 @@ diffpriv_t3<-function(){
 
 diffpriv_t4data<-data.frame(
   casestudy=c("*2020 Decennial Census*","*The Opportunity Atlas*","*Dataverse Repositories*"),
-  risks=c("**Sensitivity:** Data subject to stringent statutory protections. Trust in confidentiality critical to collecting sensitive information from respondents.<br><br>
+  risks=c("**Sensitivity:** Data subject to stringent statutory protections. Trust in confidentiality critical to collecting sensitive information from respondents.<br/><br/>
           **Risks:** Concerns about composition effects and reconstruction attacks motivated adoption of DP.",
-          "**Sensitivity:** Data subject to stringent statutory protections.<br><br>
+          "**Sensitivity:** Data subject to stringent statutory protections.<br/><br/>
           **Risks:** Prior methods of de-identification and redaction judged not to sufficiently mitigate risk.",
-          "**Sensitivity:** General-purpose system designed to support analyses of data of varying degrees of sensitivity.<br><br>
+          "**Sensitivity:** General-purpose system designed to support analyses of data of varying degrees of sensitivity.<br/><br/>
           **Risks:** Vary by data source. DP provides stronger mechanism to mitigate risk than pre-deposit redaction and deidenfication."),
   access=c("Part of a tiered access system that has historically included custom tabulations service for institutional clients; and Research Data Centers for access by vetted individuals to private data.",
            "Original data sources remain available to vetted users through federal Restricted Data Center mechanism.",
            "Part of a tiered access model that also supports access to private data with vetting and restricted license."),
-  trust=c("Curator model, based on prior data collection design, with cleaning before DP applied.<br><br>
+  trust=c("Curator model, based on prior data collection design, with cleaning before DP applied.<br/><br/>
           Focus on non-interactive publication of tables.",
           "Curator model applied to previously collected data, with cleaning and linkage (between Census and IRS data) before DP-like methods applied.",
-          "Curator model, based on previously collected and deposited data.<br><br>
+          "Curator model, based on previously collected and deposited data.<br/><br/>
           Supports both non-interactive releases of summary statistics and interactive queries."),
   budget=c("Must allocate budget and optimize accuracy for broad range of current and future analyses.",
            "Budget analysis focused on balancing privacy vs. societal utility, leading to choice of a rather large epsilon.",
-           "Provides recommended choices of epsilon based on sensitivity of data.<br><br>
+           "Provides recommended choices of epsilon based on sensitivity of data.<br/><br/>
            Choice to allow per-analyst budgets requires semi-trusted and accountable analysts."),
   estimating=c("Adopting DP has made noise addition explicit, whereas data users had previously treated Census tables as if they have no error.",
                "Designed to produce uncertainty estimates (taking privacy noise into account) together with quantities of interest, and estimates also calculated in a DP-like manner.",

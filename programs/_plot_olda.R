@@ -32,8 +32,8 @@ oldat1data <- data.frame(
              "Ohio Department of Education",
              "Ohio Housing Finance Agency", 
              "Opportunities for Ohioans with Disabilities"),
-  datasets = c("<li>Unemployment Insurance Wage Data</li><li>Quarterly Census on Wages and Employment</li><li>Job Seeker Information</li><li>Workforce Investment Act Standardized Record Data</li><li>Unemployment Insurance Claimant Data</li>",
-               "<li>Higher Education Information (Student, Course, and Faculty)</li><li>Ohio Technical Centers</li><li>Adult Basic and Literacy Education</li>",
+  datasets = c("<ul><li>Unemployment Insurance Wage Data</li><li>Quarterly Census on Wages and Employment</li><li>Job Seeker Information</li><li>Workforce Investment Act Standardized Record Data</li><li>Unemployment Insurance Claimant Data</li></ul>",
+               "<ul><li>Higher Education Information (Student, Course, and Faculty)</li><li>Ohio Technical Centers</li><li>Adult Basic and Literacy Education</li></ul>",
                "Education Management Information System",
                "Ohio Housing Tenant Files",
                "Vocational Rehabilitation"),
@@ -60,8 +60,8 @@ oldatable1<-function(){
 oldat2data <- data.frame(
   study = c("Program evaluations",
             "Descriptive and multivariate studies"),
-  title = c("<li>Wage Pathway Evaluation Study [@hawley2019]</li><li>Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]</li><li>GEAR UP Evaluation<sup>1</sup></li>",
-            "<li>College Credit Plus [@harlow2018]</li><li>Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]</li>"))
+  title = c("<ul><li>Wage Pathway Evaluation Study [@hawley2019]</li><li>Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]</li><li>GEAR UP Evaluation<sup>1</sup></li></ul>",
+            "<ul><li>College Credit Plus [@harlow2018]</li><li>Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]</li></ul>"))
 
 oldatable2<-function(){
   kable(oldat2data, format="html", booktabs=T, escape=F,

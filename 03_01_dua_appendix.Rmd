@@ -6,8 +6,18 @@ cat("\\FloatBarrier\\newpage")
 
 ### Appendix A {- #dua-appendixa}
 
-```{r,eval=knitr::is_html_output(),echo=FALSE,results='asis'}
-cat("[Sample Text for Agreement Components](.\\appendix\\dua_appendix.pdf)")
+```{r,eval=outputformat == "html",echo=FALSE,results='asis'}
+cat("[Sample Text for Agreement Components](./appendix/dua_appendix.pdf)")
+```
+
+```{r,eval=outputformat == "epub3",echo=FALSE,results='asis'}
+cat(paste0("[Sample Text for Agreement Components](",
+           config$base_url,
+           "/",
+           config$version_link,
+           "/appendix/dua_appendix.pdf)"
+           )
+    )
 ```
 
 ```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}

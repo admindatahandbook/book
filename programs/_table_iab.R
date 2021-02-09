@@ -51,8 +51,8 @@ iabt1data <- data.frame(
 #   )
 # )
 
-iabtable1 <- function(){
-  # if (is_html_output()) {
+iabtable1 <- function(outputformat){
+  if (outputformat == "html") {
     iabt1data %>%
       kable("html", escape = F, caption="Selected RDC-IAB Data", col.names = NULL, booktabs=T) %>%
       kable_styling(full_width = F) %>%
@@ -62,46 +62,32 @@ iabtable1 <- function(){
       pack_rows("Establishment History Panel (BHP)",4,6) %>%
       pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
       footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).", footnote_as_chunk = T, general_title = "Notes: ")
-}    
-#   } else {
-#     outfile <- "./assets/iab/iabtable1.tex"
-#     if ( ! file.exists(outfile) ) {
-#       iabt1latexdata <- data.frame(lapply(iabt1data, function(x) {gsub("<br>", "\n", x)}), stringsAsFactors = F)
-#       
-#       inMinipage <- function(x, width) 
-#         paste0("\\begin{minipage}[t]{", 
-#                width, 
-#                "}\\raggedright\\setstretch{0.8}", 
-#                x, 
-#                "\\end{minipage}")
-#       
-#       
-#       iabt1data[[1]] <- inMinipage(iabt1data[[1]], "2.5cm") 
-#       
-#       iabt1data %>%  
-#         mutate_all(linebreak) %>%
-#         kable("latex", escape = F, caption="Selected RDC-IAB data", col.names = NULL, booktabs=T) %>%
-#         kable_styling(latex_options="scale_down") %>%
-#         column_spec(1, width="10em") %>%
-#         column_spec(2, width="25em") %>%
-#         pack_rows("Sample of Integrated Labour Market Biographies (SIAB)",1,3) %>%
-#         pack_rows("Establishment History Panel (BHP)",4,6) %>%
-#         pack_rows("Linked Employer-Employee Data (LIAB)",7,9) %>%
-#         footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the RDC website: https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx.", threeparttable=T)
-#     } else {
-#       # write to latex to include the file
-#       cat(paste0("\\input{",outfile,"}"))
-#     }
-#   }
-# }
+  } 
+  if (outputformat == "epub3") {
+    iabt1data %>%
+      kable("html", escape = F, caption="Selected RDC-IAB Data", col.names = NULL, booktabs=T) %>%
+      kable_styling(full_width = F) %>%
+      column_spec(1, width="10em") %>%
+      footnote(general="The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).", footnote_as_chunk = T, general_title = "Notes: ")
+  } 
+}
+
 
 # Table 2
 
 iabt2data<-read.csv("./assets/iab/table2.csv")
 
-iabtable2<-function(){
-  knitr::kable(iabt2data, booktabs = TRUE,
+iabtable2<-function(outputformat){
+  if (outputformat == "html") {
+    knitr::kable(iabt2data, booktabs = TRUE,
                caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding Bachelor and Master theses)") %>%
-    kable_styling(full_width = F) %>%
-    add_indent(c(c(2)))
+      kable_styling(full_width = F) %>%
+      add_indent(c(c(2)))
+  }
+  if (outputformat == "epub3") {
+    knitr::kable(iabt2data, 
+               caption = "Number of publications in 2018, including all publications with RDC-IAB data (excluding Bachelor and Master theses)") %>%
+      kable_styling(full_width = F)
+  }
+  
 }

@@ -35,10 +35,10 @@ cat("\\end{quote}")
 
 ### Appendix B: Case Study (Workforce Success Measures) {-}
 
-```{r echo=FALSE, out.width='100%'}
+```{r, echo=FALSE, out.width='100%',eval=outputformat != "epub3"}
 if ( knitr::is_html_output() ) {
-knitr::include_graphics('./assets/olda/appendixb.png')
-} 
+  knitr::include_graphics('./assets/olda/appendixb.png')
+}
 
 if ( knitr::is_latex_output() ) {
   if ( ! file.exists('./figures/olda_appendixb.png')) {
@@ -46,5 +46,10 @@ if ( knitr::is_latex_output() ) {
   }
   knitr::include_graphics('./figures/olda_appendixb.png')
 } 
+```
+
+```{r, echo=FALSE, eval=outputformat == "epub3"}
+  knitr::include_graphics('./assets/olda/appendixb.png')
+
 ```
 

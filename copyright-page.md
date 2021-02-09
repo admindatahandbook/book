@@ -7,7 +7,7 @@ The   individual   chapters   are   copyright   by   their   authors   or   as n
 ISBN 978-1-7360216-0-6 (print)
 ISBN 978-1-7360216-1-3 (ebook)
 
-DOI: 10.31485/admindatahandbook.1.0
+DOI: [10.31485/admindatahandbook.1.0.epub](https://doi.org/10.31485/admindatahandbook.1.0.epub)
 
 Cite this Handbook as: Cole,  Shawn,  Iqbal  Dhaliwal,  Anja  Sautmann,  and  Lars  Vilhuber (eds.), *Handbook  on  Using  Administrative  Data  for  Research  andEvidence-based  Policy*.   Cambridge,  MA:  Abdul  Latif  Jameel  Poverty Action Lab. 2020. 
 
