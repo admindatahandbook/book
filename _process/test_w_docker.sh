@@ -4,5 +4,7 @@ set -ev
 
 #cd $(dirname $0)
 
-docker pull larsvilhuber/ideahandbook:latest
-docker run -v $(pwd):/github/workspace larsvilhuber/ideahandbook:latest /github/workspace/_build.sh
+TAG=v20210209
+
+docker pull larsvilhuber/ideahandbook:$TAG
+docker run -v $(pwd):/github/workspace larsvilhuber/ideahandbook:$TAG /github/workspace/_build.sh
