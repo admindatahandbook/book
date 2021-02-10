@@ -33,6 +33,14 @@ do
 done
 zip -rp handbook.epub EPUB/text/ch*
 
+# next steps
+echo "Using calibre, convert EPUB to MOBI and AZW3"
+echo ""
+echo 'ebook-convert "handbook.epub" "handbook.azw3"'
+echo 'ebook-convert "handbook.epub" "handbook.mobi"'
+echo ""
+echo "then copy into root of published version"
+
 
 
 
