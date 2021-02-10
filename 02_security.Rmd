@@ -367,7 +367,7 @@ Approximately a dozen full-time staff maintain the data access mechanism. OLDA r
 #### Private Capital Research Institute (PCRI)
 
 ```{r, securitypcriplot, echo=FALSE, fig.width=3, fig.height=2,out.extra='style="float:left; padding:10px"',eval=knitr::is_html_output()}
-plot_summary("PCRI",pcri,2,2,3,3,2)
+#plot_summary("PCRI",pcri,2,2,3,3,2)
 knitr::include_graphics('./assets/security/badge_pcriweb.png')
 ```
 
