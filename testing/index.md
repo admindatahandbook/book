@@ -22,7 +22,6 @@ always_allow_html: true
 
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. Readers can also obtain the Handbook for free as an ebook or a printable PDF, or can purchase a printed copy, from the [Handbook's home page](https://admindatahandbook.mit.edu/).")
 
-
 <!--chapter:end:index.Rmd-->
 
 # About the Editors {- #about}
@@ -62,7 +61,7 @@ We thank [Jim Shen](https://www.povertyactionlab.org/person/shen) for his work m
 *Daniel L. Goroff  
 Vice President and Program Director  
 Alfred P. Sloan Foundation*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Goroff, Daniel L.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Daniel L. Goroff. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Goroff, Daniel L.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Daniel L. Goroff. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 This is an important Handbook, compiled by an important institution, on an important topic. The Alfred P. Sloan Foundation is therefore a particularly proud sponsor of the Innovations in Data and Experiments for Action Initiative (IDEA) of the Abdul Latif Jameel Poverty Action Lab (J-PAL), which has taken on this endeavor, and of work on administrative data generally.
 
@@ -112,7 +111,7 @@ Professors lament that, absent such intermediaries, the time and effort they spe
 Indeed, obsession with "getting the data" may blind researchers to other approaches or considerations. Most administrative data, after all, are only observational. Unless it describes suitable treatment and comparison groups, such data can rarely, if ever, yield robust causal conclusions. Running a well-designed RCT can, of course. RCTs usually require not just access to administrative data, but also the active cooperation of administrators in carrying out an experiment. Chapters in this Handbook provide examples from around the world where concentrating on how to answer an important question, instead of just how to obtain an attractive data set, has paid off handsomely.
 <!-- ``` -->
 
-<div align="center">***</div>
+<center>***</center>
 
 Faced with all these costs, researchers naturally look for funding to cover expenses. That includes making proposals to grant-making organizations like the Alfred P. Sloan Foundation. When describing my work there, I often say that I am in the public goods business. That framing, when invoked in discussions of open data as a pure public good, suggests that the provision of data depends on solving a collective action problem, that is, a game where the natural Nash equilibrium fails to be Pareto efficient.
 
@@ -142,7 +141,7 @@ Building these nodes, whether they are called Administrative Data Research Facil
 *Iqbal Dhaliwal (J-PAL, Massachusetts Institute of Technology)*  
 *Anja Sautmann (World Bank)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Shawn, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Shawn, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## The Potential of Administrative Data for Research and Policymaking
 
@@ -254,103 +253,103 @@ To showcase such solutions, we have selected an array of case studies that have 
 <tbody>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 7: Institute for Employment Research (RDC-IAB)</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: national government agency </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: national government agency </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: varies by dataset, includes access to web-based remote submission, secure rooms at IAB and partnering universities, secure computers at universities. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: varies by dataset, includes access to web-based remote submission, secure rooms at IAB and partnering universities, secure computers at universities. </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> A clear legal mandate allows RDC-IAB to distribute German labor market data through a sophisticated network of remote access points housed at national and international research institutions. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> A clear legal mandate allows RDC-IAB to distribute German labor market data through a sophisticated network of remote access points housed at national and international research institutions. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 8: Ohio Longitudinal Data Archive (OLDA)</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: state agencies </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: state agencies </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: research center at a public university provides data for download to approved users </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: research center at a public university provides data for download to approved users </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> A long-running and successful administrative data partnership that first emerged in 2007. In the last five years, 28 published studies have used data accessed through OLDA. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> A long-running and successful administrative data partnership that first emerged in 2007. In the last five years, 28 published studies have used data accessed through OLDA. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 9: New Brunswick Institute for Research, Data, and Training (NB-IRDT)</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: provincial government social protection agencies </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: provincial government social protection agencies </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: research center at a public university provides access to approved users </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: research center at a public university provides access to approved users </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> A relatively new partnership that has seen rapid growth and expansion in the data that it makes available to researchers, with specific legal mandates for data access and sharing. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> A relatively new partnership that has seen rapid growth and expansion in the data that it makes available to researchers, with specific legal mandates for data access and sharing. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 10: Private Capital Research Institute (PCRI)</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: private firms and publicly available data </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: private firms and publicly available data </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: remote access to data stored at a university-affiliated data archive </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: remote access to data stored at a university-affiliated data archive </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Meticulous data cleaning work and relationship building in an industry that tends to be secretive, as well as sophisticated data protection policies, led to the creation of a comprehensive database on private capital. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Meticulous data cleaning work and relationship building in an industry that tends to be secretive, as well as sophisticated data protection policies, led to the creation of a comprehensive database on private capital. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 11: Aurora Health Care</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: private company </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: private company </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: data is directly transferred to the researchers </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: data is directly transferred to the researchers </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> A proactive researcher team helped a private firm think through data protection and cleaning issues to enable a randomized control trial that measures sensitive health outcomes. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> A proactive researcher team helped a private firm think through data protection and cleaning issues to enable a randomized control trial that measures sensitive health outcomes. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 12: Stanford-San Francisco Unified School District (SFUSD) Partnership</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: school district </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: school district </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: research center at a private university provides data for download to affiliated faculty </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: research center at a private university provides data for download to affiliated faculty </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> A well-established and mature partnership with streamlined application and review processes that hosts comprehensive data on students, teachers, and schools, and supports data access for multiple projects each year. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> A well-established and mature partnership with streamlined application and review processes that hosts comprehensive data on students, teachers, and schools, and supports data access for multiple projects each year. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 13: City of Cape Town (CCT)</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: city government </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: city government </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: approved researchers access a server owned by the city government </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: approved researchers access a server owned by the city government </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> A new data policy led to a productive cooperation between the City and academic researchers to create systematic data access. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> A new data policy led to a productive cooperation between the City and academic researchers to create systematic data access. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 14: Development Impact Evaluation (DIME), World Bank Group</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: variety of public and private partners </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: variety of public and private partners </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: data is transferred directly to DIME </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: data is transferred directly to DIME </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> DIME's group of development economists and analysts apply best practices of research developed over time in partnerships with many different data providers. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> DIME's group of development economists and analysts apply best practices of research developed over time in partnerships with many different data providers. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 15: International Monetary Fund (IMF)</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: variety of international government partners </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: variety of international government partners </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: data is held by national governments or transferred directly to IMF </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: data is held by national governments or transferred directly to IMF </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> As part of its mandate, the IMF helps governments overhaul their tax records and systems and conduct research on the tax data. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> As part of its mandate, the IMF helps governments overhaul their tax records and systems and conduct research on the tax data. </td>
   </tr>
   <tr grouplength="3"><td colspan="1" style="border-bottom: 1px solid;"><strong>Chapter 16: Government of Indonesia</strong></td></tr>
 <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data provider: national government agencies </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data provider: national government agencies </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Data access: data is held by the government or transferred directly to researchers </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Data access: data is held by the government or transferred directly to researchers </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> A long-term research partnership with the government enabled multiple nationally representative experiments to improve the targeting of social programs. </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> A long-term research partnership with the government enabled multiple nationally representative experiments to improve the targeting of social programs. </td>
   </tr>
 </tbody>
 </table>
@@ -453,7 +452,7 @@ The existing literature also provides high-level guidance on numerous topics, in
 
 *Jim Shen (J-PAL, Massachusetts Institute of Technology)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shen, Jim,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Jim Shen, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shen, Jim,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Jim Shen, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Introduction
 
@@ -659,11 +658,11 @@ In the **high researcher agency** settings, researchers have few restrictions on
    <td style="text-align:left;"> In the [Statistics Canada Real Time Remote Access (RTRA)] system, researchers can only use SAS and cannot directly view the data with no exceptions allowed. </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Medium Agency </td>
+   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Medium Agency </td>
    <td style="text-align:left;"> The [Federal Statistical Research Data Centers (FSRDC)] network has a specific set of software on their secure computing network that is made available to researchers. Additional software can be requested, which must be approved by program managers and security analysts. </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> High Agency </td>
+   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> High Agency </td>
    <td style="text-align:left;"> In the [National Center for Education Statistics (NCES) restricted-use data license], the researcher must set up a secure data room in accordance with NCES requirements. Researchers provide the analysis computer, retaining full administrative control and the freedom to use any software. </td>
   </tr>
 </tbody>
@@ -697,11 +696,11 @@ Finally, individual **researchers** can act as the data custodian. This is still
    <td style="text-align:left;"> The [Institute for Employment Research (RDC-IAB)] (on-site access) house all highly confidential RDC-IAB data on their own servers, which are accessed remotely by researchers from various locations. </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Third Party </td>
+   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Third Party </td>
    <td style="text-align:left;"> The [Private Capital Research Institute (PCRI)] serves as a trusted third party for its data providers (private capital firms) and in turn contracts with a third party (National Opinion Research Center, NORC) to maintain the analysis computers and data access mechanism. </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> Researcher </td>
+   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Researcher </td>
    <td style="text-align:left;"> The Aurora Health Care and MIT data exchange has the data and analysis computer located with the researcher. Researchers must store the data in accordance with security requirements outlined in their DUA. </td>
   </tr>
 </tbody>
@@ -734,11 +733,11 @@ Finally, access computers can be located with the **researcher**. Trivially, loc
    <td style="text-align:left;"> The [New Brunswick Institute for Research, Data and Training (NB-IRDT)] is an example of locating access computers with the data custodian. Researchers wishing to use data held by NB-IRDT must travel to one of the NB-IRDT campuses to utilize the access computers. The access computers, in turn, connect over secure networks to the central analysis computers. </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Third Party </td>
+   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Third Party </td>
    <td style="text-align:left;"> The [SafePod Network (SPN)] in the United Kingdom is an example of locating access computers with a third-party access provider. Each individual SafePod, located at academic institutions, houses an access computer that provides remote access to the UK Administrative Data Research Network [@universityofbristol]. </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> Researcher </td>
+   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Researcher </td>
    <td style="text-align:left;"> The [RDC-IAB][Institute for Employment Research (RDC-IAB)] Job Submission Application (JoSuA) system is a web interface that researchers can use from their own computers to submit analysis files to the IAB-RDC for execution on IAB systems. </td>
   </tr>
 </tbody>
@@ -776,11 +775,11 @@ In addition to the locational security described above, the **type of access com
    <td style="text-align:left;"> The [FSRDC][Federal Statistical Research Data Centers (FSRDC)] network maintains a network of 29 locations [@unitedstatescensusbureaua]. While these secure rooms are located at partner organizations (universities, research centers, Federal Reserve Banks), the rooms themselves are under the control of the US Census Bureau and none contain any data. Each secure room contains multiple [thin clients]. Researchers travel (across campus or to a partner organization) to use the thin clients to access analysis computers located within the secure computing center of the Census Bureau [@unitedstatescensusbureaua]. </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #a8ddb5 !important;"> Medium Security </td>
+   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Medium Security </td>
    <td style="text-align:left;"> Data distributed under the [NCES restricted-use data license][National Center for Education Statistics (NCES) Restricted-Use Data License] must be kept in a locked room with access restricted only to licensed researchers, and the security arrangements are subject to random audits by NCES. </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #43a2ca !important;"> Low Security </td>
+   <td style="text-align:left;width: 12em; font-weight: bold;background-color: #e0f3db !important;"> Low Security </td>
    <td style="text-align:left;"> In the Stanford-SFUSD Partnership, data are stored on secured servers at Stanford. However, researchers can access the data from anywhere as long as they take reasonable and appropriate efforts to keep the data secure from unauthorized access as specified in their DUA. </td>
   </tr>
 </tbody>
@@ -914,7 +913,6 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 Table \@ref(tab:securitysummarytable) provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
 
-
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">(\#tab:securitysummarytable)Summary of Access Mechanisms Along the Five Aspects</caption>
  <thead>
@@ -940,105 +938,105 @@ Table \@ref(tab:securitysummarytable) provides a summary of the five asppects of
    <td style="text-align:center;width: 10em; "> IAB JoSuA <br> (chapter \@ref(iab)) </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low Security </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Limited </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> IAB SUF <br> (chapter \@ref(iab)) </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> High </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Medium Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> OLDA <br> (chapter \@ref(olda)) </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> High </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> NB-IRDT <br> (chapter \@ref(nbirdt)) </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Custodian </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Data Custodian </td>
    <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> High Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> PCRI <br> (chapter \@ref(pcri)) </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low Security </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Limited </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> Aurora <br> (chapter \@ref(ahc)) </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> High </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> Stanford-SFUSD <br> (chapter \@ref(sfusd)) </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> High </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> Cape Town <br> (chapter \@ref(cct)) </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> High </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> DIME <br> (chapter \@ref(dime)) </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> High </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> FSRDC </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Provider </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Custodian </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Data Provider </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Data Custodian </td>
    <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> High Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> NCES </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> High </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Medium Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> RTRA </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Provider </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Highly Restricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Low </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Data Provider </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Highly Restricted </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> SPN </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Low </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Medium Security </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Unrestricted </td>
   </tr>
 </tbody>
 </table>
@@ -1075,7 +1073,7 @@ A final related point is that the enforcement of the terms of the +DUA| is an im
 # Model Data Use Agreements: A Practical Guide {#dua}
 
 *Amy O'Hara (Georgetown University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">O'Hara, Amy. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Amy O'Hara. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">O'Hara, Amy. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Amy O'Hara. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 What are data use agreements? Data use agreements (DUA)---also referred to as data sharing agreements or data use licenses---are documents that describe what data are being shared, for what purpose, for how long, and any access restrictions or security protocols that must be followed by the recipient of the data. Other contracts, such as non-disclosure agreements, may be used to guarantee confidentiality over sensitive discussions, information, and data.
 
@@ -1239,9 +1237,7 @@ No matter the size of the project or the volume of data needed, all parties shou
 
 ### Appendix A {- #dua-appendixa}
 
-[Sample Text for Agreement Components](./appendix/dua_appendix.pdf)
-
-
+[Sample Text for Agreement Components](.\appendix\dua_appendix.pdf)
 
 
 
@@ -1300,7 +1296,7 @@ This index, a collection of standards, guides, and templates, is searchable by g
 # Collaborating with the Institutional Review Board (IRB) {#irb}
 
 *Kathleen Murphy (Northwestern University, ret.)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Murphy, Kathleen. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Kathleen Murphy. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Murphy, Kathleen. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Kathleen Murphy. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Introduction
 
@@ -1552,9 +1548,7 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 ## Appendix {- #irb-appendix}
 
-[Data-Only Protocol Template](./appendix/irb_appendix.pdf)
-
-
+[Data-Only Protocol Template](.\appendix\irb_appendix.pdf)
 
 
 
@@ -1567,7 +1561,7 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 *Ian M. Schmutte (University of Georgia)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Schmutte, Ian M.,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Ian M. Schmutte, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Schmutte, Ian M.,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Ian M. Schmutte, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 The purpose of this Handbook is to provide guidance on how to enable broader but ethical and legal access to data. Within the Five Safes framework [@desai2016], data providers need to create *safe data* that can be provided to trusted *safe people* for use within *safe settings* (chapter \@ref(security)), subject to legal and contractual safeguards (chapter \@ref(dua)).  Related, but distinct, is the question of how to create *safe outputs* from researchers' findings before those findings finally make their way into the public through, for example, policy briefs or the academic literature. The processes used to create safe data and safe outputs (manipulations that render data less sensitive and therefore more appropriate for public release) are generally referred to as +statistical_disclosure_limitation| (SDL).^[Other terms sometimes used are "anonymization" or "de-identification," but as this chapter will show, de-identification is a particular method of SDL, and anonymization is a goal, never fully achieved, rather than a method.] This chapter will describe techniques traditionally used within the field of SDL, pointing at methods as well as metrics to assess the resultant statistical quality and sensitivity of the data. Newer approaches, generally referred to as *formal privacy methods*, are described in chapter \@ref(diffpriv). 
 
@@ -1703,7 +1697,7 @@ Synthetic data have been used in the Federal Reserve Board's Survey of Consumer 
 
 Table \@ref(tab:overviewtable) shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources.
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:overviewtable)Summary of SDL methods</caption>
  <thead>
   <tr>
@@ -1882,7 +1876,7 @@ etic Data </th>
    <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
 <span style="font-style: italic;">Note: </span> <sup></sup> ![](./assets/discavoid/yesweb.png) = Yes, ![](./assets/discavoid/partialweb.png) = Partially, ![](./assets/discavoid/noweb.png) = No, --- = No Info</td></tr></tfoot>
 </table>
 
@@ -1952,7 +1946,7 @@ This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell
 *Micah Altman (Massachusetts Institute of Technology)*  
 *Kobbi Nissim (Georgetown University)*  
 *Salil Vadhan (Harvard University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Wood, Alexandra, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Alexandra Wood, Micah Altman, Kobbi Nissim, Salil Vadhan. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Wood, Alexandra, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Alexandra Wood, Micah Altman, Kobbi Nissim, Salil Vadhan. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Introduction and Overview {#sec:dp-intro}
 
@@ -2207,7 +2201,7 @@ Note that the above calculation requires certain information that may be difficu
 
 Calculations like those used in the analysis of Gertrude's privacy risk can be performed by referring to Table \@ref(tab:diffprivtable1).[^diffpriv27] For example, the value of $\varepsilon$ used in the research study in which Gertrude considered participating was 0.01, and the baseline privacy risk in her opt-out scenario was 2 percent. As shown in Table \@ref(tab:diffprivtable1), these values correspond to a worst-case privacy risk of 2.04 percent in her real-world scenario. Notice also how the calculation of risk would change with different values. For example, if the privacy risk in Gertrude's opt-out scenario were 5 percent rather than 2 percent and the value of epsilon remained the same, then the worst-case privacy risk in her real-world scenario would be 5 percent.
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:diffprivtable1)Maximal change between posterior beliefs in Gertrude's opt-out and real-world scenarios.
             The notation $A(x')$ refers to the application of the analysis $A$ on the dataset $x'$, which does not include Gertrude's
             information. As this table shows, the use of differential privacy provides a quantitative bound on how much one can 
@@ -2216,8 +2210,8 @@ Calculations like those used in the analysis of Gertrude's privacy risk can be p
             $q$ is the upper bound on the posterior belief given $A(x)$, both expressed as percentages.</caption>
  <thead>
 <tr>
-<th style="empty-cells: hide;border-bottom:hidden;" colspan="1"></th>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="6"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">value of $\varepsilon$</div></th>
+<th style="border-bottom:hidden" colspan="1"></th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="6"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">value of $\varepsilon$</div></th>
 </tr>
   <tr>
    <th style="text-align:right;"> posterior belief given $A(x')$ in % </th>
@@ -2358,8 +2352,8 @@ Calculations like those used in the analysis of Gertrude's privacy risk can be p
   </tr>
 </tbody>
 <tfoot>
-<tr><td style="padding: 0; " colspan="100%"><span style="font-style: italic;"> </span></td></tr>
-<tr><td style="padding: 0; " colspan="100%">
+<tr><td style="padding: 0; border: 0;" colspan="100%"><span style="font-style: italic;"> </span></td></tr>
+<tr><td style="padding: 0; border: 0;" colspan="100%">
 <sup></sup> For each value of $\varepsilon$, maximum posterior belief given A(x) in %</td></tr>
 </tfoot>
 </table>
@@ -2412,7 +2406,7 @@ To help guide a systematic analysis of the relevant factors within a specific us
 
 (ref:table-opportunity-atlas) \@ref(sec:opportunity-atlas)
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:diffprivtable2)Considerations when deciding whether to use differential privacy for a particular use case.</caption>
  <thead>
   <tr>
@@ -2464,9 +2458,9 @@ To help guide a systematic analysis of the relevant factors within a specific us
   </tr>
 </tbody>
 <tfoot>
-<tr><td style="padding: 0; " colspan="100%">
+<tr><td style="padding: 0; border: 0;" colspan="100%">
 <sup>1</sup> A control on computation is designed to ''limit the direct operations that can be meaningfully performed on data. Commonly used examples are file-level encryption and interactive analysis systems or model servers. Emerging approaches include secure multiparty computation, functional encryption, homomorphic encryption, and secure public ledgers, eg blockchain technologies.'' [@AltmanPracticalApproaches]</td></tr>
-<tr><td style="padding: 0; " colspan="100%">
+<tr><td style="padding: 0; border: 0;" colspan="100%">
 <sup>2</sup> For a real-world example, see the Opportunity Atlas case study presented in Section (ref:table-opportunity-atlas)</td></tr>
 </tfoot>
 </table>
@@ -3091,102 +3085,80 @@ Table \@ref(tab:diffprivtable3) provides a summary of the implications of design
 <tbody>
   <tr>
    <td style="text-align:left;"> *Trust Model* </td>
-   <td style="text-align:left;"> <ul>
-<li>Central curator</li>
-<li>Local collector</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul>
-<li>Consent</li>
+   <td style="text-align:left;"> <li>Central curator</li>
+<li>Local collector</li> </td>
+   <td style="text-align:left;"> <li>Consent</li>
 <li>Compliance: Information security</li>
 <li>Measurement design</li>
-<li>Compliance: Anonymization</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul>
-<li>Data cleaning</li>
-<li>Data linking</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul><li>Compliance: Information security</li></ul> </td>
-   <td style="text-align:left;"> <ul>
-<li>Legal requirements</li>
-<li>Range of uses</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul>
-<li>Deaccessioning &amp; disposal</li>
+<li>Compliance: Anonymization</li> </td>
+   <td style="text-align:left;"> <li>Data cleaning</li>
+<li>Data linking</li> </td>
+   <td style="text-align:left;"> <li>Compliance: Information security</li> </td>
+   <td style="text-align:left;"> <li>Legal requirements</li>
+<li>Range of uses</li> </td>
+   <td style="text-align:left;"> <li>Deaccessioning &amp; disposal</li>
 <li>Information security</li>
 <li>Legal requirements</li>
 <li>Replicability &amp; verification</li>
-<li>Preservation</li>
-</ul> </td>
+<li>Preservation</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> *Data Publi-
 cation Model* </td>
-   <td style="text-align:left;"> <ul>
-<li>Static</li>
-<li>Interactive</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul><li>Measurement design</li></ul> </td>
-   <td style="text-align:left;"> <ul><li>Data linking</li></ul> </td>
-   <td style="text-align:left;"> <ul>
-<li>Costrs</li>
+   <td style="text-align:left;"> <li>Static</li>
+<li>Interactive</li> </td>
+   <td style="text-align:left;"> <li>Measurement design</li> </td>
+   <td style="text-align:left;"> <li>Data linking</li> </td>
+   <td style="text-align:left;"> <li>Costrs</li>
 <li>Information security</li>
-<li>Legal requirements</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul>
-<li>Costs</li>
+<li>Legal requirements</li> </td>
+   <td style="text-align:left;"> <li>Costs</li>
 <li>Compliance: Information security</li>
 <li>Range of uses</li>
-<li>Usage tracking</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul>
-<li>Costs</li>
+<li>Usage tracking</li> </td>
+   <td style="text-align:left;"> <li>Costs</li>
 <li>Compliance: Information security</li>
 <li>Compliance: Reporting and correction</li>
 <li>Replicability &amp; verification</li>
-<li>Preservation</li>
-</ul> </td>
+<li>Preservation</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> *Privacy Granu-
 larity* </td>
-   <td style="text-align:left;"> <ul><li>Unit of protection</li></ul> </td>
-   <td style="text-align:left;"> <ul>
-<li>Consent</li>
-<li>Measurement design</li>
-</ul> </td>
+   <td style="text-align:left;"> <li>Unit of protection</li> </td>
+   <td style="text-align:left;"> <li>Consent</li>
+<li>Measurement design</li> </td>
    <td style="text-align:left;">  </td>
    <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> <ul><li>Range of uses</li></ul> </td>
+   <td style="text-align:left;"> <li>Range of uses</li> </td>
    <td style="text-align:left;">  </td>
   </tr>
   <tr>
    <td style="text-align:left;"> *Privacy Budget Alloca-
 tion* </td>
-   <td style="text-align:left;"> <ul>
-<li>Allocation across uses</li>
+   <td style="text-align:left;"> <li>Allocation across uses</li>
 <li>Allocation across groups</li>
-<li>Allocation across measures</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul><li>Consent</li></ul> </td>
-   <td style="text-align:left;"> <ul><li>Data cleaning</li></ul> </td>
+<li>Allocation across measures</li> </td>
+   <td style="text-align:left;"> <li>Consent</li> </td>
+   <td style="text-align:left;"> <li>Data cleaning</li> </td>
    <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> <ul><li>Usage tracking</li></ul> </td>
-   <td style="text-align:left;"> <ul><li>Use &amp; use auditing</li></ul> </td>
+   <td style="text-align:left;"> <li>Usage tracking</li> </td>
+   <td style="text-align:left;"> <li>Use &amp; use auditing</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> *Utility Con-
 sidera-
 tions* </td>
-   <td style="text-align:left;"> <ul>
-<li>Anticipating uses</li>
+   <td style="text-align:left;"> <li>Anticipating uses</li>
 <li>Evaluating utility</li>
-<li>Managing statistical uncertainty</li>
-</ul> </td>
-   <td style="text-align:left;"> <ul><li>Measurement design</li></ul> </td>
-   <td style="text-align:left;"> <ul><li>Data linkage</li></ul> </td>
+<li>Managing statistical uncertainty </li>
+</td>
+   <td style="text-align:left;"> <li>Measurement design </li>
+</td>
+   <td style="text-align:left;"> <li>Data linkage</li> </td>
    <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> <ul><li>Range of uses</li></ul> </td>
-   <td style="text-align:left;"> <ul><li>Utility evaluation</li></ul> </td>
+   <td style="text-align:left;"> <li>Range of uses</li> </td>
+   <td style="text-align:left;"> <li>Utility evaluation</li> </td>
   </tr>
 </tbody>
 </table></div>
@@ -3283,7 +3255,7 @@ There are many educational resources available for readers who have additional q
 
 *Dana Müller (Institute for Employment Research)*  
 *Philipp vom Berge (Institute for Employment Research)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Müller, Dana,  and Philipp vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Dana Müller, Philipp vom Berge. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Müller, Dana,  and Philipp vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Dana Müller, Philipp vom Berge. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -3339,51 +3311,51 @@ Based on a reform in 2004, which exempted small firms from dismissal protection,
 
 Table \@ref(tab:iabtable1) provides a selective overview of research data available at +RDC-IAB| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in @muller2019 and @muller2020. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).[^accessed06152020]
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:iabtable1)Selected RDC-IAB Data</caption>
 <tbody>
   <tr grouplength="3"><td colspan="2" style="border-bottom: 1px solid;"><strong>Sample of Integrated Labour Market Biographies (SIAB)</strong></td></tr>
 <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Population / Sample Size </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Population / Sample Size </td>
    <td style="text-align:left;"> 2 percent random sample (more than 1.8 million individuals) of the Integrated Employment Biographies, a database which includes records from:<br>- 1975 onwards: employment subject, receipt of benefits in accordance with Social Code Act III<br>- 1999 onwards: Marginal part-time employment<br>- 2000 onwards: participation in an employment or training measure<br>- 2007 onwards: Registered jobseeker </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Time Period covered and frequency </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Time Period covered and frequency </td>
    <td style="text-align:left;"> 1975 until 2017 for West Germany, 1992 until 2017 for East Germany, updated every 2nd year by RDC-IAB </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Additional information </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Additional information </td>
    <td style="text-align:left;"> DOI: [10.5164/IAB.SIAB7517.de.en.v1](https://doi.org/10.5164/IAB.SIAB7517.de.en.v1) </td>
   </tr>
   <tr grouplength="3"><td colspan="2" style="border-bottom: 1px solid;"><strong>Establishment History Panel (BHP)</strong></td></tr>
 <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Population / Sample Size </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Population / Sample Size </td>
    <td style="text-align:left;"> Repeated cross-sectional dataset (640,000-1.5 million establishments) on June 30, on all establishments with at least one employee liable to social security (until 1988) and/or at least one marginal worker (since 1999), and thereof a 50 percent random sample </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Time Period covered and frequency </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Time Period covered and frequency </td>
    <td style="text-align:left;"> 1975 until 2018 for West Germany, 1992 until 2018 for East Germany, annual updated by RDC-IAB </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Additional information </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Additional information </td>
    <td style="text-align:left;"> DOI: [10.5164/IAB.BHP7518.de.en.v1](https://doi.org/10.5164/IAB.BHP7518.de.en.v1) </td>
   </tr>
   <tr grouplength="3"><td colspan="2" style="border-bottom: 1px solid;"><strong>Linked Employer-Employee Data (LIAB)</strong></td></tr>
 <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Population / Sample Size </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Population / Sample Size </td>
    <td style="text-align:left;"> Worker information from administrative data are linked to the IAB-Establishment Panel, an annual representative survey since 1993 in West Germany and 1996 in East Germany including approx. 16,000 establishments per year.<br>
     Stratified sample of all establishments with at least one employee liable to social security on June 30 of the year before by establishment size, industry, and federal state. There are two versions of LIAB:<br>- LIAB cross-sectional model: all establishment surveys combined with administrative worker data as of June 30 (establishment: 67,407 in total; individuals approx. 12.5 million in total)<br>- LIAB longitudinal model: selection of repeatedly interviewed establishments (2009-2016) combined with longitudinal worker biographies (establishment: 41,777 in total; individuals approx. 1.7 million in total) </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Time Period covered and frequency </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Time Period covered and frequency </td>
    <td style="text-align:left;"> LIAB Cross-sectional model: 1993-2017<br>LIAB longitudinal model: 1975-2017 </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 10em;  padding-left:  2em;" indentlevel="1"> Additional information </td>
+   <td style="text-align:left;width: 10em;  padding-left: 2em;" indentlevel="1"> Additional information </td>
    <td style="text-align:left;"> DOI: [10.5164/IAB.LIABQM29317.de.en.v1](https://doi.org/10.5164/IAB.LIABQM29317.de.en.v1)<br>DOI: [10.5164/IAB.LIABLM7517.de.en.v1](https://doi.org/10.5164/IAB.LIABLM7517.de.en.v1) </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).</td></tr></tfoot>
 </table>
 
@@ -3588,7 +3560,7 @@ Additional statistics are also submitted to the annual activity report for all +
    <td style="text-align:right;"> 60 </td>
   </tr>
   <tr>
-   <td style="text-align:left; padding-left:  2em;" indentlevel="1"> Peer-reviewed papers </td>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Peer-reviewed papers </td>
    <td style="text-align:right;"> 45 </td>
   </tr>
   <tr>
@@ -3692,7 +3664,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 # Ohio and the Longitudinal Data Archive: Mutually Beneficial Partnerships Between State Government and Researchers {#olda}
 
 *Joshua D. Hawley (Ohio State University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hawley, Joshua D.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Joshua D. Hawley. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hawley, Joshua D.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Joshua D. Hawley. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -3762,7 +3734,7 @@ In 2019, the data holdings came from the following state agencies:
 
 Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in Table \@ref(tab:oldatable1).
 
-<table style="NAborder-bottom: 0;">
+<table>
 <caption>(\#tab:oldatable1)Specific files maintained at the Ohio State University.</caption>
  <thead>
   <tr>
@@ -3775,23 +3747,19 @@ Within each agency, the data resources include the core agency-specific files fo
 <tbody>
   <tr>
    <td style="text-align:left;"> Ohio Department of Job and Family Services </td>
-   <td style="text-align:left;"> <ul>
-<li>Unemployment Insurance Wage Data</li>
+   <td style="text-align:left;"> <li>Unemployment Insurance Wage Data</li>
 <li>Quarterly Census on Wages and Employment</li>
 <li>Job Seeker Information</li>
 <li>Workforce Investment Act Standardized Record Data</li>
-<li>Unemployment Insurance Claimant Data</li>
-</ul> </td>
+<li>Unemployment Insurance Claimant Data</li> </td>
    <td style="text-align:left;"> From 1995 to present (varies based on files) </td>
    <td style="text-align:left;"> 130 million wage records </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Ohio Department of Higher Education </td>
-   <td style="text-align:left;"> <ul>
-<li>Higher Education Information (Student, Course, and Faculty)</li>
+   <td style="text-align:left;"> <li>Higher Education Information (Student, Course, and Faculty)</li>
 <li>Ohio Technical Centers</li>
-<li>Adult Basic and Literacy Education</li>
-</ul> </td>
+<li>Adult Basic and Literacy Education</li> </td>
    <td style="text-align:left;"> From 1999 to present (varies based on files) </td>
    <td style="text-align:left;"> 2 million unique students in higher education </td>
   </tr>
@@ -3814,7 +3782,7 @@ Within each agency, the data resources include the core agency-specific files fo
    <td style="text-align:left;"> 100,000 unique individuals </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings</td></tr></tfoot>
 </table>
 
@@ -3842,7 +3810,7 @@ The following case study provides an example of research use under the OLDA. One
 
 The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the +Unemployment_Insurance_Wage_Records| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^olda7]
 
-<table style="NAborder-bottom: 0;">
+<table>
 <caption>(\#tab:oldatable2)Examples of approved studies using the Ohio longitudinal data.</caption>
  <thead>
   <tr>
@@ -3853,22 +3821,18 @@ The registered apprenticeship work conducted in collaboration with the State of 
 <tbody>
   <tr>
    <td style="text-align:left;"> Program evaluations </td>
-   <td style="text-align:left;"> <ul>
-<li>Wage Pathway Evaluation Study [@hawley2019]</li>
+   <td style="text-align:left;"> <li>Wage Pathway Evaluation Study [@hawley2019]</li>
 <li>Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]</li>
 <li>GEAR UP Evaluation<sup>1</sup>
-</li>
-</ul> </td>
+</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Descriptive and multivariate studies </td>
-   <td style="text-align:left;"> <ul>
-<li>College Credit Plus [@harlow2018]</li>
-<li>Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]</li>
-</ul> </td>
+   <td style="text-align:left;"> <li>College Credit Plus [@harlow2018]</li>
+<li>Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]</li> </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
 <sup>1</sup> This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup) (accessed 2020-12-10)</td></tr></tfoot>
 </table>
 
@@ -4089,15 +4053,13 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 <img src="./assets/olda/appendixb.png" width="100%" />
 
 
-
-
 <!--chapter:end:11_01_olda_appendix.Rmd-->
 
 # New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT {#nbirdt}
 
 *Donna Curtis Maillet (University of New Brunswick)*  
 *James Ted McDonald (University of New Brunswick)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Curtis Maillet, Donna,  and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Donna Curtis Maillet, James Ted McDonald. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Curtis Maillet, Donna,  and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Donna Curtis Maillet, James Ted McDonald. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary {#nbirdt-summ}
 
@@ -4351,7 +4313,7 @@ Audits of data sets accessed and data project activity are a requirement of data
 *Josh Lerner (Harvard Business School)*  
 *Leslie Jeng (Private Capital Research Institute)*  
 *Therese Juneau (Private Capital Research Institute)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Lerner, Josh, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Josh Lerner, Leslie Jeng, Therese Juneau. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Lerner, Josh, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Josh Lerner, Leslie Jeng, Therese Juneau. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -4427,7 +4389,7 @@ Gathering information directly from private capital firms has its own limitation
 
 The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in @jeng2015.
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:pcritable1)Number of Distinct private capital firms provided by source of information</caption>
  <thead>
   <tr>
@@ -4457,7 +4419,7 @@ The commercial sources include the Emerging Markets Private Equity Association (
    <td style="text-align:right;font-weight: bold;"> 17,633 </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> As of 2015. Source: @jeng2015.</td></tr></tfoot>
 </table>
 
@@ -4736,7 +4698,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
 
 
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:pcritablea1)Private capital firms by location of company headquarters and year founded</caption>
  <thead>
   <tr>
@@ -4830,11 +4792,11 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
    <td style="text-align:left;"> 46.5% </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:pcritablea2)Funds by investment type and vintage year</caption>
  <thead>
   <tr>
@@ -4888,7 +4850,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
    <td style="text-align:left;"> 57.9% </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
@@ -4908,7 +4870,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
 
 
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>(\#tab:pcritablea3)Portfolio companies by region and year founded</caption>
  <thead>
   <tr>
@@ -4991,20 +4953,19 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
    <td style="text-align:left;"> 49.0% </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
+<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
 
 
 
+
+
+
 ### Appendix B {-}
 
-
 [Sample Data Sponsor Agreement](./assets/appendix/pcri_appendix_b.pdf)
-
-
-
 
 
 
@@ -5053,7 +5014,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
 
 *Laura Feeney (J-PAL North America, Massachusetts Institute of Technology)*  
 *Amy Finkelstein (Massachusetts Institute of Technology)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Feeney, Laura,  and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Laura Feeney, Amy Finkelstein. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Feeney, Laura,  and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Laura Feeney, Amy Finkelstein. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -5325,7 +5286,7 @@ The following is from the +NDA|:
 *Norma Ming (San Francisco Unified School District)*  
 *Michelle Reininger (University of Colorado at Boulder)*  
 *Eric Bettinger (Stanford University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Kim, Moonhawk, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, Eric Bettinger. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Kim, Moonhawk, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, Eric Bettinger. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -5657,14 +5618,11 @@ Once established, any partnership using shared data will need to *continually im
 
 ### Appendix A {- #sfusd-appendixa}
 
-
-
-[Agreement for Confidential Data Exchange Between San Francisco Unified School District and Stanford University](./appendix/sfusd_appendix_a.pdf)
+[Agreement for Confidential Data Exchange Between San Francisco Unified School District and Stanford University](.\appendix\sfusd_appendix_a.pdf)
 
 ### Appendix B {- #sfusd-appendixb}
 
-[Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](./appendix/sfusd_appendix_b.pdf)
-
+[Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](.\appendix\sfusd_appendix_b.pdf)
 
 
 
@@ -5677,7 +5635,7 @@ Once established, any partnership using shared data will need to *continually im
 *Kelsey Jack (University of California, Santa Barbara)*  
 *Derek Strong (University of Southern California)*  
 *Brendan Maughan-Brown (University of Cape Town)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Hugh, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Hugh Cole, Kelsey Jack, Derek Strong, Brendan Maughan-Brown. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Hugh, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Hugh Cole, Kelsey Jack, Derek Strong, Brendan Maughan-Brown. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -5763,19 +5721,19 @@ Other important considerations and activities have revolved around the following
 <tbody>
   <tr>
    <td style="text-align:left;"> Technical solutions </td>
-   <td style="text-align:left;"> <ul><li>Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions</li><li>Integrating said platform with CCT data systems</li></ul> </td>
+   <td style="text-align:left;"> <li>Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions</li><li>Integrating said platform with CCT data systems</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Data infrastructure </td>
-   <td style="text-align:left;"> <ul><li>Development of metadata standards</li><li>Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.</li></ul> </td>
+   <td style="text-align:left;"> <li>Development of metadata standards</li><li>Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> IT architecture </td>
-   <td style="text-align:left;"> <ul><li>Addressing tensions between existing and newer approaches and technology stacks</li><li>Ensuring that legacy systems do not create barriers to effective data sharing</li></ul> </td>
+   <td style="text-align:left;"> <li>Addressing tensions between existing and newer approaches and technology stacks</li><li>Ensuring that legacy systems do not create barriers to effective data sharing</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Governance </td>
-   <td style="text-align:left;"> <ul><li>Process improvement evaluations</li><li>Processes for integrating data use agreements with the data sharing platform</li></ul> </td>
+   <td style="text-align:left;"> <li>Process improvement evaluations</li><li>Processes for integrating data use agreements with the data sharing platform</li> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Data privacy </td>
@@ -5977,7 +5935,7 @@ The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, C
 
 *Arianna Legovini (World Bank)*  
 *Maria Ruth Jones (World Bank)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Legovini, Arianna,  and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Arianna Legovini, Maria Ruth Jones. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Legovini, Arianna,  and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Arianna Legovini, Maria Ruth Jones. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary 
 
@@ -6292,7 +6250,7 @@ Currently, DIME is well above the norm in the field. An analysis of 203 economic
 *Era Dabla-Norris (International Monetary Fund)*  
 *Federico J. Díez (International Monetary Fund)*  
 *Romain Duval (International Monetary Fund)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dabla-Norris, Era, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ International Monetary Fund. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dabla-Norris, Era, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ International Monetary Fund. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
@@ -6465,7 +6423,7 @@ The views expressed in this paper are those of the author(s) and do not necessar
 *Rema Hanna (Harvard Kennedy School)*  
 *Sudarno Sumarto (SMERU and National Team for the Acceleration of Poverty Reduction)*  
 *Putu Poppy Widyasari (J-PAL Southeast Asia, University of Indonesia)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alatas, Vivi, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Vivi Alatas, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, Putu Poppy Widyasari. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alatas, Vivi, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Vivi Alatas, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, Putu Poppy Widyasari. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
 
 ## Summary
 
