@@ -15,11 +15,34 @@ cat("\\end{quote}")
 
 ### Appendix A {- #sfusd-appendixa}
 
-[Agreement for Confidential Data Exchange Between San Francisco Unified School District and Stanford University](.\appendix\sfusd_appendix_a.pdf)
+```{r,eval=outputformat == "epub3",echo=FALSE,results='asis'}
+cat(paste0("[Agreement for Confidential Data Exchange Between San Francisco Unified School District and Stanford University](",
+           config$base_url,
+           "/",
+           config$version_link,
+           "/appendix/sfusd_appendix_a.pdf)"
+           )
+    )
+```
+
+```{r,eval=outputformat == "html",echo=FALSE,results='asis'}
+cat("[Agreement for Confidential Data Exchange Between San Francisco Unified School District and Stanford University](./appendix/sfusd_appendix_a.pdf)")
+```
 
 ### Appendix B {- #sfusd-appendixb}
 
-[Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](.\appendix\sfusd_appendix_b.pdf)
+```{r,eval=outputformat == "html",echo=FALSE,results='asis'}
+cat("[Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](./appendix/sfusd_appendix_b.pdf)")
+```
 
 
+```{r,eval=outputformat == "epub3",echo=FALSE,results='asis'}
+cat(paste0("[Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](",
+           config$base_url,
+           "/",
+           config$version_link,
+           "/appendix/sfusd_appendix_b.pdf)"
+           )
+    )
+```
 

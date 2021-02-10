@@ -1,6 +1,6 @@
 Task,Consideration
-Technical solutions,<li>Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions</li><li>Integrating said platform with CCT data systems</li>
-Data infrastructure,<li>Development of metadata standards</li><li>Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.</li>
-IT architecture,<li>Addressing tensions between existing and newer approaches and technology stacks</li><li>Ensuring that legacy systems do not create barriers to effective data sharing</li>
-Governance,<li>Process improvement evaluations</li><li>Processes for integrating data use agreements with the data sharing platform</li>
+Technical solutions,<ul><li>Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions</li><li>Integrating said platform with CCT data systems</li></ul>
+Data infrastructure,<ul><li>Development of metadata standards</li><li>Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.</li></ul>
+IT architecture,<ul><li>Addressing tensions between existing and newer approaches and technology stacks</li><li>Ensuring that legacy systems do not create barriers to effective data sharing</li></ul>
+Governance,<ul><li>Process improvement evaluations</li><li>Processes for integrating data use agreements with the data sharing platform</li></ul>
 Data privacy,The evolution of CCT's understanding and application of applicable data laws and data ethics considerations must keep pace with CCT's increasingly open data environment

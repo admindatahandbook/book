@@ -12,7 +12,7 @@ printauthor<-function(chapter,debug=FALSE){
       return(knitr::is_latex_output())
     }
   }
-  
+
   authorlist <- config::get(chapter)$authors
   
   authors.and <- ""
@@ -51,7 +51,7 @@ printauthor<-function(chapter,debug=FALSE){
     if ( debug ) { print(paste0("nameinst=",nameinst)) }
     
 
-  # output to HTML document
+  # output to HTML document / Ebook
   if (knitr::is_html_output()) {
     cat(paste0("*",nameinst,"*  \n"))
   }
@@ -136,21 +136,34 @@ printauthor<-function(chapter,debug=FALSE){
   pubdate <- config$first_publish_date %>%  str_split_fixed(" ",2) 
 
 
-
-  if (knitr::is_html_output()) {
+  # The citation thing is only output to the HTML
+  if ( outputformat == "html" ) {
     cat(readLines("./includes/citation-block-link.html"))
     cat('<div id="myCitation" style="display: none;">')
     cat(paste0(authors.cmos,". ",pubdate[2],". ","\"<span id=\"chapTitle\">Title</span>.\" In: "))
     cat(paste0(config$editors," (eds), *",config$title,"*. Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>.<br />"))
     cat(paste0("<span class=\"copyright\">©️ ",copyright,". Licensed under "))
     if ( license.cc != "" ) {
-      cat(paste0("<a href=\"https://creativecommons.org/licenses/",license.cc,"/4.0/\"><img alt=\"",toupper(license.chapter)," logo\" src=\"assets/",license.chapter,".png\" height=\"12px\"/></a>"))
+      cat(paste0("<a href=\"https://creativecommons.org/licenses/",license.cc,"/4.0/\"><img alt=\"",toupper(license.chapter)," logo\" src=\"assets/",license.chapter,".png\" height=\"12\"/></a>"))
     } else {
       cat(paste0(toupper(license.chapter)))
     }
     cat(paste0(".</span>"))
     cat('</div>')
   }
+  # If this is for the ebook, do this:
+  if ( outputformat == "epub3" ) {
+    cat('<div id="myCitation" style="display: block;">')
+    cat(paste0("<span class=\"copyright\">©️ ",copyright,". Licensed under "))
+    if ( license.cc != "" ) {
+      cat(paste0("<a href=\"https://creativecommons.org/licenses/",license.cc,"/4.0/\"><img alt=\"",toupper(license.chapter)," logo\" src=\"assets/",license.chapter,".png\" height=\"12\"/></a>"))
+    } else {
+      cat(paste0(toupper(license.chapter)))
+    }
+    cat(paste0(".</span>"))
+    cat('</div>')
+  }
+  
 
   if (my_is_latex_output(debug)) {
     # finishing up the latex version

@@ -103,3 +103,12 @@ background-color: #f8afaf;
 .copyright {
   font-size: 10px;
 }
+
+/* Add a demarcation before footnotes/endnotes */
+
+.footnotes ol::before {
+  content: "Chapter Endnotes";
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-left: -3rem;
+}

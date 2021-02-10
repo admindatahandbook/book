@@ -18,5 +18,7 @@ source("programs/setup.R",echo=FALSE)
 
 ```
 
-```{r welcome,child="./welcomepage.md",eval=knitr::is_html_output()}
+```{r welcome,child="./welcomepage.md",eval=outputformat == "html"}
+```
+```{r copyright,child="./copyright-page.md",eval=outputformat == "epub3"}
 ```

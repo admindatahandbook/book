@@ -423,8 +423,10 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 Table \@ref(tab:securitysummarytable) provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
 
-```{r, securitysummarytable, echo=F, fig.cap="Summary of Access Mechanisms Along the Five Aspects",results='asis'}
-plotallmechs(is_html_output())
+
+```{r securitysummarytable, echo=F, fig.cap="Summary of Access Mechanisms Along the Five Aspects",results='asis'}
+message(paste0("outputformat="),outputformat)
+plotallmechs(outputformat)
 ```
 
 ## Guidance for Data Providers and Researchers

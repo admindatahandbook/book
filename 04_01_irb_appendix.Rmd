@@ -3,8 +3,18 @@ cat("\\FloatBarrier\\newpage")
 ```
 ## Appendix {- #irb-appendix}
 
-```{r,eval=knitr::is_html_output(),echo=FALSE,results='asis'}
-cat("[Data-Only Protocol Template](.\\appendix\\irb_appendix.pdf)")
+```{r,eval=outputformat == "html",echo=FALSE,results='asis'}
+cat("[Data-Only Protocol Template](./appendix/irb_appendix.pdf)")
+```
+
+```{r,eval=outputformat == "epub3",echo=FALSE,results='asis'}
+cat(paste0("[Data-Only Protocol Template](",
+           config$base_url,
+           "/",
+           config$version_link,
+           "/appendix/irb_appendix.pdf)"
+           )
+    )
 ```
 
 ```{r,eval=knitr::is_latex_output(),echo=FALSE,results='asis'}

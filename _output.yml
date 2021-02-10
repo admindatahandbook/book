@@ -39,6 +39,12 @@ latex_fragment:
   latex_engine: pdflatex
   pandoc_args:
     - --lua-filter=programs/filter-index-tex.lua
+bookdown::epub_book:
+  cover_image: assets/images/webcover.png
+  stylesheet: [assets/css/style.css, assets/css/font-awesome.min.css]
+  pandoc_args:
+    - --lua-filter=programs/filter-index-html.lua
+  
  
   
 

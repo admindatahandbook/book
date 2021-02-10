@@ -4,5 +4,7 @@ set -ev
 
 #cd $(dirname $0)
 
-docker pull larsvilhuber/ideahandbook_pdf:latest
-docker run -v $(pwd):/github/workspace larsvilhuber/ideahandbook_pdf:latest /github/workspace/_build_pdf.sh
+TAG=latest
+
+docker pull larsvilhuber/ideahandbook_pdf:$TAG
+docker run -v $(pwd):/github/workspace larsvilhuber/ideahandbook_pdf:$TAG /github/workspace/_build_pdf.sh
