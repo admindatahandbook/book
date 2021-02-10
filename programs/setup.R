@@ -28,12 +28,14 @@ get_os <- function(){
 
 #
 if ( get_os() == "linux" ) {
-   options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/__linux__/focal/318"))
+#   options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/__linux__/focal/318"))
+   options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/__linux__/focal/1140568"))
 } else {
   if ( get_os() == "macosx") {
     options(repos = c(REPO_NAME = "https://cran.rstudio.com/"))
   } else {
-   options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/318"))
+    # Windows
+   options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/1140568"))
   }
 } 
 
