@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2021-01-21"
+date: "2021-02-10"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -21,6 +21,7 @@ always_allow_html: true
 <img src="./assets/images/webcover.png" width="770" />
 
 This is the online version of the Handbook on Using Administrative Data for Research and Evidence-based Policy. Readers can also obtain the Handbook for free as an ebook or a printable PDF, or can purchase a printed copy, from the [Handbook's home page](https://admindatahandbook.mit.edu/).")
+
 
 <!--chapter:end:index.Rmd-->
 
@@ -61,7 +62,7 @@ We thank [Jim Shen](https://www.povertyactionlab.org/person/shen) for his work m
 *Daniel L. Goroff  
 Vice President and Program Director  
 Alfred P. Sloan Foundation*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Goroff, Daniel L.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Daniel L. Goroff. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Goroff, Daniel L.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Daniel L. Goroff. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 This is an important Handbook, compiled by an important institution, on an important topic. The Alfred P. Sloan Foundation is therefore a particularly proud sponsor of the Innovations in Data and Experiments for Action Initiative (IDEA) of the Abdul Latif Jameel Poverty Action Lab (J-PAL), which has taken on this endeavor, and of work on administrative data generally.
 
@@ -111,7 +112,7 @@ Professors lament that, absent such intermediaries, the time and effort they spe
 Indeed, obsession with "getting the data" may blind researchers to other approaches or considerations. Most administrative data, after all, are only observational. Unless it describes suitable treatment and comparison groups, such data can rarely, if ever, yield robust causal conclusions. Running a well-designed RCT can, of course. RCTs usually require not just access to administrative data, but also the active cooperation of administrators in carrying out an experiment. Chapters in this Handbook provide examples from around the world where concentrating on how to answer an important question, instead of just how to obtain an attractive data set, has paid off handsomely.
 <!-- ``` -->
 
-<center>***</center>
+<div align="center">***</div>
 
 Faced with all these costs, researchers naturally look for funding to cover expenses. That includes making proposals to grant-making organizations like the Alfred P. Sloan Foundation. When describing my work there, I often say that I am in the public goods business. That framing, when invoked in discussions of open data as a pure public good, suggests that the provision of data depends on solving a collective action problem, that is, a game where the natural Nash equilibrium fails to be Pareto efficient.
 
@@ -141,7 +142,7 @@ Building these nodes, whether they are called Administrative Data Research Facil
 *Iqbal Dhaliwal (J-PAL, Massachusetts Institute of Technology)*  
 *Anja Sautmann (World Bank)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Shawn, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Shawn, Iqbal Dhaliwal, Anja Sautmann, and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## The Potential of Administrative Data for Research and Policymaking
 
@@ -360,7 +361,7 @@ To showcase such solutions, we have selected an array of case studies that have 
 
 *Safe settings* describe the environment in which data access is permitted and shows how physical security is implemented in practice. The concrete implementation choices showcased in the case studies complement the overview of the different methods provided in chapter \@ref(security) and illustrate the diversity of possible approaches.
 
-For example, in the Ohio Longitudinal Data Archive (OLDA) partnership (chapter \@ref(olda) by Joshua D. Hawley), data access may occur from the researcher's own computer, but the file transfer protocol only admits identified devices that were previously registered. The Institute for Employment Research (IAB)---chapter \@ref(iab)---requires that all users access the data through hardware that fulfills a specific set of client specifications, and until 2018, required a dedicated thin client, a stripped-down device that has no functionalities other than logging onto the central data server.
+For example, in the Ohio Longitudinal Data Archive (OLDA) partnership (chapter \@ref(olda) by Joshua D. Hawley), data access may occur from the researcher's own computer, but the file transfer protocol only admits identified devices that were previously registered. The Research Data Center at the Institute for Employment Research (RDC-IAB)---chapter \@ref(iab)---requires that all users access the data through hardware that fulfills a specific set of client specifications, and until 2018, required a dedicated thin client, a stripped-down device that has no functionalities other than logging onto the central data server.
 
 How stringent the physical protection measures are may again partly depend on what groups of people are given access (safe people), but also on how sensitive the data are (safe data), either for privacy or intellectual property reasons; for example, only secure rooms or similar physical access-restricted setups can reliably protect from unauthorized parties snapping images of a user screen.
 
@@ -396,13 +397,13 @@ Our case studies span data from the public and the private sector and many diffe
 
 Figure \@ref(fig:introfig1) provides something of a taxonomy in regard to specialization and scope by placing the different access models of the case studies on two axes: the diversity of data or data providers and the diversity of users. There is the greatest potential for realizing specialization benefits or economies of scale when all researchers are affiliated with the same organization or when all data is similar and comes from the same data provider. The former means for example that user access protocols or security requirements can be tailored to one specific set of users, whereas the latter means that they can be customized and automated for the needs of one data provider, but also that staff will be able to develop deep expertise regarding the data and its idiosyncrasies. Economies of scope are more likely to be realized when many different users access the same data or when the same team of experts works with many different types of data sets or data providers, for example by building transferable expertise or utilizing systems and infrastructure to capacity.
 
-In one type of model for administrative data access, these benefits are realized by **a center or unit in long-term partnership with an institutional partner** that provides different data sets or the same type of data over many periods of time. Excellent examples in our case studies are chapter \@ref(sfusd) by Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger describing the Stanford-San Francisco Unified School District Partnership or chapter \@ref(iab) describing the IAB. In these settings, relationship-building between the data intermediary and the data provider and careful design of the legal and institutional framework ensure that policy interests and research conducted with the data are closely aligned.
+In one type of model for administrative data access, these benefits are realized by **a center or unit in long-term partnership with an institutional partner** that provides different data sets or the same type of data over many periods of time. Excellent examples in our case studies are chapter \@ref(sfusd) by Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger describing the Stanford-San Francisco Unified School District Partnership or chapter \@ref(iab) describing the RDC-IAB. In these settings, relationship-building between the data intermediary and the data provider and careful design of the legal and institutional framework ensure that policy interests and research conducted with the data are closely aligned.
 
 A dedicated data access center can provide additional value by creating access for data provider staff for policy analysis (or conducting such analysis) and by maintaining policy engagement after the research ends. Appropriate data use agreements can encourage researchers to contribute data cleaning, data documentation, or policy analysis to the center. Since the partnership is close and the data and its possible uses are well circumscribed, data extraction processes can typically be streamlined and partially automated, and DUAs can follow a template, facilitating and speeding up access for the benefit of all parties. Vibrant administrative research centers can also create a local ecosystem of like-minded experts and provide technical training and attractive prospects for high-caliber researchers and staff.
 
-Many **mature systems for research data access are hosted by universities that collaborate with specific governments**. Aside from the Stanford-SFUSD Partnership and the IAB, another example of this in the Handbook is the OLDA. The advantages of hosting the data at academic institutions are many: they often have an ethics review board (IRB) or can provide support for ethics review, they manage grants, they can supply space and an existing computing infrastructure, and can provide channels to other researchers as well as audiences (conferences, seminars, plenary discussions, events, etc.). Postdoctoral researchers and graduate and undergraduate students can contribute their skills to the data work; access to the data for their own research may provide additional incentives. Universities are often seen as more independent and less political or partisan than other policy research organizations such as think tanks. Chapter \@ref(olda) describes how OLDA's institutionalization as a center at Ohio State University facilitated long-term research projects across legislative cycles and associated changes in policy priorities.
+Many **mature systems for research data access are hosted by universities that collaborate with specific governments**. Aside from the Stanford-SFUSD Partnership and the RDC-IAB, another example of this in the Handbook is the OLDA. The advantages of hosting the data at academic institutions are many: they often have an ethics review board (IRB) or can provide support for ethics review, they manage grants, they can supply space and an existing computing infrastructure, and can provide channels to other researchers as well as audiences (conferences, seminars, plenary discussions, events, etc.). Postdoctoral researchers and graduate and undergraduate students can contribute their skills to the data work; access to the data for their own research may provide additional incentives. Universities are often seen as more independent and less political or partisan than other policy research organizations such as think tanks. Chapter \@ref(olda) describes how OLDA's institutionalization as a center at Ohio State University facilitated long-term research projects across legislative cycles and associated changes in policy priorities.
 
-An alternative model involves locating a **data-sharing center within the data provider** as done in by the IAB (chapter \@ref(iab)) and the City of Cape Town (chapter \@ref(cct)). This has the advantage of ensuring that the data provider maintains a high level of oversight and control. It also can allow a wider user base since academic partnerships often restrict access to affiliated researchers. On the other hand, this type of access mechanism cannot take full advantage of the resources and capabilities of academic partnerships. Government entities, for example, may have limited resources and are often prohibited from accepting grant financing.
+An alternative model involves locating a **data-sharing center within the data provider** as done in by the RDC-IAB (chapter \@ref(iab)) and the City of Cape Town (chapter \@ref(cct)). This has the advantage of ensuring that the data provider maintains a high level of oversight and control. It also can allow a wider user base since academic partnerships often restrict access to affiliated researchers. On the other hand, this type of access mechanism cannot take full advantage of the resources and capabilities of academic partnerships. Government entities, for example, may have limited resources and are often prohibited from accepting grant financing.
 
 In some cases, hybrid models are employed where a **university research center embeds staff with the data provider**, thus supplying the staff resources and university access while the data remains under the control of the data provider. This is an approach that the Abdul Latif Jameel Poverty Action Lab (J-PAL) has used in the past in a partnership with the Government of Tamil Nadu through the IDEA Lab in South Asia. Another path, taken by the Private Capital Research Institute (PCRI, chapter \@ref(pcri) by Josh Lerner, Leslie Jeng, and Therese Juneau), is to create an **entirely separate non-profit organization** with its own governance structures, while only housing the final data at a university-affiliated data archive. Such an approach may achieve some of the benefits of university location, such as trust in academic independence and clear governance, without incurring some of the bureaucratic and overhead expenses associated with universities.
 
@@ -422,7 +423,7 @@ Several data intermediaries in the case studies have also established formal rev
 
 When instituting a review process, it is important to ensure that the interests of researchers and the public are both protected, meaning that the independence of the research is guaranteed, in order to maintain full credibility of research findings. For example, data use agreements might specify that identifying details of the data provider may be withheld, but the data provider cannot revoke permission to use the data *ex post*. Without this protection, academic freedom is curbed, and researchers may spend time and resources on a project that they later cannot publish; in the long run, such approaches would likely stifle research use of data and introduce systematic biases in research results.
 
-Public data providers, such as government agencies, are bound to uphold the interest of citizens and the public good. In the eyes of a public servant, this goal may conflict with costly investments in data analysis with uncertain benefits. The strongest incentive for undertaking more formal access to administrative data is therefore often an explicit legal mandate. Chapter \@ref(olda) gives a compelling description of the role of federal funding as a signal of endorsement by the national government, which spurred action at the state level to make Ohio's labor data accessible. Similarly, chapter \@ref(iab) on the IAB and chapter \@ref(nbirdt) by Donna Curtis Maillet and James Ted McDonald on the NB-IRDT describe the legal mandate of those institutions to create access to vital administrative data under these institutions' care. The City of Cape Town (chapter \@ref(cct)) underwent a concerted shift in institutional priorities with a formal new data policy that put the focus on open access to data.
+Public data providers, such as government agencies, are bound to uphold the interest of citizens and the public good. In the eyes of a public servant, this goal may conflict with costly investments in data analysis with uncertain benefits. The strongest incentive for undertaking more formal access to administrative data is therefore often an explicit legal mandate. Chapter \@ref(olda) gives a compelling description of the role of federal funding as a signal of endorsement by the national government, which spurred action at the state level to make Ohio's labor data accessible. Similarly, chapter \@ref(iab) on the RDC-IAB and chapter \@ref(nbirdt) by Donna Curtis Maillet and James Ted McDonald on the NB-IRDT describe the legal mandate of those institutions to create access to vital administrative data under these institutions' care. The City of Cape Town (chapter \@ref(cct)) underwent a concerted shift in institutional priorities with a formal new data policy that put the focus on open access to data.
 
 Lastly, systematized access to administrative data can be designed in such a way that the data intermediary or the researchers who benefit from access to the data for their own research agenda give back and provide value to the data provider in the form of technical expertise, policy advice, or data analysis. The OLDA, for example, has a sophisticated outreach program with *data days* and a [Workforce Success Measures dashboard](https://workforcesuccess.chrr.ohio-state.edu/home) for the public. Researchers could also provide training and capacity building for the data provider. The City of Cape Town requires researchers to share tools and analysis files with CCT staff.
 
@@ -452,7 +453,7 @@ The existing literature also provides high-level guidance on numerous topics, in
 
 *Jim Shen (J-PAL, Massachusetts Institute of Technology)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shen, Jim,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Jim Shen, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Shen, Jim,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Jim Shen, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Introduction
 
@@ -540,7 +541,7 @@ Data access controls are of particular relevance for systems where multiple rese
 
 ### Virtual Private Networks
 
-When using +virtual_private_networks| (+VPNs|), an encrypted channel is established between two computers over public networks. Once set up, the connection is as secure as though the computers were connected on the same local, private network. The VPN ensures that a minimum-security level is achieved by all other network connections, such as shared network drives or remote desktop access, as these all occur within the same encrypted channel. This is useful for data access mechanisms that allow researchers to access data from many possible locations as well as for data transfers. As typically implemented, users must authenticate themselves with usernames, passwords, and often a secure token (2FA) to access the VPN. Many universities have VPN services that allow researchers to access university networks from a remote location. There are VPN configuration settings built into the Windows Server operating system as well as open source options. These can be useful in instances where a data sharing partnership has to implement a VPN from scratch, such as establishing a VPN service at a data provider location that is sharing data for the first time
+When using +virtual_private_networks| (+VPNs|), an encrypted channel is established between two computers over public networks. Once set up, the connection is as secure as though the computers were connected on the same local, private network. The VPN ensures that a minimum-security level is achieved by all other network connections, such as shared network drives or remote desktop access, as these all occur within the same encrypted channel. This is useful for data access mechanisms that allow researchers to access data from many possible locations as well as for data transfers. As typically implemented, users must authenticate themselves with usernames, passwords, and often a secure token (2FA) to access the VPN. Many universities have VPN services that allow researchers to access university networks from a remote location. There are VPN configuration settings built into the Windows Server operating system as well as open source options. These can be useful in instances where a data sharing partnership has to implement a VPN from scratch, such as establishing a VPN service at a data provider location that is sharing data for the first time.
 
 ### IP Address Restrictions
 
@@ -645,6 +646,7 @@ A **medium agency** setting may allow researchers some choice of software or lim
 In the **high researcher agency** settings, researchers have few restrictions on how the analysis computer can be configured. They may have administrative privileges to the analysis computer and few, if any, restrictions on the software that can be installed. The researcher may own and physically control the analysis computer or may be granted administrative privileges to a computer that is owned by the data provider or third party. Data providers may still mandate technical solutions such as the use of monitoring, operating system patch management software, or anti-virus software.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">(\#tab:securitytable1)Examples of researcher agency over analysis computers</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Researcher Agency </th>
@@ -682,6 +684,7 @@ In some cases, the distinction between these two categories becomes blurred. A d
 Finally, individual **researchers** can act as the data custodian. This is still quite frequently used, in particular when no previous data access existed. For the researcher, acting as the data custodian enables more flexibility for accessing the data without traveling or remote access systems. Most of the cost of maintaining IT infrastructure and security fall onto the researcher, subject to other conditions in the overall data access plan; in addition, researchers assume the risk and liability associated with housing data. Security provisions include keeping analysis computers offline with no external network connections or other provisions. The enforcement of the DUA becomes a key mechanism for preventing the misuse of the data. Researcher agency over the analysis computer may also be limited, despite the researcher having physical control of the analysis computer. For instance, some data providers (often commercial companies) provide researchers with fully encrypted and remotely managed laptops. While the laptop and data are located with the researcher, the researcher has only low agency over the analysis computer.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">(\#tab:securitytable2)Examples of analysis computer and data locations</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Data Location </th>
@@ -718,6 +721,7 @@ Data providers can choose a **third-party** access provider. Note that the third
 Finally, access computers can be located with the **researcher**. Trivially, locating the analysis computer with the researcher makes the access computer co-incidental. However, there are numerous cases where the access computer is with the researcher while the analysis computer is not. Examples include any web-based access, most [remote execution] systems, and many [remote desktop] systems: researchers use their own computers to access the portal while all computation occurs elsewhere. In almost all cases, locating access computers with researchers allows them to work from a location of their choice, though in some cases this may be restricted to a designated university office.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">(\#tab:securitytable3)Examples of access computer locations</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Access Location </th>
@@ -752,13 +756,14 @@ A **high security access location** has strong specifications for physical secur
 
 If not already existent at the access location, data custodians or access providers will require expertise from IT and security specialists to assist with defining the specifications and implementation of the features of high security access rooms.
 
-A **medium security access location** has a defined location with access restricted to approved researchers. These can be rooms secured with [keycards][physical access cards], [biometrics][biometric authentication], or a simple lock and key restricted to approved staff. Such restrictions may be designed to prevent a limited set of unauthorized access attempts or to inhibit shoulder surfing Medium security access rooms may incur additional costs for the location administrator, requiring dedicated space and staff to maintain the access location itself, but may also be as simple as a designated locked room at a university research institute.
+A **medium security access location** has a defined location with access restricted to approved researchers. These can be rooms secured with [keycards][physical access cards], [biometrics][biometric authentication], or a simple lock and key restricted to approved staff. Such restrictions may be designed to prevent a limited set of unauthorized access attempts or to inhibit shoulder surfing. Medium security access rooms may incur additional costs for the location administrator, requiring dedicated space and staff to maintain the access location itself, but may also be as simple as a designated locked room at a university research institute.
 
 A **low security access location** has few or no access controls. Simple restrictions might include broad geo-restrictions (campus-only) or procedures to follow. Data providers may mandate storing the access computer in a locked room or the use of [IP address restrictions]. When no access restrictions are imposed, researchers are free to use access computers from any location.
 
 In addition to the locational security described above, the **type of access computer** can also range from high security to low security. Highly secure access computers (which do not contain data) may still include fully encrypted operating systems, the use of [VPNs][virtual private networks], [remote desktop] software, [secure network protocols], and [encryption] or requiring [biometric authentication] of the access computer. This can take the form of dedicated thin clients. Low security access computers are typically allowed for remote submission or web portal-type access, where any computer, in any location, is allowed.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">(\#tab:securitytable4)Examples of access location security</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Access Security </th>
@@ -781,7 +786,7 @@ In addition to the locational security described above, the **type of access com
 </tbody>
 </table>
 
-This section combines the type of access and location into one aspect, since the ultimate convenience to researchers arises from a combination of the two security measures. For instance, a data provider might provide researchers with a dedicated secure laptop, which can only be used to remotely access the analysis computers and nothing else. While there may be no location restrictions imposed on the researcher, the researcher is unlikely to carry two laptops around, and this would be considered to be a de-facto **medium** security solution.
+This section combines the type of access and location into one aspect, since the ultimate convenience to researchers arises from a combination of the two security measures. For instance, a data provider might provide researchers with a dedicated secure laptop, which can only be used to remotely access the analysis computers and nothing else. While there may be no location restrictions imposed on the researcher, the secured computer does not hold any data and this may be considered to be a de-facto **medium** security solution.
 
 The terms of the remote access will be defined in the DUA between the researcher and the data provider. The risks of locating the access computers but not the analysis computers away from the data provider are smaller. Because access computers contain no data, even if encrypted, the risk of inadvertent disclosure (for instance, if stolen) is reduced. Remaining risks include shoulder surfing and credential sharing, which can be mitigated by using third parties to control access. There is substantial convenience for researchers from having the access computer closer to their usual place of work, increasing the speed of research. The growth of networks of research data centers, where access is shared amongst many users while data are mostly remote, is testament to the demand among researchers and the acceptability of the risk for many data providers.
 
@@ -800,6 +805,7 @@ When **limited restrictions** are imposed, some methods might be prevented, even
 Analysis methods may be **highly restricted**. Restrictions can include limiting the methods available to researchers to a whitelisted set of commands or, in more extreme examples, limit researchers to the use of tabulator software that can only provide conditional tables. Most researchers will perceive this to impose strong limitations on their ability to conduct research as usual, but such methods are sometimes used to reach a wide range of users while allowing for more relaxed conditions on the rest of the Five Safes framework.
 
 <table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">(\#tab:securitytable5)Examples of range of analysis methods available</caption>
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
@@ -838,7 +844,7 @@ The [NB-IRDT](#nbirdt) serves as a third-party data custodian for the Province o
 
 The NB-IRDT requires over two dozen staff^[[https://www.unb.ca/nbirdt/about/team.html](https://www.unb.ca/nbirdt/about/team.html), accessed 2020-10-10.] located with the data custodian, including multiple data analysts, system administrators, and other technical staff to set up and maintain the data access mechanism. For more information, see chapter \@ref(nbirdt).
 
-### Institute for Employment Research (RDC-IAB)
+### Research Data Center at the Institute for Employment Research (RDC-IAB)
 
 <img src="./assets/security/badge_iab1web.png" width="300" style="float:left; padding:10px" />
 
@@ -852,7 +858,7 @@ The JoSuA remote execution system allows researchers to utilize the same microda
 
 <img src="./assets/security/badge_iab3web.png" width="300" style="float:left; padding:10px" />
 
-The RDC-IAB also makes data products (scientific use files) available for direct download by researchers using a [secure download platform][secure network protocols], which are further anonymized variants of the microdata available in the other two access methods. The researcher's institution acts as the data custodian by hosting the data and the analysis computer, with the researcher's institution having high agency over the analysis computer. The access computers and access location are also at the researcher's institution. The RDC-IAB DUA for downloading the scientific use files requires a medium security access location: The building and room are required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission with simple key locks. Also note that scientific use data can only be accessed by European research institutions.
+The RDC-IAB also makes data products (scientific use files) available for direct download by researchers using a [secure download platform][secure network protocols], which are further anonymized variants of the microdata available in the other two access methods. The researcher's institution acts as the data custodian by hosting the data and the analysis computer, with the researcher's institution having high agency over the analysis computer. The access computers and access location are also at the researcher's institution. The RDC-IAB DUA for downloading the scientific use files requires a medium security access location. The building and room are required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission with simple key locks. Also note that scientific use data can only be accessed by European research institutions.
 
 The RDC-IAB has a staff of over two dozen people^[[https://www.iab.de/839/section.aspx/Bereichsnummer/17](https://www.iab.de/839/section.aspx/Bereichsnummer/17), accessed 2020-10-10.], not counting staff at guest RDCs. Each data center requires at least one staff member, as well as additional staff to maintain the data products and approve projects. For more information, see chapter \@ref(iab).
 
@@ -906,9 +912,11 @@ The NCES restricted licenses require minimal resources for the data access mecha
 
 ### Summary of Examples
 
-Table \@ref{tab:securitysummarytable} provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
+Table \@ref(tab:securitysummarytable) provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.
+
 
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">(\#tab:securitysummarytable)Summary of Access Mechanisms Along the Five Aspects</caption>
  <thead>
   <tr>
    <th style="text-align:center;"> Data Access Mechanism </th>
@@ -921,17 +929,9 @@ Table \@ref{tab:securitysummarytable} provides a summary of the five asppects of
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:center;width: 10em; "> NB-IRDT <br> (chapter \@ref(nbirdt)) </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Custodian </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> High Security </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Limited </td>
-  </tr>
-  <tr>
    <td style="text-align:center;width: 10em; "> IAB RDC <br> (chapter \@ref(iab)) </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Provider </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
    <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> High Security </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Limited </td>
@@ -961,47 +961,31 @@ Table \@ref{tab:securitysummarytable} provides a summary of the five asppects of
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
   </tr>
   <tr>
-   <td style="text-align:center;width: 10em; "> PCRI <br> (chapter \@ref(pcri)) </td>
+   <td style="text-align:center;width: 10em; "> NB-IRDT <br> (chapter \@ref(nbirdt)) </td>
    <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Provider </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Limited </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;width: 10em; "> FSRDC </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Provider </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
    <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Custodian </td>
    <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> High Security </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
   </tr>
   <tr>
-   <td style="text-align:center;width: 10em; "> RTRA </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Provider </td>
+   <td style="text-align:center;width: 10em; "> PCRI <br> (chapter \@ref(pcri)) </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Highly Restricted </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;width: 10em; "> SPN </td>
-   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;width: 10em; "> NCES </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
-   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium Security </td>
-   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Limited </td>
   </tr>
   <tr>
    <td style="text-align:center;width: 10em; "> Aurora <br> (chapter \@ref(ahc)) </td>
+   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
+   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;width: 10em; "> Stanford-SFUSD <br> (chapter \@ref(sfusd)) </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
@@ -1025,11 +1009,35 @@ Table \@ref{tab:securitysummarytable} provides a summary of the five asppects of
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
   </tr>
   <tr>
-   <td style="text-align:center;width: 10em; "> Stanford-SFUSD <br> (chapter \@ref(sfusd)) </td>
+   <td style="text-align:center;width: 10em; "> FSRDC </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Provider </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Custodian </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> High Security </td>
+   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;width: 10em; "> NCES </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> High </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium Security </td>
+   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;width: 10em; "> RTRA </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Data Provider </td>
+   <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Researcher </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Low Security </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Highly Restricted </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;width: 10em; "> SPN </td>
+   <td style="text-align:center;width: 17em; background-color: #e0f3db !important;"> Low </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Third-Party </td>
+   <td style="text-align:center;width: 17em; background-color: #a8ddb5 !important;"> Medium Security </td>
    <td style="text-align:center;width: 17em; background-color: #43a2ca !important;"> Unrestricted </td>
   </tr>
 </tbody>
@@ -1049,7 +1057,7 @@ A final related point is that the enforcement of the terms of the +DUA| is an im
 
 ## About the Authors {-}
 
-[Jim Shen](https://www.povertyactionlab.org/person/shen) is the Senior Manager for the [Innovations in Data and Experiments for Action Initiative (IDEA)](https://www.povertyactionlab.org/initiative/innovations-data-experiments-action) at the Abdul Latif Jameel Poverty Action Lab based at MIT. He was the Data Manager for the Center for Education Policy Analysis (CEPA) from January 2015 to August 2019 where he managed the CEPA data warehouse. He was responsible for the day-to-day operations of the CEPA data warehouse, serving as the point of contact for Stanford researchers utilizing San Francisco Unified School District (SFUSD) data and SFUSD staff for data exchanges.
+[Jim Shen](https://www.povertyactionlab.org/person/shen) is the Senior Manager for the [Innovations in Data and Experiments for Action Initiative (IDEA)](https://www.povertyactionlab.org/initiative/innovations-data-experiments-action) at the Abdul Latif Jameel Poverty Action Lab based at MIT. He was the Data Manager for the Center for Education Policy Analysis (CEPA) from January 2015 to August 2019 where he managed the CEPA data warehouse. He was responsible for the day-to-day operations of the CEPA data warehouse, serving as the point of contact for Stanford researchers utilizing San Francisco Unified School District (SFUSD) data and SFUSD staff for data exchanges. Jim holds a BA in history and international relations and an MA in political science from the University of California, San Diego.
 
 [Lars Vilhuber](https://lars.vilhuber.com/) is the Executive Director of the Labor Dynamics Institute at Cornell University, and a faculty member in Cornell University’s Economics Department. He is also the American Economic Association’s Data Editor. Lars is a Co-Chair of IDEA. His research interests relate to the dynamics of the labor market. He also has extensive experience in the application of privacy-preserving publication and access to restricted data. He is chair of the scientific committee of the French restricted-access system [CASD](https://casd.eu), member of the governing board of the Canadian Research Data Centre Network ([CRDCN](https://crdcn.org)), and incoming chair of the  American Statistical Association‘s [Committee on Privacy and Confidentiality](https://community.amstat.org/cpc/home). Lars has an undergraduate degree in Economics from Universität Bonn and a Ph.D. in Economics from Université de Montréal.
 
@@ -1067,7 +1075,7 @@ A final related point is that the enforcement of the terms of the +DUA| is an im
 # Model Data Use Agreements: A Practical Guide {#dua}
 
 *Amy O'Hara (Georgetown University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">O'Hara, Amy. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Amy O'Hara. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">O'Hara, Amy. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Amy O'Hara. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 What are data use agreements? Data use agreements (DUA)---also referred to as data sharing agreements or data use licenses---are documents that describe what data are being shared, for what purpose, for how long, and any access restrictions or security protocols that must be followed by the recipient of the data. Other contracts, such as non-disclosure agreements, may be used to guarantee confidentiality over sensitive discussions, information, and data.
 
@@ -1103,7 +1111,11 @@ If a +data_provider| has an established data request process, a researcher must 
 
 ### Understanding the Available Data
 
-Researchers need to be able to identify the correct data source: the agency or organization who holds the data content needed for their planned analysis. This may be difficult in settings where data descriptions are not readily available. Can data users determine whether the data are fit for use? Can they ascertain what data is captured by data providers, how the data are coded, and whether such capture and coding are documented consistently across time? Well-prepared data users will typically do this by reviewing a data description, a +codebook|, or a +data_dictionary|. Data providers should consider preparing such materials or working with pilot data users to do so. A data sample may provide a better understanding of the data content. If documentation or a sample is unavailable, program rules, regulations, and forms can be used to provide background. However, a field on an application or benefits form does not automatically mean the information is cleaned or stored by the agency. Prior analyses of the same data by other studies or at other sites can provide helpful information on availability and usability of the underlying data. Researchers should seek out such studies and providers may want to keep a record of research conducted with their data to facilitate future use.
+Researchers need to be able to identify the correct data source: the agency or organization who holds the data content needed for their planned analysis. This may be difficult in settings where data descriptions are not readily available. Can data users determine whether the data are fit for use? Can they ascertain what data is captured by data providers, how the data are coded, and whether such capture and coding are documented consistently across time? 
+
+Well-prepared data users will typically do this by reviewing a data description, a +codebook|, or a +data_dictionary|. Data providers should consider preparing such materials or working with pilot data users to do so. A data sample may provide a better understanding of the data content. If documentation or a sample is unavailable, program rules, regulations, and forms can be used to provide background.
+
+However, a field on an application or benefits form does not automatically mean the information is cleaned or stored by the agency. Prior analyses of the same data by other studies or at other sites can provide helpful information on availability and usability of the underlying data. Researchers should seek out such studies and providers may want to keep a record of research conducted with their data to facilitate future use.
 
 ### Understanding the Costs of Obtaining Data
 
@@ -1227,7 +1239,9 @@ No matter the size of the project or the volume of data needed, all parties shou
 
 ### Appendix A {- #dua-appendixa}
 
-[Sample Text for Agreement Components](.\appendix\dua_appendix.pdf)
+[Sample Text for Agreement Components](./appendix/dua_appendix.pdf)
+
+
 
 
 
@@ -1286,7 +1300,7 @@ This index, a collection of standards, guides, and templates, is searchable by g
 # Collaborating with the Institutional Review Board (IRB) {#irb}
 
 *Kathleen Murphy (Northwestern University, ret.)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Murphy, Kathleen. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Kathleen Murphy. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Murphy, Kathleen. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Kathleen Murphy. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Introduction
 
@@ -1538,7 +1552,9 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 ## Appendix {- #irb-appendix}
 
-[Data-Only Protocol Template](.\appendix\irb_appendix.pdf)
+[Data-Only Protocol Template](./appendix/irb_appendix.pdf)
+
+
 
 
 
@@ -1551,7 +1567,7 @@ Kathleen Murphy, PhD, MSW, MLIS, is a Certified IRB Professional, retired from N
 
 *Ian M. Schmutte (University of Georgia)*  
 *Lars Vilhuber (Cornell University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Schmutte, Ian M.,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Ian M. Schmutte, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Schmutte, Ian M.,  and Lars Vilhuber. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Ian M. Schmutte, Lars Vilhuber. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 The purpose of this Handbook is to provide guidance on how to enable broader but ethical and legal access to data. Within the Five Safes framework [@desai2016], data providers need to create *safe data* that can be provided to trusted *safe people* for use within *safe settings* (chapter \@ref(security)), subject to legal and contractual safeguards (chapter \@ref(dua)).  Related, but distinct, is the question of how to create *safe outputs* from researchers' findings before those findings finally make their way into the public through, for example, policy briefs or the academic literature. The processes used to create safe data and safe outputs (manipulations that render data less sensitive and therefore more appropriate for public release) are generally referred to as +statistical_disclosure_limitation| (SDL).^[Other terms sometimes used are "anonymization" or "de-identification," but as this chapter will show, de-identification is a particular method of SDL, and anonymization is a goal, never fully achieved, rather than a method.] This chapter will describe techniques traditionally used within the field of SDL, pointing at methods as well as metrics to assess the resultant statistical quality and sensitivity of the data. Newer approaches, generally referred to as *formal privacy methods*, are described in chapter \@ref(diffpriv). 
 
@@ -1687,7 +1703,7 @@ Synthetic data have been used in the Federal Reserve Board's Survey of Consumer 
 
 Table \@ref(tab:overviewtable) shows how the various methods can be combined, drawing on examples both from this Handbook as well as from other frequently used data sources.
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>(\#tab:overviewtable)Summary of SDL methods</caption>
  <thead>
   <tr>
@@ -1866,7 +1882,7 @@ etic Data </th>
    <td style="text-align:left;"> ![](./assets/discavoid/noweb.png) </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<tfoot><tr><td style="padding: 0; " colspan="100%">
 <span style="font-style: italic;">Note: </span> <sup></sup> ![](./assets/discavoid/yesweb.png) = Yes, ![](./assets/discavoid/partialweb.png) = Partially, ![](./assets/discavoid/noweb.png) = No, --- = No Info</td></tr></tfoot>
 </table>
 
@@ -1936,13 +1952,13 @@ This chapter draws on @abowd_introductory_2019 and the INFO7470 class at Cornell
 *Micah Altman (Massachusetts Institute of Technology)*  
 *Kobbi Nissim (Georgetown University)*  
 *Salil Vadhan (Harvard University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Wood, Alexandra, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Alexandra Wood, Micah Altman, Kobbi Nissim, Salil Vadhan. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Wood, Alexandra, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Alexandra Wood, Micah Altman, Kobbi Nissim, Salil Vadhan. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
-## Introduction and Overview
+## Introduction and Overview {#sec:dp-intro}
 
 This chapter explains how administrative data containing personal information can be collected, analyzed, and published in a way that ensures the individuals in the data will be afforded the strong protections of *differential privacy*.
 
-It is intended as a practical resource for government agencies and research organizations interested in exploring the possibility of implementing tools for differentially private data sharing and analysis. Using intuitive examples rather than the mathematical formalism used in other guides, this chapter introduces the differential privacy definition and the risks it was developed to address. The text employs modern privacy frameworks to explain how to determine whether the use of differential privacy is an appropriate solution in a given setting. It also discusses the design considerations one should take into account when implementing differential privacy. This discussion incorporates a review of real-world implementations, including tools designed for tiered access systems combining differential privacy with other disclosure controls presented in this handbook, such as consent mechanisms, data use agreements, and secure environments.
+It is intended as a practical resource for government agencies and research organizations interested in exploring the possibility of implementing tools for differentially private data sharing and analysis. Using intuitive examples rather than the mathematical formalism used in other guides, this chapter introduces the differential privacy definition and the risks it was developed to address. The text employs modern privacy frameworks to explain how to determine whether the use of differential privacy is an appropriate solution in a given setting. It also discusses the design considerations one should take into account when implementing differential privacy. This discussion incorporates a review of real-world implementations, including tools designed for tiered access systems combining differential privacy with other disclosure controls presented in this Handbook, such as consent mechanisms, data use agreements, and secure environments.
 
 Differential privacy technology has passed a preliminary transition from being the subject of academic work to initial implementations by large organizations and high-tech companies that have the expertise to develop and implement customized differentially private methods. With a growing collection of software packages for generating differentially private releases from summary statistics to machine learning models, differential privacy is now transitioning to being usable more widely and by smaller organizations.
 
@@ -1950,7 +1966,7 @@ Differential privacy technology has passed a preliminary transition from being t
 
 We place differential privacy in a general framework---introduced by @altman2015 and an alternative to the Five Safes framework [@desai2016] used throughout this Handbook---that involves selecting combinations of statistical, technical, and administrative controls to mitigate risks of harm to individuals resulting from access to data. The framework discusses differential privacy as an approach to employ together with other tools, including consent mechanisms, data use agreements, and secure environments.
 
-The chapter is organized as follows: Section \@ref(sec:what-dp-protects) explains the differential privacy guarantee in more detail using stories to illustrate what differential privacy does and does not protect. Section \@ref(sec:aligning) places differential privacy in a general framework of complementary privacy controls and characterizes principles for selecting differential privacy in conjunction with other controls. These principles include calibrating privacy and security controls to the intended uses and privacy risks associated with the data, and anticipating, regulating, monitoring, and reviewing interactions with data across all stages of the lifecycle (including the post-access stages), as risks and methods will evolve over time. Section \@ref(sec:case-studies) presents succinct summaries of several deployment cases. These provide selected concrete examples of data dissemination that illustrate some key design choices and their implications.
+The chapter is organized as follows: Section \@ref(sec:what-dp-protects) explains the differential privacy guarantee in more detail using stories to illustrate what differential privacy does and does not protect. Section \@ref(sec:aligning) places differential privacy in a general framework of complementary privacy controls and characterizes principles for selecting differential privacy in conjunction with other controls. These principles include calibrating privacy and security controls to the intended uses and privacy risks associated with the data, and anticipating, regulating, monitoring, and reviewing interactions with data across all stages of the lifecycle (including the post-access stages), as risks and methods will evolve over time. Section \@ref(sec:case-studies) presents succinct summaries of several deployment cases. These provide selected concrete examples of data dissemination that illustrate some key design choices and their implications. Some of the content in this chapter (Sections \@ref(sec:dp-intro)--\@ref(sec:aligning)) is excerpted from, adapted from, or otherwise based, in part, on @wood_differential_2018 and @altman2015.
 
 More technical discussions of several topics are included in an extensive online appendix. A discussion of different technical approaches to disseminating data with differential privacy can be found in Appendix [A](#diffpriv-appendixa), which also characterizes the key design choices and trade-offs across them. Appendix [B](#diffpriv-appendixb) elaborates on the implications of differential privacy for data collection, use, and dissemination with a special emphasis on how differential privacy affects data collection and data repository practice and policy. Appendix [C](#diffpriv-appendixc) provides a list of selected tools and resources for implementing differential privacy protections.
 
@@ -1964,17 +1980,17 @@ A number of measures have been developed for sharing sensitive data while protec
 
 Differential privacy is motivated by an ever-growing number of real-world examples of data releases that were thought to be sufficiently protective of privacy but were later shown to carry significant privacy risks. Over time, changes in the way information is collected and analyzed, including advances in analytical capabilities, increases in computational power, and the expanding availability of personal data from a wide range of sources, are eroding the effectiveness of traditional SDL techniques.
 
-For over a century,[^diffpriv3] statistical agencies have recognized the need to protect against uses of data that would threaten privacy, and, for most of this time, the primary focus of formal protections has been to prevent reidentification [for an overview, see @willenborg1996statistical]. Reidentification attacks gained renewed attention in the privacy research literature in the late 1990s [@sweeney1997weaving] and have become increasingly sophisticated over time, along with other emerging types of attacks that seek to infer characteristics of individuals based on information about them in the data [@NarayananS08; @de_montjoye_unique_2013; @CalandrinoKNFS11]. In particular, successful attacks on de-identified data have shown that traditional technical measures for privacy protection may be vulnerable to attacks devised after a technique's deployment and use. Some de-identification techniques, for example, categorize attributes in the data as (quasi-)identifying (e.g., names, dates of birth, or addresses) or non-identifying (e.g., movie ratings or hospital admission dates). Data providers may later discover that attributes initially believed to be non-identifying can in fact be used to reidentify individuals. De-identification hence requires a careful analysis---not only of present data sources that could be linked with the de-identified data toward enabling reidentification but also of future data sources and other hard-to-anticipate future sources of auxiliary information that can be used for reidentification.
+For over a century,[^diffpriv3] statistical agencies have recognized the need to protect against uses of data that would threaten privacy, and, for most of this time, the primary focus of formal protections has been to prevent re-identification [for an overview, see @willenborg1996statistical]. Re-identification attacks gained renewed attention in the privacy research literature in the late 1990s [@sweeney1997weaving] and have become increasingly sophisticated over time, along with other emerging types of attacks that seek to infer characteristics of individuals based on information about them in the data [@NarayananS08; @de_montjoye_unique_2013; @CalandrinoKNFS11]. In particular, successful attacks on de-identified data have shown that traditional technical measures for privacy protection may be vulnerable to attacks devised after a technique's deployment and use. Some de-identification techniques, for example, categorize attributes in the data as (quasi-)identifying (e.g., names, dates of birth, or addresses) or non-identifying (e.g., movie ratings or hospital admission dates). Data providers may later discover that attributes initially believed to be non-identifying can in fact be used to re-identify individuals. De-identification hence requires a careful analysis---not only of present data sources that could be linked with the de-identified data toward enabling re-identification but also of future data sources and other hard-to-anticipate future sources of auxiliary information that can be used for re-identification.
 
-Moreover, there are privacy attacks beyond record linkage attacks on de-identified records. A recent example illustrating the evolving nature of privacy attacks is the reconstruction and reidentification of the 2010 Decennial Census database. This example demonstrates that even publications of statistical tables transformed using traditional statistical disclosure limitation techniques may be vulnerable to privacy attacks.[^diffpriv4]
+Moreover, there are privacy attacks beyond record linkage attacks on de-identified records. A recent example illustrating the evolving nature of privacy attacks is the reconstruction and re-identification of the 2010 Decennial Census database. This example demonstrates that even publications of statistical tables transformed using traditional statistical disclosure limitation techniques may be vulnerable to privacy attacks.[^diffpriv4]
 
 \BeginKnitrBlock{bbox}<div class="bbox">In a paper published in 2018, researchers revealed that the underlying confidential data from the 2010 US Decennial Census could be reconstructed using only the statistical tables published by the US Census Bureau [@GarfinkelAM19]. Researchers demonstrated a type of attack, called a *database reconstruction attack*, that leveraged the large volumes of data from the published statistical tables in order to narrow down the possible values of individual-level records. The researchers were able to reconstruct with perfect accuracy the sex, age, race, ethnicity, and fine-grained geographic location (to the block-level) reported by Census respondents for 46 percent of the US population [@AbowdSimonsPresentation]. Researchers also showed that, if they slightly relaxed their conditions and allowed age to vary by up to only one year, these five pieces of information could be reconstructed for 71 percent of the population [@AbowdSimonsPresentation].
 
-Further, the researchers showed that the reconstructed records could be completely *reidentified*. They were able to assign personally identifiable information to individual records using commercial databases that were available in 2010 [@AbowdSimonsPresentation]. They concluded that, with this attack, they could putatively reidentify 138 million people, and they confirmed that these reidentifications were accurate for $52$ million people, or 17 percent of the US population [@AbowdSimonsPresentation].
+Further, the researchers showed that the reconstructed records could be completely *re-identified*. They were able to assign personally identifiable information to individual records using commercial databases that were available in 2010 [@AbowdSimonsPresentation]. They concluded that, with this attack, they could putatively re-identify 138 million people, and they confirmed that these re-identifications were accurate for $52$ million people, or 17 percent of the US population [@AbowdSimonsPresentation].
 
-These findings are startling. In 2012, the last time the Census Bureau performed a simulated reidentification attack on census data sets, the reidentification rate was only 0.0038 percent [@ramachandran2012]. The test attack using the data published for the 2010 Decennial Census demonstrates that previous risk assessments underestimated the reidentification risk by a factor of at least 4,500 [@ramachandran2012]. </div>\EndKnitrBlock{bbox}
+These findings are startling. In 2012, the last time the Census Bureau performed a simulated re-identification attack on census data sets, the re-identification rate was only 0.0038 percent [@ramachandran2012]. The test attack using the data published for the 2010 Decennial Census demonstrates that previous risk assessments underestimated the re-identification risk by a factor of at least 4,500 [@ramachandran2012]. </div>\EndKnitrBlock{bbox}
 
-The demonstration of a database reconstruction attack on the statistical tables published by the Census Bureau is just the latest in a long line of attacks illustrating the privacy risks associated with releasing and analyzing large volumes of data about individuals. In particular, it is a real-world manifestation of the growing risks from combining and analyzing multiple statistical releases---broadly referred to as risks from *composition* [@GantaKS08; @fluitt2019]. The modern mathematical understanding recognizes that any research output increases disclosure risk.[^diffpriv5] Although some increases in disclosure risk may be small, they accumulate, potentially to the point of a severe privacy breach. Taken together, the outputs may enable an accurate reconstruction of large portions of the data set, as seen in the reconstruction and reidentification of the 2010 Decennial Census database.
+The demonstration of a database reconstruction attack on the statistical tables published by the Census Bureau is just the latest in a long line of attacks illustrating the privacy risks associated with releasing and analyzing large volumes of data about individuals. In particular, it is a real-world manifestation of the growing risks from combining and analyzing multiple statistical releases---broadly referred to as risks from *composition* [@GantaKS08; @fluitt2019]. The modern mathematical understanding recognizes that any research output increases disclosure risk.[^diffpriv5] Although some increases in disclosure risk may be small, they accumulate, potentially to the point of a severe privacy breach. Taken together, the outputs may enable an accurate reconstruction of large portions of the data set, as seen in the reconstruction and re-identification of the 2010 Decennial Census database.
 
 Producing accurate statistics while protecting privacy and addressing risks from composition is a challenging problem [@DMNS16]. It is a fundamental law of information that privacy risk grows with the repeated use of data, and this applies to any disclosure limitation technique. Traditional SDL techniques---such as suppression, aggregation, and generalization---often reduce accuracy and are vulnerable to privacy loss due to composition.[^diffpriv6] A rigorous analysis of the effect of composition is important for establishing a robust and realistic understanding of how multiple statistical computations affect privacy.
 
@@ -1986,17 +2002,17 @@ Differential privacy is a strong definition (or, in other words, a standard) of 
 
 With differential privacy, statements about risk are proved mathematically---rather than supported heuristically or empirically. The definition of differential privacy also has a compelling intuitive interpretation: inferring information specific to an individual from the outcome of an analysis preserving differential privacy is impossible, including whether the individual's information was used at all.
 
-#### Differential Privacy is a Standard, not a Single Tool {-}
+#### Differential Privacy Is a Standard, Not a Single Tool {-}
 
 Differential privacy is a standard which many tools for analyzing sensitive personal information have been devised to satisfy. Any analysis meeting the standard provably protects its data against a wide range of *privacy attacks*, i.e., attempts to learn private information specific to individuals from a data release.[^diffpriv8]
 
-#### Differential Privacy is Designed for Analysis of Populations, not Individuals {-}
+#### Differential Privacy Is Designed for Analysis of Populations, Not Individuals {-}
 
 Differentially private analyses can be deployed in settings in which an analyst seeks to learn about a population. For example, when statistical estimates (such as counts, averages, histograms, contingency tables, regression coefficients, and synthetic data) are computed based on personal information, the privacy of the individuals in the data needs to be protected.
 
 #### The Differential Privacy Guarantee {-}
 
-It is mathematically guaranteed that the recipient of data release generated by a differentially private analysis will make essentially the same inferences about any single individual's private information, whether or not that individual's private information is included in the input to the analysis.
+It is mathematically guaranteed that the recipient of a data release generated by a differentially private analysis will make essentially the same inferences about any single individual's private information, whether or not that individual's private information is included in the input to the analysis.
 
 The differential privacy guarantee can be understood in reference to other privacy concepts, such as opt-out and protection of personally identifiable information (PII):
 
@@ -2012,7 +2028,7 @@ To achieve differential privacy, carefully crafted random statistical noise must
 
 The introduction of statistical noise to protect privacy necessarily reduces the accuracy of statistical analyses. As the number $n$ of observations in a data set grows sufficiently large, the loss in accuracy due to differential privacy can become much smaller than other sources of error such as statistical sampling error. However, maintaining high accuracy for studies on small or modest-sized data sets (or modest-sized subsets of large data sets) is a challenge. As a consequence, all results computed using tools for differentially private analysis will be approximate. Conversely, any system that produces exact results without any random modifications cannot meet the differential privacy standard.
 
-#### Preventing Cumulative Privacy Failure Requires a Budget for Privacy Loss, which in Turn Limits Utility {-}
+#### Preventing Cumulative Privacy Failure Requires a Budget for Privacy Loss, Which in Turn Limits Utility {-}
 
 Every computation leaks some information about the individual records used as input regardless of the protection method used. To prevent cumulative privacy failure, the privacy loss that accumulates over multiple computations must be calculated, tracked, and limited. Differential privacy provides explicit, formal methods for defining and managing this cumulative loss, referred to as the *privacy-loss budget*.
 
@@ -2024,7 +2040,7 @@ The scenarios in this section illustrate the types of information disclosures th
 
 \BeginKnitrBlock{bbox}<div class="bbox">Alice and Bob are professors at Private University. They both have access to a database that contains personal information about students at the university, including information related to the financial aid each student receives. To gain access, Alice and Bob were required to undergo confidentiality training and to sign data use agreements restricting the disclosure of personal information obtained from the database.
 
-In March, Alice publishes an article based on the information in this database and writes that "the current freshman class at Private University is made up of 3,005 students, 202 of whom are from families earning over US\$350,000$ per year." Alice reasons that no individual's personal information will be exposed because she published an aggregate statistic taken over 3,005 people. The following month, Bob publishes a separate article containing these statistics: "201 families in Private University's freshman class of 3,004 have household incomes exceeding US\$350,000 per year." Neither Alice nor Bob is aware that they have both published similar information.
+In March, Alice publishes an article based on the information in this database and writes that "the current freshman class at Private University is made up of 3,005 students, 202 of whom are from families earning over US\$350,000 per year." Alice reasons that no individual's personal information will be exposed because she published an aggregate statistic taken over 3,005 people. The following month, Bob publishes a separate article containing these statistics: "201 families in Private University's freshman class of 3,004 have household incomes exceeding US\$350,000 per year." Neither Alice nor Bob is aware that they have both published similar information.
 
 A clever student Eve reads both of these articles and makes an observation. From the published information, Eve concludes that between March and April one freshman withdrew from Private University and that the student's parents earn over US\$350,000 per year. Eve asks around and is able to determine that a student named John dropped out around the end of March. Eve then informs her classmates that John's parents probably earn over US\$350,000 per year.
 
@@ -2066,7 +2082,7 @@ Researchers are developing a variety of differentially private clustering algori
 
 #### Classification and Machine Learning {-}
 
-Theoretical work has shown it is possible to construct differentially private algorithms for a large collection of classification tasks (e.g., identifying or predicting to which set of categories a data point belongs, based on a training set of examples for which category membership is known) [@BlumDMN05; @KLNRS11], and subsequent work has developed more practical methods for differentially private machine learning, including deep learning [@abadi2016deep].
+Theoretical work has shown it is possible to construct differentially private algorithms for a large collection of classification tasks, such as identifying or predicting to which set of categories a data point belongs based on a training set of examples for which category membership is known [@BlumDMN05; @KLNRS11], and subsequent work has developed more practical methods for differentially private machine learning, including deep learning [@abadi2016deep].
 
 #### Synthetic data generation {-}
 
@@ -2082,7 +2098,7 @@ To see how differential privacy formalizes this privacy requirement as a definit
 
 \BeginKnitrBlock{bbox}<div class="bbox">Researchers have selected a sample of individuals across the US to participate in a survey exploring the relationship between socioeconomic status and health outcomes. The participants were asked to complete a questionnaire covering topics such as where they live, their finances, and their medical history.
 
-One of the participants, John, is aware that individuals have been reidentified in previous releases of de-identified data and is concerned that personal information he provides about himself, such as his medical history or annual income, could one day be revealed in de-identified data released from this study. If leaked, this information could lead to an increase in his life insurance premium or an adverse decision for a future mortgage application.</div>\EndKnitrBlock{bbox}
+One of the participants, John, is aware that individuals have been re-identified in previous releases of de-identified data and is concerned that personal information he provides about himself, such as his medical history or annual income, could one day be revealed in de-identified data released from this study. If leaked, this information could lead to an increase in his life insurance premium or an adverse decision for a future mortgage application.</div>\EndKnitrBlock{bbox}
 
 Differential privacy can be used to address John's concerns. If the researchers only share data resulting from a differentially private computation, John is guaranteed that the release will not disclose anything that is *specific to him* even though he participated in the study.
 
@@ -2112,9 +2128,9 @@ We focus specifically on analyses that transform sensitive personal data into an
 
 A key insight from the theoretical computer science literature is that *privacy is a property of the informational relationship between the input and output*, not a property of the output alone.[^diffpriv17] In other words, one can be certain that the output of a computation is privacy-preserving if the computation itself is privacy-preserving. The following examples show why this is the case.
 
-Consider the following statistic: a representative ninth-grade GPA at City High School is 3.5. One might naturally think that this statistic is unlikely to reveal private information about an individual student. However, one needs to know *how* the statistic was computed to make that determination. For instance, if the representative ninth-grade GPA was calculated by taking the GPA of the alphabetically first student in the school, then the statistic completely reveals the GPA of that student.[^diffpriv18] Alternatively, a representative statistic could be based on average features of the ninth graders in the school---using the most common first name, the most common last name, the average age, and the average GPA to produce "John Smith, a fourteen-year-old in the ninth grade, has a 3.1 GPA." Suppose that coincidentally a student named John Smith subsequently joins the ninth-grade class. Although his name appears in the published statistic, one knows with certainty that the statistic does not reveal private information about him, because it was not based on his student records in any way.
+Consider the following statistic: "a representative ninth-grade GPA at City High School is 3.5." One might naturally think that this statistic is unlikely to reveal private information about an individual student. However, one needs to know *how* the statistic was computed to make that determination. For instance, if the representative ninth-grade GPA was calculated by taking the GPA of the alphabetically first student in the school, then the statistic completely reveals the GPA of that student.[^diffpriv18] Alternatively, a representative statistic could be based on average features of the ninth graders in the school---using the most common first name, the most common last name, the average age, and the average GPA to produce "John Smith, a fourteen-year-old in the ninth grade, has a 3.1 GPA." Suppose that coincidentally a student named John Smith subsequently joins the ninth-grade class. Although his name appears in the published statistic, one knows with certainty that the statistic does not reveal private information about him, because it was not based on his student records in any way.
 
-These examples are clearly contrived, and no reasonable analyst would publish either statistic. On a fundamental level, however, the examples demonstrate that when trying to decide whether a data release can be made public, one needs to consider the computation used to produce that release and not the release by itself. Thus, when thinking about privacy in the context of statistical releases, one should think about it as a computational property, especially if the goal is to make rigorous, formal claims about the data. This is one of the properties of differential privacy. If a computation can be proven to be differentially private, the researcher can rest assured that using the computation will not unduly reveal information specific to a data subject. Adopting this formal approach to privacy yields several practical benefits for users, including robustness to auxiliary information, composition, and post-processing, as well as transparency---each discussed in turn below.
+These examples are clearly contrived, and no reasonable analyst would publish either statistic. On a fundamental level, however, the examples demonstrate that when trying to decide whether a data release can be made public, one needs to consider the computation used to produce that release and not the release by itself. Thus, when thinking about privacy in the context of statistical releases, one should think about it as a computational property, especially if the goal is to make rigorous, formal claims about the data. This is one of the properties of differential privacy. If a computation can be proven to be differentially private, the researcher can rest assured that using the computation will not unduly reveal information specific to a data subject. Adopting this formal approach to privacy yields several practical benefits for users, including robustness to auxiliary information, composition, and post-processing, as well as transparency---each discussed in turn below in Section \@ref(sec:methodology-example-limit-privacy-loss).
 
 ### Methodology Example: Limiting Privacy Loss from Participation in Research {#sec:methodology-example-limit-privacy-loss}
 
@@ -2177,7 +2193,7 @@ Consequently, this analysis *does not* imply that Gertrude would incur an increa
 
 Gertrude may decide that the potential cost of participating in the research study, US\$40, is too high and she cannot afford to participate with this value of $\varepsilon$ and this level of risk. Alternatively, she may decide that it is worthwhile. Perhaps she is paid more than US\$40 to participate in the study or the information she learns from the study is worth more than US\$40 to her. The key point is that differential privacy allows Gertrude to make a more informed decision based on the worst-case cost of her participation in the study.
 
-It is worth noting that should Gertrude decide to participate in the study, her risk might increase even if her insurance company is not aware of her participation. For instance, the study might determine that Gertrude has a very high chance of dying next year, r and that could affect the study results. In turn, her insurance company might decide to raise her premium, because she fits the profile of the studied population (even if the company does not believe her data were included in the study). On the other hand, differential privacy guarantees that even if the insurance company knows that Gertrude *did* participate in the study, it can essentially only make inferences about her that it could have made if she had not participated in the study.
+It is worth noting that should Gertrude decide to participate in the study, her risk might increase even if her insurance company is not aware of her participation. For instance, the study might determine that Gertrude has a very high chance of dying next year, and that could affect the study results. In turn, her insurance company might decide to raise her premium, because she fits the profile of the studied population (even if the company does not believe her data were included in the study). On the other hand, differential privacy guarantees that even if the insurance company knows that Gertrude *did* participate in the study, it can essentially only make inferences about her that it could have made if she had not participated in the study.
 
 One can generalize from Gertrude's scenario and view differential privacy as a framework for reasoning about the increased risk that is incurred when an individual's information is included in a data analysis. Differential privacy guarantees that an individual will be exposed to essentially the same privacy risk regardless of whether their data are included in a differentially private analysis. In this context, think of the privacy risk associated with a data release as the potential harm that an individual might experience due to a belief that an observer forms based on that data release.
 
@@ -2191,7 +2207,7 @@ Note that the above calculation requires certain information that may be difficu
 
 Calculations like those used in the analysis of Gertrude's privacy risk can be performed by referring to Table \@ref(tab:diffprivtable1).[^diffpriv27] For example, the value of $\varepsilon$ used in the research study in which Gertrude considered participating was 0.01, and the baseline privacy risk in her opt-out scenario was 2 percent. As shown in Table \@ref(tab:diffprivtable1), these values correspond to a worst-case privacy risk of 2.04 percent in her real-world scenario. Notice also how the calculation of risk would change with different values. For example, if the privacy risk in Gertrude's opt-out scenario were 5 percent rather than 2 percent and the value of epsilon remained the same, then the worst-case privacy risk in her real-world scenario would be 5 percent.
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>(\#tab:diffprivtable1)Maximal change between posterior beliefs in Gertrude's opt-out and real-world scenarios.
             The notation $A(x')$ refers to the application of the analysis $A$ on the dataset $x'$, which does not include Gertrude's
             information. As this table shows, the use of differential privacy provides a quantitative bound on how much one can 
@@ -2342,8 +2358,8 @@ Calculations like those used in the analysis of Gertrude's privacy risk can be p
   </tr>
 </tbody>
 <tfoot>
-<tr><td style="padding: 0; border: 0;" colspan="100%"><span style="font-style: italic;"> </span></td></tr>
-<tr><td style="padding: 0; border: 0;" colspan="100%">
+<tr><td style="padding: 0; " colspan="100%"><span style="font-style: italic;"> </span></td></tr>
+<tr><td style="padding: 0; " colspan="100%">
 <sup></sup> For each value of $\varepsilon$, maximum posterior belief given A(x) in %</td></tr>
 </tfoot>
 </table>
@@ -2356,7 +2372,7 @@ This discussion outlines some of the key features of differential privacy that e
 
 #### Differential Privacy is Robust to Auxiliary Information {-}
 
-As illustrated by the reidentification attack on the 2010 Decennial Census database described in Section \@ref(sec:motivation-formal-guarantee-protect), effective privacy protection requires taking auxiliary information into account. A data provider designing a differentially private data release need not anticipate particular types of privacy attacks, such as the likelihood that one could link particular fields with other data sources that may be available. When using differential privacy, even an attacker utilizing arbitrary auxiliary information cannot learn much more about an individual in a database than they could if that individual's information were not in the database at all.
+As illustrated by the re-identification attack on the 2010 Decennial Census database described in Section \@ref(sec:motivation-formal-guarantee-protect), effective privacy protection requires taking auxiliary information into account. A data provider designing a differentially private data release need not anticipate particular types of privacy attacks, such as the likelihood that one could link particular fields with other data sources that may be available. When using differential privacy, even an attacker utilizing arbitrary auxiliary information cannot learn much more about an individual in a database than they could if that individual's information were not in the database at all.
 
 Currently, differential privacy is the only framework that provides meaningful privacy guarantees in scenarios in which adversaries have access to arbitrary external information. Releases constructed in a differentially private manner provide provable privacy protection against any feasible adversarial attack, whereas de-identification concepts only counter a limited set of specific attacks.
 
@@ -2384,11 +2400,11 @@ The following example illustrates the types of information disclosures that diff
 
 \BeginKnitrBlock{bbox}<div class="bbox">Ellen is John's friend and knows that he regularly consumes several glasses of red wine with dinner. Ellen learns that a research study had found a positive correlation between drinking red wine and the likelihood of developing a certain type of cancer. Based on the study and her knowledge of John's drinking habits, she might conclude that he has a heightened risk of developing cancer.</div>\EndKnitrBlock{bbox}
 
-It may seem that the publication of the research results enabled a privacy breach by Ellen, as the study's findings helped her infer new information about John's elevated cancer risk of which he himself may be unaware. However, Ellen would be able to infer this information about John regardless of his participation in the medical study (i.e., it is a risk that exists in both John's opt-out scenario and the real-world scenario). Risks of this nature apply to everyone, regardless of whether they shared personal data through the study or not. Differential privacy is a concept specifically designed to allow for studies such as in this example. Therefore, differential privacy does not guarantee that *no* information about John can be revealed. The use of differential privacy only protects the information that is *specific*, i.e., information about John that cannot be inferred unless an analysis received his personal information as part of the input.
+It may seem that the publication of the research results enabled a privacy breach by Ellen, as the study's findings helped her infer new information about John's elevated cancer risk of which he himself may be unaware. However, Ellen would be able to infer this information about John regardless of his participation in the medical study (i.e., it is a risk that exists in both John's opt-out scenario and the real-world scenario). Risks of this nature apply to everyone, regardless of whether they shared personal data through the study or not. Differential privacy is a concept specifically designed to allow for studies such as in this example. Therefore, differential privacy does not guarantee that *no* information about John can be revealed. The use of differential privacy only protects the information that is *specific* to him, i.e., information about John that cannot be inferred unless an analysis received his personal information as part of the input.
 
 This and similar examples demonstrate that any useful analysis carries a risk of revealing some information about individuals. However, such risks are largely unavoidable. In a world in which data about individuals are collected, analyzed, and published, John cannot expect better privacy protection than is offered by his opt-out scenario, because he has no ability to prevent others from participating in a research study or to prohibit a release of public records. Moreover, the types of information disclosures enabled in John's opt-out scenario often result in individual and societal benefits. For example, the discovery of a causal relationship between red wine consumption and elevated cancer risk can inform John about possible changes he could make in his habits that would likely have positive effects on his health.
 
-## Aligning Risks, Controls, and Uses: Where is the Use of Differential Privacy Appropriate? {#sec:aligning}
+## Aligning Risks, Controls, and Uses: Where Is the Use of Differential Privacy Appropriate? {#sec:aligning}
 
 This section discusses factors to take into account when evaluating whether differential privacy is an appropriate tool to be applied within a specific context, as well as factors in determining whether differential privacy should be deployed alone, in combination with other controls, or as part of a tiered access system. As an overview, Table \@ref(tab:diffprivtable2) provides some of the key factors that weigh in favor of, or against, an appropriate use of differential privacy. For example, use cases involving statistical analysis of a population or large groups and the possibility of significant and lasting informational harms to individuals weigh heavily in favor of the adoption of differential privacy.
 
@@ -2396,7 +2412,7 @@ To help guide a systematic analysis of the relevant factors within a specific us
 
 (ref:table-opportunity-atlas) \@ref(sec:opportunity-atlas)
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>(\#tab:diffprivtable2)Considerations when deciding whether to use differential privacy for a particular use case.</caption>
  <thead>
   <tr>
@@ -2448,9 +2464,9 @@ To help guide a systematic analysis of the relevant factors within a specific us
   </tr>
 </tbody>
 <tfoot>
-<tr><td style="padding: 0; border: 0;" colspan="100%">
+<tr><td style="padding: 0; " colspan="100%">
 <sup>1</sup> A control on computation is designed to ''limit the direct operations that can be meaningfully performed on data. Commonly used examples are file-level encryption and interactive analysis systems or model servers. Emerging approaches include secure multiparty computation, functional encryption, homomorphic encryption, and secure public ledgers, eg blockchain technologies.'' [@AltmanPracticalApproaches]</td></tr>
-<tr><td style="padding: 0; border: 0;" colspan="100%">
+<tr><td style="padding: 0; " colspan="100%">
 <sup>2</sup> For a real-world example, see the Opportunity Atlas case study presented in Section (ref:table-opportunity-atlas)</td></tr>
 </tfoot>
 </table>
@@ -2460,8 +2476,8 @@ To help guide a systematic analysis of the relevant factors within a specific us
 @altman2015 propose a framework for selecting reasonable and appropriate privacy and security measures that are calibrated to the intended uses, threats, harms, and vulnerabilities associated with a specific research activity.[^diffpriv31] For applying this framework in practice, @altman2015 recommend a life-cycle approach to decomposing the factors at each information stage, including the collection, transformation, retention, access and release, and post-access stages. A diagram from @altman2015 illustrating a partial conceptualization of this framework is reproduced in Figure \@ref(fig:dpfig4). The x-axis represents the sensitivity of the information, or the maximum level of expected harm to an individual in the data resulting from uncontrolled use of the data. The y-axis represents the post-transformation identifiability, or the potential for others to learn about individuals based on the inclusion of their information in the data. Examples range from data sets containing direct or indirect identifiers to data shared using expertly applied rigorous disclosure limitation techniques backed by a formal mathematical proof of privacy (e.g., user-level differential privacy with a low value of $\varepsilon$).
 
 <div class="figure">
-<img src="./assets/diffpriv/dp_opendata.png" alt="Calibrating privacy and security controls." width="960" />
-<p class="caption">(\#fig:dpfig4)Calibrating privacy and security controls.</p>
+<img src="./assets/diffpriv/dp_opendata_web.png" alt="Calibrating privacy and security controls" width="800" />
+<p class="caption">(\#fig:dpfig4)Calibrating privacy and security controls</p>
 </div>
 
 These factors---the level of expected harm from uncontrolled use of the data and the post-transformation identifiability of the data---suggest minimum privacy and security controls that are appropriate in a given case, as shown by the shaded regions in Figure \@ref(fig:dpfig4). The subsets of controls within each region illustrate some possible combinations of controls from the more comprehensive set of procedural, economic, educational, legal, and technical controls (some of which are covered in other chapters of this Handbook). For data associated with only negligible or minor and fleeting harms, the use of differential privacy without any additional controls may be appropriate, but for more significant and lasting or even life altering harms, notice and consent mechanisms as well as terms of service may also be required. Obtaining consent is particularly important when using data for secondary uses not initially disclosed to the data subjects or when the selected value of $\varepsilon$ is large. For data associated with potentially life-threatening harms, a formal application and oversight process, such as an institutional review board or restricted data access committee, together with a data use agreement may be necessary. As Figure \@ref(fig:dpfig4) illustrates, in many cases, the use of differential privacy allows data analysis projects to be carried out safely with fewer additional privacy and security controls than would be required with other approaches.
@@ -2470,11 +2486,11 @@ These factors---the level of expected harm from uncontrolled use of the data and
 
 ### Considerations When Deciding Whether to Use Differential Privacy
 
-As summarized in Section \@ref(sec:selecting-privacy-control-framework), differential privacy fits into a broader framework of privacy and security controls that should be applied across the information life cycle to appropriately mitigate risks of information harm. Within a coherent set of information controls, differential privacy's primary role is as a formal criterion for disclosure control that ensures limitations on types of *inferences* that can be made about individuals and small groups based on the outputs of computations. In other words, implementations of differential privacy (especially in the curator model as discussed and contrasted with other models for differential privacy in Appendix [A](#sec:trust-local-vs-curator)) modify summary information before it is published in order to prevent others from learning any information that is unique and specific to any individual who was part of the group being summarized.
+As summarized in Section \@ref(sec:selecting-privacy-control-framework), differential privacy fits into a broader framework of privacy and security controls that should be applied across the information life cycle to appropriately mitigate risks of informational harm. Within a coherent set of information controls, differential privacy's primary role is as a formal criterion for disclosure control that ensures limitations on types of *inferences* that can be made about individuals and small groups based on the outputs of computations. In other words, implementations of differential privacy (especially in the curator model as discussed and contrasted with other models for differential privacy in Appendix [A](#sec:trust-local-vs-curator)) modify summary information before it is published in order to prevent others from learning any information that is unique and specific to any individual who was part of the group being summarized.
 
-In the context of designing a secure and private information system, differential privacy is used as part of a collection of controls aimed at mitigating information harm while enabling some types of information uses. Differential privacy is usually neither sufficient protection on its own nor uniquely necessary---and in some cases differential privacy may simply not be appropriate for the intended use.
+In the context of designing a secure and private information system, differential privacy is used as part of a collection of controls aimed at mitigating informational harm while enabling some types of information uses. Differential privacy is usually neither sufficient protection on its own nor uniquely necessary---and in some cases differential privacy may simply not be appropriate for the intended use.
 
-Three considerations are critical in deciding whether to use differential privacy: (1) how are recipients of protected information intending to use it, and how well do differentially private analyses support these intended uses; (2) what is the nature and degree of information risk to be mitigated, and are there serious harms that could arise from learning about individuals; and (3) what complementary and alternative controls are available for protecting the data? Each of these questions is discussed in turn below.
+Three considerations are critical in deciding whether to use differential privacy: (1) how are recipients of protected information intending to use it, and how well do differentially private analyses support these intended uses; (2) what is the nature and degree of informational risk to be mitigated, and are there serious harms that could arise from learning about individuals; and (3) what complementary and alternative controls are available for protecting the data? Each of these questions is discussed in turn below.
 
 #### How Well Does Differential Privacy Fit the Intended Uses of the Data? {-}
 
@@ -2498,7 +2514,7 @@ Differential privacy provides a quantifiable trade-off between privacy and utili
 
 When operating within the framework of existing tools, one should plan to test that outputs remain useful for the intended purposes. There are many different measures of utility and, even if an algorithm does a good job at trading off between utility and privacy, the utility loss for a particular use case may be quite different than the average loss.
 
-#### What is the Nature and Degree of Informational Risk to be Mitigated?
+#### What Is the Nature and Degree of Informational Risk to be Mitigated?
 
 Another factor to consider when deciding whether to adopt differential privacy is the nature and degree of informational risk to be mitigated. Figure \@ref(fig:dpfig4) illustrates an approach to conceptualizing whether differential privacy is a suitable control to use given different levels of harm associated with uncontrolled use of a particular data set. Some of the relevant questions to consider involve the sensitivity of the information and the potential for risks to accumulate with multiple releases of information about the same individuals or groups of individuals.
 
@@ -2510,7 +2526,7 @@ When evaluating informational risk, consider the sensitivity of the information 
 
 Privacy risk inevitably grows as more computations are released. Differentially private protection mechanisms have the advantage that risk composes predictably and slowly across multiple releases. In contrast, when information is released through other mechanisms, multiple releases could result in sudden and catastrophic loss of privacy.
 
-Absent formal protection mechanisms, it is not possible to definitively assess composition risks ex ante. As general guidance, composition effects are of greatest ex ante concern under the following conditions: (a) data are collected from the same individuals by uncoordinated data controllers, (b) releases are updated frequently, (c) many releases are performed over time, (d) releases are high-dimensional, or (e) prior released cannot be reliably recalled.[^diffpriv36]
+Absent formal protection mechanisms, it is not possible to definitively assess composition risks ex ante. As general guidance, composition effects are of greatest ex ante concern under the following conditions: (a) data are collected from the same individuals by uncoordinated data controllers, (b) releases are updated frequently, (c) many releases are performed over time, (d) releases are high-dimensional, or (e) prior releases cannot be reliably recalled.[^diffpriv36]
 
 Alternatively, if the data controller is aware of all potential auxiliary information, it could attempt to assess the cumulative privacy risk post-computation but prior to release. Or, if harm to individuals is readily detected, the data controller could purchase insurance to compensate such harm ex post. These caveats notwithstanding, in the modern information environment, composition risks are generally substantial and ex post formal protections are typically infeasible.
 
@@ -2523,7 +2539,7 @@ Further, a single mode of access will generally not be appropriate for the needs
 Tiered access will generally be necessary to accommodate a wide range of desired uses of the data. For a given set of data, access may be made available to different categories of users through different modes of release. Figure \@ref(fig:dpfig4) demonstrates how controls can be selected at each tier. For example, data associated with potential harms that are only minor and fleeting could be released to the public after traditional statistical disclosure limitation techniques, such as aggregation and generalization, have transformed the data. Users who seek to obtain the full data set, including direct and indirect identifiers, would be required to submit an application to an institutional review board or other oversight body, and their use would be subject to the terms of a data use agreement. This approach makes it possible to calibrate data releases to the risk profile of a data set as well as specific uses intended by different data users. Figure \@ref(fig:dpfig5) provides an example of such a tiered access model [see also @sweeney15datatags; @crosas19datatags].
 
 <div class="figure">
-<img src="./assets/diffpriv/dp_tiered-access.png" alt="An example of a tiered access model" width="910" />
+<img src="./assets/diffpriv/dp_tiered-access_web.png" alt="An example of a tiered access model" width="800" />
 <p class="caption">(\#fig:dpfig5)An example of a tiered access model</p>
 </div>
 
@@ -2541,7 +2557,7 @@ The foregoing interpretations of the differential privacy guarantee can be used 
 
 ## Case Studies {#sec:case-studies}
 
-Differential privacy is a relatively new concept, first presented in the theoretical computer science literature in 2006 and now seeing early stages of application in real-world settings. This section provides short case studies on three implementations of differential privacy: the 2020 Decennial Census, the Opportunity Atlas, and The Dataverse Project. This discussion focuses on describing aspects of the context in which these differentially private solutions were developed, as well as the design choices that were made with respect to the relevant contextual factors.
+Differential privacy is a relatively new concept, first presented in the theoretical computer science literature in 2006 and now seeing early stages of application in real-world settings. This section provides short case studies on three implementations of differential privacy: the 2020 Decennial Census, the Opportunity Atlas, and the Dataverse Project. This discussion focuses on describing aspects of the context in which these differentially private solutions were developed, as well as the design choices that were made with respect to the relevant contextual factors.
 
 This selection of case studies, though limited by the small number of practical implementations of differential privacy to date, aims to reflect a range of different scenarios. The first case study involves a national statistical agency publishing statistical data products from a census, the second involves a team of researchers developing a web-based visualization tool for exploring sensitive administrative data analyzed as part of a research study, and the third describes the functionalities of a general-purpose differential privacy tool being developed for use by data providers and analysts who do not have expertise in differential privacy. Although none of these examples directly describe sharing data from sub-national agencies, they carry real-world lessons relevant to employing differential privacy in such contexts.
 
@@ -2603,7 +2619,7 @@ In September 2017, the US Census Bureau announced its decision to deploy differe
 
 In many ways, the data from the US Decennial Census is an excellent fit for differential privacy. Compared to most survey data, it is low-dimensional (i.e., only asks a few questions of each respondent) and the sample size is very large (minimizing the relative impact of the noise added for differential privacy). These features normally would allow for a straightforward application of standard differentially private algorithms (e.g., those which add independent noise to each cell of different cross-tabulations). However, there are a number of other features of the Decennial Census data products that have created challenges and debate among stakeholders over the transition to differential privacy [@garfinkel2018issues; @hawes2020; @boyd20].
 
-First, these data products have a long history of being used for a vast and diverse range of applications, such as apportioning seats in the US House of Representatives, redistricting, funding allocations, provision of local emergency resources, and social science research. To minimize the impact on data users and the software they use, the Census Bureau has decided to produce differentially private data products that have the same form as the traditional products and consist of tables that are exactly consistent with an underlying synthetic data set (rather than a collection of noisy statistics that would be produced by a standard differentially private algorithm), along with other information that needs to be published exactly (e.g., the state population totals). This required the design of custom differentially private algorithm by experts at the Bureau [@garfinkel2018issues; @abowd2019censustopdown].
+First, these data products have a long history of being used for a vast and diverse range of applications, such as apportioning seats in the US House of Representatives, redistricting, funding allocations, provision of local emergency resources, and social science research. To minimize the impact on data users and the software they use, the Census Bureau has decided to produce differentially private data products that have the same form as the traditional products and consist of tables that are exactly consistent with an underlying synthetic data set (rather than a collection of noisy statistics that would be produced by a standard differentially private algorithm), along with other information that needs to be published exactly (e.g., the state population totals). This required the design of custom differentially private algorithms by experts at the Bureau [@garfinkel2018issues; @abowd2019censustopdown].
 
 Second, the sources of error in the Decennial Census data products (in particular, disclosure avoidance) have historically not been made explicit and have been largely ignored by data users. Differential privacy is transparent about its noise addition and thus creates concern among stakeholders for the potential impact on their applications. Reconstruction attacks [@DinurN03] tell us that the data products cannot be simultaneously accurate for all possible uses and maintain privacy, leaving the Bureau with the challenging problems of deciding which users and uses to prioritize for accuracy and then optimizing the algorithm and its privacy-loss budget allocation accordingly. To this end, the Bureau published a Federal Register Notice [@census2018soliciting] to understand what aspects of their data products were most important for data users and also released a series of demonstration products showing the impact of potential versions of their differentially private algorithms on past Decennial Censuses.[^diffpriv40]
 
@@ -2639,7 +2655,7 @@ OpenDP can enable Dataverse to offer additional ways to access sensitive data as
 
 Dataverse already automatically calculates variable summary statistics (counts, min/max, means, etc.) when a tabular file is deposited. These summary statistics for each variable can be viewed using the Data Explorer tool, even without downloading or accessing the data file. As OpenDP is integrated with Dataverse, a data depositor should be able to generate a differentially private (DP) summary statistics metadata file using an OpenDP user interface. To do this, the data depositor would select "Generate DP Summary Statistics" after the tabular data file is ingested in Dataverse, launching the OpenDP interface. Then they would select the privacy-loss parameter for their data file, and OpenDP would create the differentially private summary statistics file and Dataverse would store the newly created metadata file associated with the sensitive tabular data file. Once the data set is published, an end user would be able to view the summary statistics of the sensitive data file using the Data Explorer tool without ever accessing or downloading the actual data file.
 
-**2. Facilitating reproducibility of research with the sensitive data set**
+**2. Facilitating reproducibility of research with sensitive data sets**
 
 At least a third of the data sets deposited in Dataverse are replication data and code associated with a published scholarly paper. With OpenDP, data depositors or owners could create a differentially private release on a sensitive data set, which could be used to computationally reproduce the results of the published paper while protecting the privacy of the original data set. In this case, like in Use Case 1 above, a data depositor would select a privacy-loss parameter through the OpenDP user interface and use OpenDP's statistical query interface to select and run the statistics of choice to create the appropriate replication release. The differentially private replication release file would be made available in the data set and end users would be able to download it, while the original sensitive data set would be protected and not accessible by end users except through the existing processes as above.
 
@@ -2659,15 +2675,18 @@ Salil Vadhan is the Vicky Joseph Professor of Computer Science and Applied Mathe
 
 Alexandra Wood is a fellow at the Berkman Klein Center for Internet & Society at Harvard University and a senior researcher contributing to the Harvard Privacy Tools Project. Her research explores new and existing regulatory frameworks for data privacy and their relationship to approaches to privacy emerging from other fields. She also contributes to the development of new legal instruments, analytical frameworks, and policy recommendations to better support the sharing and use of research data while preserving privacy, utility, transparency, and accountability. She currently serves as an advisory board member for the Privacy Engineering Section of the International Association of Privacy Professionals and in 2019 she received the Caspar Bowden PET Award for Outstanding Research in Privacy Enhancing Technologies.
 
+## Disclaimer {-}
+
+Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of their funders.
+
 ## Acknowledgements {-}
 
-Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported by the US Census Bureau under cooperative agreement No. CB16ADR0160001. Salil Vadhan was also partially supported by a Simons Investigator Award. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of their funders. Some of the content in this chapter (Sections 1--3) is excerpted from, adapted from, or otherwise based, in part, on Alexandra Wood, Micah Altman, Aaron Bembenek, Mark Bun, Marco Gaboardi, James Honaker, Kobbi Nissim, David R. O'Brien, Thomas Steinke, and Salil Vadhan, "Differential Privacy: A Primer for a Non-technical Audience", 21 *Vanderbilt Journal of Entertainment & Technology Law* 209 (2018) *and* Micah Altman, Alexandra Wood, David R. O'Brien, Salil Vadhan, and Urs Gasser, "Towards a Modern Approach to Privacy-Aware Government Data Releases", 30 *Berkeley Technology Law Journal* 1967 (2015). The authors thank their coauthors on those papers, as well as Jean-François Couchot and Jean-Marc Gervais for their inquiries that led us to uncover a mistake in the calculation of Table \@ref(tab:diffprivtable1); Mercè Crosas, Raj Chetty, and John Friedman for their comments on the case studies; Marco Gaboardi and Michael Hay for help with software tools; and Simson Garfinkel, Steven Glazerman, Michel José Reymond, Jayshree Sarathy, Anja Sautmann, Lars Vilhuber, and the members of the Bridging Privacy Definitions Working Group for their review comments on earlier drafts.
+Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported by the US Census Bureau under cooperative agreement No. CB16ADR0160001. Salil Vadhan was also partially supported by a Simons Investigator Award. The authors thank their coauthors on those papers, as well as Jean-François Couchot and Jean-Marc Gervais for their inquiries that led us to uncover a mistake in the calculation of Table \@ref(tab:diffprivtable1); Mercè Crosas, Raj Chetty, and John Friedman for their comments on the case studies; Marco Gaboardi and Michael Hay for help with software tools; and Simson Garfinkel, Steven Glazerman, Michel José Reymond, Jayshree Sarathy, Anja Sautmann, Lars Vilhuber, and the members of the Bridging Privacy Definitions Working Group for their review comments on earlier drafts.
 
 
+[^diffpriv1]: For an overview of traditional SDL techniques, see @harris-kojetin_statistical_2005 and chapter \@ref(discavoid) in this Handbook.
 
-[^diffpriv1]: For an overview of traditional SDL techniques, see @harris-kojetin_statistical_2005 and chapter 5.
-
-[^diffpriv2]: For an introduction to de-identification techniques, see @garfinkel_-identification_2015.
+[^diffpriv2]: For an introduction to de-identification techniques, see @garfinkel2016.
 
 [^diffpriv3]: See, e.g., Chapter 2 Section 25 of the Thirteenth Census Act [@thestatutesatlargeoftheunitedstatesofamerica1909].
 
@@ -2677,7 +2696,7 @@ Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported b
 
 [^diffpriv6]: See @GantaKS08. The impression that these techniques do not suffer accumulated degradation in privacy is merely due to the fact that these techniques have not been analyzed with the high degree of rigor that has been applied to differential privacy. For a discussion of privacy and utility with respect to traditional statistical disclosure limitation techniques, see @DBS-008.
 
-[^diffpriv7]: As an example, in 2006 AOL published anonymized search history of 650,000 users over a period of three months. Shortly after the release, the New York Times identified a person in the release and AOL removed the data from their site. However, in spite of the withdrawal by AOL, copies of the data are still accessible on the Internet today.
+[^diffpriv7]: As an example, in 2006 AOL published anonymized search histories of 650,000 users over a period of three months. Shortly after the release, the New York Times identified a person in the release and AOL removed the data from their site. However, in spite of the withdrawal by AOL, copies of the data are still accessible on the Internet today.
 
 [^diffpriv8]: The authors distinguish protection against *privacy attacks*, which involves the attacker making use of the intended "advertised" functionality of a data access mechanism, from protection against *security attacks*, which involves an attacker attempting to exploit unintended implementation vulnerabilities (e.g., by circumventing access control mechanisms). Differential privacy does not generally provide protection against security attacks, which should be addressed using complementary controls like encryption and access control.
 
@@ -2685,9 +2704,9 @@ Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported b
 
 [^diffpriv10]: The choice of noise addition technique---whether statistical noise is used to blur individual data points, the output of a computation, or intermediate computations---is a delicate algorithmic question; a variety of noise addition techniques have been developed for differentially private analysis with the purpose of guaranteeing differential privacy while minimizing the overall inaccuracy introduced.
 
-[^diffpriv11]: For data over an ordered domain, a cumulative distribution function depicts for every value x an estimate of the number of data points with a value up to x. For a more in-depth discussion of differential privacy and CDFs, see @muise2016.
+[^diffpriv11]: For data over an ordered domain, a cumulative distribution function depicts for every value *x* an estimate of the number of data points with a value up to *x*. For a more in-depth discussion of differential privacy and CDFs, see @muise2016.
 
-[^diffpriv12]: See, for example, @BlumLR13. Synthetic data are data sets generated from a statistical model estimated using the original data. The records in a synthetic data set have no one-to-one correspondence with the individuals in the original data set, yet the synthetic data can retain many of the statistical properties of the original data. Synthetic data resemble the original sensitive data in format and, for a large class of analyses, results are similar whether performed on the synthetic or original data .
+[^diffpriv12]: See, for example, @BlumLR13. Synthetic data are data sets generated from a statistical model estimated using the original data. The records in a synthetic data set have no one-to-one correspondence with the individuals in the original data set, yet the synthetic data can retain many of the statistical properties of the original data. Synthetic data resemble the original sensitive data in format and, for a large class of analyses, results are similar whether performed on the synthetic or original data.
 
 [^diffpriv13]: Intuitively, preserving more statistical information (e.g., all entries of a high-dimensional variance-covariance matrix) requires spreading the privacy-loss budget more thinly and thus introducing greater noise. There are much more complex methods that can detect and exploit relationships between the statistics to introduce less noise, but those methods can be computationally infeasible on high-dimensional data.
 
@@ -2697,7 +2716,7 @@ Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported b
 
 [^diffpriv16]: Figure \@ref(fig:dpfig2) is reproduced from @wood_differential_2018.
 
-[^diffpriv17]: This insight follows from a series of papers demonstrating privacy breach enabled by leakages of information resulting from decisions made by the computation. See, for example, @KenthapadiMN13. For a general discussion of the advantages of formal privacy models over ad hoc privacy techniques, see @gutwirth_precautionary_2016.
+[^diffpriv17]: This insight follows from a series of papers demonstrating privacy breaches enabled by leakages of information resulting from decisions made by the computation. See, for example, @KenthapadiMN13. For a general discussion of the advantages of formal privacy models over ad hoc privacy techniques, see @gutwirth_precautionary_2016.
 
 [^diffpriv18]:  One might object that the student's GPA is not traceable back to that student unless an observer knows how the statistic was produced. However, a basic principle of modern cryptography (known as Kerckhoffs' principle) is that a system is not secure if its security depends on its inner workings being a secret. In this context, it is assumed that the algorithm behind a statistical analysis is public (or could potentially become public).
 
@@ -2705,7 +2724,7 @@ Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported b
 
 [^diffpriv20]: Figure \@ref(fig:dpfig3) is reproduced from @wood_differential_2018.
 
-[^diffpriv21]: Epsilon is a unitless nonnegative quantity measuring probability log-ratio.
+[^diffpriv21]: $\varepsilon$ is a unitless nonnegative quantity measuring probability log-ratio.
 
 [^diffpriv22]: In general, setting ε involves making a compromise between privacy protection and accuracy. The consideration of both utility and privacy is challenging in practice and, in some of the early implementations of differential privacy, has led to choosing a higher value for $\varepsilon$. As the accuracy of differentially private analyses improves over time, it is likely that lower values of $\varepsilon$ will be chosen.
 
@@ -2716,7 +2735,7 @@ Work of Kobbi Nissim, Salil Vadhan, and Alexandra Wood was partially supported b
 [^diffpriv25]: In general, the guarantee made by differential privacy is that the probabilities differ at most by a factor of $e^{\pm\varepsilon}$, which is approximately $1\pm\varepsilon$ when $\varepsilon$ is small.
 
 [^diffpriv26]: The reason that the multiplicative factor is $1+2\cdot \varepsilon \approx e^{2\cdot \varepsilon}$ rather than
-$1+\varepsilon \approx e^\varepsilon$e is that posterior beliefs can be expressed as a ratio of two probabilities, each of which can change by a factor of at most $e^{\varepsilon}$. The factor of 2 was incorrectly omitted in the original paper [@wood_differential_2018] describing this example.
+$1+\varepsilon \approx e^\varepsilon$ is that posterior beliefs can be expressed as a ratio of two probabilities, each of which can change by a factor of at most $e^{\varepsilon}$. The factor of 2 was incorrectly omitted in the original paper [@wood_differential_2018] describing this example.
 
 [^diffpriv27]: Table \@ref(tab:diffprivtable1) corrects a calculation error appearing in the original paper [@wood_differential_2018].
 
@@ -2734,17 +2753,17 @@ $1+\varepsilon \approx e^\varepsilon$e is that posterior beliefs can be expresse
 
 [^diffpriv34]: See, e.g., Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (2016) OJ L119/1, Article 9 (providing that the "[p]rocessing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation shall be prohibited," unless one of the delineated exceptions in Paragraph 2 of the Article applies).
 
-[^diffpriv35]: See, e.g., Harvard University Information Security, Handout---Research Data Security Levels with Examples, https://security.harvard.edu/handout-research-data-security-levels-examples (accessed 2020-12-17).
+[^diffpriv35]: See, e.g., "Harvard University Information Security, Handout---Research Data Security Levels with Examples," https://security.harvard.edu/handout-research-data-security-levels-examples (accessed 2020-12-17).
 
 [^diffpriv36]: For discussions of how data privacy risks accumulate, see @AltmanPracticalApproaches; @fluitt2019.
 
-[^diffpriv37]: Note that the reference to "using an individual's data" in this statement means the inclusion of an individual's data in an analysis, and the use of the term "specific" refers to information that is unique to the individual and cannot be inferred unless the individual's information is used in the analysis. Furthermore, the use of the word "essential" in the statement "will not reveal essentially any PII specific to them" means that, compared with an opt-out scenario where no information specific to an individual is leaked, some small leakage of such information (inevitably) occur. The parameter ε bounds this leakage.
+[^diffpriv37]: Note that the reference to "using an individual's data" in this statement means the inclusion of an individual's data in an analysis, and the use of the term "specific" refers to information that is unique to the individual and cannot be inferred unless the individual's information is used in the analysis. Furthermore, the use of the word "essential" in the statement "will not reveal essentially any PII specific to them" means that, compared with an opt-out scenario where no information specific to an individual is leaked, some small leakage of such information (inevitably) occurs. The parameter ε bounds this leakage.
 
 [^diffpriv38]: For an extended discussion of the gaps between legal and computer science definitions of privacy and a demonstration that differential privacy can be used to satisfy an institution's obligations under FERPA, see @nissim2018bridging.
 
 [^diffpriv39]: Specifically, the US Constitution mandates the Decennial Census (U.S. Const. art. 1, 2.), and it is carried out by the US Census Bureau, bound by Title 13 of the US Code, which prohibits Census Bureau employees from "mak[ing] any publication whereby the data furnished by any particular establishment or individual under this title can be identified" ([13 U.S.C. § 9(a)(2)](https://www.law.cornell.edu/uscode/text/13/9), accessed 2020-12-17).
 
-[^diffpriv40]: See United States Census Bureau, [2020 Disclosure Avoidance System Updates](https://www.census.gov/programs-surveys/decennial-census/2020-census/planning-management/2020-census-data-products/2020-das-updates.html), (accessed 2020-12-17).
+[^diffpriv40]: See United States Census Bureau, [2020 Disclosure Avoidance System Updates](https://www.census.gov/programs-surveys/decennial-census/2020-census/planning-management/2020-census-data-products/2020-das-updates.html) (accessed 2020-12-17).
 
 [^diffpriv41]: The raw data from the Census Bureau is protected by Title 13 of the United States Code, which prohibits "mak[ing] any publication whereby the data furnished by any particular establishment or individual under this title can be identified" ([13 U.S.C. § 9(a)(2)](https://www.law.cornell.edu/uscode/text/13/9), accessed 2020-12-17). Pursuant to Title 26, the IRS shares federal tax returns and return information with the Census Bureau for statistical purposes, and the Census Bureau is prohibited from disclosing such tax return information except in "a form which cannot be associated with, or otherwise identify, directly or indirectly, a particular taxpayer" ([26 U.S.C. 6103(j)(4)](https://www.law.cornell.edu/uscode/text/26/6103), accessed 2020-12-17).
 
@@ -3072,80 +3091,102 @@ Table \@ref(tab:diffprivtable3) provides a summary of the implications of design
 <tbody>
   <tr>
    <td style="text-align:left;"> *Trust Model* </td>
-   <td style="text-align:left;"> <li>Central curator</li>
-<li>Local collector</li> </td>
-   <td style="text-align:left;"> <li>Consent</li>
+   <td style="text-align:left;"> <ul>
+<li>Central curator</li>
+<li>Local collector</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul>
+<li>Consent</li>
 <li>Compliance: Information security</li>
 <li>Measurement design</li>
-<li>Compliance: Anonymization</li> </td>
-   <td style="text-align:left;"> <li>Data cleaning</li>
-<li>Data linking</li> </td>
-   <td style="text-align:left;"> <li>Compliance: Information security</li> </td>
-   <td style="text-align:left;"> <li>Legal requirements</li>
-<li>Range of uses</li> </td>
-   <td style="text-align:left;"> <li>Deaccessioning &amp; disposal</li>
+<li>Compliance: Anonymization</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul>
+<li>Data cleaning</li>
+<li>Data linking</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul><li>Compliance: Information security</li></ul> </td>
+   <td style="text-align:left;"> <ul>
+<li>Legal requirements</li>
+<li>Range of uses</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul>
+<li>Deaccessioning &amp; disposal</li>
 <li>Information security</li>
 <li>Legal requirements</li>
 <li>Replicability &amp; verification</li>
-<li>Preservation</li> </td>
+<li>Preservation</li>
+</ul> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> *Data Publi-
 cation Model* </td>
-   <td style="text-align:left;"> <li>Static</li>
-<li>Interactive</li> </td>
-   <td style="text-align:left;"> <li>Measurement design</li> </td>
-   <td style="text-align:left;"> <li>Data linking</li> </td>
-   <td style="text-align:left;"> <li>Costrs</li>
+   <td style="text-align:left;"> <ul>
+<li>Static</li>
+<li>Interactive</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul><li>Measurement design</li></ul> </td>
+   <td style="text-align:left;"> <ul><li>Data linking</li></ul> </td>
+   <td style="text-align:left;"> <ul>
+<li>Costrs</li>
 <li>Information security</li>
-<li>Legal requirements</li> </td>
-   <td style="text-align:left;"> <li>Costs</li>
+<li>Legal requirements</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul>
+<li>Costs</li>
 <li>Compliance: Information security</li>
 <li>Range of uses</li>
-<li>Usage tracking</li> </td>
-   <td style="text-align:left;"> <li>Costs</li>
+<li>Usage tracking</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul>
+<li>Costs</li>
 <li>Compliance: Information security</li>
 <li>Compliance: Reporting and correction</li>
 <li>Replicability &amp; verification</li>
-<li>Preservation</li> </td>
+<li>Preservation</li>
+</ul> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> *Privacy Granu-
 larity* </td>
-   <td style="text-align:left;"> <li>Unit of protection</li> </td>
-   <td style="text-align:left;"> <li>Consent</li>
-<li>Measurement design</li> </td>
+   <td style="text-align:left;"> <ul><li>Unit of protection</li></ul> </td>
+   <td style="text-align:left;"> <ul>
+<li>Consent</li>
+<li>Measurement design</li>
+</ul> </td>
    <td style="text-align:left;">  </td>
    <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> <li>Range of uses</li> </td>
+   <td style="text-align:left;"> <ul><li>Range of uses</li></ul> </td>
    <td style="text-align:left;">  </td>
   </tr>
   <tr>
    <td style="text-align:left;"> *Privacy Budget Alloca-
 tion* </td>
-   <td style="text-align:left;"> <li>Allocation across uses</li>
+   <td style="text-align:left;"> <ul>
+<li>Allocation across uses</li>
 <li>Allocation across groups</li>
-<li>Allocation across measures</li> </td>
-   <td style="text-align:left;"> <li>Consent</li> </td>
-   <td style="text-align:left;"> <li>Data cleaning</li> </td>
+<li>Allocation across measures</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul><li>Consent</li></ul> </td>
+   <td style="text-align:left;"> <ul><li>Data cleaning</li></ul> </td>
    <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> <li>Usage tracking</li> </td>
-   <td style="text-align:left;"> <li>Use &amp; use auditing</li> </td>
+   <td style="text-align:left;"> <ul><li>Usage tracking</li></ul> </td>
+   <td style="text-align:left;"> <ul><li>Use &amp; use auditing</li></ul> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> *Utility Con-
 sidera-
 tions* </td>
-   <td style="text-align:left;"> <li>Anticipating uses</li>
+   <td style="text-align:left;"> <ul>
+<li>Anticipating uses</li>
 <li>Evaluating utility</li>
-<li>Managing statistical uncertainty </li>
-</td>
-   <td style="text-align:left;"> <li>Measurement design </li>
-</td>
-   <td style="text-align:left;"> <li>Data linkage</li> </td>
+<li>Managing statistical uncertainty</li>
+</ul> </td>
+   <td style="text-align:left;"> <ul><li>Measurement design</li></ul> </td>
+   <td style="text-align:left;"> <ul><li>Data linkage</li></ul> </td>
    <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> <li>Range of uses</li> </td>
-   <td style="text-align:left;"> <li>Utility evaluation</li> </td>
+   <td style="text-align:left;"> <ul><li>Range of uses</li></ul> </td>
+   <td style="text-align:left;"> <ul><li>Utility evaluation</li></ul> </td>
   </tr>
 </tbody>
 </table></div>
@@ -3242,7 +3283,7 @@ There are many educational resources available for readers who have additional q
 
 *Dana Müller (Institute for Employment Research)*  
 *Philipp vom Berge (Institute for Employment Research)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Müller, Dana,  and Philipp vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Dana Müller, Philipp vom Berge. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Müller, Dana,  and Philipp vom Berge. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Dana Müller, Philipp vom Berge. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary
 
@@ -3298,7 +3339,7 @@ Based on a reform in 2004, which exempted small firms from dismissal protection,
 
 Table \@ref(tab:iabtable1) provides a selective overview of research data available at +RDC-IAB| by focusing on the data products used in the examples above. It summarizes the data source and sample population, outlines the available time period, and links to the full data documentation. A more detailed discussion of the available data products can be found in @muller2019 and @muller2020. A complete list is available on the [IAB website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).[^accessed06152020]
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>(\#tab:iabtable1)Selected RDC-IAB Data</caption>
 <tbody>
   <tr grouplength="3"><td colspan="2" style="border-bottom: 1px solid;"><strong>Sample of Integrated Labour Market Biographies (SIAB)</strong></td></tr>
@@ -3342,7 +3383,7 @@ Table \@ref(tab:iabtable1) provides a selective overview of research data availa
    <td style="text-align:left;"> DOI: [10.5164/IAB.LIABQM29317.de.en.v1](https://doi.org/10.5164/IAB.LIABQM29317.de.en.v1)<br>DOI: [10.5164/IAB.LIABLM7517.de.en.v1](https://doi.org/10.5164/IAB.LIABLM7517.de.en.v1) </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<tfoot><tr><td style="padding: 0; " colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> The time period covered by each data set represents the status as of 02 June 2020. For a complete list of all data products see the [RDC website](https://fdz.iab.de/en/FDZ_Overview_of_Data.aspx).</td></tr></tfoot>
 </table>
 
@@ -3426,7 +3467,7 @@ The +RDC-IAB| offers the following main data access modes to its users:
 
 - *+On-site|* provides access to +weakly_anonymized| microdata at separate workstations within the secure computing environment of the +RDC-IAB| in Nuremberg or from one of the +guest_RDC|s. Weakly anonymized data are +de-identified| microdata. In addition to +pseudonymization|, other highly sensitive information is deleted or coarsened to obscure indirect identifiers. Still, the risk of indirect identification might be rather high in some cases if the data were analyzed outside the secure computing environment.
 - *Remote execution* allows the submission of analysis code that runs on +weakly_anonymized| microdata without seeing the microdata directly.
-- *+Scientific_Use_files| (SUF)* are +de-facto_anonymized| microdata that are submitted to scientific institutions. Compared to +weakly_anonymized| data, the amount of information is further reduced through additional coarsening or deletion to reduce the risk of indirect identification outside the secure computing environment of the +RDC-IAB|.
+- *+Scientific_Use_Files| (SUF)* are +de-facto_anonymized| microdata that are submitted to scientific institutions. Compared to +weakly_anonymized| data, the amount of information is further reduced through additional coarsening or deletion to reduce the risk of indirect identification outside the secure computing environment of the +RDC-IAB|.
 
 For *+on-site|* access, users must book a free slot in advance and clear an identity check at the respective location to ensure that they have a valid and ongoing project. The data can then be accessed in a designated room at a designated secure workstation.[^iab13] The workstation does not provide access to the Internet or the internal network of the +BA|. At +data_access_points|, access is managed via a (thin) client solution using Citrix. There are certain software requirements for Windows PCs and Apple Macs with an installed HTML5 capable browser, as well as network requirements for a stable internet connection. Printers or similar devices cannot be connected to the client. Access to external websites is prevented. IT experts from +RDC-IAB| and +guest_RDC|s carefully set up each client and monitor over time. Within the secure computing environment, the user's access rights are restricted to a personal folder containing the approved research data sets, approved statistical software (usually only Stata, sometimes also R or GNU Octave) and guidelines, data reports, and working tools. Users cannot install packages for Stata or R on their own; these are provided upon request by RDC-IAB staff. Other user provided software is not allowed. Usage of users' own laptops, phones, mass storage, and (picture) recording devices is prohibited and external communication is not possible. Users can upload external aggregated data, for example, unemployment rates, after data protection review and approval through RDC-IAB staff. Program code for data analysis (e.g., Stata do-files) and research output (in the form of Stata log-files) can be exported after +SDC| and approval via the +Job_Submission_Application| (JoSuA) platform. This way +RDC-IAB| staff has full control over every piece of data, code, or output that enter or exit the secure computing environment.
 
@@ -3437,7 +3478,7 @@ The main innovation behind +JoSuA| is that it is no longer necessary to perform 
 Although influenced by expansion of +data_access_points|, the decision to switch from a model where every job submission was manually reviewed to the +JoSuA| model was made separately. The steadily increasing number of projects meant that more time had to be spent on +SDC|, and much of the workload fell on preliminary output that was not yet meant for publication. The IU-mode of JoSuA allows for more flexibility and increased speed in project development for users while freeing up resources and maintaining full control over the inputs and exported outputs. Today, about 80 to 90 percent of submissions for +remote_execution| are in IU-mode (Figure \@ref(fig:iabfig1)).
 
 <div class="figure">
-<img src="./figures/iabfigure1.png" alt="Number of jobs via JoSuA" width="798" />
+<img src="./assets/iab/iabfigure1web.png" alt="Number of jobs via JoSuA" width="798" />
 <p class="caption">(\#fig:iabfig1)Number of jobs via JoSuA</p>
 </div>
 
@@ -3525,7 +3566,7 @@ The +RDC-IAB| generates statistics to inform the +IAB|, the +BA|, the +RatSWD|, 
 As shown in Figure \@ref(fig:iabfig2)(a), the numbers of users and user projects at the RDC-IAB continues to increase every year. In 2019, around 1,500 users worked in more than 700 projects.[^iab27] The average duration of a research project is around three years. Bachelor theses or master theses usually do not take longer than six months.
 
 <div class="figure">
-<img src="./figures/iabfigure2.png" alt="Development of the number of users and number of projects at the RDC-IAB, 2005--2019 (left) and contractual partners of the RDC-IAB by country, 2012--2019 (right)" width="798" />
+<img src="./assets/iab/iabfigure2web.png" alt="Development of the number of users and number of projects at the RDC-IAB, 2005--2019 (left) and contractual partners of the RDC-IAB by country, 2012--2019 (right)" width="798" />
 <p class="caption">(\#fig:iabfig2)Development of the number of users and number of projects at the RDC-IAB, 2005--2019 (left) and contractual partners of the RDC-IAB by country, 2012--2019 (right)</p>
 </div>
 
@@ -3570,7 +3611,7 @@ Apart from these general statistics, +RDC-IAB| also gathers user feedback to lea
 In general, user ratings are very good. For example, Figure \@ref(fig:iabfig3) shows the ratings of data documentation and personal data advice. More than 90 percent of the survey respondent are satisfied (very good and good) with the data documentation. While 40 percent of all participants did not use personal data advice, nearly all others are satisfied. User suggestions, ideas, and critiques are essential to improve data access further to the extent possible given available resources.
 
 <div class="figure">
-<img src="./figures/iabfigure3.png" alt="User satisfaction with RDC-IAB services, by percentage (options bad and very bad have not been chosen by respondents)" width="798" />
+<img src="./assets/iab/iabfigure3web.png" alt="User satisfaction with RDC-IAB services, by percentage (options bad and very bad have not been chosen by respondents)" width="798" />
 <p class="caption">(\#fig:iabfig3)User satisfaction with RDC-IAB services, by percentage (options bad and very bad have not been chosen by respondents)</p>
 </div>
 
@@ -3651,7 +3692,7 @@ Philipp's main research interest lies at the intersection of labor and regional 
 # Ohio and the Longitudinal Data Archive: Mutually Beneficial Partnerships Between State Government and Researchers {#olda}
 
 *Joshua D. Hawley (Ohio State University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hawley, Joshua D.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Joshua D. Hawley. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Hawley, Joshua D.. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Joshua D. Hawley. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary
 
@@ -3721,7 +3762,7 @@ In 2019, the data holdings came from the following state agencies:
 
 Within each agency, the data resources include the core agency-specific files for federal and state administered programs, such as the Workforce Innovation and Opportunity Act (WIOA). The specific files maintained at the Ohio State University are detailed in Table \@ref(tab:oldatable1).
 
-<table>
+<table style="NAborder-bottom: 0;">
 <caption>(\#tab:oldatable1)Specific files maintained at the Ohio State University.</caption>
  <thead>
   <tr>
@@ -3734,19 +3775,23 @@ Within each agency, the data resources include the core agency-specific files fo
 <tbody>
   <tr>
    <td style="text-align:left;"> Ohio Department of Job and Family Services </td>
-   <td style="text-align:left;"> <li>Unemployment Insurance Wage Data</li>
+   <td style="text-align:left;"> <ul>
+<li>Unemployment Insurance Wage Data</li>
 <li>Quarterly Census on Wages and Employment</li>
 <li>Job Seeker Information</li>
 <li>Workforce Investment Act Standardized Record Data</li>
-<li>Unemployment Insurance Claimant Data</li> </td>
+<li>Unemployment Insurance Claimant Data</li>
+</ul> </td>
    <td style="text-align:left;"> From 1995 to present (varies based on files) </td>
    <td style="text-align:left;"> 130 million wage records </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Ohio Department of Higher Education </td>
-   <td style="text-align:left;"> <li>Higher Education Information (Student, Course, and Faculty)</li>
+   <td style="text-align:left;"> <ul>
+<li>Higher Education Information (Student, Course, and Faculty)</li>
 <li>Ohio Technical Centers</li>
-<li>Adult Basic and Literacy Education</li> </td>
+<li>Adult Basic and Literacy Education</li>
+</ul> </td>
    <td style="text-align:left;"> From 1999 to present (varies based on files) </td>
    <td style="text-align:left;"> 2 million unique students in higher education </td>
   </tr>
@@ -3769,7 +3814,7 @@ Within each agency, the data resources include the core agency-specific files fo
    <td style="text-align:left;"> 100,000 unique individuals </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<tfoot><tr><td style="padding: 0; " colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> The full list of data files is maintained on the Ohio Longitudinal Data Archive website and changes over time. This is a selected list of core data holdings</td></tr></tfoot>
 </table>
 
@@ -3797,7 +3842,7 @@ The following case study provides an example of research use under the OLDA. One
 
 The registered apprenticeship work conducted in collaboration with the State of Ohio and the DOL required detailed microdata from RAPIDS as well as the +Unemployment_Insurance_Wage_Records| and the Quarterly Census on Wages and Employment. Additional work included matching educational outcomes from the Higher Education Information System to the RAPIDS files to see which apprentices got degrees or credentials and then linking to the WIOA file to examine which apprenticeships received job training. This project exemplifies the ways that a data system can be the foundation for a consistent research project that can assist state and federal government. On the basis of this work, the State of Ohio has begun to examine how apprenticeships can be expanded to improve economic outcomes for workers without college degrees.[^olda7]
 
-<table>
+<table style="NAborder-bottom: 0;">
 <caption>(\#tab:oldatable2)Examples of approved studies using the Ohio longitudinal data.</caption>
  <thead>
   <tr>
@@ -3808,18 +3853,22 @@ The registered apprenticeship work conducted in collaboration with the State of 
 <tbody>
   <tr>
    <td style="text-align:left;"> Program evaluations </td>
-   <td style="text-align:left;"> <li>Wage Pathway Evaluation Study [@hawley2019]</li>
+   <td style="text-align:left;"> <ul>
+<li>Wage Pathway Evaluation Study [@hawley2019]</li>
 <li>Ohio TechNet TAACCC Grant Evaluation [@newgrowthgrouptheohioeducationresearchcenter2018]</li>
 <li>GEAR UP Evaluation<sup>1</sup>
-</li> </td>
+</li>
+</ul> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Descriptive and multivariate studies </td>
-   <td style="text-align:left;"> <li>College Credit Plus [@harlow2018]</li>
-<li>Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]</li> </td>
+   <td style="text-align:left;"> <ul>
+<li>College Credit Plus [@harlow2018]</li>
+<li>Academic Momentum and Undergraduate Student Attrition [@kondratjeva2017]</li>
+</ul> </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<tfoot><tr><td style="padding: 0; " colspan="100%">
 <sup>1</sup> This project is not finished, but it is described on the [website](https://www.ohiohighered.org/gearup) (accessed 2020-12-10)</td></tr></tfoot>
 </table>
 
@@ -3840,8 +3889,6 @@ The OLDA data are available through a purpose-built and proprietary software sys
 The investigator is a resource for experienced researchers. With this system researchers get access to a range of information on the relevant data. For example, each file is documented in a standardized manner in the investigator so that individual researchers can compare the kinds of variables they will receive. There is also a search function for variable names and pre-coded topics.
 
 Data are also made useable because the research team provides guided support for applicants. When an individual proposes a research project or has trouble with data use, individual researchers can contact the staff for support.
-
-### Metadata
 
 The metadata are published in an open application on the center website. Access is through a guest account or a designated user [account](https://www.chrr.ohio-state.edu/investigator/pages/login).[^oldaaccess] The metadata include all files that have been ingested and documented, up to and including wage record files, K12 education data, and higher education enrollments. Technically, the metadata include all variable names, values, and counts or other summary statistics for variables. It is possible to learn, for example, what is the cohort size of each group of high school graduates over time in Ohio. The metadata also include a sophisticated search feature, allowing identification of variables and types of data, including created variables.
 
@@ -3928,7 +3975,7 @@ There is also an obligation that researchers complete several OSU research revie
 
 ### Safe Settings
 
-Data access is allowed on the work computer that individuals declare in the application process. The office location of the computer at the place of work is collected and it is required that it is a desktop, not a laptop computer. Individuals are forbidden from using USB or flash drives with this data and receive data only through a secure file transfer protocol (FTP) directly to the computer they declare in the application. Some users may access the data on computers at the center directly, if the file sizes present a problem for their personal computers or if the agencies require access to certain data items be limited to OLDA offices. There is no option for remote access or virtual access to items that are limited by physical location.
+Data access is allowed on the work computer that individuals declare in the application process. The office location of the computer at the place of work is collected and it is required that it is a desktop, not a laptop computer. Individuals are forbidden from using USB or flash drives with this data and receive data only through a secure file transfer protocol (SFTP) directly to the computer they declare in the application. Some users may access the data on computers at the center directly, if the file sizes present a problem for their personal computers or if the agencies require access to certain data items be limited to OLDA offices. There is no option for remote access or virtual access to items that are limited by physical location.
 
 ### Safe Data
 
@@ -4042,13 +4089,15 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 <img src="./assets/olda/appendixb.png" width="100%" />
 
 
+
+
 <!--chapter:end:11_01_olda_appendix.Rmd-->
 
 # New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT {#nbirdt}
 
 *Donna Curtis Maillet (University of New Brunswick)*  
 *James Ted McDonald (University of New Brunswick)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Curtis Maillet, Donna,  and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Donna Curtis Maillet, James Ted McDonald. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Curtis Maillet, Donna,  and James Ted McDonald. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Donna Curtis Maillet, James Ted McDonald. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary {#nbirdt-summ}
 
@@ -4302,7 +4351,7 @@ Audits of data sets accessed and data project activity are a requirement of data
 *Josh Lerner (Harvard Business School)*  
 *Leslie Jeng (Private Capital Research Institute)*  
 *Therese Juneau (Private Capital Research Institute)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Lerner, Josh, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Josh Lerner, Leslie Jeng, Therese Juneau. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Lerner, Josh, Leslie Jeng, and Therese Juneau. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Josh Lerner, Leslie Jeng, Therese Juneau. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary
 
@@ -4378,7 +4427,7 @@ Gathering information directly from private capital firms has its own limitation
 
 The commercial sources include the Emerging Markets Private Equity Association (EMPEA), Alternatives Data Cell ("Alternatives"), Refinitiv (formerly Thomson Reuters Financial & Risk ), Unquote (a UK-based data collection company acquired by Mergermarket), Start-Up Nation Central (a company that focuses on collecting data on Israeli private equity transactions and funds), and Venture Intelligence (a leading source of information on private company financials, private capital transactions, and their valuations in India). Table \@ref(tab:pcritable1) provides the coverage of information for the PCRI's original top four sources.[^pcri8] Refinitiv has the largest coverage of private capital firms with 11,491 firms. By combining the sources and eliminating duplicates, the PCRI finds that the overlap of private capital firms in the databases is roughly 32 percent.[^pcri10] After eliminating duplicates, the PCRI combined data set contains 17,633 *unique* private capital firms. Figure \@ref(fig:pcrifigure1) shows a diagram of the overlap between the sources. The key features of the PCRI database are summarized in @jeng2015.
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>(\#tab:pcritable1)Number of Distinct private capital firms provided by source of information</caption>
  <thead>
   <tr>
@@ -4408,12 +4457,12 @@ The commercial sources include the Emerging Markets Private Equity Association (
    <td style="text-align:right;font-weight: bold;"> 17,633 </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<tfoot><tr><td style="padding: 0; " colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> As of 2015. Source: @jeng2015.</td></tr></tfoot>
 </table>
 
 <div class="figure" style="text-align: center">
-<img src="./assets/pcri/pcrifigure1web.png" alt="Overlap of private capital firms in PCRI database by source of information" width="511" />
+<img src="./assets/pcri/pcrifigure1web.png" alt="Overlap of private capital firms in PCRI database by source of information" width="800" />
 <p class="caption">(\#fig:pcrifigure1)Overlap of private capital firms in PCRI database by source of information</p>
 </div>
 
@@ -4687,7 +4736,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
 
 
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>(\#tab:pcritablea1)Private capital firms by location of company headquarters and year founded</caption>
  <thead>
   <tr>
@@ -4781,11 +4830,11 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
    <td style="text-align:left;"> 46.5% </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<tfoot><tr><td style="padding: 0; " colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>(\#tab:pcritablea2)Funds by investment type and vintage year</caption>
  <thead>
   <tr>
@@ -4839,7 +4888,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
    <td style="text-align:left;"> 57.9% </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<tfoot><tr><td style="padding: 0; " colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
@@ -4859,7 +4908,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
 
 
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>(\#tab:pcritablea3)Portfolio companies by region and year founded</caption>
  <thead>
   <tr>
@@ -4942,19 +4991,20 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
    <td style="text-align:left;"> 49.0% </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; border: 0;" colspan="100%">
+<tfoot><tr><td style="padding: 0; " colspan="100%">
 <span style="font-style: italic;">Notes: </span> <sup></sup> Source: @jeng2015.</td></tr></tfoot>
 </table>
 
 
 
 
-
-
-
 ### Appendix B {-}
 
+
 [Sample Data Sponsor Agreement](./assets/appendix/pcri_appendix_b.pdf)
+
+
+
 
 
 
@@ -5003,7 +5053,7 @@ The following tables and figures, from @jeng2015, provide a summary overview of 
 
 *Laura Feeney (J-PAL North America, Massachusetts Institute of Technology)*  
 *Amy Finkelstein (Massachusetts Institute of Technology)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Feeney, Laura,  and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Laura Feeney, Amy Finkelstein. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Feeney, Laura,  and Amy Finkelstein. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Laura Feeney, Amy Finkelstein. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary
 
@@ -5275,7 +5325,7 @@ The following is from the +NDA|:
 *Norma Ming (San Francisco Unified School District)*  
 *Michelle Reininger (University of Colorado at Boulder)*  
 *Eric Bettinger (Stanford University)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Kim, Moonhawk, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, Eric Bettinger. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Kim, Moonhawk, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, and Eric Bettinger. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Moonhawk Kim, Jim Shen, Laura Wentworth, Norma Ming, Michelle Reininger, Eric Bettinger. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary
 
@@ -5571,7 +5621,7 @@ Once established, any partnership using shared data will need to *continually im
 
 [Michelle Reininger](https://www.colorado.edu/crowninstitute/michelle-reininger-phd) is the Director of Research Partnerships and Data Initiatives at the Crown Institute at the University of Colorado at Boulder. Michelle was the Executive Director of CEPA from 2010 to 2019; she worked with the Stanford legal team on the MOUs and DUAs for the partnership and managed the creation and day-to-day operations of the CEPA data warehouse for the Stanford-SFUSD Partnership.
 
-[Jim Shen](https://www.povertyactionlab.org/person/shen) is the Senior Manager for the Innovations in Data and Experiments for Action Initiative (IDEA) at the Abdul Latif Jameel Poverty Action Lab based at MIT. He was the Data Manager for CEPA from January 2015 to August 2019 where he managed the CEPA data warehouse. He was responsible for the day-to-day operations of the CEPA data warehouse, serving as the point of contact for Stanford researchers utilizing SFUSD data and SFUSD staff for data exchanges.
+[Jim Shen](https://www.povertyactionlab.org/person/shen) is the Senior Manager for the [Innovations in Data and Experiments for Action Initiative (IDEA)](https://www.povertyactionlab.org/initiative/innovations-data-experiments-action) at the Abdul Latif Jameel Poverty Action Lab based at MIT. He was the Data Manager for the Center for Education Policy Analysis (CEPA) from January 2015 to August 2019 where he managed the CEPA data warehouse. He was responsible for the day-to-day operations of the CEPA data warehouse, serving as the point of contact for Stanford researchers utilizing San Francisco Unified School District (SFUSD) data and SFUSD staff for data exchanges. Jim holds a BA in history and international relations and an MA in political science from the University of California, San Diego.
 
 [Laura Wentworth](http://www.caedpartners.org/display/CAED/Our+Team) is the Director of Research Practice Partnerships at California Education Partners. The RPP program at Ed Partners supports three partnerships with Stanford University and SFUSD, Stanford University and nine school districts neighboring the campus, and UC Berkeley and Oakland Unified School District. Since 2009, Laura has managed the day-to-day operations and relationships of the Stanford-SFUSD Partnership.
 
@@ -5607,11 +5657,14 @@ Once established, any partnership using shared data will need to *continually im
 
 ### Appendix A {- #sfusd-appendixa}
 
-[Agreement for Confidential Data Exchange Between San Francisco Unified School District and Stanford University](.\appendix\sfusd_appendix_a.pdf)
+
+
+[Agreement for Confidential Data Exchange Between San Francisco Unified School District and Stanford University](./appendix/sfusd_appendix_a.pdf)
 
 ### Appendix B {- #sfusd-appendixb}
 
-[Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](.\appendix\sfusd_appendix_b.pdf)
+[Data Use Agreement Between San Francisco Unified School District and Stanford Research Organization](./appendix/sfusd_appendix_b.pdf)
+
 
 
 
@@ -5624,7 +5677,7 @@ Once established, any partnership using shared data will need to *continually im
 *Kelsey Jack (University of California, Santa Barbara)*  
 *Derek Strong (University of Southern California)*  
 *Brendan Maughan-Brown (University of Cape Town)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Hugh, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Hugh Cole, Kelsey Jack, Derek Strong, Brendan Maughan-Brown. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Cole, Hugh, Kelsey Jack, Derek Strong, and Brendan Maughan-Brown. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Hugh Cole, Kelsey Jack, Derek Strong, Brendan Maughan-Brown. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary
 
@@ -5710,19 +5763,19 @@ Other important considerations and activities have revolved around the following
 <tbody>
   <tr>
    <td style="text-align:left;"> Technical solutions </td>
-   <td style="text-align:left;"> <li>Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions</li><li>Integrating said platform with CCT data systems</li> </td>
+   <td style="text-align:left;"> <ul><li>Finding a data sharing platform with sufficient metadata and access control capabilities to support researcher-specific use restrictions</li><li>Integrating said platform with CCT data systems</li></ul> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Data infrastructure </td>
-   <td style="text-align:left;"> <li>Development of metadata standards</li><li>Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.</li> </td>
+   <td style="text-align:left;"> <ul><li>Development of metadata standards</li><li>Assessment of self-hosting options versus cloud computing with the appropriate attention given to security concerns.</li></ul> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> IT architecture </td>
-   <td style="text-align:left;"> <li>Addressing tensions between existing and newer approaches and technology stacks</li><li>Ensuring that legacy systems do not create barriers to effective data sharing</li> </td>
+   <td style="text-align:left;"> <ul><li>Addressing tensions between existing and newer approaches and technology stacks</li><li>Ensuring that legacy systems do not create barriers to effective data sharing</li></ul> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Governance </td>
-   <td style="text-align:left;"> <li>Process improvement evaluations</li><li>Processes for integrating data use agreements with the data sharing platform</li> </td>
+   <td style="text-align:left;"> <ul><li>Process improvement evaluations</li><li>Processes for integrating data use agreements with the data sharing platform</li></ul> </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Data privacy </td>
@@ -5924,7 +5977,7 @@ The authors thank Gordon Inggs, Yogini Jivanji, Craig Kesson, Kayleen Simpson, C
 
 *Arianna Legovini (World Bank)*  
 *Maria Ruth Jones (World Bank)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Legovini, Arianna,  and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Arianna Legovini, Maria Ruth Jones. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Legovini, Arianna,  and Maria Ruth Jones. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Arianna Legovini, Maria Ruth Jones. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary 
 
@@ -6239,7 +6292,7 @@ Currently, DIME is well above the norm in the field. An analysis of 203 economic
 *Era Dabla-Norris (International Monetary Fund)*  
 *Federico J. Díez (International Monetary Fund)*  
 *Romain Duval (International Monetary Fund)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dabla-Norris, Era, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ International Monetary Fund. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Dabla-Norris, Era, Federico J. Díez, and Romain Duval. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ International Monetary Fund. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary
 
@@ -6259,7 +6312,7 @@ There is growing recognition within the IMF that the systematic use of administr
 
 The systematic use of administrative data, however, is less common in the context of IMF +surveillance| and research than for the Fund's two other main activities. One reason is that the use of micro-administrative data for macroeconomic analysis (and surveillance) has only become a routinely used tool within the last ten years, even in academia. Another reason is that utilizing administrative data is resource-intensive both in terms of the direct financial costs involved and staff time required to access and process the data. Further, even with interest from the Fund, national authorities can be unwilling to share the data for surveillance and research purposes, as the benefits to them are not always clear-cut. In these instances, and lacking any systematic institutional protocols, obtaining data rests on personal efforts by IMF staff to approach and potentially partner with national authorities.[^imf3] Finally, in many instances, legal constraints and confidentiality concerns pose challenges to accessibility. For example, countries often require that IMF staff be physically present to access the data or grant access indirectly through collaboration with a local staffer.
 
-### Data use examples {#imf-data-use-examples}
+### Data Use Examples {#imf-data-use-examples}
 
 This section provides concrete examples where Fund staff has used administrative data for policy and +surveillance| work that have broader relevance for the research community, highlighting the procedures followed for securing data access from authorities, the challenges faced by staff, and the outputs from the projects.
 
@@ -6410,9 +6463,9 @@ The views expressed in this paper are those of the author(s) and do not necessar
 *Abhijit Banerjee (Massachusetts Institute of Technology)*  
 *Benjamin A. Olken (Massachusetts Institute of Technology)*  
 *Rema Hanna (Harvard Kennedy School)*  
-*Sudarno Sumarto (SMERU and TNP2K)*  
+*Sudarno Sumarto (SMERU and National Team for the Acceleration of Poverty Reduction)*  
 *Putu Poppy Widyasari (J-PAL Southeast Asia, University of Indonesia)*  
-<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alatas, Vivi, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Vivi Alatas, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, Putu Poppy Widyasari. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a>.</span></div>
+<div id="citationLink"> <a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a> </div><div id="myCitation" style="display: none;">Alatas, Vivi, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, and Putu Poppy Widyasari. 2020. "<span id="chapTitle">Title</span>." In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), *Handbook on Using Administrative Data for Research and Evidence-based Policy*. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Vivi Alatas, Farah Amalia, Abhijit Banerjee, Benjamin A. Olken, Rema Hanna, Sudarno Sumarto, Putu Poppy Widyasari. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span></div>
 
 ## Summary
 
