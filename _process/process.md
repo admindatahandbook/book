@@ -11,8 +11,9 @@ For reference, cleanscript.ps1 contains the following:
 $file = $args[0]
 
 $docx = ".docx"
-$convertmed = "_convert.md"
+$convertmd = "_convert.md"
 $cleanmd = "_clean.md"
+$rmd = ".Rmd"
 
 pandoc $file$docx -f docx -t markdown --atx-headers --wrap=none -s -o $file$convertmd
 
@@ -24,6 +25,8 @@ pandoc $file$docx -f docx -t markdown --atx-headers --wrap=none -s -o $file$conv
        -replace [regex]::Escape("(<"), "(" `
        -replace [regex]::Escape(">)"), ")"
     } | Out-File $file$cleanmd
+
+Copy-Item $file$cleanmd -Destination $file$rmd
 
 ### Step 3
 Commit file_clean.md to main J-PAL repository in branch specific for that chapter (chapter branch)
@@ -39,6 +42,16 @@ Commit edits to chapter branch
 
 ### Step 7
 Test build off chapter branch (can fork to Jim repository to avoid using main repository github page)
+
+## Bibliography
+
+Bibliography entries are added to the idea handbook zotero library (https://www.zotero.org/groups/2400539/ideahandbook/library).
+
+Each chapter has its own folder in the library.
+
+Use the desktop client with the "Better BibTex for Zotero" add-on to generate automatic citekeys in the AuthorYear format.
+
+Bibliograhy is exported as ideahandbook.bib in BibTeX format with UTF-8 encoding into the root handbook directory.
 
 ## Build process for HTML
 
