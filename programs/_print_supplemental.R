@@ -11,10 +11,10 @@ printsupp<-function(chapter,debug=FALSE){
     cat("## Supplemental Materials {-} \n")
   }
   if (length(webinar)!=0) {
-    cat(paste0("The webinar video can be found [here](",webinar,"). \n"))
+    cat(paste0("The video of this chapter's webinar presentation can be found [here](",webinar,"). \n"))
   }
   if (length(slides)!=0) {
-    cat(paste0("The webinar slides can be found [here](",slides,"). \n"))
+    cat(paste0("The slides for the webinar presentation are available [here](",slides,"). \n"))
   }
   if (length(webinar)!=0 | length(slides)!=0) {
     cat(" \n")

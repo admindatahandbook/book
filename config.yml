@@ -26,13 +26,13 @@ default:
       - derekstrong
       - brendanmaughanbrown
     webinar: https://www.youtube.com/watch?v=NKiHz8eSJXI&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=1&t=12s
-    slides:
+    slides: ./appendix/cct_slides.pdf
   ahc:
     authors:
       - laurafeeney
       - amyfinkelstein
     webinar: https://www.youtube.com/watch?v=Pl1QvLMBdLg&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=7
-    slides: 
+    slides: ./appendix/ahc_slides.pdf
   sfusd:
     authors:
       - moonhawkkim
@@ -42,13 +42,15 @@ default:
       - michellereininger
       - ericbettinger
     webinar: https://www.youtube.com/watch?v=qYfwWLZaxxQ&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=3
-    slides:
+    slides: ./appendix/stanford-sfusd_slides.pdf
   imf:
     authors:
       - eradablanorris
       - federicojdiez
       - romainduval
     copyright: International Monetary Fund
+    webinar: 
+    slides: 
   iab:
     authors:
       - danamuller
@@ -60,28 +62,28 @@ default:
       - ariannalegovini
       - mariaruthjones
     webinar: https://www.youtube.com/watch?v=RBWzR4FC20w&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=8
-    slides:
+    slides: ./appendix/dime_slides.pdf
   irb:
     authors:
       - kathleenmurphy
     webinar: https://www.youtube.com/watch?v=VLQtkwQyQvo&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=6
-    slides: 
+    slides: ./appendix/irb_slides.pdf
   dua:
     authors:
       - amyohara
     webinar: https://www.youtube.com/watch?v=zzJy6ECdd80&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=5
-    slides: 
+    slides: ./appendix/dua_slides.pdf
   nbirdt:
     authors:
       - donnacurtismailet
       - jamestedmcdonald
     webinar: https://www.youtube.com/watch?v=jYBg-p94gHQ&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=10
-    slides: 
+    slides: ./appendix/nbirdt_slides.pdf
   olda:
     authors:
       - joshuadhawley
     webinar: https://www.youtube.com/watch?v=ZtLndEL28lM&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=2
-    slides: 
+    slides: ./appendix/olda_slides.pdf
   pcri:
     authors:
       - joshlerner
@@ -91,18 +93,22 @@ default:
     authors:
       - jimshen
       - larsvilhuber
+    webinar:
+    slides: ./appendix/security_slides.pdf
   discavoid:
     authors:
       - ianmschmutte
       - larsvilhuber
     webinar: https://www.youtube.com/watch?v=GK-N-SN3BrY&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=4
-    slides: 
+    slides: ./appendix/discavoid_slides.pdf
   diffpriv:
     authors:
       - alexandrawood
       - micahaltman
       - kobbinissim
       - salilvadhan
+    webinar:
+    slides: ./appendix/diffpriv_slides.pdf
   indonesia:
     authors:
       - vivialatas
@@ -112,6 +118,7 @@ default:
       - remahanna
       - sudarnosumarto
       - putupoppywidyasari
+    webinar:
   contributors:
     larsvilhuber:
       name: Lars Vilhuber
