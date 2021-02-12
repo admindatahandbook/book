@@ -287,7 +287,7 @@ To date, the PCRI database contains global information on approximately 23,000 g
 
 An increasing share of economic activity today is taking place in settings that elude traditional federal data collection mechanisms or fail to capture the richest of the activity at work. Against this backdrop, economists are increasingly turning to private data. This chapter underscores the experience of the PCRI, specifically the process of creating a database to facilitate access to private equity information for academics to address the myriad major concerns regarding private data. While this effort is certainly a work in progress, hopefully the experience can guide researchers who want to address similar issues in other fields.
 
-```{r, echo=FALSE, results='asis'}
+```{r, eval = outputformat == "html", echo=FALSE, results='asis'}
 printsupp("pcri")
 ```
 

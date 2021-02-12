@@ -206,7 +206,7 @@ The part of a protocol that relates to the use of administrative data is often e
 
 The goal of this chapter has been to provide a practical guide to researchers and other stakeholders on managing IRB procedures. It is important to emphasize that while this chapter addresses a wide variety of potential problems and concerns, in practice almost every university where research takes place has a well-functioning IRB, which performs the critical, but typically routine, work of providing oversight of research. Nearly all research proposals are able to satisfy IRB concerns, though they may sometimes require some adjustment to satisfy the principals laid out above.
 
-```{r, echo=FALSE, results='asis'}
+```{r, eval = outputformat == "html", echo=FALSE, results='asis'}
 printsupp("irb")
 ```
 

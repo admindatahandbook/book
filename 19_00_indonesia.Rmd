@@ -167,7 +167,7 @@ It is of course worth noting that administrative data-based experiments do not w
 
 [Rema Hanna](https://www.hks.harvard.edu/faculty/rema-hanna) and [Benjamin Olken](https://economics.mit.edu/faculty/bolken) are the scientific directors of J-PAL SEA, and [Abhijit Banerjee](https://economics.mit.edu/faculty/banerjee) and Benjamin Olken are both directors of J-PAL. [Putu Poppy Widyasari](https://www.povertyactionlab.org/person/widyasari) is a research manager at J-PAL SEA, and [Farah Amalia](https://www.povertyactionlab.org/person/amalia) is a senior training associate at J-PAL SEA. [Sudarno Sumarto](https://www.smeru.or.id/en/content/sudarno-sumarto) is senior research fellow at the SMERU Research Institute and a policy adviser at TNP2K. Vivi Alatas was lead economist at the World Bank during the work discussed here.
 
-```{r, echo=FALSE, results='asis'}
+```{r, eval = outputformat == "html", echo=FALSE, results='asis'}
 printsupp("indonesia")
 ```
 

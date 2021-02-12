@@ -341,7 +341,7 @@ if ( knitr::is_latex_output() ) {
 
 +DIME| has worked with client countries for the past fifteen years to strengthen their capacity for evidence-informed policy decisions. The DIME model is to support governments throughout policy design and implementation processes and invest heavily in the production of research-led data sets that can be applied to understanding the economic problems governments are trying to address. By striking a delicate balance between generating high-quality evidence and remaining responsive to policy processes on the ground, DIME has been able to build trust relationships with government clients. By helping governments build capacity for data and evidence-intensive policymaking, DIME secured broad access to administrative data and the opportunity to improve its quality.
 
-```{r, echo=FALSE, results='asis'}
+```{r, eval = outputformat == "html", echo=FALSE, results='asis'}
 printsupp("dime")
 ```
 

@@ -252,7 +252,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 *Dashboards*. The OLDA team works extensively on supporting state and local government in Ohio with dashboards and scorecards. The team has built several that are maintained every year for over five years and some that are more recent. OLDA keeps website hit traffic for these dashboards to examine the location and overall use of the dashboards in the state.
 
-```{r, echo=FALSE, results='asis'}
+```{r, eval = outputformat == "html", echo=FALSE, results='asis'}
 printsupp("olda")
 ```
 

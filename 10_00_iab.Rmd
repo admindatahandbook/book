@@ -268,7 +268,7 @@ In general, user ratings are very good. For example, Figure \@ref(fig:iabfig3) s
 knitr::include_graphics('./assets/iab/iabfigure3web.png')
 ```
 
-```{r, echo=FALSE, results='asis'}
+```{r, eval = outputformat == "html", echo=FALSE, results='asis'}
 printsupp("iab")
 ```
 
