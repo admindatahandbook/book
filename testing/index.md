@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2021-02-10"
+date: "2021-02-14"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -1055,6 +1055,9 @@ The necessary aspects of a data access mechanism and the restrictions that are p
 
 A final related point is that the enforcement of the terms of the +DUA| is an important factor in determining the flexibility in the data access system. More sophisticated DUAs and greater strength of enforcement enables increased flexibility in the data access mechanism while maintaining strong protections. This corresponds to a trade-off between the investment in physical infrastructure and human resources necessary for tight control over a data access mechanism versus the investment in the institutional and legal framework of data access. In the partnerships above, the necessary protections in the data access mechanism are established in large part by the DUA.
 
+## Supplemental Materials {-} 
+The slides for the webinar presentation are available [here](./appendix/security_slides.pdf). 
+ 
 ## About the Authors {-}
 
 [Jim Shen](https://www.povertyactionlab.org/person/shen) is the Senior Manager for the [Innovations in Data and Experiments for Action Initiative (IDEA)](https://www.povertyactionlab.org/initiative/innovations-data-experiments-action) at the Abdul Latif Jameel Poverty Action Lab based at MIT. He was the Data Manager for the Center for Education Policy Analysis (CEPA) from January 2015 to August 2019 where he managed the CEPA data warehouse. He was responsible for the day-to-day operations of the CEPA data warehouse, serving as the point of contact for Stanford researchers utilizing San Francisco Unified School District (SFUSD) data and SFUSD staff for data exchanges. Jim holds a BA in history and international relations and an MA in political science from the University of California, San Diego.
@@ -1200,6 +1203,11 @@ When using the data, the researcher should remember that this is a contractual a
 ## Summary
 
 No matter the size of the project or the volume of data needed, all parties should invest the time in preparing a sound data use agreement. Agreements enable safe projects. The topics covered in this chapter have been put in to practice through all the case studies in this volume. The process is well described in chapter \@ref(sfusd) on the Stanford-San Francisco Unified School District Partnership. Appendix [A](#dua-appendixa) provides a sample text for consideration when writing DUAs, and Appendix [B](#dua-appendixb) lists additional toolkits and guides on the DUA process.
+
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=zzJy6ECdd80&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=5). 
+The slides for the webinar presentation are available [here](./appendix/dua_slides.pdf). 
+ 
 
 ## About the Author {-}
 
@@ -1523,6 +1531,11 @@ Communicating effectively and constructively with the IRB is key to getting stud
 The part of a protocol that relates to the use of administrative data is often easy to write and fast to review if it contains all the relevant information. Researchers facing pushback from an IRB should be able to have a dialogue with the reviewers where the IRB can explain its decisions and why it is making certain recommendations or requesting specific protections.
 
 The goal of this chapter has been to provide a practical guide to researchers and other stakeholders on managing IRB procedures. It is important to emphasize that while this chapter addresses a wide variety of potential problems and concerns, in practice almost every university where research takes place has a well-functioning IRB, which performs the critical, but typically routine, work of providing oversight of research. Nearly all research proposals are able to satisfy IRB concerns, though they may sometimes require some adjustment to satisfy the principals laid out above.
+
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=VLQtkwQyQvo&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=6). 
+The slides for the webinar presentation are available [here](./appendix/irb_slides.pdf). 
+ 
 
 ## About the Author {-}
 
@@ -1923,6 +1936,11 @@ Many of the methods described in this chapter are technical and require statisti
 There is now a greater demand for all kinds of data. More than ever before, scholars and analysts have the tools to use data to better understand the economy and society and to inform policy. Alongside these advances, data custodians find themselves under pressure to make databases available to outsiders. However, the pressure to make data available is not always accompanied by the resources, tools, or expertise needed to do so safely.
 
 The same advances driving these new demands have a darker side. Computing power together with the availability of detailed outside data make it easier than ever for attackers to exploit improperly protected data. Therefore, when making data available for research, agency stewards must take great care to also protect the subjects in the data. This chapter provides an overview of techniques traditionally used to modify the data to achieve that goal. There is a legitimate concern that some of the methods discussed here cannot protect against all possible attacks made possible with modern computing power. Those concerns animate the discussion of formal methods that yield provable privacy guarantees elsewhere in this Handbook.
+
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=GK-N-SN3BrY&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=4). 
+The slides for the webinar presentation are available [here](./appendix/discavoid_slides.pdf). 
+ 
 
 ## About the Authors {-}
 
@@ -2664,6 +2682,10 @@ At least a third of the data sets deposited in Dataverse are replication data an
 For additional flexibility, the data depositor of a sensitive data set could allow for any researcher (end user) to be able to run any statistic available through the OpenDP interface. In this case, the data depositor would configure the allocation of privacy-loss budgets through the OpenDP interface before releasing the data set. Once the data set is published, an end user would be able to click "explore" for the sensitive data file, and the OpenDP statistical query interface would open. The user would not have access to the original sensitive data file but would be able to run the statistics of their choice---up to the point that the established privacy-loss budget allows.
 
 Referring to some of the other design choices discussed in Appendix [A](#diffpriv-appendixa), the vision outlined above fits into the curator model of differential privacy, as researchers depositing data in the repository have typically already been trusted to collect the sensitive data. It is part of a tiered access model meant to augment rather than replace the existing methods of accessing restricted data. Use Cases 1 and 2 involve noninteractive releases, whereas Use Case 3 allows for interactive queries. Many of the other key choices associated with implementing differential privacy are left to the data depositor, who cannot be expected to have expertise in differential privacy. Thus, the software tools must provide a clear user interface to guide the depositor in their decisions. There should be a tutorial on the concepts of privacy loss, privacy--accuracy trade-offs, and budgeting, including recommended choices of privacy-loss parameter $\varepsilon$ according to different categories of data and sensitivity. The depositor should also be guided in defining the granularity of privacy appropriate for their data and the trade-offs between offering per-analyst budgets for interactive queries versus a global budget for all queries. Domain knowledge will be required of the depositor (and the analyst in Use Case 3) in deciding which statistics to release and which ones to prioritize for accuracy. For the research use cases described above, it will be important that the differentially private analyses offered provide uncertainty estimates whenever possible.
+
+## Supplemental Materials {-} 
+The slides for the webinar presentation are available [here](./appendix/diffpriv_slides.pdf). 
+ 
 
 ## About the Authors {-}
 
@@ -3615,6 +3637,10 @@ In general, user ratings are very good. For example, Figure \@ref(fig:iabfig3) s
 <p class="caption">(\#fig:iabfig3)User satisfaction with RDC-IAB services, by percentage (options bad and very bad have not been chosen by respondents)</p>
 </div>
 
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=tTuayub1iRo&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=9). 
+ 
+
 ## About the Authors {-}
 
 [Dana Müller](https://www.iab.de/en/ueberblick/mitarbeiter.aspx/Mitarbeiter/251) is the Head of the Research Data Center (RDC-IAB) of the Federal Employment Agency (BA) at the Institute for Employment Research (IAB) in Nuremberg, Germany. Previously, she was a researcher at the IAB and the Chemnitz University of Technology. In these positions, Dana Müller has worked with survey data, administrative data, and big-data; she has developed a deep knowledge and extensive experience in linkages of social security records, administrative information, and survey data. She has led many initiatives, including the project "Quality of work and economic success" and "Biographical data of selected social insurance in Germany." Both projects were linking different administrative and survey data to advance social science research.
@@ -4027,6 +4053,11 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 
 *Dashboards*. The OLDA team works extensively on supporting state and local government in Ohio with dashboards and scorecards. The team has built several that are maintained every year for over five years and some that are more recent. OLDA keeps website hit traffic for these dashboards to examine the location and overall use of the dashboards in the state.
 
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=ZtLndEL28lM&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=2). 
+The slides for the webinar presentation are available [here](./appendix/olda_slides.pdf). 
+ 
+
 ## About the Author {-}
 
 [Joshua D. Hawley](http://glenn.osu.edu/faculty/glenn-faculty/hawley/) is a professor in the John Glenn College of Public Affairs at the Ohio State University (OSU). He also serves in leadership roles at two research centers of OSU: director of the Ohio Education Research Center at the Glenn College and Associate Director for the Center for Human Resource Research (CHRR). The focus of both centers is state level administrative data. Since approximately 2009 the centers have partnered with the State of Ohio to store Ohio administrative records. The primary project for the Ohio Analytics Partnership is the Ohio Longitudinal Data Archive. Professor Hawley currently serves as the lead faculty for this effort. In addition, he teaches classes in Education and Workforce Development policy and Data Sciences.
@@ -4285,6 +4316,11 @@ A second key area of measurement for NB-IRDT examines its ability to support res
 Additionally, the length of time between process stages is measured. This measure serves as both an indicator to prospective researchers as well as a performance measure for project coordination and management. Application processing time from start to finish, often the first question asked by potential researchers, has proved to be the most challenging of measurements. Though internal processes are examined and modified for efficiency, the barrier is controlling for external factors. External factors include unforeseen delays in data sets transfer triggered by specific project needs, incompletion of safeguard measures by potential researchers, scheduling of review meetings with numerous partners at the table, researchers' completion of necessary edits or updates following reviews and application resubmission, delays in REB submissions, and working around funding requirements and deadlines. As internal processes continue to improve, ongoing communication and education about these processes to researchers, as well as addressing their responsibility to fulfill application requirements, is key decreasing overall application time.
 
 Audits of data sets accessed and data project activity are a requirement of data sharing with NB-IRDT as well as a legislated safeguard. Reporting at this level allows not only for the monitoring of appropriate data access but also provides partners with an indicator of the usage of their data. A final metric for NB-IRDT is the number of disseminated research results or outputs from data access. Not only are the requests for first-time disclosure captured but also efforts are made to identify subsequent publications or sharing of results in additional formats beyond the relationship with NB-IRDT.
+
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=jYBg-p94gHQ&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=10). 
+The slides for the webinar presentation are available [here](./appendix/nbirdt_slides.pdf). 
+ 
 
 ## About the Authors {-}
 
@@ -4674,6 +4710,8 @@ To date, the PCRI database contains global information on approximately 23,000 g
 ### Concluding Remarks
 
 An increasing share of economic activity today is taking place in settings that elude traditional federal data collection mechanisms or fail to capture the richest of the activity at work. Against this backdrop, economists are increasingly turning to private data. This chapter underscores the experience of the PCRI, specifically the process of creating a database to facilitate access to private equity information for academics to address the myriad major concerns regarding private data. While this effort is certainly a work in progress, hopefully the experience can guide researchers who want to address similar issues in other fields.
+
+
 
 ## About the Authors {-}
 
@@ -5249,6 +5287,11 @@ After the clinical decision support project, two of the key executives at ARI le
 
 Beyond process, the Aurora analysts who worked on data extraction gained insight into the data and techniques for processing data that have improved their efficiency. For example, the best practice alert data used for this project is not commonly analyzed by the health care system; however, the analysts stated that understanding these data has helped them respond to internal requests from the pharmacy information systems group on how to analyze their alert data. As another example, many internal reporting and assessment projects at Aurora require matching data across data systems, and the need for, and complexity of, linking data has increased as the teams must now integrate data from the Advocate systems. The Aurora analyst team has applied their knowledge gained on the CDS project of how to match patient names or other records in a string format to these internal projects.[^ahc9]
 
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=Pl1QvLMBdLg&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=7). 
+The slides for the webinar presentation are available [here](./appendix/ahc_slides.pdf). 
+ 
+
 ## About the Authors {-}
 
 [Laura Feeney](https://www.povertyactionlab.org/person/feeney) is the Associate Director of Research and Training at J-PAL North America. She provides strategic direction to the research and training team in efforts to support researchers and improve the quality and efficiency of randomized evaluations. She works with researchers, partners, and staff to develop and promote best practices in research, build the capacity of policymakers and research staff, and encourage the use of administrative data for research.
@@ -5611,6 +5654,11 @@ The answers to the first four questions shape the answer to the critical last qu
 
 Once established, any partnership using shared data will need to *continually improve the ways in which data are collected and archived.* For example, in SFUSD, although spreadsheet files gathered from various departments are systematically archived on an internal server, they are not processed to create robust databases. One critical step toward pursuing this improvement is to maintain a clearer separation between operational and analytical data systems. Along with better integration of the operational data systems that sit across distinct databases in the school district departments, the Partnership would also establish firmer timelines for finalizing the extracts of analytical data from these systems. Maintaining authoritative analytical data files for research at SFUSD would also significantly improve data quality, consistency in analyses, and efficiency in data management across the multiple analysts and researchers who use those data. On the Stanford side, the data manager could implement an intermediate step of data organization and storage between the raw data receipts from the district and the master data files that are used to provide data to research teams.
 
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=qYfwWLZaxxQ&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=3). 
+The slides for the webinar presentation are available [here](./appendix/stanford-sfusd_slides.pdf). 
+ 
+
 ## About the Authors {-}
 
 [Eric Bettinger](https://ed.stanford.edu/faculty/ebetting) is a Professor at Stanford University Graduate School of Education, a senior fellow at the Stanford Institute for Economic Policy Research (SIEPR), and the Faculty Director of CEPA.
@@ -5930,9 +5978,10 @@ This case study provides a snapshot---taken in the midst of a dramatic transform
 
 The benefits of streamlining the data sharing process include an increased volume of research on policy relevant questions, greater accountability of researchers to report findings and share cleaned data or new data sets with CCT, and a more secure and standardized approach to transferring data to researchers. These benefits come at a cost, which is largely front-loaded and associated with establishing the data sharing platform, as well as centralizing and standardizing the diverse set of administrative data sets used by CCT. This stage is still ongoing, and the interim picture provided here is rapidly changing. Lessons will continue to be learned and unresolved issues solved. CCT will carefully balance data privacy concerns with the need to generate bodies of evidence that inform municipal policies and support enhanced service delivery and improved outcomes for residents of Cape Town.
 
-## Supplemental Materials {-}
-
-The video of this chapter's webinar presentation can be found here (link to come). The slides for the webinar presentation are available here (link to come).
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=NKiHz8eSJXI&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=1&t=12s). 
+The slides for the webinar presentation are available [here](./appendix/cct_slides.pdf). 
+ 
 
 ## About the Authors {-}
 
@@ -6269,6 +6318,11 @@ Currently, DIME is well above the norm in the field. An analysis of 203 economic
 
 +DIME| has worked with client countries for the past fifteen years to strengthen their capacity for evidence-informed policy decisions. The DIME model is to support governments throughout policy design and implementation processes and invest heavily in the production of research-led data sets that can be applied to understanding the economic problems governments are trying to address. By striking a delicate balance between generating high-quality evidence and remaining responsive to policy processes on the ground, DIME has been able to build trust relationships with government clients. By helping governments build capacity for data and evidence-intensive policymaking, DIME secured broad access to administrative data and the opportunity to improve its quality.
 
+## Supplemental Materials {-} 
+The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=RBWzR4FC20w&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=8). 
+The slides for the webinar presentation are available [here](./appendix/dime_slides.pdf). 
+ 
+
 ## About the Authors {-}
 
 [Arianna Legovini](https://www.worldbank.org/en/about/people/a/arianna-legovini) heads the Development Impact Evaluation (DIME) Department of the World Bank. She established this group in 2009 based on a model of collaboration between research and operations to optimize project design, secure higher returns to development investments, and empower governments to generate contextually relevant evidence to guide their policymaking process. She successfully aligned US\$200 million in donor and government client financing to support a systematic approach to data analytics and causal evidence across a large program of World Bank and other development banks operations. She now presides over a team of 186 people conducting research in sixty countries across all sectors, working with 200 agencies, and shaping US\$20 billion in development finance. She started similar groups with the Inter-American Development Bank and the Africa region of the World Bank. She provides advisory services to the thirty largest multilateral and bilateral development agencies in the world.
@@ -6415,6 +6469,8 @@ Regarding performance, the metrics used vary significantly with the nature of th
 ## Concluding Remarks
 
 The intensity and frequency with which administrative data are used at the IMF depends on whether these are used for +technical_assistance|, lending-related purposes, or for macroeconomic +surveillance| and research. While the use of administrative data usage is common in the first two areas it is much less so in the latter. In the absence of institutional protocols and incentives, the use of such data for research purposes depends on staff initiative in approaching national authorities/data providers. There is an increasing recognition, however, of the benefits of using these kinds of data for Fund's surveillance and research leading to several successful engagements such as the ones described in this chapter. At the same time, the Fund's unique status as an international organization creates opportunities. In particular, in the future, through its bilateral engagement with its 189 member countries, participation in international data initiatives and partnerships with universities and research networks, the IMF has the potential to gradually enhance cross-country comparability, access, and use for (at least some) administrative data produced by national authorities for research purposes.
+
+
 
 ## About the Authors {-}
 
@@ -6612,6 +6668,8 @@ It is of course worth noting that administrative data-based experiments do not w
 ## About the Authors {-}
 
 [Rema Hanna](https://www.hks.harvard.edu/faculty/rema-hanna) and [Benjamin Olken](https://economics.mit.edu/faculty/bolken) are the scientific directors of J-PAL SEA, and [Abhijit Banerjee](https://economics.mit.edu/faculty/banerjee) and Benjamin Olken are both directors of J-PAL. [Putu Poppy Widyasari](https://www.povertyactionlab.org/person/widyasari) is a research manager at J-PAL SEA, and [Farah Amalia](https://www.povertyactionlab.org/person/amalia) is a senior training associate at J-PAL SEA. [Sudarno Sumarto](https://www.smeru.or.id/en/content/sudarno-sumarto) is senior research fellow at the SMERU Research Institute and a policy adviser at TNP2K. Vivi Alatas was lead economist at the World Bank during the work discussed here.
+
+
 
 ## Acknowledgements {-}
 
