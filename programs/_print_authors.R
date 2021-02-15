@@ -104,9 +104,9 @@ printauthor<-function(chapter,debug=FALSE){
  
   # handle copyright
   copyright <- config::get(chapter)$copyright
-  copyright.default = TRUE
+  copyright.default = FALSE
   if ( is.null(copyright)) { 
-    copyright.default = FALSE
+    copyright.default = TRUE
     copyright <- authors.comma
   }
 
@@ -155,6 +155,8 @@ printauthor<-function(chapter,debug=FALSE){
   }
   # If this is for the ebook, do this:
   if ( outputformat == "epub3" ) {
+    if (debug) { print("outputformat=epub3")}
+    if (debug) { print(paste0("copyright.default=",copyright.default))}
     if ( copyright.default == FALSE ) {
       cat('<div id="myCitation" style="display: block;">')
       cat(paste0("<span class=\"copyright\">©️ ",copyright,". "))
