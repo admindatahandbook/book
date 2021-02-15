@@ -104,7 +104,9 @@ printauthor<-function(chapter,debug=FALSE){
  
   # handle copyright
   copyright <- config::get(chapter)$copyright
+  copyright.default = TRUE
   if ( is.null(copyright)) { 
+    copyright.default = FALSE
     copyright <- authors.comma
   }
 
@@ -153,15 +155,19 @@ printauthor<-function(chapter,debug=FALSE){
   }
   # If this is for the ebook, do this:
   if ( outputformat == "epub3" ) {
-    cat('<div id="myCitation" style="display: block;">')
-    cat(paste0("<span class=\"copyright\">©️ ",copyright,". Licensed under "))
-    if ( license.cc != "" ) {
-      cat(paste0("<a href=\"https://creativecommons.org/licenses/",license.cc,"/4.0/\"><img alt=\"",toupper(license.chapter)," logo\" src=\"assets/",license.chapter,".png\" height=\"12\"/></a>"))
-    } else {
-      cat(paste0(toupper(license.chapter)))
+    if ( copyright.default == FALSE ) {
+      cat('<div id="myCitation" style="display: block;">')
+      cat(paste0("<span class=\"copyright\">©️ ",copyright,". "))
+      if ( license.cc != "" ) {
+        cat("Licensed under ")
+        cat(paste0("<a href=\"https://creativecommons.org/licenses/",license.cc,"/4.0/\"><img alt=\"",toupper(license.chapter)," logo\" src=\"assets/",license.chapter,".png\" height=\"12\"/></a>"))
+      } else {
+      # do nothing in ebook
+      #cat(paste0(toupper(license.chapter)))
+      }
+      cat(paste0(".</span>"))
+      cat('</div>')
     }
-    cat(paste0(".</span>"))
-    cat('</div>')
   }
   
 

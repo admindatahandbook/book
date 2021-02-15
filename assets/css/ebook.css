@@ -1,0 +1,26 @@
+h1 {
+    font-size: 1.2em
+}
+h2 {
+    font-size: 1.1em
+}
+h3, h4, h5 {
+    font-size: 1em;
+}
+/* used for citations */
+
+#myCitation {
+    display: none;
+    padding: 1em;
+    color: rgb(131, 131, 131);
+  }
+  
+  #citationDate {
+}
+  
+  #citationLink {
+      margin-bottom: 1em;
+  }
+  
+  /* used for copyright notice in TOC */
+  
