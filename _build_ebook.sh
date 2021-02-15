@@ -37,7 +37,11 @@ do
   sed -i 's+(PART) ++g' EPUB/$arg
 done
 
+# Fix bibliography
+arg=24
+sed -i 's+section id="references+section epub:type="bibliography" id="references+' EPUB/text/ch0$arg.xhtml
 
+# Fix colspan
 for arg in 10 11 13 14 16 
 do
   sed -i 's+colspan="100%"+colspan="10"+' EPUB/text/ch0$arg.xhtml 

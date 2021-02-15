@@ -23,4 +23,14 @@ h3, h4, h5 {
   }
   
   /* used for copyright notice in TOC */
-  
+    
+
+.footnote-ref {
+    font-size: smaller;
+}
+.footnote-ref::before {
+    content: "[";
+}
+.footnote-ref::after {
+    content: "]";
+}

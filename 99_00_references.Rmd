@@ -1,7 +1,11 @@
-```{r refs,echo=F,results='asis'}
+```{r refs,echo=F,results='asis',eval=outputformat == "html"}
 if ( knitr::is_html_output() ) {
 cat("### References {- #invisible}")
 }
 ```
+```{r refsebook,echo=F,results='asis',eval=outputformat == "epub3"}
+cat("# References {-}")
+```
+
 
 
