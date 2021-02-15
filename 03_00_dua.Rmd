@@ -132,7 +132,7 @@ When using the data, the researcher should remember that this is a contractual a
 
 No matter the size of the project or the volume of data needed, all parties should invest the time in preparing a sound data use agreement. Agreements enable safe projects. The topics covered in this chapter have been put in to practice through all the case studies in this volume. The process is well described in chapter \@ref(sfusd) on the Stanford-San Francisco Unified School District Partnership. Appendix [A](#dua-appendixa) provides a sample text for consideration when writing DUAs, and Appendix [B](#dua-appendixb) lists additional toolkits and guides on the DUA process.
 
-```{r, eval=knitr::is_html_output(), echo=FALSE, results='asis'}
+```{r, eval=outputformat == "html", echo=FALSE, results='asis'}
 printsupp("dua")
 ```
 
