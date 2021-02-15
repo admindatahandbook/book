@@ -132,6 +132,10 @@ When using the data, the researcher should remember that this is a contractual a
 
 No matter the size of the project or the volume of data needed, all parties should invest the time in preparing a sound data use agreement. Agreements enable safe projects. The topics covered in this chapter have been put in to practice through all the case studies in this volume. The process is well described in chapter \@ref(sfusd) on the Stanford-San Francisco Unified School District Partnership. Appendix [A](#dua-appendixa) provides a sample text for consideration when writing DUAs, and Appendix [B](#dua-appendixb) lists additional toolkits and guides on the DUA process.
 
+```{r, eval=knitr::is_html_output(), echo=FALSE, results='asis'}
+printsupp("dua")
+```
+
 ## About the Author {-}
 
 [Amy O'Hara](https://gufaculty360.georgetown.edu/s/contact/0033600001nHXCZAA4/amy-ohara) is a Research Professor in the Massive Data Institute at the McCourt School of Public Policy at Georgetown University, and the Director of Georgetown's Federal Statistical Research Data Center. She also leads the Administrative Data Research Initiative at Georgetown, improving secure, responsible data access for research and evaluation. She was previously a senior executive at the US Census Bureau where she negotiated DUAs for federal, state, and local administrative data. Her current research focuses on population measurement, data governance, and record linkage. She received her PhD in Economics from the University of Notre Dame.

@@ -91,6 +91,7 @@ config <- config::get()
 # Source programs used by all chapters
 
 source(file.path(programdir,"_print_authors.R"))
+source(file.path(programdir,"_print_supplemental.R"))
 source(file.path(programdir,"_colorize.R"))
 
 # Copy Appendix Files Over

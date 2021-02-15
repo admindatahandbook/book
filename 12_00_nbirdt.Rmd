@@ -213,6 +213,10 @@ Additionally, the length of time between process stages is measured. This measur
 
 Audits of data sets accessed and data project activity are a requirement of data sharing with NB-IRDT as well as a legislated safeguard. Reporting at this level allows not only for the monitoring of appropriate data access but also provides partners with an indicator of the usage of their data. A final metric for NB-IRDT is the number of disseminated research results or outputs from data access. Not only are the requests for first-time disclosure captured but also efforts are made to identify subsequent publications or sharing of results in additional formats beyond the relationship with NB-IRDT.
 
+```{r, eval = outputformat == "html", echo=FALSE, results='asis'}
+printsupp("nbirdt")
+```
+
 ## About the Authors {-}
 
 [Donna Curtis Maillet](https://www.unb.ca/faculty-staff/directory/nbirdt/curtis-maillet-donna.html) has been the Privacy Officer for the NB Institute for Research, Data and Training since it originated in 2015. In addition to a background in library and information sciences, she holds an interdisciplinary PhD and has research work experience in science and technology studies and legal pluralism. Dr. Curtis Maillet has been a part-time lecturer in sociology and public policy at St Thomas University since 2014.
