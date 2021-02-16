@@ -18,7 +18,7 @@
 <p>Possibly because technological advances happen faster than legal frameworks change, data custodians and policymakers may not be aware of the most current technological possibilities when crafting the legal and contractual framework for data access. This chapter will attempt to capture a snapshot of the technologies available and in use as of 2020, as well as characterize the technologies along a multi-dimensional scale, allowing for some comparability across methods. This is followed by several examples, both from the case studies in this handbook as well as others that are of particular relevance.</p>
 <p>As a caution, by the time that this chapter is being read, the range of possibilities may yet again have expanded (rarely does it contract). The difficulty of implementing any given data access mechanism is contingent on the local conditions, skills, and available resources. Due to the many possible factors that go into a technological choice, it is not feasible to make a comprehensive set of recommendations for data providers and researchers. However, this chapter can provide recommendations for a minimum baseline of security features that data access mechanisms should include and a framework for evaluating the tradeoffs between addressing likely threats while maintaining useful access and minimizing costs.</p>
 <p>Readers must note that physical security is only one component of protecting individuals in data and safely using data for research and cannot be considered on its own. The various technical measures described in this chapter are always implemented within the context of an overall access mechanism and cannot be evaluated or ranked independently. Each case study in this handbook is an example of a global approach to implementing data access mechanisms, of which the technology used is one component.</p>
-<p>For illustrative purposes, this chapter utilizes a simplified structure in which data providers, researchers, and possibly third parties are the actors involved in the process of storing and hosting data and computers. The <a href="ch005.xhtml#intro">introductory chapter</a> and chapter <a href="#dua">3</a> on data use agreements (DUA) provide a more refined view of the various roles.</p>
+<p>For illustrative purposes, this chapter utilizes a simplified structure in which data providers, researchers, and possibly third parties are the actors involved in the process of storing and hosting data and computers. The <a href="ch005.xhtml#intro">introductory chapter</a> and chapter <a href="ch008.xhtml#dua">3</a> on data use agreements (DUA) provide a more refined view of the various roles.</p>
 </section>
 <section id="types-of-security-threats" class="level2" data-number="2.2">
 <h2 data-number="2.2"><span class="header-section-number">2.2</span> Types of Security Threats</h2>
@@ -371,7 +371,7 @@ In the Stanford-SFUSD Partnership, data are stored on secured servers at Stanfor
 <section id="range-of-analysis-methods-available" class="level3" data-number="2.5.3">
 <h3 data-number="2.5.3"><span class="header-section-number">2.5.3</span> Range of Analysis Methods Available</h3>
 <p>The final aspect of data access mechanisms is the set of analysis methods available to researchers. Analysis methods can be unrestricted, subject to limited restrictions, or under extensive restrictions. Methods range from simple tabulations to complex machine learning algorithms via standard econometric techniques.</p>
-<p>These restrictions can be implemented for technical or security reasons but mainly serve to ensure that researchers cannot misuse the data or generate unsafe output. Note that this aspect of data access mechanisms is distinct from the agency that researchers have over the analysis computer. This aspect is closely related to the statistical protection of the data (see chapters <a href="#discavoid">5</a> and <a href="#diffpriv">6</a>), affecting safe data and safe outputs.</p>
+<p>These restrictions can be implemented for technical or security reasons but mainly serve to ensure that researchers cannot misuse the data or generate unsafe output. Note that this aspect of data access mechanisms is distinct from the agency that researchers have over the analysis computer. This aspect is closely related to the statistical protection of the data (see chapters <a href="ch010.xhtml#discavoid">5</a> and <a href="ch011.xhtml#diffpriv">6</a>), affecting safe data and safe outputs.</p>
 <p>Restricting the analysis methods available to the researcher is primarily intended to protect the outputs of any analysis, preventing reidentification and other misuses of the data. Generally, the goal of restrictions on methods is to relax or automate output checks. Setting up such systems requires a high degree of technical sophistication and resources available to data custodians. Few off-the-shelf implementations of restricting analysis methods are available. While this may be intended as a physical restriction on safe projects, researchers and data providers looking to establish new data access mechanisms should be clear on what restrictions may be placed on analysis methods and plan the research project accordingly.</p>
 <p>When analysis methods are <strong>unrestricted</strong>, researchers can use the full set of methods available in the software that are provided on the analysis computer, including any tabulation or regression analysis. Note that the ability to report on the results obtained via these methods might still be restricted, depending on what is considered safe output. Furthermore, the ability to access any method, for instance through add-on packages distributed through repositories such as the Statistical Software Components (SSC) archive at Boston College for Stata or the Comprehensive R Archive Network (CRAN) for R, may depend on the agency the researcher has over the analysis computer.</p>
 <p>When <strong>limited restrictions</strong> are imposed, some methods might be prevented, even if the software is available, by censoring elements of those software programs. In particular, the ability to inspect individual records may be limited.</p>
@@ -435,7 +435,7 @@ Unrestricted
 <h3 data-number="2.6.1"><span class="header-section-number">2.6.1</span> New Brunswick Institute for Research, Data and Training (NB-IRDT)</h3>
 <p><img width="300" style="float:left; padding:10px" src="../media/file2.png" /></p>
 <p>The <a href="ch015.xhtml#nbirdt">NB-IRDT</a> serves as a third-party data custodian for the Province of New Brunswick, Canada to make de-identified personnel and health data available to researchers. The data and analysis computers are located at the central NB-IRDT facility, and researchers may travel there or to satellite NB-IRDT data centers to access the data via <a href="ch007.xhtml#thin-clients">thin clients</a> in <a href="ch007.xhtml#secure-rooms">secure rooms</a> from which mobile devices and outside materials are banned. Thus NB-IRDT serves as a non-researcher data custodian as well as a third-party access provider to provincial data with high security. Researchers have medium agency over the analysis computers: access to common statistical programs is provided and researchers can request other software packages. The NB-IRDT allows researchers unrestricted analysis methods, relying on manual disclosure control to ensure safe outputs.</p>
-<p>The NB-IRDT requires over two dozen staff<a href="#fn29" class="footnote-ref" id="fnref29" epub:type="noteref">29</a> located with the data custodian, including multiple data analysts, system administrators, and other technical staff to set up and maintain the data access mechanism. For more information, see chapter <a href="#nbirdt">9</a>.</p>
+<p>The NB-IRDT requires over two dozen staff<a href="#fn29" class="footnote-ref" id="fnref29" epub:type="noteref">29</a> located with the data custodian, including multiple data analysts, system administrators, and other technical staff to set up and maintain the data access mechanism. For more information, see chapter <a href="ch015.xhtml#nbirdt">9</a>.</p>
 </section>
 <section id="research-data-center-at-the-institute-for-employment-research-rdc-iab" class="level3" data-number="2.6.2">
 <h3 data-number="2.6.2"><span class="header-section-number">2.6.2</span> Research Data Center at the Institute for Employment Research (RDC-IAB)</h3>
@@ -446,18 +446,18 @@ Unrestricted
 <p>The JoSuA remote execution system allows researchers to utilize the same microdata, though they cannot view the data directly. Researchers are limited to viewing the de-identified output from their analysis, and there are some restrictions on Stata commands. In return, controls around access computers and locations are relaxed: Researchers utilize their own computers to use the JoSuA interface, and there are no restrictions on access locations. The data and analysis computer remains located with the RDC-IAB, and researchers are subject to the same limitations on their agency over analysis computers and available analysis methods.</p>
 <p><img width="300" style="float:left; padding:10px" src="../media/file5.png" /></p>
 <p>The RDC-IAB also makes data products (scientific use files) available for direct download by researchers using a <a href="ch007.xhtml#secure-network-protocols">secure download platform</a>, which are further anonymized variants of the microdata available in the other two access methods. The researcher’s institution acts as the data custodian by hosting the data and the analysis computer, with the researcher’s institution having high agency over the analysis computer. The access computers and access location are also at the researcher’s institution. The RDC-IAB DUA for downloading the scientific use files requires a medium security access location. The building and room are required to have some level of access control or monitoring against unauthorized access; options range from receptionists and security guards to admission with simple key locks. Also note that scientific use data can only be accessed by European research institutions.</p>
-<p>The RDC-IAB has a staff of over two dozen people<a href="#fn30" class="footnote-ref" id="fnref30" epub:type="noteref">30</a>, not counting staff at guest RDCs. Each data center requires at least one staff member, as well as additional staff to maintain the data products and approve projects. For more information, see chapter <a href="#iab">7</a>.</p>
+<p>The RDC-IAB has a staff of over two dozen people<a href="#fn30" class="footnote-ref" id="fnref30" epub:type="noteref">30</a>, not counting staff at guest RDCs. Each data center requires at least one staff member, as well as additional staff to maintain the data products and approve projects. For more information, see chapter <a href="ch013.xhtml#iab">7</a>.</p>
 </section>
 <section id="ohio-longitudinal-data-archive-olda" class="level3" data-number="2.6.3">
 <h3 data-number="2.6.3"><span class="header-section-number">2.6.3</span> Ohio Longitudinal Data Archive (OLDA)</h3>
 <p><img width="300" style="float:left; padding:10px" src="../media/file6.png" /></p>
 <p><a href="ch014.xhtml#olda">OLDA</a> is a third-party data custodian that provides de-identified, individual-level data to researchers on behalf of the state of Ohio. The data are initially located at OLDA before ultimately being transferred to researchers’ analysis computers via an <a href="ch007.xhtml#secure-network-protocols">SFTP server</a>. The researchers have full agency over the analysis computer, which also serves as the access computer. The computer must be physically located in the researcher’s university office, and the <a href="ch007.xhtml#ip-address-restrictions">IP address</a> must be registered with OLDA. There are no specific requirements imposed on the researcher’s office (low security). Researchers have unrestricted analysis methods available to them.</p>
-<p>Approximately a dozen full-time staff maintain the data access mechanism. OLDA relies on the statistical protections of the data (safe data), the security of researchers’ institutions, and disclosure avoidance methods applied to outputs to keep data protected. For more information, see chapter <a href="#olda">8</a>.</p>
+<p>Approximately a dozen full-time staff maintain the data access mechanism. OLDA relies on the statistical protections of the data (safe data), the security of researchers’ institutions, and disclosure avoidance methods applied to outputs to keep data protected. For more information, see chapter <a href="ch014.xhtml#olda">8</a>.</p>
 <section id="private-capital-research-institute-pcri" class="level4" data-number="2.6.3.1">
 <h4 data-number="2.6.3.1"><span class="header-section-number">2.6.3.1</span> Private Capital Research Institute (PCRI)</h4>
 <p><img width="300" style="float:left; padding:10px" src="../media/file7.png" /></p>
 <p>The <a href="ch016.xhtml#pcri">PCRI</a> data access mechanism provides researchers access to highly sensitive business information about private capital firms. Organizationally, PCRI serves as a third-party data custodian, but in turn uses the National Opinion Research Center (NORC) and in some cases the FSRDC system as a third-party location for the data and analysis computers. Researchers have low agency over the analysis computers: users are restricted to the Stata on the NORC servers (see FSRDC for restrictions there). Researchers can only use <a href="ch007.xhtml#thin-clients">thin clients</a> that are provided to them by NORC. There are no formal restrictions on the location of the access computers, although researchers are required to use their best efforts to prevent unauthorized access. PCRI and NORC implement limited restrictions on the analysis methods available within Stata, prohibiting certain commands and sample sizes.</p>
-<p>PCRI itself has three full -time and six part-time staff to make the data usable for researchers, but relies on the preexisting resources at NORC for the data access mechanism. For more information, see chapter <a href="#pcri">10</a>.</p>
+<p>PCRI itself has three full -time and six part-time staff to make the data usable for researchers, but relies on the preexisting resources at NORC for the data access mechanism. For more information, see chapter <a href="ch016.xhtml#pcri">10</a>.</p>
 </section>
 </section>
 <section id="federal-statistical-research-data-centers-fsrdc" class="level3" data-number="2.6.4">
@@ -487,7 +487,7 @@ Unrestricted
 <section id="summary-of-examples" class="level3" data-number="2.6.8">
 <h3 data-number="2.6.8"><span class="header-section-number">2.6.8</span> Summary of Examples</h3>
 <p>Table <a href="#tab:securitysummarytable">2.6</a> provides a summary of the five asppects of the data access mechanisms covered in this chapter. Additionally, it includes data access mechanisms from case studies in the rest of the Handbook that were not covered in this chapter due to having very similar implementations as those described above. Note some case studies, such as the International Monetary Fund, utilize a wide range of access mechanisms (varying across different data providers) and are not categorized in this table.</p>
-<table>
+<table id="#tab:securitysummarytable">
 <caption>
 Table 2.6: Summary of Access Mechanisms Along the Five Aspects
 </caption>
@@ -516,7 +516,7 @@ Range of Analysis Methods Available
 <tbody>
 <tr>
 <td style="text-align:center;">
-IAB RDC &lt;br&gt; (chapter <a href="#iab">7</a>)
+IAB RDC &lt;br&gt; (chapter <a href="ch013.xhtml#iab">7</a>)
 </td>
 <td style="text-align:center;">
 Medium
@@ -536,7 +536,7 @@ Limited
 </tr>
 <tr>
 <td style="text-align:center;">
-IAB JoSuA &lt;br&gt; (chapter <a href="#iab">7</a>)
+IAB JoSuA &lt;br&gt; (chapter <a href="ch013.xhtml#iab">7</a>)
 </td>
 <td style="text-align:center;">
 Medium
@@ -556,7 +556,7 @@ Limited
 </tr>
 <tr>
 <td style="text-align:center;">
-IAB SUF &lt;br&gt; (chapter <a href="#iab">7</a>)
+IAB SUF &lt;br&gt; (chapter <a href="ch013.xhtml#iab">7</a>)
 </td>
 <td style="text-align:center;">
 High
@@ -576,7 +576,7 @@ Unrestricted
 </tr>
 <tr>
 <td style="text-align:center;">
-OLDA &lt;br&gt; (chapter <a href="#olda">8</a>)
+OLDA &lt;br&gt; (chapter <a href="ch014.xhtml#olda">8</a>)
 </td>
 <td style="text-align:center;">
 High
@@ -596,7 +596,7 @@ Unrestricted
 </tr>
 <tr>
 <td style="text-align:center;">
-NB-IRDT &lt;br&gt; (chapter <a href="#nbirdt">9</a>)
+NB-IRDT &lt;br&gt; (chapter <a href="ch015.xhtml#nbirdt">9</a>)
 </td>
 <td style="text-align:center;">
 Medium
@@ -616,7 +616,7 @@ Unrestricted
 </tr>
 <tr>
 <td style="text-align:center;">
-PCRI &lt;br&gt; (chapter <a href="#pcri">10</a>)
+PCRI &lt;br&gt; (chapter <a href="ch016.xhtml#pcri">10</a>)
 </td>
 <td style="text-align:center;">
 Medium
@@ -636,7 +636,7 @@ Limited
 </tr>
 <tr>
 <td style="text-align:center;">
-Aurora &lt;br&gt; (chapter <a href="#ahc">11</a>)
+Aurora &lt;br&gt; (chapter <a href="ch017.xhtml#ahc">11</a>)
 </td>
 <td style="text-align:center;">
 High
@@ -656,7 +656,7 @@ Unrestricted
 </tr>
 <tr>
 <td style="text-align:center;">
-Stanford-SFUSD &lt;br&gt; (chapter <a href="#sfusd">12</a>)
+Stanford-SFUSD &lt;br&gt; (chapter <a href="ch018.xhtml#sfusd">12</a>)
 </td>
 <td style="text-align:center;">
 High
@@ -676,7 +676,7 @@ Unrestricted
 </tr>
 <tr>
 <td style="text-align:center;">
-Cape Town &lt;br&gt; (chapter <a href="#cct">13</a>)
+Cape Town &lt;br&gt; (chapter <a href="ch019.xhtml#cct">13</a>)
 </td>
 <td style="text-align:center;">
 High
@@ -696,7 +696,7 @@ Unrestricted
 </tr>
 <tr>
 <td style="text-align:center;">
-DIME &lt;br&gt; (chapter <a href="#dime">14</a>)
+DIME &lt;br&gt; (chapter <a href="ch020.xhtml#dime">14</a>)
 </td>
 <td style="text-align:center;">
 High

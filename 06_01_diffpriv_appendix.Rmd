@@ -1,6 +1,6 @@
 ## Appendix {- #diffpriv-appendix}
 
-### Appendix A: Key Design Choices {- #diffpriv-apendixa}
+### Appendix A: Key Design Choices {- #diffpriv-appendixa}
 
 This section identifies the key *design* choices that critically affect the use of differential privacy. It introduces the trade-offs that should be considered and decisions that must be made when implementing differential privacy. Since many of these choices have broad implications for other information lifecycle activities, such as record management and compliance, these topics are discussed in Appendix [B](#diffpriv-appendixb).
 
@@ -66,7 +66,7 @@ The use cases described in Section \@ref(sec:case-studies) illustrate some of th
 
 ### Appendix B: Implications for Compliance and Life Cycle Data Management {- #diffpriv-appendixb}
 
-The design choices involving the use of differentially private analyses, discussed in Appendix [A](#sec:key-choices), potentially have broad implications for data curation, stewardship, management, and preservation, as well as regulatory compliance. For example, choosing a local model design (as described in Appendix [A](#sec:trust-local-vs-curator)) fundamentally affects not only how data are collected. It also fundamentally limits the way the design can be linked with other data, the extent to which the information collected can be reused, and, potentially, the compliance requirements with respect to data storage and retention. This section discusses the implications of the key design across the information life cycle.
+The design choices involving the use of differentially private analyses, discussed in Appendix [A](#diffpriv-appendixa), potentially have broad implications for data curation, stewardship, management, and preservation, as well as regulatory compliance. For example, choosing a local model design (as described in Appendix [A](#sec:trust-local-vs-curator)) fundamentally affects not only how data are collected. It also fundamentally limits the way the design can be linked with other data, the extent to which the information collected can be reused, and, potentially, the compliance requirements with respect to data storage and retention. This section discusses the implications of the key design across the information life cycle.
 
 This chapter uses the information life cycle model described in @altman2015---which is adapted for the uses of privacy engineering from the more generic model developed by @higgins2008dcc to systematically trace design,---and the implications of the design choices described above for data collection, curation, preservation, reuse, and compliance.
 
