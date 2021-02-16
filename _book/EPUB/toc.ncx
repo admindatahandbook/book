@@ -1,0 +1,2421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="urn:uuid:79b1bea6-8312-4fd6-9efe-e15a5560e0a9" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+    <meta name="cover" content="webcover_png" />
+  </head>
+  <docTitle>
+    <text>Handbook on Using Administrative Data for Research and Evidence-based Policy</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-0">
+      <navLabel>
+        <text>Handbook on Using Administrative Data for Research and Evidence-based Policy</text>
+      </navLabel>
+      <content src="text/title_page.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-1">
+      <navLabel>
+        <text>Handbook on Using Administrative Data for Research and Evidence-based Policy</text>
+      </navLabel>
+      <content src="text/ch001.xhtml#handbook-on-using-administrative-data-for-research-and-evidence-based-policy" />
+    </navPoint>
+    <navPoint id="navPoint-2">
+      <navLabel>
+        <text>About the Editors</text>
+      </navLabel>
+      <content src="text/ch002.xhtml#about" />
+    </navPoint>
+    <navPoint id="navPoint-3">
+      <navLabel>
+        <text>Acknowledgements</text>
+      </navLabel>
+      <content src="text/ch003.xhtml#handbook_acknowledgements" />
+    </navPoint>
+    <navPoint id="navPoint-4">
+      <navLabel>
+        <text>Foreword</text>
+      </navLabel>
+      <content src="text/ch004.xhtml#foreword" />
+    </navPoint>
+    <navPoint id="navPoint-5">
+      <navLabel>
+        <text>1 Using Administrative Data for Research and Evidence-Based Policy: An Introduction</text>
+      </navLabel>
+      <content src="text/ch005.xhtml#intro" />
+      <navPoint id="navPoint-6">
+        <navLabel>
+          <text>1.1 The Potential of Administrative Data for Research and Policymaking</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#the-potential-of-administrative-data-for-research-and-policymaking" />
+      </navPoint>
+      <navPoint id="navPoint-7">
+        <navLabel>
+          <text>1.2 Why is the Analysis of Administrative Data Still Relatively Rare?</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#why-is-the-analysis-of-administrative-data-still-relatively-rare" />
+        <navPoint id="navPoint-8">
+          <navLabel>
+            <text>1.2.1 Making Data Usable for Analysis</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#making-data-usable-for-analysis" />
+        </navPoint>
+        <navPoint id="navPoint-9">
+          <navLabel>
+            <text>1.2.2 Protecting Privacy While Promoting the Accessibility and Utility of Data</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#protecting-privacy-while-promoting-the-accessibility-and-utility-of-data" />
+        </navPoint>
+        <navPoint id="navPoint-10">
+          <navLabel>
+            <text>1.2.3 Value vs. Cost</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#value-vs.-cost" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-11">
+        <navLabel>
+          <text>1.3 This Handbook</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#this-handbook" />
+        <navPoint id="navPoint-12">
+          <navLabel>
+            <text>1.3.1 Different Levers for Protecting Sensitive Data: The Thematic Chapters</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#different-levers-for-protecting-sensitive-data-the-thematic-chapters" />
+        </navPoint>
+        <navPoint id="navPoint-13">
+          <navLabel>
+            <text>1.3.2 Data Protection in Practice: The Five Safes in the Case Studies</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#data-protection-in-practice-the-five-safes-in-the-case-studies" />
+        </navPoint>
+        <navPoint id="navPoint-14">
+          <navLabel>
+            <text>1.3.3 Institutional Models of Access</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#intro-institutionalmodels" />
+        </navPoint>
+        <navPoint id="navPoint-15">
+          <navLabel>
+            <text>1.3.4 Balancing Interests and Creating value for All Partners</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#balancing-interests-and-creating-value-for-all-partners" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-16">
+        <navLabel>
+          <text>1.4 Further Reading</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#further-reading" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-17">
+      <navLabel>
+        <text>Special Topics</text>
+      </navLabel>
+      <content src="text/ch006.xhtml#part-special-topics" />
+    </navPoint>
+    <navPoint id="navPoint-18">
+      <navLabel>
+        <text>2 Physically Protecting Sensitive Data</text>
+      </navLabel>
+      <content src="text/ch007.xhtml#security" />
+      <navPoint id="navPoint-19">
+        <navLabel>
+          <text>2.1 Introduction</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#introduction" />
+      </navPoint>
+      <navPoint id="navPoint-20">
+        <navLabel>
+          <text>2.2 Types of Security Threats</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#types-of-security-threats" />
+      </navPoint>
+      <navPoint id="navPoint-21">
+        <navLabel>
+          <text>2.3 Technical Features of Data Access Mechanisms</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#technical-features-of-data-access-mechanisms" />
+        <navPoint id="navPoint-22">
+          <navLabel>
+            <text>2.3.1 The Basics</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#the-basics" />
+        </navPoint>
+        <navPoint id="navPoint-23">
+          <navLabel>
+            <text>2.3.2 Storage of Data</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#storage-of-data" />
+        </navPoint>
+        <navPoint id="navPoint-24">
+          <navLabel>
+            <text>2.3.3 Encryption</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#encryption" />
+        </navPoint>
+        <navPoint id="navPoint-25">
+          <navLabel>
+            <text>2.3.4 Transfer of Data</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#transfer-of-data" />
+        </navPoint>
+        <navPoint id="navPoint-26">
+          <navLabel>
+            <text>2.3.5 Data Access Controls</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#data-access-controls" />
+        </navPoint>
+        <navPoint id="navPoint-27">
+          <navLabel>
+            <text>2.3.6 Virtual Private Networks</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#virtual-private-networks" />
+        </navPoint>
+        <navPoint id="navPoint-28">
+          <navLabel>
+            <text>2.3.7 IP Address Restrictions</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#ip-address-restrictions" />
+        </navPoint>
+        <navPoint id="navPoint-29">
+          <navLabel>
+            <text>2.3.8 Remote Desktop</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#remote-desktop" />
+        </navPoint>
+        <navPoint id="navPoint-30">
+          <navLabel>
+            <text>2.3.9 Thin Clients</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#thin-clients" />
+        </navPoint>
+        <navPoint id="navPoint-31">
+          <navLabel>
+            <text>2.3.10 Biometric Authentication</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#biometric-authentication" />
+        </navPoint>
+        <navPoint id="navPoint-32">
+          <navLabel>
+            <text>2.3.11 Physical Access Cards</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#physical-access-cards" />
+        </navPoint>
+        <navPoint id="navPoint-33">
+          <navLabel>
+            <text>2.3.12 Secure Rooms</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#secure-rooms" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-34">
+        <navLabel>
+          <text>2.4 Typical Access Mechanisms</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#typical-access-mechanisms" />
+        <navPoint id="navPoint-35">
+          <navLabel>
+            <text>2.4.1 Remote Execution</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#remote-execution" />
+        </navPoint>
+        <navPoint id="navPoint-36">
+          <navLabel>
+            <text>2.4.2 Physical Data Enclave</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#physical-data-enclave" />
+        </navPoint>
+        <navPoint id="navPoint-37">
+          <navLabel>
+            <text>2.4.3 Virtual Data Enclave</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#virtual-data-enclave" />
+        </navPoint>
+        <navPoint id="navPoint-38">
+          <navLabel>
+            <text>2.4.4 Researcher-Provided Infrastructure</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#researcher-provided-infrastructure" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-39">
+        <navLabel>
+          <text>2.5 Five Aspects of Data Access Mechanisms</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#five-aspects-of-data-access-mechanisms" />
+        <navPoint id="navPoint-40">
+          <navLabel>
+            <text>2.5.1 Researcher Agency Over Analysis Computers</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#researcher-agency-over-analysis-computers" />
+        </navPoint>
+        <navPoint id="navPoint-41">
+          <navLabel>
+            <text>2.5.2 Location of Analysis Computers and Data</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#location-of-analysis-computers-and-data" />
+        </navPoint>
+        <navPoint id="navPoint-42">
+          <navLabel>
+            <text>2.5.3 Range of Analysis Methods Available</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#range-of-analysis-methods-available" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-43">
+        <navLabel>
+          <text>2.6 Specific Data Access Mechanisms Along the Five Aspects</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#specific-data-access-mechanisms-along-the-five-aspects" />
+        <navPoint id="navPoint-44">
+          <navLabel>
+            <text>2.6.1 New Brunswick Institute for Research, Data and Training (NB-IRDT)</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#new-brunswick-institute-for-research-data-and-training-nb-irdt" />
+        </navPoint>
+        <navPoint id="navPoint-45">
+          <navLabel>
+            <text>2.6.2 Research Data Center at the Institute for Employment Research (RDC-IAB)</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#research-data-center-at-the-institute-for-employment-research-rdc-iab" />
+        </navPoint>
+        <navPoint id="navPoint-46">
+          <navLabel>
+            <text>2.6.3 Ohio Longitudinal Data Archive (OLDA)</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#ohio-longitudinal-data-archive-olda" />
+        </navPoint>
+        <navPoint id="navPoint-47">
+          <navLabel>
+            <text>2.6.4 Federal Statistical Research Data Centers (FSRDC)</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#federal-statistical-research-data-centers-fsrdc" />
+        </navPoint>
+        <navPoint id="navPoint-48">
+          <navLabel>
+            <text>2.6.5 Statistics Canada Real Time Remote Access (RTRA)</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#statistics-canada-real-time-remote-access-rtra" />
+        </navPoint>
+        <navPoint id="navPoint-49">
+          <navLabel>
+            <text>2.6.6 SafePod Network (SPN)</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#safepod-network-spn" />
+        </navPoint>
+        <navPoint id="navPoint-50">
+          <navLabel>
+            <text>2.6.7 National Center for Education Statistics (NCES) Restricted-Use Data License</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#national-center-for-education-statistics-nces-restricted-use-data-license" />
+        </navPoint>
+        <navPoint id="navPoint-51">
+          <navLabel>
+            <text>2.6.8 Summary of Examples</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#summary-of-examples" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-52">
+        <navLabel>
+          <text>2.7 Guidance for Data Providers and Researchers</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#guidance-for-data-providers-and-researchers" />
+      </navPoint>
+      <navPoint id="navPoint-53">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#about-the-authors" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-54">
+      <navLabel>
+        <text>3 Model Data Use Agreements: A Practical Guide</text>
+      </navLabel>
+      <content src="text/ch008.xhtml#dua" />
+      <navPoint id="navPoint-55">
+        <navLabel>
+          <text>3.1 Overview</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#overview" />
+        <navPoint id="navPoint-56">
+          <navLabel>
+            <text>3.1.1 Relating the DUA to the Five Safes Framework</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#dua-fivesafes" />
+        </navPoint>
+        <navPoint id="navPoint-57">
+          <navLabel>
+            <text>3.1.2 Preparation</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#preparation" />
+        </navPoint>
+        <navPoint id="navPoint-58">
+          <navLabel>
+            <text>3.1.3 Understanding the Available Data</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#understanding-the-available-data" />
+        </navPoint>
+        <navPoint id="navPoint-59">
+          <navLabel>
+            <text>3.1.4 Understanding the Costs of Obtaining Data</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#understanding-the-costs-of-obtaining-data" />
+        </navPoint>
+        <navPoint id="navPoint-60">
+          <navLabel>
+            <text>3.1.5 Consideration for the Data Subjects</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#consideration-for-the-data-subjects" />
+        </navPoint>
+        <navPoint id="navPoint-61">
+          <navLabel>
+            <text>3.1.6 Investigating the Data Sharing History for Data Providers and Researchers</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#investigating-the-data-sharing-history-for-data-providers-and-researchers" />
+        </navPoint>
+        <navPoint id="navPoint-62">
+          <navLabel>
+            <text>3.1.7 Understanding the Legal Context</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#understanding-the-legal-context" />
+        </navPoint>
+        <navPoint id="navPoint-63">
+          <navLabel>
+            <text>3.1.8 Thinking through the Analysis and Publication Process</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#thinking-through-the-analysis-and-publication-process" />
+        </navPoint>
+        <navPoint id="navPoint-64">
+          <navLabel>
+            <text>3.1.9 Taking a Broad Interpretation of Data</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#taking-a-broad-interpretation-of-data" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-65">
+        <navLabel>
+          <text>3.2 Negotiating the Data Use Request</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#negotiating-the-data-use-request" />
+        <navPoint id="navPoint-66">
+          <navLabel>
+            <text>3.2.1 Getting the Right People Involved</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#getting-the-right-people-involved" />
+        </navPoint>
+        <navPoint id="navPoint-67">
+          <navLabel>
+            <text>3.2.2 Asking Questions About the Process</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#asking-questions-about-the-process" />
+        </navPoint>
+        <navPoint id="navPoint-68">
+          <navLabel>
+            <text>3.2.3 Understanding the Reasons Behind a Negative Response</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#understanding-the-reasons-behind-a-negative-response" />
+        </navPoint>
+        <navPoint id="navPoint-69">
+          <navLabel>
+            <text>3.2.4 Trying to Find Mutual Interests</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#trying-to-find-mutual-interests" />
+        </navPoint>
+        <navPoint id="navPoint-70">
+          <navLabel>
+            <text>3.2.5 Drafting the Request</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#drafting-the-request" />
+        </navPoint>
+        <navPoint id="navPoint-71">
+          <navLabel>
+            <text>3.2.6 Signing the Agreement</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#signing-the-agreement" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-72">
+        <navLabel>
+          <text>3.3 Compliance</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#compliance" />
+      </navPoint>
+      <navPoint id="navPoint-73">
+        <navLabel>
+          <text>3.4 Summary</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#summary" />
+      </navPoint>
+      <navPoint id="navPoint-74">
+        <navLabel>
+          <text>About the Author</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#about-the-author" />
+      </navPoint>
+      <navPoint id="navPoint-75">
+        <navLabel>
+          <text>Appendix</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#dua-appendix" />
+        <navPoint id="navPoint-76">
+          <navLabel>
+            <text>Appendix A</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#dua-appendixa" />
+        </navPoint>
+        <navPoint id="navPoint-77">
+          <navLabel>
+            <text>Appendix B</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#dua-apendixb" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-78">
+      <navLabel>
+        <text>4 Collaborating with the Institutional Review Board (IRB)</text>
+      </navLabel>
+      <content src="text/ch009.xhtml#irb" />
+      <navPoint id="navPoint-79">
+        <navLabel>
+          <text>4.1 Introduction</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#introduction-1" />
+      </navPoint>
+      <navPoint id="navPoint-80">
+        <navLabel>
+          <text>4.2 What is the IRB</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#what-is-the-irb" />
+      </navPoint>
+      <navPoint id="navPoint-81">
+        <navLabel>
+          <text>4.3 IRBs and International Research</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#irb-international" />
+      </navPoint>
+      <navPoint id="navPoint-82">
+        <navLabel>
+          <text>4.4 What an IRB Does Not Do</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#what-an-irb-does-not-do" />
+      </navPoint>
+      <navPoint id="navPoint-83">
+        <navLabel>
+          <text>4.5 What the IRB Will Do to Ensure the Protection of Participants</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#what-irb-does" />
+      </navPoint>
+      <navPoint id="navPoint-84">
+        <navLabel>
+          <text>4.6 Considerations of the IRB</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#what-irb-considers" />
+        <navPoint id="navPoint-85">
+          <navLabel>
+            <text>4.6.1 Is the Study Human Research or Not Human Research (nHR)?</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#is-the-study-human-research-or-not-human-research-nhr" />
+        </navPoint>
+        <navPoint id="navPoint-86">
+          <navLabel>
+            <text>4.6.2 Is the Study Federally Funded?</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#is-the-study-federally-funded" />
+        </navPoint>
+        <navPoint id="navPoint-87">
+          <navLabel>
+            <text>4.6.3 Is the Researcher an Agent Such That the Institution is Engaged in HR?</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#is-the-researcher-an-agent-such-that-the-institution-is-engaged-in-hr" />
+        </navPoint>
+        <navPoint id="navPoint-88">
+          <navLabel>
+            <text>4.6.4 Is the Project Exempt From the Regulations or Non-Exempt (Expedited or Full Board Review)?</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#is-the-project-exempt-from-the-regulations-or-non-exempt-expedited-or-full-board-review" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-89">
+        <navLabel>
+          <text>4.7 Strategies for Communicating With the IRB</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#strategies-for-communicating-with-the-irb" />
+      </navPoint>
+      <navPoint id="navPoint-90">
+        <navLabel>
+          <text>About the Author</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#about-the-author-1" />
+      </navPoint>
+      <navPoint id="navPoint-91">
+        <navLabel>
+          <text>Appendix</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#irb-appendix" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-92">
+      <navLabel>
+        <text>5 Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods</text>
+      </navLabel>
+      <content src="text/ch010.xhtml#discavoid" />
+      <navPoint id="navPoint-93">
+        <navLabel>
+          <text>5.1 Purpose of Statistical Disclosure Limitation Methods: Definitions and Context</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#purpose-of-statistical-disclosure-limitation-methods-definitions-and-context" />
+      </navPoint>
+      <navPoint id="navPoint-94">
+        <navLabel>
+          <text>5.2 Methods</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#methods" />
+        <navPoint id="navPoint-95">
+          <navLabel>
+            <text>5.2.1 De-Identification</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#de-identification" />
+        </navPoint>
+        <navPoint id="navPoint-96">
+          <navLabel>
+            <text>5.2.2 Suppression</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#suppression" />
+        </navPoint>
+        <navPoint id="navPoint-97">
+          <navLabel>
+            <text>5.2.3 Coarsening</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#coarsening" />
+        </navPoint>
+        <navPoint id="navPoint-98">
+          <navLabel>
+            <text>5.2.4 Swapping</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#swapping" />
+        </navPoint>
+        <navPoint id="navPoint-99">
+          <navLabel>
+            <text>5.2.5 Sampling</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#sampling" />
+        </navPoint>
+        <navPoint id="navPoint-100">
+          <navLabel>
+            <text>5.2.6 Noise Infusion</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#noise-infusion" />
+        </navPoint>
+        <navPoint id="navPoint-101">
+          <navLabel>
+            <text>5.2.7 Synthetic Data and Multiple Imputation</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#synthetic-data-and-multiple-imputation" />
+        </navPoint>
+        <navPoint id="navPoint-102">
+          <navLabel>
+            <text>5.2.8 Examples of SDL Methods</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#examples-of-sdl-methods" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-103">
+        <navLabel>
+          <text>5.3 Metrics</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#metrics" />
+        <navPoint id="navPoint-104">
+          <navLabel>
+            <text>5.3.1 Disclosure Risk</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#disclosure-risk" />
+        </navPoint>
+        <navPoint id="navPoint-105">
+          <navLabel>
+            <text>5.3.2 Data Quality</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#data-quality" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-106">
+        <navLabel>
+          <text>5.4 Tools</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#tools" />
+      </navPoint>
+      <navPoint id="navPoint-107">
+        <navLabel>
+          <text>5.5 Conclusion</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#conclusion" />
+      </navPoint>
+      <navPoint id="navPoint-108">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#about-the-authors-1" />
+      </navPoint>
+      <navPoint id="navPoint-109">
+        <navLabel>
+          <text>Disclaimer</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#disclaimer" />
+      </navPoint>
+      <navPoint id="navPoint-110">
+        <navLabel>
+          <text>Acknowledgements</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#acknowledgements" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-111">
+      <navLabel>
+        <text>6 Designing Access with Differential Privacy</text>
+      </navLabel>
+      <content src="text/ch011.xhtml#diffpriv" />
+      <navPoint id="navPoint-112">
+        <navLabel>
+          <text>6.1 Introduction and Overview</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#sec:dp-intro" />
+        <navPoint id="navPoint-113">
+          <navLabel>
+            <text>6.1.1 Organization of this Chapter</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#organization-of-this-chapter" />
+        </navPoint>
+        <navPoint id="navPoint-114">
+          <navLabel>
+            <text>6.1.2 Motivation: Formal Guarantees are Needed to Protect Data against Growing Privacy Risks</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#sec:motivation-formal-guarantee-protect" />
+        </navPoint>
+        <navPoint id="navPoint-115">
+          <navLabel>
+            <text>6.1.3 Features of the Differential Privacy Guarantee</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#features-of-the-differential-privacy-guarantee" />
+        </navPoint>
+        <navPoint id="navPoint-116">
+          <navLabel>
+            <text>6.1.4 An Illustrative Scenario: Publishing Education Statistics</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#an-illustrative-scenario-publishing-education-statistics" />
+        </navPoint>
+        <navPoint id="navPoint-117">
+          <navLabel>
+            <text>6.1.5 What Types of Analyses are Performed Using Differential Privacy</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#sec:what-types-possible" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-118">
+        <navLabel>
+          <text>6.2 How Differential Privacy Protects Privacy</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#sec:what-dp-protects" />
+        <navPoint id="navPoint-119">
+          <navLabel>
+            <text>6.2.1 What Does Differential Privacy Protect?</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#what-does-differential-privacy-protect" />
+        </navPoint>
+        <navPoint id="navPoint-120">
+          <navLabel>
+            <text>6.2.2 Privacy Protection is a Property of an Analysis—Not a Data Release</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#privacy-protection-is-a-property-of-an-analysisnot-a-data-release" />
+        </navPoint>
+        <navPoint id="navPoint-121">
+          <navLabel>
+            <text>6.2.3 Methodology Example: Limiting Privacy Loss from Participation in Research</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#sec:methodology-example-limit-privacy-loss" />
+        </navPoint>
+        <navPoint id="navPoint-122">
+          <navLabel>
+            <text>6.2.4 Strengths of Differential Privacy Over Traditional SDL Approaches</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#sec:strengths-dp-over-sdl" />
+        </navPoint>
+        <navPoint id="navPoint-123">
+          <navLabel>
+            <text>6.2.5 What Does Differential Privacy Not Protect?</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#what-does-differential-privacy-not-protect" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-124">
+        <navLabel>
+          <text>6.3 Aligning Risks, Controls, and Uses: Where Is the Use of Differential Privacy Appropriate?</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#sec:aligning" />
+        <navPoint id="navPoint-125">
+          <navLabel>
+            <text>6.3.1 Selecting Privacy Controls Based on Harm and Informational Risk: A Framework</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#sec:selecting-privacy-control-framework" />
+        </navPoint>
+        <navPoint id="navPoint-126">
+          <navLabel>
+            <text>6.3.2 Considerations When Deciding Whether to Use Differential Privacy</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#considerations-when-deciding-whether-to-use-differential-privacy" />
+        </navPoint>
+        <navPoint id="navPoint-127">
+          <navLabel>
+            <text>6.3.3 Regulatory and Policy Compliance</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#sec:regulatory-policy-compliance" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-128">
+        <navLabel>
+          <text>6.4 Case Studies</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#sec:case-studies" />
+        <navPoint id="navPoint-129">
+          <navLabel>
+            <text>6.4.1 The 2020 Decennial Census</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#sec:2020-census" />
+        </navPoint>
+        <navPoint id="navPoint-130">
+          <navLabel>
+            <text>6.4.2 The Opportunity Atlas</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#sec:opportunity-atlas" />
+        </navPoint>
+        <navPoint id="navPoint-131">
+          <navLabel>
+            <text>6.4.3 Dataverse Repositories</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#dataverse-repositories" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-132">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#about-the-authors-2" />
+      </navPoint>
+      <navPoint id="navPoint-133">
+        <navLabel>
+          <text>Disclaimer</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#disclaimer-1" />
+      </navPoint>
+      <navPoint id="navPoint-134">
+        <navLabel>
+          <text>Acknowledgements</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#acknowledgements-1" />
+      </navPoint>
+      <navPoint id="navPoint-135">
+        <navLabel>
+          <text>Appendix</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#diffpriv-appendix" />
+        <navPoint id="navPoint-136">
+          <navLabel>
+            <text>Appendix A: Key Design Choices</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#diffpriv-apendixa" />
+        </navPoint>
+        <navPoint id="navPoint-137">
+          <navLabel>
+            <text>Appendix B: Implications for Compliance and Life Cycle Data Management</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#diffpriv-appendixb" />
+        </navPoint>
+        <navPoint id="navPoint-138">
+          <navLabel>
+            <text>Appendix C: Additional Resources</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#diffpriv-appendixc" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-139">
+      <navLabel>
+        <text>Case Studies</text>
+      </navLabel>
+      <content src="text/ch012.xhtml#part-case-studies" />
+    </navPoint>
+    <navPoint id="navPoint-140">
+      <navLabel>
+        <text>7 Institute for Employment Research, Germany: International Access to Labor Market Data</text>
+      </navLabel>
+      <content src="text/ch013.xhtml#iab" />
+      <navPoint id="navPoint-141">
+        <navLabel>
+          <text>7.1 Summary</text>
+        </navLabel>
+        <content src="text/ch013.xhtml#summary-1" />
+      </navPoint>
+      <navPoint id="navPoint-142">
+        <navLabel>
+          <text>7.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch013.xhtml#introduction-2" />
+        <navPoint id="navPoint-143">
+          <navLabel>
+            <text>7.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#iab-motivation" />
+        </navPoint>
+        <navPoint id="navPoint-144">
+          <navLabel>
+            <text>7.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#data-use-examples" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-145">
+        <navLabel>
+          <text>7.3 Making Data Usable for Research</text>
+        </navLabel>
+        <content src="text/ch013.xhtml#iab-usable" />
+      </navPoint>
+      <navPoint id="navPoint-146">
+        <navLabel>
+          <text>7.4 Legal and Institutional Framework</text>
+        </navLabel>
+        <content src="text/ch013.xhtml#legal-and-institutional-framework" />
+        <navPoint id="navPoint-147">
+          <navLabel>
+            <text>7.4.1 Institutional Setup</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#institutional-setup" />
+        </navPoint>
+        <navPoint id="navPoint-148">
+          <navLabel>
+            <text>7.4.2 Legal Context for Data Use</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#legal-context-for-data-use" />
+        </navPoint>
+        <navPoint id="navPoint-149">
+          <navLabel>
+            <text>7.4.3 Legal Framework for Granting Data Access</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#iab-legal" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-150">
+        <navLabel>
+          <text>7.5 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch013.xhtml#iab-fivesafes" />
+        <navPoint id="navPoint-151">
+          <navLabel>
+            <text>7.5.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#safe-projects" />
+        </navPoint>
+        <navPoint id="navPoint-152">
+          <navLabel>
+            <text>7.5.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#safe-people" />
+        </navPoint>
+        <navPoint id="navPoint-153">
+          <navLabel>
+            <text>7.5.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#iab-safesettings" />
+        </navPoint>
+        <navPoint id="navPoint-154">
+          <navLabel>
+            <text>7.5.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#iab-safedata" />
+        </navPoint>
+        <navPoint id="navPoint-155">
+          <navLabel>
+            <text>7.5.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#iab-safeoutput" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-156">
+        <navLabel>
+          <text>7.6 Data Life Cycle and Replicability</text>
+        </navLabel>
+        <content src="text/ch013.xhtml#data-life-cycle-and-replicability" />
+        <navPoint id="navPoint-157">
+          <navLabel>
+            <text>7.6.1 Preservation and Reproducibility of Researcher-Accessible Files</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#preservation-and-reproducibility-of-researcher-accessible-files" />
+        </navPoint>
+        <navPoint id="navPoint-158">
+          <navLabel>
+            <text>7.6.2 Preservation and Reproducibility of Researcher-Generated Files</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#preservation-and-reproducibility-of-researcher-generated-files" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-159">
+        <navLabel>
+          <text>7.7 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch013.xhtml#sustainability-and-continued-success" />
+        <navPoint id="navPoint-160">
+          <navLabel>
+            <text>7.7.1 Outreach</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#outreach" />
+        </navPoint>
+        <navPoint id="navPoint-161">
+          <navLabel>
+            <text>7.7.2 Revenue</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#revenue" />
+        </navPoint>
+        <navPoint id="navPoint-162">
+          <navLabel>
+            <text>7.7.3 Metrics of Success</text>
+          </navLabel>
+          <content src="text/ch013.xhtml#metrics-of-success" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-163">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch013.xhtml#about-the-authors-3" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-164">
+      <navLabel>
+        <text>8 Ohio and the Longitudinal Data Archive: Mutually Beneficial Partnerships Between State Government and Researchers</text>
+      </navLabel>
+      <content src="text/ch014.xhtml#olda" />
+      <navPoint id="navPoint-165">
+        <navLabel>
+          <text>8.1 Summary</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#summary-2" />
+      </navPoint>
+      <navPoint id="navPoint-166">
+        <navLabel>
+          <text>8.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#introduction-3" />
+        <navPoint id="navPoint-167">
+          <navLabel>
+            <text>8.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#motivation-and-background" />
+        </navPoint>
+        <navPoint id="navPoint-168">
+          <navLabel>
+            <text>8.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#data-use-examples-1" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-169">
+        <navLabel>
+          <text>8.3 Making Data Usable for Research</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#making-data-usable-for-research" />
+      </navPoint>
+      <navPoint id="navPoint-170">
+        <navLabel>
+          <text>8.4 Legal and Institutional Framework</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#legal-and-institutional-framework-1" />
+        <navPoint id="navPoint-171">
+          <navLabel>
+            <text>8.4.1 Institutional Setup</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#institutional-setup-1" />
+        </navPoint>
+        <navPoint id="navPoint-172">
+          <navLabel>
+            <text>8.4.2 Legal Context for Data Use</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#legal-context-for-data-use-1" />
+        </navPoint>
+        <navPoint id="navPoint-173">
+          <navLabel>
+            <text>8.4.3 Legal Framework for Granting Data Access</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#legal-framework-for-granting-data-access" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-174">
+        <navLabel>
+          <text>8.5 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#protection-of-sensitive-and-personal-data-the-five-safes-framework" />
+        <navPoint id="navPoint-175">
+          <navLabel>
+            <text>8.5.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#safe-projects-1" />
+        </navPoint>
+        <navPoint id="navPoint-176">
+          <navLabel>
+            <text>8.5.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#safe-people-1" />
+        </navPoint>
+        <navPoint id="navPoint-177">
+          <navLabel>
+            <text>8.5.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#safe-settings" />
+        </navPoint>
+        <navPoint id="navPoint-178">
+          <navLabel>
+            <text>8.5.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#safe-data" />
+        </navPoint>
+        <navPoint id="navPoint-179">
+          <navLabel>
+            <text>8.5.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#safe-outputs" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-180">
+        <navLabel>
+          <text>8.6 Data Life Cycle and Reproducibility</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#data-life-cycle-and-reproducibility" />
+      </navPoint>
+      <navPoint id="navPoint-181">
+        <navLabel>
+          <text>8.7 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#sustainability-and-continued-success-1" />
+        <navPoint id="navPoint-182">
+          <navLabel>
+            <text>8.7.1 Outreach</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#outreach-1" />
+        </navPoint>
+        <navPoint id="navPoint-183">
+          <navLabel>
+            <text>8.7.2 Metrics of Success</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#metrics-of-success-1" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-184">
+        <navLabel>
+          <text>About the Author</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#about-the-author-2" />
+      </navPoint>
+      <navPoint id="navPoint-185">
+        <navLabel>
+          <text>Appendix</text>
+        </navLabel>
+        <content src="text/ch014.xhtml#olda-appendix" />
+        <navPoint id="navPoint-186">
+          <navLabel>
+            <text>Appendix A: Resources and Dashboards</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#appendix-a-resources-and-dashboards" />
+        </navPoint>
+        <navPoint id="navPoint-187">
+          <navLabel>
+            <text>Appendix B: Case Study (Workforce Success Measures)</text>
+          </navLabel>
+          <content src="text/ch014.xhtml#appendix-b-case-study-workforce-success-measures" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-188">
+      <navLabel>
+        <text>9 New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT</text>
+      </navLabel>
+      <content src="text/ch015.xhtml#nbirdt" />
+      <navPoint id="navPoint-189">
+        <navLabel>
+          <text>9.1 Summary</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#nbirdt-summ" />
+      </navPoint>
+      <navPoint id="navPoint-190">
+        <navLabel>
+          <text>9.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#nbirdt-intro" />
+        <navPoint id="navPoint-191">
+          <navLabel>
+            <text>9.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-motivation" />
+        </navPoint>
+        <navPoint id="navPoint-192">
+          <navLabel>
+            <text>9.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-examples" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-193">
+        <navLabel>
+          <text>9.3 Making Data Usable for Research</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#nbirdt-making" />
+      </navPoint>
+      <navPoint id="navPoint-194">
+        <navLabel>
+          <text>9.4 Legal and Institutional Framework</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#nbirdt-framework" />
+        <navPoint id="navPoint-195">
+          <navLabel>
+            <text>9.4.1 Institutional Setup</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-institutionalsetup" />
+        </navPoint>
+        <navPoint id="navPoint-196">
+          <navLabel>
+            <text>9.4.2 Legal Context for Data Use</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-legaluse" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-197">
+        <navLabel>
+          <text>9.5 Legal Framework for Granting Data Access</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#nbirdt-legalaccess" />
+      </navPoint>
+      <navPoint id="navPoint-198">
+        <navLabel>
+          <text>9.6 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#nbirdt-fivesafes" />
+        <navPoint id="navPoint-199">
+          <navLabel>
+            <text>9.6.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-safeproject" />
+        </navPoint>
+        <navPoint id="navPoint-200">
+          <navLabel>
+            <text>9.6.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-safepeople" />
+        </navPoint>
+        <navPoint id="navPoint-201">
+          <navLabel>
+            <text>9.6.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-safesettings" />
+        </navPoint>
+        <navPoint id="navPoint-202">
+          <navLabel>
+            <text>9.6.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-safedata" />
+        </navPoint>
+        <navPoint id="navPoint-203">
+          <navLabel>
+            <text>9.6.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-safeoutput" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-204">
+        <navLabel>
+          <text>9.7 Data Life Cycle and Replicability</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#nbirdt-replicability" />
+        <navPoint id="navPoint-205">
+          <navLabel>
+            <text>9.7.1 Preservation and Reproducibility of Researcher-Accessible Files</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-accessfile" />
+        </navPoint>
+        <navPoint id="navPoint-206">
+          <navLabel>
+            <text>9.7.2 Preservation and Reproducibility of Researcher-Generated Files</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-generatedfile" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-207">
+        <navLabel>
+          <text>9.8 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#nbirdt-sustain" />
+        <navPoint id="navPoint-208">
+          <navLabel>
+            <text>9.8.1 Outreach</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-outreach" />
+        </navPoint>
+        <navPoint id="navPoint-209">
+          <navLabel>
+            <text>9.8.2 Revenue</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-revenue" />
+        </navPoint>
+        <navPoint id="navPoint-210">
+          <navLabel>
+            <text>9.8.3 Metrics of Success</text>
+          </navLabel>
+          <content src="text/ch015.xhtml#nbirdt-metrics" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-211">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch015.xhtml#about-the-authors-4" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-212">
+      <navLabel>
+        <text>10 The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry</text>
+      </navLabel>
+      <content src="text/ch016.xhtml#pcri" />
+      <navPoint id="navPoint-213">
+        <navLabel>
+          <text>10.1 Summary</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#summary-3" />
+      </navPoint>
+      <navPoint id="navPoint-214">
+        <navLabel>
+          <text>10.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#introduction-4" />
+        <navPoint id="navPoint-215">
+          <navLabel>
+            <text>10.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#motivation-and-background-1" />
+        </navPoint>
+        <navPoint id="navPoint-216">
+          <navLabel>
+            <text>10.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#data-use-examples-2" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-217">
+        <navLabel>
+          <text>10.3 Making Data Useable for Research</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#making-data-useable-for-research" />
+        <navPoint id="navPoint-218">
+          <navLabel>
+            <text>10.3.1 Collecting Data on the Private Capital Industry</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#collecting-pci" />
+        </navPoint>
+        <navPoint id="navPoint-219">
+          <navLabel>
+            <text>10.3.2 Processing of Data Received from Data Vendors or Primary Sources (LPs or GPs)</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#processing-of-data-received-from-data-vendors-or-primary-sources-lps-or-gps" />
+        </navPoint>
+        <navPoint id="navPoint-220">
+          <navLabel>
+            <text>10.3.3 Collaboration for Certificate of Incorporation Data Acquisition</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#collaboration-for-certificate-of-incorporation-data-acquisition" />
+        </navPoint>
+        <navPoint id="navPoint-221">
+          <navLabel>
+            <text>10.3.4 Certificate of Incorporation Document Acquisition Process</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#certificate-of-incorporation-document-acquisition-process" />
+        </navPoint>
+        <navPoint id="navPoint-222">
+          <navLabel>
+            <text>10.3.5 Metadata</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#metadata" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-223">
+        <navLabel>
+          <text>10.4 Legal and Institutional Framework</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#legal-and-institutional-framework-2" />
+        <navPoint id="navPoint-224">
+          <navLabel>
+            <text>10.4.1 Institutional Setup</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#institutional-setup-2" />
+        </navPoint>
+        <navPoint id="navPoint-225">
+          <navLabel>
+            <text>10.4.2 Legal Context for Data Use</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#legal-context-for-data-use-2" />
+        </navPoint>
+        <navPoint id="navPoint-226">
+          <navLabel>
+            <text>10.4.3 Collaboration with the Census Bureau</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#collaboration-with-the-census-bureau" />
+        </navPoint>
+        <navPoint id="navPoint-227">
+          <navLabel>
+            <text>10.4.4 Legal Framework for Granting Data Access</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#pcri-legal-framework-data-access" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-228">
+        <navLabel>
+          <text>10.5 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#protection-of-sensitive-and-personal-data-the-five-safes-framework-1" />
+        <navPoint id="navPoint-229">
+          <navLabel>
+            <text>10.5.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#safe-projects-2" />
+        </navPoint>
+        <navPoint id="navPoint-230">
+          <navLabel>
+            <text>10.5.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#safe-people-2" />
+        </navPoint>
+        <navPoint id="navPoint-231">
+          <navLabel>
+            <text>10.5.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#safe-settings-1" />
+        </navPoint>
+        <navPoint id="navPoint-232">
+          <navLabel>
+            <text>10.5.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#safe-data-1" />
+        </navPoint>
+        <navPoint id="navPoint-233">
+          <navLabel>
+            <text>10.5.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#safe-outputs-1" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-234">
+        <navLabel>
+          <text>10.6 Data Life Cycle and Replicability</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#data-life-cycle-and-replicability-1" />
+        <navPoint id="navPoint-235">
+          <navLabel>
+            <text>10.6.1 Preservation and Reproducibility of Researcher-Accessible Files</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#preservation-and-reproducibility-of-researcher-accessible-files-1" />
+        </navPoint>
+        <navPoint id="navPoint-236">
+          <navLabel>
+            <text>10.6.2 Preservation and Reproducibility of Researcher-Generated Files</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#preservation-and-reproducibility-of-researcher-generated-files-1" />
+        </navPoint>
+        <navPoint id="navPoint-237">
+          <navLabel>
+            <text>10.6.3 Disposal of Data</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#disposal-of-data" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-238">
+        <navLabel>
+          <text>10.7 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#sustainability-and-continued-success-2" />
+        <navPoint id="navPoint-239">
+          <navLabel>
+            <text>10.7.1 Outreach</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#outreach-2" />
+        </navPoint>
+        <navPoint id="navPoint-240">
+          <navLabel>
+            <text>10.7.2 Revenue</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#revenue-1" />
+        </navPoint>
+        <navPoint id="navPoint-241">
+          <navLabel>
+            <text>10.7.3 Metrics of Success</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#metrics-of-success-2" />
+        </navPoint>
+        <navPoint id="navPoint-242">
+          <navLabel>
+            <text>10.7.4 Concluding Remarks</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#concluding-remarks" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-243">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#about-the-authors-5" />
+      </navPoint>
+      <navPoint id="navPoint-244">
+        <navLabel>
+          <text>Acknowledgements</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#acknowledgements-2" />
+      </navPoint>
+      <navPoint id="navPoint-245">
+        <navLabel>
+          <text>Appendix</text>
+        </navLabel>
+        <content src="text/ch016.xhtml#pcri-appendix" />
+        <navPoint id="navPoint-246">
+          <navLabel>
+            <text>Appendix A</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#pcri-appendixa" />
+        </navPoint>
+        <navPoint id="navPoint-247">
+          <navLabel>
+            <text>Appendix B</text>
+          </navLabel>
+          <content src="text/ch016.xhtml#appendix-b" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-248">
+      <navLabel>
+        <text>11 Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support</text>
+      </navLabel>
+      <content src="text/ch017.xhtml#ahc" />
+      <navPoint id="navPoint-249">
+        <navLabel>
+          <text>11.1 Summary</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#summary-4" />
+      </navPoint>
+      <navPoint id="navPoint-250">
+        <navLabel>
+          <text>11.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#introduction-5" />
+        <navPoint id="navPoint-251">
+          <navLabel>
+            <text>11.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#motivation-and-background-2" />
+        </navPoint>
+        <navPoint id="navPoint-252">
+          <navLabel>
+            <text>11.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#data-use-examples-3" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-253">
+        <navLabel>
+          <text>11.3 Legal and Institutional Framework</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#legal-and-institutional-framework-3" />
+        <navPoint id="navPoint-254">
+          <navLabel>
+            <text>11.3.1 Institutional Setup</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#institutional-setup-3" />
+        </navPoint>
+        <navPoint id="navPoint-255">
+          <navLabel>
+            <text>11.3.2 Legal Context for Data Use</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#ahc-legal-context" />
+        </navPoint>
+        <navPoint id="navPoint-256">
+          <navLabel>
+            <text>11.3.3 Legal Framework for Granting Data Access</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#ahc-legal-framework-access" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-257">
+        <navLabel>
+          <text>11.4 Making Data Usable for Research</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#ahc-making-data-usable" />
+        <navPoint id="navPoint-258">
+          <navLabel>
+            <text>11.4.1 Identifying Relevant Data</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#identifying-relevant-data" />
+        </navPoint>
+        <navPoint id="navPoint-259">
+          <navLabel>
+            <text>11.4.2 Understanding Beyond Documentation</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#understanding-beyond-documentation" />
+        </navPoint>
+        <navPoint id="navPoint-260">
+          <navLabel>
+            <text>11.4.3 Linking De-Identified Data</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#linking-de-identified-data" />
+        </navPoint>
+        <navPoint id="navPoint-261">
+          <navLabel>
+            <text>11.4.4 Working with Relative Dates</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#working-with-relative-dates" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-262">
+        <navLabel>
+          <text>11.5 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#protection-of-sensitive-and-personal-data-the-five-safes-framework-2" />
+        <navPoint id="navPoint-263">
+          <navLabel>
+            <text>11.5.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#safe-projects-3" />
+        </navPoint>
+        <navPoint id="navPoint-264">
+          <navLabel>
+            <text>11.5.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#safe-people-3" />
+        </navPoint>
+        <navPoint id="navPoint-265">
+          <navLabel>
+            <text>11.5.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#safe-settings-2" />
+        </navPoint>
+        <navPoint id="navPoint-266">
+          <navLabel>
+            <text>11.5.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#safe-data-2" />
+        </navPoint>
+        <navPoint id="navPoint-267">
+          <navLabel>
+            <text>11.5.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#ahc-safeoutputs" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-268">
+        <navLabel>
+          <text>11.6 Data Life Cycle and Replicability</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#data-life-cycle-and-replicability-2" />
+        <navPoint id="navPoint-269">
+          <navLabel>
+            <text>11.6.1 Preservation and Reproducibility of Researcher-Accessible Files</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#preservation-and-reproducibility-of-researcher-accessible-files-2" />
+        </navPoint>
+        <navPoint id="navPoint-270">
+          <navLabel>
+            <text>11.6.2 Preservation of Researcher-Generated Files</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#preservation-of-researcher-generated-files" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-271">
+        <navLabel>
+          <text>11.7 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#sustainability-and-continued-success-3" />
+        <navPoint id="navPoint-272">
+          <navLabel>
+            <text>11.7.1 Revenue</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#revenue-2" />
+        </navPoint>
+        <navPoint id="navPoint-273">
+          <navLabel>
+            <text>11.7.2 Metrics of Success</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#metrics-of-success-3" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-274">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#about-the-authors-6" />
+      </navPoint>
+      <navPoint id="navPoint-275">
+        <navLabel>
+          <text>Acknowledgements</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#acknowledgements-3" />
+      </navPoint>
+      <navPoint id="navPoint-276">
+        <navLabel>
+          <text>Appendix</text>
+        </navLabel>
+        <content src="text/ch017.xhtml#appendix" />
+        <navPoint id="navPoint-277">
+          <navLabel>
+            <text>Public Use Data Set</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#public-use-data-set" />
+        </navPoint>
+        <navPoint id="navPoint-278">
+          <navLabel>
+            <text>Publishing</text>
+          </navLabel>
+          <content src="text/ch017.xhtml#publishing" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-279">
+      <navLabel>
+        <text>12 The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes</text>
+      </navLabel>
+      <content src="text/ch018.xhtml#sfusd" />
+      <navPoint id="navPoint-280">
+        <navLabel>
+          <text>12.1 Summary</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#summary-5" />
+      </navPoint>
+      <navPoint id="navPoint-281">
+        <navLabel>
+          <text>12.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#introduction-6" />
+        <navPoint id="navPoint-282">
+          <navLabel>
+            <text>12.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#motivation-and-background-3" />
+        </navPoint>
+        <navPoint id="navPoint-283">
+          <navLabel>
+            <text>12.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#data-use-examples-4" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-284">
+        <navLabel>
+          <text>12.3 Making Data Usable for Research</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#making-data-usable-for-research-1" />
+        <navPoint id="navPoint-285">
+          <navLabel>
+            <text>12.3.1 Framework for Converting Operational Data to Analytical Data for Research</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#framework-for-converting-operational-data-to-analytical-data-for-research" />
+        </navPoint>
+        <navPoint id="navPoint-286">
+          <navLabel>
+            <text>12.3.2 Processes for Compiling Operational Data and Converting to Analytical Data</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#processes-for-compiling-operational-data-and-converting-to-analytical-data" />
+        </navPoint>
+        <navPoint id="navPoint-287">
+          <navLabel>
+            <text>12.3.3 Processes for Organizing and Storing Analytical Data</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#processes-for-organizing-and-storing-analytical-data" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-288">
+        <navLabel>
+          <text>12.4 Legal and Institutional Framework</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#legal-and-institutional-framework-4" />
+        <navPoint id="navPoint-289">
+          <navLabel>
+            <text>12.4.1 Institutional Setup</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#institutional-setup-4" />
+        </navPoint>
+        <navPoint id="navPoint-290">
+          <navLabel>
+            <text>12.4.2 Legal Context for Data Use</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#legal-context-for-data-use-3" />
+        </navPoint>
+        <navPoint id="navPoint-291">
+          <navLabel>
+            <text>12.4.3 Legal Framework for Granting Data Access</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#legal-framework-for-granting-data-access-1" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-292">
+        <navLabel>
+          <text>12.5 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#protection-of-sensitive-and-personal-data-the-five-safes-framework-3" />
+        <navPoint id="navPoint-293">
+          <navLabel>
+            <text>12.5.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#sfusd-safeprojects" />
+        </navPoint>
+        <navPoint id="navPoint-294">
+          <navLabel>
+            <text>12.5.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#sfusd-safepeople" />
+        </navPoint>
+        <navPoint id="navPoint-295">
+          <navLabel>
+            <text>12.5.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#safe-settings-3" />
+        </navPoint>
+        <navPoint id="navPoint-296">
+          <navLabel>
+            <text>12.5.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#safe-data-3" />
+        </navPoint>
+        <navPoint id="navPoint-297">
+          <navLabel>
+            <text>12.5.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#safe-outputs-2" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-298">
+        <navLabel>
+          <text>12.6 Data Life Cycle and Replicability</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#data-life-cycle-and-replicability-3" />
+        <navPoint id="navPoint-299">
+          <navLabel>
+            <text>12.6.1 Preservation and Reproducibility of Researcher-Accessible Files</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#preservation-and-reproducibility-of-researcher-accessible-files-3" />
+        </navPoint>
+        <navPoint id="navPoint-300">
+          <navLabel>
+            <text>12.6.2 Preservation and Reproducibility of Researcher-Generated Files</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#preservation-and-reproducibility-of-researcher-generated-files-2" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-301">
+        <navLabel>
+          <text>12.7 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#sustainability-and-continued-success-4" />
+        <navPoint id="navPoint-302">
+          <navLabel>
+            <text>12.7.1 Outreach</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#outreach-3" />
+        </navPoint>
+        <navPoint id="navPoint-303">
+          <navLabel>
+            <text>12.7.2 Revenue</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#revenue-3" />
+        </navPoint>
+        <navPoint id="navPoint-304">
+          <navLabel>
+            <text>12.7.3 Metrics for Measuring Success</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#sfusd-metricssuccess" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-305">
+        <navLabel>
+          <text>12.8 Concluding Remarks</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#concluding-remarks-1" />
+      </navPoint>
+      <navPoint id="navPoint-306">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#about-the-authors-7" />
+      </navPoint>
+      <navPoint id="navPoint-307">
+        <navLabel>
+          <text>Appendix</text>
+        </navLabel>
+        <content src="text/ch018.xhtml#sfusd-appendix" />
+        <navPoint id="navPoint-308">
+          <navLabel>
+            <text>Appendix A</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#sfusd-appendixa" />
+        </navPoint>
+        <navPoint id="navPoint-309">
+          <navLabel>
+            <text>Appendix B</text>
+          </navLabel>
+          <content src="text/ch018.xhtml#sfusd-appendixb" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-310">
+      <navLabel>
+        <text>13 City of Cape Town, South Africa: Aligning Internal Data Capabilities with External Research Partnerships</text>
+      </navLabel>
+      <content src="text/ch019.xhtml#cct" />
+      <navPoint id="navPoint-311">
+        <navLabel>
+          <text>13.1 Summary</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#summary-6" />
+      </navPoint>
+      <navPoint id="navPoint-312">
+        <navLabel>
+          <text>13.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#introduction-7" />
+        <navPoint id="navPoint-313">
+          <navLabel>
+            <text>13.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#motivation-and-background-4" />
+        </navPoint>
+        <navPoint id="navPoint-314">
+          <navLabel>
+            <text>13.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#data-use-examples-5" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-315">
+        <navLabel>
+          <text>13.3 Making Data Usable for Research</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#making-data-usable-for-research-2" />
+        <navPoint id="navPoint-316">
+          <navLabel>
+            <text>13.3.1 Metadata</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#metadata-1" />
+        </navPoint>
+        <navPoint id="navPoint-317">
+          <navLabel>
+            <text>13.3.2 Data Processing</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#data-processing" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-318">
+        <navLabel>
+          <text>13.4 Legal and Institutional Framework</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#legal-and-institutional-framework-5" />
+        <navPoint id="navPoint-319">
+          <navLabel>
+            <text>13.4.1 Institutional Setup</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#cct-institutionalsetup" />
+        </navPoint>
+        <navPoint id="navPoint-320">
+          <navLabel>
+            <text>13.4.2 Legal Context for Data Use</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#legal-context-for-data-use-4" />
+        </navPoint>
+        <navPoint id="navPoint-321">
+          <navLabel>
+            <text>13.4.3 Legal Framework for Granting Data Access</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#cct-legal-framework-data-access" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-322">
+        <navLabel>
+          <text>13.5 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#protection-of-sensitive-and-personal-data-the-five-safes-framework-4" />
+        <navPoint id="navPoint-323">
+          <navLabel>
+            <text>13.5.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#safe-projects-4" />
+        </navPoint>
+        <navPoint id="navPoint-324">
+          <navLabel>
+            <text>13.5.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#safe-people-4" />
+        </navPoint>
+        <navPoint id="navPoint-325">
+          <navLabel>
+            <text>13.5.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#safe-settings-4" />
+        </navPoint>
+        <navPoint id="navPoint-326">
+          <navLabel>
+            <text>13.5.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#safe-data-4" />
+        </navPoint>
+        <navPoint id="navPoint-327">
+          <navLabel>
+            <text>13.5.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#safe-outputs-3" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-328">
+        <navLabel>
+          <text>13.6 Data Life Cycle and Reproducibility</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#data-life-cycle-and-reproducibility-1" />
+        <navPoint id="navPoint-329">
+          <navLabel>
+            <text>13.6.1 Preservation and Reproducibility of Researcher-Accessible Files</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#preservation-and-reproducibility-of-researcher-accessible-files-4" />
+        </navPoint>
+        <navPoint id="navPoint-330">
+          <navLabel>
+            <text>13.6.2 Preservation and Reproducibility of Researcher-Generated Files</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#preservation-and-reproducibility-of-researcher-generated-files-3" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-331">
+        <navLabel>
+          <text>13.7 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#sustainability-and-continued-success-5" />
+        <navPoint id="navPoint-332">
+          <navLabel>
+            <text>13.7.1 Outreach</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#outreach-4" />
+        </navPoint>
+        <navPoint id="navPoint-333">
+          <navLabel>
+            <text>13.7.2 Revenue</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#revenue-4" />
+        </navPoint>
+        <navPoint id="navPoint-334">
+          <navLabel>
+            <text>13.7.3 Metrics of Success</text>
+          </navLabel>
+          <content src="text/ch019.xhtml#metrics-of-success-4" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-335">
+        <navLabel>
+          <text>13.8 Concluding Remarks</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#concluding-remarks-2" />
+      </navPoint>
+      <navPoint id="navPoint-336">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#about-the-authors-8" />
+      </navPoint>
+      <navPoint id="navPoint-337">
+        <navLabel>
+          <text>Acknowledgements</text>
+        </navLabel>
+        <content src="text/ch019.xhtml#acknowledgements-4" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-338">
+      <navLabel>
+        <text>14 Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME)</text>
+      </navLabel>
+      <content src="text/ch020.xhtml#dime" />
+      <navPoint id="navPoint-339">
+        <navLabel>
+          <text>14.1 Summary</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#summary-7" />
+      </navPoint>
+      <navPoint id="navPoint-340">
+        <navLabel>
+          <text>14.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#introduction-8" />
+        <navPoint id="navPoint-341">
+          <navLabel>
+            <text>14.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#motivation-and-background-5" />
+        </navPoint>
+        <navPoint id="navPoint-342">
+          <navLabel>
+            <text>14.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#data-use-examples-6" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-343">
+        <navLabel>
+          <text>14.3 Making Data Usable for Research</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#dime-making-data-usable" />
+      </navPoint>
+      <navPoint id="navPoint-344">
+        <navLabel>
+          <text>14.4 Legal and Institutional Framework</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#legal-and-institutional-framework-6" />
+        <navPoint id="navPoint-345">
+          <navLabel>
+            <text>14.4.1 Institutional Setup</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#dime-institutional-setup" />
+        </navPoint>
+        <navPoint id="navPoint-346">
+          <navLabel>
+            <text>14.4.2 Legal Context for Data Use</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#legal-context-for-data-use-5" />
+        </navPoint>
+        <navPoint id="navPoint-347">
+          <navLabel>
+            <text>14.4.3 Legal Framework for Granting Data Access</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#legal-framework-for-granting-data-access-2" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-348">
+        <navLabel>
+          <text>14.5 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#protection-of-sensitive-and-personal-data-the-five-safes-framework-5" />
+        <navPoint id="navPoint-349">
+          <navLabel>
+            <text>14.5.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#safe-projects-5" />
+        </navPoint>
+        <navPoint id="navPoint-350">
+          <navLabel>
+            <text>14.5.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#safe-people-5" />
+        </navPoint>
+        <navPoint id="navPoint-351">
+          <navLabel>
+            <text>14.5.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#safe-settings-5" />
+        </navPoint>
+        <navPoint id="navPoint-352">
+          <navLabel>
+            <text>14.5.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#safe-data-5" />
+        </navPoint>
+        <navPoint id="navPoint-353">
+          <navLabel>
+            <text>14.5.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#safe-outputs-4" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-354">
+        <navLabel>
+          <text>14.6 Data Life Cycle and Replicability</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#data-life-cycle-and-replicability-4" />
+        <navPoint id="navPoint-355">
+          <navLabel>
+            <text>14.6.1 Preservation and Reproducibility of Researcher-Accessible Files</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#preservation-and-reproducibility-of-researcher-accessible-files-5" />
+        </navPoint>
+        <navPoint id="navPoint-356">
+          <navLabel>
+            <text>14.6.2 Preservation and Reproducibility of Researcher-Generated Files</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#preservation-and-reproducibility-of-researcher-generated-files-4" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-357">
+        <navLabel>
+          <text>14.7 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#sustainability-and-continued-success-6" />
+        <navPoint id="navPoint-358">
+          <navLabel>
+            <text>14.7.1 Outreach</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#outreach-5" />
+        </navPoint>
+        <navPoint id="navPoint-359">
+          <navLabel>
+            <text>14.7.2 Revenue</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#revenue-5" />
+        </navPoint>
+        <navPoint id="navPoint-360">
+          <navLabel>
+            <text>14.7.3 Metrics of Success</text>
+          </navLabel>
+          <content src="text/ch020.xhtml#metrics-of-success-5" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-361">
+        <navLabel>
+          <text>14.8 Concluding Remarks</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#concluding-remarks-3" />
+      </navPoint>
+      <navPoint id="navPoint-362">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch020.xhtml#about-the-authors-9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-363">
+      <navLabel>
+        <text>15 The Use of Administrative Data at the International Monetary Fund</text>
+      </navLabel>
+      <content src="text/ch021.xhtml#imf" />
+      <navPoint id="navPoint-364">
+        <navLabel>
+          <text>15.1 Summary</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#summary-8" />
+      </navPoint>
+      <navPoint id="navPoint-365">
+        <navLabel>
+          <text>15.2 Introduction</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#introduction-9" />
+        <navPoint id="navPoint-366">
+          <navLabel>
+            <text>15.2.1 Motivation and Background</text>
+          </navLabel>
+          <content src="text/ch021.xhtml#motivation-and-background-6" />
+        </navPoint>
+        <navPoint id="navPoint-367">
+          <navLabel>
+            <text>15.2.2 Data Use Examples</text>
+          </navLabel>
+          <content src="text/ch021.xhtml#imf-data-use-examples" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-368">
+        <navLabel>
+          <text>15.3 Legal Framework</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#imf-legal-framework" />
+      </navPoint>
+      <navPoint id="navPoint-369">
+        <navLabel>
+          <text>15.4 Making Data Usable</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#making-data-usable" />
+      </navPoint>
+      <navPoint id="navPoint-370">
+        <navLabel>
+          <text>15.5 Protection of Sensitive and Personal Data: The Five Safes Framework</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#protection-of-sensitive-and-personal-data-the-five-safes-framework-6" />
+        <navPoint id="navPoint-371">
+          <navLabel>
+            <text>15.5.1 Safe Projects</text>
+          </navLabel>
+          <content src="text/ch021.xhtml#safe-projects-6" />
+        </navPoint>
+        <navPoint id="navPoint-372">
+          <navLabel>
+            <text>15.5.2 Safe People</text>
+          </navLabel>
+          <content src="text/ch021.xhtml#safe-people-6" />
+        </navPoint>
+        <navPoint id="navPoint-373">
+          <navLabel>
+            <text>15.5.3 Safe Settings</text>
+          </navLabel>
+          <content src="text/ch021.xhtml#safe-settings-6" />
+        </navPoint>
+        <navPoint id="navPoint-374">
+          <navLabel>
+            <text>15.5.4 Safe Data</text>
+          </navLabel>
+          <content src="text/ch021.xhtml#safe-data-6" />
+        </navPoint>
+        <navPoint id="navPoint-375">
+          <navLabel>
+            <text>15.5.5 Safe Outputs</text>
+          </navLabel>
+          <content src="text/ch021.xhtml#safe-outputs-5" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-376">
+        <navLabel>
+          <text>15.6 Sustainability and Continued Success</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#sustainability-and-continued-success-7" />
+      </navPoint>
+      <navPoint id="navPoint-377">
+        <navLabel>
+          <text>15.7 Concluding Remarks</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#concluding-remarks-4" />
+      </navPoint>
+      <navPoint id="navPoint-378">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#about-the-authors-10" />
+      </navPoint>
+      <navPoint id="navPoint-379">
+        <navLabel>
+          <text>Disclaimer</text>
+        </navLabel>
+        <content src="text/ch021.xhtml#disclaimer-2" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-380">
+      <navLabel>
+        <text>16 Using Administrative Data to Improve Social Protection in Indonesia</text>
+      </navLabel>
+      <content src="text/ch022.xhtml#indonesia" />
+      <navPoint id="navPoint-381">
+        <navLabel>
+          <text>16.1 Summary</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#summary-9" />
+      </navPoint>
+      <navPoint id="navPoint-382">
+        <navLabel>
+          <text>16.2 The Use of Administrative Data to Implement and Monitor Experimental Treatments</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#indonesia-admin-data-implement-monitor" />
+        <navPoint id="navPoint-383">
+          <navLabel>
+            <text>16.2.1 Using Administrative Data to Implement an Experimental Treatment</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#indonesia-admin-data-implement-treatment" />
+        </navPoint>
+        <navPoint id="navPoint-384">
+          <navLabel>
+            <text>16.2.2 Using Administrative Data to Monitor an Experimental Treatment</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#indonesia-admin-data-monitor-treatment" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-385">
+        <navLabel>
+          <text>16.3 Using Administrative Data to Measure Outcomes</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#using-administrative-data-to-measure-outcomes" />
+        <navPoint id="navPoint-386">
+          <navLabel>
+            <text>16.3.1 Utilizing Program Use Data to Measure Outcomes</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#utilizing-program-use-data-to-measure-outcomes" />
+        </navPoint>
+        <navPoint id="navPoint-387">
+          <navLabel>
+            <text>16.3.2 Building Questions into the National Sample Survey to Measure Outcomes</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#indonesia-building-questions-national-survey" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-388">
+        <navLabel>
+          <text>16.4 Studying the Collection of Administrative Data Itself</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#studying-the-collection-of-administrative-data-itself" />
+        <navPoint id="navPoint-389">
+          <navLabel>
+            <text>16.4.1 Administrative Data Collection for Program Targeting</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#administrative-data-collection-for-program-targeting" />
+        </navPoint>
+        <navPoint id="navPoint-390">
+          <navLabel>
+            <text>16.4.2 Using Administrative Data as a Research Treatment to Improve Data Collection</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#indonesia-admin-data-improve-collection" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-391">
+        <navLabel>
+          <text>16.5 Concluding Remarks</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#concluding-remarks-5" />
+      </navPoint>
+      <navPoint id="navPoint-392">
+        <navLabel>
+          <text>About the Authors</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#about-the-authors-11" />
+      </navPoint>
+      <navPoint id="navPoint-393">
+        <navLabel>
+          <text>Acknowledgements</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#acknowledgements-5" />
+      </navPoint>
+      <navPoint id="navPoint-394">
+        <navLabel>
+          <text>Appendix</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#indonesia-appendix" />
+        <navPoint id="navPoint-395">
+          <navLabel>
+            <text>Appendix A</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#indonesia-appendixa" />
+        </navPoint>
+        <navPoint id="navPoint-396">
+          <navLabel>
+            <text>Appendix B</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#indonesia-appendixb" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-397">
+      <navLabel>
+        <text>Third-party Licenses</text>
+      </navLabel>
+      <content src="text/ch023.xhtml#third-party-licenses" />
+      <navPoint id="navPoint-398">
+        <navLabel>
+          <text>Fontawesome</text>
+        </navLabel>
+        <content src="text/ch023.xhtml#fontawesome" />
+      </navPoint>
+      <navPoint id="navPoint-399">
+        <navLabel>
+          <text>Trademarks</text>
+        </navLabel>
+        <content src="text/ch023.xhtml#trademarks" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-400">
+      <navLabel>
+        <text>References</text>
+      </navLabel>
+      <content src="text/ch024.xhtml#references" />
+    </navPoint>
+  </navMap>
+</ncx>
