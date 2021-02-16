@@ -32,6 +32,7 @@ do
   sed -i 's+section id="part+section epub:type="part" id="part+' EPUB/text/ch0$arg.xhtml
   sed -i 's+(PART) ++g' EPUB/text/ch0$arg.xhtml
 done
+
 for arg in nav.xhtml toc.ncx
 do
   sed -i 's+(PART) ++g' EPUB/$arg
@@ -46,6 +47,10 @@ for arg in 10 11 13 14 16
 do
   sed -i 's+colspan="100%"+colspan="10"+' EPUB/text/ch0$arg.xhtml 
   sed -i 's+<br>+<br/>+g' EPUB/text/ch0$arg.xhtml 
+done
+for arg in $(cd EPUB/text/; ls *.xhtml)
+do
+  sed -i 's+width="100%"+width="1536"+' EPUB/text/$arg
 done
 
 # package it all up again
