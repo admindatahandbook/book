@@ -38,10 +38,15 @@ Make a copy of file_clean.md called file.Rmd, commmit to chapter branch
 Perform edits in R (e.g. edit tables, insert figures, etc)
 
 ### Step 6
-Commit edits to chapter branch
+Test build locally
 
 ### Step 7
-Test build off chapter branch (can fork to Jim repository to avoid using main repository github page)
+Commit edits to chapter branch
+
+
+## Supplemental Materials
+
+The supplemental materials section of the online handbook chapters are printed using the _print_supplemental.R program. The webinar slides are placed in the /assets/appendix folder. The webinar date, URL of the youtube video, and location of the slides are listed in each chapter's entry in config.yml.
 
 ## Bibliography
 
