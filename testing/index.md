@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2021-02-14"
+date: "2021-02-18"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -1055,8 +1055,6 @@ The necessary aspects of a data access mechanism and the restrictions that are p
 
 A final related point is that the enforcement of the terms of the +DUA| is an important factor in determining the flexibility in the data access system. More sophisticated DUAs and greater strength of enforcement enables increased flexibility in the data access mechanism while maintaining strong protections. This corresponds to a trade-off between the investment in physical infrastructure and human resources necessary for tight control over a data access mechanism versus the investment in the institutional and legal framework of data access. In the partnerships above, the necessary protections in the data access mechanism are established in large part by the DUA.
 
-## Supplemental Materials {-} 
-The slides for the webinar presentation are available [here](./appendix/security_slides.pdf). 
  
 ## About the Authors {-}
 
@@ -1205,8 +1203,7 @@ When using the data, the researcher should remember that this is a contractual a
 No matter the size of the project or the volume of data needed, all parties should invest the time in preparing a sound data use agreement. Agreements enable safe projects. The topics covered in this chapter have been put in to practice through all the case studies in this volume. The process is well described in chapter \@ref(sfusd) on the Stanford-San Francisco Unified School District Partnership. Appendix [A](#dua-appendixa) provides a sample text for consideration when writing DUAs, and Appendix [B](#dua-appendixb) lists additional toolkits and guides on the DUA process.
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=zzJy6ECdd80&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=5). 
-The slides for the webinar presentation are available [here](./appendix/dua_slides.pdf). 
+This chapter was presented by the author as a webinar on October 26, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=zzJy6ECdd80&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=5) and [slides](./appendix/dua_slides.pdf) are available. 
  
 
 ## About the Author {-}
@@ -1533,8 +1530,7 @@ The part of a protocol that relates to the use of administrative data is often e
 The goal of this chapter has been to provide a practical guide to researchers and other stakeholders on managing IRB procedures. It is important to emphasize that while this chapter addresses a wide variety of potential problems and concerns, in practice almost every university where research takes place has a well-functioning IRB, which performs the critical, but typically routine, work of providing oversight of research. Nearly all research proposals are able to satisfy IRB concerns, though they may sometimes require some adjustment to satisfy the principals laid out above.
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=VLQtkwQyQvo&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=6). 
-The slides for the webinar presentation are available [here](./appendix/irb_slides.pdf). 
+This chapter was presented by the author as a webinar on November 9, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=VLQtkwQyQvo&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=6) and [slides](./appendix/irb_slides.pdf) are available. 
  
 
 ## About the Author {-}
@@ -1938,8 +1934,7 @@ There is now a greater demand for all kinds of data. More than ever before, scho
 The same advances driving these new demands have a darker side. Computing power together with the availability of detailed outside data make it easier than ever for attackers to exploit improperly protected data. Therefore, when making data available for research, agency stewards must take great care to also protect the subjects in the data. This chapter provides an overview of techniques traditionally used to modify the data to achieve that goal. There is a legitimate concern that some of the methods discussed here cannot protect against all possible attacks made possible with modern computing power. Those concerns animate the discussion of formal methods that yield provable privacy guarantees elsewhere in this Handbook.
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=GK-N-SN3BrY&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=4). 
-The slides for the webinar presentation are available [here](./appendix/discavoid_slides.pdf). 
+This chapter was presented by the authors as a webinar on November 2, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=GK-N-SN3BrY&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=4) and [slides](./appendix/discavoid_slides.pdf) are available. 
  
 
 ## About the Authors {-}
@@ -2683,8 +2678,6 @@ For additional flexibility, the data depositor of a sensitive data set could all
 
 Referring to some of the other design choices discussed in Appendix [A](#diffpriv-appendixa), the vision outlined above fits into the curator model of differential privacy, as researchers depositing data in the repository have typically already been trusted to collect the sensitive data. It is part of a tiered access model meant to augment rather than replace the existing methods of accessing restricted data. Use Cases 1 and 2 involve noninteractive releases, whereas Use Case 3 allows for interactive queries. Many of the other key choices associated with implementing differential privacy are left to the data depositor, who cannot be expected to have expertise in differential privacy. Thus, the software tools must provide a clear user interface to guide the depositor in their decisions. There should be a tutorial on the concepts of privacy loss, privacy--accuracy trade-offs, and budgeting, including recommended choices of privacy-loss parameter $\varepsilon$ according to different categories of data and sensitivity. The depositor should also be guided in defining the granularity of privacy appropriate for their data and the trade-offs between offering per-analyst budgets for interactive queries versus a global budget for all queries. Domain knowledge will be required of the depositor (and the analyst in Use Case 3) in deciding which statistics to release and which ones to prioritize for accuracy. For the research use cases described above, it will be important that the differentially private analyses offered provide uncertainty estimates whenever possible.
 
-## Supplemental Materials {-} 
-The slides for the webinar presentation are available [here](./appendix/diffpriv_slides.pdf). 
  
 
 ## About the Authors {-}
@@ -3638,7 +3631,7 @@ In general, user ratings are very good. For example, Figure \@ref(fig:iabfig3) s
 </div>
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=tTuayub1iRo&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=9). 
+This chapter was presented by the authors as a webinar on December 7, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=tTuayub1iRo&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=9) is available. 
  
 
 ## About the Authors {-}
@@ -4054,8 +4047,7 @@ OLDA researchers monitor a number of metrics (somewhat informally), including (1
 *Dashboards*. The OLDA team works extensively on supporting state and local government in Ohio with dashboards and scorecards. The team has built several that are maintained every year for over five years and some that are more recent. OLDA keeps website hit traffic for these dashboards to examine the location and overall use of the dashboards in the state.
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=ZtLndEL28lM&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=2). 
-The slides for the webinar presentation are available [here](./appendix/olda_slides.pdf). 
+This chapter was presented by the author as a webinar on October 5, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=ZtLndEL28lM&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=2) and [slides](./appendix/olda_slides.pdf) are available. 
  
 
 ## About the Author {-}
@@ -4318,8 +4310,7 @@ Additionally, the length of time between process stages is measured. This measur
 Audits of data sets accessed and data project activity are a requirement of data sharing with NB-IRDT as well as a legislated safeguard. Reporting at this level allows not only for the monitoring of appropriate data access but also provides partners with an indicator of the usage of their data. A final metric for NB-IRDT is the number of disseminated research results or outputs from data access. Not only are the requests for first-time disclosure captured but also efforts are made to identify subsequent publications or sharing of results in additional formats beyond the relationship with NB-IRDT.
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=jYBg-p94gHQ&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=10). 
-The slides for the webinar presentation are available [here](./appendix/nbirdt_slides.pdf). 
+This chapter was presented by the authors as a webinar on November 23, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=jYBg-p94gHQ&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=10) and [slides](./appendix/nbirdt_slides.pdf) are available. 
  
 
 ## About the Authors {-}
@@ -5288,8 +5279,7 @@ After the clinical decision support project, two of the key executives at ARI le
 Beyond process, the Aurora analysts who worked on data extraction gained insight into the data and techniques for processing data that have improved their efficiency. For example, the best practice alert data used for this project is not commonly analyzed by the health care system; however, the analysts stated that understanding these data has helped them respond to internal requests from the pharmacy information systems group on how to analyze their alert data. As another example, many internal reporting and assessment projects at Aurora require matching data across data systems, and the need for, and complexity of, linking data has increased as the teams must now integrate data from the Advocate systems. The Aurora analyst team has applied their knowledge gained on the CDS project of how to match patient names or other records in a string format to these internal projects.[^ahc9]
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=Pl1QvLMBdLg&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=7). 
-The slides for the webinar presentation are available [here](./appendix/ahc_slides.pdf). 
+This chapter was presented by the authors as a webinar on November 16, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=Pl1QvLMBdLg&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=7) and [slides](./appendix/ahc_slides.pdf) are available. 
  
 
 ## About the Authors {-}
@@ -5655,8 +5645,7 @@ The answers to the first four questions shape the answer to the critical last qu
 Once established, any partnership using shared data will need to *continually improve the ways in which data are collected and archived.* For example, in SFUSD, although spreadsheet files gathered from various departments are systematically archived on an internal server, they are not processed to create robust databases. One critical step toward pursuing this improvement is to maintain a clearer separation between operational and analytical data systems. Along with better integration of the operational data systems that sit across distinct databases in the school district departments, the Partnership would also establish firmer timelines for finalizing the extracts of analytical data from these systems. Maintaining authoritative analytical data files for research at SFUSD would also significantly improve data quality, consistency in analyses, and efficiency in data management across the multiple analysts and researchers who use those data. On the Stanford side, the data manager could implement an intermediate step of data organization and storage between the raw data receipts from the district and the master data files that are used to provide data to research teams.
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=qYfwWLZaxxQ&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=3). 
-The slides for the webinar presentation are available [here](./appendix/stanford-sfusd_slides.pdf). 
+This chapter was presented by the authors as a webinar on October 19, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=qYfwWLZaxxQ&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=3) and [slides](./appendix/stanford-sfusd_slides.pdf) are available. 
  
 
 ## About the Authors {-}
@@ -5979,8 +5968,7 @@ This case study provides a snapshot---taken in the midst of a dramatic transform
 The benefits of streamlining the data sharing process include an increased volume of research on policy relevant questions, greater accountability of researchers to report findings and share cleaned data or new data sets with CCT, and a more secure and standardized approach to transferring data to researchers. These benefits come at a cost, which is largely front-loaded and associated with establishing the data sharing platform, as well as centralizing and standardizing the diverse set of administrative data sets used by CCT. This stage is still ongoing, and the interim picture provided here is rapidly changing. Lessons will continue to be learned and unresolved issues solved. CCT will carefully balance data privacy concerns with the need to generate bodies of evidence that inform municipal policies and support enhanced service delivery and improved outcomes for residents of Cape Town.
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=NKiHz8eSJXI&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=1&t=12s). 
-The slides for the webinar presentation are available [here](./appendix/cct_slides.pdf). 
+This chapter was presented by the authors as a webinar on September 28, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=NKiHz8eSJXI&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=1) and [slides](./appendix/cct_slides.pdf) are available. 
  
 
 ## About the Authors {-}
@@ -6215,7 +6203,7 @@ At +DIME|, researchers have a special ethical responsibility: to generate scient
 
 To maintain high ethical standards, in addition to the IRB process, all researchers working on i2i-funded projects are required to submit documentation of successful completion of ethics training on conducting human subjects research from recognized providers such as [CITI](https://about.citiprogram.org)[^dimeaccessdate] or [PHRP](https://phrptraining.com/).[^dimeaccessdate] Human subjects research certification is also required for any team member who is expected to work with personally identifiable data.
 
-World Bank employment contracts govern intellectual property rights and specify that any works produced, or materials acquired, during the course of the appointment belong to the World Bank. As research assistants and field coordinators typically work with confidential data, +DIME| requires the signature of non-disclosure agreements (NDA) at the start of their tenure. The NDA has specific provisions for maintaining full confidentiality and safeguarding private information. As a condition of employment, personnel commit to keeping all research information confidential, to blind any identifying information, to handle all data securely, to use secure technologies for encryption-at-rest and encryption-in-transfer, and to destroy all local copies of data and research outputs at the end of the contract unless given written authorization by the research staff. New hires are also required to review +DIME|'s Data Security Standards and pass an assessment on the content [@worldbankgroupb].
+World Bank employment contracts govern intellectual property rights and specify that any works produced, or materials acquired, during the course of the appointment belong to the World Bank. As research assistants and field coordinators typically work with confidential data, +DIME| requires the signature of [non-disclosure agreements (NDA)](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/dime-data-nda.md)[^dimeaccessdate] at the start of their tenure. The NDA has specific provisions for maintaining full confidentiality and safeguarding private information. As a condition of employment, personnel commit to keeping all research information confidential, to blind any identifying information, to handle all data securely, to use secure technologies for encryption-at-rest and encryption-in-transfer, and to destroy all local copies of data and research outputs at the end of the contract unless given written authorization by the research staff. New hires are also required to review +DIME|'s Data Security Standards and pass an assessment on the content [@worldbankgroupb].
 
 ### Safe Settings
 
@@ -6319,8 +6307,7 @@ Currently, DIME is well above the norm in the field. An analysis of 203 economic
 +DIME| has worked with client countries for the past fifteen years to strengthen their capacity for evidence-informed policy decisions. The DIME model is to support governments throughout policy design and implementation processes and invest heavily in the production of research-led data sets that can be applied to understanding the economic problems governments are trying to address. By striking a delicate balance between generating high-quality evidence and remaining responsive to policy processes on the ground, DIME has been able to build trust relationships with government clients. By helping governments build capacity for data and evidence-intensive policymaking, DIME secured broad access to administrative data and the opportunity to improve its quality.
 
 ## Supplemental Materials {-} 
-The video of this chapter's webinar presentation can be found [here](https://www.youtube.com/watch?v=RBWzR4FC20w&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=8). 
-The slides for the webinar presentation are available [here](./appendix/dime_slides.pdf). 
+This chapter was presented by the authors as a webinar on November 30, 2020. A [recording of the webinar](https://www.youtube.com/watch?v=RBWzR4FC20w&list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&index=8) and [slides](./appendix/dime_slides.pdf) are available. 
  
 
 ## About the Authors {-}
@@ -6737,7 +6724,7 @@ The Handbook is intended to dynamically evolve over time. Releases are called "v
 
 ## Availability {-}
 
-The Handbook's primary location is on the web ([https://admindatahandbook.mit.edu/book/](https://admindatahandbook.mit.edu/book/)). However, it is also a book, and we will, at regular intervals, make available printed copies and ebook versions. The online version and the ebook will be assigned Digital Object Identifiers (DOI). Online chapters will receive their own DOI for ease of citability. Both the ebook and the hard copy will be assigned ISBN numbers. The hard copy will be available for purchase through a number of outlets. The ebook will be available for download from the Handbook's primary location for free.
+The Handbook's primary location is on the web ([https://admindatahandbook.mit.edu/book](https://admindatahandbook.mit.edu/book)). However, it is also a book, and we will, at regular intervals, make available printed copies and ebook versions. The online version and the ebook will be assigned Digital Object Identifiers (DOI). Online chapters will receive their own DOI for ease of citability. Both the ebook and the hard copy will be assigned ISBN numbers. The hard copy will be available for purchase through a number of outlets. The ebook will be available for download from the Handbook's primary location for free.
 
 ## Contributions {-}
 
@@ -7104,6 +7091,8 @@ Microsoft Windows®, Apple®, AirPort®, Mac®, Linksys®, Symantec®.
 <!--chapter:end:95_online_only_backmatter.Rmd-->
 
 ### References {- #invisible}
+
+
 
 
 
