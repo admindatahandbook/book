@@ -97,9 +97,9 @@ ggsave("./assets/iab/iabfigure2web.png", iabfigure23, width = 6, height = 3.75, 
 
 # Do BW with viridis scale
 
-iabfig3bw <- iabfigure3 + scale_fill_viridis_d(direction=-1) + theme(panel.backgroun = element_rect(fill="transparent"))
+iabfig3bw <- iabfigure3 + scale_fill_brewer(palette="Blues",direction=-1) + theme(panel.background = element_rect(fill="transparent"))
 iabfig23bw <- ggarrange(iabfigure2, iabfig3bw, ncol=2, nrow=1, align="hv")
-ggsave("./assets/iab/iabfigure2bw.pdf", iabfig23bw,width = 4, height = 2.5, units = "in", dpi=600)
+ggsave("./assets/iab/iabfigure2bw.png", iabfig23bw,width = 4, height = 2.5, units = "in", dpi=600)
 
 # Figure 4
 
