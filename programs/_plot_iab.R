@@ -69,7 +69,7 @@ iabfigure2 <- ggplot(iabf2data, aes(fill=Projects, y=Count, x=Year)) +
 iabfigure3 <- ggplot(iabf3data, aes(fill=Country, y=Percentage, x=Year)) + 
   geom_bar(position="stack", stat="identity") +
   scale_x_continuous(breaks = seq(2012,2019, 1)) +
-  scale_fill_brewer(labels = c("Germany", "Other", "U.S."), palette = "Paired") +
+  scale_fill_brewer(labels = c("Germany", "Other", "U.S."), palette = "GnBu") +
   labs(caption="(b)") +
   theme(axis.title.x=element_blank(),
         axis.title.y=element_blank(),
@@ -90,10 +90,16 @@ iabfigure3 <- ggplot(iabf3data, aes(fill=Country, y=Percentage, x=Year)) +
 
 iabfigure23<-ggarrange(iabfigure2, iabfigure3, ncol=2, nrow=1, align="hv")
 
-iabfigure23
+#iabfigure23
 
-ggsave("./assets/iab/iabfigure2.png", width = 4, height = 2.5, units = "in", dpi=600)
-ggsave("./assets/iab/iabfigure2web.png", width = 6, height = 3.75, units = "in", dpi=133)
+ggsave("./assets/iab/iabfigure2.png", iabfigure23,width = 4, height = 2.5, units = "in", dpi=600)
+ggsave("./assets/iab/iabfigure2web.png", iabfigure23, width = 6, height = 3.75, units = "in", dpi=133)
+
+# Do BW with viridis scale
+
+iabfig3bw <- iabfigure3 + scale_fill_viridis_d(direction=-1) + theme(panel.backgroun = element_rect(fill="transparent"))
+iabfig23bw <- ggarrange(iabfigure2, iabfig3bw, ncol=2, nrow=1, align="hv")
+ggsave("./assets/iab/iabfigure2bw.pdf", iabfig23bw,width = 4, height = 2.5, units = "in", dpi=600)
 
 # Figure 4
 
