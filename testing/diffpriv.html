@@ -11,7 +11,7 @@
   <meta property="og:title" content="6 Designing Access with Differential Privacy | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
   <meta property="og:type" content="book" />
   
-  
+  <meta property="og:image" content="assets/images/webcover.png" />
   <meta property="og:description" content="6 Designing Access with Differential Privacy | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
   <meta name="github-repo" content="admindatahandbook/book" />
 
@@ -19,18 +19,18 @@
   <meta name="twitter:title" content="6 Designing Access with Differential Privacy | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
   
   <meta name="twitter:description" content="6 Designing Access with Differential Privacy | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
-  
+  <meta name="twitter:image" content="assets/images/webcover.png" />
 
 <meta name="author" content="Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber" />
 
 
-<meta name="date" content="2021-02-18" />
+<meta name="date" content="2021-01-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="discavoid.html"/>
 <link rel="next" href="iab.html"/>
 <script src="libs/header-attrs-2.3/header-attrs.js"></script>
@@ -92,7 +92,6 @@ function toggleCitation() {
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/css/toc.css" type="text/css" />
 <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="assets/css/draft.css" type="text/css" />
 <link rel="stylesheet" href="assets/css/html.css" type="text/css" />
 </head>
 
@@ -106,6 +105,9 @@ function toggleCitation() {
       <nav role="navigation">
 
 <ul class="summary">
+<li class="chapter" data-level=""><a href="https://admindatahandbook.mit.edu/"><i class="fa fa-home"></i>Home page</a></li>
+
+<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to the Handbook</a></li>
 <li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About the Editors</a></li>
 <li class="chapter" data-level="" data-path="handbook-acknowledgements.html"><a href="handbook-acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
@@ -320,7 +322,7 @@ function toggleCitation() {
 <li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
 </ul></li>
 <li class="divider"></li>
-<li class="copyright"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber</li>
+<li class="copyright"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber.</li>
 <li class="copyright">Individual chapters ©️ by their authors or as noted.</li>
 <li class="copyright"><a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a></li>
 
@@ -363,8 +365,8 @@ Wood, Alexandra, Micah Altman, Kobbi Nissim, and Salil Vadhan. 2020. “<span id
 <h3><span class="header-section-number">6.1.1</span> Organization of this Chapter</h3>
 <p>We place differential privacy in a general framework—introduced by <span class="citation">Altman et al. (<a href="#ref-altman2015" role="doc-biblioref">2015</a>)</span> and an alternative to the Five Safes framework <span class="citation">(Desai, Ritchie, and Welpton <a href="#ref-desai2016" role="doc-biblioref">2016</a>)</span> used throughout this Handbook—that involves selecting combinations of statistical, technical, and administrative controls to mitigate risks of harm to individuals resulting from access to data. The framework discusses differential privacy as an approach to employ together with other tools, including consent mechanisms, data use agreements, and secure environments.</p>
 <p>The chapter is organized as follows: Section <a href="diffpriv.html#sec:what-dp-protects">6.2</a> explains the differential privacy guarantee in more detail using stories to illustrate what differential privacy does and does not protect. Section <a href="diffpriv.html#sec:aligning">6.3</a> places differential privacy in a general framework of complementary privacy controls and characterizes principles for selecting differential privacy in conjunction with other controls. These principles include calibrating privacy and security controls to the intended uses and privacy risks associated with the data, and anticipating, regulating, monitoring, and reviewing interactions with data across all stages of the lifecycle (including the post-access stages), as risks and methods will evolve over time. Section <a href="diffpriv.html#sec:case-studies">6.4</a> presents succinct summaries of several deployment cases. These provide selected concrete examples of data dissemination that illustrate some key design choices and their implications. Some of the content in this chapter (Sections <a href="diffpriv.html#sec:dp-intro">6.1</a>–<a href="diffpriv.html#sec:aligning">6.3</a>) is excerpted from, adapted from, or otherwise based, in part, on <span class="citation">Wood et al. (<a href="#ref-wood_differential_2018" role="doc-biblioref">2018</a>)</span> and <span class="citation">Altman et al. (<a href="#ref-altman2015" role="doc-biblioref">2015</a>)</span>.</p>
-<p>More technical discussions of several topics are included in an extensive online appendix. A discussion of different technical approaches to disseminating data with differential privacy can be found in Appendix <a href="#diffpriv-appendixa">A</a>, which also characterizes the key design choices and trade-offs across them. Appendix <a href="diffpriv.html#diffpriv-appendixb">B</a> elaborates on the implications of differential privacy for data collection, use, and dissemination with a special emphasis on how differential privacy affects data collection and data repository practice and policy. Appendix <a href="diffpriv.html#diffpriv-appendixc">C</a> provides a list of selected tools and resources for implementing differential privacy protections.</p>
-<p>Section <a href="diffpriv.html#sec:what-dp-protects">6.2</a> is recommended for policymakers as well as for analysts and communications professionals seeking to explain differential privacy to policymakers, data users, and data subjects. Sections <a href="diffpriv.html#sec:aligning">6.3</a> and <a href="diffpriv.html#sec:case-studies">6.4</a>, in combination with Appendix <a href="diffpriv.html#diffpriv-appendixb">B</a>, are recommended for organizational directors and principal investigators responsible for identifying where differential privacy is appropriate as part of a project or organization-level data-protection strategy. Appendices <a href="#diffpriv-appendixa">A</a>, <a href="diffpriv.html#diffpriv-appendixb">B</a>, and <a href="diffpriv.html#diffpriv-appendixc">C</a> are recommended for those with a technical background aiming to design and deploy differential privacy addressing specific data dissemination requirements.</p>
+<p>More technical discussions of several topics are included in an extensive online appendix. A discussion of different technical approaches to disseminating data with differential privacy can be found in Appendix <a href="diffpriv.html#diffpriv-appendixa">A</a>, which also characterizes the key design choices and trade-offs across them. Appendix <a href="diffpriv.html#diffpriv-appendixb">B</a> elaborates on the implications of differential privacy for data collection, use, and dissemination with a special emphasis on how differential privacy affects data collection and data repository practice and policy. Appendix <a href="diffpriv.html#diffpriv-appendixc">C</a> provides a list of selected tools and resources for implementing differential privacy protections.</p>
+<p>Section <a href="diffpriv.html#sec:what-dp-protects">6.2</a> is recommended for policymakers as well as for analysts and communications professionals seeking to explain differential privacy to policymakers, data users, and data subjects. Sections <a href="diffpriv.html#sec:aligning">6.3</a> and <a href="diffpriv.html#sec:case-studies">6.4</a>, in combination with Appendix <a href="diffpriv.html#diffpriv-appendixb">B</a>, are recommended for organizational directors and principal investigators responsible for identifying where differential privacy is appropriate as part of a project or organization-level data-protection strategy. Appendices <a href="diffpriv.html#diffpriv-appendixa">A</a>, <a href="diffpriv.html#diffpriv-appendixb">B</a>, and <a href="diffpriv.html#diffpriv-appendixc">C</a> are recommended for those with a technical background aiming to design and deploy differential privacy addressing specific data dissemination requirements.</p>
 </div>
 <div id="sec:motivation-formal-guarantee-protect" class="section level3" number="6.1.2">
 <h3><span class="header-section-number">6.1.2</span> Motivation: Formal Guarantees are Needed to Protect Data against Growing Privacy Risks</h3>
@@ -1156,7 +1158,7 @@ Figure 6.4: Calibrating privacy and security controls
 <div id="what-complementary-and-alternative-controls-are-available-for-protecting-the-data" class="section level4" number="6.3.2.2">
 <h4><span class="header-section-number">6.3.2.2</span> What Complementary and Alternative Controls are Available for Protecting the Data?</h4>
 <p>As illustrated in Figure <a href="diffpriv.html#fig:dpfig4">6.4</a>, various controls can be complementary to differential privacy. Some examples include contractual approaches for enforcing purpose restrictions, vetting and oversight of analysts for the purpose of privacy budget allocation, and encryption and other information security restrictions on private databases, especially if now exposed to a different set of users through a publicly available differentially private interactive query mechanism. Other tools may be used as an alternative for purposes that differential privacy does not support, such as the role that access via a secure data enclave can play as part of a tiered access system.</p>
-<p>Further, a single mode of access will generally not be appropriate for the needs of all users. Different communities of users seek answers to different questions and may have different quality and accuracy requirements even when addressing the same question. It is therefore essential to understand end user usages of inferences and their implied utility and quality criteria (as discussed in Appendix <a href="diffpriv.html#diffpriv-apendixa">A</a>). An analyst should take these factors into account in particular when allocating the privacy budget across analyses and when selecting the specific interactive and static publication mechanisms to be included.</p>
+<p>Further, a single mode of access will generally not be appropriate for the needs of all users. Different communities of users seek answers to different questions and may have different quality and accuracy requirements even when addressing the same question. It is therefore essential to understand end user usages of inferences and their implied utility and quality criteria (as discussed in Appendix <a href="diffpriv.html#diffpriv-appendixa">A</a>). An analyst should take these factors into account in particular when allocating the privacy budget across analyses and when selecting the specific interactive and static publication mechanisms to be included.</p>
 <p>Tiered access will generally be necessary to accommodate a wide range of desired uses of the data. For a given set of data, access may be made available to different categories of users through different modes of release. Figure <a href="diffpriv.html#fig:dpfig4">6.4</a> demonstrates how controls can be selected at each tier. For example, data associated with potential harms that are only minor and fleeting could be released to the public after traditional statistical disclosure limitation techniques, such as aggregation and generalization, have transformed the data. Users who seek to obtain the full data set, including direct and indirect identifiers, would be required to submit an application to an institutional review board or other oversight body, and their use would be subject to the terms of a data use agreement. This approach makes it possible to calibrate data releases to the risk profile of a data set as well as specific uses intended by different data users. Figure <a href="diffpriv.html#fig:dpfig5">6.5</a> provides an example of such a tiered access model <span class="citation">(see also Sweeney, Crosas, and Bar-Sinai <a href="#ref-sweeney15datatags" role="doc-biblioref">2015</a>; Crosas <a href="#ref-crosas19datatags" role="doc-biblioref">2019</a>)</span>.</p>
 <div class="figure"><span id="fig:dpfig5"></span>
 <img src="assets/diffpriv/dp_tiered-access_web.png" alt="An example of a tiered access model" width="800" />
@@ -1179,7 +1181,7 @@ Figure 6.5: An example of a tiered access model
 <h2><span class="header-section-number">6.4</span> Case Studies</h2>
 <p>Differential privacy is a relatively new concept, first presented in the theoretical computer science literature in 2006 and now seeing early stages of application in real-world settings. This section provides short case studies on three implementations of differential privacy: the 2020 Decennial Census, the Opportunity Atlas, and the Dataverse Project. This discussion focuses on describing aspects of the context in which these differentially private solutions were developed, as well as the design choices that were made with respect to the relevant contextual factors.</p>
 <p>This selection of case studies, though limited by the small number of practical implementations of differential privacy to date, aims to reflect a range of different scenarios. The first case study involves a national statistical agency publishing statistical data products from a census, the second involves a team of researchers developing a web-based visualization tool for exploring sensitive administrative data analyzed as part of a research study, and the third describes the functionalities of a general-purpose differential privacy tool being developed for use by data providers and analysts who do not have expertise in differential privacy. Although none of these examples directly describe sharing data from sub-national agencies, they carry real-world lessons relevant to employing differential privacy in such contexts.</p>
-<p>Each of the case studies reflects one point in the space of design factors discussed in Section <a href="diffpriv.html#sec:aligning">6.3</a> and Appendix <a href="#diffpriv-appendixa">A</a>. These factors are summarized in Table <a href="diffpriv.html#tab:diffprivtable4">6.3</a>. The remainder of this section expands upon critical features of each case and their implications.</p>
+<p>Each of the case studies reflects one point in the space of design factors discussed in Section <a href="diffpriv.html#sec:aligning">6.3</a> and Appendix <a href="diffpriv.html#diffpriv-appendixa">A</a>. These factors are summarized in Table <a href="diffpriv.html#tab:diffprivtable4">6.3</a>. The remainder of this section expands upon critical features of each case and their implications.</p>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
@@ -1319,7 +1321,7 @@ Determined by data depositor.
 <p>At least a third of the data sets deposited in Dataverse are replication data and code associated with a published scholarly paper. With OpenDP, data depositors or owners could create a differentially private release on a sensitive data set, which could be used to computationally reproduce the results of the published paper while protecting the privacy of the original data set. In this case, like in Use Case 1 above, a data depositor would select a privacy-loss parameter through the OpenDP user interface and use OpenDP’s statistical query interface to select and run the statistics of choice to create the appropriate replication release. The differentially private replication release file would be made available in the data set and end users would be able to download it, while the original sensitive data set would be protected and not accessible by end users except through the existing processes as above.</p>
 <p><strong>3. Enable statistical analysis of sensitive data sets accessible through the repository</strong></p>
 <p>For additional flexibility, the data depositor of a sensitive data set could allow for any researcher (end user) to be able to run any statistic available through the OpenDP interface. In this case, the data depositor would configure the allocation of privacy-loss budgets through the OpenDP interface before releasing the data set. Once the data set is published, an end user would be able to click “explore” for the sensitive data file, and the OpenDP statistical query interface would open. The user would not have access to the original sensitive data file but would be able to run the statistics of their choice—up to the point that the established privacy-loss budget allows.</p>
-<p>Referring to some of the other design choices discussed in Appendix <a href="#diffpriv-appendixa">A</a>, the vision outlined above fits into the curator model of differential privacy, as researchers depositing data in the repository have typically already been trusted to collect the sensitive data. It is part of a tiered access model meant to augment rather than replace the existing methods of accessing restricted data. Use Cases 1 and 2 involve noninteractive releases, whereas Use Case 3 allows for interactive queries. Many of the other key choices associated with implementing differential privacy are left to the data depositor, who cannot be expected to have expertise in differential privacy. Thus, the software tools must provide a clear user interface to guide the depositor in their decisions. There should be a tutorial on the concepts of privacy loss, privacy–accuracy trade-offs, and budgeting, including recommended choices of privacy-loss parameter <span class="math inline">\(\varepsilon\)</span> according to different categories of data and sensitivity. The depositor should also be guided in defining the granularity of privacy appropriate for their data and the trade-offs between offering per-analyst budgets for interactive queries versus a global budget for all queries. Domain knowledge will be required of the depositor (and the analyst in Use Case 3) in deciding which statistics to release and which ones to prioritize for accuracy. For the research use cases described above, it will be important that the differentially private analyses offered provide uncertainty estimates whenever possible.</p>
+<p>Referring to some of the other design choices discussed in Appendix <a href="diffpriv.html#diffpriv-appendixa">A</a>, the vision outlined above fits into the curator model of differential privacy, as researchers depositing data in the repository have typically already been trusted to collect the sensitive data. It is part of a tiered access model meant to augment rather than replace the existing methods of accessing restricted data. Use Cases 1 and 2 involve noninteractive releases, whereas Use Case 3 allows for interactive queries. Many of the other key choices associated with implementing differential privacy are left to the data depositor, who cannot be expected to have expertise in differential privacy. Thus, the software tools must provide a clear user interface to guide the depositor in their decisions. There should be a tutorial on the concepts of privacy loss, privacy–accuracy trade-offs, and budgeting, including recommended choices of privacy-loss parameter <span class="math inline">\(\varepsilon\)</span> according to different categories of data and sensitivity. The depositor should also be guided in defining the granularity of privacy appropriate for their data and the trade-offs between offering per-analyst budgets for interactive queries versus a global budget for all queries. Domain knowledge will be required of the depositor (and the analyst in Use Case 3) in deciding which statistics to release and which ones to prioritize for accuracy. For the research use cases described above, it will be important that the differentially private analyses offered provide uncertainty estimates whenever possible.</p>
 </div>
 </div>
 <div id="about-the-authors-2" class="section level2 unnumbered" number="">
@@ -1340,7 +1342,7 @@ Determined by data depositor.
 </div>
 <div id="diffpriv-appendix" class="section level2 unnumbered" number="">
 <h2>Appendix</h2>
-<div id="diffpriv-apendixa" class="section level3 unnumbered" number="">
+<div id="diffpriv-appendixa" class="section level3 unnumbered" number="">
 <h3>Appendix A: Key Design Choices</h3>
 <p>This section identifies the key <em>design</em> choices that critically affect the use of differential privacy. It introduces the trade-offs that should be considered and decisions that must be made when implementing differential privacy. Since many of these choices have broad implications for other information lifecycle activities, such as record management and compliance, these topics are discussed in Appendix <a href="diffpriv.html#diffpriv-appendixb">B</a>.</p>
 <p>While there is no one-size-fits-all solution and it is impossible to summarize all of the literature related to the foundational research and applications in these areas, this overview is intended to help organizations consider a set of trade-offs and decision points critical to designing a differentially private system. These are decisions that should be made explicitly at the planning stage, as failing to do so will almost undoubtedly lead to challenges later.</p>
@@ -1386,7 +1388,7 @@ Determined by data depositor.
 </div>
 <div id="diffpriv-appendixb" class="section level3 unnumbered" number="">
 <h3>Appendix B: Implications for Compliance and Life Cycle Data Management</h3>
-<p>The design choices involving the use of differentially private analyses, discussed in Appendix <a href="#sec:key-choices">A</a>, potentially have broad implications for data curation, stewardship, management, and preservation, as well as regulatory compliance. For example, choosing a local model design (as described in Appendix <a href="diffpriv.html#sec:trust-local-vs-curator">A</a>) fundamentally affects not only how data are collected. It also fundamentally limits the way the design can be linked with other data, the extent to which the information collected can be reused, and, potentially, the compliance requirements with respect to data storage and retention. This section discusses the implications of the key design across the information life cycle.</p>
+<p>The design choices involving the use of differentially private analyses, discussed in Appendix <a href="diffpriv.html#diffpriv-appendixa">A</a>, potentially have broad implications for data curation, stewardship, management, and preservation, as well as regulatory compliance. For example, choosing a local model design (as described in Appendix <a href="diffpriv.html#sec:trust-local-vs-curator">A</a>) fundamentally affects not only how data are collected. It also fundamentally limits the way the design can be linked with other data, the extent to which the information collected can be reused, and, potentially, the compliance requirements with respect to data storage and retention. This section discusses the implications of the key design across the information life cycle.</p>
 <p>This chapter uses the information life cycle model described in <span class="citation">Altman et al. (<a href="#ref-altman2015" role="doc-biblioref">2015</a>)</span>—which is adapted for the uses of privacy engineering from the more generic model developed by <span class="citation">Higgins (<a href="#ref-higgins2008dcc" role="doc-biblioref">2008</a>)</span> to systematically trace design,—and the implications of the design choices described above for data collection, curation, preservation, reuse, and compliance.</p>
 <p>The stages of the information life cycle model are defined generally as follows:</p>
 <ul>
@@ -2253,9 +2255,9 @@ Utility evaluation
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
+"github": true,
 "facebook": false,
-"twitter": false,
+"twitter": true,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
@@ -2279,7 +2281,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.epub"],
+"download": [["http://admindatahandbook.mit.edu/testing/#print", "PDF"], ["http://admindatahandbook.mit.edu/testing/#purchase", "Book"], ["http://admindatahandbook.mit.edu/testing/#epub", "Epub"]],
 "toc": {
 "collapse": "section",
 "scroll_highlight": true

@@ -1,7 +1,7 @@
 ---
 title: "Handbook on Using Administrative Data for Research and Evidence-based Policy"
 author: "Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber"
-date: "2021-02-18"
+date: "2021-01-01"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -9,6 +9,8 @@ bibliography: [packages.bib,ideahandbook.bib,manual.bib] #Sloan-JPAL.bib assets/
 csl: chicago-mod.csl
 link-citations: yes
 github-repo: admindatahandbook/book
+favicon: "assets/favicon.ico"
+cover-image: "assets/images/webcover.png"
 description: Handbook on Using Administrative Data for Research and Evidence-based Policy
 always_allow_html: true
 ---
@@ -2547,7 +2549,7 @@ Alternatively, if the data controller is aware of all potential auxiliary inform
 
 As illustrated in Figure \@ref(fig:dpfig4), various controls can be complementary to differential privacy. Some examples include contractual approaches for enforcing purpose restrictions, vetting and oversight of analysts for the purpose of privacy budget allocation, and encryption and other information security restrictions on private databases, especially if now exposed to a different set of users through a publicly available differentially private interactive query mechanism. Other tools may be used as an alternative for purposes that differential privacy does not support, such as the role that access via a secure data enclave can play as part of a tiered access system.
 
-Further, a single mode of access will generally not be appropriate for the needs of all users. Different communities of users seek answers to different questions and may have different quality and accuracy requirements even when addressing the same question. It is therefore essential to understand end user usages of inferences and their implied utility and quality criteria (as discussed in Appendix [A](#diffpriv-apendixa)). An analyst should take these factors into account in particular when allocating the privacy budget across analyses and when selecting the specific interactive and static publication mechanisms to be included.
+Further, a single mode of access will generally not be appropriate for the needs of all users. Different communities of users seek answers to different questions and may have different quality and accuracy requirements even when addressing the same question. It is therefore essential to understand end user usages of inferences and their implied utility and quality criteria (as discussed in Appendix [A](#diffpriv-appendixa)). An analyst should take these factors into account in particular when allocating the privacy budget across analyses and when selecting the specific interactive and static publication mechanisms to be included.
 
 Tiered access will generally be necessary to accommodate a wide range of desired uses of the data. For a given set of data, access may be made available to different categories of users through different modes of release. Figure \@ref(fig:dpfig4) demonstrates how controls can be selected at each tier. For example, data associated with potential harms that are only minor and fleeting could be released to the public after traditional statistical disclosure limitation techniques, such as aggregation and generalization, have transformed the data. Users who seek to obtain the full data set, including direct and indirect identifiers, would be required to submit an application to an institutional review board or other oversight body, and their use would be subject to the terms of a data use agreement. This approach makes it possible to calibrate data releases to the risk profile of a data set as well as specific uses intended by different data users. Figure \@ref(fig:dpfig5) provides an example of such a tiered access model [see also @sweeney15datatags; @crosas19datatags].
 
@@ -2888,7 +2890,7 @@ $1+\varepsilon \approx e^\varepsilon$ is that posterior beliefs can be expressed
 
 ## Appendix {- #diffpriv-appendix}
 
-### Appendix A: Key Design Choices {- #diffpriv-apendixa}
+### Appendix A: Key Design Choices {- #diffpriv-appendixa}
 
 This section identifies the key *design* choices that critically affect the use of differential privacy. It introduces the trade-offs that should be considered and decisions that must be made when implementing differential privacy. Since many of these choices have broad implications for other information lifecycle activities, such as record management and compliance, these topics are discussed in Appendix [B](#diffpriv-appendixb).
 
@@ -2954,7 +2956,7 @@ The use cases described in Section \@ref(sec:case-studies) illustrate some of th
 
 ### Appendix B: Implications for Compliance and Life Cycle Data Management {- #diffpriv-appendixb}
 
-The design choices involving the use of differentially private analyses, discussed in Appendix [A](#sec:key-choices), potentially have broad implications for data curation, stewardship, management, and preservation, as well as regulatory compliance. For example, choosing a local model design (as described in Appendix [A](#sec:trust-local-vs-curator)) fundamentally affects not only how data are collected. It also fundamentally limits the way the design can be linked with other data, the extent to which the information collected can be reused, and, potentially, the compliance requirements with respect to data storage and retention. This section discusses the implications of the key design across the information life cycle.
+The design choices involving the use of differentially private analyses, discussed in Appendix [A](#diffpriv-appendixa), potentially have broad implications for data curation, stewardship, management, and preservation, as well as regulatory compliance. For example, choosing a local model design (as described in Appendix [A](#sec:trust-local-vs-curator)) fundamentally affects not only how data are collected. It also fundamentally limits the way the design can be linked with other data, the extent to which the information collected can be reused, and, potentially, the compliance requirements with respect to data storage and retention. This section discusses the implications of the key design across the information life cycle.
 
 This chapter uses the information life cycle model described in @altman2015---which is adapted for the uses of privacy engineering from the more generic model developed by @higgins2008dcc to systematically trace design,---and the implications of the design choices described above for data collection, curation, preservation, reuse, and compliance.
 
