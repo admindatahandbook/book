@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>14 Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME) | Handbook on Using Administrative Data for Research and Evidence-based Policy</title>
+  <meta name="description" content="14 Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME) | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="14 Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME) | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="assets/images/webcover.png" />
+  <meta property="og:description" content="14 Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME) | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="github-repo" content="admindatahandbook/book" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="14 Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME) | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  
+  <meta name="twitter:description" content="14 Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME) | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="twitter:image" content="assets/images/webcover.png" />
+
+<meta name="author" content="Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber" />
+
+
+<meta name="date" content="2021-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="cct.html"/>
+<link rel="next" href="imf.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2579240-16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2579240-16');
+</script>
+
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Show citation to this chapter";
+  }
+} 
+
+</script>
+
+
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/toc.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/html.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level=""><a href="https://admindatahandbook.mit.edu/"><i class="fa fa-home"></i>Home page</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to the Handbook</a></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About the Editors</a></li>
+<li class="chapter" data-level="" data-path="handbook-acknowledgements.html"><a href="handbook-acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Using Administrative Data for Research and Evidence-Based Policy: An Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#the-potential-of-administrative-data-for-research-and-policymaking"><i class="fa fa-check"></i><b>1.1</b> The Potential of Administrative Data for Research and Policymaking</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#why-is-the-analysis-of-administrative-data-still-relatively-rare"><i class="fa fa-check"></i><b>1.2</b> Why is the Analysis of Administrative Data Still Relatively Rare?</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#this-handbook"><i class="fa fa-check"></i><b>1.3</b> This Handbook</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#further-reading"><i class="fa fa-check"></i><b>1.4</b> Further Reading</a></li>
+</ul></li>
+<li class="part"><span><b>I Special Topics</b></span></li>
+<li class="chapter" data-level="2" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>2</b> Physically Protecting Sensitive Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="security.html"><a href="security.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="security.html"><a href="security.html#types-of-security-threats"><i class="fa fa-check"></i><b>2.2</b> Types of Security Threats</a></li>
+<li class="chapter" data-level="2.3" data-path="security.html"><a href="security.html#technical-features-of-data-access-mechanisms"><i class="fa fa-check"></i><b>2.3</b> Technical Features of Data Access Mechanisms</a></li>
+<li class="chapter" data-level="2.4" data-path="security.html"><a href="security.html#typical-access-mechanisms"><i class="fa fa-check"></i><b>2.4</b> Typical Access Mechanisms</a></li>
+<li class="chapter" data-level="2.5" data-path="security.html"><a href="security.html#five-aspects-of-data-access-mechanisms"><i class="fa fa-check"></i><b>2.5</b> Five Aspects of Data Access Mechanisms</a></li>
+<li class="chapter" data-level="2.6" data-path="security.html"><a href="security.html#specific-data-access-mechanisms-along-the-five-aspects"><i class="fa fa-check"></i><b>2.6</b> Specific Data Access Mechanisms Along the Five Aspects</a></li>
+<li class="chapter" data-level="2.7" data-path="security.html"><a href="security.html#guidance-for-data-providers-and-researchers"><i class="fa fa-check"></i><b>2.7</b> Guidance for Data Providers and Researchers</a></li>
+<li class="chapter" data-level="" data-path="security.html"><a href="security.html#about-the-authors"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dua.html"><a href="dua.html"><i class="fa fa-check"></i><b>3</b> Model Data Use Agreements: A Practical Guide</a><ul>
+<li class="chapter" data-level="3.1" data-path="dua.html"><a href="dua.html#overview"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
+<li class="chapter" data-level="3.2" data-path="dua.html"><a href="dua.html#negotiating-the-data-use-request"><i class="fa fa-check"></i><b>3.2</b> Negotiating the Data Use Request</a></li>
+<li class="chapter" data-level="3.3" data-path="dua.html"><a href="dua.html#compliance"><i class="fa fa-check"></i><b>3.3</b> Compliance</a></li>
+<li class="chapter" data-level="3.4" data-path="dua.html"><a href="dua.html#summary"><i class="fa fa-check"></i><b>3.4</b> Summary</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#supplemental-materials"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#dua-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="irb.html"><a href="irb.html"><i class="fa fa-check"></i><b>4</b> Collaborating with the Institutional Review Board (IRB)</a><ul>
+<li class="chapter" data-level="4.1" data-path="irb.html"><a href="irb.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="irb.html"><a href="irb.html#what-is-the-irb"><i class="fa fa-check"></i><b>4.2</b> What is the IRB</a></li>
+<li class="chapter" data-level="4.3" data-path="irb.html"><a href="irb.html#irb-international"><i class="fa fa-check"></i><b>4.3</b> IRBs and International Research</a></li>
+<li class="chapter" data-level="4.4" data-path="irb.html"><a href="irb.html#what-an-irb-does-not-do"><i class="fa fa-check"></i><b>4.4</b> What an IRB Does Not Do</a></li>
+<li class="chapter" data-level="4.5" data-path="irb.html"><a href="irb.html#what-irb-does"><i class="fa fa-check"></i><b>4.5</b> What the IRB Will Do to Ensure the Protection of Participants</a></li>
+<li class="chapter" data-level="4.6" data-path="irb.html"><a href="irb.html#what-irb-considers"><i class="fa fa-check"></i><b>4.6</b> Considerations of the IRB</a></li>
+<li class="chapter" data-level="4.7" data-path="irb.html"><a href="irb.html#strategies-for-communicating-with-the-irb"><i class="fa fa-check"></i><b>4.7</b> Strategies for Communicating With the IRB</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#supplemental-materials-1"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#about-the-author-1"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#irb-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discavoid.html"><a href="discavoid.html"><i class="fa fa-check"></i><b>5</b> Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods</a><ul>
+<li class="chapter" data-level="5.1" data-path="discavoid.html"><a href="discavoid.html#purpose-of-statistical-disclosure-limitation-methods-definitions-and-context"><i class="fa fa-check"></i><b>5.1</b> Purpose of Statistical Disclosure Limitation Methods: Definitions and Context</a></li>
+<li class="chapter" data-level="5.2" data-path="discavoid.html"><a href="discavoid.html#methods"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="discavoid.html"><a href="discavoid.html#metrics"><i class="fa fa-check"></i><b>5.3</b> Metrics</a></li>
+<li class="chapter" data-level="5.4" data-path="discavoid.html"><a href="discavoid.html#tools"><i class="fa fa-check"></i><b>5.4</b> Tools</a></li>
+<li class="chapter" data-level="5.5" data-path="discavoid.html"><a href="discavoid.html#conclusion"><i class="fa fa-check"></i><b>5.5</b> Conclusion</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#supplemental-materials-2"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#about-the-authors-1"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="diffpriv.html"><a href="diffpriv.html"><i class="fa fa-check"></i><b>6</b> Designing Access with Differential Privacy</a><ul>
+<li class="chapter" data-level="6.1" data-path="diffpriv.html"><a href="diffpriv.html#sec:dp-intro"><i class="fa fa-check"></i><b>6.1</b> Introduction and Overview</a></li>
+<li class="chapter" data-level="6.2" data-path="diffpriv.html"><a href="diffpriv.html#sec:what-dp-protects"><i class="fa fa-check"></i><b>6.2</b> How Differential Privacy Protects Privacy</a></li>
+<li class="chapter" data-level="6.3" data-path="diffpriv.html"><a href="diffpriv.html#sec:aligning"><i class="fa fa-check"></i><b>6.3</b> Aligning Risks, Controls, and Uses: Where Is the Use of Differential Privacy Appropriate?</a></li>
+<li class="chapter" data-level="6.4" data-path="diffpriv.html"><a href="diffpriv.html#sec:case-studies"><i class="fa fa-check"></i><b>6.4</b> Case Studies</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#about-the-authors-2"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#disclaimer-1"><i class="fa fa-check"></i>Disclaimer</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#acknowledgements-1"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#diffpriv-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="part"><span><b>II Case Studies</b></span></li>
+<li class="chapter" data-level="7" data-path="iab.html"><a href="iab.html"><i class="fa fa-check"></i><b>7</b> Institute for Employment Research, Germany: International Access to Labor Market Data</a><ul>
+<li class="chapter" data-level="7.1" data-path="iab.html"><a href="iab.html#summary-1"><i class="fa fa-check"></i><b>7.1</b> Summary</a></li>
+<li class="chapter" data-level="7.2" data-path="iab.html"><a href="iab.html#introduction-2"><i class="fa fa-check"></i><b>7.2</b> Introduction</a></li>
+<li class="chapter" data-level="7.3" data-path="iab.html"><a href="iab.html#iab-usable"><i class="fa fa-check"></i><b>7.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="7.4" data-path="iab.html"><a href="iab.html#legal-and-institutional-framework"><i class="fa fa-check"></i><b>7.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="7.5" data-path="iab.html"><a href="iab.html#iab-fivesafes"><i class="fa fa-check"></i><b>7.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="7.6" data-path="iab.html"><a href="iab.html#data-life-cycle-and-replicability"><i class="fa fa-check"></i><b>7.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="7.7" data-path="iab.html"><a href="iab.html#sustainability-and-continued-success"><i class="fa fa-check"></i><b>7.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="iab.html"><a href="iab.html#supplemental-materials-3"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="iab.html"><a href="iab.html#about-the-authors-3"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="olda.html"><a href="olda.html"><i class="fa fa-check"></i><b>8</b> Ohio and the Longitudinal Data Archive: Mutually Beneficial Partnerships Between State Government and Researchers</a><ul>
+<li class="chapter" data-level="8.1" data-path="olda.html"><a href="olda.html#summary-2"><i class="fa fa-check"></i><b>8.1</b> Summary</a></li>
+<li class="chapter" data-level="8.2" data-path="olda.html"><a href="olda.html#introduction-3"><i class="fa fa-check"></i><b>8.2</b> Introduction</a></li>
+<li class="chapter" data-level="8.3" data-path="olda.html"><a href="olda.html#making-data-usable-for-research"><i class="fa fa-check"></i><b>8.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="8.4" data-path="olda.html"><a href="olda.html#legal-and-institutional-framework-1"><i class="fa fa-check"></i><b>8.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="8.5" data-path="olda.html"><a href="olda.html#protection-of-sensitive-and-personal-data-the-five-safes-framework"><i class="fa fa-check"></i><b>8.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="8.6" data-path="olda.html"><a href="olda.html#data-life-cycle-and-reproducibility"><i class="fa fa-check"></i><b>8.6</b> Data Life Cycle and Reproducibility</a></li>
+<li class="chapter" data-level="8.7" data-path="olda.html"><a href="olda.html#sustainability-and-continued-success-1"><i class="fa fa-check"></i><b>8.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#supplemental-materials-4"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#about-the-author-2"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#olda-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="nbirdt.html"><a href="nbirdt.html"><i class="fa fa-check"></i><b>9</b> New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT</a><ul>
+<li class="chapter" data-level="9.1" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-summ"><i class="fa fa-check"></i><b>9.1</b> Summary</a></li>
+<li class="chapter" data-level="9.2" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-intro"><i class="fa fa-check"></i><b>9.2</b> Introduction</a></li>
+<li class="chapter" data-level="9.3" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-making"><i class="fa fa-check"></i><b>9.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="9.4" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-framework"><i class="fa fa-check"></i><b>9.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="9.5" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-legalaccess"><i class="fa fa-check"></i><b>9.5</b> Legal Framework for Granting Data Access</a></li>
+<li class="chapter" data-level="9.6" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-fivesafes"><i class="fa fa-check"></i><b>9.6</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="9.7" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-replicability"><i class="fa fa-check"></i><b>9.7</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="9.8" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-sustain"><i class="fa fa-check"></i><b>9.8</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="nbirdt.html"><a href="nbirdt.html#supplemental-materials-5"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="nbirdt.html"><a href="nbirdt.html#about-the-authors-4"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pcri.html"><a href="pcri.html"><i class="fa fa-check"></i><b>10</b> The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry</a><ul>
+<li class="chapter" data-level="10.1" data-path="pcri.html"><a href="pcri.html#summary-3"><i class="fa fa-check"></i><b>10.1</b> Summary</a></li>
+<li class="chapter" data-level="10.2" data-path="pcri.html"><a href="pcri.html#introduction-4"><i class="fa fa-check"></i><b>10.2</b> Introduction</a></li>
+<li class="chapter" data-level="10.3" data-path="pcri.html"><a href="pcri.html#making-data-useable-for-research"><i class="fa fa-check"></i><b>10.3</b> Making Data Useable for Research</a></li>
+<li class="chapter" data-level="10.4" data-path="pcri.html"><a href="pcri.html#legal-and-institutional-framework-2"><i class="fa fa-check"></i><b>10.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="10.5" data-path="pcri.html"><a href="pcri.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-1"><i class="fa fa-check"></i><b>10.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="10.6" data-path="pcri.html"><a href="pcri.html#data-life-cycle-and-replicability-1"><i class="fa fa-check"></i><b>10.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="10.7" data-path="pcri.html"><a href="pcri.html#sustainability-and-continued-success-2"><i class="fa fa-check"></i><b>10.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#about-the-authors-5"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#acknowledgements-2"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#pcri-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ahc.html"><a href="ahc.html"><i class="fa fa-check"></i><b>11</b> Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support</a><ul>
+<li class="chapter" data-level="11.1" data-path="ahc.html"><a href="ahc.html#summary-4"><i class="fa fa-check"></i><b>11.1</b> Summary</a></li>
+<li class="chapter" data-level="11.2" data-path="ahc.html"><a href="ahc.html#introduction-5"><i class="fa fa-check"></i><b>11.2</b> Introduction</a></li>
+<li class="chapter" data-level="11.3" data-path="ahc.html"><a href="ahc.html#legal-and-institutional-framework-3"><i class="fa fa-check"></i><b>11.3</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="11.4" data-path="ahc.html"><a href="ahc.html#ahc-making-data-usable"><i class="fa fa-check"></i><b>11.4</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="11.5" data-path="ahc.html"><a href="ahc.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-2"><i class="fa fa-check"></i><b>11.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="11.6" data-path="ahc.html"><a href="ahc.html#data-life-cycle-and-replicability-2"><i class="fa fa-check"></i><b>11.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="11.7" data-path="ahc.html"><a href="ahc.html#sustainability-and-continued-success-3"><i class="fa fa-check"></i><b>11.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#supplemental-materials-6"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#about-the-authors-6"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#acknowledgements-3"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sfusd.html"><a href="sfusd.html"><i class="fa fa-check"></i><b>12</b> The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes</a><ul>
+<li class="chapter" data-level="12.1" data-path="sfusd.html"><a href="sfusd.html#summary-5"><i class="fa fa-check"></i><b>12.1</b> Summary</a></li>
+<li class="chapter" data-level="12.2" data-path="sfusd.html"><a href="sfusd.html#introduction-6"><i class="fa fa-check"></i><b>12.2</b> Introduction</a></li>
+<li class="chapter" data-level="12.3" data-path="sfusd.html"><a href="sfusd.html#making-data-usable-for-research-1"><i class="fa fa-check"></i><b>12.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="12.4" data-path="sfusd.html"><a href="sfusd.html#legal-and-institutional-framework-4"><i class="fa fa-check"></i><b>12.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="12.5" data-path="sfusd.html"><a href="sfusd.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-3"><i class="fa fa-check"></i><b>12.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="12.6" data-path="sfusd.html"><a href="sfusd.html#data-life-cycle-and-replicability-3"><i class="fa fa-check"></i><b>12.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="12.7" data-path="sfusd.html"><a href="sfusd.html#sustainability-and-continued-success-4"><i class="fa fa-check"></i><b>12.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="12.8" data-path="sfusd.html"><a href="sfusd.html#concluding-remarks-1"><i class="fa fa-check"></i><b>12.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#supplemental-materials-7"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#about-the-authors-7"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#sfusd-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="cct.html"><a href="cct.html"><i class="fa fa-check"></i><b>13</b> City of Cape Town, South Africa: Aligning Internal Data Capabilities with External Research Partnerships</a><ul>
+<li class="chapter" data-level="13.1" data-path="cct.html"><a href="cct.html#summary-6"><i class="fa fa-check"></i><b>13.1</b> Summary</a></li>
+<li class="chapter" data-level="13.2" data-path="cct.html"><a href="cct.html#introduction-7"><i class="fa fa-check"></i><b>13.2</b> Introduction</a></li>
+<li class="chapter" data-level="13.3" data-path="cct.html"><a href="cct.html#making-data-usable-for-research-2"><i class="fa fa-check"></i><b>13.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="13.4" data-path="cct.html"><a href="cct.html#legal-and-institutional-framework-5"><i class="fa fa-check"></i><b>13.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="13.5" data-path="cct.html"><a href="cct.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-4"><i class="fa fa-check"></i><b>13.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="13.6" data-path="cct.html"><a href="cct.html#data-life-cycle-and-reproducibility-1"><i class="fa fa-check"></i><b>13.6</b> Data Life Cycle and Reproducibility</a></li>
+<li class="chapter" data-level="13.7" data-path="cct.html"><a href="cct.html#sustainability-and-continued-success-5"><i class="fa fa-check"></i><b>13.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="13.8" data-path="cct.html"><a href="cct.html#concluding-remarks-2"><i class="fa fa-check"></i><b>13.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#supplemental-materials-8"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#about-the-authors-8"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#acknowledgements-4"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="dime.html"><a href="dime.html"><i class="fa fa-check"></i><b>14</b> Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME)</a><ul>
+<li class="chapter" data-level="14.1" data-path="dime.html"><a href="dime.html#summary-7"><i class="fa fa-check"></i><b>14.1</b> Summary</a></li>
+<li class="chapter" data-level="14.2" data-path="dime.html"><a href="dime.html#introduction-8"><i class="fa fa-check"></i><b>14.2</b> Introduction</a></li>
+<li class="chapter" data-level="14.3" data-path="dime.html"><a href="dime.html#dime-making-data-usable"><i class="fa fa-check"></i><b>14.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="14.4" data-path="dime.html"><a href="dime.html#legal-and-institutional-framework-6"><i class="fa fa-check"></i><b>14.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="14.5" data-path="dime.html"><a href="dime.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-5"><i class="fa fa-check"></i><b>14.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="14.6" data-path="dime.html"><a href="dime.html#data-life-cycle-and-replicability-4"><i class="fa fa-check"></i><b>14.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="14.7" data-path="dime.html"><a href="dime.html#sustainability-and-continued-success-6"><i class="fa fa-check"></i><b>14.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="14.8" data-path="dime.html"><a href="dime.html#concluding-remarks-3"><i class="fa fa-check"></i><b>14.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="dime.html"><a href="dime.html#supplemental-materials-9"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="dime.html"><a href="dime.html#about-the-authors-9"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="imf.html"><a href="imf.html"><i class="fa fa-check"></i><b>15</b> The Use of Administrative Data at the International Monetary Fund</a><ul>
+<li class="chapter" data-level="15.1" data-path="imf.html"><a href="imf.html#summary-8"><i class="fa fa-check"></i><b>15.1</b> Summary</a></li>
+<li class="chapter" data-level="15.2" data-path="imf.html"><a href="imf.html#introduction-9"><i class="fa fa-check"></i><b>15.2</b> Introduction</a></li>
+<li class="chapter" data-level="15.3" data-path="imf.html"><a href="imf.html#imf-legal-framework"><i class="fa fa-check"></i><b>15.3</b> Legal Framework</a></li>
+<li class="chapter" data-level="15.4" data-path="imf.html"><a href="imf.html#making-data-usable"><i class="fa fa-check"></i><b>15.4</b> Making Data Usable</a></li>
+<li class="chapter" data-level="15.5" data-path="imf.html"><a href="imf.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-6"><i class="fa fa-check"></i><b>15.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="15.6" data-path="imf.html"><a href="imf.html#sustainability-and-continued-success-7"><i class="fa fa-check"></i><b>15.6</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="15.7" data-path="imf.html"><a href="imf.html#concluding-remarks-4"><i class="fa fa-check"></i><b>15.7</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="imf.html"><a href="imf.html#about-the-authors-10"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="imf.html"><a href="imf.html#disclaimer-2"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="indonesia.html"><a href="indonesia.html"><i class="fa fa-check"></i><b>16</b> Using Administrative Data to Improve Social Protection in Indonesia</a><ul>
+<li class="chapter" data-level="16.1" data-path="indonesia.html"><a href="indonesia.html#summary-9"><i class="fa fa-check"></i><b>16.1</b> Summary</a></li>
+<li class="chapter" data-level="16.2" data-path="indonesia.html"><a href="indonesia.html#indonesia-admin-data-implement-monitor"><i class="fa fa-check"></i><b>16.2</b> The Use of Administrative Data to Implement and Monitor Experimental Treatments</a></li>
+<li class="chapter" data-level="16.3" data-path="indonesia.html"><a href="indonesia.html#using-administrative-data-to-measure-outcomes"><i class="fa fa-check"></i><b>16.3</b> Using Administrative Data to Measure Outcomes</a></li>
+<li class="chapter" data-level="16.4" data-path="indonesia.html"><a href="indonesia.html#studying-the-collection-of-administrative-data-itself"><i class="fa fa-check"></i><b>16.4</b> Studying the Collection of Administrative Data Itself</a></li>
+<li class="chapter" data-level="16.5" data-path="indonesia.html"><a href="indonesia.html#concluding-remarks-5"><i class="fa fa-check"></i><b>16.5</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#about-the-authors-11"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#acknowledgements-5"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#indonesia-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="massachusetts.html"><a href="massachusetts.html"><i class="fa fa-check"></i><b>17</b> Case Study: Evaluating a Rental Assistance Program</a><ul>
+<li class="chapter" data-level="17.1" data-path="massachusetts.html"><a href="massachusetts.html#summary-10"><i class="fa fa-check"></i><b>17.1</b> Summary</a></li>
+<li class="chapter" data-level="17.2" data-path="massachusetts.html"><a href="massachusetts.html#introduction-10"><i class="fa fa-check"></i><b>17.2</b> Introduction</a></li>
+<li class="chapter" data-level="17.3" data-path="massachusetts.html"><a href="massachusetts.html#legal-and-institutional-framework-7"><i class="fa fa-check"></i><b>17.3</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="17.4" data-path="massachusetts.html"><a href="massachusetts.html#protection-of-sensitive-and-personal-data"><i class="fa fa-check"></i><b>17.4</b> Protection of Sensitive and Personal Data</a></li>
+<li class="chapter" data-level="17.5" data-path="massachusetts.html"><a href="massachusetts.html#sustainability-and-continued-success-8"><i class="fa fa-check"></i><b>17.5</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="17.6" data-path="massachusetts.html"><a href="massachusetts.html#about-the-author-3"><i class="fa fa-check"></i><b>17.6</b> About the Author</a></li>
+<li class="chapter" data-level="17.7" data-path="massachusetts.html"><a href="massachusetts.html#references"><i class="fa fa-check"></i><b>17.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="puertorico.html"><a href="puertorico.html"><i class="fa fa-check"></i><b>18</b> Challenges to Administrative Data in Puerto Rico during COVID-19</a><ul>
+<li class="chapter" data-level="18.1" data-path="puertorico.html"><a href="puertorico.html#summary-11"><i class="fa fa-check"></i><b>18.1</b> Summary</a></li>
+<li class="chapter" data-level="18.2" data-path="puertorico.html"><a href="puertorico.html#introduction-11"><i class="fa fa-check"></i><b>18.2</b> Introduction</a></li>
+<li class="chapter" data-level="18.3" data-path="puertorico.html"><a href="puertorico.html#evaluation-of-edugespro"><i class="fa fa-check"></i><b>18.3</b> Evaluation of EDUGESPRO</a></li>
+<li class="chapter" data-level="18.4" data-path="puertorico.html"><a href="puertorico.html#identifying-solutions-to-data-disruptions"><i class="fa fa-check"></i><b>18.4</b> Identifying Solutions to Data Disruptions</a></li>
+<li class="chapter" data-level="18.5" data-path="puertorico.html"><a href="puertorico.html#conclusions"><i class="fa fa-check"></i><b>18.5</b> Conclusions</a></li>
+<li class="chapter" data-level="18.6" data-path="puertorico.html"><a href="puertorico.html#questions"><i class="fa fa-check"></i><b>18.6</b> Questions</a></li>
+<li class="chapter" data-level="18.7" data-path="puertorico.html"><a href="puertorico.html#about-the-authors-12"><i class="fa fa-check"></i><b>18.7</b> About the Authors</a></li>
+<li class="chapter" data-level="18.8" data-path="puertorico.html"><a href="puertorico.html#references-1"><i class="fa fa-check"></i><b>18.8</b> References</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html"><i class="fa fa-check"></i>Evolution of the Handbook and Contributing</a><ul>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#availability"><i class="fa fa-check"></i>Availability</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#contributions"><i class="fa fa-check"></i>Contributions</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#content-format-and-style-guidelines"><i class="fa fa-check"></i>Content, Format, and Style Guidelines</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#versioning"><i class="fa fa-check"></i>Versioning</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#case-study-template"><i class="fa fa-check"></i>Case Study Template</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html"><i class="fa fa-check"></i>Third-party Licenses</a><ul>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
+</ul></li>
+<li class="divider"></li>
+<li class="copyright"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber.</li>
+<li class="copyright">Individual chapters ©️ by their authors or as noted.</li>
+<li class="copyright"><a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Handbook on Using Administrative Data for Research and Evidence-based Policy</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="dime" class="section level1">
+<h1><span class="header-section-number">14</span> Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME)</h1>
+<em>Arianna Legovini (World Bank)</em><br />
+<em>Maria Ruth Jones (World Bank)</em><br />
+
+<div id="citationLink">
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a>
+</div>
+<div id="myCitation" style="display: none;">
+Legovini, Arianna, and Maria Ruth Jones. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Arianna Legovini, Maria Ruth Jones. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span>
+</div>
+<div id="summary-7" class="section level2">
+<h2><span class="header-section-number">14.1</span> Summary</h2>
+<p>DIME evaluates impact. Evaluating impact is a good organizing principle for constituting high-quality data sets. It helps researchers structure the content and characteristics of data sets to enable policy analysis. This is not the case for administrative data, which are designed to monitor processes. The vector of variables and the selection of observations into administrative data can restrict its use for analysis. Low research capacity in government agencies further limits the use of administrative data even for its intended purpose. This chapter describes how the Development Impact Evaluation <a href="https://www.worldbank.org/en/research/dime">DIME</a><a href="#fn288" class="footnote-ref" id="fnref288"><sup>288</sup></a> department of the World Bank combines an evaluative and capacity-building approach to secure access to existing administrative data, then fuses it and integrates it with other existing or newly collected data, to make administrative data analysis-ready and provide added value to country clients.</p>
+<p>As a global research program, DIME provides tailored impact evaluation services to governments. Each set of services support governments in conceptualizing policies and programs, developing data plans, conducting field experiments to guide mid-course corrections, and evaluating the impact of policy interventions in the medium to longer term. With about 200 long-term collaborations with government agencies across sixty countries, DIME works with governments to develop the data infrastructure and know-how to improve the evidence-base for public policy over time. In partnership with about thirty multilateral and bilateral organizations, DIME also invests in transforming the way development finance is used.</p>
+<p>DIME uses administrative data across its thematic programs: economic transformation, public sector governance, infrastructure and climate change, fragility and conflict, and gender. Among these, administrative data features most prominently in public sector governance programs. This is because the recent investments countries have made in their e-government systems are generating a massive amount of transaction-level data. DIME’s multi-country justice program, Data and Evidence for Justice Reform (DE JURE), leverages investments in smart courts and associated data systems to increase the economies of scale of knowledge generation on the quality and efficiency of judicial proceedings <span class="citation">(World Bank Group <a href="#ref-worldbankgroup2020" role="doc-biblioref">2020</a><a href="#ref-worldbankgroup2020" role="doc-biblioref">a</a>)</span>. Similarly, ieProcure accesses data from e-procurement systems to study the economics of public procurement and ways to improve the quality-to-cost ratio of procured goods and services. These programs develop analytical tools that can be adapted to different country contexts with the aim to support a tailored experimental research agenda in each context.</p>
+<p>In country programs, DIME’s use of administrative data leverages economies of scope and partnerships across agencies in different sectors. The researchers develop spatially integrated, cross-sector data infrastructure and research to help optimize government economic policy, planning, and evaluation functions. The administrative data included in these data sets can include data from land registries, road networks, infrastructure investments, tax, energy billing, or social transfers. Administrative data are complemented with an array of other data sources—survey, census, remote sensing, and crowdsourcing—to create multi-sector, georeferenced data sets, maps, and dashboards that are tailored to each specific country context and policy interest. These data sets can be augmented over time to respond to new and evolving economic analysis needs. The Rwanda case is described below <span class="citation">(World Bank Group <a href="#ref-worldbankgroup2020b" role="doc-biblioref">2020</a><a href="#ref-worldbankgroup2020b" role="doc-biblioref">c</a>)</span>.</p>
+<p>When an administrative data system does not exist or is not yet in digital format, DIME invests in piloting digital systems that can later be scaled up by government. The first experience working with the justice sector, for example, was in the context of the Dakar courts in Senegal where the research team digitized massive quantities of paper records to identify bottlenecks in the legal chain and measure the impacts of a legal reform on procedural efficiency. The patient safety and road safety impact evaluations in Kenya provide examples of digital pilots.</p>
+<p>This chapter will describe how DIME generates demand from government agencies and supplies them with research services that augment their data, program management, and policy functions. It presents examples from the DIME portfolio that demonstrate a spectrum of administrative data usage. It ranges from developing a pilot administrative data system, to digitizing paper-based administrative data, to leveraging existing cross-sector administrative data to develop a country data set, and to developing sector-specific data sets across multiple countries. In all cases, the aim is to establish capabilities for impact evaluation analysis and investing in data as a public good to enable greater speed and frequency of policy experimentation and knowledge generation. These capabilities include long-term client relationships and local capacities that put knowledge into action.</p>
+</div>
+<div id="introduction-8" class="section level2">
+<h2><span class="header-section-number">14.2</span> Introduction</h2>
+<div id="motivation-and-background-5" class="section level3">
+<h3><span class="header-section-number">14.2.1</span> Motivation and Background</h3>
+<p>The experience in DIME shows that the issue of <em>access</em> to administrative data is not easily decoupled from the larger objective of creating capabilities for administrative data generation and use. The examples in this chapter demonstrate the role that research can play in developing better data systems—systems that are designed to support research on important policy questions—thus increasing their value for policymaking.</p>
+<p>The role of research in shaping data, or the fact that data are both research outputs and inputs, is not always well understood. Most efforts to collect data are driven by statistical agencies, not by research institutions, and statistics-driven data are on average a suboptimal input into research. To optimize data sets as an input into research, the data output itself should be research driven. When planning to evaluate the impact of a policy intervention, DIME researchers develop data sets based on a specified measurement framework. The data sets include the vector of variables and variable characteristics that are aligned to the theory of change of the policy intervention and that have the sample size, power, representativeness, and coverage required to conduct the analysis.</p>
+<p>The source for each variable might vary. Sometimes more than one source is viable. When more than one source can be used for the same variable, comparisons can inform the understanding of data quality and the tradeoff between costs and quality. The resulting data set might fuse administrative data with survey, census, remote sensing, or crowdsourced data. This output is then an input to data analysis and research products. The novel data sets are analyzed to understand the economic problem the research team is trying to solve, develop testable hypotheses, and test them by implementing field experiments designed to narrow down the causal pathways of programs and policies.</p>
+<p>In no small part, DIME engagements seek to build administrative data systems that create research-quality data. Data integration increases value for research and policymaking and helps sustain longer-term efforts for data generation. While in the past, impact evaluations relied heavily on baseline and follow-up surveys, today’s data sets include spatially integrated data at various frequencies that are increasingly tailored to support a process of adaptive research and policymaking. As a result, the use of administrative data has increased in recent years, as shown in Figure <a href="dime.html#fig:dimefigure1">14.1</a>, from about 15 percent of impact evaluations to more than 35 percent. And whereas administrative data in the past could be used mainly for A/B testing, integrated data sets can be used to assess biases in coverage and to evaluate policy impact.</p>
+<div class="figure"><span id="fig:dimefigure1"></span>
+<img src="assets/dime/dimefigure1web.png" alt="Percent of DIME impact evaluations using administrative data, out of all impact evaluations that started in a given year." width="100%" />
+<p class="caption">
+Figure 14.1: Percent of DIME impact evaluations using administrative data, out of all impact evaluations that started in a given year.
+</p>
+</div>
+<p>DIME secures access to administrative data and resources to collect supplementary data by generating demand for impact evaluations from government agencies. Developing joint research agendas with government counterparts motivates government provision of administrative data. Adding value to governments in the form of data trainings, analytics, and tools secures continued access to the data and establishes open channels for policy discussions. Sharing analytical outputs early and often with the data provider is a critical step to sustainable data access. The administrative data analytics are often useful for increasing efficiency in government functions, and they help generate testable hypotheses (highlighted in the case of road safety in Nairobi below).</p>
+<p>The impact evaluations follow a co-production model in which the research team and the government counterparts work closely together on a shared agenda. The DIME model seeks to address constraints to data- and evidence-informed policymaking through multiple channels (illustrated in Figure <a href="dime.html#fig:dimefigure2">14.2</a>). This includes building skills to create informed consumers, using group dynamics to create cross-country communities of practice, subsidizing research services while counting on governments to finance data to address the public and private good elements of research, and addressing reputational and aspirational considerations by documenting successes and helping countries improve their abilities to save and improve lives.</p>
+<div class="figure"><span id="fig:dimefigure2"></span>
+<img src="assets/dime/dimefigure2web.png" alt="The DIME model for the adoption of data- and evidence-informed policy." width="100%" />
+<p class="caption">
+Figure 14.2: The DIME model for the adoption of data- and evidence-informed policy.
+</p>
+</div>
+</div>
+<div id="data-use-examples-6" class="section level3">
+<h3><span class="header-section-number">14.2.2</span> Data Use Examples</h3>
+<p>DIME’s data sets and tools are tailored to the needs and requirements of evaluating the impact of a specific set of policy interventions. The data sets can be loosely categorized as project, spatial (country or city), or sector data, recognizing that each investment in data starts small and grows over time, sometimes cutting across these categories. For example, household survey data collected in Afghanistan for the impact evaluation of the Targeting the Ultra-Poor (project) is now being used to ground truth algorithms that use telecom-provider data to identify the ultra-poor in Afghanistan (spatial) and develop data tools that can potentially be applied by social protection agencies in different countries to administer their social protection programs (sector) <span class="citation">(Aiken et al. <a href="#ref-aiken2020" role="doc-biblioref">2020</a>)</span>.</p>
+<p>The administrative data component of these data sets come from government systems. In reality, only some of these systems are digital: some are paper-based and others simply do not exist. DIME’s work adapts to these conditions by either using existing data, digitizing paper-based reports, or developing data system pilots. In the justice example, DIME leverages investments in e-courts that were financed by World Bank projects. Where these investments have not been made, as in the case of patient safety in Kenya, a patient safety e-checklist and facility monitoring system were developed from the ground up. The chapter presents these and some other examples to highlight where DIME (1) developed a pilot administrative data system where none existed; (2) digitized paper-based administrative data to fill data gaps; (3) leveraged existing administrative data to develop a spatially integrated country data set; and (4) used recent investments in e-government to develop unique sector-specific data sets.</p>
+<div id="piloting-new-administrative-data-systems-and-the-case-of-patient-safety-in-kenya" class="section level4">
+<h4><span class="header-section-number">14.2.2.1</span> Piloting New Administrative Data Systems and the Case of Patient Safety in Kenya</h4>
+<p>With no systematic data available on compliance with patient safety standards in Kenyan health facilities, lack of clear rules of the game, and inadequate monitoring or enforcement of regulation, the DIME research team worked on developing an understanding of patient safety and experimentally tested a new inspection regime. In a partnership with the Kenyan Ministry of Health, the Kenya Patient Safety Impact Evaluation (KePSIE) piloted a high-stakes health inspection system for private and public facilities <span class="citation">(Bedoya, Das, and Dolinger <a href="#ref-bedoyaforthcoming" role="doc-biblioref">n.d.</a>)</span>. It consisted of a new regulatory framework with clear rules of the game, a scoring system, and enforcement of warnings and sanctions where facilities were provided time to improve or face the risk of closure.</p>
+<p>To test such an intervention, an associated electronic inspection and monitoring system was created. To give some context, systems to report and diagnose constraints to patient safety are underdeveloped, even in high-income countries <span class="citation">(Wachter <a href="#ref-wachter2010" role="doc-biblioref">2010</a>, and @longo2005)</span>, and of 45 countries in the Africa region with legislated quality inspection, only five actually implement any type of inspections, and those are mostly for private health facilities <span class="citation">(International Finance Corporation <a href="#ref-spreng2011" role="doc-biblioref">2011</a>)</span>.</p>
+<p>The KePSIE’s system was piloted and evaluated in three counties of Kenya representing 7 million health visits per year and a population of 4.5 million people. The 273 health markets, covering all facilities, were randomly assigned to one of three groups: (1) high-stakes inspections; (2) high-stakes inspections plus scorecards disclosing the score of the facility; and (3) control. The trial demonstrated that a new inspections regime that includes clear rules, monitoring, and enforcement is effective at improving patient safety in both public and private facilities (15 percent higher patient safety scores in treated relative to control facilities). The government is scaling up the inspection system at the national level with the support of a new World Bank Group (WBG) health operation.</p>
+<p>This case is a proof of concept of the value of supporting governments in developing data systems to evaluate sector-wide improvements in accountability and governance, especially when guided by researchers who invest in understanding issues such as, in this case, the role of national policies on safe healthcare practices and how data systems can support corresponding monitoring and enforcement systems <span class="citation">(World Health Organization Regional Office for Africa <a href="#ref-worldhealthorganizationregionalofficeforafrica2014" role="doc-biblioref">2014</a>)</span>.</p>
+<p>This work produced more than twenty operational outputs, three published papers, two forthcoming reports, five briefs and blogs, and ten dissemination events. The operational outputs include technical support to develop the new regulations, operational guidelines, trainings of health inspectors, training materials and manuals, and detailed inspection protocols. This example demonstrates the value that a research team can bring to the development of a monitoring system that is well integrated with effective regulation and a system of warnings and sanctions.</p>
+</div>
+<div id="digitizing-administrative-data-to-fill-data-gaps-and-the-case-of-road-safety-in-kenya" class="section level4">
+<h4><span class="header-section-number">14.2.2.2</span> Digitizing Administrative Data to Fill Data Gaps and the Case of Road Safety in Kenya</h4>
+<p>Many countries face insurmountable barriers to prioritizing their investments to reach their Sustainable Development Goals (SDG). This is even more difficult in areas with severe data limitations, such as the SDG target on halving mortality on the roads. The WHO estimates that only around 22 percent of road accident fatalities are captured in official records. To learn how to close this data gap, DIME invested in piloting high-frequency data systems for cities as part of its thirty country ieConnect for Impact program in transport. Generating data on crash locations and characteristics can help cities prioritize investments to reduce car crashes, road injuries, and deaths.</p>
+<p>Kenya ranks among the countries with the highest road traffic deaths per capita in the world. Working in Nairobi, DIME undertook a massive effort to collate multiple different data sources to tackle this challenge. The researchers obtained administrative data through a data sharing agreement with the National Police Service (NPS). The NPS provided access to paper records stored in police stations across the city. A total of 12,546 crash records were manually digitized from a nine-year period across the city of Nairobi. The reports include crash details, location, and severity; these were then mapped to show crash hot spots.</p>
+<p>A preliminary finding showed that 98 percent of these reports included injuries or deaths, indicating that crashes without injuries or deaths had not been reported or stored. To supplement these records, the team then used crowdsourced crash data processed through machine learning algorithms to identify and geolocate crashes reported by an established platform on Twitter feeds <span class="citation">(Milusheva et al. <a href="#ref-milusheva2020" role="doc-biblioref">2020</a>)</span>. To ground truth the crashes reported on Twitter, an app-based delivery firm was contracted to dispatch motorcycle drivers to the crash location within minutes after the crash was reported.</p>
+<p>The researchers also integrated private sector data on speed, road events, weather conditions, and land use from AccuWeather, Google Maps, Uber, and Waze. Data from Uber and Waze were accessed through a combination of publicly available data and specific partnerships leveraging the World Bank Development Data Partnership (DDP) initiative. The administrative data was combined with primary survey data collected at 200 hot spots to ascertain infrastructure conditions and video analytics were used to ascertain road user behavior, which generated in excess of 100 new variables on high-risk locations.</p>
+<p>Integrating all these sources into one data set provides unique insights into the contributing factors leading to a high concentration of crashes in specific locations. The analysis helped turn a seemingly intractable problem into something more manageable. For instance, it is now clear that 200 of the 1,400 crash sites across the city account for over half of road traffic deaths. This represents 150 kilometers of the 6,200-kilometer road network that can now be targeted for road safety interventions.</p>
+<p>The data creates an opportunity to design a randomized control trial to demonstrate how to prioritize scarce infrastructure and enforcement resources for high-risk locations and times to achieve the SDG on road safety, and is informing the road safety component of a large development project in Kenya DIME is exploring applications of the lessons from this project in Liberia, Mozambique, and Sierra Leone.</p>
+</div>
+<div id="leveraging-country-investments-in-administrative-data-systems-and-the-case-of-spatially-integrated-country-data-systems-in-rwanda" class="section level4">
+<h4><span class="header-section-number">14.2.2.3</span> Leveraging Country Investments in Administrative Data Systems and the Case of Spatially Integrated Country Data Systems in Rwanda</h4>
+<p>Governments often lack the capacity to extract relevant sectoral information from their administrative data or to integrate data across sectors to conduct economic analysis. Country programs, a recent innovation for DIME that is currently being piloted in various countries, build deep country-level data ecosystems. These leverage a combination of administrative data and primary data collection to support a government strategy across one or multiple sectors of the economy. The more advanced case is that of Rwanda where DIME has worked for the last eight years. What started as a research collaboration with the Ministry of Agriculture and Animal Resources (MINAGRI) exploring multiple constraints to the adoption of production technologies in agriculture <span class="citation">(Jones and Kondylis <a href="#ref-jones2018" role="doc-biblioref">2018</a>; Jones et al. <a href="#ref-jones2019" role="doc-biblioref">2019</a>)</span> grew across multiple government agencies, including the Ministry of Infrastructure and the Rwanda Revenue Authority.</p>
+<p>The Rwandan Feeder Roads Impact Evaluation is a canonical example of how survey and administrative sources of data can be brought together in a country program to answer questions beyond the scope of traditional impact evaluations. This impact evaluation began as a partnership with the government to evaluate the impact of the national feeder road rehabilitation program across multiple donor investments and involved significant effort by the research and operational teams to coordinate across projects. In this spirit, a similar collaboration was launched with the government to harmonize the market price survey data. Data collected in rural markets in the catchment of targeted feeder roads were combined with the administrative e-Soko price data, collected at major markets nationally. The market locations are integrated into a geographical information system including maps of the road network and village boundaries. This enables the evaluation of the impacts of feeder road rehabilitation, and of national road construction more broadly, with all data sources in a harmonized platform.</p>
+<p>A key component of country programs is leveraging this assembled data infrastructure to both increase client capacity for analytics and impact evaluation and to inform policy decisions in real time. To these ends, the team developed open-source dashboards to facilitate access to the data and support data analytics. The team also trained government officials in the development and use of these dashboards in a continuing effort to strengthen their monitoring and evaluation function. In addition, the country-level data system informs policymakers on the impacts of policies at-scale and helps operational partners coordinate evidence-based policy actions. In a recent example, the data ecosystem has informed MINAGRI on the impacts of the COVID-19 pandemic on food prices, which is guiding the optimal targeting of social protection response to the crisis.</p>
+</div>
+<div id="leveraging-investments-in-government-systems-and-the-case-of-data-and-evidence-for-justice-reform-de-jure" class="section level4">
+<h4><span class="header-section-number">14.2.2.4</span> Leveraging Investments in Government Systems and the Case of Data and Evidence for Justice Reform (DE JURE)</h4>
+<p>Governments that have invested resources in e-government, sometimes with World Bank support, are now demanding the analytics and research services that help them reap benefits from their investments. DIME works with procurement agencies and judiciaries, for example, to analyze e-procurement and e-justice data to improve the functional quality and efficiency; research is used in combination with tax data and firm surveys to understand important economic questions such as the demand effect of public procurement on firm growth or the effect of judicial efficiency on firm valuation. Investments in e-government have transformed the opportunities for analysis of the functioning of government. DIME is working with public administrations from low- to higher-income countries to analyze transaction level data on procurement, civil service, tax, customs, and courts proceedings to inform reforms aimed at increasing efficiency and quality of services.</p>
+<p>One example is DIME’s DE JURE program. DE JURE aims to develop a global data infrastructure for the justice sector, expand artificial intelligence (AI) tools to produce interpretable data from unstructured text, and produce experimental evidence to inform justice reforms <span class="citation">(Ash et al. <a href="#ref-ash2018" role="doc-biblioref">2018</a>)</span>. Large-scale data sets of all court proceedings and machine learning tools are being used to address whether judicial rulings betray systematic biases, arbitrariness, or inefficiencies in the administration of justice. Working in a diverse group of countries including Bangladesh, Brazil, Chile, Croatia, Estonia, India, Kenya, Pakistan, Peru, and Senegal, the program aims at increasing the amount and depth of the empirical research in justice, which has historically been limited by the lack of administrative data systems and tools to analyze massive amounts of transcripts <span class="citation">(Kondylis and Stein <a href="#ref-kondylis2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p>The value of justice sector administrative data is expanded when it is merged with other sources: human resources data to obtain the characteristics of court administrators; surveys of court administrators and users, run by the judiciary annually, to record perceptions and satisfaction; and firm-level data linked to the court data through firm’s tax identifiers. In Africa and Latin America, DIME is collaborating with two judiciaries on three RCTs that leverage existing technological platforms to improve judicial performance and reduce court congestion. The first two evaluate what kinds of low-cost, actionable information reduce judicial delays. These RCTs test mechanisms for a better way to onboard AI <span class="citation">(Babic et al. <a href="#ref-babic2020" role="doc-biblioref">2020</a>)</span>. The third evaluates whether a telework program with congestion pricing using non-financial incentives might reduce court backlog.</p>
+<p>The team is also working on a project that evaluates how justice impacts economic outcomes. Leveraging the random assignment of cases to tribunals, the research team is evaluating the impact of differences in judicial speed on the outcomes of firms and their employees in two countries in Latin America and Eastern Europe. This builds off a machine learning methodology for causal inference developed in the judicial context <span class="citation">(Babic et al. <a href="#ref-babic2020" role="doc-biblioref">2020</a>)</span>. In Latin America, the current focus is an RCT of training judges amid a pedagogical transition from theory to case-based teaching (possibly based on the history of their past decisions) and includes self-reflection exercises (which embeds social-emotional learning interventions). Prior analysis of economics training of US judges found the training shifted the direction of legal precedent by 10 percent <span class="citation">(Galletta, Ash, and Chen <a href="#ref-galletta2019" role="doc-biblioref">2019</a>)</span>. The team is also launching RCTs of legal analytics for firms, addressing questions such as whether information that facilitates investment decisions lead to legal innovation <span class="citation">(Chen <a href="#ref-chen2015" role="doc-biblioref">2015</a>)</span>.</p>
+<p>In South Asia, DIME measures textual slant in the manner in how judges from different castes describe litigants from the same or another caste <span class="citation">(Ash et al. <a href="#ref-ash2019" role="doc-biblioref">2019</a>)</span>. The team also uses gender-based violence prevention reported through mobile applications to assess missing cases. In Eastern Europe, the team studies when judicial decisions can be successfully automated. The DE JURE initiative is exploring how, collectively, these insights can spur e-justice solutions.</p>
+</div>
+</div>
+</div>
+<div id="dime-making-data-usable" class="section level2">
+<h2><span class="header-section-number">14.3</span> Making Data Usable for Research</h2>
+<p>There are many challenges to making administrative data usable, and these challenges are similar across many different contexts in which DIME works. Often administrative data are available in hard copy only; data sets are not interoperable due to inconsistent or omitted numeric identifiers; data generation is decentralized and there is no aggregation at the national level; and administrative data coverage is limited or biased. As a result, integrating data requires multiple trips to field offices, coding and digitization, painstaking efforts to merge on available variables, and careful validation with other data sources. Cases from DIME’s portfolio illustrate some of these problems:</p>
+<p><em>The data are available in hard copy only.</em> In Senegal and Kenya, the court records were originally in paper version only, and the DIME research team invested more than one year in coding and digitizing several years-worth of case records. Initially, it was difficult to estimate the time required to digitize the data, which injected some uncertainty in the impact evaluation process. Also, this work required a substantial amount of resources, including involvement of DIME researchers and consultants and the judiciaries’ central and local staff. In practice, this type of task falls on the research team. It was not before analytical results were shared that the value of using this type of data was appreciated.</p>
+<p><em>There are data sets that are not interoperable</em>. In Chile and Croatia, access to the data was substantially easier as both countries’ judiciaries have an advanced case management system, which generates vast amounts of granular data about each aspect of every case. As such, administrative data were shared with a smooth and fast process and only required standard data cleaning to make data usable for research. However, significant challenges arose when merging the court level data with firms’ data and tax records. The administrative data systems at different institutions were not interoperable and merging the different types of data took significant time and effort. In DIME’s experience, the interaction between research and governments can demonstrate the utility of a common and consistent system of record identification and can spur governments to improve systems.</p>
+<p><em>There is decentralized data generation.</em> In Rwanda, as in most contexts, each line ministry generates their own administrative data with little knowledge of, or interaction with, data from other ministries. There is no centralized repository, so even learning what data sets are available requires a significant investment of time. Making the individual data sets useful for research required linking across ministries and incorporating detailed data from local government that are never centralized. Getting all different agencies to agree to share data requires building relationships with each agency and customizing outputs to meet the expectations of each one.</p>
+<p><em>There are data sets that are limited or biased in coverage.</em> In the case of Nairobi road traffic crashes, the comparison between administrative and crowdsourced data demonstrates that data from a specific source, whether administrative or crowdsourced, cannot be assumed to be representative of the underlying population. The police data was found to be limited to a specific subsample of the population (crashes with injuries or deaths) while crowdsourced data was found to be unequally distributed across time and location.</p>
+<p><em>There is a lack of administrative data systems</em>. Perhaps the most extreme challenge is a case where there is no system to record administrative data. In Kenya, the process for health inspectors checking compliance with patient safety lacked clear rules, and as there were no full-time inspectors, it only covered a small portion of the facilities each year. The DIME data pilot made it possible, to have a wide-reaching and comprehensive system that achieves the following: record detailed information of more than 300 items for all facilities in a standardized manner; generate scores and classify facilities by the end of the inspections to let the facilities know their performance; and provide facilities with warnings, sanctions, and next steps. This facilitated the government’s capacity to monitor and enforce safety standards by improving inspection regulation, monitoring standards, and enforcement in the pilot regions. The policy insights generated from the work convinced the government of the utility of scaling up the inspection system nationally (financed by a World Bank project).</p>
+<p>Even when pilots are demonstrated to be effective, the institutionalization of new data systems by government might fail due to either resource constraints or the lack of capacity for successful operation. In these cases, the gains from using data effectively are short-lived. As opposed to health in Kenya, the courts in Senegal did not continue digitizing records or transition to electronic case management. As a result, data-driven management of the court was imperiled. As the Kenya example shows, development finance must supplement the work of DIME to build and scale up systems. While researchers can make explicit the value of data and data systems, the effort required for fully adopting effective data systems in government are beyond the scope of limited research funding and capacities. It thus falls on governments to use their own resources or demand support from development institutions to build these systems.</p>
+</div>
+<div id="legal-and-institutional-framework-6" class="section level2">
+<h2><span class="header-section-number">14.4</span> Legal and Institutional Framework</h2>
+<div id="dime-institutional-setup" class="section level3">
+<h3><span class="header-section-number">14.4.1</span> Institutional Setup</h3>
+<p>DIME has a global portfolio of 123 active impact evaluations. The portfolio is supported by a team of twenty research economists, twenty other permanent staff, and co-authors from academic institutions. The portfolio generates correspondingly large amounts of data with more than 300 surveys completed over the past six years and many projects relying on high-frequency data, satellite data, and administrative data.</p>
+<p>Standardizing and enforcing protocols for high-quality research across such a large portfolio and team is challenging. DIME chose to address this by investing in DIME Analytics as an institutional, portfolio-wide solution. DIME Analytics is a centralized unit responsible for developing and ensuring adoption of best practices in data collection and analysis across DIME’s portfolio. In DIME’s experience, centralizing resources and reducing the private costs of adopting reproducible research practices is key to ensuring high-quality, reproducible research. DIME Analytics identifies inefficiencies and practices that compromise research quality, develops improved workflows, creates and tests tools needed for their adoption, and then provides the training and technical support necessary to sustain adoption (illustrated in Figure <a href="dime.html#fig:dimefigure3">14.3</a>).</p>
+<div class="figure"><span id="fig:dimefigure3"></span>
+<img src="assets/dime/dimefigure3web.png" alt="DIME Analytics uses an iterative process to expand technical capacity throughout the research cycle." width="100%" />
+<p class="caption">
+Figure 14.3: DIME Analytics uses an iterative process to expand technical capacity throughout the research cycle.
+</p>
+</div>
+<p>DIME Analytics ensures the credibility of DIME research by developing best practices, providing implementation tools and workflows, and monitoring compliance across all research teams. Research assistants (RAs) follow a formal annual training program designed to teach recent graduates the skills they need for a future in research. The program includes ten full-day courses, twelve seminar-style continuing education courses, and customized academic development through office hours. The training program covers standard data structures, safe and reproducible data practices, data collection and cleaning workflows, and the tools created by DIME Analytics to implement these standardized practices.</p>
+<p>Institutionalizing RA recruitment and training means that researchers spend less time onboarding staff and that technical skills are standardized across the portfolio, so research assistants can more easily be assigned to different tasks across an impact evaluation portfolio without significant retraining. The approach facilitates portfolio-level improvements to reproducible research. For example, when RAs follow consistent coding conventions, reviewing code is more efficient. The training program provides a mechanism to address problems and inefficiencies identified by DIME Analytics and to disseminate newly developed tools and workflows. In 2019 alone, DIME Analytics offered 28 reproducible research trainings.</p>
+<p>In addition to the standardized training program, DIME Analytics offers regular <em>bootcamps</em> to achieve real-time technology adoption. These hands-on sessions directly transition projects to improved workflows. A recent bootcamp focused on safe handling of confidential data for all active projects. Participating project teams implemented updated data security protocols to achieve full adoption across the DIME portfolio by the end of the bootcamp session. An earlier bootcamp transitioned all research teams to reproducible workflows, such as using git/GitHub to manage and version-control all analytical code for DIME projects.</p>
+<p>By investing in DIME Analytics, DIME aims to improve both its own portfolio and the quality of development research more broadly. All the resources developed by DIME Analytics are shared publicly through the <a href="https://dimewiki.worldbank.org/">DIME Wiki</a>,<a href="#fn289" class="footnote-ref" id="fnref289"><sup>289</sup></a> Development Research in Practice: The DIME Analytics Data Handbook <span class="citation">(World Bank Group <a href="#ref-worldbankgroup2020a" role="doc-biblioref">2020</a><a href="#ref-worldbankgroup2020a" role="doc-biblioref">b</a>)</span>, and the annual <a href="https://www.worldbank.org/en/events/2019/06/10/manage-successful-impact-evaluations">Manage Successful Impact Evaluations course</a>.<a href="#fn290" class="footnote-ref" id="fnref290"><sup>290</sup></a> There are few other development research institutions that develop and publicly share research protocols and trainings. DIME adheres to this unusual standard of transparency so that the practices are continuously improved through public scrutiny and feedback and so that high-quality research tools and practices are globally available and accessible. There is significant demand for such public goods: Figure <a href="dime.html#fig:dimefigure4">14.4</a> shows the global reach of the DIME Wiki, which has attracted more than 128,000 global users since it was established in 2018.</p>
+<div class="figure"><span id="fig:dimefigure4"></span>
+<img src="assets/dime/dimefigure4web.png" alt="Global DIME Wiki usership: most active cities (outside the Washington D.C. area)." width="100%" />
+<p class="caption">
+Figure 14.4: Global DIME Wiki usership: most active cities (outside the Washington D.C. area).
+</p>
+</div>
+</div>
+<div id="legal-context-for-data-use-5" class="section level3">
+<h3><span class="header-section-number">14.4.2</span> Legal Context for Data Use</h3>
+<!-- +DIME| has historically relied on informal data sharing agreements based on relationships with government counterparts and clearly established, shared objectives. However, the process is becoming more formalized. In 2018, the World Bank issued a procedure for Development Data set Acquisition, Archiving and Dissemination,[^dime1] which provides staff with specific guidance and a template +data_license_agreement|.[^dime2] The template data license agreement specifies the specific objectives of the data sharing and whether the data can be used only for the established purpose or for other objectives consistent with the mandates of the signatory organizations. It establishes the terms of the agreement and the type of data access protocols. Protocol options include open data, licensed use, official use only (access limited to World Bank staff), access restricted to pre-authorized WB staff, access restricted to pre-authorized WB staff working on a specified project or a specified output, or access restricted to a specific business unit or individuals. The data provider may impose restrictions to sharing derivative works and any or all of the metadata. The agreement also specifies the required citation for the data. As this template is pre-approved by the World Bank's legal team, and thus fast-tracks the data sharing process, most partners agree to use it. -->
+<p>DIME has historically relied on informal data sharing agreements based on relationships with government counterparts and clearly established, shared objectives. However, the process is becoming more formalized. In 2018, the World Bank issued a procedure for Development Data set Acquisition, Archiving and Dissemination, which provides staff with specific guidance and a template data license agreement <span class="citation">(World Bank Group <a href="#ref-worldbankgroup" role="doc-biblioref">n.d.</a><a href="#ref-worldbankgroup" role="doc-biblioref">c</a>)</span>. The template data license agreement specifies the specific objectives of the data sharing and whether the data can be used only for the established purpose or for other objectives consistent with the mandates of the signatory organizations. It establishes the terms of the agreement and the type of data access protocols. Protocol options include open data, licensed use, official use only (access limited to World Bank staff), access restricted to pre-authorized WB staff, access restricted to pre-authorized WB staff working on a specified project or a specified output, or access restricted to a specific business unit or individuals. The data provider may impose restrictions to sharing derivative works and any or all of the metadata. The agreement also specifies the required citation for the data. As this template is pre-approved by the World Bank’s legal team, and thus fast-tracks the data sharing process, most partners agree to use it.</p>
+<p>DIME researchers also often negotiate with the private sector for access to proprietary data, typically with a letter of support from the government. The World Bank has negotiated data license agreements with global companies with data of broad interest for development research, through the <a href="https://datapartnership.org/">Development Data Partnership (DDP)</a>.<a href="#fn291" class="footnote-ref" id="fnref291"><sup>291</sup></a> Current partners include Digital Globe, the European Space Agency, Facebook, Google, LinkedIn, Uber, and Waze. Under the terms of the standard DDP license agreement, data sets are provided for the World Bank’s use for any objective consistent with the World Bank’s mandate.</p>
+<p>World Bank governance does not compromise DIME independence in its research. Impact evaluation reports are reviewed through a World Bank process, but research papers do not require World Bank or governments’ clearance. They are published with authors’ disclaimers and are not considered official documents of the World Bank.</p>
+</div>
+<div id="legal-framework-for-granting-data-access-2" class="section level3">
+<h3><span class="header-section-number">14.4.3</span> Legal Framework for Granting Data Access</h3>
+<p>As per the World Bank Procedure on Development Data Acquisition, all development data sets acquired by the World Bank are to be deposited in the internal Development Data Hub and classified as either public or restricted access. Deposit is to be made no later than six months after the data are acquired with the provision to later deposit any revisions or updates. Once deposited, staff may choose to embargo dissemination pending the publication or release of any derivative work(s). Staff are encouraged to provide data in an open format and public license to facilitate re-use.</p>
+<p>Data archival is a requirement for funding under the <a href="https://www.worldbank.org/en/research/dime/brief/i2i-fund">Impact Evaluation to Development Impact (i2i) Trust Fund</a>.<a href="#fn292" class="footnote-ref" id="fnref292"><sup>292</sup></a> To qualify for i2i funding, data must be cataloged in the year in which it was collected. Typically, that data are embargoed (i.e., cataloged but not released) until publication of the research results. In some cases, teams release data prior to publication but embargo the variables identifying the random assignment or non-experimental design. These embargoes apply both internally and externally. The expectations around the timeline for data publication were established with low-frequency survey data; there are not yet clear policies in place governing the publication of high-frequency data.</p>
+<p>DIME publishes all data that can be made publicly available, as per the terms of the agreement with the data provider, to the <a href="https://microdata.worldbank.org/">World Bank’s Microdata Catalog</a>.<a href="#fn293" class="footnote-ref" id="fnref293"><sup>293</sup></a> On the Microdata Catalog, staff choose the terms of use <span class="citation">(World Bank Group <a href="#ref-worldbankgroupa" role="doc-biblioref">n.d.</a><a href="#ref-worldbankgroupa" role="doc-biblioref">b</a>)</span>. Options include open access; direct access (data are freely available under basic conditions); public access (data are available to registered users who consent to respect a list of core conditions); or licensed files (users request data access for a specific purpose directly from the data owner). DIME data sets are typically catalogued as licensed files. To access licensed files, interested individuals must disclose the intended use of the data and a list of expected outputs, and no other uses are permitted without prior written consent from the World Bank.</p>
+<p>Much of the administrative data used by DIME are classified as restricted access, as per the terms of the license agreements, and cannot be made publicly accessible. Restricted access data are classified into three tiers of internal access: data classified as <em>strictly confidential</em> are accessible only to specific individuals; data classified as <em>confidential</em> are accessible on a need-to-know basis; data classified as <em>official use only</em> are accessible to all staff in the institution. DIME often shares (de-identified) data on a need-to-know basis with operational colleagues, such as questions around placement or targeting of new World Bank operations. As there is no publication incentive in this case, issues of intellectual property are less salient. In cases where the data cannot be published publicly, publishing the research is a way to demonstrate to researchers that the data exist (and the types of linkages are possible). DIME also aims to incentivize policymakers to increase their use of that data and their willingness to collaborate with other research teams.</p>
+</div>
+</div>
+<div id="protection-of-sensitive-and-personal-data-the-five-safes-framework-5" class="section level2">
+<h2><span class="header-section-number">14.5</span> Protection of Sensitive and Personal Data: The Five Safes Framework</h2>
+<div id="safe-projects-5" class="section level3">
+<h3><span class="header-section-number">14.5.1</span> Safe Projects</h3>
+<p>Creating a safe project involves a collaboratively developed research agenda that serves each entity involved in the project and a shared understanding of how data will be used. This is core to DIME’s co-production model. The researchers, government, and any implementing partners start from a problem in which they are all invested and work together toward a solution, rather than pursuing a research question pre-determined by the researchers.</p>
+<p>To evaluate the appropriateness of potential projects, DIME considers three factors:</p>
+<ol style="list-style-type: decimal">
+<li>Does the research collaboration contribute to the public good, and is it policy-relevant?</li>
+<li>Is the approach technically valid?</li>
+<li>Is the proposed approach transparent and ethically sound?</li>
+</ol>
+<p>DIME projects are governed by the i2i trust fund. Proposed projects are evaluated through an external double-blind review process at both the <em>expression of interest</em> and the full <em>concept note</em> stage. The review assesses the policy contribution and the technical merits and flags potential ethical issues.</p>
+<p>To assess policy relevance, proposed i2i projects are scored by World Bank operational departments at both the <em>expression of interest</em> and the <em>concept note</em> stage. They evaluate proposed projects on their potential to contribute to evidence gaps, potential to influence the design and/or scale-up, and potential to influence prioritization of current and future development interventions. Impact evaluation <em>concept notes</em> go through a formal World Bank approval process, which concludes with a review chaired by either the country manager or the practice manager and two external reviewers (usually a subject-matter expert and an operations expert). This ensures ongoing relevance of DIME’s work to World Bank and country policy priorities.</p>
+<p>To evaluate technical merit, all proposed i2i projects go through a double-blind review by external academics. Final decisions are made by a technical committee comprised of experienced research economists from the World Bank. The review process is a meaningful mechanism for selecting appropriate projects and cuts off a substantial portion of the distribution. This is demonstrated in Figure <a href="dime.html#fig:dimefigure5">14.5</a> (technical ratings are given on a scale of 0 to 3 with 3 being highest quality). From the first seven open calls, just over 50 percent of proposals were accepted as i2i projects.</p>
+<div class="figure"><span id="fig:dimefigure5"></span>
+<img src="assets/dime/dimefigure5web.png" alt="The distribution of technical ratings of funded vs. unfunded impact evaluation proposals. Technical ratings are assigned during double-blind proposal review." width="100%" />
+<p class="caption">
+Figure 14.5: The distribution of technical ratings of funded vs. unfunded impact evaluation proposals. Technical ratings are assigned during double-blind proposal review.
+</p>
+</div>
+<p>To evaluate ethical soundness, the technical review flags projects with potential ethical issues; these projects must go through Institutional Review Board (IRB) approval and any issues must be addressed by the researchers before funding is released. i2i promotes registration of all impact evaluation studies. Currently, 42 percent of DIME studies are registered, which is a figure that is increasing over time. Additionally, the <em>concept note</em> template requires detailed explanation of data acquisition strategies and data quality controls. Once projects are underway, research teams must submit annual updates to MyIE, DIME’s internal monitoring system. This is a unique mechanism to validate compliance with DIME protocols, as research teams are required to document study registration, updates to research design, data sources and use, and policy influence.</p>
+</div>
+<div id="safe-people-5" class="section level3">
+<h3><span class="header-section-number">14.5.2</span> Safe People</h3>
+<p>The World Bank has well-established relationships with its member states and a reputation for high-quality analytical work. DIME researchers work on public good research, which fosters mutual trust and accountability to clients. Much data sharing occurs initially under the auspices of the larger relationship with the World Bank and is sustained through the ongoing collaboration.</p>
+<p>At DIME, researchers have a special ethical responsibility: to generate scientifically valid and credible research that is actionable. Upholding high research standards is secured through competitive selection of research economists on the academic market and high standards of competitive hiring for all other staff involved in the production of impact evaluation products. For example, in DIME’s most recent recruitment for research assistants and field coordinators, the rigorous evaluation process (including objective evaluation of software skills) resulted in less than 5 percent of applicants being offered a position.</p>
+<p>To maintain high ethical standards, in addition to the IRB process, all researchers working on i2i-funded projects are required to submit documentation of successful completion of ethics training on conducting human subjects research from recognized providers such as <a href="https://about.citiprogram.org">CITI</a><a href="#fn294" class="footnote-ref" id="fnref294"><sup>294</sup></a> or <a href="https://phrptraining.com/">PHRP</a>.<a href="#fn295" class="footnote-ref" id="fnref295"><sup>295</sup></a> Human subjects research certification is also required for any team member who is expected to work with personally identifiable data.</p>
+<p>World Bank employment contracts govern intellectual property rights and specify that any works produced, or materials acquired, during the course of the appointment belong to the World Bank. As research assistants and field coordinators typically work with confidential data, DIME requires the signature of <a href="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/dime-data-nda.md">non-disclosure agreements (NDA)</a><a href="#fn296" class="footnote-ref" id="fnref296"><sup>296</sup></a> at the start of their tenure. The NDA has specific provisions for maintaining full confidentiality and safeguarding private information. As a condition of employment, personnel commit to keeping all research information confidential, to blind any identifying information, to handle all data securely, to use secure technologies for encryption-at-rest and encryption-in-transfer, and to destroy all local copies of data and research outputs at the end of the contract unless given written authorization by the research staff. New hires are also required to review DIME’s Data Security Standards and pass an assessment on the content <span class="citation">(World Bank Group <a href="#ref-worldbankgroupb" role="doc-biblioref">n.d.</a><a href="#ref-worldbankgroupb" role="doc-biblioref">a</a>)</span>.</p>
+</div>
+<div id="safe-settings-5" class="section level3">
+<h3><span class="header-section-number">14.5.3</span> Safe Settings</h3>
+<p>DIME has recently formalized its Data Security Standards, which apply to all confidential data. Confidential data include all data that are categorized as restricted access, due to terms of license agreements or inclusion of personally identifying information. The Data Security Standards are intended to ensure that confidential data are accessible to only the specific research team members listed on the Institutional Review Board approval.</p>
+<p>World Bank computers are encrypted, and the enterprise version of OneDrive encrypts all data on the fly; however, since DIME works extensively with external partners, additional protocols have been self-imposed. These protocols include encryption-in-transit required for any data transferred over the Internet, encryption-at-rest required for data stored on any server (from data collection servers to longer-term storage options), and encryption-at-rest required for local folders used to store confidential data (whether shared or not).</p>
+<p>Larger data sets are stored in secure servers in the World Bank’s cloud environment, with access limited to specified World Bank staff and consultants using World Bank–controlled credentials through a single sign-on process. The strong encryption protocols are necessary given frequent domestic and international travel by research team members, which necessitates the use of laptops and prevents a physical infrastructure solution.</p>
+<p>Research assistants and field coordinators are trained in DIME Data Security Standards, and they in turn work closely with government counterparts and implementing partners to make sure that the standards are applied. Field coordinators play a particularly important role in identifying data security challenges and helping to implement secure protocols, as the field coordinators are physically present with partners. DIME Analytics offers customized support to DIME project teams for setting up secure data infrastructure and provides advising on safe handling, transfer, and storage of confidential data.</p>
+<p>In terms of safe data acquisition from external providers, data are typically uploaded from a provider to a WB OneDrive (enterprise) folder. Two-factor authentication with an on-demand, single-use code is sent by e-mail. The encryptions-in-transit protocol is HTTPS and data are encrypted-at-rest immediately on the WB-controlled OneDrive (enterprise) server. Larger data sets sent directly to a cloud environment are typically pulled into those environments using an SFTP protocol.</p>
+<p>When digitizing administrative data, case-by-case protocols are developed to ensure data security. In the example of the Nairobi road safety evaluation, the team set the following protocols: paper records were scanned at the police department headquarters, so physical copies never left the premises; the records were scanned by a DIME field coordinator, who was subject by contract to standard provisions of data confidentiality and ownership; the field coordinator physically transferred the scans to the firm hired to digitize them; the contract for the firm included standard provisions requiring that the firm or any of its employees cannot use or disclose the information being digitized; and personally identifying variables were not digitized.</p>
+</div>
+<div id="safe-data-5" class="section level3">
+<h3><span class="header-section-number">14.5.4</span> Safe Data</h3>
+<p>The key to ensuring safe data is respecting privacy rights. In many cases, DIME accesses data that is confidential and therefore requires secure sharing protocols. Protocols for data security are detailed in the chapter on Data Acquisition in Development Research in Practice: The DIME Analytics Data Handbook <span class="citation">(World Bank Group <a href="#ref-worldbankgroup2020a" role="doc-biblioref">2020</a><a href="#ref-worldbankgroup2020a" role="doc-biblioref">b</a>)</span>. DIME encourages research teams to de-identify confidential data as early as possible in the process to reduce access restrictions. This simplifies workflows (i.e., avoids frequently handling encryption keys to access data) and limits risk of possible access breaches. This typically involves stripping identifiers not directly used in the analysis and keeping only encoded versions of constructed indicators. All variables tagged as potential identifiers are removed from data before publication, although this creates a trade-off in terms of data usability. Discussions are ongoing with the World Bank Data Group on possibly implementing more sophisticated disclosure protocols, such as differential privacy. Stripping spatial information, while important for maintaining privacy, decreases the value of the data, as it limits integration with other data sources.</p>
+<p>The digitization of administrative data is done using vetted software platforms that offer secure encryption. Digitization is typically done by a consultant or firm that is contracted by the World Bank; contracts include clear stipulations of intellectual property and data ownership. When digitized, the data are submitted directly to servers hosted by the World Bank, rather than a third-party. DIME typically uses SurveyCTO for manual data digitization, because of the tools for safe data (e.g. tools to encrypt data, publish subsets of data, and limit access to sensitive data based on user profiles).</p>
+</div>
+<div id="safe-outputs-4" class="section level3">
+<h3><span class="header-section-number">14.5.5</span> Safe Outputs</h3>
+<p>The primary mechanism for ensuring safe outputs at DIME is rigorous protocols for assessing disclosure risk in analysis data sets. When outputs are generated from data sets that are rigorously de-identified, disclosure risks for outputs are minimized. In cases where analysis relies on identifying variables, more care is needed to mitigate disclosure risk. As a safeguard, one of the checks in DIME’s pre-publication code review process is to check all outputs and tabulations for disclosure risk, particularly outputs concerning subsamples.</p>
+</div>
+</div>
+<div id="data-life-cycle-and-replicability-4" class="section level2">
+<h2><span class="header-section-number">14.6</span> Data Life Cycle and Replicability</h2>
+<div id="preservation-and-reproducibility-of-researcher-accessible-files-5" class="section level3">
+<h3><span class="header-section-number">14.6.1</span> Preservation and Reproducibility of Researcher-Accessible Files</h3>
+<p>Version control and transparent workflows are critical to ensuring reproducibility. As discussed in section <a href="dime.html#dime-institutional-setup">14.4.1</a>, DIME has instituted clear workflows to transparently document all modifications to data after initial receipt. DIME has recently established new reproducibility standards and implemented those through a hands-on <em>reproducibility bootcamp</em>. These standards include keeping all projects on GitHub or (version control more generally); establishing protocols for project documentation, data storage, and identifiable information management; and establishing protocols for the extent that sensitive data can be shared for replication and reanalysis. While most of these elements are common across types of data, secure storage solutions and access protocols for identifiable data are of greater concern with administrative data because of the size of the data and number of subjects.</p>
+<p>Accessibility to a second user and long-term data engagements are potential benefits of administrative data. Documentation is critical to allow for continued usage; tracing and recording the process of gaining data access, developing data sets, and preparing data for research, and recording the relationship histories and the people involved in the project. Since relationships with data providers and individual researchers are often the point of first access, preservation of research projects involves knowing the story behind the data access. At this point, there is not a technical solution to facilitate this documentation, but the hope is to advance on this when infrastructure allows.</p>
+</div>
+<div id="preservation-and-reproducibility-of-researcher-generated-files-4" class="section level3">
+<h3><span class="header-section-number">14.6.2</span> Preservation and Reproducibility of Researcher-Generated Files</h3>
+<p>Prior to publication, all DIME research papers undergo a computational reproducibility check completed by DIME Analytics. This verifies that using the same materials and procedures provided, a third-party can exactly reproduce the tables and figures in the paper. DIME Analytics has developed a detailed checklist for this purpose, which is completed by the research team at submission, verified during the reproducibility check, and returned to the team for inclusion in an online appendix. The completed checklist clearly indicates the reproducible research standards with which the project complies. Adopting reproducible workflows from early in project implementation simplifies the final reproducibility check. DIME recently scaled up this service to be available to all World Bank staff.</p>
+<p>Once reproducibility is verified, DIME Analytics supports the project team in publishing the code and data for the project. All data that can be made public (per the terms of the data license agreement) are published to the World Bank Microdata Catalog. Code is typically published to the World Bank’s GitHub site.</p>
+<p>Data that are <em>official use only</em>, or more restricted access, are archived on the internal data hub, which provides information on metadata and is accessible to World Bank staff. For the Microdata Catalog, documentation and cataloging are done in accordance with the Data Documentation Initiative (DDI) metadata standard—an international, XML-based standard for microdata documentation—and based on the guidelines for data archival described in the Quick Reference Guide for Data Archivists <span class="citation">(Dupriez, Castro, and Welch <a href="#ref-dupriez2019" role="doc-biblioref">2019</a>)</span>. It also complies with the XML Dublin Core Metadata Initiative (DCMI) Specifications for documenting external resources (questionnaires, reports, programs, etc.).</p>
+<p>Preservation also requires effective management of storage media. Stata is used as a standard internal format, and a policy on managing migration to later versions is under development by the Microdata Catalog team. The Microdata Catalog does not require a disposal protocol. Obsolescence of media is not thought to be a concern. DIME has no active disposal protocols at this time.</p>
+</div>
+</div>
+<div id="sustainability-and-continued-success-6" class="section level2">
+<h2><span class="header-section-number">14.7</span> Sustainability and Continued Success</h2>
+<div id="outreach-5" class="section level3">
+<h3><span class="header-section-number">14.7.1</span> Outreach</h3>
+<p>A shared research agenda and continuous engagement over the lifetime of an impact evaluation are key to DIME’s outreach strategy to its clients. Generating timely descriptive outputs and creating accessible data interfaces builds trust and interest. This facilitates government counterparts’ access to their own data and increases the relevance of partnerships with DIME to their day-to-day work. DIME does extensive capacity building activities, such as hands-on trainings in data management and descriptive analysis, to increase counterparts’ direct engagement with the data. Training is a means to sustainably maintain engagement with the research question by building practical staff knowledge of the researcher-generated data outputs.</p>
+<p>A typical DIME outreach strategy is as follows. First, the research team agrees on the research agenda with the client and maps the existing data landscape (as discussed above). Second, the research team integrates various data sources to create the data sets, which will ultimately be used to generate original research outputs. Third, where useful, DIME creates accessible, open-source interfaces for government counterparts to interact with administrative data sources, such as <a href="https://shiny.rstudio.com/">Shiny</a><a href="#fn297" class="footnote-ref" id="fnref297"><sup>297</sup></a> dashboards. Fourth, the research team engages with the data provider to generate new insights and ways for the data provider to understand how they can improve the use of their data and to build capacity for internal data-driven operational evaluations and program evaluation. The end goal is to demonstrate the utility of the data sets and to catalyze investments in institutionalized data systems with formal access protocols and well-developed data security infrastructure.</p>
+<p>The data use examples illustrate DIME’s outreach strategy:</p>
+<p>In the <em>Rwanda</em> case, the feeder road evaluation is part of the research team’s broader collaboration on impact evaluations with the Government of Rwanda, which has been ongoing since 2012. Team members travel to Rwanda quarterly and regularly engage in high-level policy discussions. Results are presented to the minister as they become available. This ensures that research impact resonates at the highest level of government. DIME has invested in significant capacity building with counterparts at the Rwanda Transport Development Agency and the Ministry of Agriculture and Animal Resources by providing hands-on trainings on data management and analysis and providing frequent descriptive analytical outputs to help improve data collection systems and answer policy questions. The research team worked with the government to develop an open-source Shiny dashboard as an accessible way for government officials to engage with data. Dashboards are more of a data interaction than a data extraction, but they can preserve engagement with data and facilitate use of data for policy decisions that go beyond the original research agenda.</p>
+<p>The <em>KePSIE</em> experience illustrates that the DIME co-production model with national counterparts can be sustained over a six-year period, overcome many delays and much turnover of key stakeholders and still secure substantial success. DIME strengthened the Ministry of Health’s data systems by developing an electronic checklist to collect inspection records and by creating a pilot web-based monitoring and planning system that aggregates inspections results and allows for real-time access to patient safety monitoring and inspections implementation. The checklist and score system that DIME helped develop for the evaluation became the national regulatory health facility inspection system for both private and public facilities.</p>
+<p>In the <em>Nairobi road safety</em> case, the DIME team established a broad collaboration with members of the Kenya Working Group on Transport that includes Kenyan ministries, departments, and agencies in the transport sector, as well as interested development partners and the National Police Service. Team members engaged in high-level policy discussions with this multi-stakeholder group and engaged in operational discussions with specific members to develop collaborations and pilot ideas such as an electronic-crash record system with the police.</p>
+<p>The work with the <em>justice sector in Kenya</em> has included a collaboration with the highest levels of the judiciary to develop score cards, analyze data, and introduce reforms. After the digitization of court records was completed, the Judiciary of Kenya has started to use the judge-level data as part of their performance management process and to keep judges and other key court staff updated on key indicators, such as case backlog. Finally, insights from the data are informing the design of reform and testing of pilot interventions.</p>
+</div>
+<div id="revenue-5" class="section level3">
+<h3><span class="header-section-number">14.7.2</span> Revenue</h3>
+<p>DIME impact evaluations are financed through grants, including the i2i Trust Fund. Primary data collection is typically financed by World Bank operations. Data acquisition from government counterparts is typically shared on a no-fee basis through a data license agreement. Private sector data are either provided pro bono, in exchange for research services, or procured through research grants. Data made available through the Development Data Partnership incurs no usage fees for World Bank staff. For example, in the Nairobi road safety project, Uber and Waze data were made available at no cost through the DDP. Data that are financed through lending operations, such as the e-government interventions, are made available for the research team at no additional cost. For example, the DE JURE projects make use of the large amounts of data generated by e-government investments in partnership with the World Bank operational teams.</p>
+</div>
+<div id="metrics-of-success-5" class="section level3">
+<h3><span class="header-section-number">14.7.3</span> Metrics of Success</h3>
+<p>A successful DIME impact evaluation is one that improves counterpart data systems, influences policy decisions, and is fully reproducible.</p>
+<div id="what-clients-say-about-dime" class="section level4 unnumbered">
+<h4>What Clients Say About DIME</h4>
+<p>To objectively measure success, DIME conducted a carefully designed survey for 44 engagements in 22 countries (106 respondents) <span class="citation">(Legovini et al., <a href="#ref-legovini" role="doc-biblioref">n.d.</a>)</span>. Analysis of the survey responses—from 33 implementing agencies as well as World Bank project managers, known as Task Team Leaders—suggests that the technical support provided throughout the design and implementation processes has had positive effects on data systems (e.g., monitoring and evaluation capacity) and policy design.</p>
+<p>With regards to data systems the surveys showed positive feedback:</p>
+<ul>
+<li>100 percent of respondents from implementing agencies and 93 percent of World Bank TTLs documented instances where DIME contributed to monitoring and evaluation capacity.</li>
+<li>82 percent of respondents from implementing agencies and 94 percent of World Bank TTLs documented how the baseline analysis contributed to policy design.</li>
+</ul>
+<p>In terms of policy influence the surveys showed the following results:</p>
+<ul>
+<li>68 percent of respondents from implementing agencies and 79 percent of World Bank TTLs reported that a proven treatment intervention was adopted by the government.</li>
+<li>62 percent of the respondents from implementing agencies and 13 percent of the World Bank TTLs reported the engagement motivated scale-up and/or scale-down of the government intervention.</li>
+<li>71 percent of respondents from implementing agencies and 52 percent of World Bank TTLs reported that the engagement had a positive spillover effect on other projects as well.</li>
+<li>More broadly, 89 percent of respondents from implementing agencies and 85 percent of World Bank TTLs thought the engagement helped rationalize the design process of the relevant policy, and 94 percent of all respondents thought the engagement with DIME added value to their units.</li>
+</ul>
+</div>
+<div id="reproducible-data-projects" class="section level4 unnumbered">
+<h4>Reproducible Data Projects</h4>
+<p>Since 2018, DIME has required that all working papers pass a computational reproducibility check before they are published; DIME Analytics has to be able to reproduce the exact results from the paper using the data and code provided.</p>
+<p>Institutionalizing this requirement has led to big gains. In 2018, only 17 percent of working papers met the computational reproducibility standard, and half of the papers required significant revisions to achieve it. In contrast, by 2019, nearly two-thirds of DIME working papers met the reproducibility standard and less than ten percent required significant revisions. This increase reflects both significant efforts by DIME Analytics to identify reproducibility challenges and offer targeted trainings and tools as well as a significant mindset shift for research teams.</p>
+<p>Currently, DIME is well above the norm in the field. An analysis of 203 economics papers published in top journals in 2016 showed that less than one in seven provided all data and code needed to assess computational reproducibility <span class="citation">(Galiani, Gertler, and Romero <a href="#ref-galiani2017" role="doc-biblioref">2017</a>)</span>. More recently, at the American Economic Review, only two out of five accepted papers passed the computational reproducibility check on first pass <span class="citation">(Vilhuber <a href="#ref-vilhuber2019" role="doc-biblioref">2019</a>)</span>.</p>
+<div class="figure"><span id="fig:dimefigure6"></span>
+<img src="assets/dime/dimefigure6web.png" alt="DIME computational reproducibility check results" width="100%" />
+<p class="caption">
+Figure 14.6: DIME computational reproducibility check results
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="concluding-remarks-3" class="section level2">
+<h2><span class="header-section-number">14.8</span> Concluding Remarks</h2>
+<p>DIME has worked with client countries for the past fifteen years to strengthen their capacity for evidence-informed policy decisions. The DIME model is to support governments throughout policy design and implementation processes and invest heavily in the production of research-led data sets that can be applied to understanding the economic problems governments are trying to address. By striking a delicate balance between generating high-quality evidence and remaining responsive to policy processes on the ground, DIME has been able to build trust relationships with government clients. By helping governments build capacity for data and evidence-intensive policymaking, DIME secured broad access to administrative data and the opportunity to improve its quality.</p>
+</div>
+<div id="supplemental-materials-9" class="section level2 unnumbered">
+<h2>Supplemental Materials</h2>
+<p>This chapter was presented by the authors as a webinar on November 30, 2020. A <a href="https://www.youtube.com/watch?v=RBWzR4FC20w&amp;list=PL5Dr5MK6NSsqd9eJf_VwPVpp7EXMXM5Hg&amp;index=8">recording of the webinar</a> and <a href="./appendix/dime_slides.pdf">slides</a> are available.</p>
+</div>
+<div id="about-the-authors-9" class="section level2 unnumbered">
+<h2>About the Authors</h2>
+<p><a href="https://www.worldbank.org/en/about/people/a/arianna-legovini">Arianna Legovini</a> heads the Development Impact Evaluation (DIME) Department of the World Bank. She established this group in 2009 based on a model of collaboration between research and operations to optimize project design, secure higher returns to development investments, and empower governments to generate contextually relevant evidence to guide their policymaking process. She successfully aligned US$200 million in donor and government client financing to support a systematic approach to data analytics and causal evidence across a large program of World Bank and other development banks operations. She now presides over a team of 186 people conducting research in sixty countries across all sectors, working with 200 agencies, and shaping US$20 billion in development finance. She started similar groups with the Inter-American Development Bank and the Africa region of the World Bank. She provides advisory services to the thirty largest multilateral and bilateral development agencies in the world.</p>
+<p><a href="https://www.worldbank.org/en/about/people/m/maria-ruth-jones">Maria Ruth Jones</a> is a Survey Specialist in DIME. Maria co-founded and now leads DIME Analytics, which is an initiative to support transparent, high-quality, and reproducible research at DIME. She also works on impact evaluations in agriculture and transport; current research projects focus on the impacts of large-scale, rural infrastructure projects in Rwanda. Maria joined the World Bank in 2009. Previous roles at DIME include coordination of the Global Agriculture and Food Security Program impact evaluation portfolio (2012–16) and a program of impact evaluations with the government of Malawi (2009–11). Maria has an MA in international relations / development economics from the Johns Hopkins School of Advanced International Studies, and a BA in economics and Spanish from Amherst College.</p>
+<!-- [^dime1]: [Procedure for Development Data set Acquisition, Archiving and Dissemination](https://policies.worldbank.org/sites/ppf3/PPFDocuments/17edbe3e480a4ee491d7c6a4e2ae9f32.pdf) (accessed 2020-12-14). -->
+<!-- [^dime2]: [Data License Agreement template](https://worldbankgroup.sharepoint.com/teams/ddh/SiteAssets/SitePages/ddh/DataLicenseAgreementTemplate_v4.pdf) (accessed 2020-12-14). -->
+
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-aiken2020">
+<p>Aiken, Emily, Guadalupe Bedoya, Aidan Coville, and Joshua Blumenstock. 2020. “Targeting Development Aid with Machine Learning and Mobile Phone Data.” Unpublished manuscript. <a href="http://jblumenstock.com/files/papers/jblumenstock_ultra-poor.pdf">http://jblumenstock.com/files/papers/jblumenstock_ultra-poor.pdf</a>.</p>
+</div>
+<div id="ref-ash2019">
+<p>Ash, Elliott, Sam Asher, Sandip Bhupaitiraju, Daniel L Chen, Paul Novosad, Arianna Ornaghi, and Bilal Siddiqi. 2019. “Algorithmic Justice for Development: Using Machine Learning to Identify and Mitigate Bias in Indian Courts.” <a href="https://users.nber.org/~dlchen/papers/Implicit_Bias_in_the_Indian_Judiciary_slides.pdf">https://users.nber.org/~dlchen/papers/Implicit_Bias_in_the_Indian_Judiciary_slides.pdf</a>.</p>
+</div>
+<div id="ref-ash2018">
+<p>Ash, Elliott, Daniel Chen, Raul Delgado, Eduardo Fierro, and Shasha Lin. 2018. “Learning Policy Levers: Toward Automated Policy Analysis Using Judicial Corpora.” Unpublished manuscript. <a href="https://users.nber.org/~dlchen/papers/Learning_Policy_Levers.pdf">https://users.nber.org/~dlchen/papers/Learning_Policy_Levers.pdf</a>.</p>
+</div>
+<div id="ref-babic2020">
+<p>Babic, Boris, Daniel L Chen, Theodoros Evgeniou, and Anne-Laure Fayard. 2020. “A Better Way to Onboard AI.” <em>Harvard Business Review</em> July-August. <a href="https://hbr.org/2020/07/a-better-way-to-onboard-ai">https://hbr.org/2020/07/a-better-way-to-onboard-ai</a>.</p>
+</div>
+<div id="ref-bedoyaforthcoming">
+<p>Bedoya, Guadalupe, Jishnu Das, and Amy Dolinger. n.d. “Randomized Regulation: The Impact of Minimum Quality Standards on Health Markets.” Accessed December 7, 2020. <a href="https://www.aeaweb.org/conference/2020/preliminary/1846">https://www.aeaweb.org/conference/2020/preliminary/1846</a>.</p>
+</div>
+<div id="ref-chen2015">
+<p>Chen, Daniel L. 2015. “Can Markets Stimulate Rights? On the Alienability of Legal Claims.” <em>The RAND Journal of Economics</em> 46 (1): 23–65. <a href="https://doi.org/10.1111/1756-2171.12076">https://doi.org/10.1111/1756-2171.12076</a>.</p>
+</div>
+<div id="ref-dupriez2019">
+<p>Dupriez, Olivier, Diana Marcela Sanchez Castro, and Matthew Welch. 2019. “Quick Reference Guide for Data Archivists — Guide for Data Archivists Documentation.” <a href="https://guide-for-data-archivists.readthedocs.io/">https://guide-for-data-archivists.readthedocs.io/</a>.</p>
+</div>
+<div id="ref-galiani2017">
+<p>Galiani, Sebastian, Paul Gertler, and Mauricio Romero. 2017. “Incentives for Replication in Economics.” Working paper 23576. National Bureau of Economic Research, Inc. <a href="https://doi.org/10.3386/w23576">https://doi.org/10.3386/w23576</a>.</p>
+</div>
+<div id="ref-galletta2019">
+<p>Galletta, Sergio, Elliot Ash, and Daniel L Chen. 2019. “Causal Effects of Judicial Sentiment: Methods and Application to U.S. Circuit Courts.” <em>SSRN</em>. <a href="https://dx.doi.org/10.2139/ssrn.3415393">https://dx.doi.org/10.2139/ssrn.3415393</a>.</p>
+</div>
+<div id="ref-spreng2011">
+<p>International Finance Corporation. 2011. “Healthy Partnerships: How Governments Can Engage the Private Sector to Improve Health in Africa.” World Bank. <a href="https://hdl.handle.net/10986/2304">https://hdl.handle.net/10986/2304</a>.</p>
+</div>
+<div id="ref-jones2018">
+<p>Jones, Maria, and Florence Kondylis. 2018. “Does Feedback Matter? Evidence from Agricultural Services.” <em>Journal of Development Economics</em> 131 (C): 28–41. <a href="https://doi.org/10.1016/j.jdeveco.2017.10">https://doi.org/10.1016/j.jdeveco.2017.10</a>.</p>
+</div>
+<div id="ref-jones2019">
+<p>Jones, Maria, Florence Kondylis, John Loeser, and Jeremy Magruder. 2019. “Factor Market Failures and the Adoption of Irrigation in Rwanda.” Policy Research Working Paper WPS9092. World Bank. <a href="http://documents.worldbank.org/curated/en/496531576687282363/Factor-Market-Failures-and-the-Adoption-of-Irrigation-in-Rwanda">http://documents.worldbank.org/curated/en/496531576687282363/Factor-Market-Failures-and-the-Adoption-of-Irrigation-in-Rwanda</a>.</p>
+</div>
+<div id="ref-kondylis2019">
+<p>Kondylis, Florence, and Mattea Stein. 2019. “The Speed of Justice.” Policy Research Working Paper WPS8372. World Bank. <a href="http://documents.worldbank.org/curated/en/455021521720861143/The-speed-of-justice">http://documents.worldbank.org/curated/en/455021521720861143/The-speed-of-justice</a>.</p>
+</div>
+<div id="ref-legovini">
+<p>Legovini, Arianna, Guadalupe Bedoya, Özsel Beleli, and Chloë Fernandez. n.d. “DIME Model for Informing Policy Decisions: Portfolio Results and Case Studies.” <em>Manuscript Available on Request</em>.</p>
+</div>
+<div id="ref-milusheva2020">
+<p>Milusheva, Sveta, Robert Marty, Guadalupe Bedoya, Elizabeth Resor, Sarah Williams, and Arianna Legovini. 2020. “Can Crowdsourcing Create the Missing Crash Data?” In <em>Proceedings of the 3rd ACM SIGCAS Conference on Computing and Sustainable Societies</em>, 305–6. ACM. <a href="https://doi.org/10.1145/3378393.3402264">https://doi.org/10.1145/3378393.3402264</a>.</p>
+</div>
+<div id="ref-vilhuber2019">
+<p>Vilhuber, Lars. 2019. “Panel 3: Practical Steps to Credibility and Transparency in Research: Who Should Do What?” September. <a href="https://www.worldbank.org/en/events/2019/09/10/transparency-reproducibility-credibility">https://www.worldbank.org/en/events/2019/09/10/transparency-reproducibility-credibility</a>.</p>
+</div>
+<div id="ref-wachter2010">
+<p>Wachter, Robert M. 2010. “Patient Safety at Ten: Unmistakable Progress, Troubling Gaps.” <em>Health Affairs</em>, no. 29: 165–73. <a href="https://doi.org/10.1377/hlthaff.2009.0785">https://doi.org/10.1377/hlthaff.2009.0785</a>.</p>
+</div>
+<div id="ref-worldbankgroup2020">
+<p>World Bank Group. 2020a. “Data and Evidence for Justice Reform (DE JURE).” <a href="http://pubdocs.worldbank.org/en/923891592406548876/DE-JURE-Brief.pdf">http://pubdocs.worldbank.org/en/923891592406548876/DE-JURE-Brief.pdf</a>.</p>
+</div>
+<div id="ref-worldbankgroup2020a">
+<p>World Bank Group. 2020b. “Development Research in Practice: The DIME Analytics Data Handbook.” <a href="https://worldbank.github.io/dime-data-handbook/">https://worldbank.github.io/dime-data-handbook/</a>.</p>
+</div>
+<div id="ref-worldbankgroup2020b">
+<p>World Bank Group. 2020c. “Rwanda: Program Brief.” <a href="http://pubdocs.worldbank.org/en/703511592406882534/Rwanda-Program-Brief.pdf">http://pubdocs.worldbank.org/en/703511592406882534/Rwanda-Program-Brief.pdf</a>.</p>
+</div>
+<div id="ref-worldbankgroupb">
+<p>World Bank Group. n.d.a. “DIME Standards, Pillar 4.” Accessed December 15, 2020. <a href="https://github.com/worldbank/dime-standards">https://github.com/worldbank/dime-standards</a>.</p>
+</div>
+<div id="ref-worldbankgroupa">
+<p>World Bank Group. n.d.b. “Microdata Library Terms of Use.” Accessed December 15, 2020. <a href="https://microdata.worldbank.org/index.php/terms-of-use">https://microdata.worldbank.org/index.php/terms-of-use</a>.</p>
+</div>
+<div id="ref-worldbankgroup">
+<p>World Bank Group. n.d.c. “Policy &amp; Procedure Framework.” Accessed December 15, 2020. <a href="https://policies.worldbank.org/en/policies/all/ppfdetail">https://policies.worldbank.org/en/policies/all/ppfdetail</a>.</p>
+</div>
+<div id="ref-worldhealthorganizationregionalofficeforafrica2014">
+<p>World Health Organization Regional Office for Africa. 2014. “Guide for Developing National Patient Safety Policy and Strategic Plan.” Technical documents 9789290232070. World Health Organization. <a href="https://hdl.handle.net/10665/148352">https://hdl.handle.net/10665/148352</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="288">
+<li id="fn288"><p>Accessed 2020-12-14.<a href="dime.html#fnref288" class="footnote-back">↩︎</a></p></li>
+<li id="fn289"><p>Accessed 2020-12-14.<a href="dime.html#fnref289" class="footnote-back">↩︎</a></p></li>
+<li id="fn290"><p>Accessed 2020-12-14.<a href="dime.html#fnref290" class="footnote-back">↩︎</a></p></li>
+<li id="fn291"><p>Accessed 2020-12-14.<a href="dime.html#fnref291" class="footnote-back">↩︎</a></p></li>
+<li id="fn292"><p>Accessed 2020-12-14.<a href="dime.html#fnref292" class="footnote-back">↩︎</a></p></li>
+<li id="fn293"><p>Accessed 2020-12-14.<a href="dime.html#fnref293" class="footnote-back">↩︎</a></p></li>
+<li id="fn294"><p>Accessed 2020-12-14.<a href="dime.html#fnref294" class="footnote-back">↩︎</a></p></li>
+<li id="fn295"><p>Accessed 2020-12-14.<a href="dime.html#fnref295" class="footnote-back">↩︎</a></p></li>
+<li id="fn296"><p>Accessed 2020-12-14.<a href="dime.html#fnref296" class="footnote-back">↩︎</a></p></li>
+<li id="fn297"><p>Accessed 2020-12-14.<a href="dime.html#fnref297" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="cct.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="imf.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["http://admindatahandbook.mit.edu/testing/#print", "PDF"], ["http://admindatahandbook.mit.edu/testing/#purchase", "Book"], ["http://admindatahandbook.mit.edu/testing/#epub", "Epub"]],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
