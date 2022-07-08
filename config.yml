@@ -137,6 +137,16 @@ default:
       - putupoppywidyasari
     webinar:
     webinardate: "January 25, 2021"
+  massachusetts:
+    authors:
+      - amandalee
+    webinar:
+    webinardate:
+  puertorico:
+    authors:
+      - danielatrevino
+    webinar:
+    webinardate:
   contributors:
     larsvilhuber:
       name: Lars Vilhuber
@@ -281,5 +291,5 @@ default:
       name: Amanda Lee
       inst: J-PAL North America, Massachusetts Institute of Technology
       title: Research Manager
-    
+
 

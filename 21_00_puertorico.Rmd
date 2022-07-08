@@ -68,7 +68,7 @@ researchers Gustavo Bobonis, Marco Gonzalez-Navarro, Daniela Scur, and
 Orlando Sotomayor in 2018 to design and implement a randomized
 evaluation of a system-wide principal leadership management training
 program called *Academia de Desarrollo Profesional de la Educación para
-la Gestión de Liderazgo y la Profesionalización*[^1] (EDUGESPRO) using
+la Gestión de Liderazgo y la Profesionalización*[^puertorico1] (EDUGESPRO) using
 administrative data collected by the PRDE.
 
 Each cohort of principals is trained over the course of one academic
@@ -191,7 +191,7 @@ policy.
 
 After all schools closed in March 2020, EDUGESPRO's training program was
 briefly suspended, but training resumed fully online in April as the
-program had the potential to support principals during the pandemic.[^2]
+program had the potential to support principals during the pandemic.[^puertorico2]
 The original schedule for the intervention had to be changed, so the
 webinars and workshop for the second cohort were delayed from September
 2020 until April 2021; however, the cohort-by-cohort approach to the
@@ -244,7 +244,7 @@ Over the course of the EDUGESPRO evaluation, the research team
 demonstrated that they shared common goals with the PRDE of improving
 learning outcomes, reducing inequality in student academic achievement,
 and providing high-impact professional development tools to the PRDE's
-leaders.[^3] The EDUGESPRO evaluation was an active research project
+leaders.[^puertorico3] The EDUGESPRO evaluation was an active research project
 involving close collaboration between researchers and the PRDE both when
 the earthquakes hit the island and when schools closed in response to
 COVID-19. Additionally, the project included an embedded evaluation
@@ -427,7 +427,7 @@ of the diagnostic test while considering the research team's needs.
 Goldman's position existed for the purposes of the EDUGESPRO evaluation,
 but she has been able to expand her support to the PRDE more generally.
 Researchers may consider embedding staff on site either for specific
-research projects or for building data capacity.[^4]
+research projects or for building data capacity.[^puertorico4]
 
 ## Questions
 
@@ -649,20 +649,20 @@ Bobonis](https://www.povertyactionlab.org/person/bobonis). 2021.
 "Pursuing Evidence-Based Policymaking during Crisis." J-PAL Blog.
 [[https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis]{.underline}](https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis).
 
-[^1]: In English, Education Professional Development for Leadership and
+[^puertorico1]: In English, Education Professional Development for Leadership and
     Professionalization Management Academy.
 
-[^2]: This [[J-PAL blog
+[^puertorico2]: This [[J-PAL blog
     post]{.underline}](https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis)
     documents in more detail how the program has shifted to respond to
     the crisis.
 
-[^3]: See this [[2019 J-PAL blog
+[^puertorico3]: See this [[2019 J-PAL blog
     post]{.underline}](https://www.povertyactionlab.org/blog/7-9-19/policymakers-and-researchers-collaborate-improve-education-quality-puerto-rico),
     written by Gustavo Bobonis and Nicolas Rivero Medelis, documenting
     how policymakers and researchers collaborated to improve education
     quality in Puerto Rico.
 
-[^4]: See J-PAL's Research Resource, "[[Real-Time Monitoring and
+[^puertorico4]: See J-PAL's Research Resource, "[[Real-Time Monitoring and
     Response Plans: Creating
     Procedures]{.underline}](https://www.povertyactionlab.org/resource/real-time-monitoring-and-response-plans-creating-procedures)."
