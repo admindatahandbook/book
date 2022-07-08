@@ -1,0 +1,535 @@
+# Case Study: Evaluating a Rental Assistance Program {#massachusetts}
+
+
+```{r, echo=FALSE, results='asis'}
+printauthor("massachusetts")
+```
+
+
+## Summary 
+
+
+Homelessness is one of the more extreme outcomes of poverty and
+inequality. In the United States in 2019, more than 500,000 people
+experience homelessness on a given night and 1.4 million people pass
+through emergency shelters each year.[^massachusetts1] Each year, significant US
+federal and local financial resources are devoted to combating
+homelessness, with direct federal expenditures totaling around \$6.1
+billion annually and local jurisdictions spending billions more. Many
+states have set up programs to provide cash assistance to help reduce
+homelessness and promote housing stability. If these programs are proven
+effective, they may be a highly cost-effective way to address
+homelessness. Traditional survey-based research may face important
+methodological problems because attrition in populations at risk of
+homelessness is very high. Therefore, administrative data (e.g.,
+employment and tax records) is the best way to get a great answer to
+these questions.
+
+For households facing eviction, foreclosure, or other housing
+emergencies, the Massachusetts Residential Assistance for Families in
+Transition (RAFT) program provides up to \$10,000 per household to
+preserve current housing or move to new housing.[^massachusetts2] Researchers at the
+Harvard Kennedy School (HKS) partnered with the Massachusetts Department
+of Housing and Community Development (DHCD) to evaluate the effect of
+RAFT on housing outcomes (housing status, eviction, and others) as well
+as a broader range of outcomes including employment, income, public
+assistance receipt, and potential downstream effects such as those on
+the education of children in families.
+
+Administrative data is key both to identifying the population of
+interest (those potentially facing housing instability) and measuring
+the variety of outcomes listed above. Critically, each of these steps
+requires administrative data that the DHCD (which runs the RAFT program)
+does not own. In Massachusetts, each agency holds its own data.
+Therefore, even to share data with other agencies, a data use agreement
+(DUA) must be established for each instance of sharing. This structure
+is not unique to Massachusetts, and similar difficulties in sharing data
+can be found in many other states and countries.
+
+J-PAL North America works with state and local governments and
+researchers to develop and support randomized evaluations. Often, a key
+part of this support is setting up DUAs between multiple stakeholders
+(researchers and agencies as well as between multiple agencies). One of
+the main goals of the Innovations in Data and Experiments for Action
+Initiative (IDEA) is to support the ongoing development of partnerships
+with governments and other data providers that successfully use
+administrative data for decision-making and evaluation. HKS professors
+Will Dobbie and Desmond Ang and their partner Adam Schaffer at the DHCD
+received support from IDEA to develop a pilot evaluation and solidify a
+strategy to establish the required data-sharing agreements.
+
+Beyond solving these challenges for a single study, the goal of the
+North America IDEA pilot projects is to work toward building longer-term
+partnerships with data providers and implementing partners by developing
+frameworks and public goods that will make not only this project
+possible but also future research with the same partner more feasible.
+Given the desire to build long-term research partnerships, J-PAL North
+America identified Massachusetts as a high-value partner given the
+Commonwealth's significant programmatic and data responsibilities,
+interest from multiple J-PAL-affiliated professors in doing research
+with the state (including two ongoing projects that J-PAL North America
+[has](https://www.povertyactionlab.org/evaluation/impact-text-message-nudges-churn-supplemental-nutrition-assistance-program-united-states)
+or [is
+currently](https://www.empathways.org/direct-services/amp-up-boston)
+supporting), and real but solvable challenges to using data for
+research. Amanda Lee, a research manager at J-PAL North America,
+provided support during this process, primarily around strategy to
+ensure access to necessary administrative data.
+
+This case study highlights generalizable lessons for data sharing across
+government agencies, as well as with researchers, to conduct a
+randomized evaluation. It will explore the benefits of partnering with a
+state agency, lessons learned about how agencies in Massachusetts have
+previously succeeded in sharing data with each other, the importance of
+the legal context, and design challenges as they relate to data access
+and sharing.
+
+## Introduction
+
+
+### Motivation and Background
+
+**The conception of this project was largely driven from within the
+DHCD.** The DHCD was, and has remained, one of the main driving forces
+behind this evaluation. It was already working with J-PAL-affiliated
+researchers through a technical assistance relationship. To further
+develop this partnership into a randomized evaluation, the DHCD applied
+to J-PAL North America's [Housing Stability Evaluation
+Incubator](https://www.povertyactionlab.org/initiative/housing-stability-evaluation-incubator),
+a practitioner-facing program designed to develop housing
+stability--related research ideas into feasible evaluations. As part of
+the incubator, the DCHD, Ang, and Dobbie worked to further develop an
+evaluation, and because administrative data access was a primary
+challenge for conducting the evaluation, J-PAL selected the project to
+receive IDEA support, funded by the Alfred P. Sloan Foundation. Even
+with this outside support, continued internal agency leadership would
+prove important, both in defining the type of project and in opening
+doors for initial discussions with other state agencies.
+
+When the research team (the DHCD, researchers, and J-PAL staff) began
+designing the evaluation, if someone applied to RAFT and was eligible,
+they received funds. That is, funding for the program was not a
+constraint. The research team recognized that it would be unethical to
+design a randomized evaluation in which RAFT-eligible households would
+be randomized into a group that did not receive RAFT. Therefore, to
+proceed with a randomized design that allows for estimating causal
+effects of the program, the team decided to use a randomized
+[encouragement
+design](https://www.povertyactionlab.org/sites/default/files/research-resources/2017.04.14-Real-World-Challenges-to-Randomization-and-Their-Solutions.pdf),[^massachusetts3]
+where the treatment group was provided additional encouragement to sign
+up for the program and the control group could sign up for the program
+based on existing information. Both groups could sign up for services.
+
+In an encouragement design, the research team first identified a group
+of people likely eligible for RAFT based on their income. In
+Massachusetts, households who receive benefits through the Department of
+Transitional Assistance (DTA) have incomes that would likely make them
+income-eligible for RAFT. From this pool of eligible participants from
+the DTA, the research team randomized them into two groups: the
+treatment group would receive information about RAFT and support in
+completing the application, and the control would not receive any
+additional information about RAFT. Households in both groups could apply
+for RAFT, but the encouragement, if effective, was supposed to produce
+higher levels of enrollment into RAFT in the treatment group.
+
+To simplify the initial data-sharing process and to develop the
+encouragement mechanism, the research team decided to try and run a
+pilot study that would measure whether and how much the encouragement
+increased enrollment in RAFT (the "first stage") before designing an
+evaluation of the effect of RAFT on downstream outcomes, such as income,
+employment, and housing. This was done because in an encouragement
+design, it is important for there to be a large enough difference in
+RAFT enrollment rates to allow a comparison between groups. In other
+words, the pilot would help determine whether the full study had
+sufficient statistical power.[^massachusetts4] As of October 2021, the pilot has not
+started. If the information about the program and application assistance
+do not help more people enrolled in RAFT, then the research team will
+want to consider changing the encouragement before attempting a
+comprehensive study.
+
+### Data Use Examples
+
+**Administrative data needs differed between the pilot and the full
+study. These differences drove the prioritization of conversations and
+the structure of agreements.** Running the pilot meant the study team
+only needed immediate access to some data and could defer some of the
+more complex data discussions. For the pilot, the DTA held data critical
+for targeting the intervention: a list of households receiving DTA
+services who were likely eligible for RAFT. Pilot outcome data about
+whether participants enrolled in RAFT is held internally at the DHCD.
+
+For the full study looking at the impacts of RAFT, the DTA, along with
+multiple other agencies, hold outcome data of interest. For example, the
+research team was interested in receiving wage and employment
+information from the Department of Revenue (DOR) and Department of
+Unemployment Assistance, student test scores from either Boston Public
+Schools or the Department of Elementary and Secondary Education, and
+health outcomes from the Department of Public Health, in addition to
+public assistance receipt from the DTA.
+
+Splitting the work into these two phases meant that the pilot was a much
+easier lift in terms of administrative data-sharing requests. Still,
+although the additional outcome data sources are not needed until later,
+an understanding of what will be feasible for the later study is helpful
+now since the pilot is designed to inform that future work and would be
+less impactful on its own. Splitting the work led to a strategy of
+developing an initial agreement for data sharing with the DTA while
+having concurrent conversations with agencies about future data needs,
+as discussed in more detail below.
+
+## Legal and Institutional Framework 
+
+
+### Institutional Setup
+
+**Data sharing across agencies and with researchers occurs on a
+project-by-project and agency-by-agency basis.** While there are
+multiple instances of Massachusetts agencies sharing data with each
+other and with researchers, aside from several narrower use cases, there
+is not a statewide system or agreement to share it. Instead, each agency
+has multiple separate agreements with other agencies to share data for
+various programs or purposes. Getting permission to use this data for a
+new project usually requires a new and separate agreement. For example,
+the DHCD already receives some data from the DOR to confirm income
+eligibility for DHCD programs, including RAFT. Existing instances of
+data sharing suggest agencies have a precedent for sharing data, but it
+does not automatically mean it will be easy to use similar data for
+another project.
+
+The research team found focusing on immediate data needs while getting
+general agreement on longer-term data needs enabled faster movement on
+the pilot. No DUAs have been signed as of October 2021, though the DTA's
+legal and analytics teams were willing partners. At the same time, the
+team began general discussions about the use of additional data, such as
+longitudinal data on public assistance receipt, which will be critical
+for the full study. However, this data were not included in the proposed
+DUA. This can be a useful strategy to be able to move forward on initial
+needs (e.g., starting a pilot study) with assurance that the receipt of
+other long-term outcomes seems feasible.
+
+Massachusetts agencies were generally receptive to sharing data to
+further policy research and program improvement as well as potentially
+sharing de-identified data with researchers. The DTA stipulated that the
+DHCD treat and protect the DTA data the same way it would treat its own
+data. In having initial discussions, agencies and researchers seemed
+open to discussing various ways of sharing and housing data. Given that
+the agreements for outcome data have not been arranged, the final
+mechanisms used for this study are yet to be determined. In this
+instance, as in others, general interest and agreement to sharing data
+for the study seemed like the bigger hurdle. With agreement to the big
+picture, finalizing logistical details, while it might take longer,
+seems feasible.
+
+### Legal Context for Data Use
+
+**Sharing data for research purposes is easiest if clearly allowed in
+existing consent forms or agreements.** The research team found that
+agencies understood the value of sharing data for research, but some
+were hesitant to agree to share outcome data if such a process was not
+already built into existing procedures. The clearest legal avenues for
+sharing data originate in legislative mandates, direct program need, or
+clear existing individual consent language. In general, agencies have a
+web of existing different agreements in place to allow data sharing.
+
+In exploring previous instances in which agencies could share data, we
+found that the most common instances occurred when sharing data was
+built into the program from the beginning (e.g., [Learn to
+Earn](https://www.mass.gov/service-details/learn-to-earn-initiative), in
+which agencies stipulated what data they would share from the beginning
+of the program). Specific DUAs were created across agencies to enable
+this sharing of data specifically for this program. We explored whether
+it would be possible to either amend an existing DUA or copy the
+structure for our project. Amending an existing DUA was not feasible in
+our case, but the current version of the DUA between the DHCD and the
+DTA is based on a template used by the DHCD in other data-sharing
+agreements.
+
+When participants sign up for certain DHCD programs, including RAFT, the
+consent form they sign allows the data being collected to be used for
+research purposes. Therefore, it is more straightforward for the team to
+acquire information on whether participants have received RAFT. It also
+means it is generally easier for the DHCD to share data with other
+agencies (or researchers) for research purposes because all their
+participants have consent to this use of data when they sign off for a
+DHCD program. This type of consent to use data for research was only
+observed within the DHCD consent forms.
+
+Given that the DHCD has an existing consent process allowing research,
+the research team is also considering an alternative research design
+where assistance in filling out applications is given to those who have
+started, but not finished, filling out an application for RAFT. These
+participants would have already signed a DHCD consent form, which would
+cover both the treatment and control groups.
+
+The DHCD could alter the consent form as needed, say for additional
+outcome data collection. This is an option if multiple agencies feel
+that informed consent is needed (discussed in the section below),
+although this would change the research question by shifting the target
+population.
+
+### Legal Framework for Granting Data Access
+
+**Massachusetts has various regulations about data sharing and access
+without any explicit mention of research. This requires a separate DUA
+in each instance with terms discussed individually for each project.**
+In early conversations with multiple agencies, the research team asked
+about various methods of sharing data with researchers. For example, is
+it easier if data is stored at an agency or stored on Harvard University
+servers? Does it make it easier if researchers become classified as
+"special employees"? In most cases there was not a strong preference
+about these questions, further supporting the idea that if an agency
+expresses initial interest or agreement to a particular project, working
+out the details is possible.
+
+Not sharing identified data with researchers was important for some
+agencies, though others were more willing to discuss sharing identified
+data so that the research team could handle the matching of data. Given
+that the research team has flexibility here, and the DHCD has some
+internal capacity to perform matching, this project is viable with
+either identified or de-identified data.
+
+**It was not clear how important having informed consent from
+participants would be for this project.** In having discussions with
+other agencies, it was not immediately clear if informed consent (i.e.,
+asking participants in both the treatment and control groups for
+permission to access their data from various agencies) would make this
+process easier. While an encouragement design is easiest without needing
+consent---since these designs typically involve only contacting
+individuals in the treatment group---it is still possible to create a
+design where participants provide active consent to receive
+notifications and for data collection. However, not knowing the relative
+importance of consent to different agencies made knowing how to design
+the experiment ambiguous.
+
+## Protection of Sensitive and Personal Data
+
+
+### Safe Projects: Evaluating Data Analysis Projects for Appropriateness
+
+The DHCD does not have its own institutional review board (IRB) or
+research review process. The decision around whether to share data was
+focused around (1) whether it could be used for research, (2) some
+discussion of data safety, and (3) whether the work and resources
+required fit within an agency's current priorities and resources.
+
+Harvard University's (where the researchers are based) IRB determined
+the pilot to be exempt from IRB review because it was for program
+improvement of RAFT, one of the DHCD's own programs. For the pilot,
+identified data will not need to leave DHCD servers, researchers will
+not need to see identified data, and the person doing the encouragement
+will be a DHCD employee. In addition, for the pilot, the research team
+is not requesting outcome data from any other agencies and expects the
+full study to require IRB approval through Harvard University.
+
+While the IRB determination may not have influenced decisions to share
+or not share data in this instance, this type of reasoning could be
+useful in allowing agencies to share data. Sometimes, sharing data
+across agencies for "program improvement" can make it easier to share
+data rather than for "research." In fact, demonstrating some benefit of
+the research to program administration is often a requirement for data
+access even among government agencies that have established research
+data access procedures.
+
+### Safe People: Evaluating Researchers Who Seek Data Access
+
+As discussed above, state agencies did not appear to have preferences or
+requirements as to whether researchers needed to be "special employees,"
+which would essentially allow them to be government employees for the
+purpose of data access. Moreover, there appears to be no standardized
+vetting process for researchers wanting to partner on research projects
+with the state or access data. In our particular case, the researchers
+had an existing relationship with the DHCD through a longer-term
+technical assistance partnership, external to J-PAL, that predates this
+research engagement.
+
+In all discussions we have made it clear the project would limit access
+to researchers and agency staff who are necessary to perform data
+transfer and analysis (i.e., "safe people"). This group of people may
+vary depending on where the matching and linking of data occurs (e.g.,
+if agencies allow researchers to link data, they will view de-identified
+data, but if the agencies perform the matching, researchers will only
+view de-identified data).
+
+### Safe Settings: Accessing Data 
+
+Data access and sharing procedures have not been finalized. The
+researchers plan to use secure data storage and access procedures in
+accordance with their institution and any additional requirements from
+the DHCD and other data partners whose data may be used as part of this
+study. In early discussions with agencies, it seems likely that Harvard
+University's requirements[^massachusetts5] for data security and access are as
+stringent if not more stringent than those required by various agencies.
+In discussions for the full study, we anticipate that the university's
+security measures will help reassure agencies that researchers would
+treat data appropriately. Data access procedures will be outlined in the
+IRB protocol and in DUAs, and access to data will be limited to safe
+people, as defined above.
+
+### Safe Data: Verifying and Mitigating Disclosure Risk
+
+Researchers will minimize disclosure risk by using de-identified data
+when possible, and perform linking or matching in the safest way
+possible, in this case in accordance with [Harvard's Research Data
+Security
+Policy](https://research.harvard.edu/2020/06/26/research-data-management/).
+For example, if a data agency has internal capacity, it can perform the
+link itself and share de-identified data with the researchers for
+analysis. This type of setup has lower disclosure risk since it prevents
+any identified information from leaving the agency. If agencies do not
+have the capacity to perform the match, then researchers can set up
+secure data transfer methods. Harvard classifies types of data [based on
+level](https://policy.security.harvard.edu/view-data-security-level);
+with each higher level comes more identified information shared and more
+protection protocols in place. There are many different data linking and
+sharing scenarios depending on researcher and agency capabilities;
+researchers will explore and choose the safest possible feasible
+approach to answer the research question.
+
+### Safe Outputs: Verifying and Mitigating Disclosure Risk in Statistical Analysis, Results, and Tabulations
+
+The exact review processes for disclosure risk will be determined when
+the full study begins. Researchers will follow rules agreed upon in DUAs
+and follow standard practices such as suppressing results from small
+cells and not publishing identifiable information.
+
+### Data Life Cycle and Replicability
+
+
+Researchers have not yet gained access to data, and therefore the
+preservation and reproducibility of both researcher-accessible and
+researcher-generated files has not been established. Given that the
+primary researcher-accessible files we are interested in are based on
+benefit eligibility and receipt across various programs, which is
+something agencies calculate on an ongoing basis, the reproducibility of
+these types of files seems high. This will be a topic of future
+discussion. Researcher-generated files will follow best practices (e.g.,
+writing code to automate and ensure the reproducibility of data cleaning
+and analysis).
+
+## Sustainability and Continued Success
+
+### Outreach
+
+The project to date demonstrates successful outreach on the part of the
+DHCD, HKS researchers, and J-PAL to generate this research partnership.
+The partnership between the DHCD and Ang and Dobbie began as a technical
+assistance engagement through the Government Performance Lab at the HKS.
+The team continued to look for additional support in applying to J-PAL
+North America's Housing Stability Evaluation Incubator, which ultimately
+led to support through IDEA. Both the DHCD and the researchers have
+shown commitment to bringing in additional collaborators and working
+together to achieve shared research objectives. In addition, a better
+understanding of how data is created, stored, and shared at
+Massachusetts agencies allowed the research manager to reach out to the
+DTA and DOR regarding a separate research project. Successful research
+partnerships require commitment from multiple parties and offer the hope
+that lessons learned will be beneficial in repeat interactions and
+longer-term relationships.
+
+### Revenue
+
+The data access mechanism, the number and type of data sets used, and
+the length of time for access have not been established. Therefore, we
+are unable to comment on the financial stability at this time.
+
+### Metrics of Success
+
+**Data access is still in progress.** A DUA for the pilot---with
+reassurances for the full study---is in the process of being developed.
+It has not been signed as of October 2021. Pending the DUA's execution,
+gaining access to data so far appears at least partially successful.
+Signed agreements, launching the pilot, and agreements for data use for
+a full study are the next measures of success for this project.
+
+## About the Author 
+
+
+Amanda Lee is a research manager at J-PAL North America. She provides
+research support across multiple randomized evaluations and manages the
+[Catalog of Administrative Data
+Sets](https://www.povertyactionlab.org/catalog-administrative-data-sets).
+
+This case study reflects the experiences of the author on this
+particular project and does not necessarily represent the views of the
+DHCD or any other agency of the Commonwealth of Massachusetts.
+
+## References 
+
+
+Binder, Jacob. 2019. "Reducing and Preventing Homelessness: Lessons from
+Randomized Evaluations." J-PAL Evidence Review.
+[<https://www.povertyactionlab.org/sites/default/files/publication/rph_homelessness-evidence-review.pdf>.]{.underline}
+
+Doyle, Mary-Alice, and Laura Feeney. 2021. "Quick Guide to Power
+Calculations." J-PAL North America.
+[<https://www.povertyactionlab.org/resource/quick-guide-power-calculations>.]{.underline}
+
+EMPath. "AMP Up Boston Research Study." Accessed March 29, 2022.
+[<https://www.empathways.org/direct-services/amp-up-boston>.]{.underline}
+
+Harvard University. "Information Security Policy." Accessed March 29,
+2022.[<https://policy.security.harvard.edu/view-data-security-level>.]{.underline}
+
+Harvard University. "Research Data Management." Accessed March 29, 2022.
+[<https://research.harvard.edu/2020/06/26/research-data-management/>.]{.underline}
+
+Heard, Kenya, Elisabeth O'Toole, Rohit Naimpally, and Lindsey Bressler.
+2017. "Real-World Challenges to Randomization and Their Solutions."
+J-PAL North America.
+[<https://www.povertyactionlab.org/sites/default/files/research-resources/2017.04.14-Real-World-Challenges-to-Randomization-and-Their-Solutions.pdf>.]{.underline}
+
+J-PAL North America. "Catalog of Administrative Data Sets." Accessed
+March 29, 2022.
+[<https://www.povertyactionlab.org/catalog-administrative-data-sets>.]{.underline}
+
+J-PAL North America. "Housing Stability Evaluation Incubator." Accessed
+March 29, 2022.
+[<https://www.povertyactionlab.org/HousingStabilityEvaluationIncubator>.]{.underline}
+
+Loeb, Susanna, Katharine Meyer, and Samuel Madison. "The Impact of Text
+Message Nudges on Churn in the Supplemental Nutrition Assistance Program
+in the United States. J-PAL Evaluations. Accessed March 29, 2022.
+[<https://www.povertyactionlab.org/evaluation/impact-text-message-nudges-churn-supplemental-nutrition-assistance-program-united-states>.]{.underline}
+
+Mass.gov. "Emergency Housing Payment Assistance during COVID-19."
+Accessed March 29, 2022.
+[<https://www.mass.gov/info-details/emergency-housing-payment-assistance-during-covid-19>.]{.underline}
+
+Mass.gov. "Learn to Earn Initiative." Accessed March 29,
+2022.[<https://www.mass.gov/service-details/learn-to-earn-initiative>.]{.underline}
+
+
+
+
+[^massachusetts1]: [[https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations]{.underline}](https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations)
+
+[^massachusetts2]: [[https://www.mass.gov/info-details/emergency-housing-assistance-during-covid-19]{.underline}](https://www.mass.gov/info-details/emergency-housing-assistance-during-covid-19).
+    During the pandemic, Massachusetts also operated the Emergency
+    Rental Assistance Program, which provides up to 18 months of support
+    for rent arrears and future rent stipends.
+
+[^massachusetts3]: See Heard et al. (2017, p. 12) for a definition and discussion of
+    use cases for an encouragement design.
+
+[^massachusetts4]: Because participants in both groups can enroll in RAFT, conducting
+    a randomized evaluation requires a sufficiently large, randomly-=
+    induced difference in participation as a result of the encouragement
+    in order to be able to detect effects. This "first-stage"
+    relationship between encouragement and enrollment is critical to
+    having a sufficiently powered study. Differences in outcomes are
+    estimated by comparing the entire treatment group to the entire
+    control group regardless of enrollment. RAFT, however, can only help
+    those who enroll. Estimates of its impacts are diluted by
+    individuals who are treated by the encouragement but do not enroll
+    and by a lack of difference in enrollment between the treatment and
+    control groups. Thus, conducting the study requires that the program
+    be undersubscribed at baseline (which is true) and the encouragement
+    sufficiently increases enrollment (which we will learn from the
+    pilot). How much the encouragement increases enrollment will be used
+    to calculate the sample size needed for the full study. Power
+    considerations for encouragement designs are discussed in Heard et
+    al. (2017), and a guide to power is available in this [[J-PAL
+    Research
+    Resource]{.underline}](https://www.povertyactionlab.org/resource/quick-guide-power-calculations).
+
+[^massachusetts5]: <https://policy.security.harvard.edu/view-data-security-level>
