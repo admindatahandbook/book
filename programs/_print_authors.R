@@ -137,11 +137,11 @@ printauthor<-function(chapter,debug=FALSE){
 
 
   # The publication is read from the config file, first from chapter, otherwise from overall. We might also read the DOI from there.
-  pubdate <- config::get(chapter)$first_publish_date
+  pubdate <- config::get(chapter)$first_publish_date 
   if (is.null(pubdate)) {
-    pubdate <- config$first_publish_date %>%  str_split_fixed(" ",2) 
+    pubdate <- config$first_publish_date 
   }
-  
+  pubdate <- pubdate %>%  str_split_fixed(" ",2) 
 
 
   # The citation thing is only output to the HTML
