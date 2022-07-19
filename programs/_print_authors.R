@@ -52,8 +52,10 @@ printauthor<-function(chapter,debug=FALSE){
     
 
   # output to HTML document / Ebook
+  if ( ! debug ) {
   if (knitr::is_html_output()) {
     cat(paste0("*",nameinst,"*  \n"))
+  }
   }
       
 # output to LaTeX document
