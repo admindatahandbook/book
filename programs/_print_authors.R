@@ -149,9 +149,9 @@ printauthor<-function(chapter,debug=FALSE){
     cat(readLines("./includes/citation-block-link.html"))
     cat('<div id="myCitation" style="display: none;">')
     cat(paste0(authors.cmos,". ",pubdate[2],". ","\"<span id=\"chapTitle\">Title</span>.\" In: "))
-    cat(paste0(config$editors," (eds), *",config$title,"* "))
+    cat(paste0(config$editors," (eds), *",config$title,"*"))
     # cat(paste0("."))
-    cat(paste0(", Version ",config$version_link," ."))
+    cat(paste0(", Version ",config$version_link,"."))
     cat(paste0("Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>.<br />"))
     cat(paste0("<span class=\"copyright\">©️ ",copyright,". Licensed under "))
     if ( license.cc != "" ) {
