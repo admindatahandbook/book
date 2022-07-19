@@ -134,8 +134,12 @@ printauthor<-function(chapter,debug=FALSE){
 
 
 
-  # The publication is read from the config file. We might also read the DOI from there.
-  pubdate <- config$first_publish_date %>%  str_split_fixed(" ",2) 
+  # The publication is read from the config file, first from chapter, otherwise from overall. We might also read the DOI from there.
+  pubdate <- config::get(chapter)$first_publish_date
+  if (is.null(pubdate)) {
+    pubdate <- config$first_publish_date %>%  str_split_fixed(" ",2) 
+  }
+  
 
 
   # The citation thing is only output to the HTML
@@ -143,7 +147,10 @@ printauthor<-function(chapter,debug=FALSE){
     cat(readLines("./includes/citation-block-link.html"))
     cat('<div id="myCitation" style="display: none;">')
     cat(paste0(authors.cmos,". ",pubdate[2],". ","\"<span id=\"chapTitle\">Title</span>.\" In: "))
-    cat(paste0(config$editors," (eds), *",config$title,"*. Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>.<br />"))
+    cat(paste0(config$editors," (eds), *",config$title,"* "))
+    # cat(paste0("."))
+    cat(paste0(", Version ",config$version_link," ."))
+    cat(paste0("Accessed at <span id=\"thisURL\"></span> on <span id=\"todayDate\"></span>.<br />"))
     cat(paste0("<span class=\"copyright\">©️ ",copyright,". Licensed under "))
     if ( license.cc != "" ) {
       cat(paste0("<a href=\"https://creativecommons.org/licenses/",license.cc,"/4.0/\"><img alt=\"",toupper(license.chapter)," logo\" src=\"assets/",license.chapter,".png\" height=\"12\"/></a>"))
