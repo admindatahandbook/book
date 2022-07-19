@@ -1,4 +1,4 @@
-# Case Study: Evaluating a Rental Assistance Program in Massachusetts {#massachusetts}
+# Evaluating a Rental Assistance Program in Massachusetts {#massachusetts}
 
 
 ```{r, echo=FALSE, results='asis'}
@@ -12,7 +12,7 @@ printauthor("massachusetts")
 Homelessness is one of the more extreme outcomes of poverty and
 inequality. In the United States in 2019, more than 500,000 people
 experience homelessness on a given night and 1.4 million people pass
-through emergency shelters each year [@binder2019].[^massachusetts1] Each year, significant US
+through emergency shelters each year [@binder2019]. Each year, significant US
 federal and local financial resources are devoted to combating
 homelessness, with direct federal expenditures totaling around \$6.1
 billion annually and local jurisdictions spending billions more. Many
@@ -28,7 +28,7 @@ these questions.
 For households facing eviction, foreclosure, or other housing
 emergencies, the Massachusetts Residential Assistance for Families in
 Transition (RAFT) program provides up to \$10,000 per household to
-preserve current housing or move to new housing.[^massachusetts2] Researchers at the
+preserve current housing or move to new housing [@mass.govb].[^massachusetts2] Researchers at the
 Harvard Kennedy School (HKS) partnered with the Massachusetts Department
 of Housing and Community Development (DHCD) to evaluate the effect of
 RAFT on housing outcomes (housing status, eviction, and others) as well
@@ -67,8 +67,8 @@ Given the desire to build long-term research partnerships, J-PAL North
 America identified Massachusetts as a high-value partner given the
 Commonwealth's significant programmatic and data responsibilities,
 interest from multiple J-PAL-affiliated professors in doing research
-with the state (including two other projects that J-PAL North America
-has supported [@loeb;@empath]), and real but solvable challenges to using data for
+with the state, including two other projects that J-PAL North America
+has supported [@loeb;@empath], and real but solvable challenges to using data for
 research. The author, a research manager at J-PAL North America,
 provided support during this process, primarily around strategy to
 ensure access to necessary administrative data.
@@ -138,7 +138,7 @@ employment, and housing. This was done because in an encouragement
 design, it is important for there to be a large enough difference in
 RAFT enrollment rates to allow a comparison between groups. In other
 words, the pilot would help determine whether the full study had
-sufficient statistical power.[^massachusetts4] As of October 2021, the pilot has not
+sufficient statistical power.[^massachusetts4] As of October 2021, the pilot had not
 started. If the information about the program and application assistance
 do not help more people enrolled in RAFT, then the research team will
 want to consider changing the encouragement before attempting a
@@ -146,9 +146,9 @@ comprehensive study.
 
 ### Data Use Examples
 
-**Administrative data needs differed between the pilot and the full
+Administrative data needs differed between the pilot and the full
 study. These differences drove the prioritization of conversations and
-the structure of agreements.** Running the pilot meant the study team
+the structure of agreements. Running the pilot meant the study team
 only needed immediate access to some data and could defer some of the
 more complex data discussions. For the pilot, the DTA held data critical
 for targeting the intervention: a list of households receiving DTA
@@ -195,7 +195,7 @@ another project.
 
 The research team found focusing on immediate data needs while getting
 general agreement on longer-term data needs enabled faster movement on
-the pilot. No DUAs have been signed as of October 2021, though the DTA's
+the pilot. No DUAs had been signed as of October 2021, though the DTA's
 legal and analytics teams were willing partners. At the same time, the
 team began general discussions about the use of additional data, such as
 longitudinal data on public assistance receipt, which will be critical
@@ -230,11 +230,11 @@ web of existing different agreements in place to allow data sharing.
 
 In exploring previous instances in which agencies could share data, we
 found that the most common instances occurred when sharing data was
-built into the program from the beginning (for instance, the [Learn to
-Earn Initiative](https://www.mass.gov/service-details/learn-to-earn-initiative) [@mass.gova], in
-which agencies stipulated what data they would share from the beginning
-of the program). Specific DUAs were created across agencies to enable
-this sharing of data specifically for this program. We explored whether
+built into the program from the beginning. For instance, in the [Learn to
+Earn Initiative](https://www.mass.gov/service-details/learn-to-earn-initiative) [@mass.gova], 
+agencies stipulated what data they would share from the outstart
+of the program. Specific DUAs were created across agencies to enable
+the sharing of data specifically for this program. We explored whether
 it would be possible to either amend an existing DUA or copy the
 structure for our project. Amending an existing DUA was not feasible in
 our case, but the current version of the DUA between the DHCD and the
@@ -438,7 +438,7 @@ gaining access to data so far appears at least partially successful.
 Signed agreements, launching the pilot, and agreements for data use for
 a full study are the next measures of success for this project.
 
-## About the Author 
+## About the Author {-}
 
 
 Amanda Lee is a research manager at J-PAL North America. She provides
@@ -446,11 +446,12 @@ research support across multiple randomized evaluations and manages the
 [Catalog of Administrative Data
 Sets](https://www.povertyactionlab.org/catalog-administrative-data-sets).
 
+## Disclaimer {-}
 This case study reflects the experiences of the author on this
 particular project and does not necessarily represent the views of the
 DHCD or any other agency of the Commonwealth of Massachusetts.
 
-## References 
+## RRRReferences 
 
 
 Binder, Jacob. 2019. "Reducing and Preventing Homelessness: Lessons from
@@ -500,12 +501,11 @@ Mass.gov. "Learn to Earn Initiative." Accessed March 29,
 
 [^massachusetts1]: [[https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations]{.underline}](https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations)
 
-[^massachusetts2]: @mass.govb [[https://www.mass.gov/info-details/emergency-housing-assistance-during-covid-19]{.underline}](https://www.mass.gov/info-details/emergency-housing-assistance-during-covid-19).
-    During the pandemic, Massachusetts also operated the Emergency
-    Rental Assistance Program, which provides up to 18 months of support
+[^massachusetts2]:   During the pandemic, Massachusetts also operated the Emergency
+    Rental Assistance Program, which provided up to 18 months of support
     for rent arrears and future rent stipends.
 
-[^massachusetts3]: See @heard2017 Heard et al. (2017, p. 12) for a definition and discussion of
+[^massachusetts3]: See @heard2017  for a definition and discussion of
     use cases for an encouragement design.
 
 [^massachusetts4]: Because participants in both groups can enroll in RAFT, conducting
@@ -524,7 +524,15 @@ Mass.gov. "Learn to Earn Initiative." Accessed March 29,
     sufficiently increases enrollment (which we will learn from the
     pilot). How much the encouragement increases enrollment will be used
     to calculate the sample size needed for the full study. Power
-    considerations for encouragement designs are discussed in @heard2017 Heard et
-    al. (2017), and  @doylefeeney2021 provide a guide to power calculations.
+    considerations for encouragement designs are discussed in @heard2017, and  @doylefeeney2021 provide a guide to power calculations.
 
 [^massachusetts5]: @harvarduniversity2020 <https://policy.security.harvard.edu/view-data-security-level>
+
+
+```{block, type='invisible'}
+This is a workaround for citations in footnotes, please ignore.
+@heard2017
+@doylefeeney2021
+```
+
+\putbib
