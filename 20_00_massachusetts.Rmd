@@ -1,4 +1,4 @@
-# Case Study: Evaluating a Rental Assistance Program {#massachusetts}
+# Case Study: Evaluating a Rental Assistance Program in Massachusetts {#massachusetts}
 
 
 ```{r, echo=FALSE, results='asis'}
@@ -12,7 +12,7 @@ printauthor("massachusetts")
 Homelessness is one of the more extreme outcomes of poverty and
 inequality. In the United States in 2019, more than 500,000 people
 experience homelessness on a given night and 1.4 million people pass
-through emergency shelters each year.[^massachusetts1] Each year, significant US
+through emergency shelters each year [@binder2019].[^massachusetts1] Each year, significant US
 federal and local financial resources are devoted to combating
 homelessness, with direct federal expenditures totaling around \$6.1
 billion annually and local jurisdictions spending billions more. Many
@@ -67,12 +67,9 @@ Given the desire to build long-term research partnerships, J-PAL North
 America identified Massachusetts as a high-value partner given the
 Commonwealth's significant programmatic and data responsibilities,
 interest from multiple J-PAL-affiliated professors in doing research
-with the state (including two ongoing projects that J-PAL North America
-[has](https://www.povertyactionlab.org/evaluation/impact-text-message-nudges-churn-supplemental-nutrition-assistance-program-united-states)
-or [is
-currently](https://www.empathways.org/direct-services/amp-up-boston)
-supporting), and real but solvable challenges to using data for
-research. Amanda Lee, a research manager at J-PAL North America,
+with the state (including two other projects that J-PAL North America
+has supported [@loeb;@empath]), and real but solvable challenges to using data for
+research. The author, a research manager at J-PAL North America,
 provided support during this process, primarily around strategy to
 ensure access to necessary administrative data.
 
@@ -89,17 +86,17 @@ and sharing.
 
 ### Motivation and Background
 
-**The conception of this project was largely driven from within the
-DHCD.** The DHCD was, and has remained, one of the main driving forces
+The conception of this project was largely driven from within the
+DHCD. The DHCD was, and has remained, one of the main driving forces
 behind this evaluation. It was already working with J-PAL-affiliated
 researchers through a technical assistance relationship. To further
 develop this partnership into a randomized evaluation, the DHCD applied
 to J-PAL North America's [Housing Stability Evaluation
-Incubator](https://www.povertyactionlab.org/initiative/housing-stability-evaluation-incubator),
+Incubator](https://www.povertyactionlab.org/initiative/housing-stability-evaluation-incubator) [@housingstabilityindicator],
 a practitioner-facing program designed to develop housing
-stability--related research ideas into feasible evaluations. As part of
+stability-related research ideas into feasible evaluations. As part of
 the incubator, the DCHD, Ang, and Dobbie worked to further develop an
-evaluation, and because administrative data access was a primary
+evaluation. Because administrative data access was a primary
 challenge for conducting the evaluation, J-PAL selected the project to
 receive IDEA support, funded by the Alfred P. Sloan Foundation. Even
 with this outside support, continued internal agency leadership would
@@ -107,8 +104,8 @@ prove important, both in defining the type of project and in opening
 doors for initial discussions with other state agencies.
 
 When the research team (the DHCD, researchers, and J-PAL staff) began
-designing the evaluation, if someone applied to RAFT and was eligible,
-they received funds. That is, funding for the program was not a
+designing the evaluation, everybody who applied to RAFT and was eligible
+received funds. That is, funding for the program was not a
 constraint. The research team recognized that it would be unethical to
 design a randomized evaluation in which RAFT-eligible households would
 be randomized into a group that did not receive RAFT. Therefore, to
@@ -133,7 +130,7 @@ for RAFT, but the encouragement, if effective, was supposed to produce
 higher levels of enrollment into RAFT in the treatment group.
 
 To simplify the initial data-sharing process and to develop the
-encouragement mechanism, the research team decided to try and run a
+encouragement mechanism, the research team decided to  run a
 pilot study that would measure whether and how much the encouragement
 increased enrollment in RAFT (the "first stage") before designing an
 evaluation of the effect of RAFT on downstream outcomes, such as income,
@@ -182,8 +179,8 @@ as discussed in more detail below.
 
 ### Institutional Setup
 
-**Data sharing across agencies and with researchers occurs on a
-project-by-project and agency-by-agency basis.** While there are
+Data sharing across agencies and with researchers occurs on a
+project-by-project and agency-by-agency basis. While there are
 multiple instances of Massachusetts agencies sharing data with each
 other and with researchers, aside from several narrower use cases, there
 is not a statewide system or agreement to share it. Instead, each agency
@@ -222,8 +219,8 @@ seems feasible.
 
 ### Legal Context for Data Use
 
-**Sharing data for research purposes is easiest if clearly allowed in
-existing consent forms or agreements.** The research team found that
+Sharing data for research purposes is easiest if clearly allowed in
+existing consent forms or agreements. The research team found that
 agencies understood the value of sharing data for research, but some
 were hesitant to agree to share outcome data if such a process was not
 already built into existing procedures. The clearest legal avenues for
@@ -233,8 +230,8 @@ web of existing different agreements in place to allow data sharing.
 
 In exploring previous instances in which agencies could share data, we
 found that the most common instances occurred when sharing data was
-built into the program from the beginning (e.g., [Learn to
-Earn](https://www.mass.gov/service-details/learn-to-earn-initiative), in
+built into the program from the beginning (for instance, the [Learn to
+Earn Initiative](https://www.mass.gov/service-details/learn-to-earn-initiative) [@mass.gova], in
 which agencies stipulated what data they would share from the beginning
 of the program). Specific DUAs were created across agencies to enable
 this sharing of data specifically for this program. We explored whether
@@ -269,9 +266,9 @@ population.
 
 ### Legal Framework for Granting Data Access
 
-**Massachusetts has various regulations about data sharing and access
+Massachusetts has various regulations about data sharing and access
 without any explicit mention of research. This requires a separate DUA
-in each instance with terms discussed individually for each project.**
+in each instance with terms discussed individually for each project.
 In early conversations with multiple agencies, the research team asked
 about various methods of sharing data with researchers. For example, is
 it easier if data is stored at an agency or stored on Harvard University
@@ -288,14 +285,14 @@ that the research team has flexibility here, and the DHCD has some
 internal capacity to perform matching, this project is viable with
 either identified or de-identified data.
 
-**It was not clear how important having informed consent from
-participants would be for this project.** In having discussions with
+It was not clear how important having informed consent from
+participants would be for this project. In  discussions with
 other agencies, it was not immediately clear if informed consent (i.e.,
 asking participants in both the treatment and control groups for
 permission to access their data from various agencies) would make this
 process easier. While an encouragement design is easiest without needing
-consent---since these designs typically involve only contacting
-individuals in the treatment group---it is still possible to create a
+consent --- since these designs typically involve only contacting
+individuals in the treatment group --- it is still possible to create a
 design where participants provide active consent to receive
 notifications and for data collection. However, not knowing the relative
 importance of consent to different agencies made knowing how to design
@@ -312,7 +309,7 @@ focused around (1) whether it could be used for research, (2) some
 discussion of data safety, and (3) whether the work and resources
 required fit within an agency's current priorities and resources.
 
-Harvard University's (where the researchers are based) IRB determined
+Harvard University's  IRB determined
 the pilot to be exempt from IRB review because it was for program
 improvement of RAFT, one of the DHCD's own programs. For the pilot,
 identified data will not need to leave DHCD servers, researchers will
@@ -371,14 +368,14 @@ Researchers will minimize disclosure risk by using de-identified data
 when possible, and perform linking or matching in the safest way
 possible, in this case in accordance with [Harvard's Research Data
 Security
-Policy](https://research.harvard.edu/2020/06/26/research-data-management/).
+Policy](https://research.harvard.edu/2020/06/26/research-data-management/) [@harvarduniversity-rdm].
 For example, if a data agency has internal capacity, it can perform the
 link itself and share de-identified data with the researchers for
 analysis. This type of setup has lower disclosure risk since it prevents
 any identified information from leaving the agency. If agencies do not
 have the capacity to perform the match, then researchers can set up
 secure data transfer methods. Harvard classifies types of data [based on
-level](https://policy.security.harvard.edu/view-data-security-level);
+their data security level](https://policy.security.harvard.edu/view-data-security-level) [@harvarduniversity-datasecuritylevels];
 with each higher level comes more identified information shared and more
 protection protocols in place. There are many different data linking and
 sharing scenarios depending on researcher and agency capabilities;
@@ -395,7 +392,7 @@ cells and not publishing identifiable information.
 ### Data Life Cycle and Replicability
 
 
-Researchers have not yet gained access to data, and therefore the
+As of May 2022, researchers have not yet gained access to data, and therefore the
 preservation and reproducibility of both researcher-accessible and
 researcher-generated files has not been established. Given that the
 primary researcher-accessible files we are interested in are based on
@@ -434,8 +431,8 @@ are unable to comment on the financial stability at this time.
 
 ### Metrics of Success
 
-**Data access is still in progress.** A DUA for the pilot---with
-reassurances for the full study---is in the process of being developed.
+Data access is still in progress. A DUA for the pilot --- with
+reassurances for the full study --- is in the process of being developed.
 It has not been signed as of October 2021. Pending the DUA's execution,
 gaining access to data so far appears at least partially successful.
 Signed agreements, launching the pilot, and agreements for data use for
@@ -503,12 +500,12 @@ Mass.gov. "Learn to Earn Initiative." Accessed March 29,
 
 [^massachusetts1]: [[https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations]{.underline}](https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations)
 
-[^massachusetts2]: [[https://www.mass.gov/info-details/emergency-housing-assistance-during-covid-19]{.underline}](https://www.mass.gov/info-details/emergency-housing-assistance-during-covid-19).
+[^massachusetts2]: @mass.govb [[https://www.mass.gov/info-details/emergency-housing-assistance-during-covid-19]{.underline}](https://www.mass.gov/info-details/emergency-housing-assistance-during-covid-19).
     During the pandemic, Massachusetts also operated the Emergency
     Rental Assistance Program, which provides up to 18 months of support
     for rent arrears and future rent stipends.
 
-[^massachusetts3]: See Heard et al. (2017, p. 12) for a definition and discussion of
+[^massachusetts3]: See @heard2017 Heard et al. (2017, p. 12) for a definition and discussion of
     use cases for an encouragement design.
 
 [^massachusetts4]: Because participants in both groups can enroll in RAFT, conducting
@@ -527,9 +524,7 @@ Mass.gov. "Learn to Earn Initiative." Accessed March 29,
     sufficiently increases enrollment (which we will learn from the
     pilot). How much the encouragement increases enrollment will be used
     to calculate the sample size needed for the full study. Power
-    considerations for encouragement designs are discussed in Heard et
-    al. (2017), and a guide to power is available in this [[J-PAL
-    Research
-    Resource]{.underline}](https://www.povertyactionlab.org/resource/quick-guide-power-calculations).
+    considerations for encouragement designs are discussed in @heard2017 Heard et
+    al. (2017), and  @doylefeeney2021 provide a guide to power calculations.
 
-[^massachusetts5]: <https://policy.security.harvard.edu/view-data-security-level>
+[^massachusetts5]: @harvarduniversity2020 <https://policy.security.harvard.edu/view-data-security-level>
