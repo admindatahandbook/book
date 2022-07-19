@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>18 Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19 | Handbook on Using Administrative Data for Research and Evidence-based Policy</title>
+  <meta name="description" content="18 Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19 | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="18 Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19 | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="assets/images/webcover.png" />
+  <meta property="og:description" content="18 Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19 | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="github-repo" content="admindatahandbook/book" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="18 Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19 | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  
+  <meta name="twitter:description" content="18 Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19 | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="twitter:image" content="assets/images/webcover.png" />
+
+<meta name="author" content="Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber" />
+
+
+<meta name="date" content="2021-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="massachusetts.html"/>
+<link rel="next" href="contributing.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2579240-16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2579240-16');
+</script>
+
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Show citation to this chapter";
+  }
+} 
+
+</script>
+
+
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/toc.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/html.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level=""><a href="https://admindatahandbook.mit.edu/"><i class="fa fa-home"></i>Home page</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to the Handbook</a></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About the Editors</a></li>
+<li class="chapter" data-level="" data-path="handbook-acknowledgements.html"><a href="handbook-acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Using Administrative Data for Research and Evidence-Based Policy: An Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#the-potential-of-administrative-data-for-research-and-policymaking"><i class="fa fa-check"></i><b>1.1</b> The Potential of Administrative Data for Research and Policymaking</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#why-is-the-analysis-of-administrative-data-still-relatively-rare"><i class="fa fa-check"></i><b>1.2</b> Why is the Analysis of Administrative Data Still Relatively Rare?</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#this-handbook"><i class="fa fa-check"></i><b>1.3</b> This Handbook</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#further-reading"><i class="fa fa-check"></i><b>1.4</b> Further Reading</a></li>
+</ul></li>
+<li class="part"><span><b>I Special Topics</b></span></li>
+<li class="chapter" data-level="2" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>2</b> Physically Protecting Sensitive Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="security.html"><a href="security.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="security.html"><a href="security.html#types-of-security-threats"><i class="fa fa-check"></i><b>2.2</b> Types of Security Threats</a></li>
+<li class="chapter" data-level="2.3" data-path="security.html"><a href="security.html#technical-features-of-data-access-mechanisms"><i class="fa fa-check"></i><b>2.3</b> Technical Features of Data Access Mechanisms</a></li>
+<li class="chapter" data-level="2.4" data-path="security.html"><a href="security.html#typical-access-mechanisms"><i class="fa fa-check"></i><b>2.4</b> Typical Access Mechanisms</a></li>
+<li class="chapter" data-level="2.5" data-path="security.html"><a href="security.html#five-aspects-of-data-access-mechanisms"><i class="fa fa-check"></i><b>2.5</b> Five Aspects of Data Access Mechanisms</a></li>
+<li class="chapter" data-level="2.6" data-path="security.html"><a href="security.html#specific-data-access-mechanisms-along-the-five-aspects"><i class="fa fa-check"></i><b>2.6</b> Specific Data Access Mechanisms Along the Five Aspects</a></li>
+<li class="chapter" data-level="2.7" data-path="security.html"><a href="security.html#guidance-for-data-providers-and-researchers"><i class="fa fa-check"></i><b>2.7</b> Guidance for Data Providers and Researchers</a></li>
+<li class="chapter" data-level="" data-path="security.html"><a href="security.html#about-the-authors"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dua.html"><a href="dua.html"><i class="fa fa-check"></i><b>3</b> Model Data Use Agreements: A Practical Guide</a><ul>
+<li class="chapter" data-level="3.1" data-path="dua.html"><a href="dua.html#overview"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
+<li class="chapter" data-level="3.2" data-path="dua.html"><a href="dua.html#negotiating-the-data-use-request"><i class="fa fa-check"></i><b>3.2</b> Negotiating the Data Use Request</a></li>
+<li class="chapter" data-level="3.3" data-path="dua.html"><a href="dua.html#compliance"><i class="fa fa-check"></i><b>3.3</b> Compliance</a></li>
+<li class="chapter" data-level="3.4" data-path="dua.html"><a href="dua.html#summary"><i class="fa fa-check"></i><b>3.4</b> Summary</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#supplemental-materials"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#dua-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="irb.html"><a href="irb.html"><i class="fa fa-check"></i><b>4</b> Collaborating with the Institutional Review Board (IRB)</a><ul>
+<li class="chapter" data-level="4.1" data-path="irb.html"><a href="irb.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="irb.html"><a href="irb.html#what-is-the-irb"><i class="fa fa-check"></i><b>4.2</b> What is the IRB</a></li>
+<li class="chapter" data-level="4.3" data-path="irb.html"><a href="irb.html#irb-international"><i class="fa fa-check"></i><b>4.3</b> IRBs and International Research</a></li>
+<li class="chapter" data-level="4.4" data-path="irb.html"><a href="irb.html#what-an-irb-does-not-do"><i class="fa fa-check"></i><b>4.4</b> What an IRB Does Not Do</a></li>
+<li class="chapter" data-level="4.5" data-path="irb.html"><a href="irb.html#what-irb-does"><i class="fa fa-check"></i><b>4.5</b> What the IRB Will Do to Ensure the Protection of Participants</a></li>
+<li class="chapter" data-level="4.6" data-path="irb.html"><a href="irb.html#what-irb-considers"><i class="fa fa-check"></i><b>4.6</b> Considerations of the IRB</a></li>
+<li class="chapter" data-level="4.7" data-path="irb.html"><a href="irb.html#strategies-for-communicating-with-the-irb"><i class="fa fa-check"></i><b>4.7</b> Strategies for Communicating With the IRB</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#supplemental-materials-1"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#about-the-author-1"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#irb-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discavoid.html"><a href="discavoid.html"><i class="fa fa-check"></i><b>5</b> Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods</a><ul>
+<li class="chapter" data-level="5.1" data-path="discavoid.html"><a href="discavoid.html#purpose-of-statistical-disclosure-limitation-methods-definitions-and-context"><i class="fa fa-check"></i><b>5.1</b> Purpose of Statistical Disclosure Limitation Methods: Definitions and Context</a></li>
+<li class="chapter" data-level="5.2" data-path="discavoid.html"><a href="discavoid.html#methods"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="discavoid.html"><a href="discavoid.html#metrics"><i class="fa fa-check"></i><b>5.3</b> Metrics</a></li>
+<li class="chapter" data-level="5.4" data-path="discavoid.html"><a href="discavoid.html#tools"><i class="fa fa-check"></i><b>5.4</b> Tools</a></li>
+<li class="chapter" data-level="5.5" data-path="discavoid.html"><a href="discavoid.html#conclusion"><i class="fa fa-check"></i><b>5.5</b> Conclusion</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#supplemental-materials-2"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#about-the-authors-1"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="diffpriv.html"><a href="diffpriv.html"><i class="fa fa-check"></i><b>6</b> Designing Access with Differential Privacy</a><ul>
+<li class="chapter" data-level="6.1" data-path="diffpriv.html"><a href="diffpriv.html#sec:dp-intro"><i class="fa fa-check"></i><b>6.1</b> Introduction and Overview</a></li>
+<li class="chapter" data-level="6.2" data-path="diffpriv.html"><a href="diffpriv.html#sec:what-dp-protects"><i class="fa fa-check"></i><b>6.2</b> How Differential Privacy Protects Privacy</a></li>
+<li class="chapter" data-level="6.3" data-path="diffpriv.html"><a href="diffpriv.html#sec:aligning"><i class="fa fa-check"></i><b>6.3</b> Aligning Risks, Controls, and Uses: Where Is the Use of Differential Privacy Appropriate?</a></li>
+<li class="chapter" data-level="6.4" data-path="diffpriv.html"><a href="diffpriv.html#sec:case-studies"><i class="fa fa-check"></i><b>6.4</b> Case Studies</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#about-the-authors-2"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#disclaimer-1"><i class="fa fa-check"></i>Disclaimer</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#acknowledgements-1"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#diffpriv-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="part"><span><b>II Case Studies</b></span></li>
+<li class="chapter" data-level="7" data-path="iab.html"><a href="iab.html"><i class="fa fa-check"></i><b>7</b> Institute for Employment Research, Germany: International Access to Labor Market Data</a><ul>
+<li class="chapter" data-level="7.1" data-path="iab.html"><a href="iab.html#summary-1"><i class="fa fa-check"></i><b>7.1</b> Summary</a></li>
+<li class="chapter" data-level="7.2" data-path="iab.html"><a href="iab.html#introduction-2"><i class="fa fa-check"></i><b>7.2</b> Introduction</a></li>
+<li class="chapter" data-level="7.3" data-path="iab.html"><a href="iab.html#iab-usable"><i class="fa fa-check"></i><b>7.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="7.4" data-path="iab.html"><a href="iab.html#legal-and-institutional-framework"><i class="fa fa-check"></i><b>7.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="7.5" data-path="iab.html"><a href="iab.html#iab-fivesafes"><i class="fa fa-check"></i><b>7.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="7.6" data-path="iab.html"><a href="iab.html#data-life-cycle-and-replicability"><i class="fa fa-check"></i><b>7.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="7.7" data-path="iab.html"><a href="iab.html#sustainability-and-continued-success"><i class="fa fa-check"></i><b>7.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="iab.html"><a href="iab.html#supplemental-materials-3"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="iab.html"><a href="iab.html#about-the-authors-3"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="olda.html"><a href="olda.html"><i class="fa fa-check"></i><b>8</b> Ohio and the Longitudinal Data Archive: Mutually Beneficial Partnerships Between State Government and Researchers</a><ul>
+<li class="chapter" data-level="8.1" data-path="olda.html"><a href="olda.html#summary-2"><i class="fa fa-check"></i><b>8.1</b> Summary</a></li>
+<li class="chapter" data-level="8.2" data-path="olda.html"><a href="olda.html#introduction-3"><i class="fa fa-check"></i><b>8.2</b> Introduction</a></li>
+<li class="chapter" data-level="8.3" data-path="olda.html"><a href="olda.html#making-data-usable-for-research"><i class="fa fa-check"></i><b>8.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="8.4" data-path="olda.html"><a href="olda.html#legal-and-institutional-framework-1"><i class="fa fa-check"></i><b>8.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="8.5" data-path="olda.html"><a href="olda.html#protection-of-sensitive-and-personal-data-the-five-safes-framework"><i class="fa fa-check"></i><b>8.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="8.6" data-path="olda.html"><a href="olda.html#data-life-cycle-and-reproducibility"><i class="fa fa-check"></i><b>8.6</b> Data Life Cycle and Reproducibility</a></li>
+<li class="chapter" data-level="8.7" data-path="olda.html"><a href="olda.html#sustainability-and-continued-success-1"><i class="fa fa-check"></i><b>8.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#supplemental-materials-4"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#about-the-author-2"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#olda-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="nbirdt.html"><a href="nbirdt.html"><i class="fa fa-check"></i><b>9</b> New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT</a><ul>
+<li class="chapter" data-level="9.1" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-summ"><i class="fa fa-check"></i><b>9.1</b> Summary</a></li>
+<li class="chapter" data-level="9.2" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-intro"><i class="fa fa-check"></i><b>9.2</b> Introduction</a></li>
+<li class="chapter" data-level="9.3" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-making"><i class="fa fa-check"></i><b>9.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="9.4" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-framework"><i class="fa fa-check"></i><b>9.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="9.5" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-legalaccess"><i class="fa fa-check"></i><b>9.5</b> Legal Framework for Granting Data Access</a></li>
+<li class="chapter" data-level="9.6" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-fivesafes"><i class="fa fa-check"></i><b>9.6</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="9.7" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-replicability"><i class="fa fa-check"></i><b>9.7</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="9.8" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-sustain"><i class="fa fa-check"></i><b>9.8</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="nbirdt.html"><a href="nbirdt.html#supplemental-materials-5"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="nbirdt.html"><a href="nbirdt.html#about-the-authors-4"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pcri.html"><a href="pcri.html"><i class="fa fa-check"></i><b>10</b> The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry</a><ul>
+<li class="chapter" data-level="10.1" data-path="pcri.html"><a href="pcri.html#summary-3"><i class="fa fa-check"></i><b>10.1</b> Summary</a></li>
+<li class="chapter" data-level="10.2" data-path="pcri.html"><a href="pcri.html#introduction-4"><i class="fa fa-check"></i><b>10.2</b> Introduction</a></li>
+<li class="chapter" data-level="10.3" data-path="pcri.html"><a href="pcri.html#making-data-useable-for-research"><i class="fa fa-check"></i><b>10.3</b> Making Data Useable for Research</a></li>
+<li class="chapter" data-level="10.4" data-path="pcri.html"><a href="pcri.html#legal-and-institutional-framework-2"><i class="fa fa-check"></i><b>10.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="10.5" data-path="pcri.html"><a href="pcri.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-1"><i class="fa fa-check"></i><b>10.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="10.6" data-path="pcri.html"><a href="pcri.html#data-life-cycle-and-replicability-1"><i class="fa fa-check"></i><b>10.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="10.7" data-path="pcri.html"><a href="pcri.html#sustainability-and-continued-success-2"><i class="fa fa-check"></i><b>10.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#about-the-authors-5"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#acknowledgements-2"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#pcri-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ahc.html"><a href="ahc.html"><i class="fa fa-check"></i><b>11</b> Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support</a><ul>
+<li class="chapter" data-level="11.1" data-path="ahc.html"><a href="ahc.html#summary-4"><i class="fa fa-check"></i><b>11.1</b> Summary</a></li>
+<li class="chapter" data-level="11.2" data-path="ahc.html"><a href="ahc.html#introduction-5"><i class="fa fa-check"></i><b>11.2</b> Introduction</a></li>
+<li class="chapter" data-level="11.3" data-path="ahc.html"><a href="ahc.html#legal-and-institutional-framework-3"><i class="fa fa-check"></i><b>11.3</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="11.4" data-path="ahc.html"><a href="ahc.html#ahc-making-data-usable"><i class="fa fa-check"></i><b>11.4</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="11.5" data-path="ahc.html"><a href="ahc.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-2"><i class="fa fa-check"></i><b>11.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="11.6" data-path="ahc.html"><a href="ahc.html#data-life-cycle-and-replicability-2"><i class="fa fa-check"></i><b>11.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="11.7" data-path="ahc.html"><a href="ahc.html#sustainability-and-continued-success-3"><i class="fa fa-check"></i><b>11.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#supplemental-materials-6"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#about-the-authors-6"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#acknowledgements-3"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sfusd.html"><a href="sfusd.html"><i class="fa fa-check"></i><b>12</b> The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes</a><ul>
+<li class="chapter" data-level="12.1" data-path="sfusd.html"><a href="sfusd.html#summary-5"><i class="fa fa-check"></i><b>12.1</b> Summary</a></li>
+<li class="chapter" data-level="12.2" data-path="sfusd.html"><a href="sfusd.html#introduction-6"><i class="fa fa-check"></i><b>12.2</b> Introduction</a></li>
+<li class="chapter" data-level="12.3" data-path="sfusd.html"><a href="sfusd.html#making-data-usable-for-research-1"><i class="fa fa-check"></i><b>12.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="12.4" data-path="sfusd.html"><a href="sfusd.html#legal-and-institutional-framework-4"><i class="fa fa-check"></i><b>12.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="12.5" data-path="sfusd.html"><a href="sfusd.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-3"><i class="fa fa-check"></i><b>12.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="12.6" data-path="sfusd.html"><a href="sfusd.html#data-life-cycle-and-replicability-3"><i class="fa fa-check"></i><b>12.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="12.7" data-path="sfusd.html"><a href="sfusd.html#sustainability-and-continued-success-4"><i class="fa fa-check"></i><b>12.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="12.8" data-path="sfusd.html"><a href="sfusd.html#concluding-remarks-1"><i class="fa fa-check"></i><b>12.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#supplemental-materials-7"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#about-the-authors-7"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#sfusd-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="cct.html"><a href="cct.html"><i class="fa fa-check"></i><b>13</b> City of Cape Town, South Africa: Aligning Internal Data Capabilities with External Research Partnerships</a><ul>
+<li class="chapter" data-level="13.1" data-path="cct.html"><a href="cct.html#summary-6"><i class="fa fa-check"></i><b>13.1</b> Summary</a></li>
+<li class="chapter" data-level="13.2" data-path="cct.html"><a href="cct.html#introduction-7"><i class="fa fa-check"></i><b>13.2</b> Introduction</a></li>
+<li class="chapter" data-level="13.3" data-path="cct.html"><a href="cct.html#making-data-usable-for-research-2"><i class="fa fa-check"></i><b>13.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="13.4" data-path="cct.html"><a href="cct.html#legal-and-institutional-framework-5"><i class="fa fa-check"></i><b>13.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="13.5" data-path="cct.html"><a href="cct.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-4"><i class="fa fa-check"></i><b>13.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="13.6" data-path="cct.html"><a href="cct.html#data-life-cycle-and-reproducibility-1"><i class="fa fa-check"></i><b>13.6</b> Data Life Cycle and Reproducibility</a></li>
+<li class="chapter" data-level="13.7" data-path="cct.html"><a href="cct.html#sustainability-and-continued-success-5"><i class="fa fa-check"></i><b>13.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="13.8" data-path="cct.html"><a href="cct.html#concluding-remarks-2"><i class="fa fa-check"></i><b>13.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#supplemental-materials-8"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#about-the-authors-8"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#acknowledgements-4"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="dime.html"><a href="dime.html"><i class="fa fa-check"></i><b>14</b> Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME)</a><ul>
+<li class="chapter" data-level="14.1" data-path="dime.html"><a href="dime.html#summary-7"><i class="fa fa-check"></i><b>14.1</b> Summary</a></li>
+<li class="chapter" data-level="14.2" data-path="dime.html"><a href="dime.html#introduction-8"><i class="fa fa-check"></i><b>14.2</b> Introduction</a></li>
+<li class="chapter" data-level="14.3" data-path="dime.html"><a href="dime.html#dime-making-data-usable"><i class="fa fa-check"></i><b>14.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="14.4" data-path="dime.html"><a href="dime.html#legal-and-institutional-framework-6"><i class="fa fa-check"></i><b>14.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="14.5" data-path="dime.html"><a href="dime.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-5"><i class="fa fa-check"></i><b>14.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="14.6" data-path="dime.html"><a href="dime.html#data-life-cycle-and-replicability-4"><i class="fa fa-check"></i><b>14.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="14.7" data-path="dime.html"><a href="dime.html#sustainability-and-continued-success-6"><i class="fa fa-check"></i><b>14.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="14.8" data-path="dime.html"><a href="dime.html#concluding-remarks-3"><i class="fa fa-check"></i><b>14.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="dime.html"><a href="dime.html#supplemental-materials-9"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="dime.html"><a href="dime.html#about-the-authors-9"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="imf.html"><a href="imf.html"><i class="fa fa-check"></i><b>15</b> The Use of Administrative Data at the International Monetary Fund</a><ul>
+<li class="chapter" data-level="15.1" data-path="imf.html"><a href="imf.html#summary-8"><i class="fa fa-check"></i><b>15.1</b> Summary</a></li>
+<li class="chapter" data-level="15.2" data-path="imf.html"><a href="imf.html#introduction-9"><i class="fa fa-check"></i><b>15.2</b> Introduction</a></li>
+<li class="chapter" data-level="15.3" data-path="imf.html"><a href="imf.html#imf-legal-framework"><i class="fa fa-check"></i><b>15.3</b> Legal Framework</a></li>
+<li class="chapter" data-level="15.4" data-path="imf.html"><a href="imf.html#making-data-usable"><i class="fa fa-check"></i><b>15.4</b> Making Data Usable</a></li>
+<li class="chapter" data-level="15.5" data-path="imf.html"><a href="imf.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-6"><i class="fa fa-check"></i><b>15.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="15.6" data-path="imf.html"><a href="imf.html#sustainability-and-continued-success-7"><i class="fa fa-check"></i><b>15.6</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="15.7" data-path="imf.html"><a href="imf.html#concluding-remarks-4"><i class="fa fa-check"></i><b>15.7</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="imf.html"><a href="imf.html#about-the-authors-10"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="imf.html"><a href="imf.html#disclaimer-2"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="indonesia.html"><a href="indonesia.html"><i class="fa fa-check"></i><b>16</b> Using Administrative Data to Improve Social Protection in Indonesia</a><ul>
+<li class="chapter" data-level="16.1" data-path="indonesia.html"><a href="indonesia.html#summary-9"><i class="fa fa-check"></i><b>16.1</b> Summary</a></li>
+<li class="chapter" data-level="16.2" data-path="indonesia.html"><a href="indonesia.html#indonesia-admin-data-implement-monitor"><i class="fa fa-check"></i><b>16.2</b> The Use of Administrative Data to Implement and Monitor Experimental Treatments</a></li>
+<li class="chapter" data-level="16.3" data-path="indonesia.html"><a href="indonesia.html#using-administrative-data-to-measure-outcomes"><i class="fa fa-check"></i><b>16.3</b> Using Administrative Data to Measure Outcomes</a></li>
+<li class="chapter" data-level="16.4" data-path="indonesia.html"><a href="indonesia.html#studying-the-collection-of-administrative-data-itself"><i class="fa fa-check"></i><b>16.4</b> Studying the Collection of Administrative Data Itself</a></li>
+<li class="chapter" data-level="16.5" data-path="indonesia.html"><a href="indonesia.html#concluding-remarks-5"><i class="fa fa-check"></i><b>16.5</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#about-the-authors-11"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#acknowledgements-5"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#indonesia-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="massachusetts.html"><a href="massachusetts.html"><i class="fa fa-check"></i><b>17</b> Early Stage: Evaluating a Rental Assistance Program in Massachusetts</a><ul>
+<li class="chapter" data-level="17.1" data-path="massachusetts.html"><a href="massachusetts.html#summary-10"><i class="fa fa-check"></i><b>17.1</b> Summary</a></li>
+<li class="chapter" data-level="17.2" data-path="massachusetts.html"><a href="massachusetts.html#introduction-10"><i class="fa fa-check"></i><b>17.2</b> Introduction</a></li>
+<li class="chapter" data-level="17.3" data-path="massachusetts.html"><a href="massachusetts.html#legal-and-institutional-framework-7"><i class="fa fa-check"></i><b>17.3</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="17.4" data-path="massachusetts.html"><a href="massachusetts.html#protection-of-sensitive-and-personal-data"><i class="fa fa-check"></i><b>17.4</b> Protection of Sensitive and Personal Data</a></li>
+<li class="chapter" data-level="17.5" data-path="massachusetts.html"><a href="massachusetts.html#sustainability-and-continued-success-8"><i class="fa fa-check"></i><b>17.5</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="massachusetts.html"><a href="massachusetts.html#about-the-author-3"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="massachusetts.html"><a href="massachusetts.html#disclaimer-3"><i class="fa fa-check"></i>Disclaimer</a></li>
+<li class="chapter" data-level="17.6" data-path="massachusetts.html"><a href="massachusetts.html#rrrreferences"><i class="fa fa-check"></i><b>17.6</b> RRRReferences</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="puertorico.html"><a href="puertorico.html"><i class="fa fa-check"></i><b>18</b> Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19</a><ul>
+<li class="chapter" data-level="18.1" data-path="puertorico.html"><a href="puertorico.html#summary-11"><i class="fa fa-check"></i><b>18.1</b> Summary</a></li>
+<li class="chapter" data-level="18.2" data-path="puertorico.html"><a href="puertorico.html#introduction-11"><i class="fa fa-check"></i><b>18.2</b> Introduction</a></li>
+<li class="chapter" data-level="18.3" data-path="puertorico.html"><a href="puertorico.html#evaluation-of-edugespro"><i class="fa fa-check"></i><b>18.3</b> Evaluation of EDUGESPRO</a></li>
+<li class="chapter" data-level="18.4" data-path="puertorico.html"><a href="puertorico.html#identifying-solutions-to-data-disruptions"><i class="fa fa-check"></i><b>18.4</b> Identifying Solutions to Data Disruptions</a></li>
+<li class="chapter" data-level="18.5" data-path="puertorico.html"><a href="puertorico.html#conclusions"><i class="fa fa-check"></i><b>18.5</b> Conclusions</a></li>
+<li class="chapter" data-level="18.6" data-path="puertorico.html"><a href="puertorico.html#questions"><i class="fa fa-check"></i><b>18.6</b> Questions</a></li>
+<li class="chapter" data-level="18.7" data-path="puertorico.html"><a href="puertorico.html#about-the-authors-12"><i class="fa fa-check"></i><b>18.7</b> About the Authors</a></li>
+<li class="chapter" data-level="18.8" data-path="puertorico.html"><a href="puertorico.html#rrrreferences-1"><i class="fa fa-check"></i><b>18.8</b> RRRReferences</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html"><i class="fa fa-check"></i>Evolution of the Handbook and Contributing</a><ul>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#availability"><i class="fa fa-check"></i>Availability</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#contributions"><i class="fa fa-check"></i>Contributions</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#content-format-and-style-guidelines"><i class="fa fa-check"></i>Content, Format, and Style Guidelines</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#versioning"><i class="fa fa-check"></i>Versioning</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#case-study-template"><i class="fa fa-check"></i>Case Study Template</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html"><i class="fa fa-check"></i>Third-party Licenses</a><ul>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
+</ul></li>
+<li class="divider"></li>
+<li class="copyright"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber.</li>
+<li class="copyright">Individual chapters ©️ by their authors or as noted.</li>
+<li class="copyright"><a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Handbook on Using Administrative Data for Research and Evidence-based Policy</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="puertorico" class="section level1">
+<h1><span class="header-section-number">18</span> Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19</h1>
+<em>Daniela Gómez Treviño<br />
+Research Manager<br />
+J-PAL North America, Massachusetts Institute of Technology</em><br />
+
+<div id="citationLink">
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a>
+</div>
+<div id="myCitation" style="display: none;">
+Treviño, Daniela Gómez. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Daniela Gómez Treviño. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span>
+</div>
+<div id="summary-11" class="section level2">
+<h2><span class="header-section-number">18.1</span> Summary</h2>
+<p>This chapter describes an important stage in an ongoing J-PAL
+partnership with the Puerto Rico Department of Education (PRDE).
+Researchers supported the implementation of an online diagnostic
+assessment test, which took the place of standardized testing of
+students of grades 3 to 8, and 11 in the subjects of math, English as a
+second language, and Spanish. In addition to supporting an ongoing
+randomized evaluation, the assessment offers an opportunity to measure
+learning loss for future decision-making and research studies. It
+describes this period of support, the broader relationship, and lessons
+learned from working with state governments and administrative data.
+Note that the work to implement the assessment was still in progress as
+of November 2021, and the descriptions in this case study reflect the
+current state of an evolving situation. The project received support
+from the Innovations in Data and Experiments for Action Initiative
+(IDEA), funded by the Alfred P. Sloan Foundation, during the COVID-19
+pandemic to address the interruption to administrative data collection
+critical to an ongoing research study.</p>
+</div>
+<div id="introduction-11" class="section level2">
+<h2><span class="header-section-number">18.2</span> Introduction</h2>
+<p>An important advantage of using administrative data for research is that
+data is usually already collected and stored for operational purposes.
+From the researcher’s perspective, this appears to occur automatically,
+lowering the logistical burden and cost for researchers and
+participants, ensuring near-universal coverage, and enabling long-term
+follow-up. However, administrative data collection is not always
+automatic or guaranteed. This case study describes a randomized
+evaluation of a management training program for school principals in
+Puerto Rico, which relies on standardized test scores collected by the
+Department of Education to measure outcomes for students, principals,
+and schools. The administration of standardized tests was halted by the
+COVID-19 pandemic and a resultant shift to remote learning. At the time,
+J-PAL North America had an ongoing partnership with the PRDE. The
+response to the interrupted data collection — here, the implementation of an
+online diagnostic assessment test — was made possible by recognizing
+shared interests among researchers and education officials. Although
+(hopefully) a once-in-a-lifetime occurrence, the pandemic response
+offers lessons for research-practice partnerships where shifting
+priorities or new crises may require adaptability.</p>
+<p>The PRDE is responsible for managing about 845 state-operated schools
+in Puerto Rico, with 292,518 students and 24,240 teachers, making it one
+of the largest school districts in the United States by enrollment. In
+Puerto Rico, 57 percent of children live in poverty and most children
+have academic outcomes far worse than their peers in the mainland United
+States even before the COVID-19 pandemic <span class="citation">(McFarland et al. <a href="#ref-mcfarland2019" role="doc-biblioref">2019</a>)</span> (McFarland et al. 2019).</p>
+<p>J-PAL North America has been involved in this research-practice
+partnership since November 2016, when the PRDE was selected by J-PAL as
+a State and Local Innovation Initiative partner, with improving
+education identified as a focus area. J-PAL embedded an evaluation
+officer in the PRDE to support the researchers and provided short-term
+research management support that helped launch the following
+intervention.</p>
+<p>To improve management practices in Puerto Rican schools and thereby
+improve student achievement, the PRDE collaborated with J-PAL affiliated
+researchers Gustavo Bobonis, Marco Gonzalez-Navarro, Daniela Scur, and
+Orlando Sotomayor in 2018 to design and implement a randomized
+evaluation of a system-wide principal leadership management training
+program called <em>Academia de Desarrollo Profesional de la Educación para
+la Gestión de Liderazgo y la Profesionalización</em><a href="#fn314" class="footnote-ref" id="fnref314"><sup>314</sup></a> (EDUGESPRO) using
+administrative data collected by the PRDE.</p>
+<p>Each cohort of principals is trained over the course of one academic
+year (approximately 154 hours in total) through a series of 10 seminars
+followed by 13 workshops and coaching throughout the academic year. The
+program targets five managerial levers: educational leadership and
+strategic long-term planning, instructional data-driven planning and
+performance tracking, goal and target setting, school culture, and
+personnel management. The evaluation relies on administrative data
+collected by the PRDE, including student scores on the standardized test
+known as Measurement and Evaluation for Education Transformation
+(META-PR, from its acronym in Spanish).</p>
+<p>As the evaluation has progressed, J-PAL and the PRDE have continued to
+find ways to support and grow this partnership. During the period
+described in this chapter, this included research management support by
+J-PAL staff designed to identify opportunities to continue to measure
+outcomes for the study in light of COVID-19. In practice, this led to
+J-PAL supporting the implementation by the PRDE of an online diagnostic
+assessment test for students, to measure learning during remote
+education.</p>
+<p>As part of a set of cases dedicated to the use of administrative data
+for research, the focus on original data collection may seem an odd fit.
+Administrative data, however, still must be collected and, as described
+below, researchers may help contribute to that process. One way of
+achieving the goal of increasing the use of administrative data for
+evaluation is through developing stronger institutional partnerships
+between researchers and data providers and implementing partners such as
+governments. Supporting the partnership was the primary goal of the
+research team during this period, and this has already paid dividends in
+generating new data and launching new studies. Ultimately, the
+assessment test was the PRDE’s (not researchers’) data collection
+operation, conducted for its own operational purposes. Questions of
+administrative data are addressed more fully at the end of this chapter.</p>
+<p>This case first describes the randomized evaluation in more detail, how
+J-PAL staff and affiliated researchers worked with the PRDE during the
+COVID-19 pandemic, and lessons learned for collaborating with
+governments and working with administrative data.</p>
+</div>
+<div id="evaluation-of-edugespro" class="section level2">
+<h2><span class="header-section-number">18.3</span> Evaluation of EDUGESPRO</h2>
+<p>EDUGESPRO’s evaluation is the core collaboration between the group of
+researchers and the PRDE. To evaluate this program, school principals
+were randomly assigned to one of three training cohorts to be offered
+the opportunity to participate in the EDUGESPRO program in the summer of
+2019 (T1), 2020 (T2), or 2021 (control). Exploiting the cohort-by-year
+program design, researchers used a phase-in randomized evaluation,
+meaning they randomly divided the group of principals in cohorts and
+provided the training to each cohort one at a time to identify the
+causal effects of the intensive management training on outcomes of
+interest. One of the main outcomes of interest was student achievement
+measured through annual standardized testing. As shown in the following
+timeline, the interruption of standardized testing in May 2020 caused
+delays and disruptions to the first analysis of the intervention’s
+results.</p>
+<div class="figure"><span id="fig:puertorico1"></span>
+<img src="assets/puertorico/puertorico1web.png" alt="Timeline for Evaluation " width="100%" />
+<p class="caption">
+Figure 18.1: Timeline for Evaluation
+</p>
+</div>
+<div id="data-used-for-evaluation" class="section level3">
+<h3><span class="header-section-number">18.3.1</span> Data Used for Evaluation</h3>
+<p>The research team’s intention was to use PRDE data on a broad array of
+student, principal, and school characteristics as well as outcome data
+for academic years 2011–2012 through 2021–2022. The data to be used by
+the research team includes the following:</p>
+<ul>
+<li><p>Student-level measures: test scores in Spanish, math, and English for grades 3 to 8 and 11; test scores in science for grades 4, 8, and 11; transcripts; class schedules; absences; disciplinary incidents; poverty status; and special needs status, among others.</p></li>
+<li><p>Teacher- and principal-level measures: school and class assignments, attendance, professional history (tenure, educational degrees earned and where, prior assignments in the system).</p></li>
+<li><p>School level measures: location (coordinates) of the school, grade span, infrastructure, accountability classification, student retention and graduation rates, and closure status.</p></li>
+</ul>
+<p>Researchers executed a data-sharing agreement with the PRDE at the
+beginning of the EDUGESPRO evaluation to receive this data for the
+purpose of the study. This agreement went into effect when the
+implementation of the evaluation started in 2018. The agreement works
+both as a memorandum of understanding to establish the research-practice
+partnership and a data-sharing agreement that specifies that the
+research team can access the Department of Education’s data for research
+purposes. It also describes data security considerations like the fact
+that all data is processed and stored in a secure server in the
+University of Toronto. The researchers also intended to link PRDE
+administrative data to Development World Management Survey results as
+they concluded the different stages of the evaluation starting in 2018.</p>
+</div>
+<div id="challenges" class="section level3">
+<h3><span class="header-section-number">18.3.2</span> Challenges</h3>
+<p>In early January 2020, a 6.4 magnitude earthquake hit Puerto Rico,
+causing infrastructure damage and the temporary closure of many school
+facilities. On March 16, 2020, the PRDE closed all school facilities and
+announced that all learning would be remote until further notice due to
+the COVID-19 pandemic. In response, school districts across the United
+States, including Puerto Rico, requested and received waivers from the
+US Department of Education for completing their mandatory annual
+standardized tests. This waiver led the PRDE to decide not to administer
+META-PR in May 2020, meaning that there are no records of student
+performance since, in some cases, before the summer of 2019. The testing
+waiver was implemented in recognition of the fact that states would not
+be able to get fair, reliable, and valid assessment results given the
+abrupt transition to online education <span class="citation">(Devos <a href="#ref-devos2020" role="doc-biblioref">2020</a>)</span> (Devos 2020).</p>
+<p>Amid this challenging scenario, there was also an election for governor
+in Puerto Rico, leading to personnel changes in the PRDE. This was a
+challenge because new personnel were hired and had to get up to speed on
+the department's efforts to gather evidence to inform COVID-19 response
+policy.</p>
+<p>After all schools closed in March 2020, EDUGESPRO’s training program was
+briefly suspended, but training resumed fully online in April as the
+program had the potential to support principals during the pandemic.<a href="#fn315" class="footnote-ref" id="fnref315"><sup>315</sup></a>
+The original schedule for the intervention had to be changed, so the
+webinars and workshop for the second cohort were delayed from September
+2020 until April 2021; however, the cohort-by-cohort approach to the
+intervention is still proceeding in order.</p>
+<p>Delaying standardized testing due to COVID-19 posed a significant
+challenge for the study because the ability to draw causal comparisons
+between cohorts exists only when some cohorts have yet to receive the
+treatment. Moving outcome measurements to a later date while the
+intervention is ongoing limits the comparisons that can be drawn. The
+lack of META-PR at the end of the 2019–2020 school year meant there was
+no opportunity to measure student gains after the first cohort of
+principals received management training. After assessing whether grades
+could be used, the research team concluded that the variation between
+schools, classes, and grades would challenge the validity of any
+comparisons.</p>
+<p>Measuring student achievement was not the priority in a world looking to
+adapt to the new COVID-19 reality. Given what was known about COVID-19
+in March 2020, the priority was to contain the spread of the disease by
+continuing school closures and avoiding the type of enclosed settings
+traditionally used for in-person testing. However, a side effect of this
+policy change was that ongoing research projects that required
+standardized test score results were in jeopardy.</p>
+</div>
+</div>
+<div id="identifying-solutions-to-data-disruptions" class="section level2">
+<h2><span class="header-section-number">18.4</span> Identifying Solutions to Data Disruptions</h2>
+<p>Even amid these critical short-term priorities, the PRDE, particularly
+its Assessment Unit, knew that the lack of tests was going to impact the
+way they think about education policy. They were committed to developing
+an alternative that would allow them to understand the needs of the
+students across the island to address them during and after the
+pandemic. The solution was to implement an abridged version of the
+META-PR test online as a diagnostic, low-stakes (i.e., not tied to
+grades or graduation) assessment. The resulting data will provide
+insight into students' specific education needs and could also be
+useful for current and future research.</p>
+<p>To help implement the assessment, the Assessment Unit leveraged its
+relationship with the research team and the shared interest in producing
+data that could be used in lieu of standardized tests. In turn,
+J-PAL-affiliated researchers and staff saw providing technical support
+to the PRDE as an opportunity to strengthen and expand the
+research-practice partnership in Puerto Rico.</p>
+<div id="why-was-the-research-team-a-trusted-partner" class="section level3">
+<h3><span class="header-section-number">18.4.1</span> Why Was the Research Team a Trusted Partner?</h3>
+<p>Over the course of the EDUGESPRO evaluation, the research team
+demonstrated that they shared common goals with the PRDE of improving
+learning outcomes, reducing inequality in student academic achievement,
+and providing high-impact professional development tools to the PRDE’s
+leaders.<a href="#fn316" class="footnote-ref" id="fnref316"><sup>316</sup></a> The EDUGESPRO evaluation was an active research project
+involving close collaboration between researchers and the PRDE both when
+the earthquakes hit the island and when schools closed in response to
+COVID-19. Additionally, the project included an embedded evaluation
+officer who works within the PRDE and closely with the operations
+manager of the department’s Institute for Professional Development. This
+timing and close ties made the research team and the PRDE natural allies
+in finding alternatives to the lack of standardized testing. Soon the
+research team, in collaboration with research staff from J-PAL, started
+directly supporting the PRDE’s Assessment Unit, holding standing
+meetings to discuss options to implement a test that students could
+complete from their homes in the summer of 2020.</p>
+</div>
+<div id="implementation-support" class="section level3">
+<h3><span class="header-section-number">18.4.2</span> Implementation Support</h3>
+<p>Our team joined an ad hoc working group that included the Assessment
+Unit and the third-party testing provider. While the PRDE and the test
+provider designed the test and online infrastructure, trained
+administrators on how to use the system, dealt with technical issues,
+and communicated plans to roll out the test to schools and families,
+researchers provided assistance on several particular challenges.</p>
+<p>One challenge was that tests had never been administered remotely. Here,
+the research team supported the Assessment Unit by working on a schedule
+to implement the test and suggested that they first implement a pilot
+for grades 2 and 9 (grades that are not normally tested with the META-PR
+test) to refine the approach and to be able to manage any questions from
+school officials.</p>
+<p>A second challenge was that many schools were not used to implementing
+an online version of the test, although some had experience
+administering the META-PR in computer labs rather than in paper form.
+Here, the research team suggested pairing principals experienced in
+online testing with other principals for support.</p>
+<p>A third challenge was that given that the test would not be tied to
+grades or graduation requirements, the research team anticipated low
+take-up. For this reason, it also offered to monitor the test’s
+progression by analyzing participation rates while the test was being
+implemented. Researchers developed automated reporting to principals
+after the testing period with information on the percentage of English,
+math, Spanish, and natural sciences sessions started or completed in
+their schools. In addressing each of these challenges, the research team
+made use of techniques similar to those used in managing the rollout of
+a randomized evaluation.</p>
+</div>
+<div id="results" class="section level3">
+<h3><span class="header-section-number">18.4.3</span> Results</h3>
+<p>The PRDE completed a pilot of the diagnostic assessment in April 2021
+and plans to complete the full assessment by the end of October 2021.
+Implementation happened slower than expected as ever-evolving pandemic
+regulations and public health considerations shifted the testing
+timeline on multiple occasions. In addition, legal and contractual
+obligations with the test provider needed to be addressed before
+implementation. Implementing the test occurred against a backdrop of
+leadership changes due to the election, bandwidth constraints in the
+Assessment Unit, and a pandemic, during which standardized testing was
+not a top priority. In these circumstances, researchers were able to
+provide additional bandwidth—such as creating plans for implementation
+in light of the pilot’s results—while being sensitive to established
+processes that specified how this type of test could be created and
+implemented.</p>
+<p>While the assessment process is still ongoing, the EDUGESPRO study is
+not over yet. Being flexible and supportive of the PRDE has helped
+deepen the relationship between the PRDE, J-PAL, and the researchers.
+The mutual trust needed to collaborate on research has been strengthened
+through time spent cooperating on this challenge, which has opened
+additional opportunities to do research. For example, Gustavo Bobonis
+and Orlando Sotomayor, joined by Philip Oreopoulos and Román Andres
+Zárate, have begun an evaluation with the PRDE of computer-assisted
+learning to combat learning loss due to COVID-19. Bobonis and Sotomayor
+connected with another agency, the Puerto Rico Department of Economic
+Development and Commerce, which is now working with J-PAL, through the
+State and Local Innovation Initiative, to develop an evaluation of
+training in case management and soft skills for their workforce
+development staff. J-PAL, the research team, and the PRDE are also
+exploring ways to formalize an institutional partnership. Finally, J-PAL
+staff continue to be involved in conversations on data governance and
+making data accessible and usable for research with the PRDE. These
+conversations are in early stages but hope to build on the work of the
+EDUGESPRO evaluation, the diagnostic test implementation, and the
+department’s existing data-sharing infrastructure.</p>
+</div>
+<div id="is-this-administrative-data" class="section level3">
+<h3><span class="header-section-number">18.4.4</span> Is This Administrative Data?</h3>
+<p>This case blurs the line between primary and secondary data collection.
+On the one hand, this was a process to collect data for the PRDE’s
+operational purposes, based on the approach used in the existing
+collection of META-PR standardized test data. On the other hand, the
+research team was involved in the data collection process, with
+usefulness for the evaluation of EDUGESPRO top of mind. Ultimately, what
+the research team offered was support through the challenges posed by
+the circumstances, and there was no additional data collection that
+would specifically serve the purposes of their evaluation. Throughout
+the whole process, the PRDE was always in charge of implementation and
+changed plans as necessary as it navigated the bigger picture and
+balanced educational needs and health and safety protocols. As a result,
+many of the research team’s suggestions did not end up being
+implemented, such as the original testing schedule or a platform for
+troubleshooting testing issues.</p>
+<p>Nonetheless, this case is an important reminder that administrative data
+still often must be actively collected before it can be used for
+evaluation and research. Researchers familiar with data collection of
+their own, as well as with the implementation of complex research, can
+contribute to these efforts. Improving state data capacity is often
+necessary for the delivery of an intervention as well as the measurement
+of its effects. Researchers may have opportunities to consult on data
+capacity building, even in more typical circumstances.</p>
+</div>
+</div>
+<div id="conclusions" class="section level2">
+<h2><span class="header-section-number">18.5</span> Conclusions</h2>
+<div id="benefits-of-the-diagnostic-test-to-puerto-rico" class="section level3">
+<h3><span class="header-section-number">18.5.1</span> Benefits of the Diagnostic Test to Puerto Rico</h3>
+<p>The COVID-19 pandemic was not the first disruption of in-person learning
+for students in Puerto Rico. The island’s location makes it vulnerable
+to hurricanes, earthquakes, and other natural disasters that have the
+potential to disrupt education. Having a plan in place to develop and
+implement an online test adds value beyond simply finding an alternative
+to testing during a pandemic. The data collected during the diagnostic
+test holds the possibility of better targeting student needs on the
+island and quantifying learning loss. Additional research could also use
+this data as a baseline to understand what efforts are effective at
+improving student performance after the COVID-19 pandemic. The PRDE is
+now better equipped to respond to new requirements from the federal
+government, issued February 22, 2021, that school districts find ways to
+administer standardized tests in 2021.</p>
+</div>
+<div id="considerations-for-working-with-governments-to-implement-administrative-data-collection" class="section level3">
+<h3><span class="header-section-number">18.5.2</span> Considerations for Working with Governments to Implement Administrative Data Collection</h3>
+<p>Despite the one-off nature of the collaboration, some lessons emerge
+that may be useful given the opportunity to consult on administrative
+data collection.</p>
+<p><strong>Flexibility in the research-practice partnership, while maintaining
+focus on the common goal, proved to be key</strong>. Both the research team and
+the Assessment Unit went well above their original agreements to set up
+the infrastructure for this test. The disposition of researchers and
+government officials was the basis for thinking about an alternative to
+standardized testing. The process took months, several reviews from the
+legal team, and multiple iterations to address implementation details,
+but having in mind the common goal of understanding students’ needs was
+at the core of the strategy.</p>
+<p>Iterating through every step of the process multiple times should be
+expected. Flexibility is required here. Importantly, this can be a
+helpful process as there are always new implementation details to
+address and going through the whole process multiple times can support
+the implementing partner in thinking about all possible scenarios.</p>
+<p><strong>Identify constraints early</strong>. The research team was able to provide
+support thanks to the guidance of the Assessment Unit, who expressly
+mentioned its constraints and flagged the activities in which it needed
+support the most. The research team was able to provide additional
+capacity that the PRDE did not have. For example, it could attend
+meetings and start thinking about implementation details without needing
+to go through an administrative approval process. It has also been able
+to help the PRDE think through challenges generally. At the same time,
+it was able to provide researcher-specific skills like additional
+analysis that can improve data collection.</p>
+<p>From the implementing partner’s side, it was important to communicate
+clearly about the legal steps needed to introduce a new process to
+collect data. This process took months and required the PRDE’s legal
+team to review the contract with the testing provider several times
+before approval. Additionally, it was necessary to clarify the
+limitations within their purview. For example, the Assessment Unit
+clarified at the beginning that it could not make the test mandatory or
+assign any grade value to it as homework. This was key when thinking
+about the test’s implementation since it has implications for
+researchers who should consider power and selection bias when assessing
+the coverage of the data for research purposes.</p>
+<p><strong>The support of the embedded evaluation officer was fundamental</strong>.
+Emily Goldman, evaluation officer, was a key part in coordinating
+efforts between the research team and the PRDE. Her position gave her
+both flexibility and legitimacy to work on planning the implementation
+of the diagnostic test while considering the research team’s needs.
+Goldman’s position existed for the purposes of the EDUGESPRO evaluation,
+but she has been able to expand her support to the PRDE more generally.
+Researchers may consider embedding staff on site either for specific
+research projects or for building data capacity.<a href="#fn317" class="footnote-ref" id="fnref317"><sup>317</sup></a></p>
+</div>
+</div>
+<div id="questions" class="section level2">
+<h2><span class="header-section-number">18.6</span> Questions</h2>
+<p>In the following, we respond to the type of questions that relate the framing and structure of this project to the format of the Handbook. The questions can be taken to guide researchers in how to address the various points discussed throughout this Handbook.</p>
+<div id="institutional-setup-6" class="section level3">
+<h3><span class="header-section-number">18.6.1</span> Institutional setup</h3>
+<blockquote>
+<p>Who are the parties to the data access mechanism in this case study? Is the data provider also the data custodian/data host, or has a third party (data intermediary) taken on this role?</p>
+</blockquote>
+<p>The parties to the data access mechanism are the PRDE and, in our case,
+the University of Toronto (the researchers’ institution). The data
+warehouse is maintained by the PRDE, with the help of a contracted data
+services company. Some data is initially collected by third-party
+service providers like education testing companies, but these parties
+are not parties to the research data access mechanism. All data used for
+research is transferred by the PRDE to the research institution.</p>
+</div>
+<div id="legal-context-for-data-use-7" class="section level3">
+<h3><span class="header-section-number">18.6.2</span> <strong>Legal context for data use</strong></h3>
+<blockquote>
+<p>Are there any legal restrictions on who can be given access to the data? How were those legal restrictions satisfied (memorandums of understanding, data use agreements, etc.)?</p>
+</blockquote>
+<p>All student records from elementary to postsecondary school are
+protected by the Family Educational Rights and Privacy Act (FERPA).
+Typically, FERPA requires individual consent from students and/or their
+guardians to release records. FERPA restrictions would not apply to
+teacher, principal, or school level records. The PRDE’s <em>Manual de
+Gobernanza de Datos</em> (<em>Data Governance Manual</em>) <span class="citation">(Puerto Rico Departamento de Educación <a href="#ref-puertoricodepartamentodeeducacion2016" role="doc-biblioref">2016</a>)</span> specifies which
+individuals or entities oversee data protection and privacy as well as
+the guidelines and best practices to comply with FERPA. The PRDE executes data-sharing
+agreements following procedures detailed in the <em>Data Governance Manual</em>
+and all these agreements follow FERPA principles. In the case of this
+study, researchers obtained consent for use of student records.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Have any memorandums of understanding, data use agreements, etc. been generalized, or are they still specific to this partnership? What guidance could you give to the next party wanting to negotiate a memorandum of understanding or data use agreement with the same data provider?</li>
+</ol>
+<p>The PRDE has an established process by which researchers may request
+data from the department, which is detailed in the <em>Data Governance
+Manual</em>. The appendices in the manual contain a data request form,
+confidentiality and data disclosure agreements, and a data destruction
+form that must be completed at the end of a project. Each party
+requesting data will need to execute an agreement customized to its data
+request.</p>
+<p>For the EDUGESPRO study and the broader research-practice partnership,
+the PRDE and the University of Toronto first executed a data-sharing
+agreement in 2018. A University of Toronto template was used rather than
+the PRDE template, but the agreements contain all of the elements that
+the PRDE requires. When executing data-sharing agreements, J-PAL
+recommends starting with a template that at least one party is already
+comfortable with.</p>
+<p>The 2018 agreement has served as a master data-sharing agreement for the
+partnership, with the appendices containing study-specific research
+descriptions and data requests (years of data, variables, and any
+specifics of data linkages and transfers). The 2018 agreement contains
+an appendix for the EDUGESPRO evaluation, and a second appendix was
+added in 2021 for the computer-assisted learning evaluation. This
+particular arrangement may not be generalizable and owes to the fact
+that the institutions that are party to the agreements have not changed
+and the investigator teams and data needs for each study are broadly
+similar. Other researchers should generally expect to execute complete
+and unique agreements for each research study or data request they
+undertake. However, it is likely that subsequent data requests from the
+same data provider may proceed more quickly once an initial relationship
+has been established.</p>
+</div>
+<div id="making-data-usable-for-research-3" class="section level3">
+<h3><span class="header-section-number">18.6.3</span> <strong>Making data usable for research</strong></h3>
+<blockquote>
+<p>Have the partners completed the process of making the data usable for research? If not, is it taking longer than expected or is it on track? What obstacles were encountered and how were they addressed? Who is handling this part: the data provider, the researcher team, or a joint working group?</p>
+</blockquote>
+<p>Data from the diagnostic test is not yet available since the test has
+not been fully administered. However, as with the information collected
+from the META-PR tests, once the data on student performance is
+collected, it will be processed by the PRDE and added to the
+centralized, cloud-based data warehouse. The information will then
+become available to researchers who have established a data-sharing
+arrangement with the department.</p>
+<p>Based on previous transfers of administrative data early in the project,
+it appears that data is transferred in quite raw form. Researchers
+should plan significant time for validating, cleaning, and wrangling the
+data into usable form. Researchers should also take care to ensure that
+the data has been sufficiently de-identified before analysis.</p>
+<p><em>The following questions will explore how you are planning to protect
+the information of the people and business in the data and to frame
+allowable research (rough alignment with the “Five Safes” principles).</em></p>
+</div>
+<div id="expanding-access" class="section level3">
+<h3><span class="header-section-number">18.6.4</span> <strong>Expanding access</strong></h3>
+<blockquote>
+<p>Are you planning, or is your project considering, to expand access to other researchers? If yes, how do you plan to select projects, researchers, and institutions that will be granted (secure) access? If not, then please discuss what you feel are the constraints to doing so in this case. <span class="math display">\[Handles safe people/safe projects and touches on safe outputs; also legal context for data use\]</span></p>
+</blockquote>
+<p>Researchers can request access to the PRDE data by completing a <a href="https://www.de.pr.gov/wp-content/uploads/2018/01/Manual_de_Gobernanza_de_Datos_-en_proceso_para_revisin_-5.pdf">Request
+for Statistical
+Data</a>
+as shown in Appendix A (pp. 52–53) of the <em>Data Governance Manual</em>. The
+request should specify what data is requested, what level of data
+researchers will use (e.g., student or school level), and the reason for
+the request. Data at the student level can only be released if the
+researcher completes a data confidentiality agreement and a data
+disclosure agreement. After study completion, researchers will also need
+to fill out a guarantee form of data and confidential information
+destruction. The request form is not specific to research and is
+designed to accommodate requests from parents, media, or other members
+of the community as well. Researchers should also have obtained their
+institution’s institutional review board approval if conducting human
+subject research.</p>
+<p>Because it was part of the original pilot data access, and as trusted
+partners, the J-PAL-based research team continues to be involved in
+ongoing discussions related to data governance. However, all data access
+is controlled by the PRDE.</p>
+</div>
+<div id="technical-setup" class="section level3">
+<h3><span class="header-section-number">18.6.5</span> <strong>Technical setup</strong></h3>
+<blockquote>
+<p>Are you planning to require access through particular technical means (remote access, designated secure computers, computer security plan), and/or particular legal means (enforceable laws or contracts/data use agreements under local law)? <span class="math display">\[Handles safe settings but also legal framework for granting data access\]</span></p>
+</blockquote>
+<p>The generic memorandum of understanding/data use agreement adapted for
+this partnership indicates that the PRDE will transfer data to
+researchers through a secure file transfer protocol, an encrypted
+cloud-based solution, or an encrypted hard drive. All the data retrieved
+from the data warehouse must be stored and analyzed through a secure
+server, and it cannot leave the hosting institution’s premises. In the
+case of this project, that server is located at the University of
+Toronto. This means that no data is available on researcher laptops, and
+all access is remote, using Windows- or Linux-based access methods.
+Additionally, each authorized user must be assigned a unique username
+and password to access the data.</p>
+</div>
+<div id="de-identification-and-similar" class="section level3">
+<h3><span class="header-section-number">18.6.6</span> <strong>De-identification and similar</strong></h3>
+<blockquote>
+<p>If you are currently working with detailed confidential data, will others in the future be able to access the same data, or will accessible data be modified to provide “safe” access in compliance with local privacy and data use laws? Examples of such modifications include (but are not limited to) redacting, de-identifying, or aggregating the data for ethical and data security reasons before sharing.</p>
+</blockquote>
+<p>Researchers are working with de-identified, individual-level data, which
+cannot be shared beyond the project team. Any published results or data
+must be aggregated to cell sizes of at least five individuals to
+maintain confidentiality of potentially re-identifiable subgroups. Other
+researchers would need to request individual-level data directly from
+the department, following the relevant data access procedures addressed
+above.</p>
+</div>
+<div id="data-life-cycle-and-replicability-6" class="section level3">
+<h3><span class="header-section-number">18.6.7</span> <strong>Data life cycle and replicability</strong></h3>
+<blockquote>
+<p>Have you given thought to the preservation of data used and generated by this project, the future reproducibility of derivative data products (including protected data), and the research that used such data? Could future researchers recover data that you are currently using? <span class="math display">\[Touches on data life cycle and replicability\]</span></p>
+</blockquote>
+<p>The ad hoc diagnostic test was only intended to be implemented once;
+however, because the results will be integrated in the central data
+warehouse, researchers other than those currently working on the
+assessment’s implementation will be able to access this data in the
+future. This data will be crucial to measuring learning loss during the
+disruption caused by the world pandemic. Data held by the research team
+must be destroyed at the conclusion of the research project, but the
+original data will be held in the data warehouse for an indeterminate
+length of time. This information is not currently in the governance
+manual.</p>
+</div>
+<div id="sustainability-and-continued-success-9" class="section level3">
+<h3><span class="header-section-number">18.6.8</span> <strong>Sustainability and continued success</strong></h3>
+<blockquote>
+<p>Have you given thought to the sustainability of the effort, both financial sustainability (covering costs of making data accessible in the long run) and institutional buy-in (satisfying legal and societal expectations of benefits)? <span class="math display">\[Addresses sustainability and continued success\]</span></p>
+</blockquote>
+<p>Currently, there is no cost associated with acquiring PRDE data;
+however, the PRDE has a limited ability to clean and harmonize data,
+link data sets, or produce analysis.</p>
+<p>Thinking more broadly about sustainability, as noted in the case, the
+research team and the department have invested significant time and
+effort in capacity building and in conducting collaborative research.
+These efforts and costs are not well accounted for when thinking only
+about the data access mechanism. In particular, embedding staff in the
+department (who have direct access to the data warehouse) has been
+essential to the smooth conduct of the study, and similar approaches
+(and related costs) should be considered when conducting future
+research.</p>
+<p>To ensure sustainability and continued success, researchers should
+approach collaboration with the department from the perspective of
+shared objectives, such as improving education on the island and
+improving evidence-based decision-making, such that data relationships
+continue to be mutually beneficial.</p>
+</div>
+</div>
+<div id="about-the-authors-12" class="section level2">
+<h2><span class="header-section-number">18.7</span> About the Authors</h2>
+<p>Daniela Gómez Treviño is a Research Manager at J-PAL North America where
+she supports the launch of new evaluations of social programs, and
+contributes to training courses for research staff. She also supports
+multiple impact evaluations through Research Management Support (RMS).</p>
+</div>
+<div id="rrrreferences-1" class="section level2">
+<h2><span class="header-section-number">18.8</span> RRRReferences</h2>
+<p>Bobonis, Gustavo and Nicolas Riveros Medelis. 2019. “Policymakers and
+Researchers Collaborate to Improve Education Quality in Puerto Rico.”
+J-PAL Blog.
+<a href="https://www.povertyactionlab.org/blog/7-9-19/policymakers-and-researchers-collaborate-improve-education-quality-puerto-rico"><span class="underline">https://www.povertyactionlab.org/blog/7-9-19/policymakers-and-researchers-collaborate-improve-education-quality-puerto-rico</span></a>.</p>
+<p>Devos, Betsy. 2020. “Secretary Betsy Devos to Chief State School
+Officers.” US Department of Education.
+<a href="https://www2.ed.gov/policy/gen/guid/secletter/200320.html"><span class="underline">https://www2.ed.gov/policy/gen/guid/secletter/200320.html</span></a>.</p>
+<p>McFarland, Joel, Bill Hussar, Jijun Zhang, Xiaolei Wang, Ke Wang, Sarah
+Hein, Melissa Diliberti, Emily F. Cataldi, Farrah B. Mann, and Amy
+Barmer. 2019. “The Condition of Education 2019 (NCES 2019-144).”
+Washington, DC: National Center for Education Statistics.
+<a href="https://nces.ed.gov/"><span class="underline">https://nces.ed.gov/
+pubsearch/pubsinfo.asp?pubid=2019144</span></a>.</p>
+<p>Puerto Rico Departamento de Educación. 2016. “Manual de Gobernanza de
+Datos del Departamento de Educación del Estado Libre Asociado de Puerto
+Rico.”
+<a href="https://www.de.pr.gov/wp-content/uploads/2018/01/Manual_de_Gobernanza_de_Datos_-en_proceso_para_revisin_-5.pdf"><span class="underline">https://www.de.pr.gov/wp-content/uploads/2018/01/Manual_de_Gobernanza_de_Datos_-en_proceso_para_revisin_-5.pdf</span></a>.</p>
+<p>Sachse, Clare. “Real-Time Monitoring and Response Plans: Creating
+Procedures.” J-PAL Research Resources. Accessed XX.
+<a href="https://www.povertyactionlab.org/resource/real-time-monitoring-and-response-plans-creating-procedures"><span class="underline">https://www.povertyactionlab.org/resource/real-time-monitoring-and-response-plans-creating-procedures</span></a>.</p>
+<p>Varela Vélez, Damarys, Emily Goldman, and Gustavo
+Bobonis. 2021.
+“Pursuing Evidence-Based Policymaking during Crisis.” J-PAL Blog.
+<a href="https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis"><span class="underline">https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis</span></a>.</p>
+<div class="invisible">
+<p>
+This is a workaround for citations in footnotes, please ignore. <span class="citation"><span class="citation">Sachsse (<a href="#ref-sachsse-blog" role="doc-biblioref">n.d.</a>)</span></span> <span class="citation"><span class="citation">Bobonis and Riveros Medelis (<a href="#ref-bobonis2019" role="doc-biblioref">2019</a>)</span></span> <span class="citation"><span class="citation">Varela Vélez, Goldman, and Bobonis (<a href="#ref-varelavelez-blog" role="doc-biblioref">2021</a>)</span></span>
+</p>
+</div>
+
+
+</div>
+</div>
+
+
+
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-bobonis2019">
+<p>Bobonis, Gustavo, and Nicolas Riveros Medelis. 2019. “Policymakers and Researchers Collaborate to Improve Education Quality in Puerto Rico.” <em>J-PAL Blog</em>. <a href="https://www.povertyactionlab.org/blog/7-9-19/policymakers-and-researchers-collaborate-improve-education-quality-puerto-rico">https://www.povertyactionlab.org/blog/7-9-19/policymakers-and-researchers-collaborate-improve-education-quality-puerto-rico</a>.</p>
+</div>
+<div id="ref-devos2020">
+<p>Devos, Betsy. 2020. “Dear Chief State School Officer.” <em>US Department of Education</em>. <a href="https://www2.ed.gov/policy/gen/guid/secletter/200320.html">https://www2.ed.gov/policy/gen/guid/secletter/200320.html</a>.</p>
+</div>
+<div id="ref-mcfarland2019">
+<p>McFarland, Joel, Bill Hussar, Jijun Zhang, Xiaolei Wang, Ke Wang, Sarah Hein, Melissa Diliberti, Emily F. Cataldi, Farah B. Mann, and Amy Barmer. 2019. “The Condition of Education 2019.” Publication NCES 2019144. National Center for Education Statistics. <a href="https://nces.ed.gov/pubsearch/pubsinfo.Asp?Pubid=2019144">https://nces.ed.gov/pubsearch/pubsinfo.Asp?Pubid=2019144</a>.</p>
+</div>
+<div id="ref-puertoricodepartamentodeeducacion2016">
+<p>Puerto Rico Departamento de Educación. 2016. “Manual de Gobernanza de Datos Del Departamento de Educación Del Estado Libre Asociado de Puerto Rico.” Version noviembre 2017. Estado Libre Asociado de Puerto Rico. <a href="https://www.de.pr.gov/wp-content/uploads/2018/01/Manual_de_Gobernanza_de_Datos_-en_proceso_para_revisin_-5.pdf">https://www.de.pr.gov/wp-content/uploads/2018/01/Manual_de_Gobernanza_de_Datos_-en_proceso_para_revisin_-5.pdf</a>.</p>
+</div>
+<div id="ref-sachsse-blog">
+<p>Sachsse, Clare. n.d. “Real-Time Monitoring and Response Plans: Creating Procedures.” <em>J-PAL Research Resources</em>. Accessed July 11, 2022. <a href="https://www.povertyactionlab.org/resource/real-time-monitoring-and-response-plans-creating-procedures">https://www.povertyactionlab.org/resource/real-time-monitoring-and-response-plans-creating-procedures</a>.</p>
+</div>
+<div id="ref-varelavelez-blog">
+<p>Varela Vélez, Damarys, Emily Goldman, and Gustavo Bobonis. 2021. “Pursuing Evidence-Based Policymaking During Crisis.” <em>J-PAL Blog</em>. <a href="https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis">https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="314">
+<li id="fn314"><p>In English, Education Professional Development for Leadership and
+Professionalization Management Academy.<a href="puertorico.html#fnref314" class="footnote-back">↩︎</a></p></li>
+<li id="fn315"><p><span class="citation">Varela Vélez, Goldman, and Bobonis (<a href="#ref-varelavelez-blog" role="doc-biblioref">2021</a>)</span>
+<a href="https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis">document in more detail</a> how the program has shifted to respond to
+the crisis.<a href="puertorico.html#fnref315" class="footnote-back">↩︎</a></p></li>
+<li id="fn316"><p><span class="citation">Bobonis and Riveros Medelis (<a href="#ref-bobonis2019" role="doc-biblioref">2019</a>)</span> document
+how policymakers and researchers collaborated to improve education
+quality in Puerto Rico.<a href="puertorico.html#fnref316" class="footnote-back">↩︎</a></p></li>
+<li id="fn317"><p>See <span class="citation">Sachsse (<a href="#ref-sachsse-blog" role="doc-biblioref">n.d.</a>)</span>.<a href="puertorico.html#fnref317" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="massachusetts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="contributing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["http://admindatahandbook.mit.edu/testing/#print", "PDF"], ["http://admindatahandbook.mit.edu/testing/#purchase", "Book"], ["http://admindatahandbook.mit.edu/testing/#epub", "Epub"]],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

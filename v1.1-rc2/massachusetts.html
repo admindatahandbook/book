@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>17 Early Stage: Evaluating a Rental Assistance Program in Massachusetts | Handbook on Using Administrative Data for Research and Evidence-based Policy</title>
+  <meta name="description" content="17 Early Stage: Evaluating a Rental Assistance Program in Massachusetts | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="17 Early Stage: Evaluating a Rental Assistance Program in Massachusetts | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="assets/images/webcover.png" />
+  <meta property="og:description" content="17 Early Stage: Evaluating a Rental Assistance Program in Massachusetts | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="github-repo" content="admindatahandbook/book" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="17 Early Stage: Evaluating a Rental Assistance Program in Massachusetts | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  
+  <meta name="twitter:description" content="17 Early Stage: Evaluating a Rental Assistance Program in Massachusetts | Handbook on Using Administrative Data for Research and Evidence-based Policy" />
+  <meta name="twitter:image" content="assets/images/webcover.png" />
+
+<meta name="author" content="Shawn Cole, Iqbal Dhaliwal, Anja Sautmann, Lars Vilhuber" />
+
+
+<meta name="date" content="2021-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="indonesia.html"/>
+<link rel="next" href="puertorico.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2579240-16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2579240-16');
+</script>
+
+<script>
+function toggleCitation() {
+  var x = document.getElementById("myCitation");
+  var button = document.getElementById("citationButton");
+  var date = document.getElementById("todayDate");
+  var url = document.getElementById("thisURL");
+  var d = new Date().toISOString();
+  var chapTitle = document.getElementsByTagName("h1")[1]
+  var citeTitle = document.getElementById("chapTitle")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.innerHTML = "Hide citation";
+    date.innerHTML = d.split("T")[0];
+    url.innerHTML = window.location.href;
+    citeTitle.innerText = chapTitle.innerText.replace(/^[0-9]+ /,"")
+  } else {
+    x.style.display = "none";
+    button.innerHTML = "Show citation to this chapter";
+  }
+} 
+
+</script>
+
+
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/toc.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/html.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level=""><a href="https://admindatahandbook.mit.edu/"><i class="fa fa-home"></i>Home page</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to the Handbook</a></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About the Editors</a></li>
+<li class="chapter" data-level="" data-path="handbook-acknowledgements.html"><a href="handbook-acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Using Administrative Data for Research and Evidence-Based Policy: An Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#the-potential-of-administrative-data-for-research-and-policymaking"><i class="fa fa-check"></i><b>1.1</b> The Potential of Administrative Data for Research and Policymaking</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#why-is-the-analysis-of-administrative-data-still-relatively-rare"><i class="fa fa-check"></i><b>1.2</b> Why is the Analysis of Administrative Data Still Relatively Rare?</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#this-handbook"><i class="fa fa-check"></i><b>1.3</b> This Handbook</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#further-reading"><i class="fa fa-check"></i><b>1.4</b> Further Reading</a></li>
+</ul></li>
+<li class="part"><span><b>I Special Topics</b></span></li>
+<li class="chapter" data-level="2" data-path="security.html"><a href="security.html"><i class="fa fa-check"></i><b>2</b> Physically Protecting Sensitive Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="security.html"><a href="security.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="security.html"><a href="security.html#types-of-security-threats"><i class="fa fa-check"></i><b>2.2</b> Types of Security Threats</a></li>
+<li class="chapter" data-level="2.3" data-path="security.html"><a href="security.html#technical-features-of-data-access-mechanisms"><i class="fa fa-check"></i><b>2.3</b> Technical Features of Data Access Mechanisms</a></li>
+<li class="chapter" data-level="2.4" data-path="security.html"><a href="security.html#typical-access-mechanisms"><i class="fa fa-check"></i><b>2.4</b> Typical Access Mechanisms</a></li>
+<li class="chapter" data-level="2.5" data-path="security.html"><a href="security.html#five-aspects-of-data-access-mechanisms"><i class="fa fa-check"></i><b>2.5</b> Five Aspects of Data Access Mechanisms</a></li>
+<li class="chapter" data-level="2.6" data-path="security.html"><a href="security.html#specific-data-access-mechanisms-along-the-five-aspects"><i class="fa fa-check"></i><b>2.6</b> Specific Data Access Mechanisms Along the Five Aspects</a></li>
+<li class="chapter" data-level="2.7" data-path="security.html"><a href="security.html#guidance-for-data-providers-and-researchers"><i class="fa fa-check"></i><b>2.7</b> Guidance for Data Providers and Researchers</a></li>
+<li class="chapter" data-level="" data-path="security.html"><a href="security.html#about-the-authors"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dua.html"><a href="dua.html"><i class="fa fa-check"></i><b>3</b> Model Data Use Agreements: A Practical Guide</a><ul>
+<li class="chapter" data-level="3.1" data-path="dua.html"><a href="dua.html#overview"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
+<li class="chapter" data-level="3.2" data-path="dua.html"><a href="dua.html#negotiating-the-data-use-request"><i class="fa fa-check"></i><b>3.2</b> Negotiating the Data Use Request</a></li>
+<li class="chapter" data-level="3.3" data-path="dua.html"><a href="dua.html#compliance"><i class="fa fa-check"></i><b>3.3</b> Compliance</a></li>
+<li class="chapter" data-level="3.4" data-path="dua.html"><a href="dua.html#summary"><i class="fa fa-check"></i><b>3.4</b> Summary</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#supplemental-materials"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="dua.html"><a href="dua.html#dua-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="irb.html"><a href="irb.html"><i class="fa fa-check"></i><b>4</b> Collaborating with the Institutional Review Board (IRB)</a><ul>
+<li class="chapter" data-level="4.1" data-path="irb.html"><a href="irb.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="irb.html"><a href="irb.html#what-is-the-irb"><i class="fa fa-check"></i><b>4.2</b> What is the IRB</a></li>
+<li class="chapter" data-level="4.3" data-path="irb.html"><a href="irb.html#irb-international"><i class="fa fa-check"></i><b>4.3</b> IRBs and International Research</a></li>
+<li class="chapter" data-level="4.4" data-path="irb.html"><a href="irb.html#what-an-irb-does-not-do"><i class="fa fa-check"></i><b>4.4</b> What an IRB Does Not Do</a></li>
+<li class="chapter" data-level="4.5" data-path="irb.html"><a href="irb.html#what-irb-does"><i class="fa fa-check"></i><b>4.5</b> What the IRB Will Do to Ensure the Protection of Participants</a></li>
+<li class="chapter" data-level="4.6" data-path="irb.html"><a href="irb.html#what-irb-considers"><i class="fa fa-check"></i><b>4.6</b> Considerations of the IRB</a></li>
+<li class="chapter" data-level="4.7" data-path="irb.html"><a href="irb.html#strategies-for-communicating-with-the-irb"><i class="fa fa-check"></i><b>4.7</b> Strategies for Communicating With the IRB</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#supplemental-materials-1"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#about-the-author-1"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="irb.html"><a href="irb.html#irb-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discavoid.html"><a href="discavoid.html"><i class="fa fa-check"></i><b>5</b> Balancing Privacy and Data Usability: An Overview of Disclosure Avoidance Methods</a><ul>
+<li class="chapter" data-level="5.1" data-path="discavoid.html"><a href="discavoid.html#purpose-of-statistical-disclosure-limitation-methods-definitions-and-context"><i class="fa fa-check"></i><b>5.1</b> Purpose of Statistical Disclosure Limitation Methods: Definitions and Context</a></li>
+<li class="chapter" data-level="5.2" data-path="discavoid.html"><a href="discavoid.html#methods"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="discavoid.html"><a href="discavoid.html#metrics"><i class="fa fa-check"></i><b>5.3</b> Metrics</a></li>
+<li class="chapter" data-level="5.4" data-path="discavoid.html"><a href="discavoid.html#tools"><i class="fa fa-check"></i><b>5.4</b> Tools</a></li>
+<li class="chapter" data-level="5.5" data-path="discavoid.html"><a href="discavoid.html#conclusion"><i class="fa fa-check"></i><b>5.5</b> Conclusion</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#supplemental-materials-2"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#about-the-authors-1"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+<li class="chapter" data-level="" data-path="discavoid.html"><a href="discavoid.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="diffpriv.html"><a href="diffpriv.html"><i class="fa fa-check"></i><b>6</b> Designing Access with Differential Privacy</a><ul>
+<li class="chapter" data-level="6.1" data-path="diffpriv.html"><a href="diffpriv.html#sec:dp-intro"><i class="fa fa-check"></i><b>6.1</b> Introduction and Overview</a></li>
+<li class="chapter" data-level="6.2" data-path="diffpriv.html"><a href="diffpriv.html#sec:what-dp-protects"><i class="fa fa-check"></i><b>6.2</b> How Differential Privacy Protects Privacy</a></li>
+<li class="chapter" data-level="6.3" data-path="diffpriv.html"><a href="diffpriv.html#sec:aligning"><i class="fa fa-check"></i><b>6.3</b> Aligning Risks, Controls, and Uses: Where Is the Use of Differential Privacy Appropriate?</a></li>
+<li class="chapter" data-level="6.4" data-path="diffpriv.html"><a href="diffpriv.html#sec:case-studies"><i class="fa fa-check"></i><b>6.4</b> Case Studies</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#about-the-authors-2"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#disclaimer-1"><i class="fa fa-check"></i>Disclaimer</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#acknowledgements-1"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="diffpriv.html"><a href="diffpriv.html#diffpriv-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="part"><span><b>II Case Studies</b></span></li>
+<li class="chapter" data-level="7" data-path="iab.html"><a href="iab.html"><i class="fa fa-check"></i><b>7</b> Institute for Employment Research, Germany: International Access to Labor Market Data</a><ul>
+<li class="chapter" data-level="7.1" data-path="iab.html"><a href="iab.html#summary-1"><i class="fa fa-check"></i><b>7.1</b> Summary</a></li>
+<li class="chapter" data-level="7.2" data-path="iab.html"><a href="iab.html#introduction-2"><i class="fa fa-check"></i><b>7.2</b> Introduction</a></li>
+<li class="chapter" data-level="7.3" data-path="iab.html"><a href="iab.html#iab-usable"><i class="fa fa-check"></i><b>7.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="7.4" data-path="iab.html"><a href="iab.html#legal-and-institutional-framework"><i class="fa fa-check"></i><b>7.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="7.5" data-path="iab.html"><a href="iab.html#iab-fivesafes"><i class="fa fa-check"></i><b>7.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="7.6" data-path="iab.html"><a href="iab.html#data-life-cycle-and-replicability"><i class="fa fa-check"></i><b>7.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="7.7" data-path="iab.html"><a href="iab.html#sustainability-and-continued-success"><i class="fa fa-check"></i><b>7.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="iab.html"><a href="iab.html#supplemental-materials-3"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="iab.html"><a href="iab.html#about-the-authors-3"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="olda.html"><a href="olda.html"><i class="fa fa-check"></i><b>8</b> Ohio and the Longitudinal Data Archive: Mutually Beneficial Partnerships Between State Government and Researchers</a><ul>
+<li class="chapter" data-level="8.1" data-path="olda.html"><a href="olda.html#summary-2"><i class="fa fa-check"></i><b>8.1</b> Summary</a></li>
+<li class="chapter" data-level="8.2" data-path="olda.html"><a href="olda.html#introduction-3"><i class="fa fa-check"></i><b>8.2</b> Introduction</a></li>
+<li class="chapter" data-level="8.3" data-path="olda.html"><a href="olda.html#making-data-usable-for-research"><i class="fa fa-check"></i><b>8.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="8.4" data-path="olda.html"><a href="olda.html#legal-and-institutional-framework-1"><i class="fa fa-check"></i><b>8.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="8.5" data-path="olda.html"><a href="olda.html#protection-of-sensitive-and-personal-data-the-five-safes-framework"><i class="fa fa-check"></i><b>8.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="8.6" data-path="olda.html"><a href="olda.html#data-life-cycle-and-reproducibility"><i class="fa fa-check"></i><b>8.6</b> Data Life Cycle and Reproducibility</a></li>
+<li class="chapter" data-level="8.7" data-path="olda.html"><a href="olda.html#sustainability-and-continued-success-1"><i class="fa fa-check"></i><b>8.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#supplemental-materials-4"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#about-the-author-2"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="olda.html"><a href="olda.html#olda-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="nbirdt.html"><a href="nbirdt.html"><i class="fa fa-check"></i><b>9</b> New Brunswick Institute for Research, Data and Training, University of New Brunswick: A Ten-Year Partnership Between Government and Academia - the Establishment of NB-IRDT</a><ul>
+<li class="chapter" data-level="9.1" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-summ"><i class="fa fa-check"></i><b>9.1</b> Summary</a></li>
+<li class="chapter" data-level="9.2" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-intro"><i class="fa fa-check"></i><b>9.2</b> Introduction</a></li>
+<li class="chapter" data-level="9.3" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-making"><i class="fa fa-check"></i><b>9.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="9.4" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-framework"><i class="fa fa-check"></i><b>9.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="9.5" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-legalaccess"><i class="fa fa-check"></i><b>9.5</b> Legal Framework for Granting Data Access</a></li>
+<li class="chapter" data-level="9.6" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-fivesafes"><i class="fa fa-check"></i><b>9.6</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="9.7" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-replicability"><i class="fa fa-check"></i><b>9.7</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="9.8" data-path="nbirdt.html"><a href="nbirdt.html#nbirdt-sustain"><i class="fa fa-check"></i><b>9.8</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="nbirdt.html"><a href="nbirdt.html#supplemental-materials-5"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="nbirdt.html"><a href="nbirdt.html#about-the-authors-4"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pcri.html"><a href="pcri.html"><i class="fa fa-check"></i><b>10</b> The Private Capital Research Institute: Making Private Data Accessible in an Opaque Industry</a><ul>
+<li class="chapter" data-level="10.1" data-path="pcri.html"><a href="pcri.html#summary-3"><i class="fa fa-check"></i><b>10.1</b> Summary</a></li>
+<li class="chapter" data-level="10.2" data-path="pcri.html"><a href="pcri.html#introduction-4"><i class="fa fa-check"></i><b>10.2</b> Introduction</a></li>
+<li class="chapter" data-level="10.3" data-path="pcri.html"><a href="pcri.html#making-data-useable-for-research"><i class="fa fa-check"></i><b>10.3</b> Making Data Useable for Research</a></li>
+<li class="chapter" data-level="10.4" data-path="pcri.html"><a href="pcri.html#legal-and-institutional-framework-2"><i class="fa fa-check"></i><b>10.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="10.5" data-path="pcri.html"><a href="pcri.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-1"><i class="fa fa-check"></i><b>10.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="10.6" data-path="pcri.html"><a href="pcri.html#data-life-cycle-and-replicability-1"><i class="fa fa-check"></i><b>10.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="10.7" data-path="pcri.html"><a href="pcri.html#sustainability-and-continued-success-2"><i class="fa fa-check"></i><b>10.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#about-the-authors-5"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#acknowledgements-2"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="pcri.html"><a href="pcri.html#pcri-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ahc.html"><a href="ahc.html"><i class="fa fa-check"></i><b>11</b> Aurora Health Care: Using Electronic Medical Records for a Randomized Evaluation of Clinical Decision Support</a><ul>
+<li class="chapter" data-level="11.1" data-path="ahc.html"><a href="ahc.html#summary-4"><i class="fa fa-check"></i><b>11.1</b> Summary</a></li>
+<li class="chapter" data-level="11.2" data-path="ahc.html"><a href="ahc.html#introduction-5"><i class="fa fa-check"></i><b>11.2</b> Introduction</a></li>
+<li class="chapter" data-level="11.3" data-path="ahc.html"><a href="ahc.html#legal-and-institutional-framework-3"><i class="fa fa-check"></i><b>11.3</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="11.4" data-path="ahc.html"><a href="ahc.html#ahc-making-data-usable"><i class="fa fa-check"></i><b>11.4</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="11.5" data-path="ahc.html"><a href="ahc.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-2"><i class="fa fa-check"></i><b>11.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="11.6" data-path="ahc.html"><a href="ahc.html#data-life-cycle-and-replicability-2"><i class="fa fa-check"></i><b>11.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="11.7" data-path="ahc.html"><a href="ahc.html#sustainability-and-continued-success-3"><i class="fa fa-check"></i><b>11.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#supplemental-materials-6"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#about-the-authors-6"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#acknowledgements-3"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="ahc.html"><a href="ahc.html#appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sfusd.html"><a href="sfusd.html"><i class="fa fa-check"></i><b>12</b> The Stanford-SFUSD Partnership: Development of Data-Sharing Structures and Processes</a><ul>
+<li class="chapter" data-level="12.1" data-path="sfusd.html"><a href="sfusd.html#summary-5"><i class="fa fa-check"></i><b>12.1</b> Summary</a></li>
+<li class="chapter" data-level="12.2" data-path="sfusd.html"><a href="sfusd.html#introduction-6"><i class="fa fa-check"></i><b>12.2</b> Introduction</a></li>
+<li class="chapter" data-level="12.3" data-path="sfusd.html"><a href="sfusd.html#making-data-usable-for-research-1"><i class="fa fa-check"></i><b>12.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="12.4" data-path="sfusd.html"><a href="sfusd.html#legal-and-institutional-framework-4"><i class="fa fa-check"></i><b>12.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="12.5" data-path="sfusd.html"><a href="sfusd.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-3"><i class="fa fa-check"></i><b>12.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="12.6" data-path="sfusd.html"><a href="sfusd.html#data-life-cycle-and-replicability-3"><i class="fa fa-check"></i><b>12.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="12.7" data-path="sfusd.html"><a href="sfusd.html#sustainability-and-continued-success-4"><i class="fa fa-check"></i><b>12.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="12.8" data-path="sfusd.html"><a href="sfusd.html#concluding-remarks-1"><i class="fa fa-check"></i><b>12.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#supplemental-materials-7"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#about-the-authors-7"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="sfusd.html"><a href="sfusd.html#sfusd-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="cct.html"><a href="cct.html"><i class="fa fa-check"></i><b>13</b> City of Cape Town, South Africa: Aligning Internal Data Capabilities with External Research Partnerships</a><ul>
+<li class="chapter" data-level="13.1" data-path="cct.html"><a href="cct.html#summary-6"><i class="fa fa-check"></i><b>13.1</b> Summary</a></li>
+<li class="chapter" data-level="13.2" data-path="cct.html"><a href="cct.html#introduction-7"><i class="fa fa-check"></i><b>13.2</b> Introduction</a></li>
+<li class="chapter" data-level="13.3" data-path="cct.html"><a href="cct.html#making-data-usable-for-research-2"><i class="fa fa-check"></i><b>13.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="13.4" data-path="cct.html"><a href="cct.html#legal-and-institutional-framework-5"><i class="fa fa-check"></i><b>13.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="13.5" data-path="cct.html"><a href="cct.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-4"><i class="fa fa-check"></i><b>13.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="13.6" data-path="cct.html"><a href="cct.html#data-life-cycle-and-reproducibility-1"><i class="fa fa-check"></i><b>13.6</b> Data Life Cycle and Reproducibility</a></li>
+<li class="chapter" data-level="13.7" data-path="cct.html"><a href="cct.html#sustainability-and-continued-success-5"><i class="fa fa-check"></i><b>13.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="13.8" data-path="cct.html"><a href="cct.html#concluding-remarks-2"><i class="fa fa-check"></i><b>13.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#supplemental-materials-8"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#about-the-authors-8"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="cct.html"><a href="cct.html#acknowledgements-4"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="dime.html"><a href="dime.html"><i class="fa fa-check"></i><b>14</b> Administrative Data in Research at the World Bank: The Case of Development Impact Evaluation (DIME)</a><ul>
+<li class="chapter" data-level="14.1" data-path="dime.html"><a href="dime.html#summary-7"><i class="fa fa-check"></i><b>14.1</b> Summary</a></li>
+<li class="chapter" data-level="14.2" data-path="dime.html"><a href="dime.html#introduction-8"><i class="fa fa-check"></i><b>14.2</b> Introduction</a></li>
+<li class="chapter" data-level="14.3" data-path="dime.html"><a href="dime.html#dime-making-data-usable"><i class="fa fa-check"></i><b>14.3</b> Making Data Usable for Research</a></li>
+<li class="chapter" data-level="14.4" data-path="dime.html"><a href="dime.html#legal-and-institutional-framework-6"><i class="fa fa-check"></i><b>14.4</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="14.5" data-path="dime.html"><a href="dime.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-5"><i class="fa fa-check"></i><b>14.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="14.6" data-path="dime.html"><a href="dime.html#data-life-cycle-and-replicability-4"><i class="fa fa-check"></i><b>14.6</b> Data Life Cycle and Replicability</a></li>
+<li class="chapter" data-level="14.7" data-path="dime.html"><a href="dime.html#sustainability-and-continued-success-6"><i class="fa fa-check"></i><b>14.7</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="14.8" data-path="dime.html"><a href="dime.html#concluding-remarks-3"><i class="fa fa-check"></i><b>14.8</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="dime.html"><a href="dime.html#supplemental-materials-9"><i class="fa fa-check"></i>Supplemental Materials</a></li>
+<li class="chapter" data-level="" data-path="dime.html"><a href="dime.html#about-the-authors-9"><i class="fa fa-check"></i>About the Authors</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="imf.html"><a href="imf.html"><i class="fa fa-check"></i><b>15</b> The Use of Administrative Data at the International Monetary Fund</a><ul>
+<li class="chapter" data-level="15.1" data-path="imf.html"><a href="imf.html#summary-8"><i class="fa fa-check"></i><b>15.1</b> Summary</a></li>
+<li class="chapter" data-level="15.2" data-path="imf.html"><a href="imf.html#introduction-9"><i class="fa fa-check"></i><b>15.2</b> Introduction</a></li>
+<li class="chapter" data-level="15.3" data-path="imf.html"><a href="imf.html#imf-legal-framework"><i class="fa fa-check"></i><b>15.3</b> Legal Framework</a></li>
+<li class="chapter" data-level="15.4" data-path="imf.html"><a href="imf.html#making-data-usable"><i class="fa fa-check"></i><b>15.4</b> Making Data Usable</a></li>
+<li class="chapter" data-level="15.5" data-path="imf.html"><a href="imf.html#protection-of-sensitive-and-personal-data-the-five-safes-framework-6"><i class="fa fa-check"></i><b>15.5</b> Protection of Sensitive and Personal Data: The Five Safes Framework</a></li>
+<li class="chapter" data-level="15.6" data-path="imf.html"><a href="imf.html#sustainability-and-continued-success-7"><i class="fa fa-check"></i><b>15.6</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="15.7" data-path="imf.html"><a href="imf.html#concluding-remarks-4"><i class="fa fa-check"></i><b>15.7</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="imf.html"><a href="imf.html#about-the-authors-10"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="imf.html"><a href="imf.html#disclaimer-2"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="indonesia.html"><a href="indonesia.html"><i class="fa fa-check"></i><b>16</b> Using Administrative Data to Improve Social Protection in Indonesia</a><ul>
+<li class="chapter" data-level="16.1" data-path="indonesia.html"><a href="indonesia.html#summary-9"><i class="fa fa-check"></i><b>16.1</b> Summary</a></li>
+<li class="chapter" data-level="16.2" data-path="indonesia.html"><a href="indonesia.html#indonesia-admin-data-implement-monitor"><i class="fa fa-check"></i><b>16.2</b> The Use of Administrative Data to Implement and Monitor Experimental Treatments</a></li>
+<li class="chapter" data-level="16.3" data-path="indonesia.html"><a href="indonesia.html#using-administrative-data-to-measure-outcomes"><i class="fa fa-check"></i><b>16.3</b> Using Administrative Data to Measure Outcomes</a></li>
+<li class="chapter" data-level="16.4" data-path="indonesia.html"><a href="indonesia.html#studying-the-collection-of-administrative-data-itself"><i class="fa fa-check"></i><b>16.4</b> Studying the Collection of Administrative Data Itself</a></li>
+<li class="chapter" data-level="16.5" data-path="indonesia.html"><a href="indonesia.html#concluding-remarks-5"><i class="fa fa-check"></i><b>16.5</b> Concluding Remarks</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#about-the-authors-11"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#acknowledgements-5"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="indonesia.html"><a href="indonesia.html#indonesia-appendix"><i class="fa fa-check"></i>Appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="massachusetts.html"><a href="massachusetts.html"><i class="fa fa-check"></i><b>17</b> Early Stage: Evaluating a Rental Assistance Program in Massachusetts</a><ul>
+<li class="chapter" data-level="17.1" data-path="massachusetts.html"><a href="massachusetts.html#summary-10"><i class="fa fa-check"></i><b>17.1</b> Summary</a></li>
+<li class="chapter" data-level="17.2" data-path="massachusetts.html"><a href="massachusetts.html#introduction-10"><i class="fa fa-check"></i><b>17.2</b> Introduction</a></li>
+<li class="chapter" data-level="17.3" data-path="massachusetts.html"><a href="massachusetts.html#legal-and-institutional-framework-7"><i class="fa fa-check"></i><b>17.3</b> Legal and Institutional Framework</a></li>
+<li class="chapter" data-level="17.4" data-path="massachusetts.html"><a href="massachusetts.html#protection-of-sensitive-and-personal-data"><i class="fa fa-check"></i><b>17.4</b> Protection of Sensitive and Personal Data</a></li>
+<li class="chapter" data-level="17.5" data-path="massachusetts.html"><a href="massachusetts.html#sustainability-and-continued-success-8"><i class="fa fa-check"></i><b>17.5</b> Sustainability and Continued Success</a></li>
+<li class="chapter" data-level="" data-path="massachusetts.html"><a href="massachusetts.html#about-the-author-3"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="massachusetts.html"><a href="massachusetts.html#disclaimer-3"><i class="fa fa-check"></i>Disclaimer</a></li>
+<li class="chapter" data-level="17.6" data-path="massachusetts.html"><a href="massachusetts.html#rrrreferences"><i class="fa fa-check"></i><b>17.6</b> RRRReferences</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="puertorico.html"><a href="puertorico.html"><i class="fa fa-check"></i><b>18</b> Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19</a><ul>
+<li class="chapter" data-level="18.1" data-path="puertorico.html"><a href="puertorico.html#summary-11"><i class="fa fa-check"></i><b>18.1</b> Summary</a></li>
+<li class="chapter" data-level="18.2" data-path="puertorico.html"><a href="puertorico.html#introduction-11"><i class="fa fa-check"></i><b>18.2</b> Introduction</a></li>
+<li class="chapter" data-level="18.3" data-path="puertorico.html"><a href="puertorico.html#evaluation-of-edugespro"><i class="fa fa-check"></i><b>18.3</b> Evaluation of EDUGESPRO</a></li>
+<li class="chapter" data-level="18.4" data-path="puertorico.html"><a href="puertorico.html#identifying-solutions-to-data-disruptions"><i class="fa fa-check"></i><b>18.4</b> Identifying Solutions to Data Disruptions</a></li>
+<li class="chapter" data-level="18.5" data-path="puertorico.html"><a href="puertorico.html#conclusions"><i class="fa fa-check"></i><b>18.5</b> Conclusions</a></li>
+<li class="chapter" data-level="18.6" data-path="puertorico.html"><a href="puertorico.html#questions"><i class="fa fa-check"></i><b>18.6</b> Questions</a></li>
+<li class="chapter" data-level="18.7" data-path="puertorico.html"><a href="puertorico.html#about-the-authors-12"><i class="fa fa-check"></i><b>18.7</b> About the Authors</a></li>
+<li class="chapter" data-level="18.8" data-path="puertorico.html"><a href="puertorico.html#rrrreferences-1"><i class="fa fa-check"></i><b>18.8</b> RRRReferences</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html"><i class="fa fa-check"></i>Evolution of the Handbook and Contributing</a><ul>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#availability"><i class="fa fa-check"></i>Availability</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#contributions"><i class="fa fa-check"></i>Contributions</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#content-format-and-style-guidelines"><i class="fa fa-check"></i>Content, Format, and Style Guidelines</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#versioning"><i class="fa fa-check"></i>Versioning</a></li>
+<li class="chapter" data-level="" data-path="contributing.html"><a href="contributing.html#case-study-template"><i class="fa fa-check"></i>Case Study Template</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html"><i class="fa fa-check"></i>Third-party Licenses</a><ul>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#fontawesome"><i class="fa fa-check"></i>Fontawesome</a></li>
+<li class="chapter" data-level="" data-path="third-party-licenses.html"><a href="third-party-licenses.html#trademarks"><i class="fa fa-check"></i>Trademarks</a></li>
+</ul></li>
+<li class="divider"></li>
+<li class="copyright"> ©️ 2020 Cole, Dhaliwal, Sautmann, Vilhuber.</li>
+<li class="copyright">Individual chapters ©️ by their authors or as noted.</li>
+<li class="copyright"><a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12px"/></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Handbook on Using Administrative Data for Research and Evidence-based Policy</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="massachusetts" class="section level1">
+<h1><span class="header-section-number">17</span> Early Stage: Evaluating a Rental Assistance Program in Massachusetts</h1>
+<em>Amanda Lee<br />
+Research Manager<br />
+J-PAL North America, Massachusetts Institute of Technology</em><br />
+
+<div id="citationLink">
+<a href="#" onclick="toggleCitation()"><span id="citationButton"> Show citation to this chapter. </span> </a>
+</div>
+<div id="myCitation" style="display: none;">
+Lee, Amanda. 2020. “<span id="chapTitle">Title</span>.” In: Cole, Dhaliwal, Sautmann, and Vilhuber (eds), <em>Handbook on Using Administrative Data for Research and Evidence-based Policy</em>. Accessed at <span id="thisURL"></span> on <span id="todayDate"></span>.<br /><span class="copyright">©️ Amanda Lee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC logo" src="assets/cc-by-nc.png" height="12"/></a>.</span>
+</div>
+<div id="summary-10" class="section level2">
+<h2><span class="header-section-number">17.1</span> Summary</h2>
+<p>Homelessness is one of the more extreme outcomes of poverty and
+inequality. In the United States in 2019, more than 500,000 people
+experience homelessness on a given night and 1.4 million people pass
+through emergency shelters each year <span class="citation">(Binder <a href="#ref-binder2019" role="doc-biblioref">2019</a>)</span>. Each year, significant US
+federal and local financial resources are devoted to combating
+homelessness, with direct federal expenditures totaling around $6.1
+billion annually and local jurisdictions spending billions more. Many
+states have set up programs to provide cash assistance to help reduce
+homelessness and promote housing stability. If these programs are proven
+effective, they may be a highly cost-effective way to address
+homelessness. Traditional survey-based research may face important
+methodological problems because attrition in populations at risk of
+homelessness is very high. Therefore, administrative data (e.g.,
+employment and tax records) is the best way to get a great answer to
+these questions.</p>
+<p>For households facing eviction, foreclosure, or other housing
+emergencies, the Massachusetts Residential Assistance for Families in
+Transition (RAFT) program provides up to $10,000 per household to
+preserve current housing or move to new housing <span class="citation">(Mass.gov <a href="#ref-mass.govb" role="doc-biblioref">n.d.</a><a href="#ref-mass.govb" role="doc-biblioref">a</a>)</span>.<a href="#fn310" class="footnote-ref" id="fnref310"><sup>310</sup></a> Researchers at the
+Harvard Kennedy School (HKS) partnered with the Massachusetts Department
+of Housing and Community Development (DHCD) to evaluate the effect of
+RAFT on housing outcomes (housing status, eviction, and others) as well
+as a broader range of outcomes including employment, income, public
+assistance receipt, and potential downstream effects such as those on
+the education of children in families.</p>
+<p>Administrative data is key both to identifying the population of
+interest (those potentially facing housing instability) and measuring
+the variety of outcomes listed above. Critically, each of these steps
+requires administrative data that the DHCD (which runs the RAFT program)
+does not own. In Massachusetts, each agency holds its own data.
+Therefore, even to share data with other agencies, a data use agreement
+(DUA) must be established for each instance of sharing. This structure
+is not unique to Massachusetts, and similar difficulties in sharing data
+can be found in many other states and countries.</p>
+<p>J-PAL North America works with state and local governments and
+researchers to develop and support randomized evaluations. Often, a key
+part of this support is setting up DUAs between multiple stakeholders
+(researchers and agencies as well as between multiple agencies). One of
+the main goals of the Innovations in Data and Experiments for Action
+Initiative (IDEA) is to support the ongoing development of partnerships
+with governments and other data providers that successfully use
+administrative data for decision-making and evaluation. HKS professors
+Will Dobbie and Desmond Ang and their partner Adam Schaffer at the DHCD
+received support from IDEA to develop a pilot evaluation and solidify a
+strategy to establish the required data-sharing agreements.</p>
+<p>Beyond solving these challenges for a single study, the goal of the
+North America IDEA pilot projects is to work toward building longer-term
+partnerships with data providers and implementing partners by developing
+frameworks and public goods that will make not only this project
+possible but also future research with the same partner more feasible.
+Given the desire to build long-term research partnerships, J-PAL North
+America identified Massachusetts as a high-value partner given the
+Commonwealth’s significant programmatic and data responsibilities,
+interest from multiple J-PAL-affiliated professors in doing research
+with the state, including two other projects that J-PAL North America
+has supported <span class="citation">(Loeb, Meyer, and Madison <a href="#ref-loeb" role="doc-biblioref">n.d.</a>; EMPath <a href="#ref-empath" role="doc-biblioref">n.d.</a>)</span>, and real but solvable challenges to using data for
+research. The author, a research manager at J-PAL North America,
+provided support during this process, primarily around strategy to
+ensure access to necessary administrative data.</p>
+<p>This case study highlights generalizable lessons for data sharing across
+government agencies, as well as with researchers, to conduct a
+randomized evaluation. It will explore the benefits of partnering with a
+state agency, lessons learned about how agencies in Massachusetts have
+previously succeeded in sharing data with each other, the importance of
+the legal context, and design challenges as they relate to data access
+and sharing.</p>
+</div>
+<div id="introduction-10" class="section level2">
+<h2><span class="header-section-number">17.2</span> Introduction</h2>
+<div id="motivation-and-background-7" class="section level3">
+<h3><span class="header-section-number">17.2.1</span> Motivation and Background</h3>
+<p>The conception of this project was largely driven from within the
+DHCD. The DHCD was, and has remained, one of the main driving forces
+behind this evaluation. It was already working with J-PAL-affiliated
+researchers through a technical assistance relationship. To further
+develop this partnership into a randomized evaluation, the DHCD applied
+to J-PAL North America’s <a href="https://www.povertyactionlab.org/initiative/housing-stability-evaluation-incubator">Housing Stability Evaluation
+Incubator</a> <span class="citation">(J-PAL North America <a href="#ref-housingstabilityindicator" role="doc-biblioref">n.d.</a>)</span>,
+a practitioner-facing program designed to develop housing
+stability-related research ideas into feasible evaluations. As part of
+the incubator, the DCHD, Ang, and Dobbie worked to further develop an
+evaluation. Because administrative data access was a primary
+challenge for conducting the evaluation, J-PAL selected the project to
+receive IDEA support, funded by the Alfred P. Sloan Foundation. Even
+with this outside support, continued internal agency leadership would
+prove important, both in defining the type of project and in opening
+doors for initial discussions with other state agencies.</p>
+<p>When the research team (the DHCD, researchers, and J-PAL staff) began
+designing the evaluation, everybody who applied to RAFT and was eligible
+received funds. That is, funding for the program was not a
+constraint. The research team recognized that it would be unethical to
+design a randomized evaluation in which RAFT-eligible households would
+be randomized into a group that did not receive RAFT. Therefore, to
+proceed with a randomized design that allows for estimating causal
+effects of the program, the team decided to use a randomized
+<a href="https://www.povertyactionlab.org/sites/default/files/research-resources/2017.04.14-Real-World-Challenges-to-Randomization-and-Their-Solutions.pdf">encouragement
+design</a>,<a href="#fn311" class="footnote-ref" id="fnref311"><sup>311</sup></a>
+where the treatment group was provided additional encouragement to sign
+up for the program and the control group could sign up for the program
+based on existing information. Both groups could sign up for services.</p>
+<p>In an encouragement design, the research team first identified a group
+of people likely eligible for RAFT based on their income. In
+Massachusetts, households who receive benefits through the Department of
+Transitional Assistance (DTA) have incomes that would likely make them
+income-eligible for RAFT. From this pool of eligible participants from
+the DTA, the research team randomized them into two groups: the
+treatment group would receive information about RAFT and support in
+completing the application, and the control would not receive any
+additional information about RAFT. Households in both groups could apply
+for RAFT, but the encouragement, if effective, was supposed to produce
+higher levels of enrollment into RAFT in the treatment group.</p>
+<p>To simplify the initial data-sharing process and to develop the
+encouragement mechanism, the research team decided to run a
+pilot study that would measure whether and how much the encouragement
+increased enrollment in RAFT (the “first stage”) before designing an
+evaluation of the effect of RAFT on downstream outcomes, such as income,
+employment, and housing. This was done because in an encouragement
+design, it is important for there to be a large enough difference in
+RAFT enrollment rates to allow a comparison between groups. In other
+words, the pilot would help determine whether the full study had
+sufficient statistical power.<a href="#fn312" class="footnote-ref" id="fnref312"><sup>312</sup></a> As of October 2021, the pilot had not
+started. If the information about the program and application assistance
+do not help more people enrolled in RAFT, then the research team will
+want to consider changing the encouragement before attempting a
+comprehensive study.</p>
+</div>
+<div id="data-use-examples-7" class="section level3">
+<h3><span class="header-section-number">17.2.2</span> Data Use Examples</h3>
+<p>Administrative data needs differed between the pilot and the full
+study. These differences drove the prioritization of conversations and
+the structure of agreements. Running the pilot meant the study team
+only needed immediate access to some data and could defer some of the
+more complex data discussions. For the pilot, the DTA held data critical
+for targeting the intervention: a list of households receiving DTA
+services who were likely eligible for RAFT. Pilot outcome data about
+whether participants enrolled in RAFT is held internally at the DHCD.</p>
+<p>For the full study looking at the impacts of RAFT, the DTA, along with
+multiple other agencies, hold outcome data of interest. For example, the
+research team was interested in receiving wage and employment
+information from the Department of Revenue (DOR) and Department of
+Unemployment Assistance, student test scores from either Boston Public
+Schools or the Department of Elementary and Secondary Education, and
+health outcomes from the Department of Public Health, in addition to
+public assistance receipt from the DTA.</p>
+<p>Splitting the work into these two phases meant that the pilot was a much
+easier lift in terms of administrative data-sharing requests. Still,
+although the additional outcome data sources are not needed until later,
+an understanding of what will be feasible for the later study is helpful
+now since the pilot is designed to inform that future work and would be
+less impactful on its own. Splitting the work led to a strategy of
+developing an initial agreement for data sharing with the DTA while
+having concurrent conversations with agencies about future data needs,
+as discussed in more detail below.</p>
+</div>
+</div>
+<div id="legal-and-institutional-framework-7" class="section level2">
+<h2><span class="header-section-number">17.3</span> Legal and Institutional Framework</h2>
+<div id="institutional-setup-5" class="section level3">
+<h3><span class="header-section-number">17.3.1</span> Institutional Setup</h3>
+<p>Data sharing across agencies and with researchers occurs on a
+project-by-project and agency-by-agency basis. While there are
+multiple instances of Massachusetts agencies sharing data with each
+other and with researchers, aside from several narrower use cases, there
+is not a statewide system or agreement to share it. Instead, each agency
+has multiple separate agreements with other agencies to share data for
+various programs or purposes. Getting permission to use this data for a
+new project usually requires a new and separate agreement. For example,
+the DHCD already receives some data from the DOR to confirm income
+eligibility for DHCD programs, including RAFT. Existing instances of
+data sharing suggest agencies have a precedent for sharing data, but it
+does not automatically mean it will be easy to use similar data for
+another project.</p>
+<p>The research team found focusing on immediate data needs while getting
+general agreement on longer-term data needs enabled faster movement on
+the pilot. No DUAs had been signed as of October 2021, though the DTA’s
+legal and analytics teams were willing partners. At the same time, the
+team began general discussions about the use of additional data, such as
+longitudinal data on public assistance receipt, which will be critical
+for the full study. However, this data were not included in the proposed
+DUA. This can be a useful strategy to be able to move forward on initial
+needs (e.g., starting a pilot study) with assurance that the receipt of
+other long-term outcomes seems feasible.</p>
+<p>Massachusetts agencies were generally receptive to sharing data to
+further policy research and program improvement as well as potentially
+sharing de-identified data with researchers. The DTA stipulated that the
+DHCD treat and protect the DTA data the same way it would treat its own
+data. In having initial discussions, agencies and researchers seemed
+open to discussing various ways of sharing and housing data. Given that
+the agreements for outcome data have not been arranged, the final
+mechanisms used for this study are yet to be determined. In this
+instance, as in others, general interest and agreement to sharing data
+for the study seemed like the bigger hurdle. With agreement to the big
+picture, finalizing logistical details, while it might take longer,
+seems feasible.</p>
+</div>
+<div id="legal-context-for-data-use-6" class="section level3">
+<h3><span class="header-section-number">17.3.2</span> Legal Context for Data Use</h3>
+<p>Sharing data for research purposes is easiest if clearly allowed in
+existing consent forms or agreements. The research team found that
+agencies understood the value of sharing data for research, but some
+were hesitant to agree to share outcome data if such a process was not
+already built into existing procedures. The clearest legal avenues for
+sharing data originate in legislative mandates, direct program need, or
+clear existing individual consent language. In general, agencies have a
+web of existing different agreements in place to allow data sharing.</p>
+<p>In exploring previous instances in which agencies could share data, we
+found that the most common instances occurred when sharing data was
+built into the program from the beginning. For instance, in the <a href="https://www.mass.gov/service-details/learn-to-earn-initiative">Learn to
+Earn Initiative</a> <span class="citation">(Mass.gov <a href="#ref-mass.gova" role="doc-biblioref">n.d.</a><a href="#ref-mass.gova" role="doc-biblioref">b</a>)</span>,
+agencies stipulated what data they would share from the outstart
+of the program. Specific DUAs were created across agencies to enable
+the sharing of data specifically for this program. We explored whether
+it would be possible to either amend an existing DUA or copy the
+structure for our project. Amending an existing DUA was not feasible in
+our case, but the current version of the DUA between the DHCD and the
+DTA is based on a template used by the DHCD in other data-sharing
+agreements.</p>
+<p>When participants sign up for certain DHCD programs, including RAFT, the
+consent form they sign allows the data being collected to be used for
+research purposes. Therefore, it is more straightforward for the team to
+acquire information on whether participants have received RAFT. It also
+means it is generally easier for the DHCD to share data with other
+agencies (or researchers) for research purposes because all their
+participants have consent to this use of data when they sign off for a
+DHCD program. This type of consent to use data for research was only
+observed within the DHCD consent forms.</p>
+<p>Given that the DHCD has an existing consent process allowing research,
+the research team is also considering an alternative research design
+where assistance in filling out applications is given to those who have
+started, but not finished, filling out an application for RAFT. These
+participants would have already signed a DHCD consent form, which would
+cover both the treatment and control groups.</p>
+<p>The DHCD could alter the consent form as needed, say for additional
+outcome data collection. This is an option if multiple agencies feel
+that informed consent is needed (discussed in the section below),
+although this would change the research question by shifting the target
+population.</p>
+</div>
+<div id="legal-framework-for-granting-data-access-3" class="section level3">
+<h3><span class="header-section-number">17.3.3</span> Legal Framework for Granting Data Access</h3>
+<p>Massachusetts has various regulations about data sharing and access
+without any explicit mention of research. This requires a separate DUA
+in each instance with terms discussed individually for each project.
+In early conversations with multiple agencies, the research team asked
+about various methods of sharing data with researchers. For example, is
+it easier if data is stored at an agency or stored on Harvard University
+servers? Does it make it easier if researchers become classified as
+“special employees”? In most cases there was not a strong preference
+about these questions, further supporting the idea that if an agency
+expresses initial interest or agreement to a particular project, working
+out the details is possible.</p>
+<p>Not sharing identified data with researchers was important for some
+agencies, though others were more willing to discuss sharing identified
+data so that the research team could handle the matching of data. Given
+that the research team has flexibility here, and the DHCD has some
+internal capacity to perform matching, this project is viable with
+either identified or de-identified data.</p>
+<p>It was not clear how important having informed consent from
+participants would be for this project. In discussions with
+other agencies, it was not immediately clear if informed consent (i.e.,
+asking participants in both the treatment and control groups for
+permission to access their data from various agencies) would make this
+process easier. While an encouragement design is easiest without needing
+consent — since these designs typically involve only contacting
+individuals in the treatment group — it is still possible to create a
+design where participants provide active consent to receive
+notifications and for data collection. However, not knowing the relative
+importance of consent to different agencies made knowing how to design
+the experiment ambiguous.</p>
+</div>
+</div>
+<div id="protection-of-sensitive-and-personal-data" class="section level2">
+<h2><span class="header-section-number">17.4</span> Protection of Sensitive and Personal Data</h2>
+<div id="safe-projects-evaluating-data-analysis-projects-for-appropriateness" class="section level3">
+<h3><span class="header-section-number">17.4.1</span> Safe Projects: Evaluating Data Analysis Projects for Appropriateness</h3>
+<p>The DHCD does not have its own institutional review board (IRB) or
+research review process. The decision around whether to share data was
+focused around (1) whether it could be used for research, (2) some
+discussion of data safety, and (3) whether the work and resources
+required fit within an agency’s current priorities and resources.</p>
+<p>Harvard University’s IRB determined
+the pilot to be exempt from IRB review because it was for program
+improvement of RAFT, one of the DHCD’s own programs. For the pilot,
+identified data will not need to leave DHCD servers, researchers will
+not need to see identified data, and the person doing the encouragement
+will be a DHCD employee. In addition, for the pilot, the research team
+is not requesting outcome data from any other agencies and expects the
+full study to require IRB approval through Harvard University.</p>
+<p>While the IRB determination may not have influenced decisions to share
+or not share data in this instance, this type of reasoning could be
+useful in allowing agencies to share data. Sometimes, sharing data
+across agencies for “program improvement” can make it easier to share
+data rather than for “research.” In fact, demonstrating some benefit of
+the research to program administration is often a requirement for data
+access even among government agencies that have established research
+data access procedures.</p>
+</div>
+<div id="safe-people-evaluating-researchers-who-seek-data-access" class="section level3">
+<h3><span class="header-section-number">17.4.2</span> Safe People: Evaluating Researchers Who Seek Data Access</h3>
+<p>As discussed above, state agencies did not appear to have preferences or
+requirements as to whether researchers needed to be “special employees,”
+which would essentially allow them to be government employees for the
+purpose of data access. Moreover, there appears to be no standardized
+vetting process for researchers wanting to partner on research projects
+with the state or access data. In our particular case, the researchers
+had an existing relationship with the DHCD through a longer-term
+technical assistance partnership, external to J-PAL, that predates this
+research engagement.</p>
+<p>In all discussions we have made it clear the project would limit access
+to researchers and agency staff who are necessary to perform data
+transfer and analysis (i.e., “safe people”). This group of people may
+vary depending on where the matching and linking of data occurs (e.g.,
+if agencies allow researchers to link data, they will view de-identified
+data, but if the agencies perform the matching, researchers will only
+view de-identified data).</p>
+</div>
+<div id="safe-settings-accessing-data" class="section level3">
+<h3><span class="header-section-number">17.4.3</span> Safe Settings: Accessing Data</h3>
+<p>Data access and sharing procedures have not been finalized. The
+researchers plan to use secure data storage and access procedures in
+accordance with their institution and any additional requirements from
+the DHCD and other data partners whose data may be used as part of this
+study. In early discussions with agencies, it seems likely that Harvard
+University’s requirements<a href="#fn313" class="footnote-ref" id="fnref313"><sup>313</sup></a> for data security and access are as
+stringent if not more stringent than those required by various agencies.
+In discussions for the full study, we anticipate that the university’s
+security measures will help reassure agencies that researchers would
+treat data appropriately. Data access procedures will be outlined in the
+IRB protocol and in DUAs, and access to data will be limited to safe
+people, as defined above.</p>
+</div>
+<div id="safe-data-verifying-and-mitigating-disclosure-risk" class="section level3">
+<h3><span class="header-section-number">17.4.4</span> Safe Data: Verifying and Mitigating Disclosure Risk</h3>
+<p>Researchers will minimize disclosure risk by using de-identified data
+when possible, and perform linking or matching in the safest way
+possible, in this case in accordance with <a href="https://research.harvard.edu/2020/06/26/research-data-management/">Harvard’s Research Data
+Security
+Policy</a> <span class="citation">(Harvard University <a href="#ref-harvarduniversity-rdm" role="doc-biblioref">2020</a><a href="#ref-harvarduniversity-rdm" role="doc-biblioref">b</a>)</span>.
+For example, if a data agency has internal capacity, it can perform the
+link itself and share de-identified data with the researchers for
+analysis. This type of setup has lower disclosure risk since it prevents
+any identified information from leaving the agency. If agencies do not
+have the capacity to perform the match, then researchers can set up
+secure data transfer methods. Harvard classifies types of data <a href="https://policy.security.harvard.edu/view-data-security-level">based on
+their data security level</a> <span class="citation">(Harvard University <a href="#ref-harvarduniversity-datasecuritylevels" role="doc-biblioref">n.d.</a>)</span>;
+with each higher level comes more identified information shared and more
+protection protocols in place. There are many different data linking and
+sharing scenarios depending on researcher and agency capabilities;
+researchers will explore and choose the safest possible feasible
+approach to answer the research question.</p>
+</div>
+<div id="safe-outputs-verifying-and-mitigating-disclosure-risk-in-statistical-analysis-results-and-tabulations" class="section level3">
+<h3><span class="header-section-number">17.4.5</span> Safe Outputs: Verifying and Mitigating Disclosure Risk in Statistical Analysis, Results, and Tabulations</h3>
+<p>The exact review processes for disclosure risk will be determined when
+the full study begins. Researchers will follow rules agreed upon in DUAs
+and follow standard practices such as suppressing results from small
+cells and not publishing identifiable information.</p>
+</div>
+<div id="data-life-cycle-and-replicability-5" class="section level3">
+<h3><span class="header-section-number">17.4.6</span> Data Life Cycle and Replicability</h3>
+<p>As of May 2022, researchers have not yet gained access to data, and therefore the
+preservation and reproducibility of both researcher-accessible and
+researcher-generated files has not been established. Given that the
+primary researcher-accessible files we are interested in are based on
+benefit eligibility and receipt across various programs, which is
+something agencies calculate on an ongoing basis, the reproducibility of
+these types of files seems high. This will be a topic of future
+discussion. Researcher-generated files will follow best practices (e.g.,
+writing code to automate and ensure the reproducibility of data cleaning
+and analysis).</p>
+</div>
+</div>
+<div id="sustainability-and-continued-success-8" class="section level2">
+<h2><span class="header-section-number">17.5</span> Sustainability and Continued Success</h2>
+<div id="outreach-6" class="section level3">
+<h3><span class="header-section-number">17.5.1</span> Outreach</h3>
+<p>The project to date demonstrates successful outreach on the part of the
+DHCD, HKS researchers, and J-PAL to generate this research partnership.
+The partnership between the DHCD and Ang and Dobbie began as a technical
+assistance engagement through the Government Performance Lab at the HKS.
+The team continued to look for additional support in applying to J-PAL
+North America’s Housing Stability Evaluation Incubator, which ultimately
+led to support through IDEA. Both the DHCD and the researchers have
+shown commitment to bringing in additional collaborators and working
+together to achieve shared research objectives. In addition, a better
+understanding of how data is created, stored, and shared at
+Massachusetts agencies allowed the research manager to reach out to the
+DTA and DOR regarding a separate research project. Successful research
+partnerships require commitment from multiple parties and offer the hope
+that lessons learned will be beneficial in repeat interactions and
+longer-term relationships.</p>
+</div>
+<div id="revenue-6" class="section level3">
+<h3><span class="header-section-number">17.5.2</span> Revenue</h3>
+<p>The data access mechanism, the number and type of data sets used, and
+the length of time for access have not been established. Therefore, we
+are unable to comment on the financial stability at this time.</p>
+</div>
+<div id="metrics-of-success-6" class="section level3">
+<h3><span class="header-section-number">17.5.3</span> Metrics of Success</h3>
+<p>Data access is still in progress. A DUA for the pilot — with
+reassurances for the full study — is in the process of being developed.
+It has not been signed as of October 2021. Pending the DUA’s execution,
+gaining access to data so far appears at least partially successful.
+Signed agreements, launching the pilot, and agreements for data use for
+a full study are the next measures of success for this project.</p>
+</div>
+</div>
+<div id="about-the-author-3" class="section level2 unnumbered">
+<h2>About the Author</h2>
+<p>Amanda Lee is a research manager at J-PAL North America. She provides
+research support across multiple randomized evaluations and manages the
+<a href="https://www.povertyactionlab.org/catalog-administrative-data-sets">Catalog of Administrative Data
+Sets</a>.</p>
+</div>
+<div id="disclaimer-3" class="section level2 unnumbered">
+<h2>Disclaimer</h2>
+<p>This case study reflects the experiences of the author on this
+particular project and does not necessarily represent the views of the
+DHCD or any other agency of the Commonwealth of Massachusetts.</p>
+</div>
+<div id="rrrreferences" class="section level2">
+<h2><span class="header-section-number">17.6</span> RRRReferences</h2>
+<p>Binder, Jacob. 2019. “Reducing and Preventing Homelessness: Lessons from
+Randomized Evaluations.” J-PAL Evidence Review.
+<span class="underline"><a href="https://www.povertyactionlab.org/sites/default/files/publication/rph_homelessness-evidence-review.pdf" class="uri">https://www.povertyactionlab.org/sites/default/files/publication/rph_homelessness-evidence-review.pdf</a>.</span></p>
+<p>Doyle, Mary-Alice, and Laura Feeney. 2021. “Quick Guide to Power
+Calculations.” J-PAL North America.
+<span class="underline"><a href="https://www.povertyactionlab.org/resource/quick-guide-power-calculations" class="uri">https://www.povertyactionlab.org/resource/quick-guide-power-calculations</a>.</span></p>
+<p>EMPath. “AMP Up Boston Research Study.” Accessed March 29, 2022.
+<span class="underline"><a href="https://www.empathways.org/direct-services/amp-up-boston" class="uri">https://www.empathways.org/direct-services/amp-up-boston</a>.</span></p>
+<p>Harvard University. “Information Security Policy.” Accessed March 29,
+2022.<span class="underline"><a href="https://policy.security.harvard.edu/view-data-security-level" class="uri">https://policy.security.harvard.edu/view-data-security-level</a>.</span></p>
+<p>Harvard University. “Research Data Management.” Accessed March 29, 2022.
+<span class="underline"><a href="https://research.harvard.edu/2020/06/26/research-data-management/" class="uri">https://research.harvard.edu/2020/06/26/research-data-management/</a>.</span></p>
+<p>Heard, Kenya, Elisabeth O’Toole, Rohit Naimpally, and Lindsey Bressler.
+2017. “Real-World Challenges to Randomization and Their Solutions.”
+J-PAL North America.
+<span class="underline"><a href="https://www.povertyactionlab.org/sites/default/files/research-resources/2017.04.14-Real-World-Challenges-to-Randomization-and-Their-Solutions.pdf" class="uri">https://www.povertyactionlab.org/sites/default/files/research-resources/2017.04.14-Real-World-Challenges-to-Randomization-and-Their-Solutions.pdf</a>.</span></p>
+<p>J-PAL North America. “Catalog of Administrative Data Sets.” Accessed
+March 29, 2022.
+<span class="underline"><a href="https://www.povertyactionlab.org/catalog-administrative-data-sets" class="uri">https://www.povertyactionlab.org/catalog-administrative-data-sets</a>.</span></p>
+<p>J-PAL North America. “Housing Stability Evaluation Incubator.” Accessed
+March 29, 2022.
+<span class="underline"><a href="https://www.povertyactionlab.org/HousingStabilityEvaluationIncubator" class="uri">https://www.povertyactionlab.org/HousingStabilityEvaluationIncubator</a>.</span></p>
+<p>Loeb, Susanna, Katharine Meyer, and Samuel Madison. "The Impact of Text
+Message Nudges on Churn in the Supplemental Nutrition Assistance Program
+in the United States. J-PAL Evaluations. Accessed March 29, 2022.
+<span class="underline"><a href="https://www.povertyactionlab.org/evaluation/impact-text-message-nudges-churn-supplemental-nutrition-assistance-program-united-states" class="uri">https://www.povertyactionlab.org/evaluation/impact-text-message-nudges-churn-supplemental-nutrition-assistance-program-united-states</a>.</span></p>
+<p>Mass.gov. “Emergency Housing Payment Assistance during COVID-19.”
+Accessed March 29, 2022.
+<span class="underline"><a href="https://www.mass.gov/info-details/emergency-housing-payment-assistance-during-covid-19" class="uri">https://www.mass.gov/info-details/emergency-housing-payment-assistance-during-covid-19</a>.</span></p>
+<p>Mass.gov. “Learn to Earn Initiative.” Accessed March 29,
+2022.<span class="underline"><a href="https://www.mass.gov/service-details/learn-to-earn-initiative" class="uri">https://www.mass.gov/service-details/learn-to-earn-initiative</a>.</span></p>
+<div class="invisible">
+<p>
+This is a workaround for citations in footnotes, please ignore. <span class="citation"><span class="citation">Heard et al. (<a href="#ref-heard2017" role="doc-biblioref">2017</a>)</span></span> <span class="citation"><span class="citation">Doyle and Feeney (<a href="#ref-doylefeeney2021" role="doc-biblioref">2021</a>)</span></span>
+</p>
+</div>
+
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-binder2019">
+<p>Binder, Jacob. 2019. “Reducing and Preventing Homelessness: Lessons from Randomized Evaluations.” <em>J-PAL Evidence Review</em>. <a href="https://www.povertyactionlab.org/sites/default/files/publication/rph_homelessness-evidence-review.pdf">https://www.povertyactionlab.org/sites/default/files/publication/rph_homelessness-evidence-review.pdf</a>.</p>
+</div>
+<div id="ref-doylefeeney2021">
+<p>Doyle, Mary-Alice, and Laura Feeney. 2021. “Quick Guide to Power Calculations.” <em>The Abdul Latif Jameel Poverty Action Lab (J-PAL)</em>. <a href="https://www.povertyactionlab.org/resource/quick-guide-power-calculations">https://www.povertyactionlab.org/resource/quick-guide-power-calculations</a>.</p>
+</div>
+<div id="ref-empath">
+<p>EMPath. n.d. “AMP up Boston.” Accessed March 29, 2022. <a href="https://www.empathways.org/direct-services/amp-up-boston">https://www.empathways.org/direct-services/amp-up-boston</a>.</p>
+</div>
+<div id="ref-harvarduniversity-rdm">
+<p>Harvard University. 2020b. “Research Data Management.” <a href="https://research.harvard.edu/2020/06/26/research-data-management/">https://research.harvard.edu/2020/06/26/research-data-management/</a>.</p>
+</div>
+<div id="ref-harvarduniversity-datasecuritylevels">
+<p>Harvard University. n.d. “Data Security Levels.” Accessed July 19, 2022. <a href="https://policy.security.harvard.edu/view-data-security-level">https://policy.security.harvard.edu/view-data-security-level</a>.</p>
+</div>
+<div id="ref-heard2017">
+<p>Heard, Kenya, Elisabeth O’Toole, Rohit Naimpally, and Lindsey Bressler. 2017. “Real-World Challenges to Randomization and Their Solutions.” J-PAL North America.</p>
+</div>
+<div id="ref-housingstabilityindicator">
+<p>J-PAL North America. n.d. “Housing Stability Evaluation Incubator.” Accessed March 29, 2022. <a href="https://www.povertyactionlab.org/HousingStabilityEvaluationIncubator">https://www.povertyactionlab.org/HousingStabilityEvaluationIncubator</a>.</p>
+</div>
+<div id="ref-loeb">
+<p>Loeb, Susanna, Katharine Meyer, and Samuel Madison. n.d. “The Impact of Text Message Nudges on Churn in the Supplemental Nutrition Assistance Program in the United States.” <em>J-PAL Evaluations</em>. Accessed March 29, 2022. <a href="https://www.povertyactionlab.org/evaluation/impact-text-message-nudges-churn-supplemental-nutrition-assistance-program-united-states">https://www.povertyactionlab.org/evaluation/impact-text-message-nudges-churn-supplemental-nutrition-assistance-program-united-states</a>.</p>
+</div>
+<div id="ref-mass.govb">
+<p>Mass.gov. n.d.a. “Emergency Housing Payment Assistance During COVID-19.” Accessed March 29, 2022. <a href="https://www.mass.gov/info-details/emergency-housing-payment-assistance-during-covid-19">https://www.mass.gov/info-details/emergency-housing-payment-assistance-during-covid-19</a>.</p>
+</div>
+<div id="ref-mass.gova">
+<p>Mass.gov. n.d.b. “Learn to Earn Initiative.” Accessed March 29, 2022. <a href="https://www.mass.gov/service-details/learn-to-earn-initiative">https://www.mass.gov/service-details/learn-to-earn-initiative</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="310">
+<li id="fn310"><p>During the pandemic, Massachusetts also operated the Emergency
+Rental Assistance Program, which provided up to 18 months of support
+for rent arrears and future rent stipends.<a href="massachusetts.html#fnref310" class="footnote-back">↩︎</a></p></li>
+<li id="fn311"><p>See <span class="citation">Heard et al. (<a href="#ref-heard2017" role="doc-biblioref">2017</a>)</span> for a definition and discussion of
+use cases for an encouragement design.<a href="massachusetts.html#fnref311" class="footnote-back">↩︎</a></p></li>
+<li id="fn312"><p>Because participants in both groups can enroll in RAFT, conducting
+a randomized evaluation requires a sufficiently large, randomly-=
+induced difference in participation as a result of the encouragement
+in order to be able to detect effects. This “first-stage”
+relationship between encouragement and enrollment is critical to
+having a sufficiently powered study. Differences in outcomes are
+estimated by comparing the entire treatment group to the entire
+control group regardless of enrollment. RAFT, however, can only help
+those who enroll. Estimates of its impacts are diluted by
+individuals who are treated by the encouragement but do not enroll
+and by a lack of difference in enrollment between the treatment and
+control groups. Thus, conducting the study requires that the program
+be undersubscribed at baseline (which is true) and the encouragement
+sufficiently increases enrollment (which we will learn from the
+pilot). How much the encouragement increases enrollment will be used
+to calculate the sample size needed for the full study. Power
+considerations for encouragement designs are discussed in <span class="citation">Heard et al. (<a href="#ref-heard2017" role="doc-biblioref">2017</a>)</span>, and <span class="citation">Doyle and Feeney (<a href="#ref-doylefeeney2021" role="doc-biblioref">2021</a>)</span> provide a guide to power calculations.<a href="massachusetts.html#fnref312" class="footnote-back">↩︎</a></p></li>
+<li id="fn313"><p><span class="citation">Harvard University (<a href="#ref-harvarduniversity2020" role="doc-biblioref">2020</a><a href="#ref-harvarduniversity2020" role="doc-biblioref">a</a>)</span> <a href="https://policy.security.harvard.edu/view-data-security-level" class="uri">https://policy.security.harvard.edu/view-data-security-level</a><a href="massachusetts.html#fnref313" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="indonesia.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="puertorico.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["http://admindatahandbook.mit.edu/testing/#print", "PDF"], ["http://admindatahandbook.mit.edu/testing/#purchase", "Book"], ["http://admindatahandbook.mit.edu/testing/#epub", "Epub"]],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
