@@ -6515,7 +6515,7 @@ The first draft of the questionnaire from the inter-ministerial meeting is then 
 
 <!--chapter:end:19_01_indonesia_appendix.Rmd-->
 
-# Evaluating a Rental Assistance Program in Massachusetts {#massachusetts}
+# Early Stage: Evaluating a Rental Assistance Program in Massachusetts {#massachusetts}
 
 
 *Amanda Lee  
@@ -7055,7 +7055,7 @@ Mass.gov. "Learn to Earn Initiative." Accessed March 29,
 
 <!--chapter:end:20_00_massachusetts.Rmd-->
 
-# Challenges to Administrative Data in Puerto Rico during COVID-19 {#puertorico}
+# Early Stage: Challenges to Administrative Data in Puerto Rico during COVID-19 {#puertorico}
 
 *Daniela Gómez Treviño  
 Research Manager  
@@ -7071,11 +7071,11 @@ Researchers supported the implementation of an online diagnostic
 assessment test, which took the place of standardized testing of
 students of grades 3 to 8, and 11 in the subjects of math, English as a
 second language, and Spanish. In addition to supporting an ongoing
-randomized evaluation, this assessment offers an opportunity to measure
+randomized evaluation, the assessment offers an opportunity to measure
 learning loss for future decision-making and research studies. It
 describes this period of support, the broader relationship, and lessons
 learned from working with state governments and administrative data.
-Note that the work to implement the assessment is still in progress as
+Note that the work to implement the assessment was still in progress as
 of November 2021, and the descriptions in this case study reflect the
 current state of an evolving situation. The project received support
 from the Innovations in Data and Experiments for Action Initiative
@@ -7098,19 +7098,19 @@ Department of Education to measure outcomes for students, principals,
 and schools. The administration of standardized tests was halted by the
 COVID-19 pandemic and a resultant shift to remote learning. At the time,
 J-PAL North America had an ongoing partnership with the PRDE. The
-response to the interrupted data collection---the implementation of an
-online diagnostic assessment test--- was made possible by recognizing
+response to the interrupted data collection --- here, the implementation of an
+online diagnostic assessment test --- was made possible by recognizing
 shared interests among researchers and education officials. Although
 (hopefully) a once-in-a-lifetime occurrence, the pandemic response
 offers lessons for research-practice partnerships where shifting
 priorities or new crises may require adaptability.
 
-The PRDE is responsible for managing around 845 state-operated schools
+The PRDE is responsible for managing about 845 state-operated schools
 in Puerto Rico, with 292,518 students and 24,240 teachers, making it one
 of the largest school districts in the United States by enrollment. In
 Puerto Rico, 57 percent of children live in poverty and most children
 have academic outcomes far worse than their peers in the mainland United
-States even before the COVID-19 pandemic (McFarland et al. 2019).
+States even before the COVID-19 pandemic  [@mcfarland2019] (McFarland et al. 2019).
 
 J-PAL North America has been involved in this research-practice
 partnership since November 2016, when the PRDE was selected by J-PAL as
@@ -7231,7 +7231,7 @@ META-PR in May 2020, meaning that there are no records of student
 performance since, in some cases, before the summer of 2019. The testing
 waiver was implemented in recognition of the fact that states would not
 be able to get fair, reliable, and valid assessment results given the
-abrupt transition to online education (Devos 2020).
+abrupt transition to online education [@devos2020] (Devos 2020).
 
 Amid this challenging scenario, there was also an election for governor
 in Puerto Rico, leading to personnel changes in the PRDE. This was a
@@ -7481,8 +7481,9 @@ research projects or for building data capacity.[^puertorico4]
 
 ## Questions
 
+In the following, we respond to the type of questions that relate the framing and structure of this project to the format of the Handbook. The questions can be taken to guide researchers in how to address the various points discussed throughout this Handbook.
 
-###   **Institutional setup**
+###   Institutional setup
 
  > Who are the parties to the data access mechanism in this case study? Is the data provider also the data custodian/data host, or has a third party (data intermediary) taken on this role?
 
@@ -7503,10 +7504,9 @@ protected by the Family Educational Rights and Privacy Act (FERPA).
 Typically, FERPA requires individual consent from students and/or their
 guardians to release records. FERPA restrictions would not apply to
 teacher, principal, or school level records. The PRDE's *Manual de
-Gobernanza de Datos* (*Data Governance Manual*) specifies which
+Gobernanza de Datos* (*Data Governance Manual*) [@puertoricodepartamentodeeducacion2016] specifies which
 individuals or entities oversee data protection and privacy as well as
-the guidelines and best practices to comply with FERPA (Puerto Rico
-Departamento de Educación 2016). The PRDE executes data-sharing
+the guidelines and best practices to comply with FERPA. The PRDE executes data-sharing
 agreements following procedures detailed in the *Data Governance Manual*
 and all these agreements follow FERPA principles. In the case of this
 study, researchers obtained consent for use of student records.
@@ -7666,7 +7666,7 @@ she supports the launch of new evaluations of social programs, and
 contributes to training courses for research staff. She also supports
 multiple impact evaluations through Research Management Support (RMS).
 
-## References
+## RRRReferences
 
 
 Bobonis, Gustavo and Nicolas Riveros Medelis. 2019. "Policymakers and
@@ -7694,28 +7694,30 @@ Sachse, Clare. "Real-Time Monitoring and Response Plans: Creating
 Procedures." J-PAL Research Resources. Accessed XX.
 [[https://www.povertyactionlab.org/resource/real-time-monitoring-and-response-plans-creating-procedures]{.underline}](https://www.povertyactionlab.org/resource/real-time-monitoring-and-response-plans-creating-procedures).
 
-Varela Vélez, Damarys, Emily Goldman, and [Gustavo
-Bobonis](https://www.povertyactionlab.org/person/bobonis). 2021.
+Varela Vélez, Damarys, Emily Goldman, and Gustavo
+Bobonis. 2021.
 "Pursuing Evidence-Based Policymaking during Crisis." J-PAL Blog.
 [[https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis]{.underline}](https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis).
 
 [^puertorico1]: In English, Education Professional Development for Leadership and
     Professionalization Management Academy.
 
-[^puertorico2]: This [[J-PAL blog
-    post]{.underline}](https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis)
-    documents in more detail how the program has shifted to respond to
+[^puertorico2]: @varelavelez-blog
+    [document in more detail](https://www.povertyactionlab.org/blog/3-23-21/pursuing-evidence-based-policymaking-during-crisis) how the program has shifted to respond to
     the crisis.
 
-[^puertorico3]: See this [[2019 J-PAL blog
-    post]{.underline}](https://www.povertyactionlab.org/blog/7-9-19/policymakers-and-researchers-collaborate-improve-education-quality-puerto-rico),
-    written by Gustavo Bobonis and Nicolas Rivero Medelis, documenting
+[^puertorico3]: @bobonis2019 document
     how policymakers and researchers collaborated to improve education
     quality in Puerto Rico.
 
-[^puertorico4]: See J-PAL's Research Resource, "[[Real-Time Monitoring and
-    Response Plans: Creating
-    Procedures]{.underline}](https://www.povertyactionlab.org/resource/real-time-monitoring-and-response-plans-creating-procedures)."
+[^puertorico4]: See @sachsse-blog.
+
+
+<div class="invisible">
+<p>This is a workaround for citations in footnotes, please ignore. <span class="citation">@sachsse-blog</span> <span class="citation">@bobonis2019</span> <span class="citation">@varelavelez-blog</span></p>
+</div>
+
+\putbib
 
 <!--chapter:end:21_00_puertorico.Rmd-->
 
