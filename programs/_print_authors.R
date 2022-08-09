@@ -137,11 +137,12 @@ printauthor<-function(chapter,debug=FALSE){
 
 
   # The publication is read from the config file, first from chapter, otherwise from overall. We might also read the DOI from there.
-  pubdate <- config::get(chapter)$first_publish_date 
-  if (is.null(pubdate)) {
-    pubdate <- config$first_publish_date 
+  pubdate.local  <- config::get(chapter)$first_publish_date 
+  pubdate.global <- config$first_publish_date 
+  if (is.null(pubdate.local)) {
+    pubdate.local <- pubdate.global
   }
-  pubdate <- pubdate %>%  str_split_fixed(" ",2) 
+  pubdate <- pubdate.local %>%  str_split_fixed(" ",2) 
 
 
   # The citation thing is only output to the HTML
@@ -162,6 +163,19 @@ printauthor<-function(chapter,debug=FALSE){
     cat(paste0(".</span>"))
     cat('</div>')
   }
+  # Output information if this is an early-stage chapter
+  early <- config::get(chapter)$early
+  if ( early) {
+    # if true, output the block with standard sentence:
+    if ( outputformat == "html" ) {
+    cat('<div id="early" style="display: block;">')
+    cat("This chapter describes challenges and considerations faced by an early stage and in-progress project.")
+    cat(paste0("It was first published on ",pubdate.local," "))
+    cat(paste0("and is not included in the ",pubdate.global %>%  str_split_fixed(" ",2),"  print version."))
+    cat('</div>')
+    }
+  }
+  if ( config$)
   # If this is for the ebook, do this:
   if ( outputformat == "epub3" ) {
     if (debug) { print("outputformat=epub3")}
