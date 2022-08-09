@@ -1,4 +1,4 @@
-# Early Stage: Evaluating a Rental Assistance Program in Massachusetts {#massachusetts}
+# Evaluating a Rental Assistance Program in Massachusetts {#massachusetts}
 
 
 ```{r, echo=FALSE, results='asis'}
@@ -451,55 +451,9 @@ This case study reflects the experiences of the author on this
 particular project and does not necessarily represent the views of the
 DHCD or any other agency of the Commonwealth of Massachusetts.
 
-## RRRReferences 
 
 
-Binder, Jacob. 2019. "Reducing and Preventing Homelessness: Lessons from
-Randomized Evaluations." J-PAL Evidence Review.
-[<https://www.povertyactionlab.org/sites/default/files/publication/rph_homelessness-evidence-review.pdf>.]{.underline}
-
-Doyle, Mary-Alice, and Laura Feeney. 2021. "Quick Guide to Power
-Calculations." J-PAL North America.
-[<https://www.povertyactionlab.org/resource/quick-guide-power-calculations>.]{.underline}
-
-EMPath. "AMP Up Boston Research Study." Accessed March 29, 2022.
-[<https://www.empathways.org/direct-services/amp-up-boston>.]{.underline}
-
-Harvard University. "Information Security Policy." Accessed March 29,
-2022.[<https://policy.security.harvard.edu/view-data-security-level>.]{.underline}
-
-Harvard University. "Research Data Management." Accessed March 29, 2022.
-[<https://research.harvard.edu/2020/06/26/research-data-management/>.]{.underline}
-
-Heard, Kenya, Elisabeth O'Toole, Rohit Naimpally, and Lindsey Bressler.
-2017. "Real-World Challenges to Randomization and Their Solutions."
-J-PAL North America.
-[<https://www.povertyactionlab.org/sites/default/files/research-resources/2017.04.14-Real-World-Challenges-to-Randomization-and-Their-Solutions.pdf>.]{.underline}
-
-J-PAL North America. "Catalog of Administrative Data Sets." Accessed
-March 29, 2022.
-[<https://www.povertyactionlab.org/catalog-administrative-data-sets>.]{.underline}
-
-J-PAL North America. "Housing Stability Evaluation Incubator." Accessed
-March 29, 2022.
-[<https://www.povertyactionlab.org/HousingStabilityEvaluationIncubator>.]{.underline}
-
-Loeb, Susanna, Katharine Meyer, and Samuel Madison. "The Impact of Text
-Message Nudges on Churn in the Supplemental Nutrition Assistance Program
-in the United States. J-PAL Evaluations. Accessed March 29, 2022.
-[<https://www.povertyactionlab.org/evaluation/impact-text-message-nudges-churn-supplemental-nutrition-assistance-program-united-states>.]{.underline}
-
-Mass.gov. "Emergency Housing Payment Assistance during COVID-19."
-Accessed March 29, 2022.
-[<https://www.mass.gov/info-details/emergency-housing-payment-assistance-during-covid-19>.]{.underline}
-
-Mass.gov. "Learn to Earn Initiative." Accessed March 29,
-2022.[<https://www.mass.gov/service-details/learn-to-earn-initiative>.]{.underline}
-
-
-
-
-[^massachusetts1]: [[https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations]{.underline}](https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations)
+[^massachusetts1]: [https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations](https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations)
 
 [^massachusetts2]:   During the pandemic, Massachusetts also operated the Emergency
     Rental Assistance Program, which provided up to 18 months of support
@@ -509,7 +463,7 @@ Mass.gov. "Learn to Earn Initiative." Accessed March 29,
     use cases for an encouragement design.
 
 [^massachusetts4]: Because participants in both groups can enroll in RAFT, conducting
-    a randomized evaluation requires a sufficiently large, randomly-=
+    a randomized evaluation requires a sufficiently large, randomly
     induced difference in participation as a result of the encouragement
     in order to be able to detect effects. This "first-stage"
     relationship between encouragement and enrollment is critical to
