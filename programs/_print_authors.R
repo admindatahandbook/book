@@ -165,6 +165,7 @@ printauthor<-function(chapter,debug=FALSE){
   }
   # Output information if this is an early-stage chapter
   early <- config::get(chapter)$early
+  if ( is.null(early) ) { early <- FALSE }
   if ( early) {
     # if true, output the block with standard sentence:
     if ( outputformat == "html" ) {
