@@ -169,8 +169,8 @@ printauthor<-function(chapter,debug=FALSE){
   if ( early) {
     # if true, output the block with standard sentence:
     if ( outputformat == "html" ) {
-    cat('<div id="early" style="display: block;">')
-    cat("This chapter describes challenges and considerations faced by an early stage and in-progress project.")
+    cat('<div id="early">')
+    cat("This chapter describes challenges and considerations faced by an early stage and in-progress project. ")
     cat(paste0("It was first published on ",pubdate.local," "))
     cat(paste0("and is not included in the ",pubdate.global %>%  str_split_fixed(" ",2),"  print version."))
     cat('</div>')
