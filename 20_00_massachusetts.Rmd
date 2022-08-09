@@ -453,8 +453,6 @@ DHCD or any other agency of the Commonwealth of Massachusetts.
 
 
 
-[^massachusetts1]: [https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations](https://www.povertyactionlab.org/publication/reducing-and-preventing-homelessness-lessons-randomized-evaluations)
-
 [^massachusetts2]:   During the pandemic, Massachusetts also operated the Emergency
     Rental Assistance Program, which provided up to 18 months of support
     for rent arrears and future rent stipends.
