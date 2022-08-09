@@ -4,8 +4,9 @@ default:
   editors: "Cole, Dhaliwal, Sautmann, and Vilhuber"
   last_update: !expr Sys.Date()
   print_link: "v1.0"
-  version_link: "v1.0"
-  first_publish_date: "November 2020"
+  version_link: "v1.1"
+  latest_print_date: "January 2021"
+  first_publish_date: "August 2022"
   colors:
     aspect_low: "#e0f3db"  #low flexibility, light green, formerly "#33a02c"
     aspect_med: "#a8ddb5" #med flexibility, dark green blue, formerly "#a6cee3"
@@ -137,6 +138,21 @@ default:
       - putupoppywidyasari
     webinar:
     webinardate: "January 25, 2021"
+  massachusetts:
+    authors:
+      - amandalee
+    webinar:
+    webinardate:
+    first_publish_date: "August 2022"
+    early: true
+  puertorico:
+    authors:
+      - danielatrevino
+    webinar:
+    webinardate:
+    first_publish_date: "August 2022"
+    early: true
+
   contributors:
     larsvilhuber:
       name: Lars Vilhuber
@@ -273,3 +289,13 @@ default:
       name: Daniel L. Goroff
       inst: Alfred P. Sloan Foundation
       title: Vice President and Program Director
+    danielatrevino:
+      name: Daniela Gómez Treviño
+      inst: J-PAL North America, Massachusetts Institute of Technology
+      title: Research Manager
+    amandalee:
+      name: Amanda Lee
+      inst: J-PAL North America, Massachusetts Institute of Technology
+      title: Research Manager
+
+

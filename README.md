@@ -10,6 +10,8 @@ Development goes on in the `master` branch, which may therefore contain incomple
 
 Peer-reviewed and sanctioned versions are available in the `published_version` branch. Only those are used to generate websites and printed documents. The subfolder `testing` within the branch will contain unofficial version prior to publication.
 
+> To compile the current version, it is no longer possible to use Github Actions, as the Docker image used requires more than the 7GB RAM available through Github Actions. Creating a new version requires upwards of 16GB of RAM. The command `_build_local.sh` will work on any system with Docker installed and at least 16GB of RAM.
+
 
 ## Publishing
 
