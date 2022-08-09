@@ -172,7 +172,7 @@ printauthor<-function(chapter,debug=FALSE){
     cat('<div id="early">')
     cat("This chapter describes challenges and considerations faced by an early stage and in-progress project. ")
     cat(paste0("It was first published on ",pubdate.local," "))
-    cat(paste0("and is not included in the ",pubdate.global %>%  str_split_fixed(" ",2),"  print version."))
+    cat(paste0("and is not included in the ",config$latest_print_date,"  print version."))
     cat('</div>')
     }
   }
