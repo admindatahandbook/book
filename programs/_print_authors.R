@@ -175,7 +175,7 @@ printauthor<-function(chapter,debug=FALSE){
     cat('</div>')
     }
   }
-  if ( config$)
+  
   # If this is for the ebook, do this:
   if ( outputformat == "epub3" ) {
     if (debug) { print("outputformat=epub3")}
